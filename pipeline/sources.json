@@ -41,8 +41,8 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue",
-  "note_last": "Fehler: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'To turn thinking off on this model, send \"thinking\": {\"type\": \"between_tools\"} instead of {\"type\": \"disabled\"}. The model does not think before responding. The short updates it writes between tool calls come b"
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (KI): [facts=partial ped={'A': 3, 'B': 4, 'C': 4, 'D': 3, 'E': 4} vergl=True blind=3] Karte 2: 'Das BfR rät deshalb, den Kühlschrank nicht zu voll zu packen.' Das Wort 'deshalb' leitet die Empfehlung aus der Zirkulation ab, im Quelltext steht die Zirkulation allerdings als Begründung der Empfehlung (passt), aber 'Ist alles zugestellt, kommt sie nicht mehr überall hin' ist über die Quelle"
  },
  {
   "id": "salz",
