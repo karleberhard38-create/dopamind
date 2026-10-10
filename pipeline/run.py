@@ -65,8 +65,9 @@ def make_client():
         def call(self, model, system, user, tools=None, max_tokens=4000):
             global spent
             msgs = [{"role": "user", "content": user}]
-            text = ""
-            for _ in range(8):  # pause_turn: Server-Tools laufen lassen
+            texts = []
+            last_stop = None
+            for turn in range(10):  # pause_turn: Server-Tools laufen lassen
                 kw = dict(model=model, max_tokens=max_tokens, messages=msgs,
                           system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}])
                 if tools:
@@ -80,12 +81,22 @@ def make_client():
                 st = getattr(u, "server_tool_use", None)
                 if st:
                     spent += (getattr(st, "web_search_requests", 0) or 0) * SEARCH_USD
-                text = "".join(b.text for b in r.content if b.type == "text")
+                last_stop = r.stop_reason
+                t = "".join(b.text for b in r.content if b.type == "text")
+                texts.append(t)
+                msgs = msgs + [{"role": "assistant", "content": r.content}]
                 if r.stop_reason == "pause_turn":
-                    msgs = [msgs[0], {"role": "assistant", "content": r.content}]
                     continue
-                return text
-            return text
+                full = "\n".join(texts)
+                if tools and not re.search(r"[\[{]", t):
+                    # Modell hat nach der Recherche kein Ergebnis ausgegeben: gezielt nachfragen
+                    msgs = msgs + [{"role": "user", "content":
+                                    "Recherche abgeschlossen. Gib jetzt ausschliesslich das fertige Ergebnis als JSON-Codeblock aus, ohne weitere Suche."}]
+                    texts = [full]
+                    continue
+                return t if re.search(r"[\[{]", t) else full
+            log(debug="keine Antwort mit JSON", stop=last_stop, text_tail=("\n".join(texts))[-500:])
+            return "\n".join(texts)
     return Real()
 
 
@@ -250,17 +261,24 @@ def main():
             topics.append({"id": i, "k": p["k"], "t": p["t"], "status": "queue"})
         queue = [t for t in topics if t["status"] == "queue"]
     made = 0
+    tech_fails = 0
     for t in queue:
-        if made >= DECKS_PER_RUN or spent > BUDGET:
+        if made >= DECKS_PER_RUN or spent > BUDGET or tech_fails >= 2:
             break
         t["status"] = "in_arbeit"
+        tech = False
         try:
             deck, msg = build_deck(cli, t, decks)
         except Exception as e:  # ein kaputtes Thema darf den Lauf nicht beenden
-            deck, msg = None, "Fehler: %s" % str(e)[:300]
+            deck, msg = None, "Fehler: %s: %s" % (type(e).__name__, str(e)[:300])
+            tech = True
         made += 1
         if deck:
-            decks.append(deck); t["status"] = "live"
+            decks.append(deck); t["status"] = "live"; tech_fails = 0
+        elif tech:
+            t["fails"] = t.get("fails", 0) + 1
+            t["status"] = "queue" if t["fails"] < 2 else "abgelehnt"
+            tech_fails += 1
         else:
             t["status"] = "abgelehnt"
         t["note"] = msg
