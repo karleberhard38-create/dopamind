@@ -119,8 +119,8 @@ class Real:
 
     def call(self, model, system, messages, max_tokens=4000, tag=""):
         global spent
-        r = self.cli.messages.create(model=model, max_tokens=max_tokens, messages=messages,
-                                     thinking={"type": "between_tools"},
+        extra_kw = {"thinking": {"type": "between_tools"}} if "sonnet-5" in model else {}
+        r = self.cli.messages.create(model=model, max_tokens=max_tokens, messages=messages, **extra_kw,
                                      system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}])
         pin, pout = PRICE.get(model, (2.0, 10.0))
         u = r.usage
