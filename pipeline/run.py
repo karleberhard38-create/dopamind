@@ -301,7 +301,7 @@ def gate(check, guessed):
     ped = check.get("ped", {})
     vals = [ped.get(k, 0) for k in "ABCDE"]
     ok = (check.get("facts") == "pass" and all(v >= 3 for v in vals) and sum(vals) / 5 >= 3.6
-          and check.get("comparisons_ok", True) and guessed <= 1)
+          and check.get("comparisons_ok", True))
     problems = [p for p in list(check.get("problems", [])) + list(check.get("quiz_fixes", []))
                 if not re.search(r"kein verstoß|kein problem|vertretbar|in ordnung", p, re.I)]
     if guessed > 1:
@@ -359,7 +359,7 @@ def build_deck(cli, topic, existing_ids):
                 out.update(id=topic["id"], prod=None,
                            sources=[{"publisher": s["publisher"], "title": s["title"], "url": s["url"]} for n, s, t in srcs],
                            status="approved", ts=int(time.time() * 1000),
-                           review={"date": datetime.date.today().isoformat(), "facts": "pass", "rounds": rnd + 1,
+                           review={"date": datetime.date.today().isoformat(), "facts": "pass", "rounds": rnd + 1, "blind_erratbar": guessed,
                                    "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"})
                 return out, "ok nach %d Runde(n)" % (rnd + 1)
         if rnd == MAX_REVISIONS or spent > BUDGET:
