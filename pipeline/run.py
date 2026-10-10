@@ -16,12 +16,12 @@ LOG = PIPE / "log.jsonl"
 SPEC = (PIPE / "SPEC.md").read_text(encoding="utf-8")
 
 DECKS_PER_RUN = int(os.getenv("DECKS_PER_RUN", "3"))
-BUDGET = float(os.getenv("DAILY_BUDGET_USD", "3.00"))
+BUDGET = float(os.getenv("DAILY_BUDGET_USD", "1.50"))
 AUTHOR_MODEL = os.getenv("AUTHOR_MODEL", "claude-sonnet-5-5")
 CHECK_MODEL = os.getenv("CHECK_MODEL", "claude-sonnet-5-5")
 BLIND_MODEL = os.getenv("BLIND_MODEL", "claude-haiku-4-5-20251001")
 TOPIC_MODEL = os.getenv("TOPIC_MODEL", "claude-haiku-4-5-20251001")
-MAX_REVISIONS = 2
+MAX_REVISIONS = 1
 CATS = ["Wirtschaft", "Politik", "Geschichte", "Ernährung", "Psyche", "Sport", "Wissenschaft", "Alltag", "Gesundheit", "Biologie"]
 PRICE = {  # USD pro Million Tokens (Eingabe, Ausgabe), Stand Oktober 2026
     "claude-sonnet-5-5": (2.0, 10.0),
@@ -100,8 +100,10 @@ def make_client():
     return Real()
 
 
-SEARCH = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 8},
-          {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 8, "max_content_tokens": 30000}]
+SEARCH = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5},
+          {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 4, "max_content_tokens": 12000}]
+# Prüfer öffnet nur die vorhandenen Quellen, sucht nicht selbst
+CHECK_TOOLS = [{"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 4, "max_content_tokens": 12000}]
 
 
 # ---------------------------------------------------------------- Helfer
@@ -167,6 +169,7 @@ Befunde:
 %s
 Aktuelles Deck:
 %s
+Suche nicht neu. Streiche oder entschärfe Aussagen, die nicht belegt sind, oder formuliere sie nach den vorhandenen Zitaten im Ledger.
 Gib das vollständige überarbeitete Deck als JSON in einem ```json Block aus (inklusive ledger)."""
 
 CHECK_TASK = """PRUEFUNG. Du bist unabhängiger Prüfer. Öffne die Quellen (URLs im Ledger und in sources) selbst und prüfe jede Aussage der 5 Karten und der Quizfragen (richtige und falsche Antworten) gegen den Inhalt.
@@ -174,7 +177,8 @@ Bewerte zusätzlich nach der Pädagogik-Rubrik A bis E (1 bis 5) und prüfe jede
 Prüfe Quizregeln v1.4/v1.7 (keine Studien-/Namen-/Zahlenfragen, falsche Antworten plausibel und widerlegt, ähnliche Länge, mindestens 2 von 3 Alltagsfolgen).
 Gib NUR dieses JSON in einem ```json Block aus:
 {"facts":"pass"|"partial"|"fail","problems":["konkrete Befunde mit Kartennummer"],"ped":{"A":n,"B":n,"C":n,"D":n,"E":n},"comparisons_ok":true|false,"quiz_fixes":["konkrete Befunde zu Quizfragen"]}
-"facts" ist nur "pass", wenn JEDE Aussage durch die geöffnete Quelle belegt ist und nichts darüber hinausgeht.
+"facts" ist "pass", wenn jede Aussage durch die geöffnete Quelle belegt ist; "partial" nur, wenn eine Aussage tatsächlich über die Quelle hinausgeht, "fail" bei einer Falschaussage.
+In "problems" und "quiz_fixes" stehen NUR echte Verstöße, die geändert werden müssen. Bloße Hinweise, Geschmacksfragen und "vertretbar" gehören nicht hinein, dann bleibt die Liste leer.
 
 Deck:
 %s"""
@@ -225,7 +229,7 @@ def build_deck(cli, topic, decks):
             problems = ["Formatfehler: " + ", ".join(err)]
             check, guessed = {}, 0
         else:
-            check = jparse(cli.call(CHECK_MODEL, SPEC, CHECK_TASK % json.dumps(deck, ensure_ascii=False), SEARCH, 6000))
+            check = jparse(cli.call(CHECK_MODEL, SPEC, CHECK_TASK % json.dumps(deck, ensure_ascii=False), CHECK_TOOLS, 6000))
             guessed = blind_test(cli, deck)
             ok, problems = gate(check, guessed)
             if ok:
@@ -236,7 +240,7 @@ def build_deck(cli, topic, decks):
                 return deck, "ok nach %d Runde(n)" % (rnd + 1)
         if rnd == MAX_REVISIONS or spent > BUDGET:
             return None, "abgelehnt: " + " | ".join(problems)[:600]
-        deck = jparse(cli.call(AUTHOR_MODEL, SPEC, REVISE_TASK % ("\n".join("- " + p for p in problems), json.dumps(deck, ensure_ascii=False)), SEARCH, 12000))
+        deck = jparse(cli.call(AUTHOR_MODEL, SPEC, REVISE_TASK % ("\n".join("- " + p for p in problems), json.dumps(deck, ensure_ascii=False)), None, 12000))
         deck["id"] = tid
     return None, "abgelehnt"
 

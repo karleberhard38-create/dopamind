@@ -1,8 +1,9 @@
 name: Neue Decks erzeugen
 
 on:
-  schedule:
-    - cron: "0 5 * * *"      # täglich 05:00 UTC (7:00 Uhr deutscher Sommerzeit)
+  # TÄGLICHER LAUF PAUSIERT bis die Kosten pro Deck stimmen. Wieder einschalten: die zwei Zeilen darunter einkommentieren.
+  # schedule:
+  #   - cron: "0 5 * * *"      # täglich 05:00 UTC (7:00 Uhr deutscher Sommerzeit)
   workflow_dispatch:          # zusätzlich per Knopf startbar
 
 permissions:
