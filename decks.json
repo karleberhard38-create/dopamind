@@ -1798,5 +1798,730 @@
    "rounds": 1,
    "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
   }
+ },
+ {
+  "t": "Wie lang und wie einzigartig sollte ein Passwort sein?",
+  "s": "Passwort",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🔑",
+    "Ein kurzes Passwort voller Sonderzeichen oder ein langes ohne? Das Bundesamt für Sicherheit in der Informationstechnik sagt: Je länger, desto besser. Ab wie vielen Zeichen darf ein Passwort sogar einfacher aufgebaut sein?"
+   ],
+   [
+    "📏",
+    "Ab 25 Zeichen darf es aus nur zwei Zeichenarten bestehen. Ein kurzes Passwort muss mindestens 8 Zeichen haben und vier Zeichenarten mischen: Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen. Wie merkst du dir 25 Zeichen?"
+   ],
+   [
+    "💬",
+    "Mit einer Passphrase. Das BSI empfiehlt, zufällig fünf bis sechs Wörter aus dem Wörterbuch zu wählen und mit Leerzeichen zu trennen. Das ist leicht zu merken und schwer zu knacken. Reicht ein gutes Passwort dann für alles?"
+   ],
+   [
+    "🔁",
+    "Nein. Ein Passwort sollte nur für einen Zugang gelten, weil Angreifer veröffentlichte Zugangsdaten bei vielen Diensten ausprobieren. Ein Passwortmanager merkt sich alle für dich, du brauchst nur ein langes Master-Passwort. Reicht das als Schutz?"
+   ],
+   [
+    "🛡️",
+    "Selbst das stärkste Passwort schützt nicht vollständig, schreibt die Verbraucherzentrale. Nutze deshalb überall die Zwei-Faktor-Anmeldung. Ändern musst du Passwörter nicht regelmäßig, sondern bei einem Datenleck, auf Aufforderung des Anbieters oder bei Schadsoftware."
+   ]
+  ],
+  "quiz": [
+   [
+    "Ab wie vielen Zeichen darf ein Passwort laut BSI aus nur zwei Zeichenarten bestehen?",
+    "Ab 25 Zeichen",
+    "Ab 10 Zeichen",
+    "Ab 16 Zeichen",
+    2
+   ],
+   [
+    "Was empfiehlt das BSI als leicht merkbare Passphrase?",
+    "Fünf bis sechs zufällige Wörter, mit Leerzeichen getrennt",
+    "Ein Wort mit vielen Sonderzeichen am Ende",
+    "Den eigenen Namen mit Geburtsjahr",
+    3
+   ],
+   [
+    "Wann solltest du ein Passwort laut Verbraucherzentrale ändern?",
+    "Bei einem Datenleck oder Schadsoftware",
+    "Alle drei Monate nach festem Plan",
+    "Jeweils zum Jahreswechsel",
+    5
+   ]
+  ],
+  "id": "passwort",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesamt für Sicherheit in der Informationstechnik",
+    "title": "Sichere Passwörter erstellen",
+    "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Starke Passwörter erstellen",
+    "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/datenschutz/starke-passwoerter-erstellen-so-schuetzen-sie-ihre-onlinekonten-effektiv-11672"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Woran erkennst du Phishing-Mails?",
+  "s": "Phishing",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🎣",
+    "Deine Bank schreibt, dein Konto werde gesperrt, wenn du nicht heute reagierst. Dahinter steckt oft Phishing: Betrüger wollen so an Passwörter, PIN und TAN kommen. Woran erkennst du die Fälschung?"
+   ],
+   [
+    "⏰",
+    "Oft schon am Druck. Phishing-Mails folgen einem Muster aus Anrede, Grund, Aufforderung, Zeitdruck, Drohung und Link. Eine kurze Frist mit Kontosperrung ist laut Verbraucherzentrale ein deutliches Warnzeichen. Hilft ein Blick auf den Absender?"
+   ],
+   [
+    "✉️",
+    "Nicht sicher. Auch Absenderangaben lassen sich fälschen, und eine persönliche Anrede ist kein Beweis, denn Kriminelle nutzen Namen für mehr Glaubwürdigkeit. Banken fragen nie per Mail oder Telefon nach PIN oder TAN. Was machst du mit dem Link?"
+   ],
+   [
+    "🔗",
+    "Nicht anklicken. Rufe die Seite stattdessen selbst über die Adresszeile deines Browsers auf, denn Fälschungen weichen oft nur leicht von der echten Webadresse ab. Antworte auch nicht auf die Mail. Was tust du, wenn du schon geklickt hast?"
+   ],
+   [
+    "🚨",
+    "Hast du Zugangsdaten eingegeben, ändere umgehend Passwörter und Sicherheitsfragen. Kontaktiere sofort deinen Anbieter und lass Konten gegebenenfalls sperren, zum Beispiel über die Sperr-Hotline 116 116. Prüfe außerdem regelmäßig deine Kontobewegungen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Fragt eine Bank per E-Mail oder Telefon nach PIN oder TAN?",
+    "Nein, das tut eine Bank nie",
+    "Ja, bei jeder Änderung am Konto",
+    "Ja, wenn die Mail den Namen enthält",
+    3
+   ],
+   [
+    "Was machst du mit einem Link in einer verdächtigen Mail?",
+    "Nicht anklicken, die Seite selbst im Browser aufrufen",
+    "Anklicken und die Adresse prüfen",
+    "Anklicken, wenn der Absender bekannt wirkt",
+    4
+   ],
+   [
+    "Was ist ein typisches Warnsignal einer Phishing-Mail?",
+    "Eine kurze Frist mit Drohung, etwa Kontosperrung",
+    "Eine korrekte Anrede mit deinem Namen",
+    "Ein Absender mit deutscher Adresse",
+    2
+   ]
+  ],
+  "id": "phishing",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Polizeiliche Kriminalprävention",
+    "title": "Phishing",
+    "url": "https://www.polizei-beratung.de/themen-und-tipps/gefahren-im-internet/phishing/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Phishingmails: Woran Sie sie erkennen",
+    "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/phishingradar/phishingmails-woran-sie-sie-erkennen-und-worauf-sie-achten-muessen-6073"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie legst du einen Notvorrat an?",
+  "s": "Notvorrat",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🏪",
+    "Der Strom fällt aus, und die Läden bleiben zu. Das Bundesamt für Bevölkerungsschutz empfiehlt, sich möglichst zehn Tage selbst versorgen zu können. Schon drei Tage Vorrat helfen aber sehr. Was ist dabei das Wichtigste?"
+   ],
+   [
+    "💧",
+    "Wasser. Ein Erwachsener braucht mindestens 1,5 Liter Flüssigkeit am Tag, zum Kochen kommen 0,5 Liter dazu. Ein Mensch kommt unter Umständen drei Wochen ohne Nahrung aus, aber nur vier Tage ohne Flüssigkeit. Was kommt noch in den Schrank?"
+   ],
+   [
+    "🥫",
+    "Haltbares, das ohne Kühlung auskommt, falls der Kühlschrank ausfällt. Am besten Fertiges ohne Kochen, zum Beispiel Konserven, Trockenfrüchte, Nüsse, Zwieback und Müsliriegel. Denke an Allergien und Essgewohnheiten. Wo lagerst du das alles?"
+   ],
+   [
+    "🌡️",
+    "Dunkel, trocken und bei 15 bis 20 Grad, etwa in der Speisekammer oder einem trockenen Keller, in dicht verschließenden Behältern. Balkon, Dachboden und Kofferraum sind weniger geeignet. Verdirbt das Ganze nicht irgendwann?"
+   ],
+   [
+    "🔄",
+    "Dann prüfst du es. Kontrolliere die Haltbarkeit etwa einmal im Halbjahr und verbrauche Ablaufendes im Alltag. Oder kaufe bei jedem Einkauf ein bis zwei Packungen mehr und verbrauche die ältesten zuerst. Ein Vorrat für zehn Tage kostet knapp über 90 Euro pro Person."
+   ]
+  ],
+  "quiz": [
+   [
+    "Für wie viele Tage empfiehlt das Bundesamt einen Vorrat?",
+    "Möglichst zehn Tage",
+    "Genau einen Tag",
+    "Mindestens drei Monate",
+    1
+   ],
+   [
+    "Wie viel Flüssigkeit braucht ein Erwachsener mindestens pro Tag?",
+    "Mindestens 1,5 Liter, zum Kochen 0,5 Liter extra",
+    "Etwa 0,5 Liter, zum Kochen keinen Liter extra",
+    "Mindestens 5 Liter, zum Kochen 2 Liter extra",
+    2
+   ],
+   [
+    "Wie lagerst du Vorräte am besten?",
+    "Dunkel, trocken und bei 15 bis 20 Grad",
+    "Auf dem sonnigen Balkon im Regal",
+    "Im warmen Dachboden unter dem Dach",
+    4
+   ]
+  ],
+  "id": "notvorrat",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe",
+    "title": "Bevorraten",
+    "url": "https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/So-koennen-Sie-sich-vorbereiten/Bevorraten/bevorraten_node.html"
+   },
+   {
+    "publisher": "Bundeszentrum für Ernährung",
+    "title": "Private Ernährungsvorsorge",
+    "url": "https://www.bzfe.de/kueche-und-alltag/private-ernaehrungsvorsorge"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie viel Zucker steckt in Erfrischungsgetränken?",
+  "s": "Zucker",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🥤",
+    "Eine Flasche Limo löscht den Durst, aber wie viel Zucker steckt drin? Die Verbraucherzentrale NRW hat 23 gesüßte Erfrischungsgetränke untersucht. Die Werte reichten von 4,3 bis 11 Gramm Zucker pro 100 Milliliter. Wie viel Zucker ist am Tag okay?"
+   ],
+   [
+    "📉",
+    "Freie Zucker sollten weniger als zehn Prozent der Tagesenergie liefern, besser nur fünf Prozent, empfehlen WHO und DGE. Für Erwachsene sind das etwa 50 Gramm am Tag. Wie viel davon steckt in einer Flasche?"
+   ],
+   [
+    "🍾",
+    "Schon in einer Flasche kann ein großer Teil dieser Menge stecken. Die Verbraucherzentrale warnt: Einmal geöffnete Getränke werden meist ganz ausgetrunken. Und Zucker versteckt sich nicht nur in Limo. Wo noch?"
+   ],
+   [
+    "🍅",
+    "In Fruchtjoghurt, Fruchtquark, Nektaren und Fruchtsaftgetränken, aber auch in Ketchup, Soßen, Dressings und Tiefkühlpizza, schreibt die DGE. Auf Zutatenlisten steht Zucker unter vielen Namen. Sind Honig und Agavendicksaft besser?"
+   ],
+   [
+    "💧",
+    "Kaum. Honig, brauner Zucker, Agavendicksaft und Kokosblütenzucker gelten als ähnlich ungünstig wie Haushaltszucker. Trinke lieber Wasser oder Saftschorle, laut DGE im Verhältnis 1 Teil Saft zu 3 Teilen Wasser."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Prozent der Tagesenergie sollten freie Zucker höchstens liefern?",
+    "Weniger als zehn Prozent, besser fünf",
+    "Bis zu einem Viertel der Tagesenergie",
+    "Bis zur Hälfte der Tagesenergie",
+    2
+   ],
+   [
+    "Wie viel Zucker enthielten die untersuchten Getränke pro 100 Milliliter?",
+    "Zwischen 4,3 und 11 Gramm",
+    "Zwischen 0,1 und 1 Gramm",
+    "Zwischen 20 und 30 Gramm",
+    1
+   ],
+   [
+    "Wie mischst du eine Saftschorle laut DGE?",
+    "Ein Teil Saft auf drei Teile Wasser",
+    "Drei Teile Saft auf ein Teil Wasser",
+    "Halb Saft, halb Wasser",
+    5
+   ]
+  ],
+  "id": "zucker",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Zu viel Zucker in Erfrischungsgetränken",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/zu-viel-zucker-in-erfrischungsgetraenken-39802"
+   },
+   {
+    "publisher": "Deutsche Gesellschaft für Ernährung",
+    "title": "Süßes, Salziges und Fettiges",
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/suesses-salziges-und-fettiges/"
+   },
+   {
+    "publisher": "Deutsche Gesellschaft für Ernährung",
+    "title": "Getränke",
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-ernaehrungskreis/getraenke/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Ballaststoffe und Vollkorn: Was bringen sie?",
+  "s": "Ballaststoffe",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🌾",
+    "Die Deutsche Gesellschaft für Ernährung empfiehlt täglich mindestens 30 Gramm Ballaststoffe. Die meisten schaffen das nicht: Frauen essen im Schnitt nur 18 Gramm, Männer 19 Gramm. Wo stecken Ballaststoffe drin?"
+   ],
+   [
+    "🫘",
+    "In Hülsenfrüchten, Gemüse, Obst, Nüssen, Samen und Vollkornprodukten. Vollkornnudeln haben etwa 8 Gramm pro 100 Gramm, helle Nudeln nur etwa 5 Gramm. Woran erkennst du echtes Vollkorn im Supermarkt?"
+   ],
+   [
+    "🍞",
+    "Nicht an der Farbe, die täuscht. Entscheidend ist das Wort Vollkorn, das gesetzlich geschützt ist. Bei Vollkornbrot müssen mindestens 90 Prozent des Getreides Vollkornmehl oder Vollkornschrot sein. Was bringt das deinem Körper?"
+   ],
+   [
+    "🦠",
+    "Vollkorn sättigt länger, und Ballaststoffe daraus senken laut DGE das Risiko für Typ-2-Diabetes und Herz-Kreislauf-Erkrankungen. Darmbakterien bauen einen Teil davon ab. Kannst du es mit Ballaststoffen auch übertreiben?"
+   ],
+   [
+    "💧",
+    "Zu viel auf einmal macht Probleme. Steigere die Menge schrittweise, sonst drohen Blähungen und Verstopfung. Trinke dazu ausreichend, denn Ballaststoffe binden Wasser. Ein guter Start: mindestens ein Drittel der Getreideprodukte als Vollkorn."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Ballaststoffe empfiehlt die DGE täglich?",
+    "Mindestens 30 Gramm",
+    "Höchstens 10 Gramm",
+    "Genau 5 Gramm",
+    1
+   ],
+   [
+    "Woran erkennst du Vollkornbrot sicher?",
+    "An der gesetzlich geschützten Angabe Vollkorn",
+    "An der besonders dunklen Farbe des Brotes",
+    "An den vielen Körnern auf der Kruste",
+    3
+   ],
+   [
+    "Wie steigerst du die Ballaststoffmenge am besten?",
+    "Schrittweise und mit ausreichend Trinken",
+    "Von heute auf morgen verdoppeln",
+    "Nur mit Ballaststoffpulver ohne Wasser",
+    5
+   ]
+  ],
+  "id": "ballast",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrum für Ernährung",
+    "title": "Ballaststoffe",
+    "url": "https://www.bzfe.de/essen-und-gesundheit/naehrstoffe/ballaststoffe"
+   },
+   {
+    "publisher": "Deutsche Gesellschaft für Ernährung",
+    "title": "Vollkorn",
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/vollkorn/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie funktioniert der Dispo, und warum ist er so teuer?",
+  "s": "Dispo",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💳",
+    "Dein Konto rutscht ins Minus, und nichts passiert. Das ist der Dispokredit, den die Bank dir meist nach deinen regelmäßigen Eingängen einräumt. 45 Prozent der 18- bis 29-Jährigen überzogen laut BaFin ihr Konto. Was kostet das?"
+   ],
+   [
+    "📈",
+    "Dispozinsen sind laut BaFin oft deutlich höher als bei Ratenkrediten. Die Verbraucherzentrale Hamburg nennt aus einem Test von Juni 2025 im Schnitt 11,22 Prozent, bei einer Spanne von 2,09 bis 15,37 Prozent. Ist die geduldete Überziehung billiger?"
+   ],
+   [
+    "⚠️",
+    "Nein. Bei der geduldeten Überziehung duldet die Bank das Minus nur, einen Anspruch darauf hast du nicht. Bei beiden sind die Zinsen variabel. Etwa 70 Prozent der jungen Erwachsenen konnten den Zinssatz nicht nennen. Und die Kreditkarte?"
+   ],
+   [
+    "🃏",
+    "Die Teilzahlung per Kreditkarte ist laut BaFin häufig noch teurer. Dabei glaubten 32 Prozent der Teilzahler fälschlich, keine Zinsen zu zahlen. Was ist die Alternative, wenn du dauerhaft im Minus bist?"
+   ],
+   [
+    "✅",
+    "Ein günstiger Ratenkredit. Die Verbraucherzentrale rät, sich bei dauerhaftem Dispo aktiv danach umzusehen. Bekommst du keinen, hilft eine Schuldnerberatung. Vergleiche Angebote verschiedener Anbieter, denn die Zinssätze variieren von Bank zu Bank stark."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie liegen Dispozinsen laut BaFin im Vergleich zu Ratenkrediten?",
+    "Oft deutlich höher",
+    "Meist niedriger",
+    "Ungefähr gleich hoch",
+    2
+   ],
+   [
+    "Was gilt bei der geduldeten Überziehung?",
+    "Die Bank duldet sie, einen Anspruch darauf hast du nicht",
+    "Du hast einen festen Anspruch darauf",
+    "Sie ist zinsfrei, solange du sie ausgleichst",
+    3
+   ],
+   [
+    "Was rät die Verbraucherzentrale bei dauerhaftem Dispo?",
+    "Einen günstigen Ratenkredit suchen",
+    "Den Dispo einfach weiter nutzen",
+    "Die Kreditkarte zusätzlich nutzen",
+    5
+   ]
+  ],
+  "id": "dispo",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesanstalt für Finanzdienstleistungsaufsicht",
+    "title": "Junge Erwachsene und Kredite",
+    "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Fachartikel/2024/fa_bj_0205_Junge_Erwachsene_Kredite.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale Hamburg",
+    "title": "Dispozinsen weiter gestiegen",
+    "url": "https://www.vzhh.de/themen/finanzen/konto-karte/dispozinsen-weiter-gestiegen"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie viel Strom frisst dein Kühlschrank?",
+  "s": "Kühlstrom",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🧊",
+    "Dein Kühlschrank läuft Tag und Nacht, ohne dass du es merkst. Das Umweltbundesamt zählt Kühl- und Gefriergeräte zu den größten Stromfressern im Haushalt. Was kostet dich so ein Gerät im Jahr?"
+   ],
+   [
+    "💶",
+    "Je nach Modell und Alter 20 bis 80 Euro pro Jahr, bei 15 Jahren Nutzung also 300 bis 1.200 Euro. Auf dem Energielabel reicht die Skala von A, sparsam, bis G, hoher Verbrauch. Wie stellst du ihn richtig ein?"
+   ],
+   [
+    "🌡️",
+    "Jedes Grad kälter erhöht den Stromverbrauch um etwa 6 Prozent, schreibt die Verbraucherzentrale. Laut Umweltbundesamt reichen 7 Grad im Kühlschrank und minus 18 Grad im Gefrierfach aus. Und wohin stellst du das Gerät?"
+   ],
+   [
+    "📍",
+    "Nicht neben Herd, Spülmaschine oder Waschmaschine und nicht in die Sonne, empfiehlt das Umweltbundesamt. Öffne die Tür nur kurz und stelle keine warmen Speisen hinein. Lohnt es sich, ein altes Gerät auszutauschen?"
+   ],
+   [
+    "🔁",
+    "Das hängt vom Verbrauch ab. Ökologisch lohnt sich der Tausch gegen ein A-Gerät beim Kühlschrank ab etwa 240 Kilowattstunden pro Jahr. Den Jahresverbrauch findest du auf dem Energielabel. Vergleiche ihn vor dem Kauf eines neuen Geräts."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel kostet der Betrieb eines Kühlschranks laut Umweltbundesamt im Jahr?",
+    "Je nach Modell etwa 20 bis 80 Euro",
+    "Meist etwa 200 bis 300 Euro im Jahr",
+    "Weniger als 5 Euro im Jahr",
+    2
+   ],
+   [
+    "Wie ändert sich der Stromverbrauch, wenn du ihn 1 Grad kälter stellst?",
+    "Er steigt um etwa 6 Prozent",
+    "Er steigt kaum, nur um 1 Prozent",
+    "Er verdoppelt sich",
+    3
+   ],
+   [
+    "Wo sollte ein Kühlschrank nicht stehen?",
+    "Neben dem Herd oder in der Sonne",
+    "In einer kühlen Ecke der Küche",
+    "Weit weg von Wärmequellen",
+    4
+   ]
+  ],
+  "id": "kuehlstrom",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Kühlschrank",
+    "url": "https://umweltbundesamt.de/umwelttipps-fuer-den-alltag/elektrogeraete/kuehlschrank"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Strom sparen im Haushalt",
+    "url": "https://www.verbraucherzentrale.de/wissen/energie/strom-sparen/strom-sparen-im-haushalt-einfache-tipps-10734"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie finden Zugvögel ihren Weg?",
+  "s": "Zugvögel",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐦",
+    "Zugvögel finden ihren Weg, selbst wenn man sie an einen fremden Ort bringt. Das Max-Planck-Institut für Ornithologie hat das an Katzendrosseln getestet. Welcher Sinn spielt dabei eine große Rolle?"
+   ],
+   [
+    "👃",
+    "Der Geruchssinn. Erwachsene Katzendrosseln, denen Forscher mit einer Salzlösung den Geruchssinn störten, wählten eine andere Route als die Kontrollgruppe. Sie flogen nach Süden, wie Jungvögel mit angeborener Richtung. Was machte die Kontrollgruppe?"
+   ],
+   [
+    "🗺️",
+    "Sie wurde über Nacht 1.100 Kilometer nach Osten gebracht und glich die Versetzung aus: Sie flog nach Südwesten oder Westen. Die Forscher sehen darin echte Navigationsleistung. Spielt auch das Magnetfeld eine Rolle?"
+   ],
+   [
+    "🧲",
+    "Vermutlich ja. Ein Eiweiß in der Netzhaut des Rotkehlchens, das Cryptochrom 4, ist laut Universität Oldenburg höchstwahrscheinlich der gesuchte Magnetsensor. Gezeigt wurde das im Labor an isolierten Proteinen. Was fehlt noch?"
+   ],
+   [
+    "🔬",
+    "Der Nachweis, dass dieser Prozess auch in den Augen der Vögel abläuft. Bei den Katzendrosseln änderten starke Magnetimpulse die Route übrigens nicht messbar. Die Forscher schließen daraus nicht, dass der Magnetsinn keine Rolle spielt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welchen Sinn schalteten Forscher aus, sodass Katzendrosseln ihre Route änderten?",
+    "Den Geruchssinn",
+    "Das Gehör",
+    "Das Sehvermögen",
+    2
+   ],
+   [
+    "Welches Eiweiß gilt beim Rotkehlchen als wahrscheinlicher Magnetsensor?",
+    "Cryptochrom 4 in der Netzhaut",
+    "Hämoglobin im Blut",
+    "Keratin in den Federn",
+    4
+   ],
+   [
+    "Wohin flog die Kontrollgruppe nach der Versetzung nach Osten?",
+    "Nach Südwesten oder Westen, zurück zur Route",
+    "Weiter nach Osten, in die gleiche Richtung",
+    "Nach Norden, zurück zum Ausgangsort",
+    3
+   ]
+  ],
+  "id": "zugvogel",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Zugvögel: Geruchssinn als Navigationskarte",
+    "url": "https://www.mpg.de/572464/pressemitteilung200912171"
+   },
+   {
+    "publisher": "Universität Oldenburg",
+    "title": "Magnetsinn der Zugvögel: Cryptochrom 4",
+    "url": "https://idw-online.de/de/news771276"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie wurden Gravitationswellen erstmals gemessen?",
+  "s": "Raumzeit",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌌",
+    "Am 14. September 2015 fingen zwei Detektoren in den USA ein Signal auf, das nur etwa 0,2 Sekunden dauerte. Einstein hatte es rund 100 Jahre zuvor vorhergesagt. Was war das für ein Signal?"
+   ],
+   [
+    "🕳️",
+    "Gravitationswellen, also Schwingungen der Raumzeit. Sie entstanden, als zwei schwarze Löcher mit 36 und 29 Sonnenmassen zu einem Loch mit 62 Sonnenmassen verschmolzen. Wie weit war das von der Erde entfernt?"
+   ],
+   [
+    "🔭",
+    "Rund 1,3 Milliarden Lichtjahre. Das Signal kam zuerst in Livingston an, sieben Millisekunden später in Hanford. Daraus schlossen die Forscher, dass die Quelle am Südhimmel liegt. Wie misst man so etwas überhaupt?"
+   ],
+   [
+    "📏",
+    "Mit Laserinterferometern: Ein Laserstrahl läuft über eine lange Strecke, und die Welle dehnt und staucht sie minimal. Die Längenänderung war kleiner als ein Zehntausendstel eines Protondurchmessers. Gibt es bald ein noch größeres Messgerät?"
+   ],
+   [
+    "🚀",
+    "Ja, LISA: drei Satelliten im Weltraum, die laut DLR ab 2035 messen sollen. Sie bilden ein Dreieck mit etwa 2,5 Millionen Kilometern Seitenlänge. Die Arme der LIGO-Detektoren am Boden messen dagegen nur vier Kilometer."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was sind Gravitationswellen?",
+    "Schwingungen der Raumzeit",
+    "Schallwellen im Weltraum",
+    "Lichtblitze von Sternen",
+    2
+   ],
+   [
+    "Wie weit war die Quelle der ersten Messung entfernt?",
+    "Etwa 1,3 Milliarden Lichtjahre",
+    "Etwa 1,3 Millionen Lichtjahre",
+    "Etwa 13 Lichtjahre",
+    3
+   ],
+   [
+    "Wie lang ist die Seitenlänge des geplanten LISA-Dreiecks?",
+    "Etwa 2,5 Millionen Kilometer",
+    "Etwa vier Kilometer",
+    "Etwa 2,5 Kilometer",
+    5
+   ]
+  ],
+  "id": "gravwellen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Gravitationswellen 100 Jahre nach Einsteins Vorhersage entdeckt",
+    "url": "https://www.mpg.de/9959901/gravitationswellen-100-jahre-nach-einsteins-vorhersage-entdeckt"
+   },
+   {
+    "publisher": "Deutsches Zentrum für Luft- und Raumfahrt",
+    "title": "LISA",
+    "url": "https://www.dlr.de/de/ar/themen-missionen/weltraumforschung/erkundung-des-weltraums/entstehung-des-universums/lisa"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Richtig lüften: Was gegen Schimmel hilft",
+  "s": "Lüften",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🪟",
+    "Das Fenster dauerhaft auf Kipp, das spart doch Wärme? Eher nicht. Das Umweltbundesamt rät davon ab, denn es erhöht den Energieverbrauch und die Heizkosten drastisch, und die Wand am Fenster kühlt aus. Wie lüftest du dann richtig?"
+   ],
+   [
+    "⏱️",
+    "Mit Stoßlüften, Fenster weit auf: im Winter drei bis fünf Minuten, im Frühjahr oder Herbst zehn bis 20 Minuten, rät die Verbraucherzentrale. Mindestens drei- bis viermal am Tag sollte die Luft komplett getauscht werden. Geht es noch schneller?"
+   ],
+   [
+    "💨",
+    "Ja, mit Querlüften: Öffne gegenüberliegende Fenster gleichzeitig, dann wird der Luftwechsel wesentlich größer als bei einem einzelnen Fenster. Wichtig ist außerdem die Luftfeuchte in deinen Räumen. Welcher Bereich gilt als ideal?"
+   ],
+   [
+    "💧",
+    "Zwischen 40 und 60 Prozent relative Luftfeuchte. Beschlagen die Scheiben von innen, ist es Zeit zu lüften. Ab etwa 70 bis 80 Prozent direkt vor einer Wand können dort Schimmelpilze wachsen. Reicht Lüften allein?"
+   ],
+   [
+    "🌡️",
+    "Nein, auch die Wärme zählt. Ideal sind etwa 18 bis 22 Grad. Temperaturunterschiede von mehr als 5 Grad zwischen Räumen können Schimmel fördern. Halte kalte Außenwände warm und stelle Heizkörper nicht zu."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange lüftest du im Winter laut Verbraucherzentrale per Stoßlüften?",
+    "Drei bis fünf Minuten",
+    "Eine halbe Stunde",
+    "Eine Stunde am Stück",
+    2
+   ],
+   [
+    "Welche relative Luftfeuchte gilt als ideal?",
+    "Zwischen 40 und 60 Prozent",
+    "Zwischen 70 und 80 Prozent",
+    "Unter 20 Prozent",
+    4
+   ],
+   [
+    "Was solltest du vermeiden, um Heizkosten und Schimmel zu begrenzen?",
+    "Dauerhaft gekippte Fenster",
+    "Weit geöffnete Fenster für wenige Minuten",
+    "Querlüften mit gegenüberliegenden Fenstern",
+    1
+   ]
+  ],
+  "id": "lueften",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Wie lüfte ich richtig?",
+    "url": "https://www.umweltbundesamt.de/themen/gesundheit/umwelteinfluesse-auf-den-menschen/schimmel/wie-luefte-ich-richtig-tipps-tricks-zur"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Heizen und Lüften: So geht's richtig",
+    "url": "https://www.verbraucherzentrale.de/wissen/energie/strom-sparen/heizen-und-lueften-so-gehts-richtig-10426"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668002323,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
  }
 ]
