@@ -1,5 +1,8 @@
 # Dopamind
 
+**App öffnen:** https://karleberhard38-create.github.io/dopamind/
+(Am Handy im Browser öffnen und über "Teilen > Zum Home-Bildschirm" ablegen.)
+
 Die App ist eine einzelne Seite (`index.html`). Die Decks stehen in `decks.json`.
 Ein täglicher Job (`.github/workflows/neue-decks.yml`) erzeugt neue Decks mit der Claude-API, prüft sie
 (Faktencheck, Pädagogik, Quiz-Blindtest) und trägt nur bestandene Decks in `decks.json` ein.
