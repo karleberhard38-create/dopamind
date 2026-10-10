@@ -1433,5 +1433,370 @@
    "blind_erratbar": 3,
    "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
   }
+ },
+ {
+  "t": "Wie viel solltest du am Tag wirklich trinken?",
+  "s": "Trinken",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "💧",
+    "Dein Körper verliert jeden Tag Wasser und kann es nicht auf Vorrat speichern. Die Deutsche Gesellschaft für Ernährung nennt dafür einen Richtwert. Wie viel sollst du täglich trinken?"
+   ],
+   [
+    "🥛",
+    "Rund 1,5 Liter kalorienfreie oder kalorienarme Getränke, am besten Leitungswasser, Mineralwasser oder ungesüßten Tee. Das ist der Richtwert. Aber gilt er auch an heißen Tagen oder nach dem Sport?"
+   ],
+   [
+    "🔥",
+    "Nein, dann steigt der Bedarf. Bei Hitze, Sport oder schwerer körperlicher Arbeit kann er auf das Drei- bis Vierfache wachsen, weil du mehr Wasser verlierst. Musst du dieses ganze Wasser aus dem Glas trinken?"
+   ],
+   [
+    "🥒",
+    "Nicht alles. Viele Obst- und Gemüsesorten bestehen zu mehr als 90 Prozent aus Wasser, etwa Salat, Gurken, Tomaten und Melonen. Das zählt mit. Solltest du trotzdem warten, bis du Durst bekommst?"
+   ],
+   [
+    "⏰",
+    "Besser nicht. Die Verbraucherzentrale rät, nicht erst bei Durst zu trinken, sondern etwa alle zwei Stunden ein Glas. Auf Vorrat trinken bringt nichts. Stelle dir dafür morgens ein Glas Wasser an deinen Platz."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welchen Richtwert nennt die Deutsche Gesellschaft für Ernährung für die tägliche Trinkmenge?",
+    "Rund 1,5 Liter kalorienfreie oder kalorienarme Getränke",
+    "Mindestens drei Liter Wasser am Tag",
+    "So viel, wie der Durst gerade verlangt",
+    2
+   ],
+   [
+    "Wie viel Wasser steckt in Salat, Gurken und Melonen?",
+    "Mehr als 90 Prozent",
+    "Nur etwa ein Zehntel",
+    "Ungefähr die Hälfte",
+    4
+   ],
+   [
+    "Wie stark kann der Flüssigkeitsbedarf bei Hitze oder Sport steigen?",
+    "Auf das Drei- bis Vierfache des Richtwerts",
+    "Um etwa ein Zehntel mehr als sonst",
+    "Gar nicht, er bleibt jeden Tag gleich",
+    3
+   ]
+  ],
+  "id": "trinken",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsche Gesellschaft für Ernährung",
+    "title": "Getränke",
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-ernaehrungskreis/getraenke/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Wie viel sollte man am Tag trinken?",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/wie-viel-sollte-man-am-tag-trinken-24202"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791667214546,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Leitungswasser: Wirklich so sicher wie sein Ruf?",
+  "s": "Leitungswasser",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🚰",
+    "Leitungswasser kostet laut Verbraucherzentrale nur einen Bruchteil von Flaschenwasser, es ist etwa 100-mal günstiger. Du musst nur den Hahn aufdrehen. Aber ist es auch genauso sicher zu trinken wie Wasser aus der Flasche?"
+   ],
+   [
+    "✅",
+    "In der Regel ja. Das Umweltbundesamt schreibt, dass Trinkwasser in Deutschland fast überall in sehr guter Qualität am Hausanschluss ankommt. Es hält die gesetzlichen Vorgaben zu über 99 Prozent ein. Wo kann es dann doch Probleme geben?"
+   ],
+   [
+    "🏠",
+    "Im Haus selbst. Ab der Wasseruhr sind die Hausbesitzer für die Qualität verantwortlich. Problematisch sind vor allem alte Bleileitungen, für Blei gilt seit 2013 ein Grenzwert von 10 Mikrogramm pro Liter. Und was ist mit Wasser, das lange im Rohr stand?"
+   ],
+   [
+    "⏳",
+    "Wasser, das mehr als vier Stunden in den Rohren stand, ist laut Verbraucherzentrale nicht mehr frisch. Es kann verkeimen und Stoffe aus den Armaturen aufnehmen. Wie gehst du damit am besten um?"
+   ],
+   [
+    "🔧",
+    "Lass das Wasser zum Trinken und Kochen laufen, bis es kühl aus dem Hahn kommt. Das dauert bis zu 30 Sekunden. Nimm dafür Kaltwasser, denn Warmwasser ist zum Trinken nur bedingt geeignet. Das erste Wasser kannst du zum Gießen nutzen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel günstiger ist Leitungswasser laut Verbraucherzentrale als Flaschenwasser?",
+    "Etwa 100-mal günstiger",
+    "Etwa doppelt so günstig",
+    "Ungefähr gleich teuer",
+    1
+   ],
+   [
+    "Wann ist Leitungswasser laut Verbraucherzentrale vor allem ein Problem?",
+    "Wenn im Haus noch Bleileitungen liegen",
+    "Wenn es aus einem großen Wasserwerk kommt",
+    "Wenn du es kalt statt warm trinkst",
+    3
+   ],
+   [
+    "Wie nutzt du Wasser nach langer Standzeit am besten zum Trinken?",
+    "Kaltwasser laufen lassen, bis es kühl ist",
+    "Warmwasser nehmen, das ist schon durchgespült",
+    "Direkt trinken, es ist überall gleich frisch",
+    5
+   ]
+  ],
+  "id": "leitungswasser",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Trinkwasser: das beste Lebensmittel",
+    "url": "https://www.umweltbundesamt.de/themen/trinkwasser-das-beste-lebensmittel"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Kann man Leitungswasser bedenkenlos trinken?",
+    "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/kann-man-leitungswasser-bedenkenlos-trinken-112100"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791667214546,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Jemand bricht zusammen: Was machst du?",
+  "s": "Reanimation",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "❤️",
+    "Jemand bricht vor dir zusammen und reagiert nicht, wenn du ihn ansprichst und vorsichtig an den Schultern rüttelst. Er ist bewusstlos. Aber woran erkennst du, dass sein Kreislauf stillsteht?"
+   ],
+   [
+    "👃",
+    "Beuge den Kopf nach hinten, öffne den Mund und prüfe die Atmung. Atmet die Person nicht normal, liegt ein Kreislaufstillstand vor. Dann zählt jede Sekunde. Wen musst du jetzt anrufen?"
+   ],
+   [
+    "📞",
+    "Den Notruf 112. Hole andere Menschen dazu, die ihn wählen. Bist du allein, rufst du selbst an. Danach beginnst du mit der Herzdruckmassage. Wo genau drückst du?"
+   ],
+   [
+    "🫳",
+    "In der Mitte des Brustkorbs. Lege den Ballen einer Hand dorthin, die andere Hand darauf. Drücke etwa 5 bis 6 Zentimeter tief, 100 bis 120 Mal pro Minute. Wie lange musst du das durchhalten?"
+   ],
+   [
+    "✅",
+    "Mache weiter, bis der Rettungsdienst eintrifft. Drücken und Entlasten dauern gleich lang, die Brust darf nach jedem Druck ganz zurückfedern. Unterbrich nicht, um einen Defibrillator zu holen. Ist einer da, folge seinen Sprachanweisungen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welche Nummer wählst du bei einem Kreislaufstillstand?",
+    "Den Notruf mit der Nummer 112",
+    "Den Polizeinotruf und dann abwarten",
+    "Die Nummer deines Hausarztes",
+    3
+   ],
+   [
+    "Wie tief und wie schnell drückst du bei einem Erwachsenen?",
+    "Etwa 5 bis 6 Zentimeter, 100 bis 120 Mal pro Minute",
+    "Nur leicht, etwa 2 Zentimeter tief",
+    "Sehr kräftig, so tief wie möglich",
+    4
+   ],
+   [
+    "Wann hörst du mit der Herzdruckmassage auf?",
+    "Wenn der Rettungsdienst übernimmt",
+    "Sobald die Arme müde werden",
+    "Wenn nach fünf Minuten nichts passiert",
+    5
+   ]
+  ],
+  "id": "reanimation",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Rotes Kreuz",
+    "title": "Erste-Hilfe-Maßnahmen zur Wiederbelebung: Prüfen, Rufen, Drücken",
+    "url": "https://www.drk.de/hilfe-in-deutschland/erste-hilfe/erste-hilfe-massnahmen-zur-wiederbelebung-pruefen-rufen-druecken/"
+   },
+   {
+    "publisher": "Deutsches Rotes Kreuz",
+    "title": "Herz-Lungen-Wiederbelebung",
+    "url": "https://www.drk.de/hilfe-in-deutschland/erste-hilfe/herz-lungen-wiederbelebung/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791667214546,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Energydrinks: Wie viel Koffein ist zu viel?",
+  "s": "Energydrinks",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "⚡",
+    "Eine Dose Energydrink hat 250 Milliliter. Wie viel Koffein steckt darin? Das Bundesinstitut für Risikobewertung nennt etwa 80 Milligramm. Wann wird das für gesunde Erwachsene zu viel?"
+   ],
+   [
+    "☕",
+    "Gesunde Erwachsene vertragen eine Einzeldosis bis 200 Milligramm Koffein, über den Tag verteilt sind bis zu 400 Milligramm unbedenklich. Drei Dosen mit zusammen 240 Milligramm überschreiten die Einzeldosis. Und wie ist das bei Jugendlichen?"
+   ],
+   [
+    "🧒",
+    "Für Kinder und Jugendliche gilt ein Wert von 3 Milligramm pro Kilogramm Körpergewicht. Hohe Mengen in kurzer Zeit können Nervosität, Schlaflosigkeit und Herzrasen auslösen. Was fand eine Studie bei Jugendlichen mit hohem Konsum?"
+   ],
+   [
+    "📊",
+    "Fast die Hälfte der Jugendlichen mit hohem Konsum kannte schon Herzklopfen, schlechten Schlaf oder Kopfschmerzen. Bei den Herzwerten gab es aber keine Unterschiede. Langzeitfolgen sind unbekannt. Was ändert sich mit Alkohol?"
+   ],
+   [
+    "🍺",
+    "Das Bundesinstitut für Risikobewertung warnt vor großen Mengen Energydrinks zusammen mit viel Alkohol, weil sich die Effekte auf Herz und Kreislauf gegenseitig verstärken könnten. Mische sie deshalb nicht, und lies das Etikett auf Koffeinangabe und Warnhinweis."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Koffein steckt laut Bundesinstitut für Risikobewertung in einer 250-Milliliter-Dose?",
+    "Etwa 80 Milligramm",
+    "Etwa ein Gramm",
+    "Nur Spuren, kaum messbar",
+    1
+   ],
+   [
+    "Welche Einzeldosis Koffein gilt für gesunde Erwachsene als unbedenklich?",
+    "Bis 200 Milligramm",
+    "Bis zu einem Gramm",
+    "Bis zu 20 Milligramm",
+    2
+   ],
+   [
+    "Wovor warnt das Bundesinstitut bei Energydrinks besonders?",
+    "Vor großen Mengen zusammen mit viel Alkohol",
+    "Vor dem Trinken am Morgen",
+    "Vor dem Kühlen im Kühlschrank",
+    5
+   ]
+  ],
+  "id": "energydrinks",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesinstitut für Risikobewertung",
+    "title": "Fragen und Antworten zu Koffein und koffeinhaltigen Lebensmitteln, einschließlich Energy Drinks",
+    "url": "https://www.bfr.bund.de/de/fragen_und_antworten_zu_koffein_und_koffeinhaltigen_lebensmitteln__einschliesslich_energy_drinks-194760.html"
+   },
+   {
+    "publisher": "Bundesinstitut für Risikobewertung",
+    "title": "Energy drinks: BfR updates its assessment of the health risks to children and adolescents",
+    "url": "https://www.bfr.bund.de/en/opinions/energy-drinks-the-bfr-updates-its-assessment-of-the-health-risks-to-children-and-adolescents-associated-with-acute-and-chronic-consumption/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791667214546,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Rauchmelder: Warum 120 Sekunden alles entscheiden",
+  "s": "Rauchmelder",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🔥",
+    "Im Brandfall bleiben durchschnittlich nur 120 Sekunden, um sich in Sicherheit zu bringen, schreibt das Bundesamt für Bevölkerungsschutz. Gefährlich ist vor allem der Brandrauch. Warum bemerkst du ihn nachts nicht?"
+   ],
+   [
+    "😴",
+    "Weil nachts auch der Geruchssinn schläft, wie die Initiative Rauchmelder retten Leben schreibt. Etwa zwei Drittel aller Brandopfer werden im Schlaf überrascht. Ein guter Rauchmelder warnt mit mehr als 85 Dezibel. Wo ist er Pflicht?"
+   ],
+   [
+    "🏠",
+    "In allen Bundesländern in Schlafzimmern, Kinderzimmern und Fluren, die als Fluchtweg dienen. In Berlin und Brandenburg gilt die Pflicht auch für Wohnräume. Und wo genau hängst du den Melder auf?"
+   ],
+   [
+    "📍",
+    "An die Decke, am besten in die Raummitte. Geht das nicht, halte mindestens 50 Zentimeter Abstand zu Wänden, Balken und hohen Möbeln. Auf einen Schrank gehört er nicht. Wie lange hält so ein Melder?"
+   ],
+   [
+    "🔄",
+    "Etwa 10 Jahre. Danach tauschst du den ganzen Melder aus, so verlangt es die Norm DIN 14676. Prüfe ihn außerdem einmal im Jahr, unabhängig vom Batteriestand, und achte beim Kauf auf das Q-Zeichen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Warum ist ein Rauchmelder nachts besonders wichtig?",
+    "Weil nachts auch der Geruchssinn schläft",
+    "Weil nachts mehr Geräte laufen und Brände öfter entstehen",
+    "Weil Feuer nachts schneller brennt",
+    2
+   ],
+   [
+    "Wo montierst du einen Rauchmelder am besten?",
+    "An der Decke, am besten in der Raummitte",
+    "An der Wand direkt über dem Bett",
+    "Auf einem Schrank in der Ecke",
+    4
+   ],
+   [
+    "Nach wie vielen Jahren tauschst du einen Rauchmelder laut Norm aus?",
+    "Nach 10 Jahren",
+    "Nach 2 Jahren",
+    "Nach etwa 25 Jahren",
+    5
+   ]
+  ],
+  "id": "rauchmelder",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe",
+    "title": "Rauchmelder retten Leben: Freitag der 13. ist Rauchmeldertag",
+    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2021/08/rauchmeldertag.html"
+   },
+   {
+    "publisher": "Rauchmelder retten Leben (Forum Brandrauchprävention)",
+    "title": "Rauchmelder Tipps",
+    "url": "https://www.rauchmelder-lebensretter.de/rauchmelder-leitfaden/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Rauchmelder austauschen: Wann es nötig ist",
+    "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/rauchmelder-austauschen-wann-es-noetig-ist-und-worauf-sie-achten-sollten-116728"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791667214546,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
  }
 ]
