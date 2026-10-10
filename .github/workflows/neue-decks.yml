@@ -4,7 +4,18 @@ on:
   # TÄGLICHER LAUF PAUSIERT bis die Kosten pro Deck stimmen. Wieder einschalten: die zwei Zeilen darunter einkommentieren.
   # schedule:
   #   - cron: "0 5 * * *"      # täglich 05:00 UTC (7:00 Uhr deutscher Sommerzeit)
-  workflow_dispatch:          # zusätzlich per Knopf startbar
+  workflow_dispatch:
+    inputs:
+      modus:
+        description: "abruftest = nur prüfen, ob alle Quellseiten abrufbar sind (kostenlos). decks = Decks erzeugen (kostet API-Guthaben)"
+        type: choice
+        options:
+          - abruftest
+          - decks
+        default: abruftest
+      anzahl:
+        description: "Wie viele Decks im Modus decks"
+        default: "2"
 
 permissions:
   contents: write
@@ -22,17 +33,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install anthropic
-      - name: Pipeline ausführen
+      - run: pip install anthropic requests trafilatura pypdf
+      - name: Abruftest (kostenlos)
+        if: ${{ github.event.inputs.modus == 'abruftest' }}
+        run: python pipeline/run.py --fetch-test
+      - name: Decks erzeugen
+        if: ${{ github.event.inputs.modus != 'abruftest' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          DECKS_PER_RUN: ${{ vars.DECKS_PER_RUN || '3' }}
-          DAILY_BUDGET_USD: ${{ vars.DAILY_BUDGET_USD || '3.00' }}
+          DECKS_PER_RUN: ${{ github.event.inputs.anzahl || vars.DECKS_PER_RUN || '2' }}
+          DAILY_BUDGET_USD: ${{ vars.DAILY_BUDGET_USD || '1.50' }}
         run: python pipeline/run.py
       - name: Ergebnis speichern
         run: |
           git config user.name "dopamind-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add decks.json pipeline/topics.json pipeline/log.jsonl
-          git diff --cached --quiet || git commit -m "Neue Decks: $(date -u +%F)"
+          git add decks.json pipeline/sources.json pipeline/fetch_report.json pipeline/log.jsonl 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Pipeline-Lauf: $(date -u +%F)"
+          git pull --rebase -q || true
           git push

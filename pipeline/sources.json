@@ -1,0 +1,774 @@
+[
+ {
+  "id": "mhd",
+  "k": "Ernährung",
+  "t": "Mindesthaltbarkeitsdatum: Wann darfst du Essen noch essen?",
+  "hook": "Das MHD ist kein Wegwerfdatum, das Verbrauchsdatum schon.",
+  "sources": [
+   {
+    "publisher": "BZfE",
+    "title": "Haltbarkeit von Lebensmitteln",
+    "url": "https://www.bzfe.de/kueche-und-alltag/kochen/haltbarkeit-von-lebensmitteln"
+   },
+   {
+    "publisher": "BMLEH",
+    "title": "Mindesthaltbarkeits- und Verbrauchsdatum",
+    "url": "https://www.bmleh.de/DE/themen/ernaehrung/lebensmittelverschwendung/mindesthaltbarkeit-kein-verfallsdatum.html"
+   }
+  ],
+  "tier": "A",
+  "note": "zweite Quelle noch nicht geöffnet",
+  "status": "queue"
+ },
+ {
+  "id": "kuehlschr",
+  "k": "Ernährung",
+  "t": "Wie kalt muss dein Kühlschrank sein?",
+  "hook": "Ein vollgestopfter Kühlschrank wird wärmer, weil die Luft nicht mehr zirkulieren kann.",
+  "sources": [
+   {
+    "publisher": "BfR",
+    "title": "Lebensmittelinfektionen im Privathaushalt",
+    "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/lebensmittelinfektionen-im-privathaushalt-quellen-erkennen-risiken-vermeiden/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Lebensmittel sicher einkaufen und lagern",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/lebensmittel-sicher-einkaufen-und-lagern-8336"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "salz",
+  "k": "Ernährung",
+  "t": "Wie viel Salz ist zu viel, und woher kommt es wirklich?",
+  "hook": "Nur etwa ein Fünftel des Salzes kommt aus dem eigenen Salzstreuer.",
+  "sources": [
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Fragen und Antworten zu Salz",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/fragen-und-antworten-zu-salz-das-sollten-sie-wissen-11384"
+   },
+   {
+    "publisher": "Stiftung Warentest",
+    "title": "Bluthochdruck: Mehr als 6 Gramm Salz am Tag schaden",
+    "url": "https://www.test.de/Bluthochdruck-Mehr-als-6-Gramm-Salz-am-Tag-schaden-4987786-0/"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "acrylamid",
+  "k": "Ernährung",
+  "t": "Acrylamid: Warum Pommes lieber goldgelb als braun sein sollten",
+  "hook": "Der Stoff entsteht erst beim Bräunen über etwa 120 Grad.",
+  "sources": [
+   {
+    "publisher": "BfR",
+    "title": "Fragen und Antworten zu Acrylamid in Lebensmitteln",
+    "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zu-acrylamid-in-lebensmitteln/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Acrylamid: Problematischer Stoff in Lebensmitteln",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/acrylamid-problematischer-stoff-in-lebensmitteln-13879"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "ballast",
+  "k": "Ernährung",
+  "t": "Ballaststoffe und Vollkorn: Was sie im Darm bewirken",
+  "hook": "Im Schnitt essen wir nur etwa 18 bis 19 Gramm Ballaststoffe am Tag, empfohlen sind 30.",
+  "sources": [
+   {
+    "publisher": "BZfE",
+    "title": "Ballaststoffe",
+    "url": "https://www.bzfe.de/essen-und-gesundheit/naehrstoffe/ballaststoffe"
+   },
+   {
+    "publisher": "DGE",
+    "title": "Vollkorn ist die beste Wahl",
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/vollkorn/"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "zucker",
+  "k": "Ernährung",
+  "t": "Wie viel Zucker steckt in Erfrischungsgetränken?",
+  "hook": "Eine Flasche des zuckerreichsten getesteten Getränks enthält etwa 12 Zuckerwürfel.",
+  "sources": [
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Zu viel Zucker in Erfrischungsgetränken",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/zu-viel-zucker-in-erfrischungsgetraenken-39802"
+   },
+   {
+    "publisher": "DGE",
+    "title": "Süßes, Salziges und Fettiges",
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/suesses-salziges-und-fettiges/"
+   }
+  ],
+  "tier": "B",
+  "note": "Testzahlen stammen aus einer Stichprobe (Stand 2026)",
+  "status": "queue"
+ },
+ {
+  "id": "hitze",
+  "k": "Gesundheit",
+  "t": "Hitze: Warum heiße Nächte besonders gefährlich sind",
+  "hook": "In dicht bebauten Innenstädten gibt es mehr als dreimal so oft Tropennächte wie auf Freiflächen.",
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Gesundheitsrisiken durch Hitze",
+    "url": "https://www.umweltbundesamt.de/daten/umwelt-gesundheit/gesundheitsrisiken-durch-hitze"
+   },
+   {
+    "publisher": "Klima-Mensch-Gesundheit (BMG)",
+    "title": "Empfehlungen bei Hitze",
+    "url": "https://www.klima-mensch-gesundheit.de/hitzeschutz/empfehlungen-bei-hitze/"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "zecke",
+  "k": "Gesundheit",
+  "t": "Zeckenstich: Wie hoch ist das Risiko wirklich?",
+  "hook": "Bis zu 35 Prozent der Zecken tragen Borrelien, aber nur etwa 1 von 100 Stichen führt zur Erkrankung.",
+  "sources": [
+   {
+    "publisher": "IQWiG (gesundheitsinformation.de)",
+    "title": "Borreliose",
+    "url": "https://www.gesundheitsinformation.de/borreliose.html"
+   },
+   {
+    "publisher": "RKI",
+    "title": "RKI-Ratgeber FSME",
+    "url": "https://www.rki.de/DE/Aktuelles/Publikationen/RKI-Ratgeber/Ratgeber/Ratgeber_FSME.html"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "uvhaut",
+  "k": "Gesundheit",
+  "t": "UV-Strahlung: Was sie in der Haut anrichtet",
+  "hook": "DNA-Schäden entstehen schon bei geringer UV-Dosis, lange vor einem Sonnenbrand.",
+  "sources": [
+   {
+    "publisher": "Krebsinformationsdienst (DKFZ)",
+    "title": "Hautkrebsrisiko UV-Strahlung",
+    "url": "https://www.krebsinformationsdienst.de/service/iblatt/iblatt-uv-sonnenschutz.pdf"
+   },
+   {
+    "publisher": "Bundesamt für Strahlenschutz",
+    "title": "Wie wirkt UV-Strahlung?",
+    "url": "https://www.bfs.de/DE/themen/opt/uv/wirkung/einfuehrung/einfuehrung.html"
+   }
+  ],
+  "tier": "B",
+  "note": "BfS-Seite ist kurz (ca. 350 Wörter)",
+  "status": "queue"
+ },
+ {
+  "id": "laerm",
+  "k": "Gesundheit",
+  "t": "Lärm und Gehör: Warum zerstörte Haarzellen nie nachwachsen",
+  "hook": "Zerstörte Haarzellen im Innenohr wachsen nicht nach.",
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Gehörschäden",
+    "url": "https://www.umweltbundesamt.de/themen/verkehr-laerm/laermwirkung/gehoerschaeden"
+   },
+   {
+    "publisher": "HNO-Gesellschaft",
+    "title": "Hörverlust bei Jugendlichen (Pressemitteilung)",
+    "url": "https://legacy.hno.org/storage/app/media/PDF/presse/PM_Hoerverlust_bei_Jugendlichen.pdf"
+   }
+  ],
+  "tier": "B",
+  "note": "zweite Quelle ist ein PDF von 2014",
+  "status": "queue"
+ },
+ {
+  "id": "bewegung",
+  "k": "Gesundheit",
+  "t": "Wie viel Bewegung braucht ein Erwachsener wirklich?",
+  "hook": "Laut WHO erreicht rund jeder Dritte die empfohlene Bewegung nicht.",
+  "sources": [
+   {
+    "publisher": "WHO",
+    "title": "Physical activity (Fact sheet)",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+   },
+   {
+    "publisher": "Bundesgesundheitsministerium (gesund.bund.de)",
+    "title": "Gesund durch Bewegung",
+    "url": "https://gesund.bund.de/en/gesund-durch-bewegung"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "stress",
+  "k": "Psyche",
+  "t": "Was passiert im Körper, wenn wir gestresst sind?",
+  "hook": "Stress läuft über zwei Wege gleichzeitig: einen schnellen und einen langsamen.",
+  "sources": [
+   {
+    "publisher": "American Psychological Association",
+    "title": "Stress effects on the body",
+    "url": "https://www.apa.org/topics/stress/body"
+   },
+   {
+    "publisher": "Gesundheitsportal Österreich",
+    "title": "Stress: Was ist das?",
+    "url": "https://www.gesundheit.gv.at/leben/stress/was-ist-das.html"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "multitask",
+  "k": "Psyche",
+  "t": "Warum ist Multitasking weniger effektiv, als wir denken?",
+  "hook": "Selbst nach 12 Tagen Training arbeitet das Gehirn bei zwei Aufgaben nicht wirklich parallel.",
+  "sources": [
+   {
+    "publisher": "American Psychological Association",
+    "title": "Multitasking: Switching costs",
+    "url": "https://www.apa.org/topics/research/multitasking"
+   },
+   {
+    "publisher": "Universität Halle-Wittenberg",
+    "title": "Studie zeigt Grenzen des Multitasking",
+    "url": "https://pressemitteilungen.pr.uni-halle.de/index.php?modus=pmanzeige&pm_id=6039"
+   }
+  ],
+  "tier": "A-",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "einsam",
+  "k": "Psyche",
+  "t": "Was ist Einsamkeit eigentlich, und wovon hängt sie ab?",
+  "hook": "Einsamkeit hat nichts damit zu tun, wie viele Menschen um dich sind.",
+  "sources": [
+   {
+    "publisher": "Kompetenznetz Einsamkeit",
+    "title": "Einsamkeit",
+    "url": "https://kompetenznetz-einsamkeit.de/einsamkeit"
+   },
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Frauen leiden häufiger unter Einsamkeit und Depression im Alter",
+    "url": "https://www.mpg.de/12795815/frauen-leiden-haeufiger-unter-einsamkeit-und-depression-im-alter"
+   }
+  ],
+  "tier": "B",
+  "note": "erste Seite kurz; zweite Quelle behandelt ältere Menschen",
+  "status": "queue"
+ },
+ {
+  "id": "sportpsyche",
+  "k": "Psyche",
+  "t": "Wie hilft Bewegung gegen Stress und für die Stimmung?",
+  "hook": "Ausdauerbelastung fühlt sich körperlich ein bisschen wie Angst an.",
+  "sources": [
+   {
+    "publisher": "American Psychological Association",
+    "title": "Working out boosts brain health",
+    "url": "https://www.apa.org/topics/exercise-fitness/stress"
+   },
+   {
+    "publisher": "NHS",
+    "title": "Be active for your mental health",
+    "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/"
+   }
+  ],
+  "tier": "A-",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "aufwaermen",
+  "k": "Sport",
+  "t": "Warum ist Aufwärmen vor dem Sport sinnvoll?",
+  "hook": "Beim Aufwärmen steigt die Muskeltemperatur auf etwa 40 Grad.",
+  "sources": [
+   {
+    "publisher": "Mayo Clinic",
+    "title": "Aerobic exercise: How to warm up and cool down",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20045517"
+   },
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Warm-up Übungen",
+    "url": "https://www.tk.de/techniker/magazin/sport/rueckentraining/aufwaermuebungen-2004048"
+   }
+  ],
+  "tier": "B+",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "trinkensport",
+  "k": "Sport",
+  "t": "Wie viel sollte man beim Sport trinken?",
+  "hook": "Bei Einheiten unter 30 bis 40 Minuten ist meist gar kein Trinken nötig.",
+  "sources": [
+   {
+    "publisher": "DGE Arbeitskreis Sporternährung",
+    "title": "Flüssigkeitsmanagement im Sport",
+    "url": "https://www.ifss.kit.edu/rd_download/2. Forschung/Leistungsphysiologie und Ernährung/Positionspapiere/Flüssigkeitsmanagment_im_Sport.pdf"
+   },
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Wieso Sie beim Sport viel trinken sollten",
+    "url": "https://www.tk.de/techniker/gesundheit-foerdern/sport-und-bewegung/basics/trinken-sport-schwitzen-2004666"
+   }
+  ],
+  "tier": "A-",
+  "note": "erste Quelle ist ein langes PDF",
+  "status": "queue"
+ },
+ {
+  "id": "kraft",
+  "k": "Sport",
+  "t": "Wie oft solltest du Krafttraining machen?",
+  "hook": "20 bis 30 Minuten, zweimal pro Woche, können schon spürbaren Muskelzuwachs bringen.",
+  "sources": [
+   {
+    "publisher": "Mayo Clinic",
+    "title": "Strength training",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670"
+   },
+   {
+    "publisher": "American Heart Association",
+    "title": "Strength and Resistance Training Exercise",
+    "url": "https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "passwort",
+  "k": "Alltag",
+  "t": "Wie lang und wie einzigartig sollte ein Passwort sein?",
+  "hook": "Das BSI empfiehlt als Merkhilfe 5 bis 6 zufällige Wörter statt komplizierter Zeichenfolgen.",
+  "sources": [
+   {
+    "publisher": "BSI",
+    "title": "Sichere Passwörter erstellen",
+    "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Starke Passwörter erstellen",
+    "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/datenschutz/starke-passwoerter-erstellen-so-schuetzen-sie-ihre-onlinekonten-effektiv-11672"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "phishing",
+  "k": "Alltag",
+  "t": "Woran erkennst du Phishing-Mails?",
+  "hook": "Wer einen Dateianhang einer Phishing-Mail öffnet, holt sich fast sicher ein Schadprogramm.",
+  "sources": [
+   {
+    "publisher": "Polizeiliche Kriminalprävention",
+    "title": "Beim Phishing greifen Betrüger sensible Daten ab",
+    "url": "https://www.polizei-beratung.de/themen-und-tipps/gefahren-im-internet/phishing/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Phishing-Mails: Woran Sie sie erkennen",
+    "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/phishingradar/phishingmails-woran-sie-sie-erkennen-und-worauf-sie-achten-muessen-6073"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "notvorrat",
+  "k": "Alltag",
+  "t": "Wie legst du einen Notvorrat an?",
+  "hook": "Ohne Flüssigkeit überlebt ein Mensch nur etwa vier Tage.",
+  "sources": [
+   {
+    "publisher": "BBK",
+    "title": "Essen und Trinken bevorraten",
+    "url": "https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/So-koennen-Sie-sich-vorbereiten/Bevorraten/bevorraten_node.html"
+   },
+   {
+    "publisher": "BZfE",
+    "title": "Private Ernährungsvorsorge",
+    "url": "https://www.bzfe.de/kueche-und-alltag/private-ernaehrungsvorsorge"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "kuehlstrom",
+  "k": "Alltag",
+  "t": "Wie viel Strom frisst dein Kühlschrank?",
+  "hook": "Jedes Grad kälter als nötig erhöht den Verbrauch um etwa 6 Prozent.",
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Kühlschrank: unnötigen Stromverbrauch vermeiden",
+    "url": "https://umweltbundesamt.de/umwelttipps-fuer-den-alltag/elektrogeraete/kuehlschrank"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Strom sparen im Haushalt",
+    "url": "https://www.verbraucherzentrale.de/wissen/energie/strom-sparen/strom-sparen-im-haushalt-einfache-tipps-10734"
+   }
+  ],
+  "tier": "A",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "lueften",
+  "k": "Alltag",
+  "t": "Richtig lüften: Was gegen Schimmel hilft",
+  "hook": "Dauerhaft gekippte Fenster erhöhen Heizkosten drastisch.",
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Wie lüfte ich richtig?",
+    "url": "https://www.umweltbundesamt.de/themen/gesundheit/umwelteinfluesse-auf-den-menschen/schimmel/wie-luefte-ich-richtig-tipps-tricks-zur"
+   },
+   {
+    "publisher": "BMUKN",
+    "title": "Richtiges Lüften und Heizen",
+    "url": "https://www.bmuv.de/themen/gesundheit-chemikalien/gesundheit/innenraumluft/richtiges-lueften-und-heizen"
+   }
+  ],
+  "tier": "A",
+  "note": "zweite Quelle noch nicht geöffnet",
+  "status": "queue"
+ },
+ {
+  "id": "vpi",
+  "k": "Wirtschaft",
+  "t": "Wie wird Inflation gemessen?",
+  "hook": "Die Inflationsrate beruht auf einem Warenkorb mit rund 700 Gütern und Dienstleistungen.",
+  "sources": [
+   {
+    "publisher": "Statistisches Bundesamt",
+    "title": "Verbraucherpreisindex",
+    "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Inflation verstehen und Geld sparen",
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/kredit-schulden-insolvenz/inflation-verstehen-und-geld-sparen-86778"
+   }
+  ],
+  "tier": "A-",
+  "note": "keine tagesaktuellen Raten verwenden, nur das Prinzip",
+  "status": "queue"
+ },
+ {
+  "id": "etf",
+  "k": "Wirtschaft",
+  "t": "Wie funktioniert ein ETF, und was kostet er?",
+  "hook": "Bei 10.000 Euro Anlage und 0,4 Prozent Kostenquote fallen im ersten Jahr etwa 40 Euro Kosten an.",
+  "sources": [
+   {
+    "publisher": "BaFin",
+    "title": "Exchange Traded Funds (ETFs) im Überblick",
+    "url": "https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/geldanlage/wertpapiere/etf/etf.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "ETF für Anfänger",
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/altersvorsorge/etf-fuer-anfaenger-die-haeufigsten-fragen-einfach-erklaert-109444"
+   }
+  ],
+  "tier": "A-",
+  "note": "keine Anlageempfehlung, nur Funktionsweise",
+  "status": "queue"
+ },
+ {
+  "id": "dispo",
+  "k": "Wirtschaft",
+  "t": "Wie funktioniert der Dispo, und warum ist er so teuer?",
+  "hook": "Rund 70 Prozent konnten nicht sagen, wie hoch die Zinsen für ihren Dispo sind.",
+  "sources": [
+   {
+    "publisher": "BaFin",
+    "title": "Junge Erwachsene oft unbedarft bei Krediten",
+    "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Fachartikel/2024/fa_bj_0205_Junge_Erwachsene_Kredite.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale Hamburg",
+    "title": "Dispozinsen weiter gestiegen",
+    "url": "https://www.vzhh.de/themen/finanzen/konto-karte/dispozinsen-weiter-gestiegen"
+   }
+  ],
+  "tier": "B",
+  "note": "Zahlen mit Stand-Jahr nennen",
+  "status": "queue"
+ },
+ {
+  "id": "steuer",
+  "k": "Wirtschaft",
+  "t": "Wie funktioniert die Einkommensteuer?",
+  "hook": "Nur 7,4 Prozent der Steuerpflichtigen zahlten 2022 den Spitzensteuersatz.",
+  "sources": [
+   {
+    "publisher": "bpb",
+    "title": "Grundlagen der Besteuerung",
+    "url": "https://www.bpb.de/shop/zeitschriften/izpb/steuern-und-finanzen-360/555583/grundlagen-der-besteuerung/"
+   },
+   {
+    "publisher": "Statistisches Bundesamt",
+    "title": "Gut 7 % der Steuerpflichtigen zahlten 2022 den Spitzensteuersatz",
+    "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_194_73111.html"
+   }
+  ],
+  "tier": "B",
+  "note": "Beträge ändern sich jährlich, immer mit Jahr nennen",
+  "status": "queue"
+ },
+ {
+  "id": "gravwellen",
+  "k": "Wissenschaft",
+  "t": "Wie wurden Gravitationswellen erstmals gemessen?",
+  "hook": "Zwei Schwarze Löcher verschmolzen vor rund 1,3 Milliarden Lichtjahren, und die Erde hörte das Signal knapp 0,2 Sekunden lang.",
+  "sources": [
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Gravitationswellen 100 Jahre nach Einsteins Vorhersage entdeckt",
+    "url": "https://www.mpg.de/9959901/gravitationswellen-100-jahre-nach-einsteins-vorhersage-entdeckt"
+   },
+   {
+    "publisher": "DLR",
+    "title": "LISA",
+    "url": "https://www.dlr.de/de/ar/themen-missionen/weltraumforschung/erkundung-des-weltraums/entstehung-des-universums/lisa"
+   }
+  ],
+  "tier": "A-",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "vulkan",
+  "k": "Wissenschaft",
+  "t": "Wie funktioniert ein Vulkan?",
+  "hook": "Als Deutschlands jüngster Vulkanausbruch gilt der im Laacher-See-Gebiet vor rund 11.000 Jahren.",
+  "sources": [
+   {
+    "publisher": "Wissensplattform Erde und Umwelt (Helmholtz)",
+    "title": "FAQ Vulkanismus",
+    "url": "https://eskp.de/fileadmin/eskp/publikationen/fragen_und_antworten/FAQ-Vulkanismus.pdf"
+   },
+   {
+    "publisher": "LMU München",
+    "title": "Zwischen den Eruptionen: Bohrungen liefern Einblicke ins Magma",
+    "url": "https://www.lmu.de/de/newsroom/newsuebersicht/news/zwischen-den-eruptionen-bohrungen-liefern-einblicke-ins-magma-2e5d6d90.html"
+   }
+  ],
+  "tier": "B+",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "atomuhr",
+  "k": "Wissenschaft",
+  "t": "Wie genau ist eine Atomuhr?",
+  "hook": "Eine Sekunde sind genau 9.192.631.770 Schwingungen eines Cäsium-Atoms.",
+  "sources": [
+   {
+    "publisher": "PTB",
+    "title": "Realisierung der SI-Sekunde (PTB-Mitteilungen 2/2016)",
+    "url": "https://oar.ptb.de/files/download/310.20160202.pdf"
+   }
+  ],
+  "tier": "B-",
+  "note": "nur eine gute Quelle, zweite Quelle (PTB-Webseite) noch zu suchen",
+  "status": "queue"
+ },
+ {
+  "id": "polarlicht",
+  "k": "Wissenschaft",
+  "t": "Wie entstehen Polarlichter?",
+  "hook": "Grüne Polarlichter leuchten in etwa 100 Kilometern Höhe, rote erst über 200.",
+  "sources": [
+   {
+    "publisher": "DLR",
+    "title": "Rasende Feuerfüchse am Firmament",
+    "url": "https://www.dlr.de/de/medien/publikationen/magazine/alle-magazine-webversion/dlrmagazin-177/rasende-feuerfuechse-am-firmament"
+   },
+   {
+    "publisher": "Canadian Space Agency",
+    "title": "What are the northern lights?",
+    "url": "https://asc-csa.gc.ca/eng/astronomy/auroramax/sun-aurora.asp"
+   }
+  ],
+  "tier": "B",
+  "note": "zweite Seite kurz (ca. 400 Wörter)",
+  "status": "queue"
+ },
+ {
+  "id": "tsunami",
+  "k": "Wissenschaft",
+  "t": "Wie entsteht ein Tsunami?",
+  "hook": "Im tiefen Ozean rast ein Tsunami mit rund 800 km/h, vor der Küste bremst er auf etwa 50 km/h ab.",
+  "sources": [
+   {
+    "publisher": "GEOMAR",
+    "title": "Tsunami",
+    "url": "https://www.Geomar.de/fileadmin/content/entdecken/naturgefahren_meer/rollup_tsunami.pdf"
+   },
+   {
+    "publisher": "GFZ Potsdam",
+    "title": "Das Tsunami-Frühwarnsystem für den Indischen Ozean",
+    "url": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_235688_2/component/file_235687/10143DE.pdf"
+   }
+  ],
+  "tier": "B+",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "zugvogel",
+  "k": "Biologie",
+  "t": "Wie finden Zugvögel ihren Weg?",
+  "hook": "Ein Protein im Rotkehlchen-Auge gilt als möglicher Magnetsensor.",
+  "sources": [
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Immer der Nase nach",
+    "url": "https://www.mpg.de/572464/pressemitteilung200912171"
+   },
+   {
+    "publisher": "Universität Oldenburg (idw)",
+    "title": "Cryptochrom 4 im Rotkehlchen",
+    "url": "https://idw-online.de/de/news771276"
+   }
+  ],
+  "tier": "B+",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "fledermaus",
+  "k": "Biologie",
+  "t": "Wie hören Fledermäuse im Dunkeln, und wie wehren sich Nachtfalter?",
+  "hook": "Das Ohr eines Nachtfalters besteht nur aus einem Trommelfell und zwei Nervenzellen.",
+  "sources": [
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Die komplexen Klangwelten der Fledermäuse",
+    "url": "https://www.mpg.de/15111519/fledermaus"
+   },
+   {
+    "publisher": "LMU München",
+    "title": "Exzellente Navigation mit wenig Information",
+    "url": "https://www.lmu.de/de/newsroom/newsuebersicht/news/exzellente-navigation-mit-wenig-information-87896f72.html"
+   }
+  ],
+  "tier": "B+",
+  "note": "",
+  "status": "queue"
+ },
+ {
+  "id": "schwaenzel",
+  "k": "Biologie",
+  "t": "Wie sprechen Honigbienen im Schwänzeltanz?",
+  "hook": "Bienenarten haben Tanzdialekte.",
+  "sources": [
+   {
+    "publisher": "Universität Würzburg (idw)",
+    "title": "Tanzdialekte bei Honigbienen",
+    "url": "https://idw-online.de/de/news742572"
+   },
+   {
+    "publisher": "CORDIS (EU-Kommission)",
+    "title": "Understanding the honeybee waggle dance",
+    "url": "https://www.cordis.europa.eu/article/id/430410-understanding-the-honeybee-waggle-dance/de"
+   }
+  ],
+  "tier": "B",
+  "note": "zweite Quelle mehr Projekt als Inhalt",
+  "status": "queue"
+ },
+ {
+  "id": "ameisen",
+  "k": "Biologie",
+  "t": "Wie züchten Blattschneiderameisen Pilze?",
+  "hook": "Ihre Pilzgärten werden mit Bakterien gegen Schadpilze geschützt.",
+  "sources": [
+   {
+    "publisher": "Max-Planck-Institut für chemische Ökologie",
+    "title": "Pilzgärten der Blattschneiderameisen und Antibiotika",
+    "url": "https://beutenberg.de/fileadmin/import/images/e260bf8d74/MPI-CE_Pressem_Haeder2009_de.pdf"
+   },
+   {
+    "publisher": "Universität Würzburg (idw)",
+    "title": "Körpergröße und Arbeitsteilung bei Blattschneiderameisen",
+    "url": "https://idw-online.de/de/news817473"
+   }
+  ],
+  "tier": "B",
+  "note": "zweite Quelle kurz",
+  "status": "queue"
+ },
+ {
+  "id": "winterschlaf",
+  "k": "Biologie",
+  "t": "Wie sparen Tiere im Winterschlaf Energie?",
+  "hook": "Ein Siebenschläfer fährt sein Herz von etwa 350 auf 8 Schläge pro Minute herunter.",
+  "sources": [
+   {
+    "publisher": "Veterinärmedizinische Universität Wien",
+    "title": "Standby: Energie sparen im Winterschlaf",
+    "url": "https://phaidra.vetmeduni.ac.at/api/object/o:984/download"
+   },
+   {
+    "publisher": "Veterinärmedizinische Universität Wien (idw)",
+    "title": "Siebenschläfer-Projekt",
+    "url": "https://idw-online.de/de/news762500"
+   }
+  ],
+  "tier": "B-",
+  "note": "beide Quellen vom selben Herausgeber",
+  "status": "queue"
+ }
+]
