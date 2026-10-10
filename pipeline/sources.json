@@ -84,8 +84,8 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue",
-  "note_last": "abgelehnt (KI): [facts=partial ped={'A': 4, 'B': 4, 'C': 3, 'D': 4, 'E': 4} vergl=True blind=3] Karte 2: \"Dabei reagieren Zucker und die Aminosäure Asparagin in kohlenhydratreichen Lebensmitteln mit wenig Wasser.\" Die Quelle nennt Zucker, Asparagin, Hitze und geringen Wassergehalt als Voraussetzungen, sagt aber nirgends, dass Zucker und Asparagin miteinander reagieren. Das ist eine hinzugefügte Re"
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (KI): [facts=partial ped={'A': 4, 'B': 4, 'C': 4, 'D': 4, 'E': 4} vergl=True blind=2] Karte 3: \"Woran erkennst du, wie viel in deinem Essen steckt?\" ist nur ein Cliffhanger. Karte 4 beantwortet ihn aber mit dem Bräunungsgrad. Das ist grundsätzlich gedeckt. Die Quelle sagt aber auch, dass auch moderat gebräunte Lebensmittel hohe Gehalte haben können, das steht korrekt auf Karte 4. Kein in"
  },
  {
   "id": "ballast",
@@ -106,8 +106,8 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue",
-  "note_last": "abgelehnt (Programm): Quiz 1: falsche Antwort enthält Extremwort: \"Gleich alles auf einmal umstellen, damit sich der Darm schnell daran gewöhnt\" | Quiz 3: richtige Antwort ist auffällig länger als die falschen | Quiz 3: Antworten sehr unterschiedlich lang, angleichen | Quiz: die drei Kartennummern müssen verschieden sein (jetzt [5, 4, 5])"
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (Programm): Quiz 1: richtige Antwort ist auffällig länger als die falschen"
  },
  {
   "id": "zucker",
@@ -233,8 +233,8 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue",
-  "note_last": "abgelehnt (Programm): Quiz 2: Zahl \"120\" steht in keinem Zitat | Quiz 3: Zahl \"4\" steht in keinem Zitat | Quiz 3: Zahl \"5\" steht in keinem Zitat"
+  "status": "live",
+  "note_last": "ok nach 1 Runde(n)"
  },
  {
   "id": "stress",

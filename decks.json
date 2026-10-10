@@ -1214,5 +1214,78 @@
    "blind_erratbar": 3,
    "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
   }
+ },
+ {
+  "t": "Wie viel Bewegung braucht ein Erwachsener wirklich?",
+  "s": "Bewegung",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🚶",
+    "Weltweit erreicht fast jeder dritte Erwachsene die empfohlene Bewegung nicht. Das sind laut WHO 1,8 Milliarden Menschen. Und der Anteil wächst. Wie viel Bewegung wäre denn eigentlich genug?"
+   ],
+   [
+    "⏱️",
+    "Die Antwort ist überschaubar: mindestens 150 Minuten pro Woche, die dich etwas außer Atem bringen. Für Erwachsene bis 65 empfehlen Fachleute alternativ 75 Minuten richtig anstrengende Bewegung. Reicht das allein für den ganzen Körper?"
+   ],
+   [
+    "💪",
+    "Nicht ganz. Dazu kommt Krafttraining an zwei Tagen pro Woche, etwa Gymnastik oder Gewichte. Das stärkt Muskeln, Knochen, Sehnen und Bänder. Was hat Dauersitzen damit zu tun?"
+   ],
+   [
+    "🪑",
+    "Viele sitzen die meiste Zeit, am Schreibtisch, auf dem Sofa oder im Auto. Langes Sitzen erhöht das Risiko für Diabetes, Übergewicht und Herzkrankheiten. Wer oft lange sitzt, lebt im Schnitt auch kürzer. Wie wirst du das los?"
+   ],
+   [
+    "🌳",
+    "Unterbrich das Sitzen mit kurzen Bewegungspausen, zum Beispiel einem Spaziergang oder der Treppe statt dem Aufzug. Jede Bewegung zählt, und jede Menge ist besser als gar keine. Such dir etwas, das dir Spaß macht."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was ist laut WHO besser als gar nichts, wenn du kaum Zeit hast?",
+    "Jede Menge Bewegung ist besser als keine",
+    "Unter 150 Minuten pro Woche bringt keinen Nutzen",
+    "Nur Training im Fitnessstudio zählt wirklich",
+    "1"
+   ],
+   [
+    "Was empfehlen Fachleute zusätzlich zur Ausdauerbewegung?",
+    "Krafttraining an zwei Tagen pro Woche",
+    "Jeden Tag mindestens eine Stunde Dehnen",
+    "Ein freier Tag ohne jede Bewegung pro Woche",
+    "3"
+   ],
+   [
+    "Was tust du am besten, wenn du viel am Schreibtisch sitzt?",
+    "Das Sitzen immer wieder mit kurzen Bewegungspausen unterbrechen",
+    "Nach Feierabend einmal lange am Stück trainieren",
+    "Besonders lange in einer ruhigen Haltung sitzen bleiben",
+    "5"
+   ]
+  ],
+  "id": "bewegung",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "WHO",
+    "title": "Physical activity (Fact sheet)",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+   },
+   {
+    "publisher": "Bundesgesundheitsministerium (gesund.bund.de)",
+    "title": "Gesund durch Bewegung",
+    "url": "https://gesund.bund.de/en/gesund-durch-bewegung"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791666147792,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
  }
 ]
