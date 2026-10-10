@@ -18,8 +18,8 @@
   ],
   "tier": "A",
   "note": "zweite Quelle noch nicht geöffnet",
-  "status": "queue",
-  "note_last": "Fehler: ValueError: kein JSON in der Antwort",
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (KI): [facts=pass ped={'A': 4, 'B': 5, 'C': 4, 'D': 5, 'E': 4} vergl=True blind=3] Quiz 2: Die falsche Antwort \"Es ist nach diesem Datum nur noch für Tiere geeignet\" ist absurd und kein ernst gemeinter Irrtum. Ersetzen durch einen plausiblen Mythos, etwa \"Es verliert nach diesem Datum seine Nährstoffe, ist aber sonst unbedenklich\" (Länge angleichen). | Quiz 1: Die richtige Antwort \"Ansch",
   "fails": 1
  },
  {
