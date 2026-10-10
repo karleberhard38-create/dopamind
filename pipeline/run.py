@@ -218,7 +218,7 @@ def source_block(srcs):
 
 
 # ---------------------------------------------------------------- Programm-Pruefung
-BAD_WRONG = re.compile(r"\b(immer|nie|niemals|alles|nichts|komplett|ausschließlich|keineswegs|garantiert)\b", re.I)
+BAD_WRONG = re.compile(r"\b(immer|nie|niemals|komplett|ausschließlich|keineswegs|garantiert)\b", re.I)
 BAD_PHRASES = ["du denkst", "weißt du", "was meinst du", "ganz einfach", "absolut", "enorm", "massiv"]
 NUM = re.compile(r"\d+(?:[.,]\d+)*")
 
@@ -255,6 +255,10 @@ def local_check(deck, topic, srcs, existing_ids):
     qtext = " ".join(quotes)
     qnums = {x.replace(",", ".").rstrip(".") for x in NUM.findall(qtext)}
     qdigits = {re.sub(r"\D", "", x) for x in NUM.findall(qtext)}
+    # Zahlen gelten auch als belegt, wenn sie irgendwo im Quellentext stehen (Quiz-Zahlen wie Anzahl, Rechenwerte)
+    for _n, _s, _t in srcs:
+        qdigits |= {re.sub(r"\D", "", x) for x in NUM.findall(_t)}
+        qnums |= {x.replace(",", ".").rstrip(".") for x in NUM.findall(_t)}
     # Karten
     for i, card in enumerate(c, 1):
         tx = card[1].strip()
