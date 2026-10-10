@@ -192,7 +192,7 @@ CHECK_TASK = """PRUEFUNG. Du bist unabhängiger Prüfer. Prüfe das Deck unten a
 1. Jede Aussage der 5 Karten und jede richtige und falsche Quizantwort: belegt, nicht belegt oder stärker als die Quelle?
 2. Pädagogik-Rubrik A bis E (1 bis 5): A Haken, B Struktur und Cliffhanger, C Verständlichkeit in Alltagssprache, D Ehrlichkeit, E Nutzen von Karte 5 und Quizqualität.
 3. Vergleiche und Bilder: sofort verständlich und treu zur Quelle?
-In "problems" und "quiz_fixes" stehen NUR echte Verstöße, die geändert werden müssen (mit Kartennummer und wörtlichem Textstück). Hinweise, Geschmack und "vertretbar" gehören nicht hinein. "facts" ist "pass", wenn jede Aussage durch die Quellentexte belegt ist, "partial" nur bei einer Aussage, die über die Quelle hinausgeht, "fail" bei einer Falschaussage.
+In "problems" und "quiz_fixes" stehen NUR echte Verstöße, die geändert werden müssen (mit Kartennummer und wörtlichem Textstück). Hinweise, Geschmack und "vertretbar" gehören nicht hinein. "facts" ist "pass", wenn der Inhalt jeder Aussage durch die Quellentexte gedeckt ist. Umformulierungen in einfacher Sprache, Verknüpfungswörter (deshalb, weil, damit), sinngleiche Abschwächungen oder Steigerungen (manchmal/oft/häufig) und Zuspitzungen für den Lesefluss sind KEIN Verstoß, solange der Sinn gleich bleibt. "partial" nur, wenn eine Aussage eine neue Tatsache, Zahl, Ursache oder deutlich stärkere Behauptung enthält, die so nicht in den Quellen steht. "fail" bei einer Falschaussage oder einem Widerspruch zur Quelle. Melde in "problems" nur solche inhaltlichen Verstöße.
 Gib NUR dieses JSON in einem ```json Block aus:
 {"facts":"pass"|"partial"|"fail","problems":["..."],"ped":{"A":n,"B":n,"C":n,"D":n,"E":n},"comparisons_ok":true|false,"quiz_fixes":["..."]}
 
