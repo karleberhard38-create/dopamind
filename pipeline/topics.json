@@ -1,0 +1,170 @@
+[
+ {
+  "id": "akku",
+  "k": "Alltag",
+  "t": "Warum Handy-Akkus altern und wie du sie schonst",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "aktie",
+  "k": "Wirtschaft",
+  "t": "Was eine Aktie ist und warum ihr Preis schwankt",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "anker",
+  "k": "Psyche",
+  "t": "Der Ankereffekt: Wie die erste Zahl deine Entscheidung lenkt",
+  "status": "queue",
+  "prev": "Nach 2 Überarbeitungen: Faktenprüfung partial (Karte 5/Quiz 3 Gehaltsverhandlung aus zwei Quellen zusammengesetzt), Pädagogik E=3 (Quiz 3 erratbar, Strohmann-Falschantworten)."
+ },
+ {
+  "id": "aufschieben",
+  "k": "Psyche",
+  "t": "Warum wir Dinge aufschieben",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "aufwaermen",
+  "k": "Sport",
+  "t": "Was Aufwärmen vor dem Sport wirklich bringt",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "bip",
+  "k": "Wirtschaft",
+  "t": "Was das Bruttoinlandsprodukt sagt und was nicht",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "eisschwimmt",
+  "k": "Wissenschaft",
+  "t": "Warum Eis auf Wasser schwimmt",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "eukompetenz",
+  "k": "Politik",
+  "t": "Was die EU entscheidet und was Deutschland selbst",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "gesetzweg",
+  "k": "Politik",
+  "t": "Wie in Deutschland ein Gesetz entsteht",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "gpsrel",
+  "k": "Wissenschaft",
+  "t": "Warum GPS ohne Einsteins Relativitätstheorie nicht funktionieren würde",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "hyperinfl",
+  "k": "Geschichte",
+  "t": "Die Hyperinflation 1923: Wenn Geld täglich wertlos wird",
+  "status": "queue",
+  "prev": "Fakten nach 2 Überarbeitungen bestanden, Pädagogik-Tor nicht: Quizfragen 2 und 3 weiter erratbar bzw. Regelverstoß (Schnitt 4,0, E=3)."
+ },
+ {
+  "id": "jahreszeiten",
+  "k": "Wissenschaft",
+  "t": "Warum es Jahreszeiten gibt",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "kanzlerwahl",
+  "k": "Politik",
+  "t": "Wie der Bundeskanzler gewählt wird",
+  "status": "queue",
+  "prev": "Fakten bestanden, Pädagogik-Tor nach 2 Überarbeitungen nicht: Quiz 1 und 3 erratbar bzw. Regelverstoß (E=3)."
+ },
+ {
+  "id": "krafttraining",
+  "k": "Sport",
+  "t": "Wie oft Krafttraining pro Woche reicht",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "luftbruecke",
+  "k": "Geschichte",
+  "t": "Die Berliner Luftbrücke 1948/49",
+  "status": "queue",
+  "prev": "Nach 2 Überarbeitungen: Faktenprüfung partial/fail (Quiz 2 Falschantwort, Karte 3/4 über Quelle hinaus), Pädagogik Ø 3,4, Quiz-Prüfer: Q2 ersetzen; nur bpb und Alliiertenmuseum als Quellen."
+ },
+ {
+  "id": "mauerfall",
+  "k": "Geschichte",
+  "t": "Der Fall der Mauer 1989: Wie die Grenze über Nacht aufging",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "mhd",
+  "k": "Alltag",
+  "t": "Mindesthaltbarkeitsdatum: Was es wirklich bedeutet",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "multitask",
+  "k": "Psyche",
+  "t": "Multitasking: Warum Dinge gleichzeitig tun dein Gehirn bremst",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "nutriscore",
+  "k": "Ernährung",
+  "t": "Der Nutri-Score: Wie er berechnet wird und was er nicht sagt",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "passwort",
+  "k": "Alltag",
+  "t": "Sichere Passwörter: Länge oder Sonderzeichen?",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "schritte",
+  "k": "Sport",
+  "t": "Die 10.000 Schritte: Woher die Zahl kommt und was sie bringt",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "trinken",
+  "k": "Ernährung",
+  "t": "Wie viel du wirklich trinken musst: Stimmen die 2 Liter?",
+  "status": "queue",
+  "prev": ""
+ },
+ {
+  "id": "vollkorn",
+  "k": "Ernährung",
+  "t": "Was Vollkorn besser macht als Weißmehl",
+  "status": "queue",
+  "prev": "Nach 2 Überarbeitungen: Fakten pass und Pädagogik Ø 4,0, aber Quiz-Prüfer B verlangt Ersatz aller 3 Fragen (erratbar, Strohmann-Falschantworten, Antwortlängen); Quiz-Tor nicht erfüllt."
+ },
+ {
+  "id": "zinseszins",
+  "k": "Wirtschaft",
+  "t": "Zinseszins: Warum Geld, das Zinsen auf Zinsen bekommt, so stark wächst",
+  "status": "queue",
+  "prev": "Fakten bestanden, Pädagogik-Tor nach 2 Überarbeitungen nicht: Quiz 2 und 3 ersetzen, Karte 5 Begriff mitverzinst (C=3, E=3, Schnitt 3,6)."
+ }
+]

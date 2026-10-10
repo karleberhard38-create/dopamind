@@ -1,0 +1,37 @@
+name: Neue Decks erzeugen
+
+on:
+  schedule:
+    - cron: "0 5 * * *"      # täglich 05:00 UTC (7:00 Uhr deutscher Sommerzeit)
+  workflow_dispatch:          # zusätzlich per Knopf startbar
+
+permissions:
+  contents: write
+
+concurrency:
+  group: neue-decks
+  cancel-in-progress: false
+
+jobs:
+  decks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install anthropic
+      - name: Pipeline ausführen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DECKS_PER_RUN: ${{ vars.DECKS_PER_RUN || '3' }}
+          DAILY_BUDGET_USD: ${{ vars.DAILY_BUDGET_USD || '3.00' }}
+        run: python pipeline/run.py
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "dopamind-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add decks.json pipeline/topics.json pipeline/log.jsonl
+          git diff --cached --quiet || git commit -m "Neue Decks: $(date -u +%F)"
+          git push
