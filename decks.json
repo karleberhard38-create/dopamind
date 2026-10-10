@@ -4661,5 +4661,1169 @@
    "rounds": 1,
    "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
   }
+ },
+ {
+  "t": "Marie Curie: Wie wurde sie zur Pionierin der Radioaktivität?",
+  "s": "Marie Curie",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "⚛️",
+    "Maria Sklodowska wurde 1867 in Warschau geboren. 1891 ging sie nach Paris, um an der Sorbonne zu studieren. 1894 lernte sie einen Physiker kennen, den sie 1895 heiratete. Wer war das?"
+   ],
+   [
+    "🧪",
+    "Pierre Curie. Gemeinsam isolierten die Curies das Element Polonium, benannt nach Maries Heimatland, und das Radium. Die Radioaktivität hatte 1896 Henri Becquerel entdeckt. Welchen Preis erhielt das Trio 1903?"
+   ],
+   [
+    "🏅",
+    "Den Nobelpreis für Physik. Nach Pierres Tod 1906 wurde Marie Professorin für Allgemeine Physik, als erste Frau auf diesem Posten. Bekam sie später noch einen Nobelpreis?"
+   ],
+   [
+    "🥼",
+    "Ja, 1911 den Nobelpreis für Chemie für ihre Arbeiten zur Radioaktivität. Im Ersten Weltkrieg widmete sie sich mit ihrer Tochter Irène dem medizinischen Einsatz von Radium. Was erreichte Irène später?"
+   ],
+   [
+    "👨‍👩‍👧",
+    "Irène heiratete 1926 Frédéric Joliot, und beide erhielten 1935 den Nobelpreis für Chemie. Marie Curie starb 1934 in Savoyen. Mutter, Vater und Tochter wurden damit alle mit Nobelpreisen ausgezeichnet."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wonach ist das Element Polonium benannt?",
+    "Nach Maries Heimatland Polen",
+    "Nach dem Planeten Pluto",
+    "Nach einem Forscher namens Polo",
+    2
+   ],
+   [
+    "Wofür erhielt Marie Curie 1911 den Nobelpreis?",
+    "Für Chemie",
+    "Für Medizin",
+    "Für Literatur",
+    4
+   ],
+   [
+    "Was wurde sie 1906 als erste Frau?",
+    "Professorin für Allgemeine Physik",
+    "Leiterin einer Sternwarte",
+    "Präsidentin von Frankreich",
+    3
+   ]
+  ],
+  "id": "curie",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Nobelprize.org",
+    "title": "Marie Curie: Biographical",
+    "url": "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/biographical/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Albert Einstein: Wofür bekam er den Nobelpreis?",
+  "s": "Einstein",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🧠",
+    "Albert Einstein wurde am 14. März 1879 in Ulm geboren und wuchs in München auf, wo sein Vater eine Elektrofirma gründete. Er studierte an der ETH Zürich. Wo arbeitete er, als er seine bahnbrechenden Arbeiten schrieb?"
+   ],
+   [
+    "📮",
+    "Im Patentamt in Bern. 1905 schlug er dort vor, dass Licht aus einzelnen Energiepaketen besteht, die heute Photonen heißen. Wofür erhielt er laut offizieller Begründung den Nobelpreis?"
+   ],
+   [
+    "🏅",
+    "Für seine Verdienste um die Theoretische Physik, besonders für die Entdeckung des Gesetzes des photoelektrischen Effekts. Die Relativitätstheorie nennt die Begründung nicht. Was besagt dieser Effekt?"
+   ],
+   [
+    "💡",
+    "Licht muss eine Mindestfrequenz erreichen, damit es ein Elektron freisetzen kann. Einstein lehrte in Bern, Zürich und Prag, ab 1914 in Berlin. Was tat er, nachdem die Nationalsozialisten die Macht übernommen hatten?"
+   ],
+   [
+    "🌎",
+    "Er zog in die USA und arbeitete am Institute for Advanced Study in Princeton, New Jersey. Dort starb er am 18. April 1955. Er war zweimal verheiratet und hatte drei Kinder aus der ersten Ehe."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wo arbeitete Einstein, als er 1905 seine wichtigen Arbeiten schrieb?",
+    "Im Patentamt in Bern",
+    "In einer Sternwarte in Prag",
+    "An der Universität Berlin",
+    2
+   ],
+   [
+    "Wofür erhielt er den Nobelpreis?",
+    "Den photoelektrischen Effekt",
+    "Die Erfindung des Radios",
+    "Den Bau eines Teleskops",
+    3
+   ],
+   [
+    "Wohin ging er nach der Machtübernahme der Nationalsozialisten?",
+    "In die USA",
+    "In die Sowjetunion",
+    "Nach Australien",
+    4
+   ]
+  ],
+  "id": "einstein",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Nobelprize.org",
+    "title": "Albert Einstein: Facts",
+    "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Nelson Mandela: Wie kam er von der Haft zum Präsidentenamt?",
+  "s": "Mandela",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "✊",
+    "Nelson Mandela wurde 1918 in Südafrika geboren, als Sohn eines Dorfchefs. Er studierte Recht und wurde einer der ersten schwarzen Anwälte des Landes. Wogegen kämpfte er in seiner Heimat?"
+   ],
+   [
+    "🚫",
+    "Gegen die Apartheid, das System der Rassentrennung. In den frühen 1950er Jahren wurde er Anführer der Jugendliga des ANC. 1960 töteten Polizisten in Sharpeville 69 schwarze Demonstranten. Was folgte daraus für den ANC?"
+   ],
+   [
+    "🔥",
+    "Der ANC begann den bewaffneten Kampf, und Mandela führte die Untergrundgruppe Speer der Nation. 1962 wurde er verhaftet. Zu welcher Strafe wurde er 1964 wegen Hochverrats verurteilt?"
+   ],
+   [
+    "⛓️",
+    "Zu lebenslanger Haft. Bis 1982 war er auf Robben Island, danach in einem Gefängnis auf dem Festland. Am 11. Februar 1990 kam er frei. Wie viele Jahre hatte er da in Haft verbracht?"
+   ],
+   [
+    "🕊️",
+    "27 Jahre. 1993 erhielt er gemeinsam mit Präsident F. W. de Klerk den Friedensnobelpreis. 1994 wurde Mandela selbst Präsident und blieb es bis 1999. 1996 wurde die Wahrheits und Versöhnungskommission gegründet."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange war Mandela in Haft?",
+    "27 Jahre",
+    "7 Jahre",
+    "47 Jahre",
+    4
+   ],
+   [
+    "Wie heißt das System der Rassentrennung in Südafrika?",
+    "Apartheid",
+    "Segregation Act",
+    "Kolonialsystem",
+    2
+   ],
+   [
+    "Mit wem teilte er den Friedensnobelpreis 1993?",
+    "Mit F. W. de Klerk",
+    "Mit Michail Gorbatschow",
+    "Mit Willy Brandt",
+    5
+   ]
+  ],
+  "id": "mandela",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Nobelprize.org",
+    "title": "Nelson Mandela: Facts",
+    "url": "https://www.nobelprize.org/prizes/peace/1993/mandela/facts/"
+   },
+   {
+    "publisher": "Nobelprize.org",
+    "title": "Nelson Mandela: Speedread",
+    "url": "https://www.nobelprize.org/prizes/peace/1993/mandela/speedread/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Adenauer: Wie knapp wurde er erster Bundeskanzler?",
+  "s": "Adenauer",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🗳️",
+    "Am 15. September 1949 wählte der Bundestag Konrad Adenauer zum ersten Bundeskanzler. Er war 73 Jahre alt und in Köln geboren. Wie viele Stimmen brauchte er für die Mehrheit?"
+   ],
+   [
+    "🔢",
+    "202 von 402 Stimmen. Die Koalition aus CDU/CSU, FDP und Deutscher Partei hatte zusammen 209 Stimmen. Das Ergebnis lautete 202 Ja, 142 Nein und 44 Enthaltungen. Was fällt an der Zahl 202 auf?"
+   ],
+   [
+    "😮",
+    "Sie entsprach genau der nötigen Mehrheit. Laut Bericht war die entscheidende Stimme seine eigene. Adenauer sagte dazu: Selbstverständlich, etwas anderes wäre mir doch als Heuchelei vorgekommen. Wer schlug ihn vor?"
+   ],
+   [
+    "🏛️",
+    "Bundespräsident Theodor Heuss, der drei Tage zuvor, am 12. September 1949, gewählt worden war. Adenauer nahm die Wahl mit einem knappen Ja an. Wie lange debattierte der Bundestag seine Regierungserklärung am 20. September?"
+   ],
+   [
+    "⏰",
+    "Rund 20 Stunden, verteilt auf sechs Sitzungstage. Schon 1948 hatte der Parlamentarische Rat Adenauer zum Präsidenten gewählt. Als Bundeskanzler blieb er bis 1963 im Amt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Stimmen brauchte Adenauer für die Mehrheit?",
+    "202 von 402",
+    "50 von 100",
+    "300 von 402",
+    2
+   ],
+   [
+    "Wer schlug Adenauer als Kanzler vor?",
+    "Theodor Heuss",
+    "Ludwig Erhard",
+    "Kurt Schumacher",
+    4
+   ],
+   [
+    "Wie lange dauerte die Debatte zur Regierungserklärung?",
+    "Rund 20 Stunden",
+    "Rund 20 Minuten",
+    "Rund 200 Stunden",
+    5
+   ]
+  ],
+  "id": "adenauer",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Adenauer erster Bundeskanzler, 15. September 1949",
+    "url": "https://www.bundestag.de/dokumente/textarchiv/1949-09-15-adenauer-erster-bundeskanzler-1016592"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Willy Brandt: Was bedeutete der Kniefall von Warschau?",
+  "s": "Brandt",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🙏",
+    "Am 7. Dezember 1970 kniete Bundeskanzler Willy Brandt in Warschau vor dem Denkmal der Ghettohelden nieder. Anlass war die Unterzeichnung des Warschauer Vertrags. Was erkannte die Bundesrepublik darin an?"
+   ],
+   [
+    "🗺️",
+    "Die Grenze zu Polen. Brandt kniete etwa 30 Sekunden. Er war fast 57 Jahre alt und der erste SPD Kanzler der Bundesrepublik. Wie reagierte die deutsche Öffentlichkeit auf die Geste?"
+   ],
+   [
+    "📊",
+    "Geteilt. In einer Umfrage des Spiegel fanden 41 Prozent, Brandt hätte niederknien sollen, 48 Prozent lehnten die Geste ab. Im Ausland war das Echo anders. Was tat das US Magazin Time?"
+   ],
+   [
+    "📰",
+    "Es wählte Brandt zum Mann des Jahres, und ein Jahr später erhielt er den Friedensnobelpreis. Brandt selbst war im April 1933 ins norwegische Exil gegangen. Wann kehrte er nach Deutschland zurück?"
+   ],
+   [
+    "📜",
+    "1945, nachdem er 1940 nach Schweden geflohen war. Der Ausdruck Kniefall von Warschau steht bis heute für diese Geste. Der Vertrag wurde im Mai 1972 ratifiziert, etwa eineinhalb Jahre später."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange kniete Brandt etwa?",
+    "Etwa 30 Sekunden",
+    "Etwa 30 Minuten",
+    "Etwa 3 Sekunden",
+    2
+   ],
+   [
+    "Welche Auszeichnung erhielt er ein Jahr später?",
+    "Den Friedensnobelpreis",
+    "Den Literaturnobelpreis",
+    "Den Pulitzerpreis",
+    4
+   ],
+   [
+    "Wann wurde der Warschauer Vertrag ratifiziert?",
+    "Im Mai 1972",
+    "Im Mai 1990",
+    "Im Mai 1950",
+    5
+   ]
+  ],
+  "id": "brandt",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Historisches Museum",
+    "title": "The Warsaw Genuflection: Willy Brandt's historic gesture",
+    "url": "https://www.dhm.de/blog/?p=392"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "9. November 1989: Wie kam es zum Mauerfall?",
+  "s": "Mauerfall",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🧱",
+    "Am 9. November 1989 tagte das Zentralkomitee der SED. Eine neue Reiseregelung sollte erst am 10. November gelten. Um 18 Uhr begann Günter Schabowskis Pressekonferenz. Was sagte er auf Nachfrage zum Beginn der Regelung?"
+   ],
+   [
+    "📺",
+    "Sie trete sofort, unverzüglich in Kraft. Wenige Minuten später lief die AP Meldung DDR öffnet Grenzen, und um 20 Uhr begann die Tagesschau mit derselben Schlagzeile. Wohin eilten daraufhin Tausende Berliner?"
+   ],
+   [
+    "🚪",
+    "Zu den Grenzübergängen. Den Grenzsoldaten fehlten klare Anweisungen. An der Bornholmer Straße wollten sie die Menschen zunächst auf den Morgen vertrösten, doch die Rufe Tor auf, Tor auf wurden lauter. Wann öffneten sie?"
+   ],
+   [
+    "🌃",
+    "Eine halbe Stunde vor Mitternacht stellten sie die Kontrollen ein und öffneten die Grenze. Laut dem Historiker Hertle standen zwei Minuten nach Mitternacht alle Berliner Grenzübergänge offen. Wie lange stand die Mauer da?"
+   ],
+   [
+    "🎉",
+    "28 Jahre, seit dem 13. August 1961. Noch in der Nacht schlugen Menschen Mauerstücke als Souvenirs heraus. Im Dezember 1989 wurde das Brandenburger Tor offiziell passierbar."
+   ]
+  ],
+  "quiz": [
+   [
+    "Um wie viel Uhr begann Schabowskis Pressekonferenz?",
+    "Um 18 Uhr",
+    "Um 8 Uhr",
+    "Um 23 Uhr",
+    1
+   ],
+   [
+    "Wo riefen Menschen: Tor auf, Tor auf?",
+    "An der Bornholmer Straße",
+    "Am Hamburger Hafen",
+    "Am Grenzübergang Helmstedt",
+    3
+   ],
+   [
+    "Wie lange stand die Berliner Mauer?",
+    "28 Jahre",
+    "8 Jahre",
+    "48 Jahre",
+    5
+   ]
+  ],
+  "id": "mauerfall",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Der 9. November 1989",
+    "url": "https://www.bpb.de/geschichte/deutsche-einheit/deutsche-teilung-deutsche-einheit/43731/der-9-november-1989"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Gutenberg: Wie veränderte der Buchdruck die Welt?",
+  "s": "Gutenberg",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "📖",
+    "Johannes Gutenberg wurde in Mainz als Sohn eines Patriziers geboren. Im 15. Jahrhundert entwickelte er den Buchdruck mit beweglichen Lettern. Sein 600. Geburtstag jährte sich im Jahr 2000. Welches ist sein berühmtester Druck?"
+   ],
+   [
+    "✝️",
+    "Die 42 zeilige Gutenberg Bibel. Sie erschien in einer Auflage von etwa 180 Exemplaren, und das Gutenberg Museum in Mainz besitzt zwei davon. Was gilt als frühestes Dokument der Buchdruckerkunst in Europa?"
+   ],
+   [
+    "🧾",
+    "Das Fragment vom Weltgericht. Eine koreanische Sammlung im Museum zeigt allerdings Metalllettern, die schon vor Gutenberg gegossen wurden. Wie lange blieb die Druckpresse nach Gutenbergs Prinzip in Gebrauch?"
+   ],
+   [
+    "⚙️",
+    "Über 350 Jahre lang. Im 19. Jahrhundert ersetzten eiserne Pressen die hölzernen, und Gießmaschinen lösten den Handguss ab. Der Buchdruck ermöglichte auch regelmäßige Presse. Wann erschien die erste Zeitung der Welt?"
+   ],
+   [
+    "📰",
+    "1605 in Straßburg. Das Gutenberg Museum in Mainz wurde 1900 von Mainzer Bürgern gegründet, sein Motto lautet: Gesegnet sei, wer die Schrift erfand. Es zeigt auch Schriftsysteme wie Keilschrift und Hieroglyphen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Exemplare hatte die Auflage der 42 zeiligen Bibel etwa?",
+    "Etwa 180",
+    "Etwa 18",
+    "Etwa 18.000",
+    2
+   ],
+   [
+    "Wie lange blieb die Gutenberg Presse in Gebrauch?",
+    "Über 350 Jahre",
+    "Etwa 5 Jahre",
+    "Genau 50 Jahre",
+    4
+   ],
+   [
+    "Wann erschien die erste Zeitung der Welt?",
+    "1605 in Straßburg",
+    "1305 in Mainz",
+    "1905 in Berlin",
+    5
+   ]
+  ],
+  "id": "gutenberg",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Stadt Mainz / Gutenberg Museum",
+    "title": "Gutenberg Museum Mainz",
+    "url": "https://www.Mainz.de/medien/internet/downloads/gutenberg_museum_dt.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Sophie Scholl: Wie endete der Widerstand der Weißen Rose?",
+  "s": "Sophie Scholl",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🌹",
+    "Hans Scholl und Alexander Schmorell verfassten zwischen dem 27. Juni und 12. Juli 1942 die ersten vier Flugblätter der Weißen Rose, jeweils rund 100 Stück. Wer stieß im Herbst 1942 zur Gruppe?"
+   ],
+   [
+    "✍️",
+    "Sophie Scholl, die seit Mai 1942 in München Biologie und Philosophie studierte. Im Januar 1943 entstand das fünfte Flugblatt mit rund 6.000 Abzügen. Was führte am 18. Februar 1943 zur Verhaftung der Geschwister?"
+   ],
+   [
+    "🏫",
+    "Sie legten Flugblätter in der Münchner Universität aus. Ein Hausmeister beobachtete sie und zeigte sie bei der Gestapo an. Wie schnell wurde das Urteil gesprochen?"
+   ],
+   [
+    "⚖️",
+    "Vier Tage später, am 22. Februar 1943, verurteilte der Volksgerichtshof unter Roland Freisler sie zum Tod. Die Hinrichtung folgte am selben Tag, zusammen mit Christoph Probst. Was bot die Gestapo Sophie im Verhör an?"
+   ],
+   [
+    "🕯️",
+    "Sie sollte der Todesstrafe entgehen, wenn sie sich von ihrem Bruder distanzierte. Sophie lehnte ab. Im Verhör sagte sie, sie habe das Beste getan, was sie gerade jetzt für ihr Volk tun konnte."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann wurden die Geschwister Scholl verhaftet?",
+    "Am 18. Februar 1943",
+    "Am 1. Mai 1945",
+    "Am 9. November 1938",
+    2
+   ],
+   [
+    "Wer verurteilte sie zum Tod?",
+    "Der Volksgerichtshof",
+    "Das Bundesverfassungsgericht",
+    "Das Reichsgericht",
+    4
+   ],
+   [
+    "Wie reagierte Sophie auf das Angebot der Gestapo?",
+    "Sie lehnte es ab",
+    "Sie nahm es an",
+    "Sie schwieg zwei Jahre",
+    5
+   ]
+  ],
+  "id": "sophiescholl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Ludwig Maximilians Universität München",
+    "title": "Die Widerstandsaktionen der Weißen Rose",
+    "url": "https://www.lmu.de/de/die-lmu/die-lmu-auf-einen-blick/geschichte/zusammenhaenge/1942-43-widerstandsaktionen-der-weissen-rose/"
+   },
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Vor 80 Jahren: Ermordung von Hans und Sophie Scholl",
+    "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/518394/vor-80-jahren-ermordung-von-hans-und-sophie-scholl/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Alexander von Humboldt: Wie scheiterte er am Chimborazo?",
+  "s": "Humboldt",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🧭",
+    "Alexander von Humboldt brach 1799 nach Südamerika auf, mit mehr als 50 modernen Instrumenten wie Teleskopen, Barometern und Sextanten. Sein Begleiter war Aimé Bonpland. Welchen Berg wollten sie besteigen?"
+   ],
+   [
+    "🏔️",
+    "Den Chimborazo, nach damaliger Kenntnis den höchsten Gipfel der Erde. Am Morgen des 23. Juni 1802 brachen sie mit dem 21 jährigen Carlos de Montúfar auf. Warum stiegen die drei Europäer allein weiter?"
+   ],
+   [
+    "🤢",
+    "Die einheimischen Träger weigerten sich weiterzugehen. Die drei litten unter Nasenbluten, Übelkeit und Schwindel, und Humboldt beschrieb diese Bergkrankheit als Erster in seinem Tagebuch. Wie weit war der Gipfel noch?"
+   ],
+   [
+    "⛪",
+    "Humboldt schätzte die Restdistanz auf die dreimalige Höhe der Peterskirche zu Rom. Ein Schneesturm beim Abstieg desorientierte sie. Wer brachte die drei zurück ins Tal?"
+   ],
+   [
+    "🥇",
+    "Die Träger, die an der Schneegrenze gewartet hatten. Erst Edward Whymper erreichte 1880 den Gipfel, 78 Jahre nach Humboldts Versuch. Humboldt starb 1859, sein Gemälde mit dem Chimborazo im Hintergrund entstand um 1858."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welchen Berg wollte Humboldt besteigen?",
+    "Den Chimborazo",
+    "Den Mont Blanc",
+    "Den Kilimandscharo",
+    2
+   ],
+   [
+    "Was beschrieb Humboldt als Erster in seinem Tagebuch?",
+    "Die Bergkrankheit",
+    "Die Lawinengefahr",
+    "Die Zeitverschiebung",
+    3
+   ],
+   [
+    "Wer erreichte 1880 den Gipfel?",
+    "Edward Whymper",
+    "Aimé Bonpland",
+    "Carlos de Montúfar",
+    5
+   ]
+  ],
+  "id": "humboldt",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Historisches Museum",
+    "title": "Alexander von Humboldt und die Besteigung des Chimborazo",
+    "url": "https://www.dhm.de/journal/beitrag/alexander-von-humboldt-und-die-besteigung-des-chimborazo"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Bismarck: Wie entstand die Sozialversicherung?",
+  "s": "Bismarck",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🏭",
+    "Nach der Wirtschaftskrise von 1873 verschärfte sich der Klassenkonflikt. Otto von Bismarck wollte die Arbeiterbewegung durch Sozialpolitik binden, ohne politische Zugeständnisse. Welche Versicherung kam 1883 als erste?"
+   ],
+   [
+    "🩺",
+    "Die Krankenversicherung, beschlossen am 15. Juni 1883, aber nur für Arbeiter. Zwei Drittel der Beiträge zahlten die Arbeiter, ein Drittel die Arbeitgeber. Wer zahlte bei der Unfallversicherung von 1884?"
+   ],
+   [
+    "⚠️",
+    "Allein die Unternehmer. Entschädigt wurde ab der 14. Woche, unabhängig von der Schuldfrage. Bei völliger Erwerbsunfähigkeit gab es zwei Drittel des Arbeitslohns als Rente. Welche Versicherung folgte 1889?"
+   ],
+   [
+    "👴",
+    "Die Invaliditäts und Altersversicherung, verabschiedet am 24. Mai 1889. Altersrente gab es nach 30 Beitragszahlungen und mit Vollendung des 70. Lebensjahres. Wer steuerte zu jeder Rente einen Grundbetrag bei?"
+   ],
+   [
+    "🏛️",
+    "Der Staat, mit jährlich 50 Mark. Die Sozialdemokratie lehnte die Gesetze als Ersatz für politische Reformen ab, die Liberalen nannten sie Staatssozialismus. Dennoch wurden sie ein Vorbild für andere europäische Staaten."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welche Sozialversicherung kam 1883 als erste?",
+    "Die Krankenversicherung",
+    "Die Arbeitslosenversicherung",
+    "Die Pflegeversicherung",
+    2
+   ],
+   [
+    "Wer zahlte die Beiträge zur Unfallversicherung?",
+    "Allein die Unternehmer",
+    "Allein die Arbeiter",
+    "Allein der Staat",
+    3
+   ],
+   [
+    "Ab welchem Alter gab es 1889 Altersrente?",
+    "Ab 70 Jahren",
+    "Ab 50 Jahren",
+    "Ab 40 Jahren",
+    4
+   ]
+  ],
+  "id": "bismarck",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Historisches Museum (LeMO)",
+    "title": "Sozialgesetzgebung im Kaiserreich",
+    "url": "https://www.dhm.de/lemo/kapitel/kaiserreich/innenpolitik/sozialgesetzgebung.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Das Grundgesetz: Wie entstand es?",
+  "s": "Grundgesetz",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "📘",
+    "Der Parlamentarische Rat verkündete das Grundgesetz am 23. Mai 1949, am Tag darauf trat es in Kraft. Der Rat hatte 65 Mitglieder und tagte erstmals am 1. September 1948. Wo fand diese Sitzung statt?"
+   ],
+   [
+    "🦒",
+    "Im Lichthof des Bonner Museums Alexander Koenig. Präsident des Rates war Konrad Adenauer, und nur vier der 65 Mitglieder waren Frauen. Welcher Satz geht vor allem auf Elisabeth Selbert zurück?"
+   ],
+   [
+    "⚖️",
+    "Männer und Frauen sind gleichberechtigt. Selbert setzte den Satz in Artikel 3 mit Frauenverbänden nach anfänglichem Widerstand durch. Wie lautet der erste Satz des Grundgesetzes in Artikel 1?"
+   ],
+   [
+    "🕊️",
+    "Die Würde des Menschen ist unantastbar. Er steht an erster Stelle, weil er nach den NS Verbrechen den Schutz des Menschen an die oberste Stelle setzen sollte. Was regelt die Ewigkeitsklausel?"
+   ],
+   [
+    "🔒",
+    "Nach Artikel 79 Absatz 3 sind unter anderem Menschenwürde, Demokratie, Rechtsstaat und Sozialstaat unantastbar. Sonst sind Änderungen mit einer Zweidrittelmehrheit im Bundestag möglich, was seit Inkrafttreten 63 Mal geschehen ist."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Mitglieder hatte der Parlamentarische Rat?",
+    "65",
+    "15",
+    "650",
+    1
+   ],
+   [
+    "Wie viele davon waren Frauen?",
+    "Vier",
+    "Dreißig",
+    "Keine",
+    2
+   ],
+   [
+    "Welche Mehrheit braucht eine Änderung des Grundgesetzes im Bundestag?",
+    "Zwei Drittel",
+    "Eine einfache Mehrheit",
+    "Einstimmigkeit aller",
+    5
+   ]
+  ],
+  "id": "grundgesetz",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Das Quiz zum Jahrestag des Grundgesetzes",
+    "url": "https://www.bpb.de/kurz-knapp/taegliche-dosis-politik/521255/das-quiz-zum-jahrestag-des-grundgesetzes/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Alan Turing: Was leistete er für Informatik und Enigma?",
+  "s": "Turing",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🔐",
+    "Alan Turing wurde 1912 in London geboren und studierte von 1931 bis 1934 Mathematik in Cambridge. Im Zweiten Weltkrieg arbeitete er in Bletchley Park. Woran arbeitete er dort?"
+   ],
+   [
+    "📻",
+    "Er entwickelte Methoden, um deutsche Funksprüche zu entschlüsseln, die mit der Enigma verschlüsselt waren. Seine Arbeit spielte laut dem Heinz Nixdorf MuseumsForum eine wichtige Rolle in der Schlacht im Atlantik. Was kam nach dem Krieg?"
+   ],
+   [
+    "💻",
+    "Am National Physical Laboratory entwickelte er von 1945 bis 1947 das Konzept der Automatic Computing Engine, ab 1948 war er in Manchester. 1950 stellte er die Frage: Können Maschinen denken? Wie heißt sein Test?"
+   ],
+   [
+    "🤖",
+    "Turing Test. Die Turing Maschine bildet bis heute eine Grundlage der theoretischen Informatik. 1952 wurde Turing wegen seiner Homosexualität zu einer zwölfmonatigen Östrogenbehandlung verurteilt. Wie ging es danach weiter?"
+   ],
+   [
+    "🕯️",
+    "Turing starb am 7. Juni 1954. Erst 2009 bedauerte der britische Premierminister Gordon Brown im Namen der Regierung seine Verfolgung. Barack Obama stellte ihn mit Newton, Darwin und Einstein auf eine Stufe."
+   ]
+  ],
+  "quiz": [
+   [
+    "Woran arbeitete Turing in Bletchley Park?",
+    "An der Entschlüsselung der Enigma",
+    "An der Entwicklung einer Rakete",
+    "An dem Bau der Atombombe",
+    2
+   ],
+   [
+    "Wie heißt der 1950 vorgeschlagene Test?",
+    "Turing Test",
+    "Enigma Test",
+    "Cambridge Test",
+    4
+   ],
+   [
+    "Wer bedauerte 2009 seine Verfolgung?",
+    "Premier Gordon Brown",
+    "Königin Elisabeth",
+    "Winston Churchill",
+    5
+   ]
+  ],
+  "id": "turing",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Heinz Nixdorf MuseumsForum",
+    "title": "Eminent und enigmatic: 10 Aspekte von Alan Turing",
+    "url": "https://hnf.de/en/exhibitions/review/eminent-enigmatic-10-aspects-of-alan-turing.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Der Limes: Wie sicherten die Römer ihre Grenze in Germanien?",
+  "s": "Limes",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "🏰",
+    "Der Obergermanisch Raetische Limes war die Grenze des Römischen Reichs in Germanien. Er erstreckt sich über rund 550 Kilometer, vom Rhein nördlich von Koblenz bis zur Donau bei Kelheim. Durch wie viele Bundesländer führt er?"
+   ],
+   [
+    "🗺️",
+    "Durch vier: Rheinland Pfalz, Hessen, Baden Württemberg und Bayern. Ausgebaut wurde er vor allem unter den Kaisern Hadrian um 120, Antoninus Pius um 160 und Septimius Severus um 200 nach Christus. Wie viele Wachtürme gab es?"
+   ],
+   [
+    "🗼",
+    "Etwa 900 Wachtürme, dazu kamen Militärlager. Der geregelte Grenzverkehr funktionierte bis etwa zur Mitte des 3. Jahrhunderts. Seit wann gehört der Limes zum Welterbe der UNESCO?"
+   ],
+   [
+    "🏅",
+    "Seit 2005, als Teil der Grenzen des Römischen Reichs zusammen mit der Hadriansmauer. Die Deutsche Limeskommission wurde 2003 gegründet. Wie lang war die durchgehende Grenzmarkierung?"
+   ],
+   [
+    "📏",
+    "Etwa 500 Kilometer. Ein 52 Kilometer langer Abschnitt entlang des Mains war keine gezielt angelegte Landgrenze. Der Limes umschloss außerdem das Nördlinger Ries und endete an der Donau."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lang ist der Limes etwa?",
+    "Rund 550 Kilometer",
+    "Rund 55 Kilometer",
+    "Rund 5.500 Kilometer",
+    1
+   ],
+   [
+    "Wie viele Wachtürme gab es etwa?",
+    "Etwa 900",
+    "Etwa 90",
+    "Etwa 9.000",
+    3
+   ],
+   [
+    "Seit wann ist der Limes Welterbe?",
+    "Seit 2005",
+    "Seit 1905",
+    "Seit 1805",
+    4
+   ]
+  ],
+  "id": "limes",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "UNESCO Welterbezentrum",
+    "title": "Obergermanisch Raetischer Limes: Dokument",
+    "url": "https://whc.unesco.org/document/178674"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Antibiotikaresistenz: Wie entstehen resistente Keime?",
+  "s": "Antibiotika",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "💊",
+    "Antibiotika helfen gegen Bakterien, doch Bakterien können sich anpassen. Die Weltgesundheitsorganisation zählt zunehmende Resistenzen zu den größten Bedrohungen der globalen Gesundheit. Wie entstehen solche Resistenzen eigentlich?"
+   ],
+   [
+    "🧬",
+    "Durch zufällige Mutationen im Erbgut oder durch die Aufnahme von Resistenzgenen aus der Umgebung. Bakterien tauschen diese Gene untereinander aus. Das Medikament tötet nur empfindliche Bakterien. Was begünstigt das Problem?"
+   ],
+   [
+    "⚠️",
+    "Zu häufiger oder falscher Einsatz. Auch ein zu früher Abbruch oder eine niedrigere Dosis als verordnet fördert Resistenzen. Hilft ein Antibiotikum denn auch bei einer ganz normalen Erkältung?"
+   ],
+   [
+    "🤧",
+    "Nein. Erkältungen werden meist durch Viren verursacht. Antibiotika lindern die Beschwerden nicht, verkürzen die Krankheit nicht und können Nebenwirkungen haben. Wie lässt sich der Bedarf an Antibiotika senken?"
+   ],
+   [
+    "🧼",
+    "Durch weniger Infektionen. Laut Bundesregierung lässt sich fast ein Drittel der Infektionen durch Hygienemaßnahmen vermeiden, etwa durch regelmäßiges Händewaschen. Nimm Antibiotika zudem genau nach Verordnung ein."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was fördert Resistenzen?",
+    "Ein zu früher Abbruch der Einnahme",
+    "Die Einnahme genau nach Verordnung",
+    "Regelmäßiges Händewaschen",
+    3
+   ],
+   [
+    "Wodurch werden Erkältungen meist verursacht?",
+    "Durch Viren",
+    "Durch Bakterien",
+    "Durch Pilze",
+    4
+   ],
+   [
+    "Wie viel der Infektionen lässt sich durch Hygiene vermeiden?",
+    "Fast ein Drittel",
+    "Fast die Hälfte",
+    "Fast zwei Drittel",
+    5
+   ]
+  ],
+  "id": "antibiot",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesregierung",
+    "title": "Gemeinsam gegen Antibiotika-Resistenzen",
+    "url": "https://www.bundesregierung.de/breg-de/themen/tipps-fuer-verbraucher/gemeinsam-gegen-antibiotika-resistenzen-2256894"
+   },
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Wie entstehen Resistenzen gegenüber Antibiotika?",
+    "url": "https://www.tk.de/techniker/service/gesundheit-und-medizin/behandlungen-und-medizin/arzneimittel-medizinische-hintergruende/resistenzen-antibiotika-2021398"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie entstand das erste Bild eines Schwarzen Lochs?",
+  "s": "Schwarzes Loch",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🕳️",
+    "Am 10. April 2019 wurde das erste Bild eines Schwarzen Lochs veröffentlicht. Es liegt in der Galaxie Messier 87, rund 55 Millionen Lichtjahre entfernt. Wie schwer ist es?"
+   ],
+   [
+    "🔭",
+    "Etwa 6,5 Milliarden Sonnenmassen. Aufgenommen wurde es im April 2017 mit acht Radioteleskopen an sechs Standorten, zusammengeschaltet zu einem virtuellen Teleskop fast so groß wie die Erde. Wie hielten die Teleskope den Takt?"
+   ],
+   [
+    "🕰️",
+    "Mit hochpräzisen Atomuhren, auf die Nanosekunde genau. Die Datenmenge betrug etwa vier Petabyte, und der Transport per Post war schneller als das Internet. Wo wurden die Daten ausgewertet?"
+   ],
+   [
+    "💽",
+    "Am Max Planck Institut für Radioastronomie in Bonn mit einem Supercomputer, dem Korrelator. Rund 200 Forschende gehören zum EHT Projekt. Die Daten stammen aus dem Jahr 2017. Was zeigt das Bild eigentlich?"
+   ],
+   [
+    "🔴",
+    "Einen hellen Ring aus erhitztem Gas mit einer dunklen Mitte. Diese Mitte ist der Schatten des Schwarzen Lochs und entsteht durch extreme Lichtbeugung kurz vor dem Ereignishorizont. Der Ring wird durch Lichtablenkung wie durch eine Linse verstärkt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie weit ist die Galaxie M87 entfernt?",
+    "Rund 55 Millionen Lichtjahre",
+    "Rund 5,5 Millionen Lichtjahre",
+    "Rund 55 Tausend Lichtjahre",
+    1
+   ],
+   [
+    "Wie wurden die Teleskope im Takt gehalten?",
+    "Mit Atomuhren",
+    "Mit Funkuhren",
+    "Mit Sonnenuhren",
+    3
+   ],
+   [
+    "Was ist die dunkle Mitte des Bildes?",
+    "Der Schatten des Lochs",
+    "Ein Fehler im Bild",
+    "Ein Stern davor",
+    5
+   ]
+  ],
+  "id": "schwarzloch",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Das erste Bild eines schwarzen Lochs",
+    "url": "https://www.mpg.de/13326591/bild-eines-schwarzen-lochs"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Der Kölner Dom: Warum dauerte der Bau 632 Jahre?",
+  "s": "Kölner Dom",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "⛪",
+    "Der Kölner Dom wurde 1248 begonnen und erst 1880 vollendet. Das sind 632 Jahre Bauzeit. Von 1528 bis 1823 ruhten die Bauarbeiten. Wie hoch ist der Südturm?"
+   ],
+   [
+    "📏",
+    "157,22 Meter, heute der dritthöchste Kirchturm, hinter dem Ulmer Münster mit 161,53 Metern und der Basilika Notre Dame de la Paix in der Elfenbeinküste. Wann war der Dom das höchste Gebäude der Welt?"
+   ],
+   [
+    "🌍",
+    "Bei seiner Fertigstellung 1880. Im Mittelalter hieß es in Köln: Wenn der Dom fertig ist, geht die Welt unter. Seit 1996 gehört er zum UNESCO Welterbe. Wie schwer ist die Petersglocke?"
+   ],
+   [
+    "🔔",
+    "Der dicke Pitter wiegt 24 Tonnen und wurde 1923 gegossen. Er ist die größte freischwingende Glocke der Welt. Wie viele Bombentreffer überstand der Dom im Zweiten Weltkrieg?"
+   ],
+   [
+    "🛠️",
+    "Rund 70, und er blieb nahezu unversehrt. Der Wiederaufbau endete 1956. Heute besuchen ihn rund 20.000 Menschen pro Tag, und rund 100 Beschäftigte der Dombauhütte halten ihn instand."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange dauerte der Bau des Kölner Doms?",
+    "632 Jahre",
+    "63 Jahre",
+    "6.320 Jahre",
+    1
+   ],
+   [
+    "Wie viel wiegt die Petersglocke?",
+    "24 Tonnen",
+    "2,4 Tonnen",
+    "240 Tonnen",
+    4
+   ],
+   [
+    "Seit wann ist der Dom UNESCO Welterbe?",
+    "Seit 1996",
+    "Seit 1880",
+    "Seit 1956",
+    3
+   ]
+  ],
+  "id": "koelnerdom",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutschland.de",
+    "title": "Kölner Dom: Geschichte, Bedeutung, Architektur",
+    "url": "https://www.deutschland.de/de/topic/kultur/koelner-dom-geschichte-bedeutung-architektur"
+   },
+   {
+    "publisher": "Planet Wissen",
+    "title": "Superlative des Kölner Doms",
+    "url": "https://www.planet-wissen.de/kultur/nordrhein_westfalen/koelner_dom/pwiesuperlativedeskoelnerdoms100.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Die Berliner Luftbrücke: Wie versorgte man eine Stadt aus der Luft?",
+  "s": "Luftbrücke",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "✈️",
+    "Am 24. Juni 1948 sperrte die Sowjetunion alle Zufahrtswege nach West Berlin. Vier Tage zuvor war in den Westzonen die Währungsreform durchgeführt worden. Was ordnete der US Militärgouverneur Lucius D. Clay an?"
+   ],
+   [
+    "🛫",
+    "Die Luftbrücke. West Berlin wurde fast ein Jahr lang über die Luft versorgt, vor allem mit Lebensmitteln, Baumaterialien und Brennstoffen. Wie viele Flüge gab es dafür insgesamt?"
+   ],
+   [
+    "📦",
+    "Nahezu 200.000 Flüge, die rund 1,5 Millionen Tonnen Güter brachten. Im Schnitt landete alle zwei bis drei Minuten ein Transportflugzeug in West Berlin. Wie nannte der Volksmund die Maschinen?"
+   ],
+   [
+    "🍇",
+    "Rosinenbomber, weil sie vor der Landung kleine Rosinenpäckchen für Kinder abwarfen. Die Blockade gilt als erster Höhepunkt des Kalten Krieges, und die Stadt war vom Nachschub abgeschnitten. Wann endete sie?"
+   ],
+   [
+    "🏁",
+    "Am 12. Mai 1949. Die Luftbrücke startete mit vollkommen unsicherem Ausgang und entwickelte sich zur Erfolgsgeschichte. Ziel der Sowjetunion war laut Bundeszentrale für politische Bildung die Kontrolle über ganz Berlin."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann begann die Blockade West Berlins?",
+    "Am 24. Juni 1948",
+    "Am 12. Mai 1949",
+    "Am 9. November 1989",
+    1
+   ],
+   [
+    "Wie oft landete im Schnitt ein Flugzeug in West Berlin?",
+    "Alle zwei bis drei Minuten",
+    "Alle zwei bis drei Stunden",
+    "Einmal am Tag",
+    3
+   ],
+   [
+    "Warum hießen die Flugzeuge Rosinenbomber?",
+    "Sie warfen Rosinenpäckchen für Kinder ab",
+    "Sie transportierten nur Rosinen",
+    "Sie hatten eine Rosinenform",
+    4
+   ]
+  ],
+  "id": "luftbruecke",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Berliner Blockade und Luftbrücke",
+    "url": "https://www.bpb.de/kurz-knapp/lexika/das-junge-politik-lexikon/319929/berliner-blockade-luftbruecke/"
+   },
+   {
+    "publisher": "Deutsches Historisches Museum",
+    "title": "Die Berliner Blockade: Luftbrücke",
+    "url": "https://www.dhm.de/archiv/ausstellungen/berliner-blockade/raum3.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791670088415,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
  }
 ]
