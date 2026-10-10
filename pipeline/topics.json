@@ -3,22 +3,25 @@
   "id": "akku",
   "k": "Alltag",
   "t": "Warum Handy-Akkus altern und wie du sie schonst",
-  "status": "queue",
-  "prev": ""
+  "status": "abgelehnt",
+  "prev": "",
+  "note": "Fehler: Expecting value: line 1 column 1 (char 0)"
  },
  {
   "id": "aktie",
   "k": "Wirtschaft",
   "t": "Was eine Aktie ist und warum ihr Preis schwankt",
-  "status": "queue",
-  "prev": ""
+  "status": "abgelehnt",
+  "prev": "",
+  "note": "Fehler: Expecting value: line 1 column 1 (char 0)"
  },
  {
   "id": "anker",
   "k": "Psyche",
   "t": "Der Ankereffekt: Wie die erste Zahl deine Entscheidung lenkt",
-  "status": "queue",
-  "prev": "Nach 2 Überarbeitungen: Faktenprüfung partial (Karte 5/Quiz 3 Gehaltsverhandlung aus zwei Quellen zusammengesetzt), Pädagogik E=3 (Quiz 3 erratbar, Strohmann-Falschantworten)."
+  "status": "abgelehnt",
+  "prev": "Nach 2 Überarbeitungen: Faktenprüfung partial (Karte 5/Quiz 3 Gehaltsverhandlung aus zwei Quellen zusammengesetzt), Pädagogik E=3 (Quiz 3 erratbar, Strohmann-Falschantworten).",
+  "note": "Fehler: Expecting value: line 1 column 1 (char 0)"
  },
  {
   "id": "aufschieben",

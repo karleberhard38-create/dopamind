@@ -1,0 +1,4 @@
+{"topic": "akku", "result": "abgelehnt", "msg": "Fehler: Expecting value: line 1 column 1 (char 0)", "spent_usd": 0.379, "ts": "2026-10-10T16:11:11.694130+00:00"}
+{"topic": "aktie", "result": "abgelehnt", "msg": "Fehler: Expecting value: line 1 column 1 (char 0)", "spent_usd": 0.635, "ts": "2026-10-10T16:12:43.164101+00:00"}
+{"topic": "anker", "result": "abgelehnt", "msg": "Fehler: Expecting value: line 1 column 1 (char 0)", "spent_usd": 0.926, "ts": "2026-10-10T16:14:29.287524+00:00"}
+{"run_done": true, "decks_total": 12, "spent_usd": 0.926, "ts": "2026-10-10T16:14:29.289203+00:00"}
