@@ -2523,5 +2523,224 @@
    "rounds": 1,
    "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
   }
+ },
+ {
+  "t": "Warum ist Multitasking weniger effektiv, als wir denken?",
+  "s": "Multitasking",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🧠",
+    "Zwölf Tage lang übten Testpersonen zwei Aufgaben gleichzeitig: einen Kreis einschätzen und einen Ton als hoch, mittel oder tief benennen. Sie wurden immer schneller und machten weniger Fehler. Heißt das, dein Gehirn kann dann wirklich beides zugleich?"
+   ],
+   [
+    "🚦",
+    "Nein. Die Forscher aus Halle fanden: Selbst mit viel Training laufen die Denkvorgänge nicht vollständig parallel. Das Gehirn reiht sie nur sehr geschickt hintereinander, sodass sie sich nicht mehr stören. Doch wie weit trägt dieser Trick?"
+   ],
+   [
+    "⚠️",
+    "Nicht weit. Schon kleinste Veränderungen an den Aufgaben ließen die Fehlerquote steigen, und die Testpersonen brauchten wieder länger. Die Optimierung des Gehirns hat Grenzen. Wie viel Zeit kostet das im Alltag?"
+   ],
+   [
+    "⏱️",
+    "Ein Wechsel kostet oft nur Zehntelsekunden. Springst du aber ständig hin und her, summiert sich das. Der Psychologe David Meyer sagt: Kurze Denkblockaden beim Wechseln können bis zu 40 Prozent der produktiven Zeit kosten. Wann wird das gefährlich?"
+   ],
+   [
+    "🚗",
+    "Bei komplexen Aufgaben, zum Beispiel beim Autofahren und gleichzeitigen Telefonieren. Mach komplexe Dinge nacheinander statt parallel. Wäsche in die Maschine zu stecken, während du mit einer Freundin sprichst, geht dagegen wahrscheinlich in Ordnung."
+   ]
+  ],
+  "quiz": [
+   [
+    "Du lernst zwei Aufgaben gleichzeitig zu erledigen und übst zwölf Tage lang. Was passiert dabei im Gehirn?",
+    "Die Denkvorgänge werden geschickt hintereinander gereiht, laufen aber nicht vollständig parallel",
+    "Nach genug Übung laufen beide Aufgaben im Gehirn vollständig gleichzeitig ab",
+    "Das Gehirn schaltet nach ein paar Tagen auf Autopilot und braucht keine Denkleistung mehr",
+    2
+   ],
+   [
+    "Du hast zwei Aufgaben lange eingeübt, und nun ändert sich eine Kleinigkeit daran. Was ist die wahrscheinlichste Folge?",
+    "Du machst mehr Fehler und wirst wieder langsamer",
+    "Du bleibst genauso schnell, weil die Routine kleine Änderungen abfängt",
+    "Du wirst schneller, weil Abwechslung das Gehirn wach hält",
+    3
+   ],
+   [
+    "Du musst eine komplexe Aufgabe erledigen und hast nebenbei mehrere andere Dinge offen. Was ist laut Forschung am sinnvollsten?",
+    "Komplexe Aufgaben nacheinander statt parallel erledigen",
+    "Abwechselnd an allen Aufgaben arbeiten, so bleibt jede im Fluss",
+    "Die schwierigste Aufgabe zusammen mit einer leichten erledigen, das gleicht sich aus",
+    5
+   ]
+  ],
+  "id": "multitask",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "American Psychological Association",
+    "title": "Multitasking: Switching costs",
+    "url": "https://www.apa.org/topics/research/multitasking"
+   },
+   {
+    "publisher": "Universität Halle-Wittenberg",
+    "title": "Studie zeigt Grenzen des Multitasking",
+    "url": "https://pressemitteilungen.pr.uni-halle.de/index.php?modus=pmanzeige&pm_id=6039"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668676861,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 4,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
+ },
+ {
+  "t": "Wie wird Inflation gemessen?",
+  "s": "Inflation",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "🛒",
+    "Das Statistische Bundesamt füllt jeden Monat einen Einkaufskorb mit rund 700 Güterarten, vom Honig bis zur Polstergarnitur. Er soll alles zeigen, was private Haushalte in Deutschland kaufen. Aber was macht man mit diesem Korb?"
+   ],
+   [
+    "💶",
+    "Jeden Monat wird der Wert des Warenkorbs ermittelt und als Verbraucherpreisindex abgebildet. Dieser Index misst die durchschnittliche Preisentwicklung aller Waren und Dienstleistungen, die private Haushalte für den Konsum kaufen. Und woraus wird daraus eine Rate?"
+   ],
+   [
+    "📅",
+    "Der Index wird mit dem Vorjahresmonat verglichen. Die prozentuale Veränderung nennt man Inflationsrate, Teuerungsrate oder Teuerung. Sie zeigt, wie sich die Preise innerhalb eines Jahres im Durchschnitt verändern. Zählt dann jedes Gut gleich viel?"
+   ],
+   [
+    "⚖️",
+    "Nein. Die Güterarten fließen mit unterschiedlichem Gewicht in den Gesamtindex ein. Die Gewichte stehen im Wägungsschema. Die größten Positionen sind Wohnen, Lebensmittel, Energie und Mobilität. Heißt das, die Rate trifft alle gleich?"
+   ],
+   [
+    "🧮",
+    "Nein, sie ist nur ein Durchschnittswert. Wie stark Inflation dich trifft, hängt von deinem Einkommen und Lebensstil ab. Mit dem persönlichen Inflationsrechner von Destatis kannst du die Güter nach deinem eigenen Konsum gewichten. Vergleiche dann Angebote und Grundpreise."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie kommt die Inflationsrate zustande?",
+    "Der Warenkorb wird mit dem Vorjahr verglichen",
+    "Die Preise einzelner Marken werden gemittelt",
+    "Der Preis eines Produkts wird mit dem Ausland verglichen",
+    3
+   ],
+   [
+    "Warum zählen manche Güter in der Inflationsrate stärker als andere?",
+    "Jede Güterart geht mit eigenem Gewicht ein",
+    "Teurere Güter werden häufiger im Laden erfasst",
+    "Neue Produkte zählen stets mehr als alte",
+    4
+   ],
+   [
+    "Was sagt die offizielle Inflationsrate über deine eigene Teuerung?",
+    "Sie ist nur ein Durchschnitt und kann abweichen",
+    "Sie gilt für jeden Haushalt in gleichem Maß",
+    "Sie spiegelt vor allem die Preise für Wohnen",
+    5
+   ]
+  ],
+  "id": "vpi",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Statistisches Bundesamt",
+    "title": "Verbraucherpreisindex",
+    "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Inflation verstehen und Geld sparen",
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/kredit-schulden-insolvenz/inflation-verstehen-und-geld-sparen-86778"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668827347,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 3,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
+ },
+ {
+  "t": "Wie funktioniert ein ETF, und was kostet er?",
+  "s": "ETF-Kosten",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💶",
+    "Du legst 10.000 Euro in einen ETF an. Die laufenden Kosten betragen 0,4 Prozent im Jahr. Schon im ersten Jahr sind das 40 Euro, die dem Fondsvermögen entnommen werden. Aber was steckt eigentlich hinter dem Kürzel ETF?"
+   ],
+   [
+    "📈",
+    "ETF heißt börsengehandelter Fonds. Die Anteile kaufst und verkaufst du direkt an der Börse. Meist bildet ein ETF einen bekannten Aktienindex nach, zum Beispiel den DAX oder den MSCI World. Aber wer entscheidet dann, welche Aktien darin stecken?"
+   ],
+   [
+    "🧺",
+    "Bei einem klassischen, passiv gemanagten ETF hat der Verwalter wenig Spielraum. Er trifft keine eigenen Anlageentscheidungen und passt die Zusammensetzung an den Index an. Dafür streut dein Geld breit. Aber wo bleibt dann der Haken?"
+   ],
+   [
+    "⚠️",
+    "Der Wert eines ETFs folgt den Bewegungen des Marktes. Aktienmärkte können stark schwanken, und der Verwalter kann nicht eingreifen, wenn sich der Markt ändert. Die Risiken einer Geldanlage trägst du allein. Aber worauf kannst du vor dem Kauf achten?"
+   ],
+   [
+    "🔍",
+    "Schau auf die Gebühren und auf den Index. Die laufenden Kosten, die TER, stehen im Basisinformationsblatt. Ähnliche ETFs können unterschiedlich hohe Kosten haben, also vergleiche vorher. Prüfe außerdem, welchen Index der ETF abbildet."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer entscheidet bei einem klassischen, passiv gemanagten ETF, welche Aktien darin stecken?",
+    "Der Index gibt es vor, der Verwalter passt die Zusammensetzung nur daran an",
+    "Der Verwalter wählt jeden Monat die aussichtsreichsten Aktien selbst aus",
+    "Die Anleger stimmen regelmäßig darüber ab, welche Aktien aufgenommen werden",
+    2
+   ],
+   [
+    "Was passiert mit den laufenden Kosten eines ETFs, wenn du Anteile hältst?",
+    "Sie werden direkt dem Fondsvermögen entnommen und schmälern die Rendite",
+    "Sie werden dir einmal im Jahr separat von deinem Konto abgebucht",
+    "Sie fallen nur beim Kauf an und danach nicht mehr",
+    1
+   ],
+   [
+    "Was solltest du tun, bevor du Anteile an einem ETF kaufst?",
+    "Die Kosten ähnlicher ETFs vergleichen und prüfen, welchen Index er abbildet",
+    "Allein auf den Namen des Anbieters achten, weil Kosten bei allen gleich sind",
+    "Den ETF kaufen, der im Jahr davor am meisten gestiegen ist",
+    5
+   ]
+  ],
+  "id": "etf",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "BaFin",
+    "title": "Exchange Traded Funds (ETFs) im Überblick",
+    "url": "https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/geldanlage/wertpapiere/etf/etf.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "ETF für Anfänger",
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/altersvorsorge/etf-fuer-anfaenger-die-haeufigsten-fragen-einfach-erklaert-109444"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791668856451,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
  }
 ]

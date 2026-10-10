@@ -277,7 +277,8 @@
   ],
   "tier": "A-",
   "note": "",
-  "status": "queue"
+  "status": "live",
+  "note_last": "ok nach 4 Runde(n)"
  },
  {
   "id": "einsam",
@@ -319,7 +320,8 @@
   ],
   "tier": "A-",
   "note": "",
-  "status": "queue"
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (Programm): Quiz 2: Zahl \"60\" steht in keinem Zitat"
  },
  {
   "id": "aufwaermen",
@@ -508,7 +510,8 @@
   ],
   "tier": "A-",
   "note": "keine tagesaktuellen Raten verwenden, nur das Prinzip",
-  "status": "queue"
+  "status": "live",
+  "note_last": "ok nach 3 Runde(n)"
  },
  {
   "id": "etf",
@@ -529,7 +532,8 @@
   ],
   "tier": "A-",
   "note": "keine Anlageempfehlung, nur Funktionsweise",
-  "status": "queue"
+  "status": "live",
+  "note_last": "ok nach 1 Runde(n)"
  },
  {
   "id": "dispo",
@@ -613,7 +617,8 @@
   ],
   "tier": "B+",
   "note": "",
-  "status": "queue"
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (Programm): Ledger f11: Zitat steht nicht wörtlich im Quellentext: \"Veränderungen in der chemischen Zusammensetzung \nund der Temperatur der vulkanischen Gase \""
  },
  {
   "id": "atomuhr",
