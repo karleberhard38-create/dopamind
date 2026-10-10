@@ -19,7 +19,8 @@
   "tier": "A",
   "note": "zweite Quelle noch nicht geöffnet",
   "status": "queue",
-  "note_last": "abgelehnt (Programm): Quiz 1: falsche Antwort enthält Extremwort: \"Sofort wegwerfen, weil das Datum abgelaufen ist\""
+  "note_last": "Fehler: ValueError: kein JSON in der Antwort",
+  "fails": 1
  },
  {
   "id": "kuehlschr",
