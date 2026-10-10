@@ -18,9 +18,8 @@
   ],
   "tier": "A",
   "note": "zweite Quelle noch nicht geöffnet",
-  "status": "abgelehnt",
-  "note_last": "abgelehnt (KI): [facts=pass ped={'A': 4, 'B': 5, 'C': 4, 'D': 5, 'E': 4} vergl=True blind=3] Quiz 2: Die falsche Antwort \"Es ist nach diesem Datum nur noch für Tiere geeignet\" ist absurd und kein ernst gemeinter Irrtum. Ersetzen durch einen plausiblen Mythos, etwa \"Es verliert nach diesem Datum seine Nährstoffe, ist aber sonst unbedenklich\" (Länge angleichen). | Quiz 1: Die richtige Antwort \"Ansch",
-  "fails": 1
+  "status": "queue",
+  "note_last": "abgelehnt (KI): [facts=pass ped={'A': 4, 'B': 5, 'C': 4, 'D': 5, 'E': 4} vergl=True blind=3] Quiz 2: Die falsche Antwort \"Es ist nach diesem Datum nur noch für Tiere geeignet\" ist absurd und kein ernst gemeinter Irrtum. Ersetzen durch einen plausiblen Mythos, etwa \"Es verliert nach diesem Datum seine Nährstoffe, ist aber sonst unbedenklich\" (Länge angleichen). | Quiz 1: Die richtige Antwort \"Ansch"
  },
  {
   "id": "kuehlschr",
@@ -41,7 +40,7 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "abgelehnt",
+  "status": "queue",
   "note_last": "abgelehnt (KI): [facts=partial ped={'A': 3, 'B': 4, 'C': 4, 'D': 3, 'E': 4} vergl=True blind=3] Karte 2: 'Das BfR rät deshalb, den Kühlschrank nicht zu voll zu packen.' Das Wort 'deshalb' leitet die Empfehlung aus der Zirkulation ab, im Quelltext steht die Zirkulation allerdings als Begründung der Empfehlung (passt), aber 'Ist alles zugestellt, kommt sie nicht mehr überall hin' ist über die Quelle"
  },
  {

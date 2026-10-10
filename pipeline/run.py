@@ -169,6 +169,7 @@ class Fake:
 AUFTRAG = """AUFTRAG (hat Vorrang vor der Spezifikation oben, wo beide abweichen)
 Du schreibst ein Deck NUR aus den mitgelieferten Quellentexten Q1 und Q2. Du hast keine Suche. Was nicht in diesen Texten steht, darf nicht auf eine Karte und nicht ins Quiz, auch nicht als Allgemeinwissen, Beispiel oder Zeitangabe.
 Alle Zitate im Ledger werden WORTGETREU aus den Quellentexten kopiert (höchstens 30 Wörter am Stück, unverändert, nicht umformuliert). Das Programm prüft jedes Zitat per Textsuche. Jede Zahl auf den Karten und im Quiz muss in einem Zitat stehen.
+Keine eigenen Begründungen: Verknüpfe Aussagen nur mit "deshalb", "weil", "denn" oder "damit", wenn die Quelle diesen Zusammenhang selbst so sagt. Keine Abschwächungen oder Steigerungen ("manchmal" statt "häufig", "nur", "überall", "immer"), die in der Quelle anders stehen. Im Zweifel die Wortwahl der Quelle übernehmen.
 
 KARTEN (genau 5)
 - Karte 1: Haken (überraschende Frage, Zahl oder Widerspruch), nie eine Definition. Sage dem Leser nicht, was er denkt oder tut ("Du denkst ..." ist verboten). Die Auflösung kommt erst auf Karte 2.
