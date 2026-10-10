@@ -19,7 +19,6 @@
   "tier": "A",
   "note": "zweite Quelle noch nicht geöffnet",
   "status": "queue",
-  "fails": 1,
   "note_last": "Fehler: ValueError: kein JSON in der Antwort"
  },
  {
@@ -42,7 +41,6 @@
   "tier": "A",
   "note": "",
   "status": "queue",
-  "fails": 1,
   "note_last": "Fehler: ValueError: kein JSON in der Antwort"
  },
  {

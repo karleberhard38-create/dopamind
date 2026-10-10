@@ -128,8 +128,11 @@ class Real:
         cost = (u.input_tokens * pin + u.output_tokens * pout + cw * pin * 1.25 + cr * pin * 0.1) / 1e6
         spent += cost
         text = "".join(b.text for b in r.content if b.type == "text")
+        extra = {}
+        if r.stop_reason != "end_turn":
+            extra = {"text_head": text[:400], "text_tail": text[-400:], "blocks": [b.type for b in r.content]}
         log(call=tag, model=model, stop=r.stop_reason, tok_in=u.input_tokens, tok_out=u.output_tokens,
-            cache_w=cw, cache_r=cr, cost_usd=round(cost, 4), spent_usd=round(spent, 3))
+            cache_w=cw, cache_r=cr, cost_usd=round(cost, 4), spent_usd=round(spent, 3), **extra)
         return text
 
 
@@ -324,10 +327,10 @@ def build_deck(cli, topic, existing_ids):
     srcs = get_sources(topic)
     system = SPEC + "\n\n" + AUFTRAG
     sblock = {"type": "text", "text": source_block(srcs), "cache_control": {"type": "ephemeral"}}
-    task = ('Thema: "%s" (Kategorie %s). Aufhänger-Idee: %s\nHinweis: %s\nSchreibe das Deck.'
+    task = ('Thema: "%s" (Kategorie %s). Aufhänger-Idee: %s\nHinweis: %s\nSchreibe das Deck. Antworte direkt mit dem ```json Block, ohne Vorüberlegung und ohne Text davor.'
             % (topic["t"], topic["k"], topic.get("hook", ""), topic.get("note", "") or "keiner"))
     msgs = [{"role": "user", "content": [sblock, {"type": "text", "text": task}]}]
-    text = cli.call(AUTHOR_MODEL, system, msgs, 5000, "autor")
+    text = cli.call(AUTHOR_MODEL, system, msgs, 9000, "autor")
     deck = jparse(text)
     if "reject" in deck:
         return None, "Autor lehnt ab: " + str(deck["reject"])[:300]
@@ -353,7 +356,7 @@ def build_deck(cli, topic, existing_ids):
             return None, ("abgelehnt (%s): " % ("Programm" if check is None else "KI")) + " | ".join(problems)[:700]
         rmsg = msgs + [{"role": "assistant", "content": json.dumps(deck, ensure_ascii=False)},
                        {"role": "user", "content": REVISE_TASK % "\n".join("- " + p for p in problems[:12])}]
-        deck = jparse(cli.call(AUTHOR_MODEL, system, rmsg, 5000, "revision"))
+        deck = jparse(cli.call(AUTHOR_MODEL, system, rmsg, 9000, "revision"))
         if "reject" in deck:
             return None, "Autor lehnt ab: " + str(deck["reject"])[:300]
     return None, "abgelehnt"
