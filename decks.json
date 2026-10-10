@@ -1068,5 +1068,151 @@
    "blind_erratbar": 3,
    "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
   }
+ },
+ {
+  "t": "Wie kalt muss dein Kühlschrank sein?",
+  "s": "Kühlschrank",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🧊",
+    "Dein Kühlschrank ist voll bis zum Rand. Praktisch, oder? Doch ein zu voller Kühlschrank kann wärmer werden, als er sein sollte. Warum bringt ein überfüllter Kühlschrank die Kälte durcheinander?"
+   ],
+   [
+    "🌬️",
+    "Die kühle Luft muss zwischen den Lebensmitteln zirkulieren können. Ist der Kühlschrank zu voll, steigt die Temperatur. Dabei ist Kälte wichtig: Kühlen bremst die Vermehrung der meisten Bakterien. Wie warm darf es denn höchstens sein?"
+   ],
+   [
+    "🌡️",
+    "Stelle den Kühlschrank auf höchstens 7 Grad ein. Besser ist laut BfR sogar unter 5 Grad. Doch im Kühlschrank ist es nicht überall gleich kalt. Wohin gehört dann das Fleisch?"
+   ],
+   [
+    "🥩",
+    "Fleisch, Geflügel und Fisch kommen ins unterste Fach, weil es dort am kältesten ist. So tropft auch kein Fleischsaft auf andere Lebensmittel. Manche Produkte dürfen nur noch kälter gelagert werden. Welche?"
+   ],
+   [
+    "✅",
+    "Vorverpacktes Hackfleisch darf nur bei höchstens 2 Grad lagern. Schaffst du das nicht, verbrauche es noch am Einkaufstag. Miss die Temperatur im Zweifel mit einem Thermometer nach."
+   ]
+  ],
+  "quiz": [
+   [
+    "Du packst deinen Kühlschrank nach einem Großeinkauf bis zum Rand voll. Was ist die Folge?",
+    "Die Temperatur im Kühlschrank steigt",
+    "Die Lebensmittel halten sich gegenseitig kalt, die Temperatur sinkt",
+    "Die Temperatur ändert sich nicht, nur der Stromverbrauch steigt",
+    2
+   ],
+   [
+    "Du kommst vom Einkauf und hast rohes Hähnchen dabei. Wohin legst du es im Kühlschrank?",
+    "Ins unterste Fach, wo es am kältesten ist",
+    "Ins mittlere Fach, wo es gleichmäßig gekühlt wird",
+    "Ins obere Fach, wo du es schnell wieder findest",
+    4
+   ],
+   [
+    "Dein Kühlschrank schafft keine 2 Grad. Du hast vorverpacktes Hackfleisch gekauft. Was ist am sichersten?",
+    "Das Hackfleisch noch am Einkaufstag verbrauchen",
+    "Das Hackfleisch bis zum Wochenende kühl lagern",
+    "Das Hackfleisch vor dem Kühlen kurz mit Wasser abspülen",
+    5
+   ]
+  ],
+  "id": "kuehlschr",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "BfR",
+    "title": "Lebensmittelinfektionen im Privathaushalt",
+    "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/lebensmittelinfektionen-im-privathaushalt-quellen-erkennen-risiken-vermeiden/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Lebensmittel sicher einkaufen und lagern",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/lebensmittel-sicher-einkaufen-und-lagern-8336"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791665367395,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 4,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
+ },
+ {
+  "t": "Wie viel Salz ist zu viel, und woher kommt es wirklich?",
+  "s": "Salz",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🧂",
+    "Du streust kaum Salz aufs Essen und denkst, du bist auf der sicheren Seite? Doch nur etwa ein Fünftel des Salzes, das wir essen, kommt beim Kochen oder Nachwürzen ins Essen. Woher kommt dann der Rest?"
+   ],
+   [
+    "🥖",
+    "Das meiste Salz versteckt sich in Brot, Wurst, Käse und Fertiglebensmitteln. Der Salzstreuer zu Hause spielt dabei eine eher untergeordnete Rolle. Dabei gibt es eine Obergrenze für den Tag. Wie hoch liegt sie?"
+   ],
+   [
+    "🥄",
+    "Die Deutsche Gesellschaft für Ernährung empfiehlt höchstens 6 Gramm Salz am Tag, das ist etwa ein Teelöffel. Die Weltgesundheitsorganisation rät sogar nur zu 5 Gramm. Und wie viel essen die Menschen in Deutschland wirklich?"
+   ],
+   [
+    "💧",
+    "Männer essen im Durchschnitt 10 Gramm Salz am Tag, Frauen 8,4 Gramm. Der Körper bindet überschüssiges Salz an Wasser, das Blutvolumen steigt und der Blutdruck geht hoch. Das belastet Herz, Niere und Gehirn. Was kannst du tun?"
+   ],
+   [
+    "🔍",
+    "Schau auf die Nährwerttabelle und vergleiche den Salzgehalt pro 100 Gramm. Oft gibt es salzärmere Alternativen, zum Beispiel Frischkäse statt Schmelzkäse. Koche so oft wie möglich selbst und würze lieber mit frischen Kräutern oder einem Spritzer Zitronensaft."
+   ]
+  ],
+  "quiz": [
+   [
+    "Woher stammt der größte Teil des Salzes, das wir essen?",
+    "Aus Brot, Wurst, Käse und Fertigprodukten",
+    "Aus dem Salzstreuer beim Kochen und Nachwürzen",
+    "Aus Trinkwasser und Mineralwasser",
+    1
+   ],
+   [
+    "Was passiert im Körper, wenn dauerhaft sehr viel Salz gegessen wird?",
+    "Der Körper bindet das Salz an Wasser, das Blutvolumen und der Blutdruck steigen",
+    "Der Körper scheidet überschüssiges Salz sofort vollständig wieder aus",
+    "Der Blutdruck sinkt, weil der Körper mehr Wasser abgibt",
+    4
+   ],
+   [
+    "Was ist eine wirkungsvolle Maßnahme, um weniger Salz zu essen?",
+    "Mit frischen Zutaten selbst kochen und mit Kräutern würzen",
+    "Nur noch Salz aus dem Salzstreuer weglassen",
+    "Auf Brot ganz verzichten und mehr Wurst essen",
+    5
+   ]
+  ],
+  "id": "salz",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Fragen und Antworten zu Salz",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/fragen-und-antworten-zu-salz-das-sollten-sie-wissen-11384"
+   },
+   {
+    "publisher": "Stiftung Warentest",
+    "title": "Bluthochdruck: Mehr als 6 Gramm Salz am Tag schaden",
+    "url": "https://www.test.de/Bluthochdruck-Mehr-als-6-Gramm-Salz-am-Tag-schaden-4987786-0/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791665418459,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 2,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
  }
 ]
