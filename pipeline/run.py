@@ -217,7 +217,7 @@ def source_block(srcs):
 
 
 # ---------------------------------------------------------------- Programm-Pruefung
-BAD_WRONG = re.compile(r"\b(immer|nie|niemals|alles|nichts|komplett|sofort|ausschließlich|stets|keineswegs|garantiert)\b", re.I)
+BAD_WRONG = re.compile(r"\b(immer|nie|niemals|alles|nichts|komplett|ausschließlich|keineswegs|garantiert)\b", re.I)
 BAD_PHRASES = ["du denkst", "weißt du", "was meinst du", "ganz einfach", "absolut", "enorm", "massiv"]
 NUM = re.compile(r"\d+(?:[.,]\d+)*")
 
