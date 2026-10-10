@@ -357,7 +357,7 @@ def build_deck(cli, topic, existing_ids):
                                    "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"})
                 return out, "ok nach %d Runde(n)" % (rnd + 1)
         if rnd == MAX_REVISIONS or spent > BUDGET:
-            return None, ("abgelehnt (%s): " % ("Programm" if check is None else "KI")) + " | ".join(problems)[:700]
+            return None, ("abgelehnt (%s): " % ("Programm" if check is None else "KI")) + (diag if check is not None else "") + " | ".join(problems)[:1200]
         rmsg = msgs + [{"role": "assistant", "content": json.dumps(deck, ensure_ascii=False)},
                        {"role": "user", "content": REVISE_TASK % "\n".join("- " + p for p in problems[:12])}]
         deck = jparse(cli.call(AUTHOR_MODEL, system, rmsg, 9000, "revision"))
