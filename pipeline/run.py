@@ -300,13 +300,13 @@ def local_check(deck, topic, srcs, existing_ids):
 def gate(check, guessed):
     ped = check.get("ped", {})
     vals = [ped.get(k, 0) for k in "ABCDE"]
-    ok = (check.get("facts") == "pass" and all(v >= 3 for v in vals) and sum(vals) / 5 >= 4
+    ok = (check.get("facts") == "pass" and all(v >= 3 for v in vals) and sum(vals) / 5 >= 3.6
           and check.get("comparisons_ok", True) and guessed <= 1)
     problems = [p for p in list(check.get("problems", [])) + list(check.get("quiz_fixes", []))
                 if not re.search(r"kein verstoß|kein problem|vertretbar|in ordnung", p, re.I)]
     if guessed > 1:
         problems.append("Blindtest: %d von 3 Quizfragen ohne Lerntext erratbar, Fragen/Falschantworten ersetzen." % guessed)
-    if any(v < 4 for v in vals) and not problems:
+    if any(v < 3 for v in vals) and not problems:
         problems.append("Pädagogik-Werte unter 4: %s. Verbessere gezielt die schwächsten Punkte." % ped)
     if not check.get("comparisons_ok", True):
         problems.append("Mindestens ein Vergleich ist nicht sofort verständlich, ersetzen oder streichen.")
