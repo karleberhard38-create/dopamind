@@ -1,0 +1,630 @@
+[
+ {
+  "id": "mhd",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.bzfe.de/kueche-und-alltag/kochen/haltbarkeit-von-lebensmitteln",
+    "words": 1505,
+    "ok": true
+   },
+   {
+    "url": "https://www.bmleh.de/DE/themen/ernaehrung/lebensmittelverschwendung/mindesthaltbarkeit-kein-verfallsdatum.html",
+    "words": 452,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "kuehlschr",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/lebensmittelinfektionen-im-privathaushalt-quellen-erkennen-risiken-vermeiden/",
+    "words": 3662,
+    "ok": true
+   },
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/lebensmittel-sicher-einkaufen-und-lagern-8336",
+    "words": 1393,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "salz",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/fragen-und-antworten-zu-salz-das-sollten-sie-wissen-11384",
+    "words": 1414,
+    "ok": true
+   },
+   {
+    "url": "https://www.test.de/Bluthochdruck-Mehr-als-6-Gramm-Salz-am-Tag-schaden-4987786-0/",
+    "words": 909,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "acrylamid",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zu-acrylamid-in-lebensmitteln/",
+    "words": 1764,
+    "ok": true
+   },
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/acrylamid-problematischer-stoff-in-lebensmitteln-13879",
+    "words": 1657,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "ballast",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.bzfe.de/essen-und-gesundheit/naehrstoffe/ballaststoffe",
+    "words": 1455,
+    "ok": true
+   },
+   {
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/vollkorn/",
+    "words": 451,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "zucker",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/zu-viel-zucker-in-erfrischungsgetraenken-39802",
+    "words": 919,
+    "ok": true
+   },
+   {
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/suesses-salziges-und-fettiges/",
+    "words": 583,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "hitze",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.umweltbundesamt.de/daten/umwelt-gesundheit/gesundheitsrisiken-durch-hitze",
+    "words": 262,
+    "ok": false
+   },
+   {
+    "url": "https://www.klima-mensch-gesundheit.de/hitzeschutz/empfehlungen-bei-hitze/",
+    "words": 3761,
+    "ok": true
+   }
+  ],
+  "usable": false
+ },
+ {
+  "id": "zecke",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.gesundheitsinformation.de/borreliose.html",
+    "words": 96,
+    "ok": false
+   },
+   {
+    "url": "https://www.rki.de/DE/Aktuelles/Publikationen/RKI-Ratgeber/Ratgeber/Ratgeber_FSME.html",
+    "words": 2743,
+    "ok": true
+   }
+  ],
+  "usable": false
+ },
+ {
+  "id": "uvhaut",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://www.krebsinformationsdienst.de/service/iblatt/iblatt-uv-sonnenschutz.pdf",
+    "words": 1196,
+    "ok": true
+   },
+   {
+    "url": "https://www.bfs.de/DE/themen/opt/uv/wirkung/einfuehrung/einfuehrung.html",
+    "words": 340,
+    "ok": false
+   }
+  ],
+  "usable": false
+ },
+ {
+  "id": "laerm",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://www.umweltbundesamt.de/themen/verkehr-laerm/laermwirkung/gehoerschaeden",
+    "words": 170,
+    "ok": false
+   },
+   {
+    "url": "https://legacy.hno.org/storage/app/media/PDF/presse/PM_Hoerverlust_bei_Jugendlichen.pdf",
+    "words": 0,
+    "ok": false,
+    "error": "SSLError: HTTPSConnectionPool(host='legacy.hno.org', port=443): Max retries exceeded with url: /storage/app/media/PDF/presse/PM_Ho"
+   }
+  ],
+  "usable": false
+ },
+ {
+  "id": "bewegung",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+    "words": 1445,
+    "ok": true
+   },
+   {
+    "url": "https://gesund.bund.de/en/gesund-durch-bewegung",
+    "words": 1913,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "stress",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.apa.org/topics/stress/body",
+    "words": 2655,
+    "ok": true
+   },
+   {
+    "url": "https://www.gesundheit.gv.at/leben/stress/was-ist-das.html",
+    "words": 1339,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "multitask",
+  "tier": "A-",
+  "sources": [
+   {
+    "url": "https://www.apa.org/topics/research/multitasking",
+    "words": 1294,
+    "ok": true
+   },
+   {
+    "url": "https://pressemitteilungen.pr.uni-halle.de/index.php?modus=pmanzeige&pm_id=6039",
+    "words": 446,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "einsam",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://kompetenznetz-einsamkeit.de/einsamkeit",
+    "words": 620,
+    "ok": true
+   },
+   {
+    "url": "https://www.mpg.de/12795815/frauen-leiden-haeufiger-unter-einsamkeit-und-depression-im-alter",
+    "words": 2572,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "sportpsyche",
+  "tier": "A-",
+  "sources": [
+   {
+    "url": "https://www.apa.org/topics/exercise-fitness/stress",
+    "words": 1355,
+    "ok": true
+   },
+   {
+    "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/",
+    "words": 1436,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "aufwaermen",
+  "tier": "B+",
+  "sources": [
+   {
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20045517",
+    "words": 0,
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20045517"
+   },
+   {
+    "url": "https://www.tk.de/techniker/magazin/sport/rueckentraining/aufwaermuebungen-2004048",
+    "words": 1842,
+    "ok": true
+   }
+  ],
+  "usable": false
+ },
+ {
+  "id": "trinkensport",
+  "tier": "A-",
+  "sources": [
+   {
+    "url": "https://www.ifss.kit.edu/rd_download/2. Forschung/Leistungsphysiologie und Ernährung/Positionspapiere/Flüssigkeitsmanagment_im_Sport.pdf",
+    "words": 5953,
+    "ok": true
+   },
+   {
+    "url": "https://www.tk.de/techniker/gesundheit-foerdern/sport-und-bewegung/basics/trinken-sport-schwitzen-2004666",
+    "words": 98,
+    "ok": false
+   }
+  ],
+  "usable": false
+ },
+ {
+  "id": "kraft",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670",
+    "words": 0,
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art"
+   },
+   {
+    "url": "https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise",
+    "words": 0,
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resista"
+   }
+  ],
+  "usable": false
+ },
+ {
+  "id": "passwort",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html",
+    "words": 997,
+    "ok": true
+   },
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/datenschutz/starke-passwoerter-erstellen-so-schuetzen-sie-ihre-onlinekonten-effektiv-11672",
+    "words": 2030,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "phishing",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.polizei-beratung.de/themen-und-tipps/gefahren-im-internet/phishing/",
+    "words": 620,
+    "ok": true
+   },
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/phishingradar/phishingmails-woran-sie-sie-erkennen-und-worauf-sie-achten-muessen-6073",
+    "words": 3098,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "notvorrat",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/So-koennen-Sie-sich-vorbereiten/Bevorraten/bevorraten_node.html",
+    "words": 677,
+    "ok": true
+   },
+   {
+    "url": "https://www.bzfe.de/kueche-und-alltag/private-ernaehrungsvorsorge",
+    "words": 1582,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "kuehlstrom",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://umweltbundesamt.de/umwelttipps-fuer-den-alltag/elektrogeraete/kuehlschrank",
+    "words": 1014,
+    "ok": true
+   },
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/energie/strom-sparen/strom-sparen-im-haushalt-einfache-tipps-10734",
+    "words": 2006,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "lueften",
+  "tier": "A",
+  "sources": [
+   {
+    "url": "https://www.umweltbundesamt.de/themen/gesundheit/umwelteinfluesse-auf-den-menschen/schimmel/wie-luefte-ich-richtig-tipps-tricks-zur",
+    "words": 989,
+    "ok": true
+   },
+   {
+    "url": "https://www.bmuv.de/themen/gesundheit-chemikalien/gesundheit/innenraumluft/richtiges-lueften-und-heizen",
+    "words": 350,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "vpi",
+  "tier": "A-",
+  "sources": [
+   {
+    "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html",
+    "words": 2292,
+    "ok": true
+   },
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/kredit-schulden-insolvenz/inflation-verstehen-und-geld-sparen-86778",
+    "words": 1320,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "etf",
+  "tier": "A-",
+  "sources": [
+   {
+    "url": "https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/geldanlage/wertpapiere/etf/etf.html",
+    "words": 1229,
+    "ok": true
+   },
+   {
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/altersvorsorge/etf-fuer-anfaenger-die-haeufigsten-fragen-einfach-erklaert-109444",
+    "words": 1376,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "dispo",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Fachartikel/2024/fa_bj_0205_Junge_Erwachsene_Kredite.html",
+    "words": 799,
+    "ok": true
+   },
+   {
+    "url": "https://www.vzhh.de/themen/finanzen/konto-karte/dispozinsen-weiter-gestiegen",
+    "words": 564,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "steuer",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://www.bpb.de/shop/zeitschriften/izpb/steuern-und-finanzen-360/555583/grundlagen-der-besteuerung/",
+    "words": 2778,
+    "ok": true
+   },
+   {
+    "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_194_73111.html",
+    "words": 535,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "gravwellen",
+  "tier": "A-",
+  "sources": [
+   {
+    "url": "https://www.mpg.de/9959901/gravitationswellen-100-jahre-nach-einsteins-vorhersage-entdeckt",
+    "words": 2183,
+    "ok": true
+   },
+   {
+    "url": "https://www.dlr.de/de/ar/themen-missionen/weltraumforschung/erkundung-des-weltraums/entstehung-des-universums/lisa",
+    "words": 1104,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "vulkan",
+  "tier": "B+",
+  "sources": [
+   {
+    "url": "https://eskp.de/fileadmin/eskp/publikationen/fragen_und_antworten/FAQ-Vulkanismus.pdf",
+    "words": 2361,
+    "ok": true
+   },
+   {
+    "url": "https://www.lmu.de/de/newsroom/newsuebersicht/news/zwischen-den-eruptionen-bohrungen-liefern-einblicke-ins-magma-2e5d6d90.html",
+    "words": 564,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "atomuhr",
+  "tier": "B-",
+  "sources": [
+   {
+    "url": "https://oar.ptb.de/files/download/310.20160202.pdf",
+    "words": 9263,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "polarlicht",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://www.dlr.de/de/medien/publikationen/magazine/alle-magazine-webversion/dlrmagazin-177/rasende-feuerfuechse-am-firmament",
+    "words": 1295,
+    "ok": true
+   },
+   {
+    "url": "https://asc-csa.gc.ca/eng/astronomy/auroramax/sun-aurora.asp",
+    "words": 439,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "tsunami",
+  "tier": "B+",
+  "sources": [
+   {
+    "url": "https://www.Geomar.de/fileadmin/content/entdecken/naturgefahren_meer/rollup_tsunami.pdf",
+    "words": 916,
+    "ok": true
+   },
+   {
+    "url": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_235688_2/component/file_235687/10143DE.pdf",
+    "words": 7525,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "zugvogel",
+  "tier": "B+",
+  "sources": [
+   {
+    "url": "https://www.mpg.de/572464/pressemitteilung200912171",
+    "words": 674,
+    "ok": true
+   },
+   {
+    "url": "https://idw-online.de/de/news771276",
+    "words": 866,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "fledermaus",
+  "tier": "B+",
+  "sources": [
+   {
+    "url": "https://www.mpg.de/15111519/fledermaus",
+    "words": 1796,
+    "ok": true
+   },
+   {
+    "url": "https://www.lmu.de/de/newsroom/newsuebersicht/news/exzellente-navigation-mit-wenig-information-87896f72.html",
+    "words": 580,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "schwaenzel",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://idw-online.de/de/news742572",
+    "words": 778,
+    "ok": true
+   },
+   {
+    "url": "https://www.cordis.europa.eu/article/id/430410-understanding-the-honeybee-waggle-dance/de",
+    "words": 517,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "ameisen",
+  "tier": "B",
+  "sources": [
+   {
+    "url": "https://beutenberg.de/fileadmin/import/images/e260bf8d74/MPI-CE_Pressem_Haeder2009_de.pdf",
+    "words": 745,
+    "ok": true
+   },
+   {
+    "url": "https://idw-online.de/de/news817473",
+    "words": 588,
+    "ok": true
+   }
+  ],
+  "usable": true
+ },
+ {
+  "id": "winterschlaf",
+  "tier": "B-",
+  "sources": [
+   {
+    "url": "https://phaidra.vetmeduni.ac.at/api/object/o:984/download",
+    "words": 13285,
+    "ok": true
+   },
+   {
+    "url": "https://idw-online.de/de/news762500",
+    "words": 835,
+    "ok": true
+   }
+  ],
+  "usable": true
+ }
+]
