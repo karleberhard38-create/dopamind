@@ -18,8 +18,8 @@
   ],
   "tier": "A",
   "note": "zweite Quelle noch nicht geöffnet",
-  "status": "queue",
-  "note_last": "Fehler: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '\"thinking.type.between_tools\" is not supported for this model.'}, 'request_id': 'req_011CfuA1ktLaBLiPFpMYaFH8'}"
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (KI): Quiz 1 (Karte 4), falsche Antwort \"Er ist nur noch weniger knackig, aber unbedenklich\" und Karte 4 allgemein: Q1/Q2 stützen, dass vorgeschnittener Salat ein Verbrauchsdatum hat und nach Ablauf Keime enthalten KANN. Dass er \"frisch aussieht und riecht\", ist eine Annahme der Frage, aber die richtige Antwort \"Er kann Keime enthalten, die man nicht bemerkt\" ist belegt. Kein Verstoß hie"
  },
  {
   "id": "kuehlschr",
