@@ -18,7 +18,9 @@
   ],
   "tier": "A",
   "note": "zweite Quelle noch nicht geöffnet",
-  "status": "queue"
+  "status": "queue",
+  "fails": 1,
+  "note_last": "Fehler: ValueError: kein JSON in der Antwort"
  },
  {
   "id": "kuehlschr",
@@ -39,7 +41,9 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue"
+  "status": "queue",
+  "fails": 1,
+  "note_last": "Fehler: ValueError: kein JSON in der Antwort"
  },
  {
   "id": "salz",
