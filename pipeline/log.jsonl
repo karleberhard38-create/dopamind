@@ -89,3 +89,12 @@
 {"call": "revision", "model": "claude-sonnet-5-5", "stop": "end_turn", "tok_in": 4523, "tok_out": 3042, "cache_w": 0, "cache_r": 16044, "cost_usd": 0.0427, "spent_usd": 0.177, "ts": "2026-10-10T20:37:57.916129+00:00"}
 {"topic": "mhd", "result": "abgelehnt", "msg": "abgelehnt (Programm): Quiz 2: richtige Antwort ist auffällig länger als die falschen | Quiz 2: Antworten sehr unterschiedlich lang, angleichen", "spent_usd": 0.177, "ts": "2026-10-10T20:37:57.917171+00:00"}
 {"run_done": true, "decks_total": 12, "spent_usd": 0.177, "ts": "2026-10-10T20:37:57.920308+00:00"}
+{"call": "autor", "model": "claude-sonnet-5-5", "stop": "end_turn", "tok_in": 170, "tok_out": 3001, "cache_w": 0, "cache_r": 16044, "cost_usd": 0.0336, "spent_usd": 0.034, "ts": "2026-10-10T20:40:05.348561+00:00"}
+{"call": "revision", "model": "claude-sonnet-5-5", "stop": "end_turn", "tok_in": 3527, "tok_out": 3083, "cache_w": 0, "cache_r": 16044, "cost_usd": 0.0411, "spent_usd": 0.075, "ts": "2026-10-10T20:40:20.016258+00:00"}
+{"call": "check", "model": "claude-sonnet-5-5", "stop": "end_turn", "tok_in": 3824, "tok_out": 90, "cache_w": 0, "cache_r": 16044, "cost_usd": 0.0118, "spent_usd": 0.086, "ts": "2026-10-10T20:40:21.331686+00:00"}
+{"call": "blind", "model": "claude-haiku-4-5-20251001", "stop": "end_turn", "tok_in": 414, "tok_out": 18, "cache_w": 0, "cache_r": 0, "cost_usd": 0.0005, "spent_usd": 0.087, "ts": "2026-10-10T20:40:21.937893+00:00"}
+{"call": "blind", "model": "claude-haiku-4-5-20251001", "stop": "end_turn", "tok_in": 414, "tok_out": 18, "cache_w": 0, "cache_r": 0, "cost_usd": 0.0005, "spent_usd": 0.087, "ts": "2026-10-10T20:40:22.543072+00:00"}
+{"call": "blind", "model": "claude-haiku-4-5-20251001", "stop": "end_turn", "tok_in": 414, "tok_out": 18, "cache_w": 0, "cache_r": 0, "cost_usd": 0.0005, "spent_usd": 0.088, "ts": "2026-10-10T20:40:23.150814+00:00"}
+{"call": "runde", "rnd": 2, "facts": "pass", "ped": {"A": 4, "B": 4, "C": 4, "D": 5, "E": 4}, "vergl": true, "blind": 3, "probleme": [], "ts": "2026-10-10T20:40:23.150981+00:00"}
+{"topic": "mhd", "result": "live", "msg": "ok nach 2 Runde(n)", "spent_usd": 0.088, "ts": "2026-10-10T20:40:23.151106+00:00"}
+{"run_done": true, "decks_total": 13, "spent_usd": 0.088, "ts": "2026-10-10T20:40:23.153554+00:00"}

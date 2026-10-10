@@ -995,5 +995,78 @@
   "status": "approved",
   "t": "Die Schufa: Was steht über dich drin?",
   "ts": 1791501981836
+ },
+ {
+  "t": "Mindesthaltbarkeitsdatum: Wann darfst du Essen noch essen?",
+  "s": "MHD",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🗑️",
+    "Auf deinem Joghurt steht „mindestens haltbar bis“, und das Datum ist gestern abgelaufen. Ab in den Müll? Laut Bundesministerium für Landwirtschaft, Ernährung und Heimat ist das Mindesthaltbarkeitsdatum kein Wegwerfdatum. Was sagt es dann aus?"
+   ],
+   [
+    "🏭",
+    "Das MHD ist eine Garantie des Herstellers. Er legt es selbst fest, weil er sein Produkt am besten kennt. Bis zu diesem Tag behält das Lebensmittel Geschmack, Geruch, Farbe und Nährstoffe, wenn es ungeöffnet und richtig gelagert wurde. Aber was gilt danach?"
+   ],
+   [
+    "👀",
+    "Viele Lebensmittel sind nach dem MHD noch gut. Du prüfst sie mit Augen, Nase und Zunge: Sieht es aus wie immer? Riecht es wie immer? Schmeckt es wie immer? Wenn nicht, wirf es weg. Gibt es auch ein Datum, das wirklich Schluss bedeutet?"
+   ],
+   [
+    "🥩",
+    "Ja, das Verbrauchsdatum. Es steht auf leicht Verderblichem wie Hackfleisch und lautet „zu verbrauchen bis“. Danach können Keime drin sein, die du weder siehst noch riechst noch schmeckst, die aber krank machen. Und wie gehst du damit um?"
+   ],
+   [
+    "✅",
+    "Nach dem MHD zählt der Sinnescheck, nach dem Verbrauchsdatum der Mülleimer. Joghurt, Pudding oder Käse sind oft noch Wochen danach essbar, Mehl, Nudeln oder Konserven oft noch Monate oder Jahre. Prüfe also erst, dann wirf weg."
+   ]
+  ],
+  "quiz": [
+   [
+    "Dein Joghurt ist seit zwei Tagen über dem Mindesthaltbarkeitsdatum. Was machst du am besten?",
+    "Ansehen, riechen und vorsichtig probieren, dann entscheiden",
+    "Sofort wegwerfen, denn danach ist er nicht mehr essbar",
+    "Nur essen, wenn er mit Zucker gemischt wird",
+    5
+   ],
+   [
+    "Warum darfst du Hackfleisch nach dem Verbrauchsdatum nicht mehr essen?",
+    "Es kann Keime enthalten, die man weder sieht, riecht noch schmeckt",
+    "Es verliert dann nur seinen Geschmack und seine Farbe",
+    "Es wird nach dem Datum von der Verpackung giftig",
+    4
+   ],
+   [
+    "Was steht hinter einem Mindesthaltbarkeitsdatum?",
+    "Eine Garantie des Herstellers für Geschmack, Geruch, Farbe und Nährstoffe",
+    "Eine Frist des Gesundheitsamts, nach der Essen gefährlich wird",
+    "Eine Vorgabe des Händlers, wann er Ware aus dem Regal nimmt",
+    2
+   ]
+  ],
+  "id": "mhd",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "BZfE",
+    "title": "Haltbarkeit von Lebensmitteln",
+    "url": "https://www.bzfe.de/kueche-und-alltag/kochen/haltbarkeit-von-lebensmitteln"
+   },
+   {
+    "publisher": "BMLEH",
+    "title": "Mindesthaltbarkeits- und Verbrauchsdatum",
+    "url": "https://www.bmleh.de/DE/themen/ernaehrung/lebensmittelverschwendung/mindesthaltbarkeit-kein-verfallsdatum.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791664823151,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 2,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
  }
 ]
