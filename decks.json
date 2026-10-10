@@ -3606,5 +3606,1060 @@
    "rounds": 1,
    "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
   }
+ },
+ {
+  "t": "Warum sind heiße Nächte besonders gefährlich?",
+  "s": "Hitze",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🌙",
+    "Ein heißer Tag ist anstrengend, doch das Umweltbundesamt nennt vor allem die Tropennacht als Problem. Ab welcher Tiefsttemperatur in der Nacht spricht man von einer Tropennacht?"
+   ],
+   [
+    "🌡️",
+    "Wenn die Tiefsttemperatur 20 Grad nicht unterschreitet. Ein Heißer Tag hat dagegen über 30 Grad. Warum sind mehrtägige Phasen mit Heißen Tagen und Tropennächten besonders belastend?"
+   ],
+   [
+    "❤️",
+    "Weil der Körper nachts kaum abkühlen kann. Hitze belastet den Kreislauf, typisch sind Kopfschmerzen, Erschöpfung und Benommenheit. Besonders betroffen sind ältere Menschen. Wo wird es nachts besonders warm?"
+   ],
+   [
+    "🏙️",
+    "In dicht bebauten Innenstädten. Eine Berliner Auswertung zeigte, dass die nächtliche Minimaltemperatur dort um bis zu 10 Grad über der am Stadtrand liegen kann. Was rät das Portal Klima Mensch Gesundheit für die Wohnung?"
+   ],
+   [
+    "🪟",
+    "Lüfte bei Hitze nur, wenn es draußen kühler ist als in der Wohnung, und verschatte sonnige Fenster von außen. Tagsüber sollte es idealerweise unter 26 Grad bleiben. Trinke etwa zwei bis drei Liter über den Tag verteilt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Ab welcher Tiefsttemperatur spricht man von einer Tropennacht?",
+    "Wenn es nicht unter 20 Grad fällt",
+    "Wenn es unter 5 Grad fällt",
+    "Wenn es nicht unter 30 Grad fällt",
+    1
+   ],
+   [
+    "Wie stark kann es nachts in der Innenstadt wärmer sein als am Stadtrand?",
+    "Bis zu 10 Grad",
+    "Höchstens 1 Grad",
+    "Genau 20 Grad",
+    4
+   ],
+   [
+    "Wann solltest du bei Hitze lüften?",
+    "Wenn es draußen kühler ist",
+    "Mittags bei voller Sonne",
+    "Wenn es draußen wärmer ist",
+    5
+   ]
+  ],
+  "id": "hitze",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Gesundheitsrisiken durch Hitze",
+    "url": "https://www.umweltbundesamt.de/daten/umwelt-gesundheit/gesundheitsrisiken-durch-hitze"
+   },
+   {
+    "publisher": "Klima Mensch Gesundheit",
+    "title": "Empfehlungen bei Hitze",
+    "url": "https://www.klima-mensch-gesundheit.de/hitzeschutz/empfehlungen-bei-hitze/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Zeckenstich: Wie hoch ist das Risiko für Borreliose wirklich?",
+  "s": "Zeckenstich",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🕷️",
+    "Nach einem Zeckenstich denken viele sofort an eine Erkrankung. Gesundheitsinformation.de schätzt, dass etwa 1 von 100 Menschen nach einem Stich an Borreliose erkrankt. Wie viele erkranken in Deutschland pro Jahr?"
+   ],
+   [
+    "📊",
+    "Pro Jahr erkranken in Deutschland etwa 2 von 10.000 Menschen an Borreliose. Das Risiko steigt mit der Zeit, die die Zecke im Körper bleibt. Was solltest du also tun, wenn du eine Zecke entdeckst?"
+   ],
+   [
+    "🔎",
+    "Entferne sie so bald wie möglich, denn je länger sie bleibt, desto höher ist das Infektionsrisiko. Wer sie früh entfernt, kann sich vor der Ansteckung schützen. Woran erkennst du eine mögliche Borreliose?"
+   ],
+   [
+    "🔴",
+    "Typisch ist die Wanderröte, die einige Tage oder Wochen nach dem Stich auftritt und mehr als 5 Zentimeter groß werden kann. Auch grippeähnliche Beschwerden innerhalb von 6 Wochen sind ein Anlass für ärztlichen Rat. Wie wird behandelt?"
+   ],
+   [
+    "💊",
+    "Mit Antibiotika über 10 bis 21 Tage, je nach Beschwerden. Beobachte die Einstichstelle in den Wochen nach dem Stich und suche bei Wanderröte oder grippeähnlichen Beschwerden ärztlichen Rat."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Menschen erkranken nach einem Stich schätzungsweise an Borreliose?",
+    "Etwa 1 von 100",
+    "Etwa 50 von 100",
+    "Etwa 90 von 100",
+    1
+   ],
+   [
+    "Was gilt für das Entfernen einer Zecke?",
+    "Je früher, desto geringer das Risiko",
+    "Das Risiko bleibt gleich",
+    "Man sollte einige Tage warten",
+    3
+   ],
+   [
+    "Wie groß kann eine typische Wanderröte werden?",
+    "Mehr als 5 Zentimeter",
+    "Höchstens 2 Millimeter",
+    "Genau 1 Zentimeter",
+    4
+   ]
+  ],
+  "id": "zecke",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Gesundheitsinformation.de (IQWiG)",
+    "title": "Borreliose",
+    "url": "https://www.gesundheitsinformation.de/borreliose.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "FSME: Wie gefährlich sind Zecken in Deutschland?",
+  "s": "FSME",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🦠",
+    "FSME ist eine Infektion mit einem Virus, das Zecken übertragen können. Das Robert Koch Institut schreibt, dass ein hoher Anteil der Infektionen ohne Beschwerden verläuft. Wie hoch ist dieser Anteil ungefähr?"
+   ],
+   [
+    "📉",
+    "Etwa 70 bis 95 Prozent der Infektionen verlaufen ohne Symptome. In Naturherden tragen nur etwa 0,1 bis 5 Prozent der Zecken das Virus. Wo in Deutschland liegen die Risikogebiete?"
+   ],
+   [
+    "🗺️",
+    "Vor allem in Baden Württemberg und Bayern, außerdem im südlichen Hessen, im südöstlichen Thüringen, in Sachsen und im südöstlichen Brandenburg. Kann sich die Krankheit auch von Mensch zu Mensch verbreiten?"
+   ],
+   [
+    "🚫",
+    "Nein, eine Infektion von Mensch zu Mensch findet nicht statt. Die Übertragung läuft hauptsächlich über den Zeckenstich. Bis zu ersten Beschwerden vergehen im Durchschnitt 7 bis 14 Tage. Gibt es eine Impfung?"
+   ],
+   [
+    "💉",
+    "Ja. Für die Grundimmunisierung sind drei Impfstoffdosen nötig, Auffrischungen folgen je nach Alter und Impfstoff alle drei bis fünf Jahre. Bei etwa 1 Prozent der Erkrankten endet die Krankheit tödlich."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele FSME Infektionen verlaufen ohne Symptome?",
+    "Etwa 70 bis 95 Prozent",
+    "Etwa 5 bis 10 Prozent",
+    "Genau 100 Prozent",
+    2
+   ],
+   [
+    "Ist FSME von Mensch zu Mensch übertragbar?",
+    "Nein, nur über Zecken",
+    "Ja, über Husten und Niesen",
+    "Ja, durch Händeschütteln",
+    4
+   ],
+   [
+    "Wie viele Impfdosen braucht die Grundimmunisierung?",
+    "Drei Dosen",
+    "Eine Dose",
+    "Sieben Dosen",
+    5
+   ]
+  ],
+  "id": "fsme",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Robert Koch Institut",
+    "title": "RKI Ratgeber FSME",
+    "url": "https://www.rki.de/DE/Aktuelles/Publikationen/RKI-Ratgeber/Ratgeber/Ratgeber_FSME.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Was richtet UV Strahlung in der Haut an?",
+  "s": "UV Haut",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "☀️",
+    "Ein Sonnenbrand ist nur das sichtbare Zeichen. Laut Bundesamt für Strahlenschutz schädigt UV Strahlung das Erbgut der Zellen schon bei geringer Bestrahlung, lange vor einem Sonnenbrand. Kann die Haut das reparieren?"
+   ],
+   [
+    "🧬",
+    "In der Regel ja, es gibt Reparatursysteme. Häufige, lange und intensive Bestrahlung sowie Sonnenbrände können sie aber überlasten. Dann bleiben Mutationen zurück und das Hautkrebsrisiko steigt. Gibt es harmlose UV Strahlung?"
+   ],
+   [
+    "⚠️",
+    "Nein. Der Krebsinformationsdienst schreibt, alle UV Arten seien gleichermaßen schädlich, auch bei bedecktem Himmel. Die WHO Krebsagentur IARC stuft UV Strahlung als krebserregend ein. Welcher Lichtschutzfaktor wird für Erwachsene empfohlen?"
+   ],
+   [
+    "🧴",
+    "Mindestens Lichtschutzfaktor 30 mit Schutz vor UV A und UV B, im Gebirge, auf Schnee und am Wasser Lichtschutzfaktor 50. Auftragen solltest du die Creme 20 bis 30 Minuten vor dem Sonnenaufenthalt. Wann cremst du nach?"
+   ],
+   [
+    "🕶️",
+    "Nach 2 Stunden oder nach dem Baden. Meide außerdem Solarien, denn auch dort ist UV Strahlung krebserregend. Hilfreich sind Kleidung, Kopfbedeckung und eine Sonnenbrille mit der Kennzeichnung UV400."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann beginnen UV Schäden am Erbgut laut Bundesamt für Strahlenschutz?",
+    "Schon bei geringer Bestrahlung",
+    "Erst nach einem Sonnenbrand",
+    "Nur bei Solarien",
+    1
+   ],
+   [
+    "Welchen Lichtschutzfaktor sollten Erwachsene mindestens nutzen?",
+    "Lichtschutzfaktor 30",
+    "Lichtschutzfaktor 5",
+    "Lichtschutzfaktor 2",
+    4
+   ],
+   [
+    "Wann cremst du nach?",
+    "Nach 2 Stunden oder dem Baden",
+    "Erst nach einem ganzen Tag",
+    "Gar nicht, einmal reicht",
+    5
+   ]
+  ],
+  "id": "uvhaut",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesamt für Strahlenschutz",
+    "title": "UV Strahlung: Einführung in die Wirkung",
+    "url": "https://www.bfs.de/DE/themen/opt/uv/wirkung/einfuehrung/einfuehrung.html"
+   },
+   {
+    "publisher": "Krebsinformationsdienst (DKFZ)",
+    "title": "UV Strahlung und Sonnenschutz",
+    "url": "https://www.krebsinformationsdienst.de/service/iblatt/iblatt-uv-sonnenschutz.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Lärm und Gehör: Warum wachsen zerstörte Haarzellen nicht nach?",
+  "s": "Lärm",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🎧",
+    "Tragbare Musikplayer mit Ohrhörern erreichen laut Umweltbundesamt bis zu 110 Dezibel, vergleichbar mit einem Presslufthammer. Wo im Ohr entsteht der Schaden, wenn es zu laut ist?"
+   ],
+   [
+    "👂",
+    "In den Haarzellen des Innenohrs. Ihre feinen Härchen wandeln Schallschwingungen in elektrische Signale um. Dauerlärm und kurze sehr hohe Schallspitzen können sie dauerhaft schädigen. Können sich die Haarzellen erholen?"
+   ],
+   [
+    "🚫",
+    "Nein. Zerstörte Haarzellen wachsen nicht nach, ein lärmbedingter Hörschaden ist deshalb nicht heilbar. Ohrgeräusche nach lauten Geräuschen sind ein Warnsignal. Welche Töne gehen dabei zuerst verloren?"
+   ],
+   [
+    "📉",
+    "Vor allem hohe Töne um 4.000 Hertz, was das Verstehen von Sprache bei Hintergrundgeräuschen erschwert. In der OHRKAN Studie hörten etwa 22 Prozent der 13 bis 19 Jährigen riskant. Was empfehlen HNO Ärzte für Kopfhörer?"
+   ],
+   [
+    "🔉",
+    "Die Lautstärke von Kopfhörern und Musikgeräten auf höchstens 80 Dezibel zu begrenzen. Bei Konzerten helfen Gehörschutzstöpsel, und das Ohr braucht Ruhezeiten mit Schallpegeln unter 70 Dezibel."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wo entsteht der Lärmschaden im Ohr?",
+    "Haarzellen des Innenohrs",
+    "Im Trommelfell",
+    "In der Ohrmuschel",
+    2
+   ],
+   [
+    "Wachsen zerstörte Haarzellen nach?",
+    "Nein, der Schaden ist nicht heilbar",
+    "Ja, nach etwa einem Jahr",
+    "Ja, nach einer Woche Ruhe",
+    3
+   ],
+   [
+    "Auf wie viel Dezibel sollte man Kopfhörer begrenzen?",
+    "Auf höchstens 80 Dezibel",
+    "Auf höchstens 110 Dezibel",
+    "Auf höchstens 160 Dezibel",
+    5
+   ]
+  ],
+  "id": "laerm",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Gehörschäden durch Lärm",
+    "url": "https://www.umweltbundesamt.de/themen/verkehr-laerm/laermwirkung/gehoerschaeden"
+   },
+   {
+    "publisher": "Deutsche Gesellschaft für HNO Heilkunde",
+    "title": "Hörverlust bei Jugendlichen",
+    "url": "https://legacy.hno.org/storage/app/media/PDF/presse/PM_Hoerverlust_bei_Jugendlichen.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Warum ist Aufwärmen vor dem Sport sinnvoll?",
+  "s": "Aufwärmen",
+  "k": "Sport",
+  "cards": [
+   [
+    "🔥",
+    "Du ziehst die Sportschuhe an und legst sofort los. Die Techniker Krankenkasse rät dazu, sich vorher aufzuwärmen. Auf wie viel Grad steigt dabei die Temperatur im Muskel?"
+   ],
+   [
+    "🌡️",
+    "Auf etwa 40 Grad, die Körperkerntemperatur steigt auf etwa 38,5 Grad. Auch der Stoffwechsel kann bis zu 20 Prozent schneller laufen. Um das Wievielfache kann die Durchblutung des Muskels steigen?"
+   ],
+   [
+    "⏱️",
+    "Bis zum Sechsfachen. Hobbysportler können 10 bis 20 Minuten einplanen. Am Anfang bleibt die Intensität niedrig, mindestens 3 bis 5 Minuten, ohne außer Atem zu geraten. Hängt die Dauer von der Länge des Trainings ab?"
+   ],
+   [
+    "🎾",
+    "Nein. Eine Stunde Tennis und ein 30 Minuten Match belasten den Körper gleich stark. Die Mayo Clinic nennt als Beispiel 5 bis 10 Minuten langsames Gehen vor zügigem Gehen. Wie sieht es mit statischem Dehnen vorher aus?"
+   ],
+   [
+    "🧘",
+    "Statisches Dehnen kann die Muskelkraft kurz verringern, daher empfiehlt die TK es nach dem Training. Ob Aufwärmen Verletzungen verhindert, ist unter Fachleuten umstritten, es birgt laut Mayo Clinic aber kaum Risiken."
+   ]
+  ],
+  "quiz": [
+   [
+    "Auf wie viel Grad kann die Muskeltemperatur steigen?",
+    "Auf etwa 40 Grad",
+    "Auf etwa 50 Grad",
+    "Auf etwa 25 Grad",
+    1
+   ],
+   [
+    "Wie lange sollten Hobbysportler laut TK aufwärmen?",
+    "10 bis 20 Minuten",
+    "Genau 1 Minute",
+    "Mindestens 2 Stunden",
+    3
+   ],
+   [
+    "Wann empfiehlt die TK statisches Dehnen?",
+    "Nach dem Training",
+    "Direkt vor dem Training",
+    "Während eines Sprints",
+    5
+   ]
+  ],
+  "id": "aufwaermen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Aufwärmübungen",
+    "url": "https://www.tk.de/techniker/magazin/sport/rueckentraining/aufwaermuebungen-2004048"
+   },
+   {
+    "publisher": "Mayo Clinic",
+    "title": "Exercise: Warm up and cool down",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20045517"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie viel solltest du beim Sport trinken?",
+  "s": "Trinken Sport",
+  "k": "Sport",
+  "cards": [
+   [
+    "💧",
+    "Beim Freizeitsport verlierst du durch Schwitzen etwa 0,5 bis 1 Liter Wasser pro Stunde, schreibt die Techniker Krankenkasse. Wie viel solltest du grundsätzlich am Tag trinken, wenn du eine Stunde Sport machst?"
+   ],
+   [
+    "🥤",
+    "Der tägliche Grundbedarf liegt bei mindestens 2 Litern, bei einer Stunde Sport kommt etwa 1 Liter dazu. Mit dem Schweiß gehen auch Mineralstoffe verloren. Trinkst du am besten alles auf einmal?"
+   ],
+   [
+    "🫗",
+    "Nein. Der Darm nimmt Flüssigkeit während des Sports langsamer auf als in Ruhe. Deshalb trinkst du während und kurz nach der Bewegung nur in kleinen Schlucken. Was empfiehlt die DGE im Leistungssport?"
+   ],
+   [
+    "⏲️",
+    "Alle 15 bis 20 Minuten 100 bis 200 Milliliter bei 5 bis 10 Grad Getränketemperatur. Warnzeichen für Flüssigkeitsmangel sind Durst, Übelkeit, Schwindel und Krämpfe. Muss es ein spezielles Elektrolytgetränk sein?"
+   ],
+   [
+    "🍎",
+    "Nein, nötig sind sie nicht. Empfohlen werden Mineralwasser oder Schorle im Verhältnis zwei Drittel Wasser zu einem Drittel Saft. Kohlensäurehaltige Getränke solltest du wegen des Risikos von Seitenstechen vermeiden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Wasser verliert man beim Freizeitsport durch Schwitzen?",
+    "0,5 bis 1 Liter pro Stunde",
+    "5 bis 10 Liter pro Stunde",
+    "Etwa 50 Milliliter pro Stunde",
+    1
+   ],
+   [
+    "Wie trinkst du während des Sports?",
+    "In kleinen Schlucken",
+    "Eiskalt in einem Zug",
+    "Erst am Ende des Trainings",
+    3
+   ],
+   [
+    "Welches Verhältnis empfiehlt sich für eine Schorle?",
+    "Zwei Drittel Wasser, ein Drittel Saft",
+    "Zwei Drittel Saft, ein Drittel Wasser",
+    "Nur Saft ohne Wasser",
+    5
+   ]
+  ],
+  "id": "trinkensport",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Trinken beim Sport",
+    "url": "https://www.tk.de/techniker/gesundheit-foerdern/sport-und-bewegung/basics/trinken-sport-schwitzen-2004666"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie oft solltest du Krafttraining machen?",
+  "s": "Krafttraining",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏋️",
+    "Du musst nicht stundenlang Gewichte heben. Die Mayo Clinic empfiehlt Krafttraining für alle großen Muskelgruppen mindestens zweimal pro Woche. Wie lange sollte eine Einheit dauern, damit du stärkere Muskeln bemerkst?"
+   ],
+   [
+    "⏳",
+    "Schon etwa 20 bis 30 Minuten pro Einheit können reichen. Wähle ein Gewicht, das deine Muskeln nach etwa 12 bis 15 Wiederholungen ermüdet. Reicht dafür pro Übung ein einziger Satz?"
+   ],
+   [
+    "🔁",
+    "Ja, ein Satz pro Übung reicht laut Mayo Clinic für gesundheitliche Vorteile. Die American Heart Association nennt für einen Satz 8 bis 12 Wiederholungen bis zur Ermüdung. Wie viel Pause brauchen die Muskeln?"
+   ],
+   [
+    "😴",
+    "Laut Mayo Clinic einen vollen Ruhetag zwischen dem Training derselben Muskelgruppe. Wärme dich vorher einige Minuten zügig gehend auf und stoppe die Übung bei Schmerzen. Welche Vorteile hat Krafttraining?"
+   ],
+   [
+    "💪",
+    "Es hilft, Muskelmasse und Kraft mit dem Alter zu erhalten, kann vor Knochenschwund schützen und unterstützt die Balance. Stärkere Muskeln verbrauchen laut American Heart Association auch in Ruhe mehr Kalorien."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie oft sollte man laut Mayo Clinic mindestens Krafttraining machen?",
+    "Zweimal pro Woche",
+    "Einmal im Monat",
+    "Siebenmal pro Woche",
+    1
+   ],
+   [
+    "Wie viele Wiederholungen ermüden den Muskel beim passenden Gewicht?",
+    "Etwa 12 bis 15",
+    "Etwa 1 bis 2",
+    "Etwa 100",
+    2
+   ],
+   [
+    "Wie viel Pause braucht dieselbe Muskelgruppe laut Mayo Clinic?",
+    "Einen vollen Ruhetag",
+    "Keine Pause",
+    "Zwei volle Wochen",
+    4
+   ]
+  ],
+  "id": "kraft",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Mayo Clinic",
+    "title": "Strength training: Get stronger, leaner, healthier",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670"
+   },
+   {
+    "publisher": "American Heart Association",
+    "title": "Strength and resistance training exercise",
+    "url": "https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie funktioniert die Einkommensteuer?",
+  "s": "Steuer",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💶",
+    "Zahlst du bei höherem Verdienst auf alles einen höheren Steuersatz? Nein. Der Grundfreibetrag bleibt als Existenzminimum steuerfrei. Wie hoch war er nach der Bundeszentrale für politische Bildung 2024?"
+   ],
+   [
+    "📈",
+    "Er betrug 11.604 Euro. Auf die ersten Euro darüber fällt der Eingangssteuersatz von 14 Prozent an. Danach steigt der Satz in zwei Progressionszonen. Gilt der höhere Satz dann für das gesamte Einkommen?"
+   ],
+   [
+    "🧮",
+    "Nein. Die jeweils höheren Steuersätze werden nur auf das zusätzlich verdiente Geld berechnet. Das ist der Grenzsteuersatz. Ab welchem Einkommen gilt 2024 der Spitzensteuersatz von 42 Prozent?"
+   ],
+   [
+    "🔝",
+    "Ab 66.761 Euro im Jahr. Die Reichensteuer von 45 Prozent gilt ab 277.826 Euro zu versteuerndem Einkommen. Welcher Anteil der Steuerpflichtigen zahlte laut Statistischem Bundesamt 2022 den Spitzensteuersatz?"
+   ],
+   [
+    "🏛️",
+    "Etwa 7,4 Prozent. Bei 100.000 Euro zu versteuerndem Einkommen liegt der Grenzsteuersatz bei 42 Prozent, der Durchschnittssteuersatz bei 32,7 Prozent. Die Beträge ändern sich mit der Zeit, prüfe aktuelle Werte."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie hoch war der Grundfreibetrag 2024?",
+    "11.604 Euro",
+    "1.160 Euro",
+    "116.040 Euro",
+    1
+   ],
+   [
+    "Worauf wird ein höherer Steuersatz berechnet?",
+    "Nur auf das zusätzlich verdiente Geld",
+    "Auf das gesamte Einkommen",
+    "Auf das Einkommen des Vorjahres",
+    3
+   ],
+   [
+    "Wie hoch ist der Spitzensteuersatz?",
+    "42 Prozent",
+    "14 Prozent",
+    "80 Prozent",
+    4
+   ]
+  ],
+  "id": "steuer",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Grundlagen der Besteuerung",
+    "url": "https://www.bpb.de/shop/zeitschriften/izpb/steuern-und-finanzen-360/555583/grundlagen-der-besteuerung/"
+   },
+   {
+    "publisher": "Statistisches Bundesamt",
+    "title": "Pressemitteilung Einkommensteuer und Spitzensteuersatz",
+    "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_194_73111.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie genau ist eine Atomuhr?",
+  "s": "Atomuhr",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "⏱️",
+    "Seit 1967 ist die Sekunde über ein Atom festgelegt, das Cäsium Isotop 133. Nach der Physikalisch Technischen Bundesanstalt entspricht sie dem 9.192.631.770 fachen einer Schwingungsperiode. Wann lief die erste funktionstüchtige Cäsium Atomuhr?"
+   ],
+   [
+    "🕰️",
+    "1955 am britischen National Physical Laboratory. 1958 erschien mit dem Atomichron die erste kommerzielle Cäsium Atomuhr. Cäsiumuhren wurden etwa alle zehn Jahre um den Faktor 10 genauer. Wie funktioniert eine Fontänenuhr?"
+   ],
+   [
+    "⛲",
+    "Lasergekühlte Atome fliegen in einer Fontäne etwa einen Meter hoch und werden dabei zweimal mit Mikrowellen abgefragt. Die Zeit dazwischen beträgt etwa 0,6 Sekunden. Wie genau ist die Fontänenuhr CSF2 der PTB?"
+   ],
+   [
+    "🎯",
+    "Ihre Gesamtunsicherheit liegt bei 2·10⁻¹⁶. Noch kleiner ist sie bei optischen Uhren: Die Ytterbium Uhr der PTB erreicht 3,2·10⁻¹⁸. Worin unterscheidet sich eine optische Uhr von der Cäsiumuhr?"
+   ],
+   [
+    "💡",
+    "Ihre Übergangsfrequenz liegt im optischen Bereich, bei etwa 10¹⁵ Hertz statt 10¹⁰ Hertz bei Cäsium. Cäsiumuhren gelten laut den PTB Autoren trotzdem auf absehbare Zeit als relevant."
+   ]
+  ],
+  "quiz": [
+   [
+    "Seit wann ist die Sekunde über Cäsium definiert?",
+    "Seit 1967",
+    "Seit 1867",
+    "Seit 2007",
+    1
+   ],
+   [
+    "Wann wurde die erste funktionstüchtige Cäsium Atomuhr vorgestellt?",
+    "1955",
+    "1855",
+    "1995",
+    2
+   ],
+   [
+    "Wie hoch fliegen die Atome in der Fontänenuhr etwa?",
+    "Etwa einen Meter",
+    "Etwa einen Kilometer",
+    "Etwa einen Zentimeter",
+    3
+   ]
+  ],
+  "id": "atomuhr",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Physikalisch Technische Bundesanstalt",
+    "title": "Atomuhren und die Sekunde",
+    "url": "https://oar.ptb.de/files/download/310.20160202.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie funktioniert der Treibhauseffekt?",
+  "s": "Treibhaus",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌍",
+    "Ohne Treibhauseffekt wäre die Erde vereist. Laut Umweltbundesamt läge die mittlere bodennahe Temperatur bei etwa minus 18 Grad statt bei knapp 15 Grad. Ist der Treibhauseffekt also schädlich?"
+   ],
+   [
+    "🌡️",
+    "Nein, der natürliche Treibhauseffekt ist lebensnotwendig. Das Problem ist nicht die Existenz von Treibhausgasen, sondern ihre Anreicherung. Um wie viel Prozent stieg die CO2 Konzentration bis 2019 gegenüber vorindustriellen Werten?"
+   ],
+   [
+    "📈",
+    "Um über 48 Prozent. Methan stieg um 160 Prozent, Distickstoffmonoxid um 23 Prozent. Seit 1958 wird CO2 kontinuierlich auf dem Mauna Loa auf Hawaii gemessen. Könnte die Sonne die Ursache sein?"
+   ],
+   [
+    "☀️",
+    "Kaum. Die Sonnenaktivität schwankt im elfjährigen Zyklus um etwa 0,1 Prozent der Strahlungsintensität, zu wenig für einen direkten Einfluss auf Klima und Wetter. Wie lange bleibt CO2 in der Luft?"
+   ],
+   [
+    "⏳",
+    "Selbst nach 1.000 Jahren verbleiben noch etwa 15 bis 40 Prozent der ausgestoßenen Menge in der Atmosphäre. Methan bleibt etwa ein Jahrzehnt, Distickstoffmonoxid mehr als ein Jahrhundert. Die Gase wirken also unterschiedlich lange nach."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie kalt wäre es ohne natürlichen Treibhauseffekt im Mittel?",
+    "Etwa minus 18 Grad",
+    "Etwa plus 40 Grad",
+    "Etwa 0 Grad",
+    1
+   ],
+   [
+    "Wie stark stieg die CO2 Konzentration bis 2019?",
+    "Um über 48 Prozent",
+    "Um etwa 4 Prozent",
+    "Um 480 Prozent",
+    3
+   ],
+   [
+    "Wie stark schwankt die Sonnenaktivität im 11 Jahres Zyklus?",
+    "Um etwa 0,1 Prozent",
+    "Um etwa 50 Prozent",
+    "Um etwa 10 Prozent",
+    4
+   ]
+  ],
+  "id": "treibhaus",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Der Treibhauseffekt",
+    "url": "https://www.umweltbundesamt.de/themen/klima-energie/klimawandel/klima-treibhauseffekt"
+   },
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Treibhausgas Emissionen",
+    "url": "https://www.umweltbundesamt.de/themen/klima-energie/treibhausgas-emissionen?listpart=1"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie gefährlich ist Mikroplastik wirklich?",
+  "s": "Mikroplastik",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🧴",
+    "Mikroplastik besteht aus winzigen Kunststoffteilchen, laut OECD etwa 1 Mikrometer bis 5 Millimeter groß. Das Bundesinstitut für Risikobewertung unterscheidet zwei Arten. Woher stammt das meiste Mikroplastik in der Umwelt?"
+   ],
+   [
+    "🧵",
+    "Meist ist es sekundär: Größere Kunststoffteile zerfallen durch Verwitterung und UV Strahlung. Quellen sind außerdem Reifenabrieb und Fasern aus synthetischer Kleidung. Auf welchen Wegen kann der Mensch Mikroplastik aufnehmen?"
+   ],
+   [
+    "🌬️",
+    "Über Luft und Staub, Trinkwasser, Lebensmittel und Kosmetik. Intakte Haut nimmt es nicht auf. Oft heißt es, wir äßen pro Woche eine Kreditkarte voll Plastik. Stimmt diese Schätzung von etwa 5 Gramm?"
+   ],
+   [
+    "💳",
+    "Nein. Das Bundesinstitut für Risikobewertung nennt sie eine fehlerhafte Hochrechnung, die die Menge um mehrere Größenordnungen überschätzt. Wie bewertet das BfR das Gesundheitsrisiko durch Mikroplastik?"
+   ],
+   [
+    "🔬",
+    "Nach heutigem Wissen eher gering. Partikel über 1 Millimeter werden vollständig ausgeschieden, und Belege für schädigende Auswirkungen auf die menschliche Gesundheit liegen nicht vor. Langzeitfolgen chronischer Aufnahme sind jedoch unbekannt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie entsteht das meiste Mikroplastik in der Umwelt?",
+    "Durch Zerfall größerer Kunststoffteile",
+    "Durch gezielte Herstellung als Granulat",
+    "Durch Vulkanausbrüche",
+    2
+   ],
+   [
+    "Wie bewertet das BfR die Zahl von 5 Gramm pro Woche?",
+    "Als fehlerhafte Hochrechnung",
+    "Als exakt gemessenen Wert",
+    "Als zu niedrig geschätzt",
+    4
+   ],
+   [
+    "Was gilt für Partikel über 1 Millimeter?",
+    "Sie werden ausgeschieden",
+    "Sie gelangen ins Blut",
+    "Sie bleiben im Gehirn",
+    5
+   ]
+  ],
+  "id": "mikroplastik",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesinstitut für Risikobewertung",
+    "title": "Mikroplastik: Fakten, Forschung und offene Fragen",
+    "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/mikroplastik-fakten-forschung-und-offene-fragen/"
+   },
+   {
+    "publisher": "Bundesinstitut für Risikobewertung",
+    "title": "Mikroplastik: Diskrepanz zwischen wissenschaftlichem Kenntnisstand und öffentlicher Wahrnehmung",
+    "url": "https://www.bfr.bund.de/mitteilung/mikroplastik-diskrepanz-zwischen-wissenschaftlichem-kenntnisstand-und-oeffentlicher-wahrnehmung/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie funktioniert die gesetzliche Rente?",
+  "s": "Rente",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "👵",
+    "Dein Rentenbeitrag wird nicht für dich angespart. Die Deutsche Rentenversicherung erklärt, die Beiträge der Arbeitnehmer und Arbeitgeber würden unmittelbar an die Rentenempfänger ausgezahlt. Wie heißt dieses Prinzip?"
+   ],
+   [
+    "🔄",
+    "Umlageverfahren, auch Generationenvertrag genannt. Wer einzahlt, erwirbt selbst einen Anspruch auf spätere Rente. Eingeführt wurde es ab 1957 schrittweise. Wovon hängt es im Vergleich zum Kapitaldeckungsverfahren weniger ab?"
+   ],
+   [
+    "📊",
+    "Von Kapitalmarktentwicklungen. Die Deutsche Rentenversicherung beschreibt das Verfahren seit seiner Einführung als krisenfest. Gibt es einen Puffer für Schwankungen bei Einnahmen und Ausgaben der Rentenversicherung?"
+   ],
+   [
+    "🏦",
+    "Ja, die Nachhaltigkeitsrücklage. Zum Jahresende muss sie zwischen dem 0,2 fachen und dem 1,5 fachen einer Monatsausgabe liegen, danach richtet sich der Beitragssatz. Welche Herausforderung nennt die Rentenversicherung?"
+   ],
+   [
+    "👥",
+    "Den demografischen Wandel: Das Verhältnis von Erwerbstätigen zu Rentnern sinkt. Hilfreich wären laut Rentenversicherung eine möglichst hohe Zahl sozialversicherungspflichtig Beschäftigter, eine höhere Erwerbsbeteiligung von Frauen und Einwanderung."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt das Prinzip der gesetzlichen Rente?",
+    "Umlageverfahren",
+    "Kapitaldeckungsverfahren",
+    "Sparbuchverfahren",
+    1
+   ],
+   [
+    "Wovon hängt das Umlageverfahren weniger ab?",
+    "Von Kapitalmarktentwicklungen",
+    "Von der Zahl der Beitragszahler",
+    "Von der Höhe der Beiträge",
+    3
+   ],
+   [
+    "Welche Herausforderung nennt die Rentenversicherung?",
+    "Der demografische Wandel",
+    "Der Wegfall der Rücklage",
+    "Zu hohe Kapitalmarktzinsen",
+    5
+   ]
+  ],
+  "id": "rente",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsche Rentenversicherung",
+    "title": "Umlageverfahren",
+    "url": "https://www.deutsche-rentenversicherung.de/SharedDocs/FAQ/65_Jahre_Rentenreform/faq_liste_65_jahre_rentenreform_umlageverfahren.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie funktioniert die Organspende in Deutschland?",
+  "s": "Organspende",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "❤️",
+    "In Deutschland gilt die Entscheidungslösung: Organe dürfen nur entnommen werden, wenn die verstorbene Person zugestimmt hat. Liegt keine Entscheidung vor, werden die Angehörigen gefragt. Wie wird der Hirntod festgestellt?"
+   ],
+   [
+    "🧠",
+    "Zwei erfahrene Ärztinnen oder Ärzte untersuchen unabhängig voneinander, auf einer Intensivstation. Hirntod ist der endgültige Ausfall von Großhirn, Kleinhirn und Hirnstamm. Wer vergibt die gespendeten Organe?"
+   ],
+   [
+    "🌍",
+    "Eurotransplant führt für acht europäische Länder eine zentrale Warteliste. Entscheidend sind unter anderem Dringlichkeit, Erfolgsaussicht und Wartezeit. Versicherungsstatus und Einkommen spielen keine Rolle. Gibt es eine Altersgrenze für Spender?"
+   ],
+   [
+    "🎂",
+    "Nein, es gibt keine obere Altersgrenze, geprüft wird im Einzelfall. Ab 16 Jahren kannst du deine Bereitschaft erklären, einen Widerspruch schon ab 14. Wo hältst du deine Entscheidung fest?"
+   ],
+   [
+    "🪪",
+    "Im Organspendeausweis, im Organspende Register, in einer Patientenverfügung oder formlos mit Name und Unterschrift. Der Ausweis ist kostenfrei, und du kannst deine Entscheidung jederzeit ändern. Niemand muss eine Entscheidung treffen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Ärzte stellen den Hirntod unabhängig voneinander fest?",
+    "Zwei",
+    "Einer",
+    "Fünf",
+    2
+   ],
+   [
+    "Welche Rolle spielt das Einkommen bei der Organvergabe?",
+    "Es spielt keine Rolle",
+    "Es verkürzt die Wartezeit",
+    "Es entscheidet über die Reihenfolge",
+    3
+   ],
+   [
+    "Ab welchem Alter kannst du deine Bereitschaft erklären?",
+    "Ab 16 Jahren",
+    "Ab 30 Jahren",
+    "Ab 12 Jahren",
+    4
+   ]
+  ],
+  "id": "organspende",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesinstitut für Öffentliche Gesundheit",
+    "title": "Häufige Fragen zur Organspende",
+    "url": "https://www.organspende-info.de/fileadmin/Organspende/04_Presse/05_Hintergrundinformationen/BIOEG_Barrierefreie_PDF_FAQHaeufigeFragenOrganspende.pdf"
+   },
+   {
+    "publisher": "Bundesinstitut für Öffentliche Gesundheit",
+    "title": "Vortrag Organspende",
+    "url": "https://organspende-info.de/fileadmin/Organspende/05_Mediathek/03_Praesentation/Praesentation_Vortrag_Organspende_2020.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie funktioniert Satellitennavigation?",
+  "s": "Navigation",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🛰️",
+    "Dein Navi sendet nichts zum Satelliten, es empfängt nur. Laut DLR kann uns der Satellit nicht orten. Wie viele Satelliten braucht das Navi mindestens, um deine Position eindeutig zu bestimmen?"
+   ],
+   [
+    "4️⃣",
+    "Mindestens vier. Erst die Kombination der Signale von vier Satelliten ermöglicht die exakte Positionsbestimmung. Die Satelliten kreisen in über 20.000 Kilometern Höhe. Wie berechnet das Navi die Entfernung zu einem Satelliten?"
+   ],
+   [
+    "📡",
+    "Aus der Laufzeit des Signals. Es breitet sich mit Lichtgeschwindigkeit aus, knapp 300.000 Kilometer pro Sekunde. Die Laufzeit muss deshalb sehr genau gemessen werden. Womit gelingt diese Genauigkeit?"
+   ],
+   [
+    "🕰️",
+    "Mit Atomuhren an Bord, die laut DLR die Zeit auf fünf Billiardstel Sekunde genau messen. Bei Galileo dürfen die Uhren in einer Million Jahren nur um eine Sekunde abweichen. Beeinflusst auch Einsteins Physik die Uhren?"
+   ],
+   [
+    "🧠",
+    "Ja. Die Uhren an Bord gehen anders als Uhren auf der Erde, denn Geschwindigkeit und Entfernung von der Erdmasse beeinflussen die Zeit. Die Position lässt sich so auf wenige Meter genau bestimmen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Satelliten braucht das Navi mindestens?",
+    "Mindestens vier",
+    "Genau einen",
+    "Mindestens zwei",
+    2
+   ],
+   [
+    "Was misst das Navi für die Entfernung zum Satelliten?",
+    "Die Laufzeit des Signals",
+    "Die Lautstärke des Signals",
+    "Die Farbe des Signals",
+    3
+   ],
+   [
+    "Wie genau lässt sich die Position bestimmen?",
+    "Auf wenige Meter",
+    "Auf wenige Kilometer",
+    "Auf wenige Millimeter",
+    5
+   ]
+  ],
+  "id": "satnav",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Zentrum für Luft und Raumfahrt",
+    "title": "Wenn sich das Navi mit den Satelliten unterhält",
+    "url": "https://www.dlr.de/de/next/verkehr/satellitennavigation/wenn-sich-das-navi-mit-den-satelliten-unterhalt"
+   },
+   {
+    "publisher": "Deutsches Zentrum für Luft und Raumfahrt",
+    "title": "Mit Satelliten navigieren",
+    "url": "https://www.dlr.de/de/schoollab/standorte/neustrelitz/experimente/mit-satelliten-navigieren"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669657913,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
  }
 ]
