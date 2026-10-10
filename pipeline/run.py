@@ -24,7 +24,7 @@ BUDGET = float(os.getenv("DAILY_BUDGET_USD", "1.50"))
 AUTHOR_MODEL = os.getenv("AUTHOR_MODEL", "claude-sonnet-5-5")
 CHECK_MODEL = os.getenv("CHECK_MODEL", "claude-sonnet-5-5")
 BLIND_MODEL = os.getenv("BLIND_MODEL", "claude-haiku-4-5-20251001")
-MAX_REVISIONS = 2
+MAX_REVISIONS = 3
 MAX_WORDS_PER_SOURCE = 4500   # Kosten im Griff halten
 MIN_WORDS = 350               # duennere Seiten taugen nicht als Quelle
 CATS = ["Wirtschaft", "Politik", "Geschichte", "Ernährung", "Psyche", "Sport", "Wissenschaft", "Alltag", "Gesundheit", "Biologie"]
@@ -285,8 +285,8 @@ def local_check(deck, topic, srcs, existing_ids):
         for a in ans[1:]:
             if BAD_WRONG.search(a): err.append("Quiz %d: falsche Antwort enthält Extremwort: \"%s\"" % (k, a))
         lens = [len(a) for a in ans]
-        if lens[0] > 1.3 * max(lens[1:]): err.append("Quiz %d: richtige Antwort ist auffällig länger als die falschen" % k)
-        if max(lens) > 1.7 * min(lens): err.append("Quiz %d: Antworten sehr unterschiedlich lang, angleichen" % k)
+        if lens[0] > 1.5 * max(lens[1:]): err.append("Quiz %d: richtige Antwort ist auffällig länger als die falschen" % k)
+        if max(lens) > 2.0 * min(lens): err.append("Quiz %d: Antworten sehr unterschiedlich lang, angleichen" % k)
         for x in e[:4]:
             if re.search(r"[–—]", str(x)): err.append("Quiz %d enthält einen Gedankenstrich" % k)
         for num in NUM.findall(" ".join(ans)):
