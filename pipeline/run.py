@@ -201,7 +201,7 @@ Deck:
 REVISE_TASK = """Überarbeite das Deck. Behebe NUR die folgenden Befunde, ändere sonst nichts (Cliffhanger, Haken, Fragen am Kartenende bleiben). Nutze nur die Quellentexte Q1 und Q2 oben. Zitate wörtlich aus den Quellentexten kopieren. Streiche oder entschärfe Aussagen, die nicht belegt sind.
 Befunde:
 %s
-Gib das vollständige überarbeitete Deck im selben JSON-Format in einem ```json Block aus."""
+Gib das vollständige überarbeitete Deck im selben JSON-Format in einem ```json Block aus. Antworte direkt mit dem Block, ohne Vorüberlegung und ohne Text davor."""
 
 BLIND_TASK = """BLINDTEST. Du siehst nur Quizfragen, nicht den Lerntext. Wähle zu jeder Frage die Antwort, die du mit gesundem Menschenverstand für richtig hältst.
 Gib NUR JSON aus: {"answers":[a,b,c]} mit der Nummer 1, 2 oder 3 der gewählten Antwort.
@@ -352,6 +352,7 @@ def build_deck(cli, topic, existing_ids):
             check = jparse(cli.call(CHECK_MODEL, system, cmsg, 3000, "check"))
             guessed = blind_test(cli, deck)
             ok, problems = gate(check, guessed)
+            log(call="runde", rnd=rnd + 1, facts=check.get("facts"), ped=check.get("ped"), vergl=check.get("comparisons_ok"), blind=guessed, probleme=(check.get("problems", []) + check.get("quiz_fixes", []))[:6])
             diag = "[facts=%s ped=%s vergl=%s blind=%s] " % (check.get("facts"), check.get("ped"), check.get("comparisons_ok"), guessed)
             if ok:
                 out = {k: deck[k] for k in ("t", "s", "k", "cards", "quiz")}
