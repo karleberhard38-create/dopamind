@@ -2742,5 +2742,869 @@
    "blind_erratbar": 3,
    "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
   }
+ },
+ {
+  "t": "Was ist Einsamkeit eigentlich, und wovon hängt sie ab?",
+  "s": "Einsamkeit",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🫂",
+    "Wer allein ist, ist nicht automatisch einsam. Das Kompetenznetz Einsamkeit trennt beides klar voneinander, und das hat Folgen. Worin liegt der Unterschied zwischen Alleinsein und Einsamkeit?"
+   ],
+   [
+    "💭",
+    "Alleinsein ist ein objektiver Zustand, Einsamkeit ein Gefühl. Einsam fühlt man sich, wenn die eigenen sozialen Beziehungen weniger oder weniger gut sind als gewünscht. Ist das in allen Ländern gleich verbreitet?"
+   ],
+   [
+    "🌍",
+    "Nein. Bei 60 bis 80 Jährigen berichten in ehemals sozialistischen Ländern 25 bis 40 Prozent von schwerer Einsamkeit, in Nordwesteuropa sind es 8 bis 12 Prozent. Woran könnte das liegen?"
+   ],
+   [
+    "🏛️",
+    "Die Länderunterschiede legen nahe, dass das Gefühl nicht nur von der Person abhängt, sondern auch vom Umfeld und der Gesellschaft. Gibt es auch Unterschiede zwischen den Geschlechtern?"
+   ],
+   [
+    "👩",
+    "Ja. Eine Studie der Max Planck Gesellschaft zeigt, dass Frauen im Alter häufiger unter Einsamkeit und Depression leiden. Einsamkeit ist also kein reines Einzelschicksal, sondern hat Muster in Gesellschaft und Lebenslage."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was unterscheidet Einsamkeit vom Alleinsein?",
+    "Einsamkeit ist ein Gefühl",
+    "Alleinsein ist ein Gefühl",
+    "Beides bedeutet dasselbe",
+    2
+   ],
+   [
+    "Wie viele 60 bis 80 Jährige berichten in Nordwesteuropa von schwerer Einsamkeit?",
+    "Etwa 8 bis 12 Prozent",
+    "Etwa 25 bis 40 Prozent",
+    "Etwa 60 bis 80 Prozent",
+    3
+   ],
+   [
+    "Wer leidet im Alter laut Max Planck Studie häufiger unter Einsamkeit?",
+    "Eher die Frauen",
+    "Eher die Männer",
+    "Beide gleich häufig",
+    5
+   ]
+  ],
+  "id": "einsam",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Kompetenznetz Einsamkeit",
+    "title": "Einsamkeit",
+    "url": "https://kompetenznetz-einsamkeit.de/einsamkeit"
+   },
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Frauen leiden häufiger unter Einsamkeit und Depression im Alter",
+    "url": "https://www.mpg.de/12795815/frauen-leiden-haeufiger-unter-einsamkeit-und-depression-im-alter"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie hilft Bewegung gegen Stress und für die Stimmung?",
+  "s": "Bewegung",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🏃",
+    "Nach dem Laufen sollen Endorphine glücklich machen. So heißt es oft. Die American Psychological Association sagt, dass es für diesen Rausch nur wenig Belege gibt. Wie hilft Bewegung dann gegen Stress?"
+   ],
+   [
+    "🧠",
+    "Die Forschung zeigt, dass regelmäßige Bewegung Stress senken und die Stimmung verbessern kann, auch ohne den vermuteten Endorphin Rausch. Wie viel Bewegung wird dafür empfohlen?"
+   ],
+   [
+    "⏳",
+    "Empfohlen sind 150 Minuten moderate Bewegung pro Woche oder 75 Minuten intensive Bewegung. Moderat heißt, du kommst etwas ins Schwitzen, kannst aber noch sprechen. Muss es unbedingt Sport sein?"
+   ],
+   [
+    "🚶",
+    "Nein. Der britische NHS rät, eine Bewegung zu finden, die dir Spaß macht, denn dann bleibst du eher dabei. Es muss nicht Leistungssport sein. Warum ist das Dranbleiben so wichtig?"
+   ],
+   [
+    "📅",
+    "Weil der Nutzen laut APA aus regelmäßiger Bewegung kommt, nicht aus einem einzelnen Rausch. Wer 150 Minuten moderat oder 75 Minuten intensiv pro Woche erreicht, erfüllt die Empfehlung und tut etwas für Stress und Stimmung."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel moderate Bewegung pro Woche wird empfohlen?",
+    "150 Minuten",
+    "15 Minuten",
+    "600 Minuten",
+    3
+   ],
+   [
+    "Wie bewertet die APA den Endorphin Rausch?",
+    "Es gibt nur wenig Belege dafür",
+    "Er ist vielfach bewiesen",
+    "Er ist der einzige Grund",
+    1
+   ],
+   [
+    "Was rät der NHS beim Einstieg?",
+    "Eine Bewegung wählen, die Spaß macht",
+    "Nur Leistungssport betreiben",
+    "Bewegung ganz vermeiden",
+    4
+   ]
+  ],
+  "id": "sportpsyche",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "American Psychological Association",
+    "title": "Working out boosts brain health",
+    "url": "https://www.apa.org/topics/exercise-fitness/stress"
+   },
+   {
+    "publisher": "NHS",
+    "title": "Be active for your mental health",
+    "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie funktioniert ein Vulkan?",
+  "s": "Vulkane",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌋",
+    "Wie viele aktive Vulkane gibt es auf der Erde? Die Wissensplattform Erde und Umwelt nennt rund 1.500. Jedes Jahr kommt es zu etwa 50 bis 70 Ausbrüchen. Wo entstehen die meisten Vulkane?"
+   ],
+   [
+    "🌐",
+    "Vor allem an den Rändern der Erdplatten, wo Platten sich voneinander entfernen oder aufeinander zubewegen. Dort kann Gestein schmelzen und als Magma aufsteigen. Gibt es auch Vulkane mitten auf einer Platte?"
+   ],
+   [
+    "🔥",
+    "Ja, sie heißen Heiße Flecken. Dort steigt heißes Material aus dem Erdinneren auf, unabhängig von den Plattenrändern. Was passiert mit dem Magma auf dem Weg nach oben?"
+   ],
+   [
+    "🧱",
+    "Es sammelt sich in Magmakammern in der Erdkruste. Die LMU München untersucht per Bohrung, wie Magma zwischen den Ausbrüchen aussieht. Wann bricht ein Vulkan aus?"
+   ],
+   [
+    "⚡",
+    "Wenn der Druck in der Magmakammer zu groß wird, steigt das Magma auf und tritt aus. Vulkane sind also kein Zufall, sondern Teil der Plattenbewegung und des heißen Erdinneren, das Magma erzeugt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Ausbrüche gibt es etwa pro Jahr?",
+    "50 bis 70",
+    "5 bis 7",
+    "500 bis 700",
+    1
+   ],
+   [
+    "Wie heißen Vulkane abseits der Plattenränder?",
+    "Heiße Flecken",
+    "Kalte Zonen",
+    "Plattenlücken",
+    3
+   ],
+   [
+    "Wo sammelt sich Magma vor dem Ausbruch?",
+    "In Magmakammern in der Erdkruste",
+    "In Höhlen an der Oberfläche",
+    "In Wolken über dem Krater",
+    4
+   ]
+  ],
+  "id": "vulkan",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Wissensplattform Erde und Umwelt (Helmholtz)",
+    "title": "FAQ Vulkanismus",
+    "url": "https://eskp.de/fileadmin/eskp/publikationen/fragen_und_antworten/FAQ-Vulkanismus.pdf"
+   },
+   {
+    "publisher": "LMU München",
+    "title": "Zwischen den Eruptionen: Bohrungen liefern Einblicke ins Magma",
+    "url": "https://www.lmu.de/de/newsroom/newsuebersicht/news/zwischen-den-eruptionen-bohrungen-liefern-einblicke-ins-magma-2e5d6d90.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie entstehen Polarlichter?",
+  "s": "Polarlicht",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌌",
+    "Polarlichter schimmern grün, manchmal auch rot. Sie entstehen in der Atmosphäre in etwa 80 bis 500 Kilometern Höhe, also hoch über den Wolken. Doch woher kommt die Energie dafür?"
+   ],
+   [
+    "☀️",
+    "Von der Sonne. Geladene Teilchen des Sonnenwinds treffen auf das Magnetfeld der Erde und werden zu den Polen gelenkt. Dort stoßen sie mit Gasen der Atmosphäre zusammen. Was passiert dann?"
+   ],
+   [
+    "💡",
+    "Die Gase werden angeregt und senden Licht aus. Welche Farbe entsteht, hängt vom Gas und von der Höhe ab. Grün entsteht meist in etwa 100 Kilometern Höhe. Wo leuchtet es rot?"
+   ],
+   [
+    "🔴",
+    "Rotes Licht entsteht in Höhen über 200 Kilometern, grünes dagegen meist bei etwa 100 Kilometern. Die Farbe verrät also die Höhe. Gibt es einen Rhythmus, wann Polarlichter häufiger sind?"
+   ],
+   [
+    "🔄",
+    "Ja, die Sonnenaktivität folgt einem Zyklus von etwa 11 Jahren. Polarlichter sind damit ein sichtbares Zeichen der Sonne: Ihre Energie stammt vom Sonnenwind, und der hängt von der Aktivität der Sonne ab."
+   ]
+  ],
+  "quiz": [
+   [
+    "In welcher Höhe entstehen Polarlichter etwa?",
+    "80 bis 500 Kilometer",
+    "8 bis 50 Kilometer",
+    "800 bis 5.000 Kilometer",
+    1
+   ],
+   [
+    "Wo entsteht rotes Polarlicht?",
+    "Über 200 Kilometern Höhe",
+    "Bei etwa 10 Kilometern Höhe",
+    "Nur am Erdboden",
+    4
+   ],
+   [
+    "Wie lang ist der Zyklus der Sonnenaktivität etwa?",
+    "11 Jahre",
+    "1 Jahr",
+    "110 Jahre",
+    5
+   ]
+  ],
+  "id": "polarlicht",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "DLR",
+    "title": "Rasende Feuerfüchse am Firmament",
+    "url": "https://www.dlr.de/de/medien/publikationen/magazine/alle-magazine-webversion/dlrmagazin-177/rasende-feuerfuechse-am-firmament"
+   },
+   {
+    "publisher": "Canadian Space Agency",
+    "title": "What are the northern lights?",
+    "url": "https://asc-csa.gc.ca/eng/astronomy/auroramax/sun-aurora.asp"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie entsteht ein Tsunami?",
+  "s": "Tsunami",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌊",
+    "Ein Tsunami ist keine gewöhnliche Welle. Er entsteht meist, wenn der Meeresboden bei einem Erdbeben ruckartig angehoben oder abgesenkt wird. Wie schnell kann er sich dann ausbreiten?"
+   ],
+   [
+    "🚀",
+    "Bei etwa 6.000 Metern Wassertiefe bis zu 800 Kilometer pro Stunde, laut GEOMAR. Das ist sehr schnell. Auf dem offenen Meer ist die Welle trotzdem kaum zu bemerken. Warum?"
+   ],
+   [
+    "🌐",
+    "Auf hoher See fällt die Welle kaum auf. Gefährlich wird sie erst, wenn sie die flache Küste erreicht und sich dort aufstaut. Wie hoch kann sie dann werden?"
+   ],
+   [
+    "🏖️",
+    "An der Küste können Tsunamis bis zu 30 Meter hoch werden. Das Wasser wird flacher, die Welle wird langsamer und türmt sich auf. Was bestimmt also, wie schnell sie unterwegs ist?"
+   ],
+   [
+    "📐",
+    "Die Geschwindigkeit hängt von der Wassertiefe ab: je tiefer, desto schneller. Deshalb rast die Welle über den Ozean und türmt sich erst am flachen Ufer auf, wo sie langsamer wird."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie schnell kann ein Tsunami bei etwa 6.000 Metern Tiefe sein?",
+    "Bis zu 800 Kilometer pro Stunde",
+    "Etwa 8 Kilometer pro Stunde",
+    "Etwa 80 Kilometer pro Stunde",
+    2
+   ],
+   [
+    "Wie hoch kann ein Tsunami an der Küste werden?",
+    "Bis zu 30 Meter",
+    "Nur etwa 30 Zentimeter",
+    "Höchstens etwa 1 Meter",
+    4
+   ],
+   [
+    "Wovon hängt die Geschwindigkeit eines Tsunamis ab?",
+    "Von der Wassertiefe",
+    "Von der Tageszeit",
+    "Von der Wolkendecke",
+    5
+   ]
+  ],
+  "id": "tsunami",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "GEOMAR",
+    "title": "Tsunami",
+    "url": "https://www.Geomar.de/fileadmin/content/entdecken/naturgefahren_meer/rollup_tsunami.pdf"
+   },
+   {
+    "publisher": "GFZ Potsdam",
+    "title": "Das Tsunami-Frühwarnsystem für den Indischen Ozean",
+    "url": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_235688_2/component/file_235687/10143DE.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie warnt das Tsunami-Frühwarnsystem im Indischen Ozean?",
+  "s": "Tsunamiwarnung",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "⚠️",
+    "Am 26. Dezember 2004 löste ein Erdbeben der Stärke 9,3 im Indischen Ozean einen Tsunami aus. Eine Warnung gab es nicht. Wie lange brauchte die Welle bis Sri Lanka und Thailand?"
+   ],
+   [
+    "⏰",
+    "Etwa 1 Stunde und 45 Minuten. Genug Zeit für eine Warnung, wenn es ein System gegeben hätte. Danach entstand mit deutscher Beteiligung das System GITEWS. Wer entwickelte es?"
+   ],
+   [
+    "🛰️",
+    "Das GFZ Potsdam leitete das Projekt GITEWS für den Indischen Ozean. Es soll Erdbeben schnell erkennen und die Gefahr einer Welle einschätzen. Wie schnell soll die Warnung erfolgen?"
+   ],
+   [
+    "📡",
+    "Das Ziel ist eine Warnung nach etwa zehn Minuten. Dann bleibt der Küste noch Zeit zur Evakuierung. Was bringt die schnellste Warnung, wenn die Menschen sie nicht erreicht?"
+   ],
+   [
+    "🏃",
+    "Dann hilft sie nicht. Deshalb gehört zu einem Frühwarnsystem auch, dass Menschen an der Küste die Warnung verstehen und wissen, wohin sie laufen müssen. Technik allein genügt nicht."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann ereignete sich das Erdbeben im Indischen Ozean?",
+    "Am 26. Dezember 2004",
+    "Am 1. Januar 1990",
+    "Am 26. Juni 2014",
+    1
+   ],
+   [
+    "Wie lang brauchte die Welle bis Sri Lanka und Thailand?",
+    "Etwa 105 Minuten",
+    "Etwa 15 Minuten",
+    "Etwa 6 Stunden",
+    2
+   ],
+   [
+    "Nach wie vielen Minuten soll GITEWS etwa warnen?",
+    "Nach etwa 10 Minuten",
+    "Nach etwa 10 Stunden",
+    "Nach etwa 1 Minute",
+    4
+   ]
+  ],
+  "id": "tsunamiwarn",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "GFZ Potsdam",
+    "title": "Das Tsunami-Frühwarnsystem für den Indischen Ozean",
+    "url": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_235688_2/component/file_235687/10143DE.pdf"
+   },
+   {
+    "publisher": "GEOMAR",
+    "title": "Tsunami",
+    "url": "https://www.Geomar.de/fileadmin/content/entdecken/naturgefahren_meer/rollup_tsunami.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie hören Fledermäuse im Dunkeln, und wie wehren sich Nachtfalter?",
+  "s": "Fledermaus",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🦇",
+    "Fledermäuse jagen im Dunkeln und sehen kaum etwas. Sie senden Rufe aus und lauschen auf das Echo. Dieses Verfahren heißt Echoortung. Was verrät ihnen das Echo?"
+   ],
+   [
+    "🔊",
+    "Das Echo zeigt, wo Hindernisse und Beute sind. Laut LMU München ist das räumliche Auflösungsvermögen dabei um drei Größenordnungen schlechter als beim Sehen. Wie navigieren sie dann so gut?"
+   ],
+   [
+    "🧭",
+    "Mit wenig Information. Laut LMU München nutzen Fledermäuse nur grobe Echosignale und kommen damit dennoch gut zurecht. Für die Navigation reicht ihnen offenbar wenig. Können sich Beutetiere dagegen wehren?"
+   ],
+   [
+    "🦋",
+    "Ja. Nachtfalter haben Ohren und ändern ihre Flugbahn, wenn sie Fledermausrufe hören. Die Max Planck Gesellschaft beschreibt solche Ausweichmanöver bei sieben Falterarten. Warum ist das ein Wettrüsten?"
+   ],
+   [
+    "⚔️",
+    "Der Falter hört den Ruf und weicht aus, die Fledermaus muss ihn trotzdem finden. So entsteht ein Wettstreit zwischen Jäger und Beute. Das Echo ist grob, doch beide Seiten nutzen es zu ihrem Vorteil."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt das Orten per Echo?",
+    "Echoortung",
+    "Radarbild",
+    "Wärmesicht",
+    1
+   ],
+   [
+    "Wie viel schlechter ist das räumliche Auflösungsvermögen als beim Sehen?",
+    "Drei Größenordnungen",
+    "Nur ein Prozent",
+    "Es ist gleich gut",
+    2
+   ],
+   [
+    "Wie reagieren Nachtfalter auf Fledermausrufe?",
+    "Sie ändern ihre Flugbahn",
+    "Sie bleiben regungslos sitzen",
+    "Sie fliegen geradeaus weiter",
+    4
+   ]
+  ],
+  "id": "fledermaus",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Max-Planck-Gesellschaft",
+    "title": "Die komplexen Klangwelten der Fledermäuse",
+    "url": "https://www.mpg.de/15111519/fledermaus"
+   },
+   {
+    "publisher": "LMU München",
+    "title": "Exzellente Navigation mit wenig Information",
+    "url": "https://www.lmu.de/de/newsroom/newsuebersicht/news/exzellente-navigation-mit-wenig-information-87896f72.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie sprechen Honigbienen im Schwänzeltanz?",
+  "s": "Schwänzeltanz",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐝",
+    "Eine Biene kommt vom Futter zurück und tanzt im Stock. Das ist der Schwänzeltanz. Er verrät den anderen Bienen, wo es Nahrung gibt. Woran erkennen sie die Entfernung?"
+   ],
+   [
+    "⏱️",
+    "An der Dauer des Tanzes. Je länger die Biene schwänzelt, desto weiter entfernt ist die Futterquelle. Die Richtung steckt ebenfalls im Tanz. Sprechen alle Honigbienen dieselbe Sprache?"
+   ],
+   [
+    "🗣️",
+    "Nicht ganz. Die Würzburger Forschung beschreibt Tanzdialekte. Bei einer Quelle in 800 Metern Entfernung tanzen Östliche Honigbienen am längsten, dann Zwerghonigbienen, am kürzesten Riesenhonigbienen. Hilft der Tanz allein?"
+   ],
+   [
+    "🌸",
+    "Nicht immer. Bei bekannten Futterquellen kann auch der Duft helfen, den die Tänzerin mitbringt. Die EU Forschung zum Schwänzeltanz zeigt, wie komplex diese Verständigung ist. Warum sind Dialekte spannend?"
+   ],
+   [
+    "🔬",
+    "Weil sie zeigen, dass die Bienensprache sich je nach Art unterscheidet. Der Tanz ist also kein starres Programm, sondern ein Signal, dessen Dauer jede Art etwas anders in Entfernung übersetzt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Woran erkennen Bienen die Entfernung der Futterquelle?",
+    "An der Dauer des Tanzes",
+    "An der Farbe der Biene",
+    "An der Tageszeit",
+    2
+   ],
+   [
+    "Welche Art tanzt bei 800 Metern am längsten?",
+    "Die Östliche Honigbiene",
+    "Die Riesenhonigbiene",
+    "Alle gleich lang",
+    3
+   ],
+   [
+    "Was kann bei bekannten Quellen zusätzlich helfen?",
+    "Der Duft der Tänzerin",
+    "Ein Lichtsignal des Stocks",
+    "Das Wetter am Abend",
+    4
+   ]
+  ],
+  "id": "schwaenzel",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Universität Würzburg (idw)",
+    "title": "Tanzdialekte bei Honigbienen",
+    "url": "https://idw-online.de/de/news742572"
+   },
+   {
+    "publisher": "CORDIS (EU-Kommission)",
+    "title": "Understanding the honeybee waggle dance",
+    "url": "https://www.cordis.europa.eu/article/id/430410-understanding-the-honeybee-waggle-dance/de"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie züchten Blattschneiderameisen Pilze?",
+  "s": "Ameisen",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🍄",
+    "Blattschneiderameisen fressen die Blätter nicht selbst. Sie züchten damit einen Pilz als Nahrung. Doch ein Parasit, Escovopsis, bedroht den Pilzgarten. Wie schützen sich die Ameisen?"
+   ],
+   [
+    "🧴",
+    "Mit Bakterien auf ihrem Körper, die Antibiotika bilden. Das Max Planck Institut für chemische Ökologie fand auf den Ameisen 19 Bakterienarten. Welche Substanz wirkt gegen den Parasiten?"
+   ],
+   [
+    "💊",
+    "Candicidin, ein Stoff, der schon 1953 isoliert wurde. Die Bakterien stellen ihn her, und er hemmt Escovopsis. Das ist eine Art Landwirtschaft mit eingebauter Medizin. Wer arbeitet im Ameisenstaat wie?"
+   ],
+   [
+    "📏",
+    "Die Würzburger Forschung zeigt, dass Ameisen einer Kolonie unterschiedlich groß sind und Aufgaben je nach Körpergröße übernehmen. Warum ist diese Arbeitsteilung für die Kolonie nützlich?"
+   ],
+   [
+    "🏭",
+    "Weil verschiedene Aufgaben verschiedene Körper brauchen können. Pilzgarten, Schutz und Ernte lassen sich so aufteilen. Die Ameisen betreiben damit Landwirtschaft mit Arbeitsteilung und eingebauten Antibiotika."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt der Parasit im Pilzgarten?",
+    "Escovopsis",
+    "Candicidin",
+    "Parafilm",
+    1
+   ],
+   [
+    "Welche Zahl nennt das Institut für die Bakterienarten?",
+    "19 Bakterienarten",
+    "3 Bakterienarten",
+    "190 Bakterienarten",
+    2
+   ],
+   [
+    "Welcher Stoff hemmt den Parasiten?",
+    "Candicidin",
+    "Koffein",
+    "Zitronensäure",
+    3
+   ]
+  ],
+  "id": "ameisen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Max-Planck-Institut für chemische Ökologie",
+    "title": "Pilzgärten der Blattschneiderameisen und Antibiotika",
+    "url": "https://beutenberg.de/fileadmin/import/images/e260bf8d74/MPI-CE_Pressem_Haeder2009_de.pdf"
+   },
+   {
+    "publisher": "Universität Würzburg (idw)",
+    "title": "Körpergröße und Arbeitsteilung bei Blattschneiderameisen",
+    "url": "https://idw-online.de/de/news817473"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie sparen Tiere im Winterschlaf Energie?",
+  "s": "Winterschlaf",
+  "k": "Biologie",
+  "cards": [
+   [
+    "😴",
+    "Der Siebenschläfer schläft monatelang. Sein Herz schlägt im Winterschlaf nur noch etwa 8 Mal pro Minute statt 350 Mal. Wie viel Energie spart er dadurch?"
+   ],
+   [
+    "🔋",
+    "Rund 80 Prozent. Die Veterinärmedizinische Universität Wien beschreibt das als Standby. Dazu sinkt die Körpertemperatur von etwa 37 Grad auf nur 4 bis 6 Grad. Schläft er dann durchgehend?"
+   ],
+   [
+    "⏰",
+    "Nein. Immer wieder gibt es Aufwachphasen von 4 bis 6 Stunden. Der Winterschlaf besteht also aus langen Phasen tiefer Ruhe und kurzen Wachphasen dazwischen. Welchen Vorteil hat das Absenken des Stoffwechsels?"
+   ],
+   [
+    "🔥",
+    "Im Winter gibt es kaum Nahrung. Wer seinen Energieverbrauch um rund 80 Prozent senkt, kommt mit seinen Reserven deutlich länger aus. Wie weit senkt der Siebenschläfer seinen Herzschlag dafür ab?"
+   ],
+   [
+    "❄️",
+    "Von 350 auf etwa 8 Schläge pro Minute, und die Körpertemperatur sinkt auf 4 bis 6 Grad. Winterschlaf ist kein gewöhnlicher Schlaf, sondern eine Art Standby Modus, der sehr viel Energie spart."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Herzschläge pro Minute hat ein Siebenschläfer im Winterschlaf etwa?",
+    "Etwa 8",
+    "Etwa 80",
+    "Etwa 350",
+    1
+   ],
+   [
+    "Wie viel Energie spart er etwa?",
+    "Rund 80 Prozent",
+    "Rund 8 Prozent",
+    "Rund 100 Prozent",
+    2
+   ],
+   [
+    "Wie lange dauern die Aufwachphasen?",
+    "4 bis 6 Stunden",
+    "4 bis 6 Tage",
+    "Etwa 40 Minuten",
+    3
+   ]
+  ],
+  "id": "winterschlaf",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Veterinärmedizinische Universität Wien",
+    "title": "Standby: Energie sparen im Winterschlaf",
+    "url": "https://phaidra.vetmeduni.ac.at/api/object/o:984/download"
+   },
+   {
+    "publisher": "Veterinärmedizinische Universität Wien (idw)",
+    "title": "Siebenschläfer-Projekt",
+    "url": "https://idw-online.de/de/news762500"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie sicher ist dein Geld, wenn eine Bank pleitegeht?",
+  "s": "Einlagen",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "🏦",
+    "Deine Bank geht pleite. Ist dein Erspartes weg? Nein. In der EU gilt eine gesetzliche Einlagensicherung. Wie viel Geld ist laut BaFin pro Kunde und Bank geschützt?"
+   ],
+   [
+    "💶",
+    "Bis zu 100.000 Euro pro Kunde und Bank. Das gilt für Guthaben auf Giro, Tagesgeld und Festgeld. Was bedeutet pro Bank, wenn du mehrere Konten hast?"
+   ],
+   [
+    "🧮",
+    "Die Konten bei derselben Bank werden zusammengerechnet. Bei zwei Banken sind es zweimal 100.000 Euro. Bei Gemeinschaftskonten gelten 200.000 Euro. Wie schnell kommt das Geld zurück?"
+   ],
+   [
+    "⏳",
+    "Die Entschädigung soll innerhalb von sieben Arbeitstagen erfolgen. In bestimmten Sonderfällen sind für sechs Monate sogar bis zu 500.000 Euro geschützt. Und was ist nicht durch die Einlagensicherung geschützt?"
+   ],
+   [
+    "📉",
+    "Wertpapiere wie Aktien oder Fonds fallen nicht unter die Einlagensicherung. Kursverluste an der Börse sind nicht gesichert. Geschützt sind Guthaben auf Konten, also Geld, das du bei der Bank angelegt hast."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel ist pro Kunde und Bank gesetzlich gesichert?",
+    "Bis zu 100.000 Euro",
+    "Bis zu 10.000 Euro",
+    "Bis zu 1 Million Euro",
+    2
+   ],
+   [
+    "Wie schnell soll die Entschädigung erfolgen?",
+    "Innerhalb von sieben Arbeitstagen",
+    "Innerhalb von sieben Monaten",
+    "Erst nach sieben Jahren",
+    4
+   ],
+   [
+    "Wie viel gilt bei Gemeinschaftskonten?",
+    "200.000 Euro",
+    "20.000 Euro",
+    "2 Millionen Euro",
+    3
+   ]
+  ],
+  "id": "einlagensich",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "BaFin",
+    "title": "Einlagensicherung und Anlegerentschädigung",
+    "url": "https://www.bafin.de/DE/verbraucherinnen-verbraucher/themen-finanzprodukte/geldanlage/einlagensicherung-anlegerentschaedigung/einlagensicherung-anlegerentschaedigung_node.html"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Risiko und Einlagensicherung: Fragen und Antworten",
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/sparen-und-anlegen/risiko-und-einlagensicherung-fragen-und-antworten-zur-geldanlage-5417"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie viel Blut wird gespendet, und wie oft darf man?",
+  "s": "Blutspende",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🩸",
+    "Eine Vollblutspende ist schnell erledigt. Dabei werden etwa 500 Milliliter Blut abgenommen, also rund ein halber Liter. Wie lange musst du danach warten, bis du wieder spenden darfst?"
+   ],
+   [
+    "📅",
+    "Zwischen zwei Vollblutspenden müssen mindestens 56 Tage liegen. Das gibt deinem Körper Zeit, sich zu erholen. Gibt es zusätzlich eine Obergrenze pro Jahr, und wenn ja, welche?"
+   ],
+   [
+    "🔢",
+    "Ja. Männer dürfen innerhalb von zwölf Monaten sechsmal spenden, Frauen viermal. Das nennt blutspende.de. Daneben gibt es andere Spendearten, etwa die Plasmaspende. Wie viel wird dabei entnommen?"
+   ],
+   [
+    "🧪",
+    "Bei einer Plasmaspende wird nur der flüssige Teil des Blutes entnommen, etwa 850 Milliliter. Sie ist bis zu 60 Mal im Jahr erlaubt, Vollblut nur viermal bis sechsmal. Warum unterscheiden sich die Regeln?"
+   ],
+   [
+    "⚖️",
+    "Die Regeln sollen Spender schützen und unterscheiden sich je nach Spendeart. Vollblut ist selten möglich, Plasma deutlich öfter. Halte dich an die Vorgaben des Spendedienstes und frage vor Ort nach, wenn du unsicher bist."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Blut wird bei einer Vollblutspende abgenommen?",
+    "Etwa 500 Milliliter",
+    "Etwa 50 Milliliter",
+    "Etwa 5 Liter",
+    1
+   ],
+   [
+    "Wie viele Tage liegen mindestens zwischen zwei Vollblutspenden?",
+    "56 Tage",
+    "7 Tage",
+    "200 Tage",
+    2
+   ],
+   [
+    "Wie oft dürfen Frauen in zwölf Monaten Vollblut spenden?",
+    "Viermal",
+    "Zwanzigmal",
+    "Zehnmal",
+    3
+   ]
+  ],
+  "id": "blutspende",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "blutspende.de",
+    "title": "Blutspende Menge: Wie viel Blut spendet man?",
+    "url": "https://www.blutspende.de/magazin/von-a-bis-0/blutspende-menge-wie-viel-blut-spendet-man"
+   },
+   {
+    "publisher": "blutspende.de",
+    "title": "Wie oft darf man Blut spenden?",
+    "url": "https://www.blutspende.de/magazin/von-a-bis-0/wie-oft-darf-man-blut-spenden"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791669014053,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
  }
 ]
