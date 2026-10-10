@@ -82,6 +82,10 @@ def make_client():
                 if st:
                     spent += (getattr(st, "web_search_requests", 0) or 0) * SEARCH_USD
                 last_stop = r.stop_reason
+                log(call=model, turn=turn, stop=r.stop_reason, tok_in=u.input_tokens, tok_out=u.output_tokens,
+                    cache_w=getattr(u, "cache_creation_input_tokens", 0) or 0,
+                    cache_r=getattr(u, "cache_read_input_tokens", 0) or 0,
+                    searches=(getattr(st, "web_search_requests", 0) or 0) if st else 0, spent_usd=round(spent, 3))
                 t = "".join(b.text for b in r.content if b.type == "text")
                 texts.append(t)
                 msgs = msgs + [{"role": "assistant", "content": r.content}]
@@ -101,7 +105,7 @@ def make_client():
 
 
 SEARCH = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5},
-          {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 4, "max_content_tokens": 12000}]
+          {"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 6, "max_content_tokens": 8000}]
 # Prüfer öffnet nur die vorhandenen Quellen, sucht nicht selbst
 CHECK_TOOLS = [{"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 4, "max_content_tokens": 12000}]
 
@@ -159,7 +163,7 @@ def propose_topics(cli, decks, topics, n):
 
 
 AUTHOR_TASK = """Erstelle ein Deck nach der Spezifikation. Thema: "%s" (Kategorie %s). Verwende die id "%s".
-Gehe so vor: Suche und öffne geeignete Quellen (nach Quellenregeln, mindestens eine deutsche oder europäische Institution, wenn es sie gibt),
+Wichtig: PubMed Central (ncbi.nlm.nih.gov/pmc) und Wiley sperren den Abruf oft mit einem Captcha. Öffne stattdessen bevorzugt Seiten deutscher oder europäischer Institutionen (z. B. BZgA/gesund-ins-leben, UBA, BfR, RKI, DGE, Verbraucherzentrale, Stiftung Warentest, Bundesbank, BaFin) oder PubMed-Abstracts (pubmed.ncbi.nlm.nih.gov). Öffne eine Seite nie zweimal und gib nach höchstens 4 Abrufen das Ergebnis aus.\nGehe so vor: Suche und öffne geeignete Quellen (nach Quellenregeln, mindestens eine deutsche oder europäische Institution, wenn es sie gibt),
 schreibe erst das Ledger mit wörtlichen Zitaten, dann die 5 Karten und 3 Quizfragen.
 Gib NUR ein JSON-Objekt in einem ```json Block aus, im Datenformat der Spezifikation (inklusive ledger, ohne Kommentare). Quizfragen im Format [Frage, richtig, falsch1, falsch2, Kartennummer].
 Wenn du keine zwei verlässlichen geöffneten Quellen findest oder die Belege zu dünn sind, gib stattdessen {"reject":"Grund"} aus."""
