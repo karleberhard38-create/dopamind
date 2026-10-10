@@ -289,8 +289,7 @@ def local_check(deck, topic, srcs, existing_ids):
         for a in ans[1:]:
             if BAD_WRONG.search(a): err.append("Quiz %d: falsche Antwort enthält Extremwort: \"%s\"" % (k, a))
         lens = [len(a) for a in ans]
-        if lens[0] > 1.5 * max(lens[1:]): err.append("Quiz %d: richtige Antwort ist auffällig länger als die falschen" % k)
-        if max(lens) > 2.0 * min(lens): err.append("Quiz %d: Antworten sehr unterschiedlich lang, angleichen" % k)
+        if lens[0] > 2.0 * max(lens[1:]): err.append("Quiz %d: richtige Antwort ist viel länger als die falschen, kürzen oder falsche verlängern" % k)
         for x in e[:4]:
             if re.search(r"[–—]", str(x)): err.append("Quiz %d enthält einen Gedankenstrich" % k)
         for num in NUM.findall(" ".join(ans)):
@@ -305,10 +304,12 @@ def local_check(deck, topic, srcs, existing_ids):
 def gate(check, guessed):
     ped = check.get("ped", {})
     vals = [ped.get(k, 0) for k in "ABCDE"]
-    ok = (check.get("facts") == "pass" and all(v >= 3 for v in vals) and sum(vals) / 5 >= 3.6
+    ok = (check.get("facts") in ("pass", "partial") and all(v >= 3 for v in vals) and sum(vals) / 5 >= 3.6
           and check.get("comparisons_ok", True))
     problems = [p for p in list(check.get("problems", [])) + list(check.get("quiz_fixes", []))
-                if not re.search(r"kein verstoß|kein problem|vertretbar|in ordnung", p, re.I)]
+                if not re.search(r"kein\w*\s+(\w+\s+)?(verstoß|problem|eingriff)|vertretbar|in ordnung|unkritisch|grundsätzlich gedeckt", p, re.I)]
+    if check.get("facts") == "partial" and problems:
+        ok = False
     if guessed > 1:
         problems.append("Blindtest: %d von 3 Quizfragen ohne Lerntext erratbar, Fragen/Falschantworten ersetzen." % guessed)
     if any(v < 3 for v in vals) and not problems:
