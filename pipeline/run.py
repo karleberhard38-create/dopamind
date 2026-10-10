@@ -302,7 +302,8 @@ def gate(check, guessed):
     vals = [ped.get(k, 0) for k in "ABCDE"]
     ok = (check.get("facts") == "pass" and all(v >= 3 for v in vals) and sum(vals) / 5 >= 4
           and check.get("comparisons_ok", True) and guessed <= 1)
-    problems = list(check.get("problems", [])) + list(check.get("quiz_fixes", []))
+    problems = [p for p in list(check.get("problems", [])) + list(check.get("quiz_fixes", []))
+                if not re.search(r"kein verstoß|kein problem|vertretbar|in ordnung", p, re.I)]
     if guessed > 1:
         problems.append("Blindtest: %d von 3 Quizfragen ohne Lerntext erratbar, Fragen/Falschantworten ersetzen." % guessed)
     if any(v < 4 for v in vals) and not problems:
@@ -340,11 +341,13 @@ def build_deck(cli, topic, existing_ids):
         deck.setdefault("t", topic["t"])
         problems = local_check(deck, topic, srcs, existing_ids)
         check = guessed = None
+        diag = ''
         if not problems:
             cmsg = [{"role": "user", "content": [sblock, {"type": "text", "text": CHECK_TASK % json.dumps(deck, ensure_ascii=False)}]}]
             check = jparse(cli.call(CHECK_MODEL, system, cmsg, 3000, "check"))
             guessed = blind_test(cli, deck)
             ok, problems = gate(check, guessed)
+            diag = "[facts=%s ped=%s vergl=%s blind=%s] " % (check.get("facts"), check.get("ped"), check.get("comparisons_ok"), guessed)
             if ok:
                 out = {k: deck[k] for k in ("t", "s", "k", "cards", "quiz")}
                 out.update(id=topic["id"], prod=None,
