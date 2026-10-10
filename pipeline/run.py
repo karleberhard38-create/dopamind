@@ -314,17 +314,22 @@ def gate(check, guessed):
 
 
 def blind_test(cli, deck):
-    qs, truth = [], []
-    for i, qq in enumerate(deck["quiz"]):
-        opts = [qq[1], qq[2], qq[3]]
-        random.shuffle(opts)
-        truth.append(opts.index(qq[1]) + 1)
-        qs.append("Frage %d: %s\n" % (i + 1, qq[0]) + "\n".join("%d) %s" % (j + 1, o) for j, o in enumerate(opts)))
-    out = jparse(cli.call(BLIND_MODEL, "Du beantwortest Quizfragen.", [{"role": "user", "content": BLIND_TASK % "\n\n".join(qs)}], 300, "blind"))
-    return sum(1 for a, t in zip(out["answers"], truth) if a == t)
+    """Jede Frage 3x mit neu gemischten Antworten; erratbar nur, wenn alle 3 Versuche richtig sind."""
+    hits = [0, 0, 0]
+    for _ in range(3):
+        qs, truth = [], []
+        for i, qq in enumerate(deck["quiz"]):
+            opts = [qq[1], qq[2], qq[3]]
+            random.shuffle(opts)
+            truth.append(opts.index(qq[1]) + 1)
+            qs.append("Frage %d: %s\n" % (i + 1, qq[0]) + "\n".join("%d) %s" % (j + 1, o) for j, o in enumerate(opts)))
+        out = jparse(cli.call(BLIND_MODEL, "Du beantwortest Quizfragen.", [{"role": "user", "content": BLIND_TASK % "\n\n".join(qs)}], 300, "blind"))
+        for i, (a_, t_) in enumerate(zip(out["answers"], truth)):
+            if a_ == t_:
+                hits[i] += 1
+    return sum(1 for h in hits if h == 3)
 
 
-# ---------------------------------------------------------------- Deck bauen
 def build_deck(cli, topic, existing_ids):
     srcs = get_sources(topic)
     system = SPEC + "\n\n" + AUFTRAG
