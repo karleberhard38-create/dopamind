@@ -389,7 +389,10 @@ def main():
                 FAKE_TEXTS[s["url"]] = sample
     cli = Fake() if DRY else Real()
     ids = {d["id"] for d in decks}
-    queue = [t for t in topics if t["status"] == "queue" and t["id"] not in ids]
+    rep = load(REPORT, [])
+    unusable = {r["id"] for r in rep if not r.get("usable")}
+    queue = [t for t in topics if t["status"] == "queue" and t["id"] not in ids
+             and t["id"] not in unusable and len(t["sources"]) >= 2]
     queue.sort(key=lambda t: TIER_ORDER.get(t.get("tier", "B"), 5))
     made, tech_fails = 0, 0
     for t in queue:
