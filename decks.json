@@ -1287,5 +1287,151 @@
    "blind_erratbar": 3,
    "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
   }
+ },
+ {
+  "t": "Acrylamid: Warum Pommes lieber goldgelb als braun sein sollten",
+  "s": "Acrylamid",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🍟",
+    "Gekochte Kartoffeln enthalten keinen Problemstoff. Aber in Pommes, Chips und Bratkartoffeln entsteht beim Erhitzen ein Stoff, der das Krebsrisiko potenziell erhöht. Ab welcher Temperatur geht das los?"
+   ],
+   [
+    "🌡️",
+    "Der Stoff heißt Acrylamid. Er bildet sich erst oberhalb von 120 Grad Celsius und steigt ab 170 bis 180 Grad sprunghaft an. Gekochte oder gedünstete Lebensmittel sind deshalb frei davon. Welche Lebensmittel sind betroffen?"
+   ],
+   [
+    "🥔",
+    "Besonders viel steckt in stark erhitzten Kartoffel- und Getreideprodukten: Chips, Pommes, Bratkartoffeln, Kekse, Knäckebrot, auch Kaffee. Dort treffen Zucker und die Aminosäure Asparagin auf Hitze. Wie gefährlich ist das wirklich?"
+   ],
+   [
+    "⚠️",
+    "Das Gutachten der EFSA ordnet die Aufnahme über die Nahrung als bedenklich ein. Eine ungefährliche Menge lässt sich nicht festlegen. Das Risiko wächst, je mehr Acrylamid aufgenommen wird. Wer ist besonders betroffen?"
+   ],
+   [
+    "🍳",
+    "Kinder essen im Verhältnis zum Körpergewicht mehr als Erwachsene und nehmen schneller viel Acrylamid auf. Dein Tipp: \"Vergolden statt verkohlen\". Erhitze nur so lang wie nötig und so niedrig wie möglich. Je goldgelber, desto weniger Acrylamid."
+   ]
+  ],
+  "quiz": [
+   [
+    "Warum sind gekochte Kartoffeln beim Thema Acrylamid unproblematisch?",
+    "Beim Kochen entsteht kein Acrylamid",
+    "Beim Kochen entsteht nur sehr wenig Acrylamid, das man vernachlässigen kann",
+    "Beim Kochen entsteht Acrylamid, das größtenteils ins Kochwasser übergeht",
+    1
+   ],
+   [
+    "Du machst Bratkartoffeln. Mit welcher Zubereitung entsteht weniger Acrylamid?",
+    "Aus vorgekochten Kartoffeln, nur zart gebräunt",
+    "Aus rohen Scheiben, damit sie außen schön kross werden",
+    "Aus rohen Scheiben, mit viel Fett bei hoher Hitze gebraten",
+    5
+   ],
+   [
+    "Warum nehmen Kinder schneller viel Acrylamid auf?",
+    "Sie essen im Verhältnis zum Körpergewicht mehr als Erwachsene",
+    "Ihr Stoffwechsel baut Acrylamid langsamer ab als bei Erwachsenen",
+    "Sie essen im Verhältnis zum Körpergewicht mehr stark frittierte Lebensmittel",
+    4
+   ]
+  ],
+  "id": "acrylamid",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "BfR",
+    "title": "Fragen und Antworten zu Acrylamid in Lebensmitteln",
+    "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zu-acrylamid-in-lebensmitteln/"
+   },
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Acrylamid: Problematischer Stoff in Lebensmitteln",
+    "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/acrylamid-problematischer-stoff-in-lebensmitteln-13879"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791666878029,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 3,
+   "blind_erratbar": 2,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
+ },
+ {
+  "t": "Was passiert im Körper, wenn wir gestresst sind?",
+  "s": "Stress",
+  "k": "Psyche",
+  "cards": [
+   [
+    "⚡",
+    "Stress ist eine Reaktion auf eine herausfordernde Situation. Dabei wird ein Teil deines Nervensystems aktiv, den du nicht bewusst steuern kannst. Er bereitet den Körper darauf vor, die Situation zu bewältigen. Welche Stoffe setzt er dafür frei?"
+   ],
+   [
+    "🏃",
+    "Am Beginn der Stressreaktion setzt der Körper Adrenalin und Noradrenalin frei. Die Bronchien weiten sich, Blutdruck und Blutzucker steigen. Danach kommt Kortisol ins Spiel. Wie wird es gebildet und was bewirkt es?"
+   ],
+   [
+    "🧪",
+    "Das Gehirn signalisiert der Hypophyse, ein Hormon zu bilden. Das Hormon sagt den Nebennieren, mehr Kortisol zu bilden. Kortisol stellt Energie aus Zucker und Fett bereit und hält den Körper in Alarmbereitschaft. Und wenn der Stress bleibt?"
+   ],
+   [
+    "🔄",
+    "Nach kurzem Stress kehrt der Körper meist in den Normalzustand zurück. Bei Dauerstress, etwa durch ständigen Streit in Familie oder Job, schüttet der Körper laufend Kortisol aus. Der Alarm bleibt an. Was macht das mit dir?"
+   ],
+   [
+    "🌿",
+    "Dauerstress schwächt das Immunsystem und kann Herz-Kreislauf-Erkrankungen begünstigen. Plane deshalb bewusst Pausen ein. Jeder Mensch braucht zwischendurch Entlastung, Erholung oder Entspannung. Bewegung und genug Schlaf helfen dabei."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was passiert in deinem Körper am Anfang einer Stressreaktion?",
+    "Die Bronchien weiten sich und der Blutdruck steigt",
+    "Die Bronchien verengen sich und der Blutdruck sinkt",
+    "Die Bronchien weiten sich und der Blutdruck sinkt",
+    2
+   ],
+   [
+    "Was macht dein Körper bei Dauerstress, etwa bei ständigem Streit im Job?",
+    "Er schüttet laufend Kortisol aus",
+    "Er schüttet Kortisol nur noch in der Nacht aus",
+    "Er schüttet nach kurzer Zeit weniger Kortisol aus",
+    4
+   ],
+   [
+    "Was hilft dir nach einer stressigen Zeit am besten, damit sich dein Körper erholt?",
+    "Du gönnst dir zwischendurch Pausen und Entspannung",
+    "Du arbeitest erst alles ab, Pausen gönnst du dir später",
+    "Du vermeidest alle Aufgaben, bis der Stress vorbei ist",
+    5
+   ]
+  ],
+  "id": "stress",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "American Psychological Association",
+    "title": "Stress effects on the body",
+    "url": "https://www.apa.org/topics/stress/body"
+   },
+   {
+    "publisher": "Gesundheitsportal Österreich",
+    "title": "Stress: Was ist das?",
+    "url": "https://www.gesundheit.gv.at/leben/stress/was-ist-das.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791667053974,
+  "review": {
+   "date": "2026-10-10",
+   "facts": "pass",
+   "rounds": 4,
+   "blind_erratbar": 3,
+   "method": "Quellentexte vorab abgerufen, Zitate und Zahlen per Programm geprüft, unabhängige KI-Faktenprüfung gegen den Quellentext, Pädagogik-Prüfung, Quiz-Blindtest"
+  }
  }
 ]

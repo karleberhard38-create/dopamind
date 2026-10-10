@@ -84,8 +84,8 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue",
-  "note_last": "abgelehnt (KI): [facts=partial ped={'A': 4, 'B': 4, 'C': 4, 'D': 4, 'E': 4} vergl=True blind=2] Karte 3: \"Woran erkennst du, wie viel in deinem Essen steckt?\" ist nur ein Cliffhanger. Karte 4 beantwortet ihn aber mit dem Bräunungsgrad. Das ist grundsätzlich gedeckt. Die Quelle sagt aber auch, dass auch moderat gebräunte Lebensmittel hohe Gehalte haben können, das steht korrekt auf Karte 4. Kein in"
+  "status": "live",
+  "note_last": "ok nach 3 Runde(n)"
  },
  {
   "id": "ballast",
@@ -106,8 +106,8 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue",
-  "note_last": "abgelehnt (Programm): Quiz 1: richtige Antwort ist auffällig länger als die falschen"
+  "status": "abgelehnt",
+  "note_last": "abgelehnt (Programm): Quiz 2: falsche Antwort enthält Extremwort: \"Sie lassen sie unverändert durch, weil Bakterien Ballaststoffe nie angreifen können\""
  },
  {
   "id": "zucker",
@@ -255,7 +255,8 @@
   ],
   "tier": "A",
   "note": "",
-  "status": "queue"
+  "status": "live",
+  "note_last": "ok nach 4 Runde(n)"
  },
  {
   "id": "multitask",
