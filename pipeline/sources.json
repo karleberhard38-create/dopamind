@@ -19,7 +19,8 @@
   "tier": "A",
   "note": "zweite Quelle noch nicht geöffnet",
   "status": "queue",
-  "note_last": "Fehler: ValueError: kein JSON in der Antwort"
+  "note_last": "Fehler: JSONDecodeError: Expecting ',' delimiter: line 1 column 2729 (char 2728)",
+  "fails": 1
  },
  {
   "id": "kuehlschr",
@@ -41,7 +42,8 @@
   "tier": "A",
   "note": "",
   "status": "queue",
-  "note_last": "Fehler: ValueError: kein JSON in der Antwort"
+  "note_last": "Fehler: ValueError: kein JSON in der Antwort",
+  "fails": 1
  },
  {
   "id": "salz",
