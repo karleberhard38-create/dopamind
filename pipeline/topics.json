@@ -19,22 +19,25 @@
   "id": "anker",
   "k": "Psyche",
   "t": "Der Ankereffekt: Wie die erste Zahl deine Entscheidung lenkt",
-  "status": "queue",
-  "prev": "Nach 2 Überarbeitungen: Faktenprüfung partial (Karte 5/Quiz 3 Gehaltsverhandlung aus zwei Quellen zusammengesetzt), Pädagogik E=3 (Quiz 3 erratbar, Strohmann-Falschantworten)."
+  "status": "abgelehnt",
+  "prev": "Nach 2 Überarbeitungen: Faktenprüfung partial (Karte 5/Quiz 3 Gehaltsverhandlung aus zwei Quellen zusammengesetzt), Pädagogik E=3 (Quiz 3 erratbar, Strohmann-Falschantworten).",
+  "note": "abgelehnt: Quiz 1 (Karte 2): Die Frage lautet \"wie viele UNO-Staaten in Afrika liegen\", und das Glücksrad zeigt 10 oder 65. Das liest sich wie eine Anzahl. In der Quelle und auf Karte 2 geht es um den Anteil der afrikanischen Staaten (Prozent). Die Frage sollte \"Anteil\" bzw. \"wie viel Prozent der UNO-Staaten\" nennen und die Zahlen als Prozent ausweisen. So passt sie zur Quelle und ist allein verständlich. | Quiz 3 (Karte 5): Die Frage sagt \"weißt, dass der erste Preis dich lenken kann\". Dann ist die Falschantwort \"vorher über den Ankereffekt lesen, damit du ihn sofort erkennst\" unplausibel, weil man das "
  },
  {
   "id": "aufschieben",
   "k": "Psyche",
   "t": "Warum wir Dinge aufschieben",
-  "status": "queue",
-  "prev": ""
+  "status": "abgelehnt",
+  "prev": "",
+  "note": "Autor lehnt ab: Ich konnte keine zwei Quellen wirklich öffnen. Die PubMed-Central-Artikel (PMC8980531 und PMC9669985) lieferten beim Abruf nur eine reCAPTCHA-Seite. Die LMU-Seite war nicht erreichbar. Die Seite der Prokrastinationsambulanz der Universität Münster, die einzige deutsche Institution, und die Wiley-Seite (British Journal of Psychology 2025) konnte ich wegen des Abruflimits nicht mehr öffnen. Von diesen Seiten kenne ich nur Suchausschnitte. Die Spezifikation verlangt wörtliche Ledger-Zitate nur aus geöffneten Seiten, und Ausschnitte reichen dafür nicht. Die übrigen Treffer (Magazine, Nachrichtenportale, Blogs, Ratgeber) sind als Belege ausgeschlossen. Das Thema selbst ist gut belegt: Aufschieben als Umgang mit unangenehmen Gefühlen, mit Aufgabenunlust und Perfektionismus als Faktoren. Ein Deck wäre nach erfolgreichem Öffnen der Quellen möglich."
  },
  {
   "id": "aufwaermen",
   "k": "Sport",
   "t": "Was Aufwärmen vor dem Sport wirklich bringt",
-  "status": "queue",
-  "prev": ""
+  "status": "abgelehnt",
+  "prev": "",
+  "note": "Autor lehnt ab: Nur eine verlässliche Quelle konnte wirklich geöffnet werden: die Übersichtsarbeit zu Aufwärmen und Verletzungen (Fradkin 2006, DARE/NCBI). Sie sagt, die Belege reichen nicht, um Aufwärmen zur Verletzungsvorbeugung zu empfehlen oder davon abzuraten, auch wenn die Tendenz dafür spricht. Der PMC-Artikel zu Aufwärmprogrammen bei Kindern und Jugendlichen (Ding 2022) war durch eine Captcha-Sperre nicht abrufbar. Die deutsche Seite der Uni Jena ließ sich nicht öffnen. Weitere Quellen (Fradkin 2010 zur Leistung, DSHS) konnte ich wegen des Abruflimits nicht mehr öffnen. Die Spezifikation verlangt mindestens 2 geöffnete Quellen und erlaubt keine Zitate aus bloßen Suchtreffern. Deshalb gibt es kein Deck. Ein neuer Versuch mit Fradkin 2010 (PubMed 19996770), Ding 2022 (PMC9140806) und einer deutschen Institution wie der Deutschen Sporthochschule Köln ist möglich."
  },
  {
   "id": "bip",
