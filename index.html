@@ -993,7 +993,7 @@ let fbA={},fbDone=false,fbManual='';
 function renderFb(){
  const el=$('#fbc');
  if(fbDone){
-  el.innerHTML='<h1>Danke!</h1><p class="sub">'+(fbManual?'Dein Feedback konnte nicht automatisch gesendet werden. Kopiere den Text unten und schick ihn an Karl.':'Dein Feedback ist angekommen. Das hilft sehr.')+'</p>'+(fbManual?'<textarea class="fld" id="fbtx" readonly style="height:220px"></textarea>':'')+'<button class="btn pri" type="button" id="fbback" style="width:100%;justify-content:center;margin-top:10px">Zurück</button>';
+  el.innerHTML='<h1>Danke!</h1><p class="sub">'+(fbManual?'Fast geschafft: Tippe auf den Button, dann öffnet sich deine Mail-App mit deinen Antworten. Du musst nur noch auf Senden tippen.':'Dein Feedback ist angekommen. Das hilft sehr.')+'</p>'+(fbManual?'<a class="btn pri big" id="fbmail" href="mailto:karleberhard38@gmail.com?subject='+encodeURIComponent('Dopamind Feedback')+'&body='+encodeURIComponent(fbManual)+'" style="width:100%;justify-content:center;margin-top:6px;text-decoration:none">Per E-Mail senden</a><p class="note" style="margin:10px 2px 6px">Öffnet sich keine Mail-App? Dann kopiere diesen Text und schick ihn an karleberhard38@gmail.com:</p><textarea class="fld" id="fbtx" readonly style="height:180px"></textarea>':'')+'<button class="btn pri" type="button" id="fbback" style="width:100%;justify-content:center;margin-top:10px">Zurück</button>';
   if(fbManual)$('#fbtx').value=fbManual;
   return;
  }
