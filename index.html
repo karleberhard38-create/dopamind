@@ -678,8 +678,8 @@ function syncGoal(){
 }
 function popHeart(){const b=$('#bl');b.classList.add('pop');setTimeout(()=>b.classList.remove('pop'),250);}
 
-/* Lesefortschritt: Eine Karte zählt erst nach ihrer Lesezeit (ca. 0,26 s pro Wort, mindestens 3,5 s, höchstens 9 s) */
-const readMs=f=>Math.min(16000,Math.max(5500,f.x.split(/\s+/).length*280+2000))+(f.i===f.d.cards.length-1?2500:0);
+/* Lesefortschritt: Eine Karte zählt erst nach ihrer Lesezeit (ca. 0,15 s pro Wort + 1 s, mindestens 3 s, höchstens 9 s) */
+const readMs=f=>Math.min(9000,Math.max(3000,f.x.split(/\s+/).length*150+1000))+(f.i===f.d.cards.length-1?1000:0);
 let dwellT;
 function startDwell(){clearTimeout(dwellT);if(view!=='feed')return;const n=cur;dwellT=setTimeout(()=>markRead(n),readMs(F[n]));}
 function markRead(n){
