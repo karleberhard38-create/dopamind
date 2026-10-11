@@ -1026,6 +1026,7 @@ $('#fbc').addEventListener('click',async e=>{
   let ok=false;
   if(db&&uid){try{await db.doc('feedback/'+uid).set({a:fbA,ts:Date.now(),lvl:S.level,xp:S.xp,dev:(navigator.userAgent||'').slice(0,140)});ok=true;}catch(x){ok=false;}}
   fbManual=ok?'':'Dopamind-Feedback\n\n'+text;fbDone=true;renderFb();
+  if(fbManual){try{location.href='mailto:karleberhard38@gmail.com?subject='+encodeURIComponent('Dopamind Feedback')+'&body='+encodeURIComponent(fbManual);}catch(x){}}
  }
 });
 $('#fbc').addEventListener('input',e=>{const q=e.target.dataset&&e.target.dataset.q;if(q&&(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA'))fbA[q]=e.target.value;});
