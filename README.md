@@ -40,3 +40,8 @@ https://karleberhard38-create.github.io/dopamind/?owner=1
 Ausschalten: diesen Link einmal öffnen.
 
 https://karleberhard38-create.github.io/dopamind/?owner=0
+
+## Start neu testen
+Hängst du `?reset=1` an die Adresse, löscht der Browser seinen Fortschritt für diese Seite, und die App startet wieder mit der Themenauswahl. Die Ersteller-Ansicht bleibt dabei erhalten.
+
+https://karleberhard38-create.github.io/dopamind/?reset=1
