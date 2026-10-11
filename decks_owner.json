@@ -1,0 +1,687 @@
+[
+ {
+  "t": "Zinseszins: Warum wächst Geld mit der Zeit immer schneller?",
+  "s": "Zinseszins",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💰",
+    "Du legst 1.000 Euro für 3 Jahre zu 5 Prozent pro Jahr an. Wer jedes Jahr 50 Euro Zinsen erwartet, liegt knapp daneben. Wie viel Geld hast du nach drei Jahren wirklich?"
+   ],
+   [
+    "🧮",
+    "1.157,63 Euro. Die Zinsen betragen also 157,63 Euro statt 150 Euro, denn die Zinsen des ersten Jahres werden im nächsten Jahr selbst mitverzinst. Wie nennt man diesen Effekt?"
+   ],
+   [
+    "🌱",
+    "Zinseszins, also Zinsen auf zuvor verdiente Zinsen. Je länger das Geld liegt, desto stärker wirkt er. Wie groß ist bei 100 Euro monatlich und 5 Prozent Rendite nach 40 Jahren der Anteil der Erträge am Endkapital?"
+   ],
+   [
+    "📊",
+    "Etwa zwei Drittel stammen aus Erträgen, nur ein Drittel aus Einzahlungen. Auch der Zinssatz zählt: 10.000 Euro über 30 Jahre ergeben bei 5 statt 2 Prozent mehr als das Doppelte. Wie schätzt man grob die Verdopplungszeit?"
+   ],
+   [
+    "✌️",
+    "Mit der 72er-Regel: 72 geteilt durch den Zinssatz. Bei 6 Prozent dauert es etwa 12 Jahre, bis sich ein Betrag verdoppelt. Das ist nur eine Überschlagsrechnung, Steuern sind in solchen Beispielen nicht berücksichtigt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Endkapital ergeben 1.000 Euro bei 5 Prozent in 3 Jahren?",
+    "1.157,63 Euro",
+    "1.150,00 Euro",
+    "1.200,00 Euro",
+    2
+   ],
+   [
+    "Was bedeutet Zinseszins?",
+    "Zinsen auf zuvor verdiente Zinsen",
+    "Zinsen nur auf das Startkapital",
+    "Eine Gebühr der Bank",
+    3
+   ],
+   [
+    "Wie lange dauert die Verdopplung bei 6 Prozent nach der 72er-Regel?",
+    "Etwa 12 Jahre",
+    "Etwa 6 Jahre",
+    "Etwa 24 Jahre",
+    5
+   ]
+  ],
+  "id": "zinseszins",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Sparkasse",
+    "title": "Zinseszins",
+    "url": "https://www.sparkasse.de/pk/ratgeber/finanzplanung/investieren/zinseszins.html"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Wie entsteht ein Gesetz in Deutschland?",
+  "s": "Gesetz",
+  "k": "Politik",
+  "cards": [
+   [
+    "🏛️",
+    "Drei Akteure dürfen in Deutschland Gesetzentwürfe einbringen: Bundesregierung, Abgeordnete des Bundestages und Bundesrat. Bei den verabschiedeten Gesetzen der ersten 14 Wahlperioden kamen 35 Prozent von Abgeordneten und 8 Prozent vom Bundesrat. Woher kamen die übrigen 57 Prozent?"
+   ],
+   [
+    "📝",
+    "Von der Bundesregierung. Ihr Entwurf entsteht im zuständigen Ministerium, dann beschließt ihn das Kabinett. Der Bundesrat darf innerhalb von sechs Wochen Stellung nehmen. Wie viele Lesungen folgen danach im Bundestag?"
+   ],
+   [
+    "🗳️",
+    "Drei Lesungen. Die erste überweist den Entwurf an Ausschüsse, die zweite berät jede Bestimmung einzeln, die dritte endet meist mit der Schlussabstimmung. Wo werden fast alle Entwürfe tatsächlich verändert?"
+   ],
+   [
+    "🪑",
+    "In den Ausschüssen, der wichtigsten Stufe. Danach prüft der Bundesrat das Gesetz erneut. Bei Streit kann der Vermittlungsausschuss mit je 16 Mitgliedern aus Bundestag und Bundesrat angerufen werden. Wer unterschreibt das fertige Gesetz zuletzt?"
+   ],
+   [
+    "✍️",
+    "Der Bundespräsident, nach den Fachministern und dem Bundeskanzler. Danach wird das Gesetz im Bundesgesetzblatt verkündet. Verfassungsänderungen brauchen übrigens zwei Drittel im Bundestag und zwei Drittel der Stimmen im Bundesrat."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Lesungen gibt es im Bundestag?",
+    "Drei",
+    "Zwei",
+    "Vier",
+    3
+   ],
+   [
+    "Wo werden Gesetzentwürfe meist verändert?",
+    "In den Ausschüssen",
+    "Im Bundesgesetzblatt",
+    "Bei der Verkündung",
+    4
+   ],
+   [
+    "Wer unterschreibt ein Gesetz zuletzt?",
+    "Der Bundespräsident",
+    "Der Bundestagspräsident",
+    "Der Bundesratspräsident",
+    5
+   ]
+  ],
+  "id": "gesetz",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Ein Gesetz entsteht",
+    "url": "https://bpb.de/themen/politisches-system/deutsche-demokratie/39351/ein-gesetz-entsteht"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Luthers 95 Thesen: Gab es den Thesenanschlag wirklich?",
+  "s": "Luther",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "📜",
+    "Am 31. Oktober 1517 soll Martin Luther in Wittenberg seine 95 Thesen gegen den Ablass veröffentlicht haben. Dieses Datum gilt in Deutschland als Beginn der Reformation. Wo soll er sie der Legende nach angeschlagen haben?"
+   ],
+   [
+    "🚪",
+    "An das Portal der Wittenberger Schlosskirche. Doch laut Bundeszentrale für politische Bildung gibt es für diese Schlüsselszene keinen historischen Beleg. Woher stammen dann die überlieferten Berichte darüber?"
+   ],
+   [
+    "👀",
+    "Von Personen, die an diesem Tag gar nicht vor Ort waren. Gesichert ist aber, dass Luther die Thesen verfasste, sie diskutieren wollte und an ausgewählte Personen verschickte. Wie erreichten sie darüber hinaus ein breiteres Publikum?"
+   ],
+   [
+    "🖨️",
+    "Sie wurden für eine Öffentlichkeit außerhalb der Universität gedruckt. Damit setzte er Entwicklungen in Gang, die die Welt laut bpb unwiderruflich verändern sollten. Welche große Arbeit leistete er im Winter 1521/22 auf der Wartburg?"
+   ],
+   [
+    "📖",
+    "Er übersetzte dort die Bibel ins Deutsche. Ob der Thesenanschlag stattfand, bleibt umstritten: Zwei Wissenschaftler behaupten es in einem Buch, belegt ist es nicht. Um Luther ranken sich zahlreiche Legenden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welches Datum gilt als Beginn der Reformation?",
+    "31. Oktober 1517",
+    "6. Januar 1520",
+    "9. November 1517",
+    1
+   ],
+   [
+    "Was gilt laut bpb für den Thesenanschlag?",
+    "Es gibt keinen historischen Beleg dafür",
+    "Er ist durch Augenzeugen bewiesen",
+    "Er fand in Rom statt",
+    2
+   ],
+   [
+    "Was tat Luther auf der Wartburg?",
+    "Er übersetzte die Bibel ins Deutsche",
+    "Er druckte seine Thesen",
+    "Er gründete eine Universität",
+    5
+   ]
+  ],
+  "id": "luther",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Luthers Thesenanschlag (Einstieg)",
+    "url": "https://www.bpb.de/izpb/253811/einstieg"
+   },
+   {
+    "publisher": "evangelisch.de",
+    "title": "Thesenanschlag",
+    "url": "https://www.evangelisch.de/themen/thesenanschlag"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Hyperinflation 1923: Wie rettete die Rentenmark das Geld?",
+  "s": "Rentenmark",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "💸",
+    "Im Herbst 1923 schritt die Inflation in Deutschland so rasant fort, dass eine grundlegende Währungsreform unumgänglich wurde. Mitte Oktober gründete die Reichsregierung dafür eine neue Bank. Wie hieß sie?"
+   ],
+   [
+    "🏦",
+    "Deutsche Rentenbank. Sie gab am 15. November 1923 ein neues Zahlungsmittel aus, die Rentenmark. Eine Rentenmark entsprach einer Billion Papiermark. Wie viele Rentenmark kostete ein US-Dollar?"
+   ],
+   [
+    "🌾",
+    "4,20 Rentenmark. Gedeckt war das neue Geld nicht durch Gold, sondern durch eine Hypothek von 3,2 Milliarden Rentenmark auf den Grundbesitz von Landwirtschaft, Industrie und Gewerbe. Wer hielt den Kurs stabil?"
+   ],
+   [
+    "🧑‍💼",
+    "Reichsfinanzminister Hans Luther und Reichsbankpräsident Hjalmar Schacht, durch Einschränkung des Geldumlaufs und Sparmaßnahmen. Daher kam der Ausdruck Wunder der Rentenmark. Was löste die Rentenmark im Jahr 1924 ab?"
+   ],
+   [
+    "🪙",
+    "Am 30. August 1924 wurde sie im Rahmen des Dawes-Plans durch die Reichsmark abgelöst, die durch Gold und wertbeständige Devisen gedeckt war. Der harte Währungsschnitt galt als Voraussetzung für Verhandlungen über die Reparationen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann gab die Rentenbank die Rentenmark aus?",
+    "Am 15. November 1923",
+    "Am 1. Januar 1923",
+    "Am 30. August 1924",
+    2
+   ],
+   [
+    "Wodurch war die Rentenmark gedeckt?",
+    "Durch eine Hypothek auf den Grundbesitz",
+    "Durch Goldbarren der Reichsbank",
+    "Durch Staatsanleihen aus den USA",
+    3
+   ],
+   [
+    "Was löste die Rentenmark am 30. August 1924 ab?",
+    "Die Reichsmark",
+    "Der Taler",
+    "Der Goldfranken",
+    5
+   ]
+  ],
+  "id": "hyperinfl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Historisches Museum (LeMO)",
+    "title": "Währungsreform 1923",
+    "url": "https://www.dhm.de/lemo/kapitel/weimarer-republik/innenpolitik/waehrungsreform-1923"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Aufschieben: Warum tun wir es, obwohl es schadet?",
+  "s": "Aufschieben",
+  "k": "Psyche",
+  "cards": [
+   [
+    "⏳",
+    "Es ist Sonntagabend, die Abgabe steht an, und plötzlich wird die Wohnung geputzt. Laut Prokrastinationsambulanz der Uni Münster geben nur zwei Prozent der Menschen an, nie aufzuschieben. Ist das ein Zeichen von Faulheit?"
+   ],
+   [
+    "🧭",
+    "Nein, laut AOK ist es ein Problem der Selbststeuerung. Zum Problem wird es, wenn der Leidensdruck hoch ist und etwa Ausbildung oder Job gefährdet sind. Welche Wirkung hat das Aufschieben im ersten Moment?"
+   ],
+   [
+    "😮‍💨",
+    "Erleichterung, weil Stress und Druck kurzfristig verschwinden. Danach folgen Ärger über sich selbst und ein schlechtes Gewissen. Typisch ist der Gedanke, gerade nicht in der richtigen Stimmung zu sein. Was zählt außerdem zu den Ursachen?"
+   ],
+   [
+    "🧱",
+    "Zum Beispiel ein unerreichbar hoher Anspruch an die eigene Arbeit, schlechte Priorisierung oder Angst vor unangenehmen Gefühlen bei der Arbeit. Was hilft laut AOK bei großen Aufgaben?"
+   ],
+   [
+    "✅",
+    "Sie in kleine Portionen teilen und feste Zeitfenster planen, etwa von 13 bis 14 Uhr eine Teilaufgabe. Auch kleine Erfolge zu belohnen hilft. Wer stark leidet, sollte psychotherapeutische oder medizinische Hilfe suchen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Menschen geben an, nie aufzuschieben?",
+    "Nur etwa zwei Prozent",
+    "Etwa die Hälfte",
+    "Etwa neun von zehn",
+    1
+   ],
+   [
+    "Was bringt Aufschieben kurzfristig?",
+    "Erleichterung, weil der Druck verschwindet",
+    "Mehr Energie für die spätere Arbeit",
+    "Sofort ein besseres Ergebnis",
+    3
+   ],
+   [
+    "Was hilft bei großen Aufgaben?",
+    "Sie in kleine Portionen teilen",
+    "Alles auf den letzten Tag legen",
+    "Die Frist nach hinten verschieben",
+    5
+   ]
+  ],
+  "id": "prokrast",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "AOK",
+    "title": "Prokrastination: Aufschieben überwinden",
+    "url": "https://www.aok.de/pp/bv/prokrastination/"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "10.000 Schritte: Sind sie wirklich nötig?",
+  "s": "Schritte",
+  "k": "Sport",
+  "cards": [
+   [
+    "🚶",
+    "10.000 Schritte pro Tag gelten vielen als Tagesziel. Forschende der Harvard T.H. Chan School of Public Health haben untersucht, wie viel Bewegung tatsächlich nötig ist. Was fanden sie bei Frauen in ihren Siebzigern heraus?"
+   ],
+   [
+    "📉",
+    "Frauen mit 4.400 Schritten am Tag hatten ein um etwa 40 Prozent geringeres Risiko für einen vorzeitigen Tod als Frauen mit 2.700 Schritten oder weniger. Bei welcher Schrittzahl flachte der Nutzen ab?"
+   ],
+   [
+    "📈",
+    "Bei etwa 7.500 Schritten täglich. Das Sterberisiko sank aber schon weiter, wenn die Frauen mehr als 5.000 Schritte gingen. Eine weitere Studie verglich außerdem 8.000 mit 4.000 Schritten. Was ergab der Vergleich?"
+   ],
+   [
+    "❤️",
+    "Menschen mit 8.000 Schritten hatten etwa halb so hohe Chancen, vorzeitig an Herzkrankheiten oder anderen Ursachen zu sterben, wie Menschen mit 4.000 Schritten. Was folgt daraus für die Marke von 10.000?"
+   ],
+   [
+    "🎯",
+    "Deutlich weniger als 10.000 Schritte täglich können die Gesundheit laut der Harvard Meldung schon verbessern. Die 10.000 ist also keine Mindestgrenze für einen Nutzen, denn schon 4.400 Schritte am Tag gingen mit einem geringeren Risiko für einen vorzeitigen Tod einher."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Schritte gingen die Frauen mit etwa 40 Prozent weniger Risiko?",
+    "Rund 4.400 Schritte",
+    "Rund 12.000 Schritte",
+    "Rund 1.000 Schritte",
+    2
+   ],
+   [
+    "Ab wie vielen Schritten flachte der Nutzen ab?",
+    "Bei etwa 7.500 Schritten",
+    "Bei etwa 15.000 Schritten",
+    "Bei etwa 2.000 Schritten",
+    3
+   ],
+   [
+    "Was ergab der Vergleich von 8.000 mit 4.000 Schritten?",
+    "Etwa halb so hohe Chance auf frühen Tod",
+    "Eine doppelt so hohe Chance auf frühen Tod",
+    "Kein Unterschied beim Sterberisiko",
+    4
+   ]
+  ],
+  "id": "schritte",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Harvard T.H. Chan School of Public Health",
+    "title": "Far fewer than 10,000 steps per day can boost health",
+    "url": "https://hsph.harvard.edu/news/far-fewer-than-10000-steps-per-day-can-boost-health"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Pfand: Ist jede Pfandflasche Mehrweg?",
+  "s": "Pfand",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🥤",
+    "Seit dem 1. Januar 2003 gilt die Pfandpflicht auf Einweg-Getränkeverpackungen. Die rot-grüne Bundesregierung hatte sie 2002 beschlossen, ein Dosenverbot war nach EU-Binnenmarktrecht nicht möglich. Welches Ziel hatte das Pfand?"
+   ],
+   [
+    "♻️",
+    "Weniger Abfall und ein höherer Mehrweganteil. Der damalige Umweltminister Trittin wollte die Einwegflut eindämmen. Anfangs konnte man das Pfand nur im Laden zurückgeben, in dem man es bezahlt hatte. Was änderte sich 2006?"
+   ],
+   [
+    "🔄",
+    "Man konnte es nun überall zurückgeben, und das Pfand betrug einheitlich 25 Cent für Einwegverpackungen zwischen 0,1 und 3,0 Litern. Wie entwickelte sich der Anteil wiederbefüllter Flaschen von 2004 bis 2010?"
+   ],
+   [
+    "📉",
+    "Er sank. 2004 wurde etwa zwei Drittel der Flaschen wiederbefüllt, 2010 nicht einmal mehr die Hälfte. Eine Studie kritisierte, dass Verbraucher oft nicht wissen, dass Pfand nicht automatisch Mehrweg heißt. Was forderte sie?"
+   ],
+   [
+    "🏷️",
+    "Eine klare Kennzeichnung. Die Studie stellte aber auch Positives fest: weniger Müll auf Straßen und Plätzen, und Kunststoff und Aluminium ließen sich besser verwerten. Pfand ist also nicht gleich Mehrweg."
+   ]
+  ],
+  "quiz": [
+   [
+    "Seit wann gilt die Pfandpflicht?",
+    "Seit dem 1. Januar 2003",
+    "Seit dem 1. Januar 1993",
+    "Seit dem 1. Januar 2013",
+    1
+   ],
+   [
+    "Wie hoch ist das einheitliche Pfand auf Einweg?",
+    "25 Cent",
+    "10 Cent",
+    "50 Cent",
+    3
+   ],
+   [
+    "Wie viele Flaschen wurden 2010 wiederbefüllt?",
+    "Nicht einmal die Hälfte",
+    "Mehr als zwei Drittel aller",
+    "Nahezu alle Flaschen",
+    4
+   ]
+  ],
+  "id": "pfand",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "10 Jahre Dosenpfand",
+    "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/152198/10-jahre-dosenpfand/"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Impfung: Was passiert dabei im Körper?",
+  "s": "Impfung",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "💉",
+    "Eine Impfung trainiert die Abwehr, ohne dass man die Krankheit bekommt. Dafür enthält der Impfstoff abgetötete oder stark abgeschwächte Bestandteile des Erregers. Was bildet das Immunsystem daraufhin?"
+   ],
+   [
+    "🛡️",
+    "Antikörper gegen die Erreger. Bei einer späteren Infektion kann der Körper dann schnell reagieren. Zusätzlich entstehen Zellen, die sich die Beschaffenheit der Erreger merken. Wie nennt man diese Zellen?"
+   ],
+   [
+    "🧠",
+    "Gedächtniszellen. Bei erneutem Kontakt mit dem Erreger stellt das Immunsystem umgehend die passenden Antikörper bereit. Für ausreichenden Schutz sind aber oft mehrere Impfungen nötig. Wie heißt dieser Impfplan?"
+   ],
+   [
+    "📅",
+    "Grundimmunisierung. Manche Impfungen werden nach einigen Jahren wiederholt, um den Schutz aufzufrischen. Danach sind Rötung, Schwellung, Fieber oder Gliederschmerzen möglich. Sind das schon unerwünschte Nebenwirkungen?"
+   ],
+   [
+    "🩹",
+    "Nein, es sind Impfreaktionen, die meist innerhalb weniger Tage abklingen. Sie sind nicht gleichzusetzen mit unerwünschten Nebenwirkungen. Bei der passiven Immunisierung bekommt der Körper fertige Antikörper, der Schutz hält aber nur Wochen bis maximal drei Monate."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was enthält ein Impfstoff laut Techniker Krankenkasse?",
+    "Abgetötete oder abgeschwächte Erregerbestandteile",
+    "Nur Vitamine zur Stärkung der Abwehr",
+    "Lebende Erreger in voller Stärke",
+    1
+   ],
+   [
+    "Wie heißen die Zellen, die sich Erreger merken?",
+    "Gedächtniszellen",
+    "Blutplättchen",
+    "Hautzellen",
+    2
+   ],
+   [
+    "Wie lange hält die passive Immunisierung höchstens?",
+    "Etwa drei Monate",
+    "Etwa drei Jahre",
+    "Ein Leben lang",
+    5
+   ]
+  ],
+  "id": "impfung",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Was passiert bei einer Impfung?",
+    "url": "https://www.tk.de/techniker/gesundheit-foerdern/praevention-impfungen/impfungen/was-passiert-bei-einer-impfung-2010074"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "BIP: Was misst das Bruttoinlandsprodukt wirklich?",
+  "s": "BIP",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "📈",
+    "Das Bruttoinlandsprodukt ist die wichtigste Größe der Volkswirtschaftlichen Gesamtrechnung. Es zeigt, wie viel in einem Land in einem bestimmten Zeitraum wirtschaftlich geleistet wurde. Über wie viele Seiten lässt es sich berechnen?"
+   ],
+   [
+    "🧮",
+    "Über drei: Entstehung, Verwendung und Verteilung. In Deutschland wird es über Entstehung und Verwendung berechnet und abgeglichen, die Verteilungsseite ist nicht vollständig möglich. Es gibt das BIP auch preisbereinigt. Wozu braucht man diese Fassung?"
+   ],
+   [
+    "💶",
+    "Sie zeigt die reale Wirtschaftsentwicklung frei von Preiseinflüssen. Die Veränderungsrate des preisbereinigten BIP gilt als Wirtschaftswachstum. Die erste Schnellmeldung kommt spätestens nach 30 Tagen. Ist sie schon endgültig?"
+   ],
+   [
+    "🔁",
+    "Nein, die Datengrundlage ist dann noch unvollständig, und die Ergebnisse werden mehrmals überarbeitet. Endgültige Ergebnisse liegen erst nach rund vier Jahren vor. Wie oft gibt es in der Regel Generalrevisionen?"
+   ],
+   [
+    "🗓️",
+    "In der Regel alle fünf Jahre. Die erste vorläufige Zahl, die in den Nachrichten genannt wird, kann deshalb vom endgültigen Ergebnis abweichen. Das weist das Statistische Bundesamt selbst ausdrücklich darauf hin."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was gilt als Wirtschaftswachstum?",
+    "Die Veränderungsrate des preisbereinigten BIP",
+    "Der Anstieg aller Preise im Jahr",
+    "Die Zahl der Beschäftigten",
+    3
+   ],
+   [
+    "Wann liegen endgültige BIP-Ergebnisse vor?",
+    "Nach rund vier Jahren",
+    "Nach 30 Tagen",
+    "Nach einem halben Jahr",
+    4
+   ],
+   [
+    "Wie oft gibt es in der Regel Generalrevisionen?",
+    "Alle fünf Jahre",
+    "Jedes Jahr",
+    "Alle 20 Jahre",
+    5
+   ]
+  ],
+  "id": "bip",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Statistisches Bundesamt (Destatis)",
+    "title": "Bruttoinlandsprodukt (BIP)",
+    "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Methoden/bip.html"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ },
+ {
+  "t": "Gewitter: Wie weit ist der Blitz entfernt?",
+  "s": "Gewitter",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "⛈️",
+    "Es blitzt, und du zählst bis zum Donner. Der Blitz ist praktisch sofort sichtbar, weil Licht rund 300.000 Kilometer pro Sekunde zurücklegt. Wie schnell ist dagegen der Schall des Donners?"
+   ],
+   [
+    "🔊",
+    "Etwa 330 Meter pro Sekunde, also rund 3 Sekunden pro Kilometer. Das macht den Unterschied hörbar. Was musst du mit den gezählten Sekunden rechnen, um die Entfernung in Kilometern zu erhalten?"
+   ],
+   [
+    "➗",
+    "Durch drei teilen. Neun Sekunden zwischen Blitz und Donner bedeuten etwa 3 Kilometer Entfernung, bei 3 Sekunden nur etwa 1 Kilometer. Bis zu welcher Entfernung hört man den Donner normalerweise?"
+   ],
+   [
+    "📏",
+    "Spätestens nach 25 Kilometern verliert sich der Schall. Im seltenen Idealfall ist ein dumpfes Grollen noch bis etwa 50 Kilometer zu hören. Warum hört man ein weit entferntes Gewitter oft gar nicht?"
+   ],
+   [
+    "⚡",
+    "Weil sich der Schall in alle Richtungen ausbreitet und sich dabei verliert. Licht dagegen erreicht uns praktisch sofort, deshalb kommt der Blitz zuerst und der Donner erst mit Verzögerung."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie schnell ist Schall etwa?",
+    "Etwa 330 Meter pro Sekunde",
+    "Etwa 3 Kilometer pro Sekunde",
+    "Etwa 300 Meter pro Stunde",
+    2
+   ],
+   [
+    "Was bedeuten 9 Sekunden zwischen Blitz und Donner?",
+    "Etwa 3 Kilometer Entfernung",
+    "Etwa 9 Kilometer Entfernung",
+    "Etwa 300 Meter Entfernung",
+    3
+   ],
+   [
+    "Spätestens ab welcher Entfernung verliert sich der Donner?",
+    "Ab etwa 25 Kilometern",
+    "Ab etwa 2 Kilometern",
+    "Ab etwa 250 Kilometern",
+    4
+   ]
+  ],
+  "id": "gewitter",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "wetterdienst.de",
+    "title": "Die Entfernung von Gewittern",
+    "url": "https://www.wetterdienst.de/Deutschlandwetter/Thema_des_Tages/4175/die-entfernung-von-gewittern"
+   }
+  ],
+  "status": "approved",
+  "own": true,
+  "ts": 1791719101806,
+  "review": {
+   "date": "2026-10-11",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
+  }
+ }
+]
