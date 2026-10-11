@@ -500,7 +500,7 @@ const KEY='dopamind_v2';
 const now=()=>new Date(Date.now()+((typeof S==='object'&&S.dayShift)||0)*864e5);
 const dk=(d=now())=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
 const yest=()=>{const d=now();d.setDate(d.getDate()-1);return dk(d)};
-let S={folders:[],xp:0,level:0,streak:0,goalDay:'',day:'',read:{},lastFolder:'',seenLevel:0,ts:0,meals:1,full:70,fullT:0,shells:15,own:['h_none','h_straw','g_none','e_none'],wear:{h:'h_straw',g:'g_none',e:'e_none',r:'r_tent',w:'w_none',f:'f_none',c:'c_none'},freezes:2,sr:{},dayShift:0,stage:0,top:0,under:0,fed:false,news:'',rev:[],kept:0,asked:0,onb:false,prefs:[],aff:{},plus:'',hint:0};
+let S={folders:[],xp:0,level:0,streak:0,goalDay:'',day:'',read:{},lastFolder:'',seenLevel:0,ts:0,meals:1,full:70,fullT:0,shells:80,own:['h_none','h_straw','g_none','e_none'],wear:{h:'h_straw',g:'g_none',e:'e_none',r:'r_tent',w:'w_none',f:'f_none',c:'c_none'},freezes:2,sr:{},dayShift:0,stage:0,top:0,under:0,fed:false,news:'',rev:[],kept:0,asked:0,onb:false,prefs:[],aff:{},plus:'',hint:0};
 function rollDay(){const t=dk();if(S.day!==t){const prev=S.day;S.day=t;S.read={};applyFreeze();
  if(prev){const gap=Math.max(1,daysBetween(prev,t));S.under=S.fed?(gap-1):((S.under||0)+gap);}
  S.fed=false;tierCheck();}}
@@ -766,7 +766,7 @@ $('#panel').addEventListener('click',e=>{
 $('#scrim').onclick=closeSheet;
 
 /* ===== Teilen ===== */
-const INVITE_URL='https://claude.ai/artifact/KPtXrvpJT9P9Xe1hdKT7gB';
+const INVITE_URL='https://karleberhard38-create.github.io/dopamind/';
 let shImg=null,shText='',shMode='card';
 function wrapTxt(ctx,t,w){const ws=t.split(/\s+/),ls=[];let l='';ws.forEach(x=>{const m=l?l+' '+x:x;if(ctx.measureText(m).width>w&&l){ls.push(l);l=x;}else l=m;});if(l)ls.push(l);return ls;}
 function cardImage(f){
@@ -955,7 +955,7 @@ async function renderStats(){
  '<div class="stats"><div><b>'+done+' / '+DAILY_GOAL+'</b><span>Decks heute</span></div><div><b>'+streakNow()+'</b><span>Tage in Folge</span></div><div><b>'+S.xp+'</b><span>XP gesamt</span></div></div></div>'+
  '<div class="lvl"><b>Level '+S.level+' von '+LEVEL_MAX+'</b><div class="bar"><i style="width:'+(S.level/LEVEL_MAX*100).toFixed(1)+'%"></i></div><small>Jedes Mal, wenn du dein Tagesziel schaffst, steigt dein Level.</small></div>'+
  '<div class="sec">Heutige Decks</div>'+DATA.map(d=>{const n=Math.min((S.read[d.id]||[]).length,d.cards.length),ok=n>=d.cards.length;return '<div class="dk '+(ok?'done':'')+'"><span class="dot">'+(ok?'✓':'')+'</span><span>'+esc(d.t)+'</span><small>'+n+'/'+d.cards.length+'</small></div>';}).join('')+
- '<div class="sec">Freunde</div><div id="lbw"></div><button class="btn pri" type="button" id="invb" style="width:100%;justify-content:center;margin-top:10px">Freunde einladen</button>'+'<div class="sec">Interessen</div><p class="note" style="margin:0 0 10px">'+((S.prefs&&S.prefs.length)?'Dein Feed startet mit: '+esc(S.prefs.join(', '))+'.':'Du hast noch keine Themen gewählt.')+'</p><button class="btn" type="button" id="prefopen" style="width:100%;justify-content:center">Themen ändern</button><div class="sec">Feedback</div><p class="note" style="margin:0 0 10px">Du testest den Prototyp? Sag uns in 3 Minuten, was gut ist und was fehlt.</p><button class="btn pri" type="button" id="fbopen" style="width:100%;justify-content:center">Fragebogen öffnen</button>'+toolsHtml();
+ '<div class="sec">Freunde</div><div id="lbw"></div><button class="btn pri" type="button" id="invb" style="width:100%;justify-content:center;margin-top:10px">Freunde einladen</button><p class="note" style="margin:8px 2px 0">Vorschau: Die Personen mit „Beispiel“ sind erfunden. Echte Freunde siehst du hier erst, wenn die App Konten hat.</p>'+'<div class="sec">Interessen</div><p class="note" style="margin:0 0 10px">'+((S.prefs&&S.prefs.length)?'Dein Feed startet mit: '+esc(S.prefs.join(', '))+'.':'Du hast noch keine Themen gewählt.')+'</p><button class="btn" type="button" id="prefopen" style="width:100%;justify-content:center">Themen ändern</button><div class="sec">Feedback</div><p class="note" style="margin:0 0 10px">Du testest den Prototyp? Sag uns in 3 Minuten, was gut ist und was fehlt.</p><button class="btn pri" type="button" id="fbopen" style="width:100%;justify-content:center">Fragebogen öffnen</button>'+toolsHtml();
  const rows=[{id:uid,me:true,lvl:S.level,xp:S.xp,st:streakNow(),wr:wrOf()}];
  people.forEach(p=>{if(p.id===uid)return;rows.push({id:p.id,lvl:+p.lvl||0,xp:+p.xp||0,st:(p.gd===dk()||p.gd===yest())?(+p.st||0):0,wr:p.wr||{}});});
  const realOthers=rows.length-1;
@@ -1689,7 +1689,7 @@ $('#progc').addEventListener('click',e=>{
 
 /* Testwerkzeuge */
 let resetArm=false;
-const freshProg=()=>({hint:0,plus:'',aff:{},prefs:S.prefs,onb:S.onb,rev:[],kept:0,asked:0,stage:0,top:0,under:0,fed:false,news:'',xp:0,level:0,streak:0,goalDay:'',day:'',read:{},seenLevel:0,shells:15,own:['h_none','h_straw','g_none','e_none'],wear:{h:'h_straw',g:'g_none',e:'e_none'},freezes:2,sr:{},dayShift:0,meals:1,full:70,fullT:0});
+const freshProg=()=>({hint:0,plus:'',aff:{},prefs:S.prefs,onb:S.onb,rev:[],kept:0,asked:0,stage:0,top:0,under:0,fed:false,news:'',xp:0,level:0,streak:0,goalDay:'',day:'',read:{},seenLevel:0,shells:80,own:['h_none','h_straw','g_none','e_none'],wear:{h:'h_straw',g:'g_none',e:'e_none'},freezes:2,sr:{},dayShift:0,meals:1,full:70,fullT:0});
 function toolsHtml(){
  return '<div class="sec">Testwerkzeuge</div><p class="note" style="margin:0 0 10px">Nur für den Prototyp. Damit probierst du Serie, Serienschutz und Wiederholungen ohne Warten aus. Test-Datum: '+dk()+'.</p>'+
  '<div class="row2" style="margin:0"><button class="btn" type="button" data-tool="day">Nächsten Tag simulieren</button><button class="btn" type="button" data-tool="hours">5 Std. vergehen</button><button class="btn" type="button" data-tool="shells">+50 Muscheln</button><button class="btn dng" type="button" data-tool="reset">'+(resetArm?'Wirklich zurücksetzen?':'Fortschritt zurücksetzen')+'</button></div>';
@@ -1802,7 +1802,7 @@ function hideOnb(){const o=$('#onb');if(o)o.hidden=true;}
 function onbStep(n){
  const o=$('#onb');o.hidden=false;
  if(n===1){
-  o.innerHTML='<div class="ob-in"><h1>Dopamind</h1><p>Wissen in 5 Karten. Kurz, spannend und geprüft, ohne Fachchinesisch.</p><div class="ob-pt"><div><span>⚡</span>Jedes Deck dauert etwa eine Minute</div><div><span>🐵</span>Dein Tier wächst mit deiner Serie</div><div><span>🧠</span>Eine Kurzfrage zeigt dir, was hängen bleibt</div></div><div class="ob-proto"><b>Prototyp</b>Dopamind ist noch in der Testphase, Fehler sind möglich. Deine Meinung hilft uns sehr: Tippe unter <i>Fortschritt</i> auf dein Profil, dort findest du in den Einstellungen <i>Feedback geben</i>.</div><button class="btn pri big" type="button" data-ob="next">Los geht’s</button><p class="ob-legal"><a href="impressum.html" target="_blank" rel="noopener">Impressum</a> · <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutz</a></p></div>';
+  o.innerHTML='<div class="ob-in"><h1>Dopamind</h1><p>Wissen in 5 Karten. Kurz, spannend und geprüft, ohne Fachchinesisch.</p><div class="ob-pt"><div><span>⚡</span>Jedes Deck dauert etwa eine Minute</div><div><span>🐵</span>Dein Tier wächst mit deiner Serie</div><div><span>🧠</span>Eine Kurzfrage zeigt dir, was hängen bleibt</div></div><div class="ob-proto"><b>Prototyp</b>Dopamind ist noch in der Testphase, Fehler sind möglich. Plus, Muscheln kaufen und die Freunde-Liste sind nur Vorschau, dort ist nichts echt. Uns interessiert, ob sie dich ansprechen. Deine Meinung hilft uns sehr: Tippe unter <i>Fortschritt</i> auf dein Profil, dort findest du in den Einstellungen <i>Feedback geben</i>.</div><button class="btn pri big" type="button" data-ob="next">Los geht’s</button><p class="ob-legal"><a href="impressum.html" target="_blank" rel="noopener">Impressum</a> · <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutz</a></p></div>';
  }else{
   o.innerHTML='<div class="ob-in"><h1>Was interessiert dich?</h1><p>Wähle so viele Themen, wie du magst. Daraus bauen wir deinen Feed. Du kannst es später jederzeit ändern.</p><div class="ob-ch">'+CHIPS.map(c=>'<button type="button" data-chip="'+c.n+'" class="'+(onbSel.includes(c.n)?'on':'')+'"><span>'+c.e+'</span>'+c.n+'</button>').join('')+'</div><button class="btn pri big" type="button" data-ob="done" style="margin-top:8px"'+(onbSel.length?'':' disabled')+'>'+(onbSel.length?'Feed starten':'Wähle mindestens ein Thema')+'</button><button class="ob-skip" type="button" data-ob="skip">'+(onbChange?'Abbrechen':'Überspringen')+'</button></div>';
  }
