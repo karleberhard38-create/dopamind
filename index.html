@@ -31,6 +31,9 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #fff;
 svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 #app{position:relative;width:min(440px,100%);height:min(100%,860px);overflow:hidden;background:#000}
 @media(min-width:600px){#app{border-radius:28px;box-shadow:0 0 90px #000}}
+/* Touch-Geräte (Handy, Tablet): ganze Fläche nutzen, Handy-Rahmen nur am Computer */
+@media(hover:none) and (pointer:coarse){#app{width:100%;height:100%;border-radius:0;box-shadow:none}}
+@media(hover:none) and (pointer:coarse) and (min-width:700px){.tx p{max-width:720px}}
 
 /* Feed */
 #feed{position:absolute;inset:0;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none;overscroll-behavior:contain}
