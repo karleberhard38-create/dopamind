@@ -24,10 +24,7 @@
   ],
   "id": "coff",
   "k": "Gesundheit",
-  "prod": {
-   "label": "Entkoffeinierten Kaffee ansehen",
-   "url": "https://www.amazon.de/s?k=entkoffeinierter+kaffee&tag=DEIN-PARTNER-TAG"
-  },
+  "prod": null,
   "quiz": [
    [
     "Du trinkst um 16 Uhr einen Kaffee und gehst um 22 Uhr schlafen. Was passiert wahrscheinlich?",
