@@ -29,3 +29,9 @@ Repository "Settings > Secrets and variables > Actions > Variables": `DECKS_PER_
 
 ## Was die Pipeline nicht kann
 Sie ersetzt keine Prüfung durch Menschen. Stichproben der neuen Decks gehören zum Betrieb dazu.
+
+## Ersteller-Ansicht
+Bestimmte Anzeigen sind nur für den Ersteller gedacht, zum Beispiel "Deck 31 von 87" oben im Feed samt Deckliste zum direkten Springen. Tester sehen sie nicht.
+Auf GitHub Pages erkennt die App den Ersteller nicht automatisch. So schaltest du die Ansicht ein:
+- `https://<dein-name>.github.io/dopamind/?owner=1` einmal im eigenen Browser öffnen. Der Browser merkt sich das, auf jedem Gerät und in jedem Browser einzeln.
+- Ausschalten: einmal `?owner=0` an die Adresse hängen.
