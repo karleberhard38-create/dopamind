@@ -32,6 +32,11 @@ Sie ersetzt keine Prüfung durch Menschen. Stichproben der neuen Decks gehören 
 
 ## Ersteller-Ansicht
 Bestimmte Anzeigen sind nur für den Ersteller gedacht, zum Beispiel "Deck 31 von 87" oben im Feed samt Deckliste zum direkten Springen. Tester sehen sie nicht.
-Auf GitHub Pages erkennt die App den Ersteller nicht automatisch. So schaltest du die Ansicht ein:
-- `https://<dein-name>.github.io/dopamind/?owner=1` einmal im eigenen Browser öffnen. Der Browser merkt sich das, auf jedem Gerät und in jedem Browser einzeln.
-- Ausschalten: einmal `?owner=0` an die Adresse hängen.
+
+Einschalten: diesen Link einmal im eigenen Browser öffnen. Der Browser merkt sich das, pro Gerät und Browser einzeln.
+
+https://karleberhard38-create.github.io/dopamind/?owner=1
+
+Ausschalten: diesen Link einmal öffnen.
+
+https://karleberhard38-create.github.io/dopamind/?owner=0
