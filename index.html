@@ -984,7 +984,7 @@ const FQ=[
  {id:'best',t:'Was hat dir am besten gefallen? (mehrere möglich)',k:'multi',o:['Kurze Karten im Feed','Cliffhanger zwischen den Karten','Quiz und Wiederholen','Willi, der Affe','Tagesziel, Serie und Level','Rangliste mit Freunden','Design und Look','Quellen-Button']},
  {id:'willi',t:'Würde Willi dich zum täglichen Wiederkommen bringen?',k:'one',req:1,o:['Ja, auf jeden Fall','Vielleicht','Eher nicht','Willi habe ich nicht beachtet']},
  {id:'daily',t:'Würdest du die App nach dem Test weiter nutzen?',k:'one',req:1,o:['Täglich','Ein paar Mal pro Woche','Selten','Nein']},
- {id:'pay',t:'Was wäre dir ein Extra-Paket (mehr Outfits, Quiz-Modus, Serienschutz) pro Monat wert?',k:'one',req:1,o:['Nichts, nur gratis','Bis 2 €','2 bis 4 €','Über 4 €']},
+ {id:'pay',t:'Was wäre dir ein Extra-Paket (mehr Outfits, unbegrenzt viele Quizfragen, Serienschutz) pro Monat wert?',k:'one',req:1,o:['Nichts, nur gratis','Bis 2 €','2 bis 4 €','Über 4 €']},
  {id:'topics',t:'Welche Themen wünschst du dir?',k:'text'},
  {id:'bad',t:'Was hat genervt oder gefehlt?',k:'text'},
  {id:'bug',t:'Fehler oder Absturz? (Gerät und Browser, wenn du magst)',k:'text'}
@@ -1207,7 +1207,7 @@ function startQuiz(ids,title,kind){
 function renderQuizHome(){
  qz=null;
  const due=dueIds(),el=$('#quizc'),nx=nextRevMs();
- el.innerHTML='<h1>Üben</h1><span class="plus">Plus-Vorschau</span><p class="sub">Nach jedem Deck gibt es eine Kurzfrage. Zwei Stunden später kommt dieselbe Frage noch einmal, dann siehst du, was wirklich hängen geblieben ist. Mehr nicht.</p>'+
+ el.innerHTML='<h1>Üben</h1><span class="plus">Plus-Vorschau</span><p class="sub">Nach jedem Deck gibt es eine Kurzfrage. Zwei Stunden später kommt dieselbe Frage noch einmal, dann siehst du, was wirklich hängen geblieben ist. Mit Plus kannst du unbegrenzt viele Fragen üben.</p>'+
  '<div class="pst" style="margin:0 0 14px"><div><b>'+due.length+'</b><span>Jetzt fällig</span></div><div><b>'+streakNow()+' · 🛡'+S.freezes+'</b><span>Serie · Schutz</span></div><div><b>'+S.shells+'</b><span>Muscheln</span></div></div>'+
  (due.length?'<button class="btn pri big" type="button" data-qstart="due">'+(due.length===1?'Kurzfrage beantworten':'Fragen beantworten · '+due.length)+'</button>':'<div class="qempty">'+(nx?'Die nächste Frage ist in '+fmtIn(nx)+' dran.':'Gerade ist nichts fällig. Lies ein Deck zu Ende, dann kommt eine Kurzfrage.')+' Du kannst unten auch freiwillig ein Deck üben.</div>')+(S.asked?'<p class="note" style="margin:10px 2px 0">Nach 2 Stunden gemerkt: '+(S.kept||0)+' von '+S.asked+'</p>':'')+
  '<div class="sec">Quiz zu einem Deck</div>'+DATA.map(d=>'<button class="li" type="button" data-qdeck="'+d.id+'"><span class="e">'+d.cards[0][0]+'</span><p>'+esc(d.t)+'<br>'+(d.cards.filter((_,i)=>QZ[d.id+(i+1)]).length)+' Fragen</p></button>').join('');
@@ -1764,7 +1764,7 @@ function renderMe(){
  el.innerHTML='<button class="back" type="button" data-me="back">'+I.back+' Zurück</button>'+
  '<div class="me-h"><span class="meb">'+avatarSvg(wrOf(),moodNow())+'</span><div><b id="meName">Du</b><small>Level '+S.level+' · '+streakNow()+' Tage Serie · '+S.xp+' XP · 🐚 '+S.shells+'</small></div></div>'+
  '<div class="sec">Dopamind Plus <span class="plus">Vorschau</span></div>'+
- '<div class="plan"><b>Plus · 2,99 € im Monat</b><ul><li>Mehr Outfits und Häuser</li><li>Quiz-Modus für jedes Deck</li><li>Mehr Serienschutz</li><li>Themen deiner Wahl häufiger</li></ul><button class="btn pri big" type="button" data-me="plus">'+(S.plus==='yes'?'Eingetragen. Danke!':'Das würde ich nehmen')+'</button><p class="note" style="margin:8px 0 0">Im Prototyp kannst du noch nichts kaufen. Dein Klick hilft uns zu verstehen, was dich interessiert.</p></div>'+
+ '<div class="plan"><b>Plus · 2,99 € im Monat</b><ul><li>Mehr Outfits und Häuser</li><li>Unbegrenzt viele Quizfragen</li><li>Mehr Serienschutz</li><li>Themen deiner Wahl häufiger</li></ul><button class="btn pri big" type="button" data-me="plus">'+(S.plus==='yes'?'Eingetragen. Danke!':'Das würde ich nehmen')+'</button><p class="note" style="margin:8px 0 0">Im Prototyp kannst du noch nichts kaufen. Dein Klick hilft uns zu verstehen, was dich interessiert.</p></div>'+
  '<div class="sec">Muscheln kaufen <span class="plus">Vorschau</span></div><div class="packs">'+PACKS.map(p=>'<div class="pack"><b>🐚 '+p[0]+'</b>'+p[1]+'</div>').join('')+'</div><p class="note" style="margin:8px 2px 0">Kaufen ist im Prototyp noch nicht aktiv. Muscheln verdienst du durch Lesen und Üben.</p>'+
  '<div class="sec">Einstellungen</div>'+
  '<button class="set" type="button" data-me="sound"><span>Ton<small>Geräusche und Jubel</small></span>'+tg('tgs',soundOn)+'</button>'+
