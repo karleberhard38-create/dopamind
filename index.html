@@ -637,10 +637,10 @@ function build(){
   const d=f.d,nx=DATA[DATA.indexOf(d)+1],last=f.i===d.cards.length-1;
   return '<section class="c" data-n="'+n+'" style="--a:'+d.c[0]+';--b:'+d.c[1]+';--c:'+d.c[2]+';--ac:'+d.a+'">'+
   '<div class="art '+d.art+'">'+shapes(f.i)+'<div class="em">'+f.e+'</div></div>'+
-  '<div class="tx"><span class="tag">'+esc(d.k)+'</span><p'+(f.x.length>215?' class="lg"':'')+'>'+esc(f.x)+'</p>'+
+  '<div class="tx"><span class="tag">'+esc(d.s)+'</span><p'+(f.x.length>215?' class="lg"':'')+'>'+esc(f.x)+'</p>'+
   (last&&d.prod?'<a class="prod" href="'+esc(d.prod.url)+'" target="_blank" rel="sponsored noopener noreferrer">'+I.cart+esc(d.prod.label)+'<em>Anzeige</em></a>':'')+
   (last&&d.sources&&d.sources.length?'<button class="srcb" type="button" data-src="'+esc(d.id)+'">Quellen ansehen</button>':'')+
-  '<div class="meta"><div class="pips">'+d.cards.map((_,j)=>'<i class="'+(j===f.i?'on':'')+'"></i>').join('')+'</div><small>'+esc(d.s)+' · '+(f.i+1)+'/'+d.cards.length+'</small>'+
+  '<div class="meta"><div class="pips">'+d.cards.map((_,j)=>'<i class="'+(j===f.i?'on':'')+'"></i>').join('')+'</div><small>'+esc(d.t)+' · '+(f.i+1)+'/'+d.cards.length+'</small>'+
   (last?'<b class="nx" data-nx="1">'+(nextOpenIdx(DATA.indexOf(d))>=0?'← Wisch weiter zum nächsten Deck: '+esc(DATA[nextOpenIdx(DATA.indexOf(d))].s):'Das war das letzte Deck zu deinen Themen')+'</b>':'')+'</div></div></section>';
  }).join('');
  if(ioRef){try{ioRef.disconnect();$$('#feed .c').forEach(c=>ioRef.observe(c));}catch(e){}}
@@ -702,7 +702,7 @@ function syncFeed(){
  {const fe=$('#feed');const o=fe.querySelector('.c.cur');if(o)o.classList.remove('cur');const n=secOf(cur);if(n)n.classList.add('cur');}
  $('#bl').classList.toggle('on',isSaved(f.id));
  $('#bl small').textContent=isSaved(f.id)?'Gemerkt':'Merken';
- $('#dkl').innerHTML=esc(f.d.t)+(ownerView()?' <em>· Deck '+(DATA.indexOf(f.d)+1)+' von '+DATA.length+' ▾</em>':'');
+ $('#dkl').innerHTML=esc(f.d.k)+(ownerView()?' <em>· Deck '+(DATA.indexOf(f.d)+1)+' von '+DATA.length+' ▾</em>':'');
  syncGoal();
 }
 function syncGoal(){
