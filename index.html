@@ -76,7 +76,7 @@ svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-l
 .logo{font-family:var(--hd);font-weight:800;font-size:20px;letter-spacing:-.03em}.logo b{color:var(--brand)}
 #goal{border:0;font-size:12px;font-weight:600;color:#ffffffcc;background:#ffffff1c;padding:5px 12px;border-radius:20px;cursor:pointer;display:flex;gap:6px;align-items:center;font-variant-numeric:tabular-nums}
 #goal.ok{background:#4ade8033;color:var(--ok)}
-#dk{cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:600;color:#fffc}
+#dk{padding:0 28px;text-align:center;line-height:1.3;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:600;color:#fffc}
 #dk button{border:0;background:#ffffff1a;color:#fff;width:30px;height:30px;border-radius:50%;font-size:16px;line-height:1;cursor:pointer;backdrop-filter:blur(8px);flex:none}
 #dk span{flex:1;min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#dk em{font-style:normal;color:#ffffff90;font-weight:500}
 .c.off{display:none}
@@ -640,7 +640,7 @@ function build(){
   '<div class="tx"><span class="tag">'+esc(d.k)+'</span><p'+(f.x.length>215?' class="lg"':'')+'>'+esc(f.x)+'</p>'+
   (last&&d.prod?'<a class="prod" href="'+esc(d.prod.url)+'" target="_blank" rel="sponsored noopener noreferrer">'+I.cart+esc(d.prod.label)+'<em>Anzeige</em></a>':'')+
   (last&&d.sources&&d.sources.length?'<button class="srcb" type="button" data-src="'+esc(d.id)+'">Quellen ansehen</button>':'')+
-  '<div class="meta"><div class="pips">'+d.cards.map((_,j)=>'<i class="'+(j===f.i?'on':'')+'"></i>').join('')+'</div><small>'+esc(d.t)+' · '+(f.i+1)+'/'+d.cards.length+'</small>'+
+  '<div class="meta"><div class="pips">'+d.cards.map((_,j)=>'<i class="'+(j===f.i?'on':'')+'"></i>').join('')+'</div><small>'+esc(d.s)+' · '+(f.i+1)+'/'+d.cards.length+'</small>'+
   (last?'<b class="nx" data-nx="1">'+(nextOpenIdx(DATA.indexOf(d))>=0?'← Wisch weiter zum nächsten Deck: '+esc(DATA[nextOpenIdx(DATA.indexOf(d))].s):'Das war das letzte Deck zu deinen Themen')+'</b>':'')+'</div></div></section>';
  }).join('');
  if(ioRef){try{ioRef.disconnect();$$('#feed .c').forEach(c=>ioRef.observe(c));}catch(e){}}
@@ -702,7 +702,7 @@ function syncFeed(){
  {const fe=$('#feed');const o=fe.querySelector('.c.cur');if(o)o.classList.remove('cur');const n=secOf(cur);if(n)n.classList.add('cur');}
  $('#bl').classList.toggle('on',isSaved(f.id));
  $('#bl small').textContent=isSaved(f.id)?'Gemerkt':'Merken';
- $('#dkl').innerHTML=esc(f.d.s)+(ownerView()?' <em>· Deck '+(DATA.indexOf(f.d)+1)+' von '+DATA.length+' ▾</em>':'');
+ $('#dkl').innerHTML=esc(f.d.t)+(ownerView()?' <em>· Deck '+(DATA.indexOf(f.d)+1)+' von '+DATA.length+' ▾</em>':'');
  syncGoal();
 }
 function syncGoal(){
