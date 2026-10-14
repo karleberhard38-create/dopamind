@@ -5822,5 +5822,680 @@
    "rounds": 1,
    "method": "Manuell im Chat erstellt: Quellenseiten gelesen, Zahlen und Aussagen gegen Quellen abgeglichen, Format- und Quizregeln per Programm geprüft (keine automatische Zitatprüfung)."
   }
+ },
+ {
+  "t": "Bundestagswahl: Wozu hast du zwei Stimmen?",
+  "s": "Zwei Stimmen",
+  "k": "Politik",
+  "cards": [
+   [
+    "🗳️",
+    "Bei der Bundestagswahl hast du zwei Stimmen. Mit der ersten wählst du eine Person aus deinem Wahlkreis, mit der zweiten die Liste einer Partei. Welche der beiden Stimmen bestimmt vor allem die Sitzverteilung?"
+   ],
+   [
+    "📊",
+    "Die Zweitstimme. Je mehr Zweitstimmen eine Partei bekommt, desto mehr Sitze erhält sie im Bundestag. Insgesamt werden 630 Abgeordnete gewählt. In wie viele Wahlkreise ist Deutschland dafür aufgeteilt?"
+   ],
+   [
+    "🗺️",
+    "In 299 Wahlkreise. Anders als bisher zieht der Wahlkreissieger aber nicht automatisch ein, denn es hängt davon ab, wie viele Sitze der Partei im Land zustehen. Wie viele Zweitstimmen braucht eine Partei grundsätzlich?"
+   ],
+   [
+    "🚧",
+    "Mindestens fünf Prozent aller Zweitstimmen. Wer darunter bleibt, bekommt zunächst keine Sitze. Es gibt aber eine Ausnahme, wenn Kandidaten der Partei Wahlkreise direkt gewinnen. Wie viele müssen es mindestens sein?"
+   ],
+   [
+    "✅",
+    "Mindestens drei Wahlkreise. Gewinnt eine Partei diese direkt über die Erststimme, kann sie auch unter fünf Prozent in den Bundestag einziehen. Gewählt wird alle vier Jahre."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Abgeordnete werden in den Bundestag gewählt?",
+    "630 Abgeordnete",
+    "598 Abgeordnete",
+    "709 Abgeordnete",
+    2
+   ],
+   [
+    "In wie viele Wahlkreise ist Deutschland aufgeteilt?",
+    "In 299 Wahlkreise",
+    "In 150 Wahlkreise",
+    "In 400 Wahlkreise",
+    3
+   ],
+   [
+    "Wie viele Zweitstimmen braucht eine Partei grundsätzlich?",
+    "Fünf Prozent",
+    "Drei Prozent",
+    "Zehn Prozent",
+    4
+   ]
+  ],
+  "id": "btwahl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "11 Dinge zur Bundestagswahl, die du wissen musst",
+    "url": "https://www.bpb.de/themen/bundestagswahlen/bundestagswahl-2025/558866/11-dinge-zur-bundestagswahl-die-du-wissen-musst/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bundesrat: Wer sitzt dort und was darf er?",
+  "s": "Bundesrat",
+  "k": "Politik",
+  "cards": [
+   [
+    "🏛️",
+    "Neben dem Bundestag gibt es den Bundesrat. In ihm sitzen keine vom Volk gewählten Abgeordneten, sondern Mitglieder der Landesregierungen, etwa Ministerpräsidenten und Landesminister. Wie viele Stimmen hat ein Land mindestens?"
+   ],
+   [
+    "🔢",
+    "Mindestens drei Stimmen. Die Zahl richtet sich nach der Einwohnerzahl: Über zwei Millionen Einwohner bringen vier Stimmen, über sechs Millionen fünf, über sieben Millionen sechs. Wie dürfen die Vertreter eines Landes abstimmen?"
+   ],
+   [
+    "🤝",
+    "Nur einheitlich. Die Entscheidung fällt schon in der Landesregierung, die Stimmen eines Landes werden gemeinsam abgegeben. Bei manchen Gesetzen muss der Bundesrat zustimmen. Welche Gesetze sind das vor allem?"
+   ],
+   [
+    "🚫",
+    "Gesetze, die Finanzen oder Verwaltung der Länder betreffen, und Verfassungsänderungen. Ohne Zustimmung kommt das Gesetz nicht zustande. Bei anderen Gesetzen kann der Bundesrat nur Einspruch erheben. Kann der Bundestag diesen Einspruch überstimmen?"
+   ],
+   [
+    "✅",
+    "Ja. Lehnt der Bundesrat mit einfacher Mehrheit ab, genügt im Bundestag ebenfalls die einfache Mehrheit. Bei einer Ablehnung mit Zweidrittelmehrheit braucht auch der Bundestag eine Zweidrittelmehrheit der abgegebenen Stimmen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer sitzt im Bundesrat?",
+    "Mitglieder der Landesregierungen",
+    "Vom Volk direkt gewählte Abgeordnete",
+    "Mitglieder der Bundesregierung",
+    1
+   ],
+   [
+    "Wie viele Stimmen hat ein Land mindestens?",
+    "Drei Stimmen",
+    "Eine Stimme",
+    "Zehn Stimmen",
+    2
+   ],
+   [
+    "Was gilt bei einem Zustimmungsgesetz?",
+    "Ohne Zustimmung des Bundesrates kommt es nicht zustande",
+    "Der Bundestag kann den Bundesrat überstimmen",
+    "Der Bundesrat hat dabei kein Mitspracherecht",
+    4
+   ]
+  ],
+  "id": "bundesrat",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Bundesrat",
+    "url": "https://www.bpb.de/themen/politisches-system/24-deutschland/40449/bundesrat/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bundesverfassungsgericht: Wer wacht über das Grundgesetz?",
+  "s": "Verfassung",
+  "k": "Politik",
+  "cards": [
+   [
+    "⚖️",
+    "Das Bundesverfassungsgericht wacht darüber, dass das Grundgesetz eingehalten wird, und entscheidet, wie es auszulegen ist. Es besteht aus 16 Richterinnen und Richtern. Wer wählt sie?"
+   ],
+   [
+    "🗳️",
+    "Je eine Hälfte, also acht Personen, wählt der Bundesrat und ein Wahlausschuss des Bundestages. Der Ausschuss braucht dafür eine Zweidrittelmehrheit. Wie lange dauert die Amtszeit einer Richterin oder eines Richters?"
+   ],
+   [
+    "⏳",
+    "Zwölf Jahre, eine Wiederwahl ist ausgeschlossen. Das Gericht prüft, ob Bundes- und Landesrecht mit dem Grundgesetz vereinbar ist. Auch du selbst kannst dich an das Gericht wenden. Wie heißt dieser Weg?"
+   ],
+   [
+    "📨",
+    "Verfassungsbeschwerde. Damit kann jede Person geltend machen, durch die öffentliche Gewalt in einem Grundrecht verletzt worden zu sein. Kann man die Entscheidungen des Gerichts anfechten?"
+   ],
+   [
+    "🔒",
+    "Nein, die Entscheidungen sind unanfechtbar. Alle übrigen Staatsorgane sind an die Rechtsprechung gebunden. Das Gericht ist kein politisches Organ, sein Maßstab ist allein das Grundgesetz."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Richterinnen und Richter hat das Gericht?",
+    "16 Richter",
+    "9 Richter",
+    "24 Richter",
+    1
+   ],
+   [
+    "Wie lange dauert die Amtszeit?",
+    "Zwölf Jahre",
+    "Vier Jahre",
+    "Acht Jahre",
+    3
+   ],
+   [
+    "Was kann jede Person bei verletzten Grundrechten einlegen?",
+    "Eine Verfassungsbeschwerde",
+    "Einen Bundestagsantrag",
+    "Eine Bundesratsklage",
+    4
+   ]
+  ],
+  "id": "bverfg",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Glossar: Bundesverfassungsgericht",
+    "url": "https://www.bundestag.de/services/glossar/bverfger-245372"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Marathon: Warum genau 42,195 Kilometer?",
+  "s": "Marathonlänge",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏃",
+    "Ein Marathon ist 42,195 Kilometer lang. Der Name geht auf eine Legende zurück, nach der ein Läufer eine Siegesnachricht von Marathon nach Athen brachte. Wie lang war die Strecke bei den ersten Spielen der Neuzeit 1896?"
+   ],
+   [
+    "🏟️",
+    "Genau 40 Kilometer, in Anlehnung an diese Legende. Wie lang das antike Original wirklich war, ist umstritten. Zwölf Jahre später, 1908, wurde in London gelaufen. Wo startete das Rennen?"
+   ],
+   [
+    "👑",
+    "Am Schloss Windsor. Geplant waren etwa zwei Kilometer mehr als 40. Dann forderte Königin Alexandra persönlich, dass das Ziel direkt vor ihrer königlichen Loge liegt. Wie lang wurde die Strecke dadurch?"
+   ],
+   [
+    "📏",
+    "Die Strecke wurde 42,195 Kilometer lang, weil das Ziel vor die Loge verlegt wurde. Diese Länge entstand also in London. Was gilt seit dem Jahr 1921 für diese Distanz bei Marathons?"
+   ],
+   [
+    "✅",
+    "Die Londoner Distanz setzte sich durch. Seit 1921 wird sie weltweit bei jedem Marathon gelaufen. Die Zahl geht also nicht auf die antike Legende zurück, sondern auf die Spiele von 1908."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lang war der Marathon 1896 in Athen?",
+    "40 Kilometer",
+    "42,195 Kilometer",
+    "35 Kilometer",
+    2
+   ],
+   [
+    "Wer wünschte sich 1908 das Ziel vor der königlichen Loge?",
+    "Königin Alexandra",
+    "Königin Victoria",
+    "König Georg",
+    3
+   ],
+   [
+    "Seit wann wird die Londoner Distanz weltweit gelaufen?",
+    "Seit 1921",
+    "Seit 1896",
+    "Seit 1948",
+    4
+   ]
+  ],
+  "id": "marathonl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "web.de Magazin",
+    "title": "Marathonstrecke: Warum genau 42,195 Kilometer?",
+    "url": "https://web.de/magazine/wissen/geschichte/marathonstrecke-genau-42195-kilometer-lang-33268454"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Die ersten Olympischen Spiele der Neuzeit: Wie lief 1896 ab?",
+  "s": "Olympia 1896",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏛️",
+    "Die Olympischen Spiele der Neuzeit gehen auf den französischen Pädagogen Pierre de Coubertin zurück. Er schlug die Idee 1894 bei einer Sportkonferenz in Paris vor. Wo fanden die ersten Spiele zwei Jahre später statt?"
+   ],
+   [
+    "🇬🇷",
+    "In Athen. Eröffnet wurden sie am 6. April 1896 im Panathinaiko-Stadion durch den griechischen König Georg I. Mehr als 60.000 Zuschauer kamen. Wie viele Sportler traten ungefähr an?"
+   ],
+   [
+    "🤸",
+    "Rund 250 Sportler, und alle waren Männer. Ein Großteil kam aus Griechenland. Neun Sportarten standen auf dem Programm, darunter Fechten, Schwimmen und Turnen. Wann starteten erstmals Frauen?"
+   ],
+   [
+    "👩",
+    "1900 in Paris, zunächst in Golf und Tennis. 1896 waren Frauen nicht zugelassen. Geplant waren auch Fußball und Kricket, doch beide wurden abgesagt. Was war der Grund?"
+   ],
+   [
+    "✅",
+    "Es gab zu wenig Beteiligung. Rudern und Segeln fielen dagegen wegen schlechten Wetters aus. So blieben neun Sportarten, die tatsächlich ausgetragen wurden, darunter Leichtathletik, Radsport und Ringen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer schlug die Spiele der Neuzeit vor?",
+    "Pierre de Coubertin",
+    "König Georg I.",
+    "Ein Feldherr aus Sparta",
+    1
+   ],
+   [
+    "Wann starteten erstmals Frauen?",
+    "1900 in Paris",
+    "1896 in Athen",
+    "1912 in Stockholm",
+    4
+   ],
+   [
+    "Warum fiel Fußball 1896 aus?",
+    "Zu wenige Teilnehmer",
+    "Schlechtes Wetter",
+    "Kein Stadion",
+    5
+   ]
+  ],
+  "id": "olymp1896",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "wissen.de",
+    "title": "Olympische Spiele: Premiere der Neuzeit",
+    "url": "https://www.wissen.de/olympische-spiele-premiere-der-neuzeit"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Mindestlohn: Wer legt ihn fest und wie hoch ist er?",
+  "s": "Mindestlohn",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💶",
+    "Seit 2015 gibt es in Deutschland einen allgemeinen gesetzlichen Mindestlohn. Er gilt grundsätzlich für jede Arbeitnehmerin und jeden Arbeitnehmer, Ausnahmen gibt es zum Beispiel für Auszubildende. Wie hoch ist er seit dem 1. Januar 2026?"
+   ],
+   [
+    "💰",
+    "13,90 Euro brutto pro Stunde. Zum Jahr 2027 steigt er auf 14,60 Euro. Mehr als sechs Millionen Menschen verdienen bisher weniger als 13,90 Euro. Wer schlägt solche Erhöhungen vor?"
+   ],
+   [
+    "🧑‍⚖️",
+    "Die Mindestlohnkommission. Sie ist unabhängig und besteht aus einem Vorsitz, je drei Mitgliedern von Arbeitgebern und Gewerkschaften und zwei beratenden Mitgliedern aus der Wissenschaft. In welchem Rhythmus empfiehlt sie Anpassungen?"
+   ],
+   [
+    "📅",
+    "Alle zwei Jahre. Ihre letzte Empfehlung kam im Juni 2025 und sah zwei Stufen vor. Die Bundesregierung setzt sie per Verordnung um. Was ändert sich mit dem Mindestlohn zugleich bei der Minijob-Grenze?"
+   ],
+   [
+    "✅",
+    "Sie steigt mit. 2026 liegt sie bei 603 Euro im Monat, 2027 bei 633 Euro. So bleibt bei Mindestlohn weiterhin eine Wochenarbeitszeit von zehn Stunden möglich."
+   ]
+  ],
+  "quiz": [
+   [
+    "Seit wann gibt es den allgemeinen Mindestlohn?",
+    "Seit 2015",
+    "Seit 1990",
+    "Seit 2005",
+    1
+   ],
+   [
+    "Wie hoch ist der Mindestlohn 2026?",
+    "13,90 Euro pro Stunde",
+    "12,41 Euro pro Stunde",
+    "15,00 Euro pro Stunde",
+    2
+   ],
+   [
+    "In welchem Rhythmus empfiehlt die Kommission Anpassungen?",
+    "Alle zwei Jahre",
+    "Jedes Jahr",
+    "Alle zehn Jahre",
+    4
+   ]
+  ],
+  "id": "mindestl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesregierung",
+    "title": "Mindestlohn jetzt bei 13,90 Euro",
+    "url": "https://www.bundesregierung.de/breg-de/aktuelles/mindestlohn-steigt-2391010"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bruttoinlandsprodukt: Was misst das BIP?",
+  "s": "BIP",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "📈",
+    "Die wirtschaftliche Leistung einer Volkswirtschaft wird in einem bestimmten Zeitraum mit dem Bruttoinlandsprodukt gemessen, kurz BIP. Es ist eine zentrale Zahl der Wirtschaftsstatistik. Welche Werte werden dabei gezählt?"
+   ],
+   [
+    "🏭",
+    "Der Wert der im Inland hergestellten Güter und Dienstleistungen, also die Wertschöpfung. Vorleistungen, die für andere Produktion verbraucht werden, zählen nicht mit. Wird das BIP nur in jeweiligen Preisen angegeben?"
+   ],
+   [
+    "🏷️",
+    "Nein. Es wird in jeweiligen Preisen berechnet und preisbereinigt. Beim preisbereinigten BIP wird mit Preisen des Vorjahres gerechnet und verkettet. Welche Zahl gilt als Maß für das Wirtschaftswachstum?"
+   ],
+   [
+    "🔗",
+    "Die Veränderungsrate des realen BIP. Preisbereinigt heißt, dass Preisänderungen herausgerechnet sind. Ein verwandtes Maß ist das Bruttonationaleinkommen, kurz BNE. Wie hieß es bis zum Jahr 1999?"
+   ],
+   [
+    "✅",
+    "Bruttosozialprodukt. Das Bruttonationaleinkommen ist das BIP plus der Saldo der Erwerbs- und Vermögenseinkommen zwischen Inländern und dem Ausland. Es schaut also auf die Leistungen der Inländer, das BIP auf die Produktion im Inland."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was misst das BIP?",
+    "Die Wertschöpfung im Inland in einem Zeitraum",
+    "Das gesamte Vermögen aller Einwohner",
+    "Die Summe aller Staatsschulden",
+    2
+   ],
+   [
+    "Welche Zahl gilt als Maß für das Wirtschaftswachstum?",
+    "Die Veränderungsrate des realen BIP",
+    "Die Veränderungsrate des BIP in jeweiligen Preisen",
+    "Das BIP in jeweiligen Preisen",
+    4
+   ],
+   [
+    "Wie hieß das Bruttonationaleinkommen bis 1999?",
+    "Bruttosozialprodukt",
+    "Bruttoinlandseinkommen",
+    "Volkseinkommen",
+    5
+   ]
+  ],
+  "id": "bipwachs",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag, Wissenschaftliche Dienste",
+    "title": "Bruttoinlandsprodukt (WD 5 005/18), mit Angaben des Statistischen Bundesamts",
+    "url": "https://www.bundestag.de/resource/blob/543576/1df3c815ed0ea3533a55299fc4599c61/WD-5-005-18-pdf.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Vergessenskurve: Wie schnell vergisst du Gelerntes?",
+  "s": "Vergessen",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🧠",
+    "Der Forscher Ebbinghaus lernte in einem Selbstversuch sinnlose Silben auswendig und wollte messen, wie schnell man Gelerntes vergisst. Mit welcher Methode hat er das Vergessen gemessen?"
+   ],
+   [
+    "⏱️",
+    "Mit der Ersparnismethode. In bestimmten Abständen prüfte er, wie viel Lernzeit er zum Wiedererlernen der Silben brauchte. Daraus entstand die Vergessenskurve. In welcher Phase fällt sie besonders stark ab?"
+   ],
+   [
+    "📉",
+    "In den ersten Stunden und Tagen nach dem Lernen. Danach geht das Vergessen innerhalb der nächsten 30 Tage nur noch stark abgeschwächt weiter. Was passiert mit der Kurve, wenn du den Stoff wiederholst?"
+   ],
+   [
+    "🔁",
+    "Sie wird flacher. Wiederholungen an den Tagen eins, zwei, drei und vier flachen die Vergessenskurve ab. Die Abstände zwischen den Wiederholungen dürfen mit der Zeit länger werden. Wie heißt dieses Vorgehen?"
+   ],
+   [
+    "✅",
+    "Verteiltes Wiederholen, auf Englisch Spaced Repetition. Bekannt ist es vom Karteikasten: Gut erinnerte Karten wandern nach hinten, schlecht erinnerte nach vorn und kommen häufiger dran."
+   ]
+  ],
+  "quiz": [
+   [
+    "Womit maß Ebbinghaus das Vergessen?",
+    "Mit der Ersparnismethode",
+    "Mit einem Hirnscan",
+    "Mit einem Fragebogen",
+    2
+   ],
+   [
+    "Wann fällt die Vergessenskurve am stärksten ab?",
+    "In den ersten Stunden und Tagen",
+    "Erst nach etwa einem Jahr",
+    "Erst nach den ersten 30 Tagen",
+    3
+   ],
+   [
+    "Was bewirken Wiederholungen?",
+    "Die Kurve wird flacher",
+    "Die Kurve wird steiler",
+    "Die Kurve bleibt unverändert",
+    4
+   ]
+  ],
+  "id": "ebbing",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Spektrum der Wissenschaft",
+    "title": "Lexikon der Psychologie: Vergessenskurve",
+    "url": "https://www.spektrum.de/lexikon/psychologie/vergessenskurve/16236"
+   },
+   {
+    "publisher": "Georg-August-Universität Göttingen",
+    "title": "Lernen und Wiederholen: Vergessenskurve und verteiltes Wiederholen",
+    "url": "https://uni-goettingen.de/de/693567.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Placebo-Effekt: Wie wirkt Wirkung ohne Wirkstoff?",
+  "s": "Placebo",
+  "k": "Psyche",
+  "cards": [
+   [
+    "💊",
+    "Manchmal bessern sich Beschwerden nach einer Behandlung ganz ohne Wirkstoff. Das nennt man Placebo-Effekt, nach einem lateinischen Ausdruck, der ich werde gefallen bedeutet. Was steckt vor allem dahinter?"
+   ],
+   [
+    "🎯",
+    "Unbewusste Erwartungen. Auch Erfahrung spielt mit: Wer Geruch und Geschmack von Kaffee mit Wachwerden verknüpft hat, fühlt sich auch nach koffeinfreiem Kaffee wacher. Wie heißt das negative Gegenstück zum Placebo?"
+   ],
+   [
+    "😟",
+    "Nocebo. Wer lange Listen von Nebenwirkungen liest oder von Operationsrisiken hört, spürt Schmerz oder Übelkeit eher. Bei welchen Beschwerden berichten in Arzneimittelstudien bis zu 30 Prozent ohne Wirkstoff von spürbarer Linderung?"
+   ],
+   [
+    "🩹",
+    "Bei Schmerzen. Nicht jede Behandlung wirkt gleich: Spritzen helfen besser als Tabletten. Auch die Person spielt eine Rolle. Wer spricht schlechter auf Placebo-Schmerzmittel an, ängstliche oder gelassene Menschen?"
+   ],
+   [
+    "✅",
+    "Ängstliche, stressanfällige Menschen. Ruhigere und optimistischere sprechen besser darauf an. Auch Aussehen und Preis spielen eine Rolle: Rote Tabletten wirkten besser als weiße, teure besser als billige."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was steckt vor allem hinter dem Placebo-Effekt?",
+    "Unbewusste Erwartungen",
+    "Ein versteckter Wirkstoff",
+    "Reiner Zufall",
+    1
+   ],
+   [
+    "Wie heißt das negative Gegenstück zum Placebo?",
+    "Nocebo",
+    "Contrabo",
+    "Malebo",
+    2
+   ],
+   [
+    "Welche Form wirkte besser?",
+    "Spritzen besser als Tabletten",
+    "Tabletten besser als Spritzen",
+    "Beide gleich gut",
+    4
+   ]
+  ],
+  "id": "placebo",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "wissen.de",
+    "title": "Was steckt hinter dem Placebo-Effekt?",
+    "url": "https://www.wissen.de/was-steckt-hinter-dem-placebo-effekt"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Das Herz: Wie viel Blut pumpt es am Tag?",
+  "s": "Herz",
+  "k": "Biologie",
+  "cards": [
+   [
+    "❤️",
+    "Dein Herz wiegt im Durchschnitt etwa 300 Gramm und schlägt in Ruhe 70 bis 80 Mal pro Minute. Es hat zwei große und zwei kleine Kammern. Wie viel Blut bewegt es dabei an einem Tag?"
+   ],
+   [
+    "🩸",
+    "Rund 7000 Liter. In einer Minute pumpt das Herz das Blut einmal durch deinen gesamten Körper. In Ruhe fördert es dabei 5 bis 6 Liter pro Minute. Wie viel kann es unter Belastung schaffen?"
+   ],
+   [
+    "🏃",
+    "Mehr als 20 Liter pro Minute. Das Herz hat zwei Hälften mit je einem Vorhof und einer Kammer. Taschenklappen verhindern, dass Blut in die Kammern zurückfließt. Wohin pumpt die rechte Seite?"
+   ],
+   [
+    "🫁",
+    "Zur Lunge. Die rechte Seite pumpt sauerstoffarmes Blut dorthin, wo es Kohlendioxid abgibt und Sauerstoff aufnimmt. Die linke Seite ist deutlich größer. Wohin pumpt sie ihr Blut?"
+   ],
+   [
+    "✅",
+    "In den Körper. Die linke Seite pumpt sauerstoffreiches Blut zu Organen, Kopf, Armen und Beinen. Die Kammern ziehen sich dabei etwa eine Drittelsekunde zusammen, die Diastole dauert etwa zwei Drittelsekunden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Blut bewegt das Herz an einem Tag?",
+    "Rund 7000 Liter",
+    "Rund 70 Liter",
+    "Rund 700 Liter",
+    2
+   ],
+   [
+    "Wie viel kann das Herz unter Belastung pro Minute fördern?",
+    "Mehr als 20 Liter",
+    "Etwa 6 Liter",
+    "Etwa 10 Liter",
+    3
+   ],
+   [
+    "Wohin pumpt die rechte Herzseite?",
+    "Zur Lunge",
+    "In den Kopf",
+    "In die Beine",
+    4
+   ]
+  ],
+  "id": "herzblut",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Planet Wissen",
+    "title": "Anatomie des Herzens",
+    "url": "https://www.planet-wissen.de/natur/anatomie_des_menschen/herz/index.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1791955551790,
+  "review": {
+   "date": "2026-10-14",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
