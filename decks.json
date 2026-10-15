@@ -6497,5 +6497,551 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Bundestag: Warum ist die Sitzzahl jetzt begrenzt?",
+  "s": "Bundestag",
+  "k": "Politik",
+  "cards": [
+   [
+    "🏛️",
+    "Der Bundestag soll nach dem neuen Wahlrecht höchstens 630 Abgeordnete haben. Nach der Wahl zum 20. Bundestag waren es noch 736 Abgeordnete. Wie viele Wahlkreise gibt es in Deutschland?"
+   ],
+   [
+    "🗺️",
+    "Es sind 299 Wahlkreise, diese Zahl bleibt gleich. Nach dem alten Wahlrecht lag die Regelgröße bei 598 Sitzen, doch am Ende saßen deutlich mehr Abgeordnete im Parlament. Welche zusätzlichen Sitze gibt es nicht mehr?"
+   ],
+   [
+    "➕",
+    "Überhang- und Ausgleichsmandate. Sie wurden nach dem früheren Recht in einem späteren Schritt hinzugerechnet, das entfällt nun. Maßgeblich für die Sitzverteilung ist das Zweitstimmenergebnis. Welche Hürde gilt dafür grundsätzlich für Parteien?"
+   ],
+   [
+    "5️⃣",
+    "Fünf Prozent der gültigen Zweitstimmen. Grundsätzlich nehmen nur Parteien mit mindestens fünf Prozent an der bundesweiten Verteilung der Sitze teil. Was passiert, wenn die Sitze einer Partei nicht für alle ihre Wahlkreissieger reichen?"
+   ],
+   [
+    "✅",
+    "Die Bewerber mit den schwächsten Ergebnissen erhalten keinen Sitz, der Wahlkreis bleibt dann unbesetzt. Die Wahlkreissieger werden dafür nach ihrem Stimmanteil gereiht, die stärksten kommen zuerst zum Zug."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Abgeordnete soll der Bundestag höchstens haben?",
+    "630",
+    "598",
+    "736",
+    1
+   ],
+   [
+    "Was ist für die Sitzverteilung maßgeblich?",
+    "Das Zweitstimmenergebnis",
+    "Das Erststimmenergebnis",
+    "Die Zahl der Wahlkreise",
+    3
+   ],
+   [
+    "Was geschieht, wenn die Sitze nicht für alle Wahlkreissieger reichen?",
+    "Der schwächste Wahlkreissieger erhält keinen Sitz",
+    "Alle Sieger ziehen trotzdem zusätzlich ein",
+    "Die Partei bekommt Ausgleichsmandate dazu",
+    5
+   ]
+  ],
+  "id": "bundestag",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Wahlrecht: Inhalt der Reform",
+    "url": "https://www.bundestag.de/parlament/wahlen/wahlrecht-inhalt-975000"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bundespräsident: Wer wählt ihn eigentlich?",
+  "s": "Präsident",
+  "k": "Politik",
+  "cards": [
+   [
+    "🗳️",
+    "Den Bundespräsidenten wählt nicht das Volk, sondern die Bundesversammlung. Sie tritt in der Regel alle fünf Jahre zusammen. Sie ist ein besonderes Gremium und besteht nicht aus dem ganzen Volk. Aus wem besteht sie?"
+   ],
+   [
+    "👥",
+    "Aus allen Bundestagsabgeordneten und einer gleich großen Zahl von Mitgliedern, die die Landesparlamente wählen. Das sind 630 plus 630, also 1260 Mitglieder. Wer darf überhaupt Bundespräsident werden?"
+   ],
+   [
+    "🎂",
+    "Wählbar ist jede Deutsche und jeder Deutsche, die das 40. Lebensjahr vollendet haben. Vorschläge kann jedes Mitglied der Bundesversammlung machen. Wird vor der Wahl lange diskutiert?"
+   ],
+   [
+    "🤫",
+    "Nein. Die Wahl ist geheim und findet ohne vorherige Aussprache statt. Im ersten und zweiten Wahlgang braucht man mehr als die Hälfte aller Stimmen. Was reicht im dritten Wahlgang?"
+   ],
+   [
+    "✅",
+    "Die relative Mehrheit. Dann gewinnt, wer die meisten Stimmen erhält. Für den zweiten und dritten Wahlgang können neue Vorschläge eingereicht werden. Frank-Walter Steinmeier wurde 2022 wiedergewählt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer wählt den Bundespräsidenten?",
+    "Die Bundesversammlung",
+    "Die Bürger direkt",
+    "Der Bundesrat allein",
+    1
+   ],
+   [
+    "Ab welchem Alter ist man wählbar?",
+    "Ab 40 Jahren",
+    "Ab 35 Jahren",
+    "Ab 30 Jahren",
+    3
+   ],
+   [
+    "Was reicht im dritten Wahlgang?",
+    "Die relative Mehrheit",
+    "Die absolute Mehrheit",
+    "Zwei Drittel der Stimmen",
+    5
+   ]
+  ],
+  "id": "bundespraes",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Wahl des Bundespräsidenten",
+    "url": "https://www.bundestag.de/parlament/aufgaben/bundesversammlung/wahl-des-bundespraesidenten-250722"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Paralympics: Wie fing alles an?",
+  "s": "Paralympics",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏥",
+    "Die Geschichte der Paralympics beginnt in einem Krankenhaus in Großbritannien. 1944 eröffnete Ludwig Guttmann dort auf Wunsch der Regierung ein Zentrum für Wirbelsäulenverletzungen. Was organisierte er am 29. Juli 1948?"
+   ],
+   [
+    "🏹",
+    "Den ersten Wettkampf für Rollstuhlsportler. Er fand am Tag der Eröffnungsfeier der Olympischen Spiele in London statt, Guttmann nannte ihn Stoke Mandeville Games. Wie viele Menschen nahmen teil?"
+   ],
+   [
+    "🎯",
+    "Es waren 16 verletzte Soldatinnen und Soldaten, sie traten im Bogenschießen an. Die ersten Paralympischen Spiele folgten erst später. In welcher Stadt und in welchem Jahr fanden sie statt?"
+   ],
+   [
+    "🇮🇹",
+    "Im Jahr 1960 in Rom, mit 400 Sportlerinnen und Sportlern aus 23 Ländern. Die ersten Winterspiele fanden 1976 in Schweden statt. Seit wann nutzen die Sommerspiele dieselben Städte wie die Olympischen Spiele?"
+   ],
+   [
+    "✅",
+    "Seit den Sommerspielen 1988 in Seoul. Seitdem nutzen die Sommer-Paralympics dieselben Städte und Anlagen wie die Olympischen Spiele. Das ist so vereinbart worden, und dieses Prinzip gilt bis heute."
+   ]
+  ],
+  "quiz": [
+   [
+    "In welchem Jahr gab es den ersten Wettkampf für Rollstuhlsportler?",
+    "1948",
+    "1960",
+    "1976",
+    2
+   ],
+   [
+    "Wie viele Länder waren 1960 in Rom dabei?",
+    "23",
+    "16",
+    "40",
+    4
+   ],
+   [
+    "Seit wann nutzen die Sommerspiele dieselben Städte wie die Olympischen Spiele?",
+    "Seit 1988",
+    "Seit 1960",
+    "Seit 1976",
+    5
+   ]
+  ],
+  "id": "paralymp",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Internationales Paralympisches Komitee",
+    "title": "Paralympics History",
+    "url": "https://www.paralympic.org/ipc/history"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bienentanz: Wie sagen Bienen, wo das Futter ist?",
+  "s": "Bienentanz",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐝",
+    "Bienen tanzen im dunklen Stock, und andere Bienen erfahren so, wo es Futter gibt. Der Tanz enthält also eine Nachricht über den Ort der Futterquelle. Wie heißt der Tanz, wenn die Quelle unter 100 Meter entfernt ist?"
+   ],
+   [
+    "⭕",
+    "Rundtanz. Er zeigt über den Rhythmus die Entfernung an: Je langsamer der Rhythmus, desto weiter ist die Quelle weg. Liegt sie über 100 Meter entfernt, tanzen die Bienen den Schwänzeltanz. Was zeigt dessen Tanzwinkel an?"
+   ],
+   [
+    "🧭",
+    "Die Richtung. Der Winkel der Schwänzelstrecke zur Senkrechten auf der Wabe entspricht dem Winkel zwischen Sonne und Futterquelle. Ändert sich der Sonnenstand, ändert sich die Tanzrichtung. Woran erkennen andere Bienen die Entfernung?"
+   ],
+   [
+    "📏",
+    "An der Zahl der Tanzwendungen pro Zeit und an der Länge der Schwänzelstrecke. Bei weiter entfernten Quellen sind die Strecken länger und der Rhythmus ist langsamer. Wer entschlüsselte diese Tanzsprache?"
+   ],
+   [
+    "✅",
+    "Karl von Frisch. Er erhielt 1973 den Nobelpreis für Physiologie oder Medizin, den er sich mit zwei weiteren Forschern teilte. Der Tanz überträgt die Sonnenrichtung auf die senkrechte Wabe im dunklen Stock."
+   ]
+  ],
+  "quiz": [
+   [
+    "Ab welcher Entfernung tanzen Bienen den Schwänzeltanz?",
+    "Über etwa 100 Meter",
+    "Unter etwa 100 Meter",
+    "Unter etwa 10 Meter",
+    1
+   ],
+   [
+    "Was zeigt der Tanzwinkel an?",
+    "Die Richtung des Futters",
+    "Die Menge des Futters",
+    "Die Art der Blüte",
+    3
+   ],
+   [
+    "In welchem Jahr erhielt Karl von Frisch den Nobelpreis?",
+    "1973",
+    "1953",
+    "1993",
+    5
+   ]
+  ],
+  "id": "bienentanz",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Lernhelfer",
+    "title": "Karl von Frisch",
+    "url": "https://www.lernhelfer.de/schuelerlexikon/biologie/artikel/karl-von-frisch"
+   },
+   {
+    "publisher": "Freie Universität Berlin",
+    "title": "100 Jahre Schwänzeltanz",
+    "url": "https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/neurobiologie/ag_menzel/publications/100-Jahre-Schwaenzeltanz_Feb24.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Oktopus: Warum hat er drei Herzen und blaues Blut?",
+  "s": "Oktopus",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐙",
+    "Ein Oktopus hat drei Herzen. Zwei davon pumpen Blut zu den Kiemen, das dritte versorgt den übrigen Körper. Auch sein Blut ist besonders. Welche Farbe hat es?"
+   ],
+   [
+    "🔵",
+    "Es ist bläulich. Sein Blut enthält kein eisenhaltiges Hämoglobin, sondern kupferhaltiges Hämocyanin, das direkt im Blut gelöst ist. Das färbt es blau. Wie gut transportiert dieser Stoff den Sauerstoff?"
+   ],
+   [
+    "⚙️",
+    "Weniger effizient als Hämoglobin. Das gleichen die drei Herzen aus, denn sie pumpen das Blut mit höherem Druck durch den Körper. So kann der Oktopus aktiv leben. Welche Aufgabe haben die zwei Kiemenherzen genau?"
+   ],
+   [
+    "💨",
+    "Sie pumpen das Blut durch die Kiemen, wo es Sauerstoff aufnimmt. Das dritte Herz pumpt das sauerstoffreiche Blut zu Organen und Muskeln. Wie viele Herzen sind für den Körper außerhalb der Kiemen zuständig?"
+   ],
+   [
+    "✅",
+    "Eines. Zwei Herzen versorgen die Kiemen, das dritte den Rest des Körpers. Das blaue, kupferhaltige Blut wird mit höherem Druck gepumpt, damit der Oktopus aktiv leben kann."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Herzen hat ein Oktopus?",
+    "Drei",
+    "Zwei",
+    "Fünf",
+    1
+   ],
+   [
+    "Welcher Stoff färbt das Blut blau?",
+    "Kupferhaltiges Hämocyanin",
+    "Eisenhaltiges Hämoglobin",
+    "Blaues Chlorophyll",
+    2
+   ],
+   [
+    "Was pumpen die zwei Kiemenherzen?",
+    "Blut durch die Kiemen",
+    "Blut in die Arme",
+    "Wasser in den Körper",
+    4
+   ]
+  ],
+  "id": "oktopus",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "BBC Science Focus",
+    "title": "How many hearts does an octopus have?",
+    "url": "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart"
+   },
+   {
+    "publisher": "antwort.net",
+    "title": "Wie viele Herzen hat ein Oktopus wirklich?",
+    "url": "https://www.antwort.net/a/ueberraschende-antworten/wie-viele-herzen-hat-ein-oktopus-wirklich.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Euro-Bargeld 2002: Wie lief die Umstellung?",
+  "s": "Euro-Bargeld",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💶",
+    "Am 1. Januar 2002 kam das Euro-Bargeld in Umlauf. Es war die größte Währungsumstellung aller Zeiten. Neue Scheine und Münzen gelangten gleichzeitig in viele Länder. Wie viele Länder nahmen am Start teil?"
+   ],
+   [
+    "🚚",
+    "Zwölf Länder mit zusammen etwa 308 Millionen Einwohnern. Damit am Starttag genug Bargeld da war, lieferte man es schon ab September 2001 an Banken und Handel. Wie viele Geldautomaten gaben kurz darauf Euro-Scheine aus?"
+   ],
+   [
+    "🏧",
+    "Am 3. Januar 2002 waren es 96 Prozent der Geldautomaten. Nach einer Woche liefen mehr als die Hälfte aller Barzahlungen in Euro. Ab wann war der Euro das einzige gesetzliche Zahlungsmittel?"
+   ],
+   [
+    "📅",
+    "Ab dem 1. März 2002. Bis zu zwei Monate lang galten in manchen Ländern beide Währungen nebeneinander. Wie viele nationale Banknoten wurden bis dahin insgesamt aus dem Verkehr gezogen?"
+   ],
+   [
+    "✅",
+    "Mehr als 6 Milliarden Banknoten. Dazu kamen rund 30 Milliarden nationale Münzen, die ebenfalls aus dem Verkehr gezogen wurden. Danach war nur noch der Euro gesetzliches Zahlungsmittel, und die alten Währungen waren Geschichte."
+   ]
+  ],
+  "quiz": [
+   [
+    "In wie vielen Ländern wurde das Euro-Bargeld eingeführt?",
+    "In zwölf Ländern",
+    "In acht Ländern",
+    "In zwanzig Ländern",
+    2
+   ],
+   [
+    "Ab wann war der Euro das einzige gesetzliche Zahlungsmittel?",
+    "Ab dem 1. März 2002",
+    "Ab dem 1. Januar 2002",
+    "Ab dem 1. Juni 2002",
+    4
+   ],
+   [
+    "Wie viele Geldautomaten gaben am 3. Januar 2002 Euro aus?",
+    "96 Prozent",
+    "56 Prozent",
+    "76 Prozent",
+    3
+   ]
+  ],
+  "id": "euro2002",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Europäische Zentralbank",
+    "title": "Euro cash changeover 2002",
+    "url": "https://ecb.europa.eu/euro/changeover/2002/html/index.de.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Pawlow: Warum speicheln Hunde bei einer Glocke?",
+  "s": "Pawlow",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🐕",
+    "Pawlow wandte sich später dem Verdauungssystem zu. Um die Speichelproduktion von Hunden genau zu messen, wurde bei ihnen ein Teil der Speiseröhre nach außen verlegt. Wann speicheln Hunde ganz natürlich?"
+   ],
+   [
+    "🔔",
+    "Wenn sie Futter sehen oder riechen. Pawlow verband Futter mit dem Läuten einer Glocke. Später reichte die Glocke allein, und die Hunde speichelten. Wie nennt man diese Verbindung von Reiz und Reaktion?"
+   ],
+   [
+    "🔗",
+    "Konditionierung. Ein Reiz, hier die Glocke, wird mit einer Reaktion verbunden, hier dem Speichelfluss. Man spricht auch vom Pawlowschen Reflex. Wofür erhielt Pawlow 1904 den Nobelpreis?"
+   ],
+   [
+    "🏅",
+    "Er bekam den Nobelpreis für Medizin und Physiologie, und zwar für seine Erkenntnisse aus Versuchen mit Hunden und Tönen. Wie lässt sich das Prinzip dahinter kurz zusammenfassen?"
+   ],
+   [
+    "✅",
+    "Der Klang einer Glocke löste Speichelfluss aus, nachdem er mit Futter verbunden worden war. Aus Reiz und Reaktion entsteht so eine neue Verbindung, die man Konditionierung nennt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was wurde bei den Hunden nach außen verlegt?",
+    "Ein Teil der Speiseröhre",
+    "Ein Teil des Magens",
+    "Ein Teil der Zunge",
+    1
+   ],
+   [
+    "Was reichte später allein, um Speichelfluss auszulösen?",
+    "Das Läuten einer Glocke",
+    "Der Anblick des Forschers",
+    "Der Geruch von Wasser",
+    2
+   ],
+   [
+    "In welchem Jahr erhielt Pawlow den Nobelpreis?",
+    "1904",
+    "1914",
+    "1894",
+    4
+   ]
+  ],
+  "id": "pawlow",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Planet Wissen",
+    "title": "Nobelpreisträger Pawlow",
+    "url": "https://www.planet-wissen.de/geschichte/persoenlichkeiten/nobelpreistraeger/nobelpreistraeger-pawlow-100.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bundesländer: Wer entscheidet was?",
+  "s": "Bundesländer",
+  "k": "Politik",
+  "cards": [
+   [
+    "🇩🇪",
+    "Deutschland besteht aus 16 Bundesländern. Die Verteilung der Macht zwischen dem Bund und den Ländern heißt Föderalismus. Das Wort kommt vom lateinischen Wort foedus. Was bedeutet es?"
+   ],
+   [
+    "🤝",
+    "Bündnis oder Staatsvertrag. Der Bund ist unter anderem für die Außenpolitik zuständig. Andere Dinge bestimmen dagegen die Länder, und zwar unter anderem zwei wichtige Bereiche. Welche sind das?"
+   ],
+   [
+    "🏫",
+    "Unter anderem die Organisation der Polizei und die Schulpolitik. Deshalb können Abschlussprüfungen in verschiedenen Ländern auch unterschiedlich bewertet werden. Welche drei Bundesländer sind zugleich Städte?"
+   ],
+   [
+    "🏙️",
+    "Berlin, Hamburg und Bremen. Man nennt sie Stadtstaaten. Die politischen Vertreter der Bundesländer bilden den Bundesrat. Wo ist die Aufteilung der Aufgaben zwischen Bund und Ländern geregelt?"
+   ],
+   [
+    "✅",
+    "Im Grundgesetz. Dort ist die Aufteilung geregelt, also was der Bund und was die Länder bestimmen. Föderalismus bedeutet also, dass die Macht zwischen dem Gesamtstaat und den Ländern geteilt ist."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Bundesländer hat Deutschland?",
+    "16",
+    "12",
+    "20",
+    1
+   ],
+   [
+    "Wer bestimmt unter anderem die Schulpolitik?",
+    "Die Länder",
+    "Der Bund",
+    "Die Gemeinden",
+    3
+   ],
+   [
+    "Welche Länder sind Stadtstaaten?",
+    "Berlin, Hamburg und Bremen",
+    "Berlin, München und Bremen",
+    "Hamburg, Köln und Bremen",
+    4
+   ]
+  ],
+  "id": "bundeslaender",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Bundesländer und Föderalismus",
+    "url": "https://www.bpb.de/kurz-knapp/lexika/das-junge-politik-lexikon/319981/bundeslaender-foederalismus"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792041859582,
+  "review": {
+   "date": "2026-10-15",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
