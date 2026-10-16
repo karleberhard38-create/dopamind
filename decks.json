@@ -7043,5 +7043,618 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Misstrauensvotum: Warum kann man den Kanzler nicht einfach abwählen?",
+  "s": "Misstrauen",
+  "k": "Politik",
+  "cards": [
+   [
+    "🗳️",
+    "Kann der Bundestag einen Bundeskanzler einfach abwählen? Nein, das ist nicht möglich. Es gibt nur das konstruktive Misstrauensvotum nach Artikel 67 des Grundgesetzes. Das Wort konstruktiv kommt aus dem Lateinischen. Was bedeutet es?"
+   ],
+   [
+    "🏗️",
+    "Aufbauend. Die Abgeordneten können dem Kanzler das Misstrauen nur aussprechen, wenn sie im selben Wahlgang einen Nachfolger wählen. Der Nachfolger bildet dann eine neue Regierung. Wer ernennt den neu gewählten Kanzler?"
+   ],
+   [
+    "🖋️",
+    "Der Bundespräsident. So entsteht keine Phase ohne Regierung, denn der Wechsel geschieht in einem Zug. Das Misstrauen richtet sich dabei gegen eine bestimmte Person. Kann der Bundestag auch einzelnen Ministern das Misstrauen aussprechen?"
+   ],
+   [
+    "🙅",
+    "Nein. Auf diesem Weg kann nur dem Bundeskanzler das Misstrauen ausgesprochen werden, nicht einzelnen Ministerinnen und Ministern. Abwahl und Neuwahl gehören zusammen. Was ist also der Kern dieser Regel?"
+   ],
+   [
+    "✅",
+    "Eine Regierung wird nur abgelöst, wenn zugleich eine neue bereitsteht. So gibt es keine Zeit ohne Regierung. Die Regel steht in Artikel 67 des Grundgesetzes und gilt nur für den Bundeskanzler."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wo steht das konstruktive Misstrauensvotum?",
+    "In Artikel 67 des Grundgesetzes",
+    "In Artikel 1 des Grundgesetzes",
+    "In Artikel 20 des Grundgesetzes",
+    1
+   ],
+   [
+    "Was muss im selben Wahlgang geschehen?",
+    "Ein Nachfolger wird gewählt",
+    "Der Bundestag wird aufgelöst",
+    "Der Bundesrat stimmt zu",
+    2
+   ],
+   [
+    "Wem kann so das Misstrauen ausgesprochen werden?",
+    "Nur dem Bundeskanzler",
+    "Jedem einzelnen Minister",
+    "Jeder Abgeordneten",
+    4
+   ]
+  ],
+  "id": "misstrauen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Misstrauensvotum (Das junge Politik-Lexikon)",
+    "url": "https://www.bpb.de/kurz-knapp/lexika/das-junge-politik-lexikon/320801/misstrauensvotum/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Das Wunder von Bern: Wie lief das WM-Finale 1954?",
+  "s": "Wunder v. Bern",
+  "k": "Sport",
+  "cards": [
+   [
+    "⚽",
+    "Am 4. Juli 1954 spielte Deutschland in Bern das Finale der Fußball-Weltmeisterschaft gegen Ungarn. Ungarn ging ungeschlagen aus 32 Spielen in dieses Finale. Wie begann das Spiel für die deutsche Mannschaft?"
+   ],
+   [
+    "😟",
+    "Schlecht. Nach acht Minuten stand es 0:2, die Tore erzielten Puskás und Czibor für Ungarn. Doch Deutschland kam schnell zurück. Wer erzielte in der zehnten Minute das erste deutsche Tor?"
+   ],
+   [
+    "🥅",
+    "Max Morlock. In der 18. Minute traf Helmut Rahn zum 2:2. Damit war das Spiel nach nur wenigen Minuten wieder offen. Wer saß als Trainer auf der deutschen Bank?"
+   ],
+   [
+    "🧢",
+    "Sepp Herberger. In der Gruppenphase hatte Deutschland 3:8 gegen Ungarn verloren, damals hatte er auf sieben Positionen gewechselt. Wer schoss im Finale in der zweiten Halbzeit das entscheidende Tor?"
+   ],
+   [
+    "🏆",
+    "Helmut Rahn. Deutschland gewann das Finale mit 3:2. Radioreporter Herbert Zimmermann rief dazu: Rahn schießt, Tor, Tor, Tor. Das Spiel fand im Wankdorfstadion in Bern statt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie endete das Finale 1954?",
+    "Deutschland gewann 3:2",
+    "Ungarn gewann 3:2",
+    "Deutschland gewann 3:1",
+    5
+   ],
+   [
+    "Wer war Trainer der deutschen Mannschaft?",
+    "Sepp Herberger",
+    "Fritz Walter",
+    "Max Morlock",
+    4
+   ],
+   [
+    "In welcher Stadt fand das Finale statt?",
+    "In Bern",
+    "In Basel",
+    "In Zürich",
+    1
+   ]
+  ],
+  "id": "wunderbern",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Fußball-Bund",
+    "title": "WM 1954: Das Wunder von Bern",
+    "url": "https://www.dfb.de/news/wm-1954-das-wunder-von-bern"
+   },
+   {
+    "publisher": "German History in Documents and Images",
+    "title": "Jubel um das Wunder von Bern, 4. Juli 1954",
+    "url": "https://germanhistorydocs.org/de/die-besatzungszeit-und-die-entstehung-zweier-staaten-1945-1961/jubel-um-das-wunder-von-bern-fussballweltmeisterschaft-4-juli-1954.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie wurde 1953 die Doppelhelix der DNA entdeckt?",
+  "s": "Doppelhelix",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🧬",
+    "1953 beschrieben zwei Forscher den Bau der Erbsubstanz DNA. Entscheidend war ein Röntgenbild namens Foto 51 aus dem Labor von Rosalind Franklin. Was zeigte dieses Bild deutlich?"
+   ],
+   [
+    "📷",
+    "Dass die DNA spiralförmig aufgebaut sein muss. Aufgenommen hatte es Raymond Gosling, Franklins Doktorand. Im Januar 1953 gab Maurice Wilkins es an James Watson weiter, ohne dass Franklin davon wusste. Was entwickelten Watson und Crick daraus?"
+   ],
+   [
+    "🔬",
+    "Ein Modell der Doppelhelix mit zwei gegenläufigen Strängen, zwischen denen die vier Basen liegen. Es erschien am 25. April 1953. Wurde Franklin dafür später mit dem Nobelpreis geehrt?"
+   ],
+   [
+    "🏅",
+    "Nein. 1962 erhielten Crick, Watson und Wilkins den Nobelpreis für Medizin. Franklin war schon 1958 gestorben, und Nobelpreise werden nicht nach dem Tod verliehen. Wie wurde ihr Beitrag in der Arbeit von Crick und Watson gewürdigt?"
+   ],
+   [
+    "📝",
+    "Nur am Rande. Dabei lieferte ihr Bericht Messdaten, die Crick und Watson erreichten. Foto 51 zeigte die Spiralform, und das Modell von Crick und Watson beschrieb die Doppelhelix mit zwei gegenläufigen Strängen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie hieß das Röntgenbild der DNA?",
+    "Foto 51",
+    "Foto 15",
+    "Foto 105",
+    1
+   ],
+   [
+    "Wann erschien das Modell der Doppelhelix?",
+    "1953",
+    "1943",
+    "1963",
+    3
+   ],
+   [
+    "Wer erhielt 1962 den Nobelpreis für Medizin?",
+    "Crick, Watson und Wilkins",
+    "Franklin, Watson und Crick",
+    "Franklin, Wilkins und Gosling",
+    4
+   ]
+  ],
+  "id": "doppelhelix",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Patent- und Markenamt",
+    "title": "Rosalind Franklin und die Doppelhelix",
+    "url": "https://dpma.de/dpma/veroeffentlichungen/patentefrauen/rosalindfranklin/index.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Blutgruppen: Wie entdeckte Landsteiner das AB0-System?",
+  "s": "Blutgruppen",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🩸",
+    "Früher endeten Bluttransfusionen von Mensch zu Mensch oft tödlich. 1901 klärte Karl Landsteiner in Wien, warum. Er mischte Blutkörperchen mit verschiedenen Seren. Was geschah bei manchen Proben?"
+   ],
+   [
+    "🧫",
+    "Sie verklumpten, das nennt man Agglutination. Landsteiner schloss daraus, dass Menschen unterschiedliche Blutgruppenmerkmale haben. Auf den roten Blutkörperchen sitzen die Merkmale A und B. Welche Blutgruppen ergeben sich daraus?"
+   ],
+   [
+    "🔤",
+    "A, B, AB und 0. Gruppe A hat Antikörper gegen B, Gruppe B hat Antikörper gegen A. Gruppe 0 hat beide, Gruppe AB keinen von beiden. Wann gelang auf dieser Grundlage die erste erfolgreiche Transfusion?"
+   ],
+   [
+    "🏥",
+    "1907 in einem Krankenhaus in New York. 1930 erhielt Landsteiner den Nobelpreis für Medizin. 1937 wurde unter seiner Beteiligung ein weiteres Merkmal entdeckt, zuerst im Blut von Rhesusaffen. Wie heißt es?"
+   ],
+   [
+    "✅",
+    "Der Rhesusfaktor. Landsteiner klärte 1901, warum Transfusionen scheitern, und das AB0-System bildete 1907 die Grundlage der ersten erfolgreichen Transfusion. Dafür erhielt er 1930 den Nobelpreis."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie nennt man das Verklumpen der Blutproben?",
+    "Agglutination",
+    "Verdampfung",
+    "Gerinnung",
+    2
+   ],
+   [
+    "Welche Antikörper hat Blutgruppe 0?",
+    "Gegen A und gegen B",
+    "Nur gegen A, nicht B",
+    "Gegen keines von beiden",
+    3
+   ],
+   [
+    "Wann erhielt Landsteiner den Nobelpreis?",
+    "1930",
+    "1901",
+    "1945",
+    4
+   ]
+  ],
+  "id": "blutgruppen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "PTAheute",
+    "title": "Entdecker der Blutgruppen",
+    "url": "https://www.ptaheute.de/aktuelles/2018/06/18/entdecker-der-blutgruppen"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Soziale Marktwirtschaft: Was wollte Ludwig Erhard?",
+  "s": "Erhards Modell",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "🏭",
+    "Die Bundesrepublik hat die soziale Marktwirtschaft. Maßgeblich geprägt haben sie Alfred Müller-Armack und Ludwig Erhard. Erhard beendete 1948 die staatlich gelenkte Zwangswirtschaft. Wie wurde er später genannt?"
+   ],
+   [
+    "🇩🇪",
+    "Vater des Wirtschaftswunders. Von 1949 bis 1963 war er Bundeswirtschaftsminister unter Konrad Adenauer. 1948 hatte er die Währungsreform gegen Widerstand der Besatzungsmächte durchgesetzt. Wie sollen sich in dieser Ordnung die Preise bilden?"
+   ],
+   [
+    "🏷️",
+    "Frei am Markt. Auch Gewinnstreben gilt als Anreiz zur Leistung. Der Staat setzt aber den Rahmen, sichert Eigentum und Freiheitsrechte und hält den Wettbewerb funktionsfähig. Welches Ziel verfolgt diese Ordnung?"
+   ],
+   [
+    "🤲",
+    "Möglichst großen Wohlstand bei bestmöglicher sozialer Absicherung. Die Vorteile des Marktes sollen genutzt, Nachteile wie Machtkonzentration oder Arbeitslosigkeit begrenzt werden. Welches Amt erreichte Erhard 1963?"
+   ],
+   [
+    "✅",
+    "Bundeskanzler. Er trat 1966 nach Kritik aus der eigenen Partei zurück. Die soziale Marktwirtschaft verbindet freie Preise und Wettbewerb mit sozialer Absicherung. Wie stark der Staat eingreifen soll, bleibt politisch umstritten."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie bilden sich in der sozialen Marktwirtschaft die Preise?",
+    "Frei auf dem Markt",
+    "Durch den Staat",
+    "Durch Gewerkschaften",
+    3
+   ],
+   [
+    "Welches Amt hatte Erhard von 1949 bis 1963?",
+    "Bundeswirtschaftsminister",
+    "Bundesfinanzminister",
+    "Bundespräsident",
+    2
+   ],
+   [
+    "Was beendete Erhard 1948?",
+    "Die Zwangswirtschaft",
+    "Die Marktwirtschaft",
+    "Die Währungsunion",
+    1
+   ]
+  ],
+  "id": "marktwirt",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Soziale Marktwirtschaft (Lexikon der Wirtschaft)",
+    "url": "https://www.bpb.de/kurz-knapp/lexika/lexikon-der-wirtschaft/20642/soziale-marktwirtschaft/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Penicillin: Wie wurde aus einem Schimmelpilz ein Medikament?",
+  "s": "Penicillin",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🍄",
+    "1928 bemerkte der schottische Arzt Alexander Fleming in einem Krankenhaus in London, dass ein Schimmelpilz Bakterien abtötet. Er nannte den Pilz Penicillium notatum. Wie nannte er den Wirkstoff?"
+   ],
+   [
+    "📄",
+    "Penicillin. Fleming veröffentlichte seine Beobachtung 1929, doch es folgte kaum Resonanz. Der Stoff war instabil und schwer in reiner Form herzustellen. Wer stellte ihn 1940 erstmals rein her?"
+   ],
+   [
+    "⚗️",
+    "Ernst Boris Chain, Howard Florey und ihr Team in Oxford. 1941 folgte der erste Test an einem Menschen. Die Wirkung war nachweisbar, doch der Patient starb. Woran lag das?"
+   ],
+   [
+    "🪖",
+    "Es war nicht genug Penicillin verfügbar. Im Zweiten Weltkrieg brauchten die Alliierten dringend Mittel gegen infizierte Wunden, das trieb die Entwicklung voran. Wer erhielt 1945 den Nobelpreis für Medizin?"
+   ],
+   [
+    "✅",
+    "Fleming, Florey und Chain. In seiner Nobelpreisrede warnte Fleming bereits vor Resistenzen. Heute sind viele Bakterien resistent, zum Beispiel Staphylococcus aureus. Auch der Einsatz von Antibiotika in der Tierhaltung trägt dazu bei."
+   ]
+  ],
+  "quiz": [
+   [
+    "In welchem Jahr bemerkte Fleming die Wirkung des Pilzes?",
+    "1928",
+    "1945",
+    "1910",
+    1
+   ],
+   [
+    "Warum starb der erste behandelte Patient 1941?",
+    "Es war zu wenig Penicillin da",
+    "Das Mittel hatte keine Wirkung",
+    "Der Patient bekam das falsche Mittel",
+    3
+   ],
+   [
+    "Wovor warnte Fleming in seiner Nobelpreisrede?",
+    "Vor Resistenzen",
+    "Vor Schimmelpilzen",
+    "Vor zu hohen Preisen",
+    5
+   ]
+  ],
+  "id": "penicillin",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Patent- und Markenamt",
+    "title": "95 Jahre Penicillin",
+    "url": "https://dpma.de/dpma/veroeffentlichungen/meilensteine/erfindungenmitgeschichten/95jahrepenicillin/index.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Schaltjahr: Warum fehlt 1900, aber nicht 2000?",
+  "s": "Schaltjahr",
+  "k": "Alltag",
+  "cards": [
+   [
+    "📅",
+    "Alle vier Jahre gibt es einen 29. Februar. Seit 1582 gilt der Kalender, den Papst Gregor einführte. Davor war jedes durch vier teilbare Jahr ein Schaltjahr. Gilt diese Regel heute noch ohne Ausnahme?"
+   ],
+   [
+    "🔢",
+    "Nein. Jahre, die durch 100 teilbar sind, gelten als Gemeinjahre. Ein Gemeinjahr hat 365 Tage, ein Schaltjahr 366 Tage. Es gibt aber noch eine Ausnahme von dieser Ausnahme. Welche?"
+   ],
+   [
+    "4️⃣",
+    "Ist ein Jahr auch durch 400 teilbar, ist es doch ein Schaltjahr. Das Jahr 2000 war deshalb eines. Wie sieht es mit dem Jahr 1900 aus? War es ein Schaltjahr?"
+   ],
+   [
+    "🚫",
+    "Nein, denn 1900 ist durch 100, aber nicht durch 400 teilbar. Es hatte also nur 365 Tage. Damit lässt sich jedes Jahr prüfen. Ist 2028 ein Schaltjahr?"
+   ],
+   [
+    "✅",
+    "Ja. 2028 ist durch vier teilbar, aber nicht durch 100, also hat es 366 Tage. Merke: durch vier teilbar bedeutet Schaltjahr, außer bei Teilbarkeit durch 100, es sei denn, das Jahr ist durch 400 teilbar."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Tage hat ein Schaltjahr?",
+    "366",
+    "365",
+    "367",
+    2
+   ],
+   [
+    "Warum war 2000 ein Schaltjahr?",
+    "Es ist durch 400 teilbar",
+    "Es ist nicht durch 100 teilbar",
+    "Es ist durch 3 teilbar",
+    3
+   ],
+   [
+    "Welches Jahr war kein Schaltjahr?",
+    "1900",
+    "2000",
+    "1996",
+    4
+   ]
+  ],
+  "id": "schaltjahr",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Spektrum der Wissenschaft",
+    "title": "Gregorianischer Kalender (Lexikon der Geowissenschaften)",
+    "url": "https://www.spektrum.de/lexikon/geowissenschaften/gregorianischer-kalender/6306"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Europawahl 2024: Wer sitzt im Europäischen Parlament?",
+  "s": "EU-Parlament",
+  "k": "Politik",
+  "cards": [
+   [
+    "🇪🇺",
+    "Das Europäische Parlament wird von den Bürgerinnen und Bürgern gewählt, zuletzt vom 6. bis 9. Juni 2024. Jedes Land schickt eine bestimmte Zahl von Abgeordneten. Wie viele sind es insgesamt?"
+   ],
+   [
+    "🔢",
+    "720 Abgeordnete. In Deutschland war der Wahltag Sonntag, der 9. Juni 2024, die Wahllokale waren von 8 bis 18 Uhr geöffnet. Gewählt wird für eine feste Zeit. Wie lange dauert eine Wahlperiode?"
+   ],
+   [
+    "📆",
+    "Fünf Jahre. Das neue Parlament trat am 16. Juli 2024 zum ersten Mal zusammen. Bei dieser Wahl gab es in Deutschland eine Neuerung beim Wahlalter. Ab welchem Alter durfte man erstmals wählen?"
+   ],
+   [
+    "🧑",
+    "Ab 16 Jahren. Das war in Deutschland erstmals möglich. Deutschland ist im Parlament besonders stark vertreten. Wie viele der 720 Abgeordneten werden in Deutschland gewählt?"
+   ],
+   [
+    "✅",
+    "96, so viele wie aus keinem anderen Land. Das Parlament hat 720 Abgeordnete, sie werden für fünf Jahre gewählt, und in Deutschland durfte 2024 erstmals ab 16 Jahren gewählt werden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Abgeordnete hat das Europäische Parlament?",
+    "720",
+    "96",
+    "450",
+    2
+   ],
+   [
+    "Wie lange dauert eine Wahlperiode?",
+    "Fünf Jahre",
+    "Vier Jahre",
+    "Zehn Jahre",
+    3
+   ],
+   [
+    "Ab welchem Alter durfte man 2024 in Deutschland wählen?",
+    "Ab 16 Jahren",
+    "Ab 18 Jahren",
+    "Ab 21 Jahren",
+    4
+   ]
+  ],
+  "id": "europarl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Fakten zur Wahl zum Europäischen Parlament 2024",
+    "url": "https://www.bpb.de/themen/wahl-o-mat/europa-2024/547159/fakten-zur-wahl-zum-europaeischen-parlament-2024/"
+   },
+   {
+    "publisher": "Bundesregierung",
+    "title": "Europawahl: Was passiert danach?",
+    "url": "https://www.bundesregierung.de/breg-de/schwerpunkte/europa/europawahl-was-passiert-danach-2251874"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Burn-out: Was gehört dazu und was nicht?",
+  "s": "Burn-out",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🔥",
+    "Burn-out wird als Syndrom beschrieben, das aus chronischem Arbeitsstress entsteht, der nicht erfolgreich bewältigt wurde. Es gibt drei Merkmale. Das erste ist das Gefühl, keine Energie mehr zu haben. Wie heißt es?"
+   ],
+   [
+    "🪫",
+    "Erschöpfung. Das zweite Merkmal betrifft die Haltung zur Arbeit: wachsende geistige Distanz sowie negative oder zynische Gefühle gegenüber der Tätigkeit. Und wie lautet das dritte Merkmal?"
+   ],
+   [
+    "📉",
+    "Eine verringerte berufliche Wirksamkeit. Die drei Merkmale sind also Erschöpfung, geistige Distanz und geringere Wirksamkeit im Beruf. Auf welchen Lebensbereich soll der Begriff beschränkt bleiben?"
+   ],
+   [
+    "💼",
+    "Auf den Beruf. Der Begriff bezieht sich auf Phänomene im Arbeitsumfeld und soll nicht für Erfahrungen in anderen Lebensbereichen verwendet werden. Woraus entsteht Burn-out nach dieser Beschreibung?"
+   ],
+   [
+    "✅",
+    "Aus chronischem Arbeitsstress, der nicht erfolgreich bewältigt wurde. Die drei Merkmale sind Erschöpfung, geistige Distanz oder Zynismus gegenüber der Arbeit und verringerte berufliche Wirksamkeit. Außerhalb des Berufs soll der Begriff nicht verwendet werden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Woraus entsteht Burn-out nach dieser Beschreibung?",
+    "Aus chronischem Arbeitsstress",
+    "Aus zu viel Freizeit",
+    "Aus einer einzelnen Prüfung",
+    4
+   ],
+   [
+    "Welches ist ein Merkmal von Burn-out?",
+    "Gefühl der Erschöpfung",
+    "Gesteigerte Wirksamkeit im Beruf",
+    "Wachsende Begeisterung für die Arbeit",
+    1
+   ],
+   [
+    "Für welchen Bereich ist der Begriff gedacht?",
+    "Für den Beruf",
+    "Für das Familienleben",
+    "Für den Urlaub",
+    3
+   ]
+  ],
+  "id": "burnout",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Weltgesundheitsorganisation",
+    "title": "Burn-out an occupational phenomenon",
+    "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792128522170,
+  "review": {
+   "date": "2026-10-16",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
