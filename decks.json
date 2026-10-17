@@ -7656,5 +7656,608 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Petition an den Bundestag: Wie viele Mitzeichnungen braucht sie?",
+  "s": "Petition",
+  "k": "Politik",
+  "cards": [
+   [
+    "📝",
+    "Eine Petition an den Bundestag kann öffentlich beraten werden, wenn genug Menschen sie mitzeichnen. Diese Mindestzahl heißt Quorum und wurde zum 1. Juli 2024 geändert. Auf wie viele Mitzeichnungen wurde sie abgesenkt?"
+   ],
+   [
+    "🔢",
+    "Auf 30.000 Mitzeichnungen. Zuvor lagen die Hürde bei 50.000 Unterstützerinnen und Unterstützern. Auch die Zeit zum Mitzeichnen wurde geändert. Wie viele Wochen läuft die Mitzeichnungsfrist jetzt, nachdem es vorher vier waren?"
+   ],
+   [
+    "⏳",
+    "Sechs Wochen. Die Mitzeichnungsfrist wurde von vier auf sechs Wochen verlängert. Für Petitionen in einem Fachausschuss gibt es zudem eine neue Frist. Nach wie vielen Sitzungswochen entscheidet der Petitionsausschuss auch ohne dessen Stellungnahme?"
+   ],
+   [
+    "🏛️",
+    "Nach zehn Sitzungswochen. Vorher war nur von einer angemessenen Frist die Rede. Der Petitionsausschuss hat diese Änderungen im Juni 2024 beschlossen. An welchem Datum im Juli 2024 galten sie erstmals?"
+   ],
+   [
+    "✅",
+    "Ab dem 1. Juli 2024. Beschlossen wurden die Änderungen am 26. Juni 2024. Das Quorum sank von 50.000 auf 30.000 Mitzeichnungen, die Mitzeichnungsfrist stieg von vier auf sechs Wochen, und Fachausschüsse haben zehn Sitzungswochen Zeit."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie hoch ist das Quorum seit dem 1. Juli 2024?",
+    "30.000 Mitzeichnungen",
+    "50.000 Mitzeichnungen",
+    "10.000 Mitzeichnungen",
+    2
+   ],
+   [
+    "Wie lang ist die Mitzeichnungsfrist jetzt?",
+    "Sechs Wochen",
+    "Vier Wochen",
+    "Zehn Wochen",
+    3
+   ],
+   [
+    "Nach wie vielen Sitzungswochen entscheidet der Ausschuss ohne Fachausschuss?",
+    "Nach zehn",
+    "Nach vier",
+    "Nach sechs",
+    4
+   ]
+  ],
+  "id": "petition",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Petitionsausschuss senkt Quorum auf 30.000 Mitzeichnungen bei Petitionen",
+    "url": "https://www.bundestag.de/dokumente/textarchiv/2024/kw26-pa-petitionen-quorum-1010108"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "UN-Sicherheitsrat: Wer hat das Veto?",
+  "s": "Sicherheitsrat",
+  "k": "Politik",
+  "cards": [
+   [
+    "🌍",
+    "Der Sicherheitsrat der Vereinten Nationen hat 15 Mitglieder. Fünf davon gehören ihm dauerhaft an, die übrigen zehn sind nichtständig. Für wie viele Jahre wählt die Generalversammlung die nichtständigen Mitglieder jeweils?"
+   ],
+   [
+    "🗳️",
+    "Für je zwei Jahre. Die fünf ständigen Mitglieder sind Großbritannien, Frankreich, Russland, China und die USA. Wie viele Stimmen braucht ein Beschluss des Rates mindestens, damit er zustande kommt?"
+   ],
+   [
+    "🔟",
+    "Neun Stimmen. Bei allen Fragen außer Verfahrensfragen müssen darunter die Stimmen aller ständigen Mitglieder sein. Wie heißt das Recht, mit dem ein ständiges Mitglied einen Beschluss allein verhindern kann?"
+   ],
+   [
+    "🚫",
+    "Das Veto. Jedes der fünf ständigen Mitglieder kann damit allein Beschlüsse des Sicherheitsrates verhindern. Bei Verfahrensfragen dürfen sich die ständigen Mitglieder enthalten. Wie viele Mitglieder hat der Rat insgesamt?"
+   ],
+   [
+    "✅",
+    "Fünfzehn. Davon sind fünf ständig und zehn nichtständig, die nichtständigen werden für je zwei Jahre gewählt. Ein Beschluss braucht neun Stimmen, und jedes ständige Mitglied kann ihn durch ein Veto allein verhindern."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Mitglieder hat der Sicherheitsrat?",
+    "15",
+    "10",
+    "20",
+    4
+   ],
+   [
+    "Wie viele Stimmen braucht ein Beschluss mindestens?",
+    "Neun",
+    "Fünf",
+    "Zwölf",
+    2
+   ],
+   [
+    "Wie lange dauert die Amtszeit nichtständiger Mitglieder?",
+    "Zwei Jahre",
+    "Fünf Jahre",
+    "Ein Jahr",
+    1
+   ]
+  ],
+  "id": "sicherrat",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Sicherheitsrat der Vereinten Nationen",
+    "url": "https://www.bpb.de/themen/internationale-organisationen/vereinte-nationen/48583/sicherheitsrat-der-vereinten-nationen/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Usain Bolt: Wie schnell war sein 100 Meter Weltrekord?",
+  "s": "Bolt 9,58",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏃",
+    "Am 16. August 2009 lief Usain Bolt bei einer Leichtathletik Weltmeisterschaft einen 100 Meter Weltrekord. Es war das dritte Mal, dass er diese Bestmarke setzte. Wie lautet die Zeit in Sekunden?"
+   ],
+   [
+    "⏱️",
+    "9,58 Sekunden. Der Lauf fand in einer deutschen Stadt statt, und die Weltmeisterschaft war die zwölfte ihrer Art. In welcher Stadt und in welchem Stadion lief Bolt diesen Rekord?"
+   ],
+   [
+    "🏟️",
+    "In Berlin, im Olympiastadion. Es war ein Lauf über 100 Meter bei der Weltmeisterschaft, und Bolt hatte diese Bestmarke zuvor schon zweimal verbessert. Wie oft hatte er die Bestmarke damit insgesamt gesetzt?"
+   ],
+   [
+    "3️⃣",
+    "Dreimal. Im Mai 2008 war Bolt in New York bereits 9,72 Sekunden gelaufen. Um wie viele Hundertstelsekunden war seine Zeit in Berlin schneller als diese Zeit aus New York?"
+   ],
+   [
+    "✅",
+    "Um 14 Hundertstelsekunden. Am 16. August 2009 lief Bolt im Berliner Olympiastadion die 100 Meter in 9,58 Sekunden. Es war sein dritter Weltrekord über diese Strecke, und New York 2008 lag bei 9,72 Sekunden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welche Zeit lief Bolt am 16. August 2009?",
+    "9,58 Sekunden",
+    "9,72 Sekunden",
+    "9,69 Sekunden",
+    1
+   ],
+   [
+    "In welcher Stadt lief er diesen Rekord?",
+    "In Berlin",
+    "In New York",
+    "In Peking",
+    2
+   ],
+   [
+    "Wie oft hatte er den 100 Meter Weltrekord damit gesetzt?",
+    "Dreimal",
+    "Einmal",
+    "Fünfmal",
+    3
+   ]
+  ],
+  "id": "bolt958",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "World Athletics",
+    "title": "Bolt again: 9.58 world record in Berlin",
+    "url": "https://worldathletics.org/news/news/usain-bolt-958-sekunden-weltrekord-in-berli"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Depression: Woran erkennen Fachleute sie?",
+  "s": "Depression",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🌧️",
+    "Depression ist mehr als ein paar schlechte Tage. Fachleute unterscheiden drei Hauptsymptome. Eines ist eine gedrückte Stimmung, die den größten Teil des Tages anhält. Was geht beim zweiten Hauptsymptom an früher geliebten Tätigkeiten verloren?"
+   ],
+   [
+    "💔",
+    "Interesse und Freude. Das dritte Hauptsymptom ist Antriebsmangel mit erhöhter Ermüdbarkeit. Zusätzlich gibt es Nebensymptome. Wie viele Hauptsymptome müssen mindestens vorliegen, damit von einer Depression gesprochen wird?"
+   ],
+   [
+    "📋",
+    "Mindestens zwei Hauptsymptome und zwei Nebensymptome. Nebensymptome sind zum Beispiel Konzentrationsprobleme, vermindertes Selbstvertrauen, Schlafstörungen oder Appetitveränderungen. Wie lange müssen diese Haupt und Nebensymptome zusammen bestehen?"
+   ],
+   [
+    "📆",
+    "Über mehr als zwei Wochen. Außerdem unterscheidet man nach Anzahl und Stärke der Symptome verschiedene Schweregrade. Wie viele Schweregrade gibt es: mild, mittel und schwer?"
+   ],
+   [
+    "✅",
+    "Drei Schweregrade. Zusammengefasst gehören mindestens zwei Haupt und zwei Nebensymptome dazu, die über mehr als zwei Wochen bestehen. Hauptsymptome sind gedrückte Stimmung, Interessenverlust und Antriebsmangel."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange müssen die Symptome mindestens bestehen?",
+    "Mehr als zwei Wochen",
+    "Mehr als zwei Tage",
+    "Genau ein Jahr",
+    3
+   ],
+   [
+    "Welches ist ein Hauptsymptom?",
+    "Gedrückte Stimmung",
+    "Gesteigerter Appetit",
+    "Schnelles Sprechen",
+    1
+   ],
+   [
+    "Wie viele Schweregrade werden unterschieden?",
+    "Drei",
+    "Zwei",
+    "Sieben",
+    4
+   ]
+  ],
+  "id": "depression",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Depression erkennen: Symptome und Diagnostik",
+    "url": "https://www.tk.de/techniker/krankheit-und-behandlungen/erkrankungen/behandlungen-und-medizin/psychische-gesundheit/depression-burnout/depression-erkennen-symptome-und-diagnose-2131800"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Kurzarbeitergeld: Wie viel gibt es und wer zahlt?",
+  "s": "Kurzarbeit",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "🏭",
+    "Muss ein Betrieb die Arbeitszeit meist aus wirtschaftlichen Gründen kürzen, gibt es Kurzarbeitergeld. Es ersetzt einen Teil des ausgefallenen Nettoentgelts. Wie viel Prozent sind es für Beschäftigte ohne Kind im Haushalt?"
+   ],
+   [
+    "💶",
+    "60 Prozent des ausgefallenen Nettoentgelts. Der Betrieb muss die Kürzung der Arbeitszeit der Agentur für Arbeit melden. Beschäftigte mit mindestens einem Kind im Haushalt bekommen mehr. Wie viel Prozent sind es dann?"
+   ],
+   [
+    "👨‍👩‍👧",
+    "67 Prozent. Beschäftigte müssen den Antrag nicht selbst stellen. Das Kurzarbeitergeld bekommst du nicht direkt von der Behörde. Wer zahlt es zunächst an dich aus?"
+   ],
+   [
+    "🧾",
+    "Der Arbeitgeber. Er holt sich den Betrag anschließend von der Arbeitsagentur zurück. Kurzarbeitergeld gibt es nicht unbegrenzt lang. Wie viele Monate sind es im Regelfall höchstens?"
+   ],
+   [
+    "✅",
+    "Bis zu zwölf Monate. Von 2025 bis Ende 2026 gilt befristet eine Höchstdauer von 24 Monaten, ab dem 1. Januar 2027 wieder zwölf. Es gibt 60 Prozent, mit Kind 67 Prozent, ausgezahlt vom Arbeitgeber."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie hoch ist der Satz für Beschäftigte mit Kind?",
+    "67 Prozent",
+    "60 Prozent",
+    "75 Prozent",
+    2
+   ],
+   [
+    "Wer zahlt das Kurzarbeitergeld zunächst aus?",
+    "Der Arbeitgeber",
+    "Das Finanzamt",
+    "Die Krankenkasse",
+    3
+   ],
+   [
+    "Wie lang gilt die Höchstdauer im Regelfall?",
+    "Zwölf Monate",
+    "Drei Monate",
+    "Sechs Jahre",
+    4
+   ]
+  ],
+  "id": "kug",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesagentur für Arbeit",
+    "title": "Kurzarbeitergeld: Informationen für Arbeitnehmer",
+    "url": "https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/arbeitslosengeld/finanzielle-hilfen/kurzarbeitergeld-arbeitnehmer"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Online bestellt: Wie lange darfst du widerrufen?",
+  "s": "Widerruf",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "📦",
+    "Du hast online etwas bestellt und es gefällt dir nicht. Dann darfst du den Kauf unter bestimmten Voraussetzungen widerrufen, wenn du ihn bei einem Händler getätigt hast. Wie viele Tage hast du dafür Zeit?"
+   ],
+   [
+    "📅",
+    "14 Tage. Die Frist läuft ab dem Erhalt der Ware, wenn der Verkäufer dich korrekt über dein Widerrufsrecht belehrt hat. Was reicht, um die Frist einzuhalten: das Absenden oder das Ankommen des Widerrufs?"
+   ],
+   [
+    "✉️",
+    "Das Absenden reicht. Wann der Widerruf beim Verkäufer ankommt, spielt keine Rolle. Sicher ist eine E-Mail, die der Verkäufer bestätigt, oder ein Einwurf-Einschreiben. Wie lang gilt das Recht, wenn Angaben in der Belehrung fehlen?"
+   ],
+   [
+    "⚖️",
+    "Ein Jahr und 14 Tage. Das gilt, wenn notwendige Angaben in der Belehrung fehlen. Wer trägt die Kosten der Rücksendung, wenn der Verkäufer nicht angeboten hat, sie zu übernehmen?"
+   ],
+   [
+    "✅",
+    "Du selbst. Der Verkäufer erstattet den Kaufpreis, sobald er die Ware zurückhat. Bei beschädigter Ware zahlst du den Wertverlust. Das Widerrufsrecht gilt nicht für Käufe zwischen zwei Privatpersonen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lang ist die normale Widerrufsfrist?",
+    "14 Tage",
+    "30 Tage",
+    "7 Tage",
+    2
+   ],
+   [
+    "Was genügt, um die Frist einzuhalten?",
+    "Das Absenden des Widerrufs",
+    "Eine Zahlung per Überweisung",
+    "Ein Anruf nach 20 Tagen",
+    3
+   ],
+   [
+    "Wer trägt die Rücksendekosten, wenn nichts anderes angeboten wurde?",
+    "Du selbst",
+    "Der Verkäufer",
+    "Die Post",
+    4
+   ]
+  ],
+  "id": "widerruf",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Tipps für den erfolgreichen Widerruf",
+    "url": "https://verbraucherzentrale.de/node/38008"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Warum gibt es Jahreszeiten?",
+  "s": "Jahreszeiten",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🍂",
+    "Im Sommer ist es warm und im Winter kalt. Man könnte glauben, die Entfernung zur Sonne sei der Grund. Was ist laut Fachleuten der Hauptgrund für die Jahreszeiten?"
+   ],
+   [
+    "🌐",
+    "Die Neigung der Erdachse. Sie beträgt etwa 23,45 Grad gegenüber der Senkrechten zur Umlaufebene. Wohin zeigt die Erdachse im Verlauf des Jahres, in eine wechselnde oder in dieselbe Richtung?"
+   ],
+   [
+    "🧭",
+    "In dieselbe Richtung. Deshalb erhalten im Jahresverlauf unterschiedliche Regionen der Erde die direkteren Sonnenstrahlen. Welcher der beiden Pole ist im Monat Juni zur Sonne geneigt?"
+   ],
+   [
+    "☀️",
+    "Der Nordpol. Dann ist auf der Nordhalbkugel Sommer, und die Sonne steht dort fast senkrecht über dem Kopf. In welchem Monat ist die Erde der Sonne am nächsten, im Januar oder im Juli?"
+   ],
+   [
+    "✅",
+    "Im Januar, also im Winter der Nordhalbkugel. Die Entfernung kann die Jahreszeiten deshalb nicht erklären. Der Grund ist die Neigung der Erdachse von etwa 23,45 Grad."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was verursacht die Jahreszeiten hauptsächlich?",
+    "Die Neigung der Erdachse",
+    "Der Abstand zur Sonne",
+    "Die Form des Mondes",
+    2
+   ],
+   [
+    "In welchem Monat ist die Erde der Sonne am nächsten?",
+    "Im Januar",
+    "Im Juli",
+    "Im Juni",
+    4
+   ],
+   [
+    "Welcher Pol ist im Juni zur Sonne geneigt?",
+    "Der Nordpol",
+    "Der Südpol",
+    "Keiner von beiden",
+    3
+   ]
+  ],
+  "id": "jahreszeit",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "NOAA",
+    "title": "Why does Earth have seasons?",
+    "url": "https://www.nesdis.noaa.gov/about/k-12-education/understanding-our-planet/why-does-earth-have-seasons"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Grönlandhai: Wie alt kann ein Wirbeltier werden?",
+  "s": "Grönlandhai",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🦈",
+    "Der Grönlandhai gilt als das langlebigste bekannte Wirbeltier. Bei einem Weibchen bestimmten Forscher ein Mindestalter von 272 Jahren. Welchen radioaktiven Stoff haben sie dafür in der Augenlinse gemessen?"
+   ],
+   [
+    "👁️",
+    "Radioaktiven Kohlenstoff, C-14. Sein Anteil spiegelt den C-14-Gehalt des Ozeans wider, als sich die Linse bildete. Um wie viel wächst die Art laut einer Studie von 1963 pro Jahr höchstens?"
+   ],
+   [
+    "📏",
+    "Um weniger als einen Zentimeter pro Jahr. Wachstumsringe ließen sich bei dieser Art nicht zur Altersbestimmung nutzen. Mit etwa wie vielen Jahren werden die Weibchen geschlechtsreif?"
+   ],
+   [
+    "🕰️",
+    "Mit etwa 150 Jahren. Das größte untersuchte Weibchen war 5,02 Meter lang. Für sein Alter gibt die Studie eine Spanne von 272 bis zu wie vielen Jahren an?"
+   ],
+   [
+    "✅",
+    "Bis 512 Jahre. Das Alter wurde über C-14 in der Augenlinse bestimmt, das Wachstum liegt unter einem Zentimeter pro Jahr, und Weibchen werden mit etwa 150 Jahren geschlechtsreif."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welchen Stoff maß man in der Augenlinse?",
+    "Kohlenstoff C-14",
+    "Eisen in den Zähnen",
+    "Kalk in den Flossen",
+    1
+   ],
+   [
+    "Mit wie vielen Jahren werden Weibchen etwa geschlechtsreif?",
+    "Mit etwa 150 Jahren",
+    "Mit etwa 10 Jahren",
+    "Mit etwa 30 Jahren",
+    3
+   ],
+   [
+    "Wie viel wächst die Art laut der Studie von 1963 pro Jahr?",
+    "Weniger als 1 Zentimeter",
+    "Etwa 50 Zentimeter",
+    "Etwa 2 Meter",
+    2
+   ]
+  ],
+  "id": "groenlandhai",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Scientific American",
+    "title": "Near-Blind Shark Is World's Longest-Lived Vertebrate",
+    "url": "https://www.scientificamerican.com/article/near-blind-shark-is-world-s-longest-lived-vertebrate1"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Fotosynthese: Wie machen Pflanzen aus Licht Zucker?",
+  "s": "Fotosynthese",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🌱",
+    "Pflanzen stellen bei der Fotosynthese Glukose her. Dafür brauchen sie Sonnenlicht, Wasser und einen Stoff aus der Luft. Das Wasser gelangt über die Wurzeln in die Blätter. Welcher Stoff aus der Luft ist es?"
+   ],
+   [
+    "💨",
+    "Kohlenstoffdioxid. Damit die Pflanze das Licht nutzen kann, braucht sie einen grünen Farbstoff, der es aufnimmt. Er liegt in den Chloroplasten der Pflanzenzellen. Wie heißt dieser Farbstoff?"
+   ],
+   [
+    "🟢",
+    "Chlorophyll. In der Lichtreaktion wird mit der aufgenommenen Lichtenergie Wasser zerlegt. Dabei entsteht ein Gas, das an die Luft abgegeben wird. Welches Gas ist es?"
+   ],
+   [
+    "🫧",
+    "Sauerstoff. Danach folgt die Dunkelreaktion, auch Calvin-Zyklus genannt. Dort wandelt die Pflanze Kohlenstoffdioxid mithilfe der zuvor gewonnenen chemischen Energie um. In welchen Zucker geschieht das?"
+   ],
+   [
+    "✅",
+    "In Glukose. Die Pflanze nutzt sie als Energie zum Wachsen und zum Aufbau von Teilen wie Blättern und Stängeln. Aus Licht, Wasser und Kohlenstoffdioxid entstehen Glukose und Sauerstoff."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welches Gas entsteht bei der Lichtreaktion?",
+    "Sauerstoff",
+    "Kohlenstoffdioxid",
+    "Stickstoff",
+    3
+   ],
+   [
+    "Wie heißt der grüne Farbstoff?",
+    "Chlorophyll",
+    "Hämoglobin",
+    "Melanin",
+    2
+   ],
+   [
+    "Was entsteht in der Dunkelreaktion aus Kohlenstoffdioxid?",
+    "Glukose",
+    "Wasser",
+    "Salz",
+    4
+   ]
+  ],
+  "id": "fotosynthese",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Planet Wissen",
+    "title": "Pflanzen: Fotosynthese",
+    "url": "https://www.planet-wissen.de/natur/pflanzen/pflanzen-fotosynthese-100.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792214552674,
+  "review": {
+   "date": "2026-10-17",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
