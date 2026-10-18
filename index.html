@@ -1228,7 +1228,7 @@ function renderQuizHome(){
  el.innerHTML='<h1>Üben</h1><span class="plus">Plus-Vorschau</span><p class="sub">Nach jedem Deck gibt es eine Kurzfrage. Zwei Stunden später kommt dieselbe Frage noch einmal, dann siehst du, was wirklich hängen geblieben ist. Mit Plus kannst du unbegrenzt viele Fragen üben.</p>'+
  '<div class="pst" style="margin:0 0 14px"><div><b>'+due.length+'</b><span>Jetzt fällig</span></div><div><b>'+streakNow()+' · 🛡'+S.freezes+'</b><span>Serie · Schutz</span></div><div><b>'+S.shells+'</b><span>Muscheln</span></div></div>'+
  (due.length?'<button class="btn pri big" type="button" data-qstart="due">'+(due.length===1?'Kurzfrage beantworten':'Fragen beantworten · '+due.length)+'</button>':'<div class="qempty">'+(nx?'Die nächste Frage ist in '+fmtIn(nx)+' dran.':'Gerade ist nichts fällig. Lies ein Deck zu Ende, dann kommt eine Kurzfrage.')+' Du kannst unten auch freiwillig ein Deck üben.</div>')+(S.asked?'<p class="note" style="margin:10px 2px 0">Nach 2 Stunden gemerkt: '+(S.kept||0)+' von '+S.asked+'</p>':'')+
- '<div class="sec">Quiz zu einem Deck</div>'+DATA.map(d=>'<button class="li" type="button" data-qdeck="'+d.id+'"><span class="e">'+d.cards[0][0]+'</span><p>'+esc(d.t)+'<br>'+(d.cards.filter((_,i)=>QZ[d.id+(i+1)]).length)+' Fragen</p></button>').join('');
+ '<div class="sec">Lernspiele</div><button class="li" type="button" data-gblitz><span class="e">⚡</span><p>Blitzrunde<br>60 Sekunden, so viele Fragen wie möglich'+(S.blz?' · Rekord '+S.blz:'')+'</p></button><button class="li" type="button" data-gtfstart><span class="e">⚖️</span><p>Stimmt das?<br>10 Aussagen, du entscheidest</p></button>'+'<div class="sec">Quiz zu einem Deck</div>'+DATA.map(d=>'<button class="li" type="button" data-qdeck="'+d.id+'"><span class="e">'+d.cards[0][0]+'</span><p>'+esc(d.t)+'<br>'+(d.cards.filter((_,i)=>QZ[d.id+(i+1)]).length)+' Fragen</p></button>').join('');
 }
 function renderQuiz(){
  const el=$('#quizc');
@@ -1279,6 +1279,87 @@ $('#quizc').addEventListener('click',e=>{
  const s=e.target.closest('[data-qstart]');if(s){startQuiz(dueIds(),'Wiederholen','due');return;}
  const d=e.target.closest('[data-qdeck]');
  if(d){const dd=DATA.find(x=>x.id===d.dataset.qdeck);if(dd)startQuiz(dd.cards.map((_,i)=>dd.id+(i+1)),dd.s,'deck');}
+});
+
+/* Lernspiele: Blitz und Wahr oder Falsch (nutzen die vorhandenen Quizfragen) */
+let gm=null,gmT=null;
+function gmStop(){clearInterval(gmT);gmT=null;gm=null;}
+const gmPool=()=>Object.keys(QZ).filter(id=>byId[id]);
+function startBlitz(){
+ const p=shuf(gmPool());if(p.length<5){toast('Dafür gibt es noch zu wenige Fragen');return;}
+ clearInterval(gmT);
+ gm={kind:'blitz',left:60,score:0,combo:0,maxc:0,right:0,n:0,pool:p,i:0,opts:null,sel:-1,done:false};
+ gmT=setInterval(blitzTick,1000);renderGame();
+}
+function blitzTick(){
+ if(!gm||gm.kind!=='blitz'||gm.done){clearInterval(gmT);return;}
+ gm.left--;
+ const t=$('#gmt'),b=$('#gmb');if(t)t.textContent=gm.left+' s';if(b)b.style.width=(gm.left/60*100)+'%';
+ if(gm.left<=0)endBlitz();
+}
+function endBlitz(){
+ clearInterval(gmT);gm.done=true;
+ const rec=+S.blz||0,nw=gm.score>rec;if(nw)S.blz=gm.score;
+ const xp=Math.min(30,Math.floor(gm.score/10)),sh=Math.min(6,Math.floor(gm.right/3));
+ S.xp+=xp;S.shells+=sh;save();syncBadges();gm.res={xp:xp,sh:sh,nw:nw,rec:S.blz};
+ if(xp||sh)celebrate({title:'+'+xp+' XP',sub:'Blitz: '+gm.right+' richtig · +'+sh+' Muscheln'});
+ renderGame();
+}
+function startTF(){
+ const p=shuf(gmPool()).slice(0,10);if(p.length<5){toast('Dafür gibt es noch zu wenige Fragen');return;}
+ clearInterval(gmT);
+ const items=p.map(id=>{const q=QZ[id],truth=Math.random()<.5;return {id:id,truth:truth,shown:truth?q[1]:shuf([q[2],q[3]])[0]};});
+ gm={kind:'tf',items:items,i:0,ok:0,combo:0,sel:-1,done:false};renderGame();
+}
+function renderGame(){
+ const el=$('#quizc');if(!gm){renderQuizHome();return;}
+ if(gm.kind==='blitz'){
+  if(gm.done){const r=gm.res||{};
+   el.innerHTML='<div class="qres"><b>'+gm.score+'</b><p>Punkte · '+gm.right+' von '+gm.n+' richtig · längste Serie '+gm.maxc+'</p>'+(r.nw?'<p style="color:var(--ok);font-weight:700">Neuer Rekord!</p>':'<p>Rekord: '+(r.rec||0)+'</p>')+'<p>+'+(r.xp||0)+' XP · +'+(r.sh||0)+' Muscheln</p></div><button class="btn pri big" type="button" data-gagain="blitz">Noch einmal</button><button class="btn big" type="button" data-gquit style="margin-top:8px">Fertig</button>';return;}
+  if(gm.i>=gm.pool.length){gm.pool=shuf(gmPool());gm.i=0;}
+  const id=gm.pool[gm.i],f=byId[id],q=QZ[id],ans=gm.sel>=0;
+  if(!gm.opts)gm.opts=shuf([{t:q[1],r:1},{t:q[2],r:0},{t:q[3],r:0}]);
+  el.innerHTML='<div class="qtop"><button class="back" type="button" data-gquit style="margin:0">Abbrechen</button><span class="sm"><b id="gmt">'+gm.left+' s</b> · '+gm.score+' Punkte'+(gm.combo>1?' · Serie '+gm.combo:'')+'</span></div>'+
+  '<div class="qbar"><i id="gmb" style="width:'+(gm.left/60*100)+'%;transition:width 1s linear"></i></div>'+
+  '<div class="qq"><div class="qe">'+f.e+'</div><h2>'+esc(q[0])+'</h2></div>'+
+  gm.opts.map((o,k)=>'<button class="qo '+(ans?(o.r?'ok':(k===gm.sel?'bad':'dim')):'')+'" type="button" data-gb="'+k+'"'+(ans?' disabled':'')+'>'+esc(o.t)+'</button>').join('');
+  return;
+ }
+ if(gm.done){
+  const n=gm.items.length,perfect=gm.ok===n;
+  el.innerHTML='<div class="qres"><b>'+gm.ok+' / '+n+'</b><p>'+(perfect?'Alles richtig! Das gibt 2 Bonus-Muscheln.':'Gut gespielt. Was du verwechselt hast, lohnt sich noch einmal anzusehen.')+'</p></div><button class="btn pri big" type="button" data-gagain="tf">Noch eine Runde</button><button class="btn big" type="button" data-gquit style="margin-top:8px">Fertig</button>';return;
+ }
+ const it=gm.items[gm.i],f=byId[it.id],q=QZ[it.id],ans=gm.sel>=0,right=ans&&((gm.sel===1)===it.truth);
+ el.innerHTML='<div class="qtop"><button class="back" type="button" data-gquit style="margin:0">Beenden</button><span class="sm">Aussage '+(gm.i+1)+' von '+gm.items.length+'</span></div>'+
+ '<div class="qbar"><i style="width:'+(((gm.i+(ans?1:0))/gm.items.length)*100).toFixed(0)+'%"></i></div>'+
+ '<div class="qq"><div class="qe">'+f.e+'</div><h2>'+esc(q[0])+'</h2><p class="sub" style="margin:10px 0 0">Vorschlag: <b>'+esc(it.shown)+'</b></p></div>'+
+ (ans?'<div class="qfb '+(right?'good':'miss')+'"><b>'+(right?'Richtig!':'Nicht ganz.')+' '+(it.truth?'Das stimmt.':'Richtig wäre: '+esc(q[1])+'.')+'</b><p>'+esc(f.x)+'</p></div><button class="btn pri big" type="button" data-gnext>'+(gm.i+1<gm.items.length?'Weiter':'Ergebnis')+'</button>':
+ '<button class="qo" type="button" data-gtf="1">Stimmt</button><button class="qo" type="button" data-gtf="0">Stimmt nicht</button>');
+}
+$('#quizc').addEventListener('click',e=>{
+ if(e.target.closest('[data-gblitz]')){startBlitz();return;}
+ if(e.target.closest('[data-gtfstart]')){startTF();return;}
+ const ag=e.target.closest('[data-gagain]');if(ag){ag.dataset.gagain==='blitz'?startBlitz():startTF();return;}
+ if(e.target.closest('[data-gquit]')){gmStop();renderQuizHome();syncBadges();return;}
+ if(!gm)return;
+ const b=e.target.closest('[data-gb]');
+ if(b&&gm.kind==='blitz'&&!gm.done&&gm.sel<0){
+  const k=+b.dataset.gb,o=gm.opts[k];gm.sel=k;gm.n++;
+  if(o.r){gm.right++;gm.combo++;gm.maxc=Math.max(gm.maxc,gm.combo);gm.score+=10+Math.min(gm.combo-1,10)*2;ding(true);}else{gm.combo=0;ding(false);}
+  renderGame();
+  const g=gm;setTimeout(()=>{if(gm!==g||g.done)return;g.i++;g.sel=-1;g.opts=null;renderGame();},o.r?350:1000);
+  return;
+ }
+ const t=e.target.closest('[data-gtf]');
+ if(t&&gm.kind==='tf'&&!gm.done&&gm.sel<0){
+  const it=gm.items[gm.i];gm.sel=+t.dataset.gtf;const ok=(gm.sel===1)===it.truth;
+  if(ok){gm.ok++;S.xp+=5;S.shells+=1;ding(true);}else ding(false);
+  save();syncBadges();renderGame();return;
+ }
+ if(e.target.closest('[data-gnext]')&&gm.kind==='tf'){
+  if(gm.i+1<gm.items.length){gm.i++;gm.sel=-1;renderGame();$('#v-quiz').scrollTop=0;}
+  else{gm.done=true;const perfect=gm.ok===gm.items.length;S.xp+=15;S.shells+=2+(perfect?2:0);save();syncBadges();celebrate({title:'+15 XP',sub:'Wahr oder Falsch: '+gm.ok+' von '+gm.items.length+' richtig'});renderGame();}
+ }
 });
 
 /* Serienschutz */
@@ -1763,6 +1844,7 @@ function setView(v){
  $$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
  $('#top').hidden=v!=='feed';$('#rail').hidden=v!=='feed';
  if(v!=='feed')hideHint(false);
+ if(v!=='quiz'&&gm)gmStop();
  if(v!=='me'&&v!=='fb')prevView=v;
  $('#meb').hidden=(v==='feed'||v==='me'||v==='fb');try{updateMeBtn();}catch(e){}
  if(v==='lib')renderLib();else if(v==='disc')renderDisc();else if(v==='prog')renderProg();else if(v==='fb')renderFb();else if(v==='me')renderMe();else if(v==='quiz'){if(qz)renderQuiz();else renderQuizHome();}
