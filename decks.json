@@ -8259,5 +8259,541 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "NATO Artikel 5: Wann gilt ein Angriff auf alle?",
+  "s": "NATO Artikel 5",
+  "k": "Politik",
+  "cards": [
+   [
+    "🛡️",
+    "Im Nordatlantikvertrag steht ein berühmter Artikel. Ein bewaffneter Angriff auf ein Mitglied in Europa oder Nordamerika gilt als Angriff auf alle. Das Bündnis wurde 1949 gegründet. Welche Nummer trägt dieser Artikel?"
+   ],
+   [
+    "5️⃣",
+    "Artikel 5. Dann leistet jedes Mitglied Beistand, im Rahmen des Rechts auf Selbstverteidigung aus der UN-Charta. Doch dieser Fall trat lange nicht ein. Wann wurde der Artikel zum ersten Mal ausgerufen?"
+   ],
+   [
+    "📅",
+    "Erst 2001, mehr als 50 Jahre nach der Gründung. Am 11. September waren vier Passagiermaschinen entführt worden, rund 3.000 Menschen starben. Am Tag danach stellte der Rat den Bündnisfall unter einer Bedingung fest. Welche war es?"
+   ],
+   [
+    "🔎",
+    "Es musste belegt sein, dass die Anschläge aus dem Ausland ausgeführt wurden. Am 2. Oktober hieß es, die USA hätten Beweise dafür vorgelegt. Am 4. Oktober stimmten die damals 19 Mitgliedstaaten ab. Wie fiel die Abstimmung aus?"
+   ],
+   [
+    "✅",
+    "Einstimmig, und zum ersten Mal in der Geschichte des Bündnisses. Die Feststellung löst aber keinen Automatismus aus. Wie viel Hilfe ein Mitglied leistet, ist nicht genau festgelegt, jedes Mitglied hat dabei Spielraum."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welche Nummer hat der Beistandsartikel?",
+    "Artikel 5",
+    "Artikel 1",
+    "Artikel 9",
+    2
+   ],
+   [
+    "Wann stellte das Bündnis den Bündnisfall zum ersten Mal fest?",
+    "Im Jahr 2001",
+    "Im Jahr 1949",
+    "Im Jahr 1989",
+    3
+   ],
+   [
+    "Wie fiel die Abstimmung am 4. Oktober 2001 aus?",
+    "Einstimmig",
+    "Mit knapper Mehrheit",
+    "Mit Gegenstimmen",
+    4
+   ]
+  ],
+  "id": "nato5",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Vor 20 Jahren: NATO beschließt Bündnisfall",
+    "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/342066/vor-20-jahren-nato-beschliesst-buendnisfall/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306906,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Schengen: Wie fielen die Grenzkontrollen in Europa?",
+  "s": "Schengen",
+  "k": "Politik",
+  "cards": [
+   [
+    "🚧",
+    "Am 14. Juni 1985 unterzeichneten fünf Staaten in einem Ort in Luxemburg ein Abkommen. Es veränderte das Reisen in Europa. Der Ort liegt im Großherzogtum. Wie heißt der Ort?"
+   ],
+   [
+    "🖊️",
+    "Schengen. Unterzeichner waren Belgien, Frankreich, die Niederlande, die Bundesrepublik Deutschland und Luxemburg. Ihr Ziel war es, die Grenzkontrollen zwischen ihnen Schritt für Schritt abzuschaffen. Was sollte dadurch leichter werden?"
+   ],
+   [
+    "🚗",
+    "Der freie Verkehr von Menschen, und auch der Handel sollte profitieren. Das Abkommen sollte die europäische Integration stärken. Bei welchen zwei Themen sollten die Staaten außerdem enger zusammenarbeiten?"
+   ],
+   [
+    "🤝",
+    "Bei Sicherheit und Asyl. Offene Grenzen sind also nur ein Teil des Abkommens. Heute legt der Schengener Grenzkodex die Einzelheiten fest, und er gilt verbindlich in der EU. Wie viele Staaten gehören heute zum Schengenraum?"
+   ],
+   [
+    "✅",
+    "Nach Angaben der Bundesregierung sind es 29 Mitgliedstaaten. Aus dem Abkommen von fünf Staaten im Jahr 1985 wurde ein gemeinsamer Raum mit gemeinsamen Regeln, der Reisen und Handel erleichtern soll."
+   ]
+  ],
+  "quiz": [
+   [
+    "In welchem Land liegt der Ort Schengen?",
+    "Luxemburg",
+    "Belgien",
+    "Frankreich",
+    1
+   ],
+   [
+    "Was wollte das Abkommen Schritt für Schritt abschaffen?",
+    "Grenzkontrollen",
+    "Fremdsprachen",
+    "Reisepässe",
+    2
+   ],
+   [
+    "Bei welchen Themen sollte enger zusammengearbeitet werden?",
+    "Sicherheit und Asyl",
+    "Steuern und Renten",
+    "Bildung und Sport",
+    3
+   ]
+  ],
+  "id": "schengen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesregierung",
+    "title": "40 Jahre Schengener Übereinkommen",
+    "url": "https://www.bundesregierung.de/breg-de/aktuelles/40-jahre-schengen-2353762"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306907,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Chamonix 1924: Wie begannen die Olympischen Winterspiele?",
+  "s": "Winter 1924",
+  "k": "Sport",
+  "cards": [
+   [
+    "⛷️",
+    "Vom 24. Januar bis 5. Februar 1924 trafen sich Sportler im französischen Chamonix zu einem Wintersport-Ereignis. Heute zählt es als die ersten Olympischen Winterspiele. Wie hieß es damals zunächst?"
+   ],
+   [
+    "📛",
+    "Internationale Wintersportwoche. Den Titel Olympische Spiele erhielt sie erst ein Jahr später, bei einem Treffen in Prag. Das Ereignis wurde also nachträglich so benannt. Wie viele Nationen nahmen teil?"
+   ],
+   [
+    "🌍",
+    "16 Nationen schickten Sportler, darunter 245 Männer und eine kleine Zahl Frauen. Ein Land durfte nicht teilnehmen. Es liegt in Europa direkt neben dem Gastgeberland. Welches?"
+   ],
+   [
+    "🚫",
+    "Deutschland. Der Ausschluss wird mit der französischen Besetzung des Bergischen Landes und mit unbezahlten Reparationen in Verbindung gebracht. Wie viele Frauen waren unter den 258 Teilnehmenden?"
+   ],
+   [
+    "✅",
+    "13 Frauen und 245 Männer, zusammen 258 Sportler aus 16 Nationen. Das Ereignis in Chamonix im Jahr 1924 gilt heute offiziell als Beginn der Olympischen Winterspiele."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wo fanden die Spiele 1924 statt?",
+    "In Chamonix",
+    "In Oslo",
+    "In Garmisch",
+    1
+   ],
+   [
+    "Wie viele Nationen nahmen teil?",
+    "16",
+    "8",
+    "32",
+    2
+   ],
+   [
+    "Welches Land durfte nicht teilnehmen?",
+    "Deutschland",
+    "Frankreich",
+    "Österreich",
+    4
+   ]
+  ],
+  "id": "winter1924",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bergische Universität Wuppertal",
+    "title": "Erste Olympische Winterspiele in Chamonix",
+    "url": "https://uni-wuppertal.de/en/transfer/science-communication/jahr100wissen-/-100-years-ago/2024/erste-olympische-winterspiele"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306907,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Fußball-WM 1930: Wie lief das erste Finale ab?",
+  "s": "WM 1930",
+  "k": "Sport",
+  "cards": [
+   [
+    "⚽",
+    "1930 fand die erste Fußball-Weltmeisterschaft statt, in Südamerika. Das Finale wurde im neuen Stadion Centenario in der Hauptstadt Montevideo ausgetragen, dem Austragungsort vieler Spiele. Welches Land war Gastgeber?"
+   ],
+   [
+    "🏟️",
+    "Uruguay. Das Stadion war zu Beginn wegen schweren Regens nicht fertig, deshalb wurde das erste Spiel Uruguays verschoben. Ab dem sechsten Spieltag wurde es genutzt. Wer stand im Finale gegen Uruguay?"
+   ],
+   [
+    "🇦🇷",
+    "Argentinien. Rund 30.000 argentinische Fans reisten über den Río de la Plata an. Im Finale gab es etwas Ungewöhnliches: Es wurden zwei Bälle verwendet. Wessen Ball wurde in der ersten Halbzeit gespielt?"
+   ],
+   [
+    "🥅",
+    "Der Ball Argentiniens. In der zweiten Halbzeit wurde der Ball Uruguays gespielt. Zur Pause führte Argentinien mit 2:1, das Finale war also noch offen. Wie ging es aus?"
+   ],
+   [
+    "✅",
+    "Uruguay gewann 4:2 und wurde erster Weltmeister. Der Gastgeber hatte alle vier Spiele des Turniers gewonnen. Im Halbfinale schlug Uruguay Jugoslawien mit 6:1, Argentinien besiegte die USA mit 6:1."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer gewann das Finale 1930?",
+    "Uruguay",
+    "Argentinien",
+    "Jugoslawien",
+    5
+   ],
+   [
+    "Wie lautete das Endergebnis?",
+    "4:2",
+    "2:1",
+    "6:1",
+    4
+   ],
+   [
+    "Wie viele Bälle wurden im Finale benutzt?",
+    "Zwei",
+    "Einen",
+    "Drei",
+    3
+   ]
+  ],
+  "id": "wm1930",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "FIFA",
+    "title": "Zahlen und Fakten zu Uruguay 1930",
+    "url": "https://inside.fifa.com/de/tournaments/mens/worldcup/1930uruguay/news/zahlen-und-fakten-zu-uruguay-1930-2865148"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306907,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie wechselt das Chamäleon seine Farbe?",
+  "s": "Chamäleon",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🦎",
+    "Das Pantherchamäleon aus Madagaskar kann seine Farbe ändern. Lange hieß es, es passe sich jedem Untergrund an, doch das stimmt nicht. Was in seiner Haut sorgt für die Farben?"
+   ],
+   [
+    "💎",
+    "Winzige Kristalle aus Guanin in Hautzellen, den Iridophoren. Sie bilden ein Gitter, das nur bestimmtes Licht zurückwirft. In Ruhe liegen sie dichter beisammen. Was passiert bei Erregung mit dem Abstand?"
+   ],
+   [
+    "↔️",
+    "Er wird um etwa 30 Prozent größer, dann wird Gelb oder Rot zurückgeworfen. Wie das Tier das Gitter verändert, ist noch offen, vielleicht ziehen sich Zellen zusammen. Es gibt noch eine tiefere Schicht. Was leistet sie?"
+   ],
+   [
+    "☀️",
+    "Sie hat größere Kristalle und wirft einen großen Teil des Sonnenlichts zurück, vor allem nahes Infrarot. Die obere Schicht zeigt die sichtbare Farbe. Welche Farbe hat das Tier in Ruhe meist?"
+   ],
+   [
+    "✅",
+    "Grün, und so ist es zwischen Blättern gut getarnt. Der Farbwechsel entsteht durch ein Kristallgitter, dessen Abstand das Tier verändert. Es passt sich nicht jedem Untergrund an."
+   ]
+  ],
+  "quiz": [
+   [
+    "Woraus bestehen die Kristalle in der Haut?",
+    "Aus Guanin",
+    "Aus Kalk",
+    "Aus Eisen",
+    2
+   ],
+   [
+    "Wie ändert sich der Abstand bei Erregung?",
+    "Er wird größer",
+    "Er wird kleiner",
+    "Er bleibt gleich",
+    3
+   ],
+   [
+    "Welche Farbe hat das Tier in Ruhe meist?",
+    "Grün",
+    "Rot",
+    "Blau",
+    5
+   ]
+  ],
+  "id": "chamaeleon",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "CORDIS (Europäische Kommission)",
+    "title": "Forscher enthüllen, wie das Chamäleon seine Farbe wechselt",
+    "url": "https://cordis.europa.eu/article/id/116503-trending-science-researchers-reveal-how-the-chameleon-changes-colour/de"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306907,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Prokrastination: Wann ist Aufschieben ein Problem?",
+  "s": "Aufschieben",
+  "k": "Psyche",
+  "cards": [
+   [
+    "⏳",
+    "Jeder schiebt mal etwas auf. Bei manchen wird daraus krankhaftes Aufschieben, das Fachleute Prokrastination nennen. Je nach Studie sind etwa 7 bis 14 Prozent der Menschen betroffen. Ist sie eine eigene anerkannte Diagnose?"
+   ],
+   [
+    "📋",
+    "Nein, in den gängigen Diagnosesystemen taucht sie nicht auf. Trotzdem kann sie das Leben in Schule, Studium, Beruf und Alltag stark stören. Wann braucht Aufschieben eine Behandlung?"
+   ],
+   [
+    "⚖️",
+    "Wenn es zu Leiden oder Einschränkungen führt, etwa im Studium oder im Job. Eine feste Grenze dafür gibt es nicht. Welche Gründe stecken oft dahinter?"
+   ],
+   [
+    "🧩",
+    "Aufgaben nicht realistisch planen zu können, Perfektionismus, Angst zu scheitern, schwache Konzentration, fehlende Fristen oder Ablenkung durch Lärm und Smartphone. Auch Depression oder ADHS können dahinterstehen. Welche Folgen kann es haben?"
+   ],
+   [
+    "✅",
+    "Verpasste Ziele wie schlechte Noten oder Studienabbruch, aber auch Magen-Darm-Probleme, Kopfschmerzen, gedrückte Stimmung und Ängste. Hilfreich sind feste Abläufe, realistische Ziele und Belohnungen. Bei starken Beschwerden hilft professionelle Hilfe."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Menschen sind etwa betroffen?",
+    "Etwa 7 bis 14 Prozent",
+    "Etwa 50 Prozent",
+    "Etwa 1 Prozent",
+    1
+   ],
+   [
+    "Ist Prokrastination eine eigene Diagnose?",
+    "Nein, keine eigene",
+    "Ja, eine eigene",
+    "Ja, aber nur beruflich",
+    2
+   ],
+   [
+    "Was kann zu den Folgen gehören?",
+    "Kopfschmerzen",
+    "Sonnenbrand",
+    "Knochenbruch",
+    5
+   ]
+  ],
+  "id": "aufschieben",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Universität Münster, Prokrastinationsambulanz",
+    "title": "Prokrastination",
+    "url": "https://www.uni-muenster.de/Prokrastinationsambulanz/prokrastination.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306907,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Axolotl: Wie wachsen ihm Beine nach?",
+  "s": "Axolotl",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🦎",
+    "Der Axolotl lebt ursprünglich im Xochimilco-See in Mexiko. Forschende interessieren sich sehr für ihn, weil er etwas kann, das Menschen nicht können. Was wächst bei ihm nach, wenn es abgetrennt wird?"
+   ],
+   [
+    "🦵",
+    "Ganze Beine. Auch ein beschädigtes Rückenmark kann er reparieren, und Teile von Herz und Gehirn wachsen bei ihm nach. Womit beginnt das Nachwachsen eines abgetrennten Beins?"
+   ],
+   [
+    "🌱",
+    "Mit einer Art Gewebeknospe, aus der das neue Bein herauswächst. Dahinter steckt das Zusammenspiel vieler Faktoren, nicht ein einzelnes Gen. Wie lange dauert es, bis das Bein wieder voll ausgebildet ist?"
+   ],
+   [
+    "📆",
+    "Wochen bis Monate, je nach Alter des Tieres. Auffällig ist auch die Heilung seiner Wunden, die fast spurlos verschwinden. Was bleibt nach dem Verheilen fast nicht zurück?"
+   ],
+   [
+    "✅",
+    "Eine Narbe. Der Axolotl kann Gliedmaßen, Rückenmark und Teile von Herz und Gehirn ersetzen, und das fast ohne Narben. In der Natur hat der Mensch den Axolotl fast ausgerottet."
+   ]
+  ],
+  "quiz": [
+   [
+    "Womit beginnt das Nachwachsen eines Beins?",
+    "Mit einer Gewebeknospe",
+    "Mit einem Knochen",
+    "Mit einer Narbe",
+    3
+   ],
+   [
+    "Wie lange dauert das Nachwachsen?",
+    "Wochen bis Monate",
+    "Wenige Stunden",
+    "Mehrere Jahre",
+    4
+   ],
+   [
+    "Was bleibt bei Wunden fast nicht zurück?",
+    "Eine Narbe",
+    "Ein Muskel",
+    "Eine Haut",
+    5
+   ]
+  ],
+  "id": "axolotl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Apotheken Umschau",
+    "title": "Forschung mit Axolotln: Warum wachsen ihre Gliedmaßen nach?",
+    "url": "https://www.apotheken-umschau.de/medikamente/axolotl-wachsen-gliedmassen-nach-regeneration-wie-machen-tiere-das-1069731.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306907,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie überleben Kolibris die Nacht?",
+  "s": "Kolibri",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐦",
+    "Kolibris brauchen sehr viel Energie. Beim Schwebeflug schlägt ihr Herz bis zu 1.000 Mal pro Minute. Nachts sparen sie Energie in einem besonderen Zustand. Wie heißt er?"
+   ],
+   [
+    "😴",
+    "Torpor. Dabei fährt der Körper verschiedene Prozesse herunter und lässt die Körpertemperatur sinken. Auf wie viele Schläge pro Minute fällt der Herzschlag im tiefen Torpor ungefähr?"
+   ],
+   [
+    "💓",
+    "Auf etwa 50. Es gibt auch einen leichten Torpor, bei dem die Körpertemperatur um etwa 3 Grad Celsius fällt und die Vögel schneller aufwachen. Was ist ein Nachteil des tiefen Torpors?"
+   ],
+   [
+    "⚠️",
+    "Die Vögel sind im tiefen Torpor Fressfeinden stärker ausgesetzt. Auch zu wenig Schlaf kann das Immunsystem schwächen. Welche Kolibris gehen deshalb nur selten in Torpor?"
+   ],
+   [
+    "✅",
+    "Brütende Weibchen, denn sie müssen die Eier warm halten und auf Feinde achten. Sonst wechseln Kolibris je nach Energiebedarf zwischen leichtem und tiefem Torpor, um Energie zu sparen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt der Energiesparzustand?",
+    "Torpor",
+    "Mauser",
+    "Balz",
+    1
+   ],
+   [
+    "Auf wie viele Schläge sinkt der Herzschlag etwa?",
+    "Auf etwa 50",
+    "Auf etwa 500",
+    "Auf etwa 5",
+    2
+   ],
+   [
+    "Welche Kolibris gehen selten in Torpor?",
+    "Brütende Weibchen",
+    "Junge Männchen",
+    "Alle Jungtiere",
+    5
+   ]
+  ],
+  "id": "kolibri",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "CORDIS (Europäische Kommission)",
+    "title": "Schlafen Kolibris überhaupt?",
+    "url": "https://cordis.europa.eu/article/id/464151-do-hummingbirds-ever-sleep/de"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792301306907,
+  "review": {
+   "date": "2026-10-18",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
