@@ -8795,5 +8795,613 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Freies Mandat: Wem sind Abgeordnete verpflichtet?",
+  "s": "Freies Mandat",
+  "k": "Politik",
+  "cards": [
+   [
+    "🏛️",
+    "Im Bundestag sitzen Abgeordnete verschiedener Parteien. Laut Grundgesetz sind sie Vertreter des ganzen Volkes und weder an Aufträge noch an Weisungen gebunden. Wem sind sie dann verpflichtet?"
+   ],
+   [
+    "⚖️",
+    "Nur ihrem Gewissen. Dieses Prinzip heißt freies Mandat. Wie nennt man den unzulässigen Druck, durch den Abgeordnete zu einer bestimmten Stimmabgabe genötigt werden, etwa durch Drohungen?"
+   ],
+   [
+    "🚫",
+    "Fraktionszwang. Er liegt vor, wenn Abgeordnete etwa durch Drohungen oder das Ausnutzen von Abhängigkeiten genötigt werden. Er ist mit dem freien Mandat unvereinbar. Wie heißt das erlaubte geschlossene Auftreten?"
+   ],
+   [
+    "🤝",
+    "Fraktionsdisziplin. Sie gilt als zulässig, weil geschlossenes Auftreten nötig ist, und sie verletzt das freie Mandat nicht. Welche Maßnahme einer Fraktion gegen ein Mitglied ist bei wichtigem Grund grundsätzlich zulässig?"
+   ],
+   [
+    "✅",
+    "Der Ausschluss aus der Fraktion. Er ist grundsätzlich zulässig, wenn ein wichtiger Grund vorliegt. Der betroffene Abgeordnete kann sich im Organstreitverfahren vor dem Bundesverfassungsgericht dagegen wehren."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wem sind Abgeordnete laut Grundgesetz verpflichtet?",
+    "Nur ihrem Gewissen",
+    "Nur ihrer Partei",
+    "Nur ihren Wählern",
+    2
+   ],
+   [
+    "Welche Praxis gilt als zulässig?",
+    "Die Fraktionsdisziplin",
+    "Der Fraktionszwang",
+    "Der Weisungszwang",
+    4
+   ],
+   [
+    "Wer entscheidet über den Fraktionsausschluss?",
+    "Die Fraktionsversammlung",
+    "Der Bundespräsident",
+    "Der Bundesrat",
+    5
+   ]
+  ],
+  "id": "freimandat",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Wissenschaftliche Dienste des Deutschen Bundestages",
+    "title": "Das freie Mandat der Abgeordneten und Fraktionszwang (WD 3 - 3000 - 011/10)",
+    "url": "https://www.bundestag.de/resource/blob/412668/c26583ab8b66511d9a16b3d6743a5430/WD-3-011-10-pdf-data.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Maastricht-Kriterien: Wie viel Schulden darf ein Staat machen?",
+  "s": "Maastricht",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "📉",
+    "In der EU gelten für die Staatsfinanzen zwei bekannte Grenzwerte. Sie regeln, wie hoch die Neuverschuldung und der Schuldenstand eines Staates höchstens sein dürfen. Wie heißen diese Grenzwerte?"
+   ],
+   [
+    "🇪🇺",
+    "Die Maastricht-Kriterien. Das erste Kriterium erlaubt eine staatliche Neuverschuldung von maximal einem bestimmten Prozentsatz pro Jahr. Wie hoch ist dieser Höchstwert, den ein Staat nicht überschreiten soll?"
+   ],
+   [
+    "3️⃣",
+    "Drei Prozent pro Jahr. Das zweite Kriterium betrifft nicht ein einzelnes Jahr, sondern den gesamten Schuldenstand eines Staates. Man nennt ihn die Schuldenstandquote. Wie hoch darf sie höchstens sein?"
+   ],
+   [
+    "📊",
+    "Sechzig Prozent. Die Mitgliedstaaten der EU müssen Daten zu Defizit und Schuldenstand regelmäßig an die EU-Kommission übermitteln. Wie oft im Jahr sind sie dazu verpflichtet?"
+   ],
+   [
+    "✅",
+    "Zweimal im Jahr. Die Mitgliedstaaten melden ihre Daten zu Defizit und Schuldenstand der Kommission. Als Grenzen gelten drei Prozent Neuverschuldung pro Jahr und sechzig Prozent Schuldenstandquote."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie hoch darf die jährliche Neuverschuldung höchstens sein?",
+    "Drei Prozent",
+    "Zehn Prozent",
+    "Sechzig Prozent",
+    3
+   ],
+   [
+    "Wie hoch darf die Schuldenstandquote höchstens sein?",
+    "Sechzig Prozent",
+    "Dreißig Prozent",
+    "Hundert Prozent",
+    4
+   ],
+   [
+    "Wie oft müssen Staaten ihre Daten melden?",
+    "Zweimal im Jahr",
+    "Einmal im Jahrzehnt",
+    "Einmal im Monat",
+    5
+   ]
+  ],
+  "id": "maastricht",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "bpb",
+    "title": "Staatliches Haushaltsdefizit, Wirtschaftswachstum und Staatsverschuldung",
+    "url": "https://www.bpb.de/themen/wirtschaft/schuldenkrise/241602/staatliches-haushaltsdefizit-wirtschaftswachstum-und-staatsverschuldung"
+   },
+   {
+    "publisher": "Deutsche Bundesbank",
+    "title": "Maastricht-Defizit und -Schuldenstand",
+    "url": "https://www.bundesbank.de/de/statistiken/oeffentliche-finanzen/maastricht-defizit-und-schuldenstand"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Olympische Ringe: Wer erfand sie und was bedeuten sie?",
+  "s": "Olympia-Ringe",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏅",
+    "Die fünf Ringe sind ein Zeichen der Olympischen Spiele. Sie wurden 1913 erstmals öffentlich gezeigt. Wer schuf das Design, auf dem die heutigen Ringe basieren?"
+   ],
+   [
+    "🎨",
+    "Pierre de Coubertin. Er schuf das Design, auf dem die heutigen Ringe basieren. Bei Spielen tauchten die Ringe aber erst später auf. Bei welchen Spielen erschienen sie zum ersten Mal?"
+   ],
+   [
+    "🏳️",
+    "Bei den Spielen von Antwerpen 1920 erschienen sie erstmals, und zwar auf dem weißen Hintergrund der Olympischen Flagge, die schon 1914 geschaffen wurde. Wofür stehen die fünf Ringe?"
+   ],
+   [
+    "🌍",
+    "Für die fünf Erdteile, die für den Olympismus gewonnen sind. Die Ringe sind blau, gelb, schwarz, grün und rot. Mit dem weißen Hintergrund ergibt das wie viele olympische Farben?"
+   ],
+   [
+    "✅",
+    "Sechs Farben. Nach Coubertins Auffassung spiegeln sie die Farben aller Nationen ohne Ausnahme wider. Das Zeichen wurde 1913 erstmals gezeigt und 1920 erstmals bei Spielen verwendet."
+   ]
+  ],
+  "quiz": [
+   [
+    "Bei welchen Spielen erschienen die Ringe erstmals?",
+    "Antwerpen 1920",
+    "Athen 1896",
+    "Paris 1900",
+    3
+   ],
+   [
+    "Wofür stehen die fünf Ringe?",
+    "Für fünf Erdteile",
+    "Für fünf Sportarten",
+    "Für fünf Gründer",
+    4
+   ],
+   [
+    "Wie viele olympische Farben gibt es?",
+    "Sechs",
+    "Vier",
+    "Sieben",
+    5
+   ]
+  ],
+  "id": "olyringe",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "IOC",
+    "title": "Olympic rings: Symbol of the Olympic Movement",
+    "url": "https://olympics.com/ioc/olympic-rings"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Ankerwert: Wie beeinflusst ein Startwert deine Schätzung?",
+  "s": "Ankerwert",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🎯",
+    "1974 beschrieben Forscher in einem Aufsatz drei Denkabkürzungen, die Menschen beim Urteilen unter Unsicherheit nutzen. Eine davon hat mit einem Startwert zu tun. Wie viele Denkabkürzungen waren es insgesamt?"
+   ],
+   [
+    "🧠",
+    "Drei: Repräsentativität, Verfügbarkeit und Anpassung von einem Ankerwert. Sie sind sparsam und meist wirksam. Wie nennen die Autoren die Fehler, zu denen sie führen können?"
+   ],
+   [
+    "📐",
+    "Systematisch und vorhersagbar. Sie treten also nicht zufällig auf, sondern in erkennbaren Mustern. Bei welcher Art von Aufgabe kommt die Anpassung von einem Ankerwert zum Einsatz?"
+   ],
+   [
+    "🔢",
+    "Bei numerischen Vorhersagen, wenn ein relevanter Wert vorliegt. Von diesem Startwert aus wird die Schätzung angepasst. Was kann ein besseres Verständnis dieser Denkabkürzungen laut den Autoren bewirken?"
+   ],
+   [
+    "✅",
+    "Bessere Urteile und Entscheidungen unter Unsicherheit. Der Aufsatz erschien 1974 in der Fachzeitschrift Science. Laut den Autoren könnte das Wissen über Startwerte und andere Denkabkürzungen Urteile verbessern."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Denkabkürzungen beschreibt der Aufsatz?",
+    "Drei",
+    "Zwei",
+    "Zwölf",
+    1
+   ],
+   [
+    "Wie nennen die Autoren die Fehler daraus?",
+    "Systematisch und vorhersagbar",
+    "Selten und zufällig",
+    "Harmlos und einmalig",
+    3
+   ],
+   [
+    "Wo erschien der Aufsatz 1974?",
+    "In der Zeitschrift Science",
+    "In einer Tageszeitung",
+    "In einem Roman",
+    5
+   ]
+  ],
+  "id": "anker",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Science (PubMed)",
+    "title": "Tversky A, Kahneman D: Judgment under Uncertainty: Heuristics and Biases (1974)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17835457/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie kommen junge Aale ins Mittelmeer?",
+  "s": "Aal",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐟",
+    "Der Europäische Aal ist stark gefährdet. Seine Larven wandern von der Sargassosee nach Europa und sind dabei nur wenige Zentimeter groß. Eine Studie hat ihren Weg ins Mittelmeer untersucht. Wie heißt dieses Larvenstadium?"
+   ],
+   [
+    "🌊",
+    "Weidenblattlarven. Auf dem Weg vom Atlantik ins Mittelmeer müssen sie die Straße von Gibraltar passieren, eine Meerenge zwischen den beiden Meeren. Wie breit ist diese Meerenge nur etwa?"
+   ],
+   [
+    "📏",
+    "Etwa 13 Kilometer. Die Larven nutzen diese Meerenge nur zu bestimmten Zeiten, um hindurchzukommen. Zu welcher Tageszeit steigen die Larven in die oberen Wasserschichten auf, wo sie Strömungen nutzen?"
+   ],
+   [
+    "🌙",
+    "Nachts. Dort nutzen sie starke, ostwärts gerichtete Strömungen bei Flut, die sie durch die Meerenge tragen. Forschende sprechen von einer perfekten Welle. Wo halten sich die Larven tagsüber auf?"
+   ],
+   [
+    "✅",
+    "In tieferen Schichten. Dort fließt Tiefenwasser aus dem Mittelmeer westwärts, deshalb können die Larven die Meerenge tagsüber nicht durchqueren. Timing und Dynamik der Strömungen sind für die Wanderung entscheidend."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt das Larvenstadium des Aals?",
+    "Weidenblattlarve",
+    "Kaulquappenlarve",
+    "Raupenlarve",
+    2
+   ],
+   [
+    "Wie breit ist die Straße von Gibraltar etwa?",
+    "Etwa 13 Kilometer",
+    "Etwa 130 Kilometer",
+    "Etwa 1,3 Kilometer",
+    3
+   ],
+   [
+    "Wann ziehen die Larven durch die Meerenge?",
+    "Nachts bei Flut",
+    "Mittags bei Ebbe",
+    "Tagsüber in der Tiefe",
+    4
+   ]
+  ],
+  "id": "aal",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Thünen-Institut",
+    "title": "Pressemitteilung: Aal-Larven in der Straße von Gibraltar (10.01.2025)",
+    "url": "https://thuenen.de/media/ti/Newsroom/Presse/Pressemitteilungen/2024/2025-01-10_Aal_Larven/250110_PM_Aal_Larven_01.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Mykorrhiza: Was tauschen Pilze und Pflanzen aus?",
+  "s": "Mykorrhiza",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🍄",
+    "Im Waldboden leben Pflanzen und Pilze in einer engen Gemeinschaft, die Mykorrhiza heißt. Beide Partner tauschen dabei Stoffe aus, und beide haben davon einen Vorteil. Was gibt die Pflanze dem Pilz?"
+   ],
+   [
+    "🌱",
+    "Zucker aus der Photosynthese. Der Pilz liefert dafür im Gegenzug einiges zurück, und zwar aus einem größeren Bodenvolumen, als die Wurzeln der Pflanze allein erreichen. Was bekommt die Pflanze vom Pilz?"
+   ],
+   [
+    "💧",
+    "Phosphat, Stickstoff und Wasser. Außerdem schützt der Pilz vor Schadstoffen und Krankheitserregern. Etwa 80 Prozent der Pflanzenarten bilden die arbuskuläre Form. Wie viel Prozent der Baumstämme weltweit gehören zu Ektomykorrhiza-Bäumen?"
+   ],
+   [
+    "🌳",
+    "Rund 60 Prozent, außerhalb der Tropen sogar 80 Prozent. Es gibt mindestens 8000 Arten dieser Pilze. Wie viele Arten von Mykorrhizapilzen finden sich meist an den Wurzeln eines einfachen Bestands?"
+   ],
+   [
+    "✅",
+    "Meist 40 bis 60 Arten. Ein einzelner Baum kann sogar mit bis zu 100 Arten in Symbiose leben. Der Austausch läuft in beide Richtungen: Zucker für den Pilz, Nährstoffe und Wasser für die Pflanze."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was gibt die Pflanze dem Pilz?",
+    "Zucker aus der Photosynthese",
+    "Phosphat aus dem Boden",
+    "Wasser aus der Tiefe",
+    2
+   ],
+   [
+    "Wie viel Prozent der Baumstämme weltweit sind Ektomykorrhiza-Bäume?",
+    "Rund 60 Prozent",
+    "Rund 6 Prozent",
+    "Rund 100 Prozent",
+    4
+   ],
+   [
+    "Wie viele Pilzarten leben an einem einfachen Bestand?",
+    "Meist 40 bis 60",
+    "Meist 4 bis 6",
+    "Meist 400 bis 600",
+    5
+   ]
+  ],
+  "id": "mykorrhiza",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "WSL / waldwissen.net",
+    "title": "Mykorrhizapilze: die geheimen Helfer im Wald",
+    "url": "https://www.waldwissen.net/de/lebensraum-wald/pilze-und-flechten/mykorrhizapilze-die-geheimen-helfer-im-wald"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Geldschöpfung: Wie entsteht Buchgeld?",
+  "s": "Geldschöpfung",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💶",
+    "Auf deinem Konto steht Buchgeld, auch Giralgeld genannt. Bargeld ist kein Buchgeld, denn wer Bargeld einzahlt, wandelt es in Buchgeld um. Wer schafft dieses Buchgeld eigentlich?"
+   ],
+   [
+    "🏦",
+    "Die Geschäftsbanken. Vergibt eine Bank einen Kredit, schreibt sie den Betrag dem Kreditnehmer gut, und die Geldmenge steigt. Muss ein Kredit zwingend aus vorhandenen Einlagen stammen?"
+   ],
+   [
+    "🔄",
+    "Nein, nicht zwingend. Die Bank schreibt den Betrag einfach gut. Die Zentralbank schafft dagegen das Zentralbankgeld, also etwas anderes als das Buchgeld der Geschäftsbanken. Woraus besteht Zentralbankgeld?"
+   ],
+   [
+    "📋",
+    "Aus Bargeld und den Einlagen der Geschäftsbanken bei der Zentralbank. Banken müssen zudem eine Mindestreserve halten. Was passiert mit dem durch Kredite geschaffenen Buchgeld, wenn die Kredite getilgt werden?"
+   ],
+   [
+    "✅",
+    "Es verschwindet wieder. Die Mindestreservepflicht und die Offenmarktgeschäfte sind Instrumente, mit denen das Eurosystem für Preisstabilität sorgen kann. Banken müssen die Mindestreserve im Durchschnitt über eine Periode halten."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer schafft Buchgeld?",
+    "Die Geschäftsbanken",
+    "Die Steuerzahler",
+    "Die Sparer",
+    2
+   ],
+   [
+    "Woraus besteht Zentralbankgeld?",
+    "Bargeld und Bankeinlagen",
+    "Nur aus Goldbarren",
+    "Aus Sparbüchern",
+    4
+   ],
+   [
+    "Was passiert mit Buchgeld aus getilgten Krediten?",
+    "Das Buchgeld verschwindet",
+    "Das Buchgeld verdoppelt sich",
+    "Das Buchgeld wird Bargeld",
+    5
+   ]
+  ],
+  "id": "geldschoepf",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsche Bundesbank",
+    "title": "Häufig gestellte Fragen zur Geldschöpfung",
+    "url": "https://www.bundesbank.de/resource/blob/614528/b73ec3b7972916b306335a94bdb5bff5/mL/haeufig-gestellte-fragen-geldschoepfung-data.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Ozonschicht: Wie wurde das Ozonloch bekämpft?",
+  "s": "Ozonschicht",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌍",
+    "Am 16. September 1987 unterzeichneten 24 Staaten und die Europäische Gemeinschaft ein Abkommen zum Schutz der Ozonschicht der Erde. Es leitete den Ausstieg aus schädlichen Stoffen ein. Wie heißt es?"
+   ],
+   [
+    "📜",
+    "Das Montrealer Protokoll. Es leitete den verpflichtenden Ausstieg aus einer Stoffgruppe ein, die die Ozonschicht zerstört und auch das Klima aufheizt. Wie lautet das Kürzel dieser Stoffe?"
+   ],
+   [
+    "🧪",
+    "FCKW. Heute werden sie weltweit kaum noch verwendet. Sie heizen das Klima bis zu 14.000 Mal stärker auf als CO2. Was hat das Protokoll dadurch zusätzlich geleistet?"
+   ],
+   [
+    "🌡️",
+    "Es hat auch zum Klimaschutz beigetragen. Im Oktober 2016 wurde das Protokoll durch den Kigali-Beschluss erweitert, damit weitere klimawirksame Stoffe erfasst werden. Auf welche Stoffgruppe wurde es damals ausgeweitet?"
+   ],
+   [
+    "✅",
+    "Auf teilfluorierte Kohlenwasserstoffe, kurz HFKW. Die Konzentration der schädlichen Stoffe in der Atmosphäre sinkt dank des Abkommens langsam durch natürlichen Abbau, und das Ozonloch wird dadurch kleiner."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann wurde das Montrealer Protokoll unterzeichnet?",
+    "1987",
+    "1957",
+    "2007",
+    1
+   ],
+   [
+    "Welche Stoffe leiteten den Ausstieg ein?",
+    "FCKW",
+    "Methan",
+    "Helium",
+    2
+   ],
+   [
+    "Worauf wurde es 2016 ausgeweitet?",
+    "Auf HFKW",
+    "Auf Edelgase",
+    "Auf Kochsalz",
+    5
+   ]
+  ],
+  "id": "ozon",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "30 Jahre Montrealer Protokoll: Schutz von Ozonschicht und Klima",
+    "url": "https://www.umweltbundesamt.de/themen/30-jahre-montrealer-protokoll-schutz-von"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Pfand: Was gilt seit 2024 für Milchflaschen?",
+  "s": "Pfand",
+  "k": "Alltag",
+  "cards": [
+   [
+    "♻️",
+    "Auf vielen Flaschen und Dosen liegt Pfand, das du beim Zurückbringen wiederbekommst. Was müssen Hersteller von ihren Abnehmern mindestens pro Verpackung verlangen, einschließlich der Umsatzsteuer?"
+   ],
+   [
+    "🥛",
+    "Mindestens 0,25 Euro. Seit dem 1. Januar 2024 gilt die Pfandpflicht auch für eine weitere Gruppe von Produkten in Einwegflaschen aus Kunststoff, die vorher ausgenommen war. Für welche Produkte?"
+   ],
+   [
+    "🍼",
+    "Für Milcherzeugnisse wie Milch, Joghurt oder Kefir in Einwegflaschen aus Kunststoff mit 0,1 bis 3 Litern Füllvolumen. Auch Milchmischgetränke sind betroffen. Ab welchem Milchanteil zählen sie dazu?"
+   ],
+   [
+    "📦",
+    "Ab 50 Prozent Milchanteil. Auch für Händler und andere Vertreiber ergeben sich dadurch neue Pflichten. Was müssen sie mit den zurückgebrachten Verpackungen tun, und was erstatten sie dir?"
+   ],
+   [
+    "✅",
+    "Sie müssen die Verpackungen unentgeltlich zurücknehmen und das Pfand erstatten. Verstöße gegen die Pflichten können als Ordnungswidrigkeit mit einem Bußgeld geahndet werden. Seit 2024 gilt das auch für diese Milchprodukte."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie hoch ist das Pfand mindestens?",
+    "0,25 Euro",
+    "0,05 Euro",
+    "2,50 Euro",
+    2
+   ],
+   [
+    "Ab wann gilt die Pfandpflicht für Milchflaschen?",
+    "Ab dem 1. Januar 2024",
+    "Ab dem 1. Januar 1924",
+    "Ab dem 1. Mai 2030",
+    3
+   ],
+   [
+    "Was müssen Vertreiber tun?",
+    "Zurücknehmen und Pfand erstatten",
+    "Nur das Pfand behalten",
+    "Die Flasche entsorgen",
+    5
+   ]
+  ],
+  "id": "pfandmilch",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Umweltbundesamt",
+    "title": "Ausweitung der Pfandpflicht ab dem 1. Januar 2024",
+    "url": "https://www.umweltbundesamt.de/themen/ausweitung-der-pfandpflicht-ab-dem-1-januar-2024-0"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792387866229,
+  "review": {
+   "date": "2026-10-19",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
