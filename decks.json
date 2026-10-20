@@ -9403,5 +9403,561 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Europawahl 2024: Ab welchem Alter durftest du in Deutschland wählen?",
+  "s": "Wahlalter 16",
+  "k": "Politik",
+  "cards": [
+   [
+    "🗳️",
+    "Im Juni 2024 wurde das Europäische Parlament neu gewählt, auch in Deutschland. Eine Regel war dabei erstmals anders als bei früheren Europawahlen. Ab welchem Alter durfte man in Deutschland mitwählen?"
+   ],
+   [
+    "🔞",
+    "Ab 16 Jahren. Der Bundestag hatte das aktive Wahlalter bei der Europawahl von 18 auf 16 Jahre herabgesetzt. Wie viele Stimmen hatte dabei jede wahlberechtigte Person?"
+   ],
+   [
+    "☝️",
+    "Nur eine einzige Stimme. Es gab bei der Europawahl keine zweite Stimme. Wie viele der insgesamt 720 Mandate im Europäischen Parlament entfielen auf Abgeordnete aus Deutschland?"
+   ],
+   [
+    "🇪🇺",
+    "96 Mandate, wie schon 2019. Gewählt wurde am Sonntag, dem 9. Juni 2024. Wer durfte in Deutschland außer deutschen Staatsangehörigen ebenfalls wählen, wenn er hier wohnte?"
+   ],
+   [
+    "✅",
+    "Bürgerinnen und Bürger anderer EU-Staaten, wenn sie im Wählerverzeichnis eingetragen waren. Staatsangehörige von Nicht-EU-Staaten durften nicht wählen. Zum ersten Mal reichte bei der Europawahl in Deutschland für alle ein Alter von 16 Jahren."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Stimmen hat man bei der Europawahl?",
+    "Eine Stimme",
+    "Zwei Stimmen",
+    "Drei Stimmen",
+    3
+   ],
+   [
+    "Wie viele Mandate entfielen auf Deutschland?",
+    "96 Mandate",
+    "72 Mandate",
+    "120 Mandate",
+    4
+   ],
+   [
+    "Welches Wahlalter galt erstmals?",
+    "16 Jahre",
+    "18 Jahre",
+    "21 Jahre",
+    2
+   ]
+  ],
+  "id": "wahl16",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeswahlleiterin",
+    "title": "Europawahl 2024: Informationen für Wählerinnen und Wähler",
+    "url": "https://bundeswahlleiterin.de/europawahlen/2024/informationen-waehler.html"
+   },
+   {
+    "publisher": "Bundesregierung",
+    "title": "Europawahl 2024: Die wichtigsten Fragen und Antworten",
+    "url": "https://www.bundesregierung.de/breg-de/schwerpunkte/europa/europawahl-so-laeuft-sie-ab-2251800"
+   },
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Europawahl: Wahlalter",
+    "url": "https://www.bundestag.de/dokumente/textarchiv/2024/kw14-europawahl-996548"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Gewaltenteilung: Warum teilt der Staat seine Macht?",
+  "s": "Gewalten",
+  "k": "Politik",
+  "cards": [
+   [
+    "⚖️",
+    "Wer Gesetze macht, sollte sie nicht auch allein ausführen und darüber urteilen. Dieses Prinzip heißt Gewaltenteilung. Was soll sie nach Angaben der Politikwissenschaft unter anderem verhindern?"
+   ],
+   [
+    "🛡️",
+    "Übermäßige Machtkonzentration und Machtmissbrauch. Die klassische Lehre dazu stammt von Locke und Montesquieu und gilt seit Ende des 17. Jahrhunderts als Kernstück der Staatslehre. In welche drei Gewalten teilt sie die Macht?"
+   ],
+   [
+    "🏛️",
+    "In Legislative, Exekutive und Judikative, also Gesetzgebung, vollziehende Gewalt und Rechtsprechung. Auch das Grundgesetz regelt diese drei Gewalten, und zwar an einer bestimmten Stelle. In welchem Artikel steht das?"
+   ],
+   [
+    "📜",
+    "In Artikel 20 Absatz 2 des Grundgesetzes. Dort steht, dass die Staatsgewalt durch besondere Organe ausgeübt wird. Es gibt noch eine zweite Teilung der Macht, nämlich zwischen Bund und Ländern. Wie nennt man sie?"
+   ],
+   [
+    "🧩",
+    "Vertikale Gewaltenteilung, sie ergibt sich aus dem Bundesstaatsprinzip. Die drei Gewalten sind in der Bundesrepublik trotzdem eng verflochten, weil Parlament und Regierung im parlamentarischen System eng zusammenhängen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was soll Gewaltenteilung verhindern?",
+    "Übermäßige Machtkonzentration",
+    "Zu viele Wahlen in einem Jahr",
+    "Steigende Steuern für alle Bürger",
+    2
+   ],
+   [
+    "Welche drei Gewalten gibt es?",
+    "Legislative, Exekutive, Judikative",
+    "Gesetzgebung, Presse und Militär",
+    "Bund, Länder und Gemeinden",
+    3
+   ],
+   [
+    "In welchem Artikel steht die Teilung der Staatsgewalt?",
+    "Artikel 20",
+    "Artikel 1",
+    "Artikel 146",
+    4
+   ]
+  ],
+  "id": "gewalten",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Gewaltenteilung (Handwörterbuch des politischen Systems)",
+    "url": "https://www.bpb.de/kurz-knapp/lexika/handwoerterbuch-politisches-system/202033/gewaltenteilung/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Arbeitslosenquote: Wer zählt eigentlich als arbeitslos?",
+  "s": "Arbeitslos",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "📊",
+    "Jeden Monat wird in Deutschland eine Arbeitslosenquote veröffentlicht. Dahinter steckt eine feste Definition. Eine Voraussetzung ist vorübergehende Beschäftigungslosigkeit. Wie viele Wochenstunden Arbeit sind dabei noch erlaubt?"
+   ],
+   [
+    "🕒",
+    "Bis unter 15 Wochenstunden, etwa in einem Minijob oder einer selbstständigen Tätigkeit. Wer ein wenig arbeitet, kann also trotzdem als arbeitslos zählen. Was muss man außerdem tun, um in der Statistik aufzutauchen?"
+   ],
+   [
+    "📝",
+    "Man muss sich arbeitslos melden, eine versicherungspflichtige Beschäftigung suchen und für die Vermittlung verfügbar sein. Auch das Alter spielt eine Rolle. Zwischen welchen Altersgrenzen zählt man als arbeitslos?"
+   ],
+   [
+    "🎂",
+    "Von 15 Jahren bis zur gesetzlichen Regelaltersgrenze. Für die Quote werden die registrierten Arbeitslosen ins Verhältnis zu den Erwerbspersonen gesetzt. Woraus setzen sich die Erwerbspersonen zusammen?"
+   ],
+   [
+    "➗",
+    "Aus Erwerbstätigen und Arbeitslosen zusammen. Die Quote misst also registrierte Arbeitslose im Verhältnis zu allen Erwerbspersonen. Die Unterbeschäftigung zählt zusätzlich Menschen in bestimmten arbeitsmarktpolitischen Maßnahmen mit."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Wochenstunden Arbeit sind noch erlaubt?",
+    "Unter 15 Stunden",
+    "Unter 40 Stunden",
+    "Genau null Stunden",
+    2
+   ],
+   [
+    "Ab welchem Alter kann man als arbeitslos zählen?",
+    "Ab 15 Jahren",
+    "Ab 18 Jahren",
+    "Ab 21 Jahren",
+    4
+   ],
+   [
+    "Woraus bestehen die Erwerbspersonen?",
+    "Erwerbstätige und Arbeitslose",
+    "Nur die Arbeitslosen",
+    "Nur Beamte und Rentner",
+    5
+   ]
+  ],
+  "id": "arbeitslos",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Statistik der Bundesagentur für Arbeit",
+    "title": "Statistik erklärt: Arbeitsuche, Arbeitslosigkeit und Unterbeschäftigung",
+    "url": "https://statistik.arbeitsagentur.de/DE/Navigation/Grundlagen/Statistik-erklaert/Arbeitsuche-Arbeitslosigkeit-Unterbeschaeftigung-Nav.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bluthochdruck: Ab welchen Werten gilt der Blutdruck als erhöht?",
+  "s": "Blutdruck",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🩺",
+    "Bei einer Blutdruckmessung bekommst du immer zwei Zahlen, die oft mit einem Schrägstrich geschrieben werden. Sie werden in mmHg angegeben. Was bedeutet der obere, der systolische Wert?"
+   ],
+   [
+    "💓",
+    "Es ist der Druck in den Gefäßen, wenn sich der Herzmuskel maximal anspannt und Blut in den Körper pumpt. Was gibt dann der untere, der diastolische Wert an?"
+   ],
+   [
+    "🫀",
+    "Den niedrigsten Druck unmittelbar vor der nächsten Herzkontraktion, wenn der Herzmuskel entspannt ist und sich mit Blut füllt. Ab welchem Wert spricht man in der Arztpraxis von Bluthochdruck?"
+   ],
+   [
+    "📏",
+    "Wenn im Schnitt an zwei Tagen ein Wert über 140/90 mmHg ermittelt wurde. Bei der Selbstmessung zu Hause liegt die Grenze etwas niedriger. Wie hoch ist sie, gemessen an sieben Tagen in Folge?"
+   ],
+   [
+    "🏠",
+    "Über 135/85 mmHg im Schnitt an sieben aufeinander folgenden Tagen. Bluthochdruck bleibt oft lange unerkannt und schädigt auf Dauer wichtige Organe wie Gehirn, Herz, Nieren und Augen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was misst der obere Wert?",
+    "Den Druck bei maximaler Anspannung",
+    "Den Puls pro Minute",
+    "Den Zuckergehalt im Blut",
+    2
+   ],
+   [
+    "Ab welchem Durchschnittswert an zwei Tagen ist es in der Praxis erhöht?",
+    "Über 140/90 mmHg",
+    "Über 100/60 mmHg",
+    "Über 200/120 mmHg",
+    4
+   ],
+   [
+    "Ab welchem Durchschnittswert an sieben Tagen ist es bei Selbstmessung erhöht?",
+    "Über 135/85 mmHg",
+    "Über 110/70 mmHg",
+    "Über 180/110 mmHg",
+    5
+   ]
+  ],
+  "id": "blutdruck",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsche Herzstiftung",
+    "title": "Bluthochdruck: Was ist das?",
+    "url": "https://herzstiftung.de/ihre-herzgesundheit/gesund-bleiben/bluthochdruck/was-ist-bluthochdruck"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Psychische Erkrankungen: Wie häufig sind Angststörungen?",
+  "s": "Angst",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🧠",
+    "Psychische Erkrankungen kommen in Deutschland häufig vor. Nach Daten einer Fachgesellschaft sind jedes Jahr 27,8 Prozent der erwachsenen Bevölkerung betroffen. Wie viele Menschen sind das ungefähr?"
+   ],
+   [
+    "👥",
+    "Rund 17,8 Millionen Menschen. Zu den häufigsten psychischen Erkrankungen in Deutschland zählen die Angststörungen. Welcher Anteil der erwachsenen Bevölkerung ist laut diesen Daten davon betroffen?"
+   ],
+   [
+    "😰",
+    "15,4 Prozent. Zu den häufigen Erkrankungen gehören auch die affektiven Störungen mit 9,8 Prozent, zu denen die Depression zählt. Welcher Anteil entfällt allein auf die unipolare Depression?"
+   ],
+   [
+    "🌧️",
+    "8,2 Prozent. Diese Zahlen stammen aus der Studie DEGS1, einer großen Erhebung zur Gesundheit Erwachsener in Deutschland. Aus welchem Zeitraum stammen die letzten Erhebungsdaten dieser Studie?"
+   ],
+   [
+    "📅",
+    "Von 2008 bis 2011. Die Daten stammen also aus diesen Jahren und sind damit älter, zeigen aber, dass psychische Erkrankungen in der erwachsenen Bevölkerung in Deutschland häufig vorkommen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Prozent sind jährlich betroffen?",
+    "27,8 Prozent",
+    "7,8 Prozent",
+    "57,8 Prozent",
+    1
+   ],
+   [
+    "Welcher Anteil hat Angststörungen?",
+    "15,4 Prozent",
+    "1,5 Prozent",
+    "45,4 Prozent",
+    2
+   ],
+   [
+    "Aus welchem Zeitraum stammen die Daten?",
+    "Von 2008 bis 2011",
+    "Von 1988 bis 1991",
+    "Von 2018 bis 2021",
+    5
+   ]
+  ],
+  "id": "angststoer",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "DGPPN",
+    "title": "Factsheet Kennzahlen: Psychische Erkrankungen in Deutschland",
+    "url": "https://www.dgppn.de/_Resources/Persistent/0e77ee58af62a2e25bb32f0b56b122da4ca97628/DGPPN_Factsheet_Kennzahlen.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Masern: Warum sind sie so ansteckend?",
+  "s": "Masern",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "🦠",
+    "Masern gehören zu den ansteckendsten Krankheiten des Menschen überhaupt. Bei Menschen ohne Schutz, die Kontakt zu einem Erkrankten haben, erkranken nahezu alle. Mehr als welcher Anteil davon erkrankt?"
+   ],
+   [
+    "💨",
+    "Mehr als 90 Prozent. Das Virus verbreitet sich über Tröpfchen beim Sprechen, Husten und Niesen und war nach Kontamination noch nach 2 Stunden in der Luft nachweisbar. Wann beginnt die Ansteckungsfähigkeit?"
+   ],
+   [
+    "🤒",
+    "Schon 4 Tage vor dem Hautausschlag und bis etwa 4 Tage danach. Zum Schutz vor Masern gibt es eine Impfung, die als Lebendimpfstoff verabreicht wird. Wie viele Impfdosen werden dafür von Fachleuten empfohlen?"
+   ],
+   [
+    "💉",
+    "Zwei Dosen. Die erste etwa ab dem 11. Lebensmonat, die zweite ab dem 15. Lebensmonat, frühestens 4 Wochen danach. Wie viel Immunität in der Bevölkerung ist für den Gemeinschaftsschutz mindestens nötig?"
+   ],
+   [
+    "🛡️",
+    "Mindestens 95 Prozent. Nach zwei Impfungen gilt die Immunität als sehr wahrscheinlich lebenslang ausreichend. Eine einzelne Dosis wirkt bei Kindern und Jugendlichen bis 15 Jahre zu mindestens 92 Prozent."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele ungeschützte Kontaktpersonen erkranken?",
+    "Über 90 Prozent",
+    "Etwa 10 Prozent",
+    "Etwa 30 Prozent",
+    2
+   ],
+   [
+    "Wann beginnt die Ansteckungsfähigkeit?",
+    "4 Tage vor dem Ausschlag",
+    "Erst nach dem Ausschlag",
+    "Erst nach 3 Wochen",
+    3
+   ],
+   [
+    "Wie viele Impfdosen werden empfohlen?",
+    "Zwei Dosen",
+    "Eine Dosis",
+    "Fünf Dosen",
+    4
+   ]
+  ],
+  "id": "masern",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Robert Koch Institut",
+    "title": "RKI Ratgeber: Masern",
+    "url": "https://www.rki.de/DE/Aktuelles/Publikationen/RKI-Ratgeber/Ratgeber/Ratgeber_Masern.html"
+   },
+   {
+    "publisher": "Robert Koch Institut",
+    "title": "Masernimpfung: Wirksamkeit, Sicherheit und Kontraindikationen",
+    "url": "https://www.rki.de/SharedDocs/FAQs/DE/Impfen/MMR/Masernimpfung/FAQ-Liste_Masernimpfung.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie viel Eiweiß brauchst du am Tag?",
+  "s": "Eiweiß",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🥚",
+    "Fachleute geben für Protein eine empfohlene Zufuhr an. Wie viel pro Kilogramm Körpergewicht und Tag ist es für Erwachsene von 19 bis unter 65 Jahren?"
+   ],
+   [
+    "⚖️",
+    "0,8 Gramm pro Kilogramm Körpergewicht und Tag. Für Menschen ab 65 Jahren wurde im Jahr 2017 erstmals ein anderer Wert genannt, und zwar ein Schätzwert. Wie hoch ist er?"
+   ],
+   [
+    "🧓",
+    "1,0 Gramm pro Kilogramm und Tag. Es ist aber nur ein Schätzwert für eine angemessene Zufuhr, keine feste Empfehlung. Warum lässt sich für ältere Menschen keine Empfehlung ableiten?"
+   ],
+   [
+    "📚",
+    "Die vorliegenden Studien lassen den Proteinbedarf ab 65 Jahren nicht exakt genug bestimmen. Der Schätzwert gilt für gesunde ältere Menschen mit Normalgewicht. Welche Zufuhr hält eine europäische Behörde für Erwachsene noch für sicher?"
+   ],
+   [
+    "✅",
+    "Eine Zufuhr in doppelter Höhe des Referenzwerts gilt für Erwachsene als sicher. Eine tolerierbare Obergrenze wurde nicht festgelegt, weil die Daten nicht ausreichen, um sie zu bestimmen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Empfohlene Zufuhr für Erwachsene unter 65?",
+    "0,8 g pro kg und Tag",
+    "0,1 g pro kg und Tag",
+    "8,0 g pro kg und Tag",
+    2
+   ],
+   [
+    "Schätzwert für Menschen ab 65?",
+    "1,0 g pro kg und Tag",
+    "2,5 g pro kg und Tag",
+    "0,2 g pro kg und Tag",
+    3
+   ],
+   [
+    "Was hält die Behörde für sicher?",
+    "Die doppelte Höhe des Referenzwerts",
+    "Die zehnfache Höhe des Referenzwerts",
+    "Nur die Hälfte des Referenzwerts",
+    5
+   ]
+  ],
+  "id": "eiweiss",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsche Gesellschaft für Ernährung",
+    "title": "FAQ Protein 2021",
+    "url": "https://www.dge.de/fileadmin/dok/gesunde-ernaehrung/faq/DGE-FAQ-Protein-2021.pdf"
+   },
+   {
+    "publisher": "Deutsche Gesellschaft für Ernährung",
+    "title": "Pressemeldung 08/2017: Referenzwert Protein",
+    "url": "https://www.dge.de/fileadmin/dok/presse/meldungen/2011-2018/DGE-Pressemeldung-aktuell-08-2017-Referenzwert-Protein.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Westfälischer Friede 1648: Wie endete der Dreißigjährige Krieg?",
+  "s": "Friede 1648",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "⚔️",
+    "Der Dreißigjährige Krieg begann im Jahr 1618 mit dem Prager Fenstersturz. Er endete erst Jahrzehnte später mit einem Friedensschluss, der bis heute als Westfälischer Friede bekannt ist. Wie lange dauerte er insgesamt?"
+   ],
+   [
+    "⏳",
+    "Etwa 30 Jahre und fünf Monate. Im Jahr 1643 kamen die Gesandten zu Friedensgesprächen zusammen, fünf Jahre vor dem Abschluss der Verträge im Jahr 1648. An welchen beiden Orten geschah das?"
+   ],
+   [
+    "🏰",
+    "In Münster und Osnabrück. Die Friedensverträge wurden dort zwischen dem 15. Mai und dem 24. Oktober 1648 unterzeichnet. An welchem Tag wurde der Friede in Münster verkündet?"
+   ],
+   [
+    "🕊️",
+    "Am 24. Oktober 1648. Der Friede veränderte die Landkarte: Schweden erhielt Gebiete im Norden, und Frankreich bekam Bistümer in Lothringen. Welche zwei Länder wurden damals unabhängig?"
+   ],
+   [
+    "🗺️",
+    "Die Niederlande und die Schweiz. Spanien verlor dagegen seine Machtposition. So endete 1648 nach mehr als drei Jahrzehnten der Krieg, der 1618 in Prag begonnen hatte."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann begann der Krieg?",
+    "1618",
+    "1648",
+    "1789",
+    1
+   ],
+   [
+    "Wo wurde verhandelt?",
+    "Münster und Osnabrück",
+    "Köln und Aachen",
+    "Berlin und Dresden",
+    3
+   ],
+   [
+    "Welche Länder wurden unabhängig?",
+    "Niederlande und Schweiz",
+    "Bayern und Sachsen",
+    "Polen und Ungarn",
+    5
+   ]
+  ],
+  "id": "westfrieden",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Planet Wissen (SWR, WDR)",
+    "title": "Westfälischer Friede: 30 Jahre und fünf Monate Krieg sind vorbei",
+    "url": "https://www.planet-wissen.de/geschichte/neuzeit/der_dreissigjaehrige_krieg/westfaelischer-friede-102.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792474515168,
+  "review": {
+   "date": "2026-10-20",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
