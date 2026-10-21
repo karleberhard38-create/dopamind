@@ -9959,5 +9959,541 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Ebbe und Flut: Was zieht das Meer hin und her?",
+  "s": "Gezeiten",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌊",
+    "An der Nordsee zieht sich das Wasser regelmäßig zurück und kehrt wieder. Dieses Auf und Ab heißt Ebbe und Flut. Kräfte aus dem Weltall stecken dahinter. Welcher Himmelskörper ist dafür der wichtigste Auslöser?"
+   ],
+   [
+    "🌙",
+    "Der Mond. Seine Anziehungskraft zieht das Wasser der Erde zu sich hin, sodass es sich auf der Mondseite zu einem Flutberg wölbt. Auch die Sonne wirkt mit. Wann verstärken sich beide besonders stark?"
+   ],
+   [
+    "🌕",
+    "Bei Vollmond und Neumond, wenn Sonne und Mond in einer Linie stehen. Dann entstehen Springtiden mit besonders hohen Fluten und starken Ebben. Wie stark kann der Wasserstand an der Nordsee schwanken?"
+   ],
+   [
+    "📏",
+    "An Orten wie Cuxhaven oder Norderney steigt oder fällt das Wasser um bis zu vier Meter. Vom höchsten Flutstand bis zur tiefsten Ebbe vergehen etwa 6 Stunden und 12 Minuten. Um wie viel verschiebt sich das täglich?"
+   ],
+   [
+    "⏱️",
+    "Um etwa 50 Minuten pro Tag. An den meisten Küsten gibt es zweimal am Tag Ebbe und zweimal Flut. Stehen Sonne und Mond im rechten Winkel, fallen Fluten und Ebben besonders schwach aus, das heißt Nipptide."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie stark kann der Wasserstand an der Nordsee schwanken?",
+    "Bis zu vier Meter",
+    "Bis zu 40 Zentimeter",
+    "Bis zu 40 Meter",
+    4
+   ],
+   [
+    "Wann entstehen Springtiden?",
+    "Bei Vollmond und Neumond",
+    "Bei Halbmond und Sturm",
+    "Bei starkem Westwind",
+    3
+   ],
+   [
+    "Um wie viel verschiebt sich Ebbe und Flut täglich?",
+    "Um etwa 50 Minuten",
+    "Um etwa 5 Minuten",
+    "Um etwa 5 Stunden",
+    5
+   ]
+  ],
+  "id": "gezeiten",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Planet Wissen (SWR, WDR)",
+    "title": "Ebbe und Flut: Der Einfluss des Mondes auf die Erde",
+    "url": "https://www.planet-wissen.de/natur/meer/meer-gezeiten-ebbe-flut-100.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499007,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Luthers Thesenanschlag 1517: Was ist wirklich belegt?",
+  "s": "Luther 1517",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "📜",
+    "Am 31. Oktober 1517 schrieb Martin Luther an seine kirchlichen Vorgesetzten und wies auf Missstände bei der Ablasswerbung hin. Seine Kritik formulierte er in Thesen, die später berühmt wurden. Wie viele waren es?"
+   ],
+   [
+    "✍️",
+    "95 Thesen. Sie richteten sich mit kritischen Fragen gegen die damalige Ablasspraxis. Luther machte sie wenige Wochen später brieflich bekannt, auch an Fachkollegen. Wie verbreiteten sich die Thesen danach weiter?"
+   ],
+   [
+    "🖨️",
+    "Sehr schnell, über humanistische Netzwerke. An mehreren Orten im Reich wurden die Thesen gedruckt, ohne dass Luther davon wusste. Und der berühmte Hammerschlag an die Kirchentür? Gibt es dafür Belege aus jener Zeit?"
+   ],
+   [
+    "🔨",
+    "Nein. Zeitgenössische Zeugnisse fehlen, und Luther selbst erwähnt einen Anschlag nie. Eine Notiz von Georg Rörer wird manchmal als Hinweis genannt. Warum beweist sie den Anschlag nicht?"
+   ],
+   [
+    "🚪",
+    "Rörer war kein Augenzeuge, er kam erst 1522 nach Wittenberg. Der Thesenanschlag ist daher sehr wahrscheinlich eine Legende. Belegt ist dagegen der Brief an die Vorgesetzten, nicht der Hammerschlag."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Thesen schrieb Luther?",
+    "95",
+    "59",
+    "100",
+    2
+   ],
+   [
+    "Was ist für den 31. Oktober 1517 belegt?",
+    "Ein Brief an seine Vorgesetzten",
+    "Ein Hammerschlag an die Kirchentür",
+    "Eine Rede vor dem Kaiser",
+    5
+   ],
+   [
+    "Wie verbreiteten sich die Thesen schnell?",
+    "Durch Druck an mehreren Orten",
+    "Nur durch Abschreiben im Kloster",
+    "Durch Zeitungen und Radio",
+    3
+   ]
+  ],
+  "id": "luther1517",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Schlaglicht 1517: Der sogenannte Thesenanschlag",
+    "url": "https://www.bpb.de/themen/zeit-kulturgeschichte/reformation/234689/schlaglicht-1517-der-sogenannte-thesenanschlag/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499007,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Abgeordnete: Was schützen Indemnität und Immunität?",
+  "s": "Immunität",
+  "k": "Politik",
+  "cards": [
+   [
+    "🏛️",
+    "Abgeordnete des Bundestages genießen im Grundgesetz besonderen Schutz. Davon gibt es zwei Arten. Eine schützt Abstimmungen und Äußerungen im Bundestag und in seinen Ausschüssen. Wie heißt sie?"
+   ],
+   [
+    "🗣️",
+    "Indemnität. Wegen ihrer Stimmabgabe oder Äußerungen im Bundestag dürfen Abgeordnete zu keiner Zeit verfolgt werden, auch nach dem Ende des Mandats nicht. Nur verleumderische Beleidigungen sind ausgenommen. Wie heißt die zweite Art?"
+   ],
+   [
+    "🔒",
+    "Immunität. Strafverfolgung oder Verhaftung von Abgeordneten braucht die Genehmigung des Bundestages. Eine Festnahme ist ohne Genehmigung möglich, wenn jemand bei der Tat oder am folgenden Tag ergriffen wird. Wer entscheidet über die Aufhebung?"
+   ],
+   [
+    "⚖️",
+    "Der Bundestag, auf Empfehlung seines ersten Ausschusses. Bei leichten Fällen kann der Ausschuss einstimmig vorab entscheiden, und es gilt als beschlossen, wenn niemand binnen sieben Tagen widerspricht. Heißt die Aufhebung, dass jemand schuldig ist?"
+   ],
+   [
+    "✅",
+    "Nein. Die Genehmigung stellt keine Schuld fest. Für Ermittlungsverfahren gilt zudem eine allgemeine Genehmigung, doch Durchsuchungen und Anklagen brauchen im Einzelfall eine eigene Genehmigung des Bundestages."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt der Schutz für Reden und Abstimmungen im Bundestag?",
+    "Indemnität",
+    "Immunität",
+    "Mandatspflicht",
+    2
+   ],
+   [
+    "Wer genehmigt die Strafverfolgung von Abgeordneten?",
+    "Der Bundestag",
+    "Der Bundesrat",
+    "Das Verfassungsgericht",
+    4
+   ],
+   [
+    "Wann ist eine Festnahme ohne Genehmigung möglich?",
+    "Bei Ergreifung auf frischer Tat",
+    "Nach Ablauf von sieben Tagen",
+    "Wenn der Kanzler zustimmt",
+    3
+   ]
+  ],
+  "id": "immunitaet",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Erläuterungen zum Immunitätsrecht",
+    "url": "https://www.bundestag.de/resource/blob/1087274/immunitaetsrecht.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499008,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bystander-Effekt: Warum hilft in der Menge oft keiner?",
+  "s": "Bystander",
+  "k": "Psyche",
+  "cards": [
+   [
+    "👥",
+    "Je mehr Menschen eine Notlage beobachten, desto unwahrscheinlicher wird es, dass jemand hilft. Das nennt man Bystander-Effekt. Zwei Psychologen beschrieben fünf Stufen bis zur Hilfe. Was muss zuerst geschehen?"
+   ],
+   [
+    "👀",
+    "Man muss das Ereignis überhaupt bemerken und als Notfall deuten. Reagiert niemand, schließt man schnell, dass nichts Ernstes passiert. Das heißt pluralistische Ignoranz. Was geschieht außerdem, wenn viele Menschen anwesend sind?"
+   ],
+   [
+    "🤷",
+    "Es kommt zur Verantwortungsdiffusion: Bei vielen Anwesenden fühlt sich niemand persönlich zuständig. Auch Unwissen, wie man helfen kann, und Angst vor Folgen bremsen. Was raten Fachleute Zeugen deshalb als Erstes?"
+   ],
+   [
+    "📣",
+    "Handle so, als wärst du der einzige Zeuge, und werde zuerst laut. Schaffst du die Lage nicht allein, brauchst du Unterstützung von anderen. Wie holst du dir diese Unterstützung am besten?"
+   ],
+   [
+    "🎯",
+    "Schau eine bestimmte Person direkt an und sprich sie an. So löst du sie aus der Menge heraus, und ihr könnt gemeinsam eingreifen. Fehlt auch nur eine der fünf Bedingungen, bleibt die Hilfe laut Modell aus."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt es, wenn sich bei vielen Anwesenden niemand zuständig fühlt?",
+    "Verantwortungsdiffusion",
+    "Selbstüberschätzung",
+    "Gruppendenken im Team",
+    3
+   ],
+   [
+    "Wie nennt man den Schluss, dass nichts Ernstes passiert, wenn niemand reagiert?",
+    "Pluralistische Ignoranz",
+    "Selbstüberschätzung",
+    "Rückschaufehler",
+    2
+   ],
+   [
+    "Was hilft bei einem Notfall in der Menge?",
+    "Eine Person direkt ansprechen",
+    "Abwarten, ob andere reagieren",
+    "Einfach weitergehen",
+    5
+   ]
+  ],
+  "id": "bystander",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "SRF Wissen",
+    "title": "Zuschauen statt helfen: Warum uns eine Gruppe im Notfall bremst",
+    "url": "https://www.srf.ch/wissen/mensch/zuschauen-statt-helfen-bystander-effekt-warum-uns-eine-gruppe-in-einem-notfall-bremst"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499008,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Maximalpuls: Wie zuverlässig ist 220 minus Alter?",
+  "s": "Maximalpuls",
+  "k": "Sport",
+  "cards": [
+   [
+    "❤️",
+    "Beim Training wird oft der Maximalpuls genutzt, um die Belastung zu steuern. Dafür gibt es eine bekannte Faustformel: 220 minus Lebensalter. Wie zuverlässig ist sie für den einzelnen Menschen?"
+   ],
+   [
+    "📉",
+    "Nur grob. Für die maximale Herzfrequenz nennt die Fachliteratur eine Standardabweichung von 10 bis 15 Schlägen pro Minute. Der echte Wert kann also spürbar abweichen. Wovon hängt er in erster Linie ab?"
+   ],
+   [
+    "🎂",
+    "Vom Alter, weniger von Trainingszustand und Geschlecht. Nach dem 20. Lebensjahr sinkt der Wert um etwa 6 bis 8 Schläge alle 10 Jahre, unabhängig vom Training. Bei wem unterschätzt die Faustformel den Wert eher?"
+   ],
+   [
+    "🔍",
+    "Bei Personen über 40. Bei ihnen tendiert die Formel dazu, die maximale Herzfrequenz zu unterschätzen. Für Messungen auf dem Fahrradergometer gilt außerdem eine andere Formel. Wie lautet sie?"
+   ],
+   [
+    "🧮",
+    "200 minus Lebensalter. Als genauer gilt 207 minus 0,7 mal Lebensalter, sie ist aber aufwendiger zu rechnen. Als Richtwert taugt die Faustformel, der einzelne Wert streut aber um 10 bis 15 Schläge."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lautet die bekannte Faustformel für den Maximalpuls?",
+    "220 minus Lebensalter",
+    "180 plus Lebensalter",
+    "100 minus Lebensalter",
+    1
+   ],
+   [
+    "Wie groß ist die Standardabweichung der maximalen Herzfrequenz?",
+    "10 bis 15 Schläge pro Minute",
+    "1 bis 2 Schläge pro Minute",
+    "40 bis 50 Schläge pro Minute",
+    2
+   ],
+   [
+    "Wie sinkt die maximale Herzfrequenz nach dem 20. Lebensjahr?",
+    "Um 6 bis 8 Schläge alle 10 Jahre",
+    "Um 1 bis 2 Schläge alle 10 Jahre",
+    "Um 20 bis 30 Schläge alle 10 Jahre",
+    3
+   ]
+  ],
+  "id": "maxpuls",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsche Zeitschrift für Sportmedizin",
+    "title": "Die maximale Herzfrequenz (2010)",
+    "url": "https://www.germanjournalsportsmedicine.com/archive/archive-2010/heft-12/die-maximale-herzfrequenz/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499008,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bärtierchen: Wie überleben sie sogar im Weltraum?",
+  "s": "Bärtierchen",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🔬",
+    "Bärtierchen sind nur etwa einen Millimeter groß. Bei extremer Kälte oder Trockenheit stellen sie ihren Stoffwechsel weitgehend ein und fallen in eine Art Starre. Wie heißt dieser Zustand?"
+   ],
+   [
+    "💤",
+    "Kryptobiose. Sobald die Bedingungen besser werden, erwachen die Tiere laut dem Bericht innerhalb einer Stunde. Forscher wollten wissen, ob sie auch im Weltraum überleben. In welcher Höhe fand der Test statt?"
+   ],
+   [
+    "🚀",
+    "In 270 Kilometern Höhe, an Bord eines Forschungsmoduls. Zehn Tage lang waren die Tiere in diesem Ruhezustand dem Vakuum und der Weltraumstrahlung ausgesetzt. Was schadete ihnen mehr, Vakuum oder Strahlung?"
+   ],
+   [
+    "☢️",
+    "Die Strahlung. Das Vakuum verursachte keine nennenswerten Verluste, doch von einer getesteten Art überlebten nur gut zwei Prozent die Strahlung. Können Forscher erklären, wie die Tiere das schaffen?"
+   ],
+   [
+    "🧩",
+    "Bislang nicht. Der Leiter des Versuchs nannte sie die ersten Tiere, die schutzlos einen Weltraumspaziergang überstanden haben. Wie sie das schaffen, ist laut dem Bericht weiterhin offen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie heißt der Zustand bei extremer Kälte oder Trockenheit?",
+    "Kryptobiose",
+    "Metamorphose",
+    "Symbiose",
+    2
+   ],
+   [
+    "In welcher Höhe wurden die Tiere getestet?",
+    "In 270 Kilometern",
+    "In 27 Kilometern",
+    "In 2.700 Kilometern",
+    3
+   ],
+   [
+    "Was schadete den Tieren im Weltraum mehr?",
+    "Die Strahlung",
+    "Das Vakuum",
+    "Die Kälte",
+    4
+   ]
+  ],
+  "id": "baertier",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Wissenschaft.de",
+    "title": "Bärtierchen im All",
+    "url": "https://wissenschaft.de/artikel/baertierchen-im-all"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499008,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Briefwahl: Wie wählst du per Post?",
+  "s": "Briefwahl",
+  "k": "Politik",
+  "cards": [
+   [
+    "✉️",
+    "Bei einer Bundestagswahl kannst du auch per Post wählen. Dafür brauchst du einen Wahlschein von deiner Gemeinde. Musst du dafür einen wichtigen Grund haben, etwa Urlaub oder Krankheit?"
+   ],
+   [
+    "✅",
+    "Nein. Seit der Europa- und Bundestagswahl 2009 ist kein Grund für die Abwesenheit am Wahltag mehr nötig. Den Antrag stellst du bei der Gemeinde deines Hauptwohnorts. Geht das auch telefonisch?"
+   ],
+   [
+    "📞",
+    "Nein. Der Antrag geht schriftlich, auch per E-Mail, oder mündlich, aber nicht telefonisch. Er muss Namen, Geburtsdatum und Wohnanschrift enthalten. Bis wann kannst du ihn regulär stellen?"
+   ],
+   [
+    "⏰",
+    "Bis Freitag vor der Wahl um 15 Uhr. Bei plötzlicher Erkrankung geht es in Ausnahmefällen sogar noch bis zum Wahltag um 15 Uhr. Wann muss dein ausgefüllter Wahlbrief spätestens ankommen?"
+   ],
+   [
+    "📮",
+    "Spätestens am Wahlsonntag um 18 Uhr bei der zuständigen Stelle. Später eingehende Briefe zählen nicht, das Risiko der rechtzeitigen Zustellung trägst du selbst. Im Inland ist keine Briefmarke nötig."
+   ]
+  ],
+  "quiz": [
+   [
+    "Brauchst du für die Briefwahl einen Grund?",
+    "Nein, seit 2009 nicht",
+    "Ja, ein ärztliches Attest",
+    "Ja, eine Auslandsreise",
+    2
+   ],
+   [
+    "Bis wann ist der Antrag regulär möglich?",
+    "Freitag vor der Wahl, 15 Uhr",
+    "Wahlsonntag, 18 Uhr",
+    "Eine Woche vorher, 12 Uhr",
+    4
+   ],
+   [
+    "Wann muss der Wahlbrief spätestens ankommen?",
+    "Wahlsonntag, 18 Uhr",
+    "Wahltag, 12 Uhr",
+    "Montag nach der Wahl",
+    5
+   ]
+  ],
+  "id": "briefwahl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Die Bundeswahlleiterin",
+    "title": "Briefwahl (Glossar)",
+    "url": "https://www.bundeswahlleiterin.de/service/glossar/b/briefwahl.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499008,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Obst und Gemüse: Wie viel sollte es täglich sein?",
+  "s": "5 am Tag",
+  "k": "Ernährung",
+  "cards": [
+   [
+    "🥦",
+    "Obst und Gemüse gelten als Basis einer guten Ernährung. Die aktuellen Empfehlungen für Deutschland nennen dafür eine Mindestmenge, die beides zusammenzählt. Wie viele Portionen pro Tag sind es mindestens?"
+   ],
+   [
+    "🍎",
+    "Mindestens 5 Portionen Obst und Gemüse pro Tag, am besten aus der jeweiligen Erntesaison. Gemüse wird dabei nicht getrennt gezählt. Welche Pflanzenkost soll außerdem mindestens einmal pro Woche auf den Teller?"
+   ],
+   [
+    "🫘",
+    "Hülsenfrüchte, zum Beispiel Linsen, Bohnen oder Kichererbsen. Sie sollen mindestens einmal pro Woche auf den Speiseplan kommen. Und wie viele Nüsse empfehlen die Fachleute für jeden Tag?"
+   ],
+   [
+    "🥜",
+    "Täglich eine kleine Handvoll Nüsse. Bei Brot, Nudeln, Reis und Mehl rät die Empfehlung außerdem zu einer bestimmten Variante als beste Wahl. Welche ist es?"
+   ],
+   [
+    "🌾",
+    "Die Vollkornvariante. Zusammengefasst: mindestens 5 Portionen Obst und Gemüse täglich, Hülsenfrüchte mindestens einmal pro Woche, täglich eine kleine Handvoll Nüsse und bei Getreideprodukten Vollkorn als beste Wahl."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Portionen Obst und Gemüse sind mindestens empfohlen?",
+    "5 Portionen am Tag",
+    "2 Portionen am Tag",
+    "10 Portionen am Tag",
+    2
+   ],
+   [
+    "Wie oft sollen Hülsenfrüchte auf den Teller?",
+    "Mindestens einmal pro Woche",
+    "Mindestens zweimal pro Tag",
+    "Einmal pro Monat",
+    3
+   ],
+   [
+    "Wie viele Nüsse werden täglich empfohlen?",
+    "Eine kleine Handvoll",
+    "Eine ganze Tüte",
+    "Ein Kilogramm",
+    4
+   ]
+  ],
+  "id": "fuenfportion",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsche Gesellschaft für Ernährung",
+    "title": "Gut essen und trinken: DGE-Empfehlungen",
+    "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792560499008,
+  "review": {
+   "date": "2026-10-21",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
