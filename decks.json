@@ -10495,5 +10495,680 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Wie wird in Deutschland ein Gesetz beschlossen?",
+  "s": "Gesetzgebung",
+  "k": "Politik",
+  "cards": [
+   [
+    "🏛️",
+    "Nur der Bundestag kann auf Bundesebene Gesetze verabschieden. Dafür durchläuft ein Entwurf mehrere feste Stationen, bevor er gilt. Wie viele Lesungen gibt es im Bundestag?"
+   ],
+   [
+    "📖",
+    "Es gibt drei Lesungen. Nach der ersten beraten die Ausschüsse den Entwurf und schreiben eine Beschlussempfehlung. In der zweiten Lesung kann jeder Abgeordnete Änderungen beantragen. Welches Gremium bekommt das Gesetz nach der Abstimmung als Nächstes?"
+   ],
+   [
+    "🏰",
+    "Der Bundesrat. Bei Zustimmungsgesetzen ist das Vorhaben gescheitert, wenn er nicht zustimmt. Bei Einspruchsgesetzen kann er Einspruch einlegen. Was erarbeitet bei Streit einen Kompromiss zwischen Bundestag und Bundesrat?"
+   ],
+   [
+    "🤝",
+    "Der Vermittlungsausschuss. Steht der endgültige Wortlaut des Gesetzes fest, stellt man die Urschrift her, und die Bundesregierung zeichnet sie gegen. Wer fertigt das Gesetz danach aus?"
+   ],
+   [
+    "📰",
+    "Der Bundespräsident fertigt es aus, danach wird es im Bundesgesetzblatt verkündet. Zusammengefasst: drei Lesungen im Bundestag, dann der Bundesrat, bei Streit der Vermittlungsausschuss, am Ende Ausfertigung und Verkündung."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Lesungen hat das Verfahren im Bundestag?",
+    "Drei",
+    "Eine",
+    "Fünf",
+    2
+   ],
+   [
+    "Wer fertigt ein Gesetz am Ende aus?",
+    "Der Bundespräsident",
+    "Der Bundeskanzler",
+    "Der Bundestagspräsident",
+    5
+   ],
+   [
+    "Was erarbeitet bei Streit zwischen Bundestag und Bundesrat einen Kompromiss?",
+    "Der Vermittlungsausschuss",
+    "Das Bundesverfassungsgericht",
+    "Der Ältestenrat",
+    4
+   ]
+  ],
+  "id": "gesetzgeb",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Glossar: Gesetzgebungsverfahren",
+    "url": "https://www.bundestag.de/services/glossar/gesgeb-245440"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Kanzlerwahl: Wie wird man Bundeskanzler?",
+  "s": "Kanzlerwahl",
+  "k": "Politik",
+  "cards": [
+   [
+    "🗳️",
+    "Der Bundeskanzler wird vom Bundestag gewählt, und zwar in einem mehrstufigen Verfahren. Am Anfang des Verfahrens steht aber ein Vorschlag von jemand anderem. Wer macht diesen ersten Vorschlag?"
+   ],
+   [
+    "🧑‍⚖️",
+    "Der Bundespräsident schlägt eine Kandidatin oder einen Kandidaten vor. Gewählt ist, wer mehr als die Hälfte aller Mitglieder des Bundestags bekommt, die sogenannte Kanzlermehrheit. Was passiert, wenn dieser erste Wahlgang scheitert?"
+   ],
+   [
+    "✍️",
+    "Dann übernimmt der Bundestag das Vorschlagen. Eine Kandidatur braucht die Unterschrift von einem Viertel der Abgeordneten oder einer Fraktion mit mindestens einem Viertel der Sitze. Wie viele Tage hat der Bundestag für diese Phase?"
+   ],
+   [
+    "⏳",
+    "Vierzehn Tage. Danach genügt in einem weiteren Wahlgang die relative Mehrheit, also mehr Stimmen als jeder Mitbewerber. Welche zwei Möglichkeiten hat der Bundespräsident, wenn jemand nur so gewählt wurde?"
+   ],
+   [
+    "⚖️",
+    "Er kann die Person als Minderheitskanzler ernennen oder den Bundestag auflösen. Bei der Kanzlermehrheit muss er ernennen. Zusammengefasst: Vorschlag des Bundespräsidenten, vierzehn Tage für Wahlgänge im Bundestag, am Ende reicht die relative Mehrheit."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Stimmen braucht die Kanzlermehrheit?",
+    "Mehr als die Hälfte aller Mitglieder",
+    "Mehr als die Hälfte der anwesenden Abgeordneten",
+    "Zwei Drittel aller Mitglieder",
+    2
+   ],
+   [
+    "Wie lange hat der Bundestag für die Wahlgänge nach dem Vorschlag des Bundespräsidenten?",
+    "14 Tage",
+    "7 Tage",
+    "60 Tage",
+    4
+   ],
+   [
+    "Was darf der Bundespräsident tun, wenn jemand nur mit relativer Mehrheit gewählt wurde?",
+    "Ihn ernennen oder den Bundestag auflösen",
+    "Er muss sofort Neuwahlen ausrufen",
+    "Er muss die Wahl wiederholen lassen",
+    5
+   ]
+  ],
+  "id": "kanzlerwahl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Bundeskanzlerwahl (Webarchiv)",
+    "url": "https://www.bundestag.de/webarchiv/textarchiv/2013/47434946_kw50_kanzlerwahl-213834"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie viele Bakterien leben in und auf dir?",
+  "s": "Mikrobiom",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🦠",
+    "Lange hieß es, im Körper lebten etwa zehnmal mehr Bakterien als menschliche Zellen. Neuere Berechnungen haben das korrigiert. Wie groß ist das Verhältnis nach der Neuberechnung von 2016 ungefähr?"
+   ],
+   [
+    "⚖️",
+    "Etwa eins zu eins. Es sind also ungefähr so viele Bakterienzellen wie Körperzellen. Wo im Körper leben mehr Bakterien als in allen anderen Organen zusammen?"
+   ],
+   [
+    "🧫",
+    "Im Dickdarm. Die alte Schätzung beruhte zum Teil auf der Annahme, dass ein Bakterium im Mittel viel kleiner ist als eine menschliche Zelle. Um welchen Faktor ging man davon aus?"
+   ],
+   [
+    "🔬",
+    "Etwa tausendmal kleiner, so die Annahme. Die Neuberechnung von 2016 kommt auf knapp 40 Billionen Bakterienzellen bei einem Erwachsenen. Wie viele menschliche Zellen hat er dagegen ungefähr?"
+   ],
+   [
+    "🧬",
+    "Rund 30 Billionen. Zusammengefasst: Ein Erwachsener trägt knapp 40 Billionen Bakterienzellen und rund 30 Billionen eigene Zellen, das Verhältnis liegt also nahe bei eins zu eins."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wo leben die meisten Bakterien im Körper?",
+    "Im Dickdarm",
+    "Im Herzen",
+    "In der Lunge",
+    3
+   ],
+   [
+    "Welches Verhältnis von Bakterien- zu Körperzellen nennt die Neuberechnung?",
+    "Etwa eins zu eins",
+    "Etwa zehn zu eins",
+    "Etwa hundert zu eins",
+    2
+   ],
+   [
+    "Wie viele menschliche Zellen hat ein Erwachsener etwa?",
+    "Rund 30 Billionen",
+    "Rund 30 Milliarden",
+    "Rund 300 Billionen",
+    5
+   ]
+  ],
+  "id": "mikrobiom",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Weizmann Institute of Science (Wissenschaftsmagazin)",
+    "title": "Germs, Humans and Numbers",
+    "url": "https://wis-wander.weizmann.ac.il/node/7871"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Rentenmark 1923: Wie endete die Hyperinflation?",
+  "s": "Rentenmark",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💸",
+    "Im Jahr 1923 verlor das Geld in Deutschland rasend schnell an Wert. Im Januar besetzten französische und belgische Truppen das Ruhrgebiet. Wie viele Papiermark war im November 1923 ein US-Dollar wert?"
+   ],
+   [
+    "🧾",
+    "Rund 4,2 Billionen Papiermark. Danach kam eine neue Währung, die ab dem 15. November 1923 ausgegeben wurde und die Papiermark ersetzen sollte. Wie hieß sie?"
+   ],
+   [
+    "🏦",
+    "Rentenmark. Eine Rentenmark galt so viel wie eine Billion Papiermark. Ausgegeben wurde sie von der Rentenbank, und zwar als Ersatz für die entwertete Papiermark. Wodurch war sie gedeckt, da Gold fehlte?"
+   ],
+   [
+    "🌾",
+    "Durch Grundbesitz von Landwirtschaft, Industrie und Gewerbe, der mit einer Hypothek von 3,2 Milliarden Rentenmark belastet wurde. Der Kurs blieb stabil, weil der Geldumlauf begrenzt wurde und Sparmaßnahmen galten. Wie nannte man diesen Erfolg?"
+   ],
+   [
+    "✨",
+    "Man sprach vom Wunder der Rentenmark. Am 30. August 1924 löste die Reichsmark sie ab. Zusammengefasst: Eine Rentenmark entsprach einer Billion Papiermark, gedeckt durch belasteten Grundbesitz statt durch Gold."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Papiermark entsprach einer Rentenmark?",
+    "Einer Billion",
+    "Einer Million",
+    "Einer Milliarde",
+    3
+   ],
+   [
+    "Wodurch war die Rentenmark gedeckt?",
+    "Durch belasteten Grundbesitz",
+    "Durch Goldreserven der Bank",
+    "Durch Silbermünzen im Umlauf",
+    4
+   ],
+   [
+    "Wann wurde die Rentenmark ausgegeben?",
+    "Ab 15. November 1923",
+    "Ab 1. Januar 1923",
+    "Ab 30. August 1924",
+    2
+   ]
+  ],
+  "id": "rentenmark",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutsches Historisches Museum (LeMO)",
+    "title": "Währungsreform 1923",
+    "url": "https://www.dhm.de/lemo/kapitel/weimarer-republik/innenpolitik/waehrungsreform-1923"
+   },
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Hyperinflation",
+    "url": "https://www.bundestag.de/parlament/geschichte/100-jahre-weimar/hyperinflation-970722"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Mendelejew: Wie ordnete er die Elemente?",
+  "s": "Periodensystem",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🧪",
+    "Am 6. März 1869 wurde in Russland erstmals offiziell ein neues Ordnungssystem für die Elemente vorgestellt. Damals waren rund 60 Elemente bekannt. Wonach ordnete Dmitri Mendelejew sie?"
+   ],
+   [
+    "⚖️",
+    "Streng nach dem Gewicht ihrer Atome, und er stellte Elemente mit ähnlichen Eigenschaften zueinander. Dabei nahm er auch Stoffe auf, die noch niemand kannte. Was war der Grund dafür?"
+   ],
+   [
+    "🔭",
+    "Er nahm an, dass diese Elemente existieren müssten. Spätere Entdeckungen gaben ihm in mehreren Fällen recht. Welche drei Elemente gelten dafür als bekannte Beispiele aus dem Periodensystem?"
+   ],
+   [
+    "✅",
+    "Scandium, Gallium und Germanium wurden später tatsächlich entdeckt. Heute enthält das Periodensystem fast doppelt so viele Elemente wie damals bekannt waren. Wie viele sind es?"
+   ],
+   [
+    "🧬",
+    "Es sind 118 Elemente. Zusammengefasst: Mendelejew ordnete die rund 60 bekannten Elemente 1869 nach dem Atomgewicht und nach ähnlichen Eigenschaften und ließ Platz für noch unbekannte Stoffe."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wonach ordnete Mendelejew die Elemente?",
+    "Nach dem Gewicht ihrer Atome",
+    "Nach ihrer Farbe",
+    "Nach dem Jahr der Entdeckung",
+    2
+   ],
+   [
+    "Wie viele Elemente enthält das Periodensystem heute?",
+    "118",
+    "92",
+    "64",
+    5
+   ],
+   [
+    "Welches dieser Elemente war 1869 noch unbekannt?",
+    "Gallium",
+    "Eisen",
+    "Gold",
+    4
+   ]
+  ],
+  "id": "mendelejew",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "chemie.de",
+    "title": "Die Ordnung des Universums: 150 Jahre Periodensystem der Elemente",
+    "url": "https://www.chemie.de/news/1159924/die-ordnung-des-universums-150-jahre-periodensystem-der-elemente.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Pfand: Wie viel kostet es und wo gibst du es zurück?",
+  "s": "Pfand",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🥤",
+    "Auf vielen Getränkeflaschen und Dosen liegt in Deutschland Pfand. Bei Einwegverpackungen ist der Betrag einheitlich festgelegt. Wie hoch ist das Pfand für Einwegflaschen und Dosen?"
+   ],
+   [
+    "♻️",
+    "25 Cent. Bei Mehrwegflaschen liegt das Pfand je nach Flasche bei 8 bis 15 Cent und wird nicht im Gesetz festgelegt. Woran erkennst du pfandpflichtige Einwegverpackungen?"
+   ],
+   [
+    "🏷️",
+    "Sie tragen ein einheitliches Pfandzeichen und einen Strichcode. Im Verkaufsraum müssen Einweggetränke außerdem gut sichtbar mit dem Wort EINWEG gekennzeichnet sein. Wo darfst du Einwegverpackungen zurückgeben?"
+   ],
+   [
+    "🏪",
+    "In jeder Verkaufsstelle, die Einwegverpackungen aus demselben Material verkauft. Entscheidend ist das Material, nicht Marke oder Inhalt. Welche Läden müssen nur Leergut ihres eigenen Sortiments annehmen?"
+   ],
+   [
+    "🧾",
+    "Läden mit weniger als 200 Quadratmetern. Zusammengefasst: Einweg kostet 25 Cent Pfand, Mehrweg 8 bis 15 Cent, und zurückgeben kannst du Einweg dort, wo es dasselbe Material gibt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie hoch ist das Einwegpfand?",
+    "25 Cent",
+    "10 Cent",
+    "50 Cent",
+    2
+   ],
+   [
+    "Wie müssen Einweggetränke im Verkaufsraum gekennzeichnet sein?",
+    "Mit dem Wort EINWEG",
+    "Mit dem Wort MEHRWEG",
+    "Mit dem Wort PFANDFREI",
+    3
+   ],
+   [
+    "Wonach richtet sich die Rückgabe von Einweg?",
+    "Nach dem Material der Verpackung",
+    "Nach der Marke des Getränks",
+    "Nach dem Inhalt der Flasche",
+    4
+   ]
+  ],
+  "id": "einwegpfand",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Fragen und Antworten: Alles zum Einwegpfand und Dosenpfand",
+    "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/abfall/fragen-und-antworten-alles-zum-einwegpfand-und-dosenpfand-11505"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Rote Blutkörperchen: Wie lange leben sie?",
+  "s": "Blutzellen",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🩸",
+    "Rote Blutkörperchen, auch Erythrozyten genannt, sind keine dauerhaften Bewohner des Blutes. Sie werden ständig abgebaut und neu gebildet. Wie lange lebt ein einzelnes rotes Blutkörperchen ungefähr?"
+   ],
+   [
+    "🦴",
+    "Etwa 120 Tage. Gebildet werden sie im Knochenmark des Körpers, gesteuert über Erythropoetin, kurz EPO. Welches Organ gibt EPO ins Blut ab, wenn die Sauerstoffversorgung sinkt?"
+   ],
+   [
+    "🫘",
+    "Die Niere. Sie setzt EPO frei, wenn der Sauerstoff knapp wird. Für den Aufbau braucht der Körper unter anderem Eisen, Vitamin B12 und Folsäure. Welches Organ baut alte rote Blutkörperchen hauptsächlich ab?"
+   ],
+   [
+    "🧬",
+    "Die Milz, zum Teil auch die Leber. Dabei wird Häm zu Bilirubin umgewandelt, und das Eisen wird gespeichert und wiederverwendet. Welcher Bruchteil der roten Blutkörperchen wird täglich ersetzt?"
+   ],
+   [
+    "📅",
+    "Etwa ein Hundertzwanzigstel. Zusammengefasst: Rote Blutkörperchen leben etwa 120 Tage, entstehen im Knochenmark, EPO aus der Niere steuert ihre Bildung, und die Milz baut sie hauptsächlich ab."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange lebt ein rotes Blutkörperchen?",
+    "Etwa 120 Tage",
+    "Etwa 12 Tage",
+    "Etwa 12 Monate",
+    2
+   ],
+   [
+    "Welches Organ gibt EPO ins Blut ab?",
+    "Die Niere",
+    "Die Milz",
+    "Die Lunge",
+    3
+   ],
+   [
+    "Welches Organ baut sie hauptsächlich ab?",
+    "Die Milz",
+    "Die Niere",
+    "Die Lunge",
+    4
+   ]
+  ],
+  "id": "rotezellen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "MSD Manuals",
+    "title": "Bildung der roten Blutkörperchen",
+    "url": "https://www.msdmanuals.com/de/profi/hämatologie-und-onkologie/untersuchung-des-anämischen-patienten/bildung-der-roten-blutkörperchen"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Dopamin: Ist es wirklich das Glückshormon?",
+  "s": "Dopamin",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🧠",
+    "Dopamin gilt oft als Glückshormon, das uns Freude schenkt. Diese Vorstellung stützte sich unter anderem auf Versuche mit Ratten. Spätere Befunde widersprechen ihr. Wofür ist Dopamin eher zuständig, fürs Mögen oder fürs Wollen?"
+   ],
+   [
+    "🎯",
+    "Eher fürs Wollen. Ratten, deren dopaminerge Zellen zerstört waren, freuten sich trotzdem über Süßes. Antrieb und Freude verarbeitet das Gehirn getrennt. Was meldet Dopamin außerdem?"
+   ],
+   [
+    "📈",
+    "Abweichungen zwischen erwarteter und tatsächlicher Belohnung. Das nennt man Vorhersagefehler. Kommt eine Belohnung unerwartet, schüttet das Mittelhirn besonders viel Dopamin aus. Was passiert, wenn eine erwartete Belohnung ausbleibt?"
+   ],
+   [
+    "📉",
+    "Der Dopaminspiegel sinkt kurzzeitig ab. Bei Parkinson sterben dopaminproduzierende Zellen in der Substantia nigra ab, und vor allem im Striatum fehlt dann Dopamin. Welche typischen Folgen hat das?"
+   ],
+   [
+    "🚶",
+    "Typisch sind Gehschwierigkeiten, eine gekrümmte Haltung und Muskelzittern. Zusammengefasst: Dopamin treibt eher das Wollen an als das Mögen und meldet Abweichungen bei Belohnungen. Das gilt als vielversprechender, aber nicht abschließender Ansatz."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wofür ist Dopamin eher zuständig?",
+    "Für das Wollen",
+    "Für das Mögen",
+    "Für die Freude daran",
+    2
+   ],
+   [
+    "Was löst eine unerwartete Belohnung aus?",
+    "Besonders viel Dopamin im Mittelhirn",
+    "Einen sinkenden Dopaminspiegel",
+    "Keine Veränderung des Dopaminspiegels",
+    3
+   ],
+   [
+    "Wo sterben bei Parkinson Zellen ab?",
+    "In der Substantia nigra",
+    "In der Sehrinde des Gehirns",
+    "Im Riechkolben des Gehirns",
+    4
+   ]
+  ],
+  "id": "dopamin",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Spektrum der Wissenschaft",
+    "title": "Dopamin: der missverstandene Botenstoff",
+    "url": "https://www.spektrum.de/news/dopamin-der-missverstandene-botenstoff/2236948"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Deutsches Sportabzeichen: Was musst du leisten?",
+  "s": "Sportabzeichen",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏅",
+    "Das Deutsche Sportabzeichen entstand am 10. November 1912. Vorbild war ein schwedisches Abzeichen, das Carl Diem bei den Olympischen Spielen in Stockholm sah. Wie viele Disziplingruppen gibt es heute?"
+   ],
+   [
+    "🏃",
+    "Vier Gruppen: Ausdauer, Kraft, Schnelligkeit und Koordination. Aus jeder Gruppe zählt mindestens ein Ergebnis, und zwar mindestens auf Bronze-Niveau. Welche weitere Fähigkeit musst du außerdem nachweisen?"
+   ],
+   [
+    "🏊",
+    "Schwimmen. Ein Nachweis der Schwimmfähigkeit ist eine Voraussetzung für das Abzeichen. Die Leistungen eines Abzeichens müssen innerhalb eines Kalenderjahres erbracht werden. Welche drei Stufen gibt es dafür?"
+   ],
+   [
+    "🥇",
+    "Bronze, Silber und Gold, je nach Leistung in deiner Altersklasse. Erwachsene können es ab 18 Jahren erwerben, Kinder und Jugendliche ab 6 Jahren. Beim wievielten Abzeichen gibt es erstmals ein zweifarbiges?"
+   ],
+   [
+    "🎖️",
+    "Beim fünften, danach bei jedem weiteren fünften Abzeichen bis zum 60. Zusammengefasst: Es gibt vier Gruppen, einen Schwimmnachweis und drei Stufen, und alle Leistungen müssen innerhalb eines Kalenderjahres erbracht werden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Disziplingruppen hat das Sportabzeichen?",
+    "Vier",
+    "Drei",
+    "Sechs",
+    2
+   ],
+   [
+    "Innerhalb welchen Zeitraums müssen die Leistungen erbracht werden?",
+    "Innerhalb eines Kalenderjahres",
+    "Innerhalb von drei Jahren",
+    "Innerhalb eines Monats",
+    3
+   ],
+   [
+    "Ab welchem Alter können Kinder das Sportabzeichen erwerben?",
+    "Ab 6 Jahren",
+    "Ab 3 Jahren",
+    "Ab 12 Jahren",
+    4
+   ]
+  ],
+  "id": "sportabz",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bayerischer Landes-Sportverband",
+    "title": "Handbuch Sportabzeichen-Prüfer 2023",
+    "url": "https://www.blsv.de/wp-content/uploads/2023/04/2023_Handbuch-Sportabzeichen-Pruefer.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie viel kannst du dir gleichzeitig merken?",
+  "s": "Merkspanne",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🧠",
+    "Bekannt ist die Zahl sieben plus minus zwei als Grenze dessen, was wir gleichzeitig im Kopf behalten. Neuere Forschung sieht das anders. Wie viele Einheiten sind es nach einer bekannten Fachübersicht im Durchschnitt?"
+   ],
+   [
+    "4️⃣",
+    "Im Durchschnitt etwa vier Einheiten, in der Bevölkerung meist zwischen drei und fünf. Die Sieben war laut dieser Übersicht eher als grobe Schätzung gemeint. Wie nennt man Einheiten, die mehrere Dinge zusammenfassen?"
+   ],
+   [
+    "🧩",
+    "Man nennt sie Chunks. Millers eigentlicher Punkt war, dass Zusammenfassen den nutzbaren Speicher vergrößern kann. Unter welcher Bedingung zeigt sich die reine Grenze der Merkspanne besonders deutlich?"
+   ],
+   [
+    "🔒",
+    "Wenn Wiederholen und Zusammenfassen verhindert werden, etwa durch sehr schnelle Darbietung. Dann zeigt sich die reine Grenze von etwa vier Einheiten. Ist die Frage unter Fachleuten abschließend geklärt?"
+   ],
+   [
+    "❓",
+    "Nein, sie gilt als umstritten, und einzelne Schätzungen liegen sogar unter drei. Zusammengefasst: Im Durchschnitt passen etwa vier Chunks in den Kopf, und durch Zusammenfassen lässt sich mehr behalten."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Einheiten sind es laut dieser Übersicht im Durchschnitt?",
+    "Etwa vier",
+    "Etwa sieben",
+    "Etwa zwölf",
+    2
+   ],
+   [
+    "Wie heißen zusammengefasste Einheiten?",
+    "Chunks",
+    "Trigger",
+    "Pixel",
+    3
+   ],
+   [
+    "Wann zeigt sich die reine Grenze deutlicher?",
+    "Wenn Zusammenfassen verhindert wird",
+    "Wenn Zusammenfassen gut möglich ist",
+    "Wenn Wiederholen ausdrücklich erlaubt ist",
+    4
+   ]
+  ],
+  "id": "arbeitsged",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Behavioral and Brain Sciences (Cowan, 2001)",
+    "title": "The magical number 4 in short-term memory",
+    "url": "https://memory.psych.missouri.edu/assets/doc/articles/2001/cowan-bbs-2001.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792647198895,
+  "review": {
+   "date": "2026-10-22",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
