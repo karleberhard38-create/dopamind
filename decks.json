@@ -11170,5 +11170,680 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Vertrauensfrage: Wie kann ein Kanzler Neuwahlen auslösen?",
+  "s": "Neuwahl",
+  "k": "Politik",
+  "cards": [
+   [
+    "🗳️",
+    "Der Bundeskanzler kann den Bundestag fragen, ob er seine Politik noch unterstützt. Das nennt man Vertrauensfrage und sie steht in Artikel 68 des Grundgesetzes. Wie viel Zeit muss zwischen Antrag und Abstimmung liegen?"
+   ],
+   [
+    "⏳",
+    "Zwischen dem Antrag und der Abstimmung müssen 48 Stunden liegen. Der Antrag braucht dann die Zustimmung der Mehrheit der Abgeordneten. Was passiert, wenn der Kanzler diese Mehrheit nicht bekommt?"
+   ],
+   [
+    "🚪",
+    "Dann besteht die Möglichkeit, den Bundestag aufzulösen. Das entscheidet nicht der Kanzler allein, denn der Bundespräsident handelt auf dessen Vorschlag hin. Wie lange hat der Bundespräsident dafür Zeit?"
+   ],
+   [
+    "📅",
+    "Nach einem Scheitern kann der Bundespräsident den Bundestag innerhalb von 21 Tagen auflösen. Die Auflösung führt zu Neuwahlen, und diese Frist von 21 Tagen beginnt erst nach dem Scheitern der Vertrauensfrage. Wann erlischt dieses Recht schon vorher?"
+   ],
+   [
+    "✅",
+    "Das Recht erlischt, sobald der Bundestag mit der Mehrheit seiner Mitglieder einen neuen Kanzler wählt. Zusammengefasst: Scheitert die Vertrauensfrage, kann es innerhalb von 21 Tagen zur Auflösung und zu Neuwahlen kommen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viel Zeit muss zwischen Antrag und Abstimmung liegen?",
+    "48 Stunden",
+    "Zehn Minuten",
+    "Drei Wochen",
+    1
+   ],
+   [
+    "Innerhalb welcher Frist kann der Bundespräsident den Bundestag nach einem Scheitern auflösen?",
+    "21 Tage",
+    "Sieben Tage",
+    "Sechs Monate",
+    4
+   ],
+   [
+    "Auf wessen Vorschlag handelt der Bundespräsident bei der Auflösung?",
+    "Auf Vorschlag des Bundeskanzlers",
+    "Auf Vorschlag des Bundesrats",
+    "Auf Vorschlag der Opposition",
+    3
+   ]
+  ],
+  "id": "vertrauensfr",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Deutscher Bundestag",
+    "title": "Glossar: Vertrauensfrage",
+    "url": "https://www.bundestag.de/service/glossar/V/vertrauensfrage/245558"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Zeitumstellung: Warum drehen wir immer noch an der Uhr?",
+  "s": "Zeitumstellung",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🕑",
+    "Die Sommerzeit wurde in Deutschland 1916 während des Ersten Weltkriegs eingeführt, um Rohstoffe zu sparen. Das Ziel war es damals, Rohstoffe zu sparen, und eine einheitliche Regelung für ganz Europa kam erst deutlich später. Seit wann gilt sie in Europa?"
+   ],
+   [
+    "🇪🇺",
+    "Seit 1980 gilt in Europa eine einheitliche Regelung, damit der Binnenmarkt funktioniert. Heute beruht sie auf einer EU-Richtlinie aus dem Jahr 2000. An welchen Tagen werden die Uhren umgestellt?"
+   ],
+   [
+    "🔁",
+    "Am letzten Sonntag im März geht es zur Sommerzeit, am letzten Sonntag im Oktober zurück zur Winterzeit. 2019 stimmte das Europäische Parlament dem Vorschlag zu, die Umstellung 2021 abzuschaffen. Warum gilt sie trotzdem noch?"
+   ],
+   [
+    "🧩",
+    "Im Rat gibt es bis heute keine gemeinsame Lösung. Offen ist vor allem, ob dauerhaft Sommerzeit oder Winterzeit gelten soll. Was lässt die EU-Kommission derzeit untersuchen?"
+   ],
+   [
+    "📌",
+    "Sie lässt die Folgen verschiedener Szenarien untersuchen, Ergebnisse sollen 2027 vorliegen. Zusammengefasst: Die Umstellung gilt weiter, weil sich die Mitgliedstaaten nicht auf eine dauerhafte Zeit einigen konnten."
+   ]
+  ],
+  "quiz": [
+   [
+    "Seit wann ist die Sommerzeit in Europa einheitlich geregelt?",
+    "Seit 1980",
+    "Seit 1816",
+    "Seit 2019",
+    1
+   ],
+   [
+    "Wann werden die Uhren auf die Winterzeit zurückgestellt?",
+    "Am letzten Sonntag im Oktober",
+    "Am ersten Montag im Januar",
+    "Am letzten Sonntag im Juli",
+    3
+   ],
+   [
+    "Woran scheitert das Ende der Umstellung bisher?",
+    "Der Rat findet keine gemeinsame Lösung",
+    "Das Parlament lehnte es 2019 ab",
+    "Das Ende wurde schon 2021 vollzogen",
+    4
+   ]
+  ],
+  "id": "zeitumst",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundesministerium für Wirtschaft und Energie",
+    "title": "FAQ Zeitumstellung",
+    "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/FAQ/zeitumstellung/faq-zeitumstellung.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie viel Schlaf brauchen Erwachsene mindestens?",
+  "s": "Schlafdauer",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "😴",
+    "Für Erwachsene zwischen 18 und 60 Jahren empfehlen zwei Fachgesellschaften für Schlafmedizin und Schlafforschung eine Mindestdauer des Schlafs pro Nacht. Wie viele Stunden sind das mindestens?"
+   ],
+   [
+    "7️⃣",
+    "Mindestens sieben Stunden pro Nacht, so lautet die gemeinsame Empfehlung der beiden Fachgesellschaften für Erwachsene zwischen 18 und 60 Jahren. Eine solche Empfehlung lässt sich mit Daten vergleichen. Wie groß ist der Anteil der Erwachsenen, die diese Dauer verfehlen?"
+   ],
+   [
+    "📊",
+    "Eine US-Gesundheitsbehörde meldete 2016, dass mehr als ein Drittel der erwachsenen Amerikaner regelmäßig nicht genug schläft. Das betrifft also viele Menschen. Ist der Anteil mit ausreichend Schlaf überall gleich?"
+   ],
+   [
+    "🗺️",
+    "Nein, er schwankt stark. Nach Daten von 2014 lag er in den US-Bundesstaaten zwischen 56 Prozent in Hawaii und 72 Prozent in South Dakota. Was zeigt diese Spanne?"
+   ],
+   [
+    "💡",
+    "Es gab also deutliche Unterschiede zwischen den Bundesstaaten. Zusammengefasst: Erwachsene zwischen 18 und 60 Jahren sollten regelmäßig mindestens sieben Stunden pro Nacht schlafen, und viele erreichen das nicht."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Stunden Schlaf empfehlen die Fachgesellschaften Erwachsenen mindestens?",
+    "Sieben Stunden",
+    "Drei Stunden",
+    "Vier Stunden",
+    2
+   ],
+   [
+    "Welcher Anteil der US-Erwachsenen schlief 2016 regelmäßig zu wenig?",
+    "Mehr als ein Drittel",
+    "Etwa jeder Hundertste",
+    "Weniger als jeder Zehnte",
+    3
+   ],
+   [
+    "Wie unterschied sich der Anteil mit gesundem Schlaf zwischen den US-Bundesstaaten?",
+    "Er lag zwischen 56 und 72 Prozent",
+    "Er war in allen Staaten gleich",
+    "Er lag zwischen 5 und 10 Prozent",
+    4
+   ]
+  ],
+  "id": "schlafdauer",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "US-Gesundheitsbehörde CDC (Archiv)",
+    "title": "1 in 3 adults don't get enough sleep (2016)",
+    "url": "https://archive.cdc.gov/www_cdc_gov/media/releases/2016/p0215-enough-sleep.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Apollo 11: Wie lief die erste Mondlandung ab?",
+  "s": "Apollo 11",
+  "k": "Wissenschaft",
+  "cards": [
+   [
+    "🌕",
+    "Am 20. Juli 1969 landete die Mondlandefähre Eagle im Meer der Ruhe. An Bord waren Neil Armstrong und Buzz Aldrin. Wer von der Besatzung blieb in der Umlaufbahn?"
+   ],
+   [
+    "🛰️",
+    "Michael Collins blieb im Kommandomodul in der Mondumlaufbahn. Dort führte er wissenschaftliche Experimente durch und machte Fotos, während die beiden anderen Astronauten unten waren. Wer betrat zuerst die Mondoberfläche?"
+   ],
+   [
+    "👣",
+    "Neil Armstrong setzte als Erster den Fuß auf den Mond, etwa sechseinhalb Stunden nach der Landung. Auch Aldrin ging hinaus. Was taten die beiden dort draußen?"
+   ],
+   [
+    "🪨",
+    "Sie waren rund drei Stunden draußen, richteten dabei wissenschaftliche Instrumente auf und sammelten Gesteins- und Bodenproben ein. Wie lange blieb die Fähre insgesamt auf dem Mond?"
+   ],
+   [
+    "🌊",
+    "Die Eagle blieb 22 Stunden, startete dann und dockte am Kommandomodul an. Am 24. Juli 1969 landete Apollo 11 im Pazifik, nach 8 Tagen, 3 Stunden und 19 Minuten Mission."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer blieb in der Mondumlaufbahn?",
+    "Michael Collins",
+    "Neil Armstrong",
+    "Buzz Aldrin",
+    2
+   ],
+   [
+    "Wie lange waren die beiden Astronauten ungefähr draußen?",
+    "Rund drei Stunden",
+    "Rund drei Tage",
+    "Rund drei Minuten",
+    4
+   ],
+   [
+    "Wo landete Apollo 11 bei der Rückkehr?",
+    "Im Pazifischen Ozean",
+    "Im Atlantischen Ozean",
+    "Im Indischen Ozean",
+    5
+   ]
+  ],
+  "id": "apollo11",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "NASA Goddard (StarChild)",
+    "title": "Apollo 11",
+    "url": "https://starchild.gsfc.nasa.gov/docs/StarChild/space_level2/apollo11.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Euro-Banknoten: Wie erkennst du echtes Geld?",
+  "s": "Echtes Geld",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💶",
+    "Die zweite Euro-Serie, die Europa-Serie, kam ab Mai 2013 mit dem 5-Euro-Schein. Die erste Serie ist weiter im Umlauf. Welche drei Schritte empfiehlt die Zentralbank zur Echtheitsprüfung?"
+   ],
+   [
+    "👆",
+    "Fühlen, Sehen, Kippen. Beim Fühlen ist das Papier griffig und fest. Kurze Rillen am linken und rechten Rand, das Hauptmotiv und die große Wertzahl fühlen sich dicker an. Was prüfst du beim Sehen?"
+   ],
+   [
+    "🔦",
+    "Gegen das Licht siehst du ein Wasserzeichen mit dem Porträt der Europa, die Wertzahl und ein Fenster. Der Sicherheitsfaden erscheint als dunkler Streifen. Was zeigt sich beim Kippen?"
+   ],
+   [
+    "🌈",
+    "Im silbrigen Hologrammstreifen erscheinen das Porträt der Europa, ein Fenster und die Wertzahl. Die Smaragdzahl zeigt außerdem einen Lichteffekt. Welche Farben wechselt sie beim Kippen?"
+   ],
+   [
+    "✅",
+    "Die Smaragdzahl wechselt von smaragdgrün zu tiefblau. Zusammengefasst: Prüfe Banknoten mit Fühlen, Sehen und Kippen, also mit Tasten, Betrachten gegen das Licht und Bewegen des Scheins, wie es die Zentralbank empfiehlt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welche Schritte empfiehlt die Zentralbank?",
+    "Fühlen, Sehen, Kippen",
+    "Wiegen, Messen, Riechen",
+    "Falten, Reiben, Zählen",
+    1
+   ],
+   [
+    "Was zeigt sich gegen das Licht?",
+    "Ein Wasserzeichen",
+    "Ein Wetterbericht",
+    "Eine Telefonnummer",
+    3
+   ],
+   [
+    "Welche Farben wechselt die Smaragdzahl beim Kippen?",
+    "Smaragdgrün zu tiefblau",
+    "Orange zu hellrosa",
+    "Schwarz zu weiß",
+    4
+   ]
+  ],
+  "id": "banknoten",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Europäische Zentralbank",
+    "title": "Euro banknotes: Feel, Look, Tilt (Europa series)",
+    "url": "https://www.ecb.europa.eu/euro/pdf/material/discover5/Leaflet_Public.en.pdf"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Europäische Kommission: Wer schlägt EU-Gesetze vor?",
+  "s": "EU-Kommission",
+  "k": "Politik",
+  "cards": [
+   [
+    "🇪🇺",
+    "Die Europäische Kommission hat eine besondere Rolle, denn nur sie kann neue Gesetze für die EU vorschlagen. Das nennt man Initiativrecht. Wo hat sie ihren Sitz?"
+   ],
+   [
+    "🏛️",
+    "Ihr Sitz ist in Brüssel. An ihrer Spitze steht eine Präsidentin oder ein Präsident, und diese Person wird nicht einfach direkt von den Bürgern gewählt. Wer schlägt sie für das Amt vor?"
+   ],
+   [
+    "📝",
+    "Der Europäische Rat nominiert die Person für das Amt. Danach muss das Europäische Parlament sie mit der Mehrheit seiner Mitglieder bestätigen, sonst bekommt sie das Amt nicht. Wer nominiert die übrigen Mitglieder der Kommission?"
+   ],
+   [
+    "👥",
+    "Die Mitgliedstaaten nominieren die Kommissarinnen und Kommissare. Das Parlament billigt die gesamte Kommission anschließend mit einfacher Mehrheit, für die Präsidentin oder den Präsidenten gilt dagegen eine andere Mehrheit. Wie lange dauert eine Amtszeit?"
+   ],
+   [
+    "⏱️",
+    "Die Amtszeit beträgt fünf Jahre, eine Wiederwahl ist möglich. Zusammengefasst: Die Kommission sitzt in Brüssel, wird vom Parlament bestätigt und besitzt als einziges Organ das Recht, EU-Gesetze vorzuschlagen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer kann in der EU neue Gesetze vorschlagen?",
+    "Allein die Kommission",
+    "Jeder Mitgliedstaat einzeln",
+    "Nur das Parlament",
+    1
+   ],
+   [
+    "Wer nominiert die Kommissionspräsidentin oder den Präsidenten?",
+    "Der Europäische Rat",
+    "Die Bürger direkt",
+    "Der Bundestag",
+    2
+   ],
+   [
+    "Wie lange dauert eine Amtszeit der Kommission?",
+    "Fünf Jahre",
+    "Ein Jahr",
+    "Zwanzig Jahre",
+    5
+   ]
+  ],
+  "id": "eukommission",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Die Europäische Kommission",
+    "url": "https://www.bpb.de/fsd/eu-kommission"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Resilienz: Kann man seelische Widerstandskraft lernen?",
+  "s": "Resilienz",
+  "k": "Psyche",
+  "cards": [
+   [
+    "🌱",
+    "Resilienz gilt als seelische Widerstandskraft. Gemeint ist, die psychische Gesundheit in schwierigen Lebensphasen zu erhalten oder nach einer Belastung schnell wiederherzustellen. Ist sie ein angeborener Charakterzug?"
+   ],
+   [
+    "🧬",
+    "Nein, laut Krankenkassen-Ratgeber ist Resilienz kein angeborener Charakterzug. Sie entwickelt sich über längere Zeit und wächst durch die Anpassung an schwierige Zeiten. Wovon hängt der Umgang mit Belastungen ab?"
+   ],
+   [
+    "🧩",
+    "Er hängt von sogenannten Resilienzfaktoren ab. Dazu gehören zum Beispiel eine positive Grundhaltung und ein zukunftsgerichtetes, lösungsorientiertes Denken. Welche weiteren Faktoren nennt der Ratgeber ebenfalls?"
+   ],
+   [
+    "🤝",
+    "Genannt werden vor allem die Akzeptanz der Situation, das Selbstvertrauen, schwierige Herausforderungen bewältigen zu können, und der Rückhalt durch nahestehende Personen. Kann man Resilienz also gezielt aufbauen?"
+   ],
+   [
+    "✅",
+    "Ja, jeder Mensch kann sie durch bestimmte Strategien aufbauen. Zusammengefasst: Resilienz ist kein fester Charakterzug, sondern erlernbar und hängt unter anderem von Denkweise, Selbstvertrauen und Rückhalt ab."
+   ]
+  ],
+  "quiz": [
+   [
+    "Ist Resilienz ein angeborener Charakterzug?",
+    "Nein, sie entwickelt sich über längere Zeit",
+    "Ja, sie ist von Geburt an fest",
+    "Sie entsteht nur im Schlaf",
+    1
+   ],
+   [
+    "Welcher Faktor gehört zur Resilienz?",
+    "Rückhalt durch nahestehende Personen",
+    "Möglichst wenig Kontakte",
+    "Dauerhafte Ablehnung jeder Veränderung",
+    3
+   ],
+   [
+    "Kann man Resilienz aufbauen?",
+    "Ja, durch bestimmte Strategien",
+    "Nein, nur Ärzte können das",
+    "Nur vor dem zehnten Lebensjahr",
+    5
+   ]
+  ],
+  "id": "resilienz",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Techniker Krankenkasse",
+    "title": "Resilienz: Besser auf Krisen vorbereitet sein",
+    "url": "https://www.tk.de/techniker/krankheit-und-behandlungen/erkrankungen/behandlungen-und-medizin/psychische-gesundheit/nachsorge/resilienz-besser-auf-krisen-vorbereitet-sein-2165442"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Warum hat ein Baby mehr Knochen als ein Erwachsener?",
+  "s": "Knochenzahl",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🦴",
+    "Die meisten Erwachsenen haben 206 Knochen im Körper. Babys kommen dagegen mit etwa 300 Knochen zur Welt, also mit deutlich mehr. Haben Erwachsene im Laufe des Lebens also Knochen verloren?"
+   ],
+   [
+    "📉",
+    "Erwachsene haben fast 100 Knochen weniger als bei der Geburt. Ein Anatomieprofessor erklärt das mit dem Knorpel, denn der Knorpel sei es, der wirklich wächst. Wo wächst Knochen selbst?"
+   ],
+   [
+    "📏",
+    "Knochen wächst nur an seiner äußeren Oberfläche. Knorpel dagegen kann auch von der Mitte aus wachsen, in Bereichen, die man Wachstumsfugen nennt. Was bedeutet das für das Wachstum?"
+   ],
+   [
+    "🌱",
+    "Knorpel kann sich in der Mitte ausdehnen, Knochen nur außen. Deshalb spielt der Knorpel für das Wachstum eine große Rolle. Wie viele Knochen sind es im Erwachsenenalter meist?"
+   ],
+   [
+    "✅",
+    "Meist sind es 206 Knochen. Zusammengefasst: Babys haben bei der Geburt etwa 300 Knochen, Erwachsene meist nur 206, und laut dem Anatomieprofessor ist es der Knorpel, der wirklich wächst."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Knochen haben die meisten Erwachsenen?",
+    "206 Knochen",
+    "Etwa 300 Knochen",
+    "Genau 50 Knochen",
+    5
+   ],
+   [
+    "Wo wächst Knochen selbst?",
+    "An der äußeren Oberfläche",
+    "Von der Mitte aus",
+    "In der Zahnwurzel",
+    3
+   ],
+   [
+    "Wie viele Knochen hat ein Baby bei der Geburt ungefähr?",
+    "Etwa 300 Knochen",
+    "Etwa 20 Knochen",
+    "Etwa 1000 Knochen",
+    1
+   ]
+  ],
+  "id": "knochen",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Case Western Reserve University",
+    "title": "Why adults have nearly 100 fewer bones than at birth",
+    "url": "https://case.edu/news/anatomys-darin-croft-explains-why-adults-have-nearly-100-fewer-bones-when-they-are-born"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Elfmeter: Welche Regeln gelten für den Strafstoß?",
+  "s": "Elfmeter",
+  "k": "Sport",
+  "cards": [
+   [
+    "⚽",
+    "Der Strafstoß wurde 1891 eingeführt. Bis dahin ging man davon aus, dass ein echter Gentleman nie absichtlich foult. Wo muss der Ball beim Schuss liegen?"
+   ],
+   [
+    "📍",
+    "Der Ball muss ruhen und mit einem Teil den Mittelpunkt der Strafstoßmarke berühren oder darüber hinausragen. Auch Tor und Netz dürfen sich dabei nicht bewegen. Wohin muss der Ball gespielt werden?"
+   ],
+   [
+    "➡️",
+    "Der Schuss muss nach vorn gehen, ein Hackentrick ist erlaubt, wenn der Ball nach vorn rollt. Der Schütze darf ihn erst wieder spielen, wenn ein anderer Spieler ihn berührt hat. Was gilt für den Torwart?"
+   ],
+   [
+    "🧤",
+    "Der Torwart muss bis zum Schuss auf der Torlinie zwischen den Pfosten stehen und den Schützen ansehen. Beim Schuss muss ein Teil eines Fußes die Linie berühren, auf ihr oder dahinter sein. Wie weit müssen die anderen Spieler weg sein?"
+   ],
+   [
+    "✅",
+    "Mindestens 9,15 Meter von der Marke entfernt, hinter ihr, im Spielfeld und außerhalb des Strafraums. Zusammengefasst: Der Schuss erfolgt erst nach dem Zeichen des Schiedsrichters."
+   ]
+  ],
+  "quiz": [
+   [
+    "In welchem Jahr wurde der Strafstoß eingeführt?",
+    "1891",
+    "1991",
+    "1791",
+    1
+   ],
+   [
+    "Welchen Abstand müssen die anderen Spieler zur Marke mindestens haben?",
+    "9,15 Meter",
+    "1,5 Meter",
+    "30 Meter",
+    5
+   ],
+   [
+    "Was gilt für den Ball beim Elfmeter?",
+    "Er muss ruhen",
+    "Er muss rollen",
+    "Er muss in der Luft sein",
+    2
+   ]
+  ],
+  "id": "elfmeter",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "FIFA",
+    "title": "London's football history: Laws of the Game",
+    "url": "https://inside.fifa.com/en/news/london-s-football-history-laws-of-the-game-2902981"
+   },
+   {
+    "publisher": "IFAB",
+    "title": "Law 14 The Penalty Kick",
+    "url": "https://www.theifab.com/laws/latest/the-penalty-kick/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie viele Gene zählte man 2004 im menschlichen Genom?",
+  "s": "Genzahl",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🧬",
+    "Als die Sequenz des menschlichen Genoms 2004 als fertig beschrieben wurde, ging es auch um die Zahl der Gene darin. Gemeint sind die Gene, die den Bauplan für Proteine enthalten. Wie viele wurden bestätigt?"
+   ],
+   [
+    "🔢",
+    "Bestätigt wurde die Existenz von 19.599 proteinkodierenden Genen im menschlichen Genom. Das war die Zahl der bestätigten Gene und keine Schätzung. Gab es darüber hinaus weitere Kandidaten?"
+   ],
+   [
+    "🔍",
+    "Ja, zusätzlich wurden 2.188 DNA-Abschnitte als vermutlich proteinkodierende Gene vorhergesagt. Sie galten damals also noch nicht als bestätigt, sondern nur als wahrscheinlich. Wie gut war die Sequenz selbst?"
+   ],
+   [
+    "📖",
+    "Die Sequenz war von hoher Qualität. Die durchschnittliche Länge eines ununterbrochenen Abschnitts lag bei 38,5 Millionen Basenpaaren. Was lässt sich über die Zahl der Gene sagen?"
+   ],
+   [
+    "✅",
+    "Zusammengefasst: Bestätigt waren 19.599 proteinkodierende Gene, dazu kamen 2.188 vorhergesagte Kandidaten. Diese Zahlen stammen vom Stand der Fertigstellung der Sequenz im Jahr 2004, als die Veröffentlichung zur fertigen Sequenz erschien."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele proteinkodierende Gene wurden bestätigt?",
+    "19.599 Gene",
+    "Rund 100.000 Gene",
+    "Genau 1000 Gene",
+    2
+   ],
+   [
+    "Wie viele weitere Abschnitte galten als vermutlich proteinkodierend?",
+    "2.188 Abschnitte",
+    "Mehr als 5 Millionen Abschnitte",
+    "Genau 7 Abschnitte",
+    3
+   ],
+   [
+    "Wie lang war ein ununterbrochener Sequenzabschnitt im Durchschnitt?",
+    "38,5 Millionen Basenpaare",
+    "385 Millionen Basenpaare",
+    "38 Tausend Basenpaare",
+    4
+   ]
+  ],
+  "id": "genom",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Nationales Humangenom-Forschungsinstitut (NHGRI)",
+    "title": "2004: Beschreibung der fertigen menschlichen Sequenz",
+    "url": "https://www.genome.gov/12513430"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792733329995,
+  "review": {
+   "date": "2026-10-23",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
