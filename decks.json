@@ -11845,5 +11845,618 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Wehrbeauftragter: Wer kontrolliert für das Parlament die Streitkräfte?",
+  "s": "Soldatenrecht",
+  "k": "Politik",
+  "cards": [
+   [
+    "🎖️",
+    "Soldaten dürfen sich in Deutschland beschweren, ohne vorher ihre Vorgesetzten zu fragen. Sie können sich direkt an eine Stelle wenden, die für das Parlament die Streitkräfte im Blick behält. Wer ist das, und wie kommt er ins Amt?"
+   ],
+   [
+    "🗳️",
+    "Der Wehrbeauftragte wird vom Bundestag in geheimer Wahl gewählt, und zwar mit der Mehrheit aller Mitglieder. Wählbar ist nur, wer Deutscher ist, das Wahlrecht zum Bundestag hat und mindestens 35 Jahre alt ist. Wie lange bleibt er im Amt?"
+   ],
+   [
+    "📅",
+    "Die Amtszeit beträgt fünf Jahre, und eine Wiederwahl ist erlaubt. Er ist ein Hilfsorgan des Bundestages bei der Kontrolle der Streitkräfte. Er wird auf Weisung tätig, bei Anhaltspunkten für Grundrechtsverletzungen auch von sich aus. Was darf er konkret tun?"
+   ],
+   [
+    "🔎",
+    "Er darf Truppenteile und Dienststellen der Streitkräfte jederzeit besuchen, auch ohne Anmeldung. Dieses Recht hat er nur persönlich. Außerdem kann er Auskunft und Akteneinsicht verlangen. Wann darf das Ministerium das verweigern?"
+   ],
+   [
+    "📜",
+    "Nur aus zwingenden Geheimhaltungsgründen darf die Auskunft verweigert werden. Anonyme Eingaben von Soldaten bearbeitet er nicht. Einmal im Jahr legt er dem Bundestag einen schriftlichen Bericht für das Kalenderjahr vor, damit das Parlament kontrollieren kann."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange dauert die Amtszeit des Wehrbeauftragten?",
+    "Fünf Jahre",
+    "Drei Jahre",
+    "Acht Jahre",
+    3
+   ],
+   [
+    "Wer wählt den Wehrbeauftragten?",
+    "Der Bundestag in geheimer Wahl",
+    "Die Soldaten in einer Urwahl",
+    "Die Regierung per Beschluss",
+    2
+   ],
+   [
+    "Wann darf er Dienststellen besuchen?",
+    "Jederzeit, auch ohne Anmeldung",
+    "Nur nach vorheriger Anmeldung",
+    "Nur mit Erlaubnis des Ministers",
+    4
+   ]
+  ],
+  "id": "wehrbeauf",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Gesetze im Internet (Bundesjustizministerium)",
+    "title": "Gesetz über den Wehrbeauftragten des Deutschen Bundestages",
+    "url": "https://www.gesetze-im-internet.de/wehrbbtg/BJNR006520957.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Fosbury Flop: Wie veränderte ein Rückwärtssprung den Hochsprung?",
+  "s": "Fosbury Flop",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏅",
+    "Bei den Olympischen Spielen 1968 sprang ein 21 Jahre alter Athlet rückwärts über die Latte und gewann Gold. Das sah damals ungewohnt aus. Wie kam Dick Fosbury auf diese Technik?"
+   ],
+   [
+    "🏫",
+    "Mit etwa 16 Jahren begann er an seiner High School zu experimentieren. Er drehte sich im Sprung so, dass der Rücken zur Latte zeigte. Andere spotteten anfangs über seinen Stil. Welche Rolle spielte der Boden, auf dem er landete?"
+   ],
+   [
+    "🧽",
+    "Weiche Schaumstoffmatten lösten in den frühen 1960er Jahren Gruben mit Sägemehl und Holzspänen ab. Erst dadurch war eine Landung auf dem Rücken sicher möglich. Und woher stammt eigentlich der Name Flop?"
+   ],
+   [
+    "📰",
+    "1964 druckte eine Zeitung ein Foto mit der Zeile Fosbury Flops Over Bar. Daraus entstand der Name Fosbury Flop. Er lief diagonal in einer Kurve an und sprang mit dem Rücken voran über die Latte. Wie hoch kam er damit in Mexiko?"
+   ],
+   [
+    "🥇",
+    "In Mexiko-Stadt übersprang er 2,24 Meter. Das bedeutete Gold und einen neuen olympischen Rekord. Drei Versuche über 2,29 Meter scheiterten. Die Technik heißt seither Fosbury Flop."
+   ]
+  ],
+  "quiz": [
+   [
+    "In welchem Jahr gewann Fosbury olympisches Gold?",
+    "1968",
+    "1964",
+    "1972",
+    1
+   ],
+   [
+    "Warum wurde die Rückenlandung erst möglich?",
+    "Weiche Schaumstoffmatten ersetzten Sägemehlgruben",
+    "Die Latte wurde niedriger gehängt",
+    "Der Anlauf wurde verlängert",
+    3
+   ],
+   [
+    "Woher stammt der Name Fosbury Flop?",
+    "Aus einer Zeitungszeile zu einem Foto von 1964",
+    "Aus dem Namen seines Trainers",
+    "Aus einer Regel des Weltverbandes",
+    4
+   ]
+  ],
+  "id": "fosbury",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Berliner Zeitung",
+    "title": "Der Erfinder des Flops, Dick Fosbury, gestorben",
+    "url": "https://www.berliner-zeitung.de/article/hochsprung-der-erfinder-des-flops-dick-fosbury-gestorben-mit-seiner-technik-hat-er-den-hochsprung-revolutioniert-327275"
+   },
+   {
+    "publisher": "Wikipedia",
+    "title": "Dick Fosbury",
+    "url": "https://en.wikipedia.org/wiki/Dick_Fosbury"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Panikattacke: Was passiert da, und wie gefährlich ist sie?",
+  "s": "Panikattacke",
+  "k": "Psyche",
+  "cards": [
+   [
+    "😰",
+    "Plötzlich rast das Herz, die Luft wird knapp, und du hast Angst zu sterben. Dabei ist nichts passiert, was dich bedroht. Das kann eine Panikattacke sein. Wie häufig kommt so etwas eigentlich vor?"
+   ],
+   [
+    "📊",
+    "Panikattacken kommen bei mindestens 11 Prozent der Erwachsenen in einem Jahr vor. Gemeint ist plötzliche starke Furcht, dazu mindestens vier von dreizehn möglichen Beschwerden, etwa Zittern, Schwitzen oder Schwindel. Wie lange hält so ein Anfall an?"
+   ],
+   [
+    "⏱️",
+    "Die Beschwerden erreichen meist innerhalb von etwa zehn Minuten ihren Höhepunkt und klingen innerhalb weniger Minuten wieder ab. Der Anfall geht also vorüber. Ist er gefährlich?"
+   ],
+   [
+    "🫀",
+    "Panikattacken sind unangenehm und können extrem wirken, aber sie sind nicht gefährlich. Weil die Beschwerden einem Herzinfarkt ähneln können, sollten schwere oder anhaltende Symptome ärztlich abgeklärt werden. Was hilft, wenn sie immer wiederkehren?"
+   ],
+   [
+    "🧩",
+    "Bei wiederholten Attacken kommen Psychotherapie, etwa Expositionstherapie oder kognitive Verhaltenstherapie, und Medikamente infrage. Viele Menschen erholen sich auch ohne Behandlung. Bei wiederholten Attacken mit Vermeidungsverhalten braucht es meist Therapie oder Medikamente."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wann erreichen die Beschwerden meist ihren Höhepunkt?",
+    "Nach etwa zehn Minuten",
+    "Nach etwa zwei Stunden",
+    "Erst nach einem ganzen Tag",
+    3
+   ],
+   [
+    "Wie bewertet die Quelle Panikattacken?",
+    "Unangenehm, aber nicht gefährlich",
+    "Meist ein Zeichen eines Herzinfarkts",
+    "Gefährlich und lebensbedrohlich",
+    4
+   ],
+   [
+    "Wie viele der 13 möglichen Beschwerden gehören mindestens dazu?",
+    "Mindestens vier",
+    "Mindestens zehn",
+    "Mindestens zwei",
+    2
+   ]
+  ],
+  "id": "panikatt",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "MSD Manuals (Patientenausgabe)",
+    "title": "Panikattacken und Panikstörungen",
+    "url": "https://www.msdmanuals.com/de-de/heim/psychische-gesundheitsst%C3%B6rungen/angstst%C3%B6rungen-und-stressbezogene-erkrankungen/panikattacken-und-panikst%C3%B6rungen"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wie schlafen Delfine mit nur einer Gehirnhälfte?",
+  "s": "Delfinschlaf",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐬",
+    "Delfine ruhen, aber ein Teil ihres Gehirns bleibt dabei wach. Manche Tiere halten dabei sogar ein Auge offen. Dieses Phänomen gibt es nur bei bestimmten Tieren. Wie nennt die Forschung es, und was passiert im Kopf?"
+   ],
+   [
+    "🧠",
+    "Fachleute nennen es unihemisphärischen Tiefschlaf. Dabei schläft nur eine Gehirnhälfte tief, die andere bleibt wach. Der Tiefschlaf zeigt sich im EEG an großen, langsamen Wellen. Welche Tiere können das noch?"
+   ],
+   [
+    "🦭",
+    "Neben Delfinen gehören Robben dazu, außerdem einige Vogelarten. Manche Tiere nutzen den halbseitigen Schlaf nur in bestimmten Situationen, sonst schlafen beide Hirnhälften. Wozu soll das gut sein?"
+   ],
+   [
+    "🛡️",
+    "Schlafende Tiere sind leicht zu erbeuten. Die wache Hälfte ermöglicht es Delfinen, Robben und einigen Vögeln, sich auch in der Ruhe zu schützen. Wie kam die Forschung darauf?"
+   ],
+   [
+    "🔬",
+    "In den 1960er Jahren beobachtete der Forscher John Lilly, dass Delfine in Ruhephasen nur ein Auge schlossen. Er vermutete, sie blieben wachsam. Was im Gehirn tatsächlich geschieht, zeigten erst spätere Experimente."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was bedeutet unihemisphärischer Tiefschlaf?",
+    "Eine Hirnhälfte schläft tief, die andere ist wach",
+    "Beide Hirnhälften schlafen nur sehr kurz",
+    "Das Gehirn schläft, aber die Augen sind zu",
+    2
+   ],
+   [
+    "Welche Tiere nutzen halbseitigen Schlaf?",
+    "Delfine, Robben und einige Vogelarten",
+    "Hunde, Katzen und alle Pferde",
+    "Fledermäuse, Frösche und Schlangen",
+    3
+   ],
+   [
+    "Warum ist der halbseitige Schlaf nützlich?",
+    "Die wache Hälfte hilft, sich vor Feinden zu schützen",
+    "Er macht die Tiere schneller beim Schwimmen",
+    "Er spart ihnen das Fressen im Winter",
+    4
+   ]
+  ],
+  "id": "delfinschl",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Spektrum der Wissenschaft",
+    "title": "Einige Tiere können mit nur einer Hirnhälfte schlafen",
+    "url": "https://www.spektrum.de/magazin/einige-tiere-koennen-mit-nur-einer-hirnhaelfte-schlafen/1667072"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Basketball: Wie entstand das Spiel mit den Pfirsichkörben?",
+  "s": "Basketball",
+  "k": "Sport",
+  "cards": [
+   [
+    "🏀",
+    "Das Spiel begann mit zwei Pfirsichkörben, die an Balkonen einer Turnhalle befestigt waren. Es sollte Sportler im Winter beschäftigen. Wer hat sich das ausgedacht, und wann?"
+   ],
+   [
+    "📝",
+    "James Naismith entwickelte Basketball 1891 in Springfield im US-Bundesstaat Massachusetts. Die 13 Regeln wurden kurz darauf veröffentlicht. Das erste Spiel fand am 21. Dezember 1891 statt. Wie viele Spieler traten damals pro Team an?"
+   ],
+   [
+    "🔢",
+    "Beim ersten Spiel standen neun Spieler pro Mannschaft auf dem Feld. Die heute übliche Besetzung mit fünf Spielern gilt als Standard seit einem Hochschulspiel im Jahr 1896. Wie sah der Korb damals aus?"
+   ],
+   [
+    "🥅",
+    "Die Pfirsichkörbe hatten zunächst noch Böden. Später entfernte man diese vollständig, und erst 1906 kamen Metallringe, Netze und Backboards hinzu. Wann wurde Basketball eigentlich olympisch?"
+   ],
+   [
+    "🌍",
+    "1936 in Berlin wurde Basketball zur olympischen Sportart der Männer. Das erste olympische Turnier der Frauen fand 1976 statt. Aus einer Idee für die kalten Monate wurde so ein olympischer Wettkampfsport."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Regeln veröffentlichte Naismith?",
+    "13",
+    "7",
+    "21",
+    2
+   ],
+   [
+    "Wie viele Spieler hatte jedes Team beim ersten Spiel?",
+    "Neun Spieler",
+    "Fünf Spieler",
+    "Sieben Spieler",
+    3
+   ],
+   [
+    "In welchem Jahr wurde Basketball olympische Sportart der Männer?",
+    "1936",
+    "1948",
+    "1928",
+    5
+   ]
+  ],
+  "id": "basketball",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "The Canadian Encyclopedia",
+    "title": "James Naismith",
+    "url": "https://thecanadianencyclopedia.ca/en/article/james-naismith"
+   },
+   {
+    "publisher": "Wikipedia",
+    "title": "History of basketball",
+    "url": "https://en.wikipedia.org/wiki/History_of_basketball"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Regenwurm: Was macht er unter deinen Füßen im Boden?",
+  "s": "Regenwurm",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🪱",
+    "Unter einem Acker leben mehr Tiere, als man sieht. Auf einem Feld können ein bis drei Tonnen Regenwürmer pro Hektar leben. Was tun sie dort den ganzen Tag?"
+   ],
+   [
+    "🕳️",
+    "Der Regenwurm Lumbricus terrestris gräbt senkrechte Gänge, die bis zu drei Meter tief reichen und sich zur Oberfläche hin verzweigen. Er ernährt sich vor allem von abgestorbenen Pflanzenresten. Wie kommt das Futter in den Boden?"
+   ],
+   [
+    "🍂",
+    "Seine Hauptnahrung sind abgestorbene Pflanzenreste. Er zieht sie in den Gang und verdaut sie teilweise vor. Was er nicht verwertet, kleidet die Gangwand aus oder landet als Kot an der Oberfläche. Wie viel kommt da zusammen?"
+   ],
+   [
+    "⚖️",
+    "Auf Weideland können bis zu 40 Tonnen Kot pro Hektar und Jahr entstehen, in wärmeren Regionen bis zum Fünffachen. Der Kot enthält Kleinstlebewesen, die den Abbau beschleunigen. Was bringt das dem Boden?"
+   ],
+   [
+    "🌱",
+    "Im Darm verbindet er organisches und mineralisches Material zu Ton-Humus-Komplexen. Das macht den Boden stabiler gegen Erosion und Druck und verbessert die Wasserspeicherung. Auch Pflanzenwurzeln nutzen seine Gänge als Leitbahnen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie tief können die Gänge reichen?",
+    "Bis zu drei Meter",
+    "Bis zu dreißig Zentimeter",
+    "Bis zu dreißig Meter",
+    2
+   ],
+   [
+    "Wovon ernährt er sich vor allem?",
+    "Von abgestorbenen Pflanzenresten",
+    "Von lebenden Wurzeln junger Bäume",
+    "Von kleinen Insekten im Boden",
+    3
+   ],
+   [
+    "Was verbessert seine Arbeit im Boden?",
+    "Stabilität gegen Erosion und Wasserspeicherung",
+    "Die Farbe des Bodens und seine Temperatur",
+    "Den Salzgehalt und den Säuregrad",
+    5
+   ]
+  ],
+  "id": "regenwurm",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Spektrum der Wissenschaft",
+    "title": "Lexikon der Biologie: Regenwurm",
+    "url": "https://www.spektrum.de/lexikon/biologie-kompakt/regenwurm/9722"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Privatinsolvenz: Wie lange dauert der Weg aus den Schulden?",
+  "s": "Schuldenfrei",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "⚖️",
+    "Wer sich überschuldet hat, kann in Deutschland neu anfangen. Dafür gibt es die Privatinsolvenz. Am Ende steht die Restschuldbefreiung, also die Befreiung von den übrigen Schulden. Wie lange dauert der Weg dorthin?"
+   ],
+   [
+    "📅",
+    "Für Verfahren, die nach dem 1. Oktober 2020 beantragt wurden, gilt im Regelfall eine Dauer von drei Jahren. Früher waren es sechs Jahre, die sich unter Bedingungen verkürzen ließen. Was musst du in dieser Zeit tun?"
+   ],
+   [
+    "💼",
+    "Du musst dich ernsthaft um Arbeit bemühen oder eine angemessene Beschäftigung ausüben und darfst keine neuen Schulden machen. Diese Pflicht zu arbeiten heißt Erwerbsobliegenheit. Was passiert mit deinem Einkommen?"
+   ],
+   [
+    "💶",
+    "Den pfändbaren Teil deines Einkommens führst du an die Insolvenzverwaltung ab, die das Geld an die Gläubiger verteilt. Bei Unterhaltspflichten oder Sozialleistungen kann der Freibetrag höher liegen. Was passiert bei Verstößen?"
+   ],
+   [
+    "🚧",
+    "Bei Pflichtverstößen kann das Gericht die Restschuldbefreiung versagen. Dann bleiben die Schulden bestehen, und Gläubiger können wieder vollstrecken. Forderungen aus vorsätzlichen unerlaubten Handlungen können ausgenommen sein."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie lange dauert der Regelfall seit Oktober 2020?",
+    "Drei Jahre",
+    "Sechs Jahre",
+    "Zehn Jahre",
+    2
+   ],
+   [
+    "Was passiert mit dem pfändbaren Einkommen?",
+    "Es wird an die Insolvenzverwaltung abgeführt",
+    "Es bleibt vollständig bei dir selbst",
+    "Es wird an das zuständige Finanzamt gezahlt",
+    4
+   ],
+   [
+    "Was kann bei Pflichtverstößen passieren?",
+    "Das Gericht kann die Befreiung versagen",
+    "Die Schulden werden verdoppelt",
+    "Die Frist verkürzt sich auf ein Jahr",
+    5
+   ]
+  ],
+  "id": "privatinso",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Hanseatic Bank",
+    "title": "Dauer der Privatinsolvenz: Wann ist man wieder schuldenfrei?",
+    "url": "https://www.hanseaticbank.de/klarmacher/wissen/dauer-der-privatinsolvenz-wann-ist-man-wieder-schuldenfrei"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Untersuchungsausschuss: Wie kann eine Minderheit Aufklärung erzwingen?",
+  "s": "U-Ausschuss",
+  "k": "Politik",
+  "cards": [
+   [
+    "🏛️",
+    "Im Bundestag kann eine Minderheit durchsetzen, dass ein Untersuchungsausschuss eingesetzt wird. Sie braucht dafür keine Mehrheit. Wie viele Abgeordnete müssen den Antrag unterstützen, damit der Bundestag zustimmen muss?"
+   ],
+   [
+    "📜",
+    "Grundlage ist Artikel 44 des Grundgesetzes. Auf Antrag eines Viertels der Mitglieder muss der Bundestag den Ausschuss einsetzen. Der Antrag muss einen konkret beschriebenen Untersuchungsgegenstand nennen. Was darf der Ausschuss dann tun?"
+   ],
+   [
+    "🗂️",
+    "Er kann Zeugen und Sachverständige vernehmen und ihr Erscheinen erzwingen. Außerdem kann er Akten anfordern, und Gerichte und Behörden müssen Rechts- und Amtshilfe leisten. Wer sitzt eigentlich in so einem Ausschuss?"
+   ],
+   [
+    "👥",
+    "Dem Ausschuss gehören nur Abgeordnete an, die nach der Stärke der Fraktionen benannt werden. Auch der Vorsitz wird nach Fraktionsstärke besetzt. Die Beweiserhebung ist grundsätzlich öffentlich, die Beratung nicht. Wie endet die Arbeit?"
+   ],
+   [
+    "📝",
+    "Am Ende steht ein Abschlussbericht an den Bundestag, über den der Ausschuss mehrheitlich abstimmt. Abweichende Meinungen können als Sondervoten festgehalten werden. Die Arbeit ist an die jeweilige Wahlperiode gebunden."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Mitglieder des Bundestages müssen die Einsetzung beantragen?",
+    "Ein Viertel",
+    "Die Hälfte",
+    "Zwei Drittel",
+    2
+   ],
+   [
+    "Wie ist die Beweiserhebung grundsätzlich?",
+    "Grundsätzlich in öffentlicher Sitzung",
+    "Grundsätzlich nur hinter verschlossenen Türen",
+    "Nur für die Fraktionsspitzen zugänglich",
+    4
+   ],
+   [
+    "Was ist ein Sondervotum?",
+    "Eine abweichende Meinung zum Abschlussbericht",
+    "Ein zusätzlicher Antrag der Regierung",
+    "Eine Abstimmung über den Vorsitz",
+    5
+   ]
+  ],
+  "id": "untersuchau",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Bundeszentrale für politische Bildung",
+    "title": "Untersuchungsausschüsse (Handwörterbuch des politischen Systems)",
+    "url": "https://www.bpb.de/kurz-knapp/lexika/handwoerterbuch-politisches-system/511480/untersuchungsausschuesse/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Gelbes Trikot: Warum trägt der Führende bei der Tour Gelb?",
+  "s": "Gelbes Trikot",
+  "k": "Sport",
+  "cards": [
+   [
+    "🚴",
+    "Ein Radprofi sollte 1919 ein gelbes Trikot tragen und war davon nicht begeistert. Er wollte aus taktischen Gründen lieber nicht auffallen. Wer kam auf die Idee mit der Farbe?"
+   ],
+   [
+    "📰",
+    "Henri Desgrange, Gründer der Tour und Journalist, wollte, dass Zuschauer den Gesamtführenden leichter erkennen. Gelb war außerdem die Farbe seiner Sportzeitung. Warum war das Erkennen damals so schwierig?"
+   ],
+   [
+    "🌙",
+    "Die Etappen konnten bis zu 500 Kilometer lang sein, und manche Fahrer erreichten das Ziel erst im Dunkeln. Ein auffälliges Trikot für den Führenden sollte ihn leichter erkennbar machen. Wer trug es als Erster?"
+   ],
+   [
+    "🏆",
+    "Erster Träger war der Franzose Eugène Christophe. Sechs Jahre zuvor war ihm bei der Abfahrt vom Tourmalet die Gabel gebrochen. Er lief zu einer Schmiede, reparierte sein Rad und fuhr weiter. Wann wurde das Trikot erstmals verliehen?"
+   ],
+   [
+    "📅",
+    "Das gelbe Trikot wurde am 19. Juli 1919 in Grenoble erstmals verliehen, bei der 13. Tour de France. Seitdem kennzeichnet die Farbe den jeweils Führenden der Gesamtwertung."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer führte das gelbe Trikot ein?",
+    "Der Tour-Gründer Henri Desgrange",
+    "Ein Fahrer namens Eugène Christophe",
+    "Ein Zuschauer aus Grenoble",
+    2
+   ],
+   [
+    "Warum war ein gelbes Trikot sinnvoll?",
+    "Zuschauer erkannten den Führenden leichter",
+    "Die Fahrer froren weniger",
+    "Es war leichter als andere Stoffe",
+    3
+   ],
+   [
+    "In welchem Jahr wurde es erstmals verliehen?",
+    "1919",
+    "1903",
+    "1936",
+    5
+   ]
+  ],
+  "id": "gelbtrikot",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Swissinfo",
+    "title": "Das gelbe Trikot wird ein Jahrhundert alt",
+    "url": "https://www.swissinfo.ch/ger/das-gelbe-trikot-wird-ein-jahrhundert-alt/45104542"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792820059675,
+  "review": {
+   "date": "2026-10-24",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
