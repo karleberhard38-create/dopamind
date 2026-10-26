@@ -12458,5 +12458,675 @@
    "rounds": 1,
    "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
   }
+ },
+ {
+  "t": "Bundesversammlung: Wer wählt eigentlich den Bundespräsidenten?",
+  "s": "Bundesvers.",
+  "k": "Politik",
+  "cards": [
+   [
+    "🗳️",
+    "Den Bundespräsidenten wählt nicht das Volk und auch nicht allein der Bundestag. Dafür gibt es ein eigenes Gremium, das sonst nie zusammenkommt. Wer sitzt darin?"
+   ],
+   [
+    "👥",
+    "Zur Bundesversammlung gehören alle Bundestagsabgeordneten und genauso viele Mitglieder, die die Landesparlamente wählen. Parteien dürfen darunter auch Prominente benennen. Wie groß war die Versammlung zuletzt?"
+   ],
+   [
+    "🔢",
+    "Die Zahl der Mitglieder schwankt. Die Versammlung von 2017 hatte 1260 Personen, die von 1994 sogar 1324. Sie tritt nur für eine einzige Aufgabe zusammen. Wo findet das statt?"
+   ],
+   [
+    "🏛️",
+    "Seit der Wiedervereinigung tagt sie im Berliner Reichstagsgebäude. Der Bundestagspräsident legt Ort und Zeit fest und leitet die Sitzung. Eine Aussprache gibt es nicht, und die Wahl ist geheim. Warum keine Debatte?"
+   ],
+   [
+    "📜",
+    "Das Bundesverfassungsgericht begründete das Ausspracheverbot mit dem Schutz der Würde des Amtes. Gewählt wird für fünf Jahre. In den ersten beiden Wahlgängen braucht es die Mehrheit der Mitglieder, im dritten genügt die meisten Stimmen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wer gehört zur Bundesversammlung?",
+    "Abgeordnete und gleich viele Mitglieder der Länder",
+    "Nur die Mitglieder des Bundesrats, sonst niemand",
+    "Alle Bundesbürger ab 18 Jahren, per Los",
+    2
+   ],
+   [
+    "Wie lange dauert die Amtszeit des Bundespräsidenten?",
+    "Fünf Jahre",
+    "Vier Jahre",
+    "Acht Jahre",
+    5
+   ],
+   [
+    "Wer legt Ort und Zeit der Sitzung fest und leitet sie?",
+    "Der Bundestagspräsident",
+    "Der Bundesratspräsident",
+    "Der amtierende Bundespräsident",
+    4
+   ]
+  ],
+  "id": "bundesvers",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "bpb",
+    "title": "Bundesversammlung (Handwörterbuch des politischen Systems)",
+    "url": "https://www.bpb.de/kurz-knapp/lexika/handwoerterbuch-politisches-system/511459/bundesversammlung/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Pocken: Wie wurde eine tödliche Krankheit ausgerottet?",
+  "s": "Pocken",
+  "k": "Gesundheit",
+  "cards": [
+   [
+    "💉",
+    "Im Jahr 1796 wurde erstmals ein Mensch mit einem Impfstoff gegen Pocken geimpft. Die Krankheit war gefürchtet, denn bis zur Hälfte der Infizierten starb. Woraus bestand dieser erste Impfstoff?"
+   ],
+   [
+    "🐄",
+    "Er wurde aus Material einer Kuhpockenwunde gewonnen und war ein abgeschwächter Lebendimpfstoff. Er schützte vor den echten Pocken. Wie viele Opfer forderte die Krankheit im vergangenen Jahrhundert?"
+   ],
+   [
+    "⚰️",
+    "Allein im 20. Jahrhundert starben Hunderte Millionen Menschen an den Pocken. Der Impfstoff war seit 1796 bekannt, trotzdem blieb die Krankheit lange gefährlich. Erst ein weltweites Vorgehen beendete sie. Was geschah?"
+   ],
+   [
+    "🌍",
+    "Eine weltweite Impfkampagne führte schließlich dazu, dass die Pocken verschwanden. Der Weg dorthin dauerte nach der ersten Impfung fast zwei Jahrhunderte. Wann wurde der letzte Fall beim Menschen festgestellt?"
+   ],
+   [
+    "📅",
+    "Der letzte Fall beim Menschen wurde 1978 diagnostiziert. Im Jahr 1980 galten die Pocken als weltweit ausgerottet. Die Impfung von 1796 und das Ende der Krankheit liegen fast zwei Jahrhunderte auseinander."
+   ]
+  ],
+  "quiz": [
+   [
+    "Woraus wurde der erste Pockenimpfstoff gewonnen?",
+    "Aus Material einer Kuhpockenwunde",
+    "Aus dem Blut gesunder Pferde",
+    "Aus getrockneten Heilkräutern",
+    2
+   ],
+   [
+    "Was führte zur Ausrottung der Pocken?",
+    "Eine weltweite Impfkampagne",
+    "Ein neues Antibiotikum",
+    "Strenge Reisesperren in Europa",
+    4
+   ],
+   [
+    "Wann galten die Pocken als ausgerottet?",
+    "1980",
+    "1950",
+    "2005",
+    5
+   ]
+  ],
+  "id": "pockenweg",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "EU-Impfinformation",
+    "title": "Die Geschichte des Impfwesens",
+    "url": "https://vaccination-info.europa.eu/de/ueber-impfstoffe/die-geschichte-des-impfwesens"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Bruttoinlandsprodukt: Was misst das BIP und was nicht?",
+  "s": "BIP",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "📊",
+    "Das Bruttoinlandsprodukt, kurz BIP, ist eine Kennzahl für die Wirtschaftsleistung eines Landes und wird in den Nachrichten oft genannt. Was genau wird dabei eigentlich gezählt?"
+   ],
+   [
+    "💶",
+    "Das BIP misst den Geldwert der im Inland erbrachten Wertschöpfung in einem Zeitraum, meist einem Jahr oder Quartal. Vorleistungen werden abgezogen, damit nichts doppelt zählt. Was fällt dabei heraus?"
+   ],
+   [
+    "🏠",
+    "Unbezahlte Arbeit wie Hausarbeit, Kinderbetreuung und private Pflege fehlt, weil sie nicht am Markt gehandelt wird. Davon sind vor allem Frauen betroffen. Gibt es weitere Lücken?"
+   ],
+   [
+    "🌳",
+    "Das BIP unterscheidet nicht zwischen sinnvoller und schädlicher Produktion. Auch Umweltschäden werden nur teilweise abgebildet, und der Wiederaufbau nach einer Zerstörung erhöht den Wert. Woher stammt die Kennzahl?"
+   ],
+   [
+    "🇺🇸",
+    "Das BIP entstand in den USA während des Zweiten Weltkriegs. Die Regierung suchte eine einfache Zahl, um die Produktionsziele der Rüstungsindustrie zu prüfen. Bis in die 1990er Jahre dominierte das Bruttosozialprodukt, danach wurde auf das BIP umgestellt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was misst das BIP?",
+    "Den Geldwert der im Inland erbrachten Wertschöpfung",
+    "Die Zufriedenheit der Menschen im Land",
+    "Das gesamte Vermögen aller Haushalte",
+    2
+   ],
+   [
+    "Was fehlt im BIP, weil es nicht am Markt gehandelt wird?",
+    "Unbezahlte Hausarbeit und private Pflege",
+    "Der Verkauf von Autos im Inland",
+    "Gehälter in der Industrie",
+    3
+   ],
+   [
+    "Wofür wurde das BIP in den USA zuerst genutzt?",
+    "Um Produktionsziele der Rüstung zu prüfen",
+    "Um Steuern auf Löhne zu berechnen",
+    "Um Preise von Lebensmitteln festzulegen",
+    5
+   ]
+  ],
+  "id": "bipwas",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "bpb",
+    "title": "Die mächtigste Zahl der Welt: Was taugt das Bruttoinlandsprodukt?",
+    "url": "https://www.bpb.de/themen/wirtschaft/wirtschaftspolitik/556253/die-maechtigste-zahl-der-welt-was-taugt-das-bruttoinlandsprodukt/"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Hanse: Wie hielt ein Bund ohne Satzung bis zu 200 Städte zusammen?",
+  "s": "Hanse",
+  "k": "Geschichte",
+  "cards": [
+   [
+    "⚓",
+    "Im Mittelalter setzten Kaufleute und Städte aus Norddeutschland ihre Handelsinteressen gemeinsam über Grenzen hinweg durch. Ihr Bund hatte weder Satzung noch Vertrag noch Etat. Wie kam er trotzdem zustande?"
+   ],
+   [
+    "🐑",
+    "Schon im 11. Jahrhundert kauften Kölner Kaufleute in London ein Haus, um englische Schafwolle günstig zu erwerben. Später wurde der Fernhandel ausgebaut. Wer ging dabei voran?"
+   ],
+   [
+    "🏙️",
+    "Lübeck wurde zum Haupt der Hanse. 1356 fand dort der erste Hansetag statt, eine Versammlung der Städte. Zur Blütezeit gehörten bis zu rund 200 Städte dazu. Warum traten sie bei?"
+   ],
+   [
+    "🤝",
+    "Der Beitritt erfolgte aus wirtschaftlichem Eigeninteresse, und sogar die Beitrittsgebühr hieß Hanse. Stützpunkte auf fremdem Boden gab es unter anderem in Brügge, London, Bergen und Nowgorod. Wie ging es zu Ende?"
+   ],
+   [
+    "📉",
+    "Ab der Mitte des 15. Jahrhunderts verlor der Bund an Einfluss. Dänemark erhob Zölle, das Kontor in Nowgorod wurde 1494 geschlossen, und die Einigkeit der Städte ging verloren. Der letzte Hansetag fand 1669 statt."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welche Stadt wurde zum Haupt der Hanse?",
+    "Lübeck",
+    "Köln",
+    "Wien",
+    3
+   ],
+   [
+    "Warum traten Städte der Hanse bei?",
+    "Aus wirtschaftlichem Eigeninteresse",
+    "Weil ein Kaiser es befahl",
+    "Um eine gemeinsame Armee aufzustellen",
+    4
+   ],
+   [
+    "Wann fand der letzte Hansetag statt?",
+    "1669",
+    "1356",
+    "1494",
+    5
+   ]
+  ],
+  "id": "hansebund",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Planet Wissen",
+    "title": "Die Hanse",
+    "url": "https://www.planet-wissen.de/geschichte/mittelalter/hanse/index.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Kuckuck: Wie lässt er andere Vögel seine Jungen aufziehen?",
+  "s": "Kuckuck",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🐦",
+    "Der Kuckuck zieht seine Jungen nicht selbst auf. Er ist der einzige obligate Brutparasit Europas, also ein Vogel, der zwingend auf fremde Nester setzt. Wie bringt das Weibchen seine Eier unter?"
+   ],
+   [
+    "🥚",
+    "Das Weibchen legt pro Nest nur ein Ei und verteilt sie auf mehrere Wirte. Das Legen dauert wenige Sekunden, meist am frühen Nachmittag, und oft nimmt es ein Wirtsei mit. Wer sind die Wirte?"
+   ],
+   [
+    "🪺",
+    "Wirte sind vor allem kleine, insektenfressende Singvögel. In Deutschland sind es etwa 90 Arten. Jedes Weibchen legt sein Leben lang denselben Eityp, passend zu den Eiern der Art, die es selbst aufzog. Was passiert nach dem Schlüpfen?"
+   ],
+   [
+    "⏱️",
+    "Die Brutzeit beträgt nur etwa zwölf Tage und ist kürzer als bei den Wirten, deshalb schlüpft der Kuckuck zuerst. Binnen Stunden schiebt er die anderen Eier und Jungen aus dem Nest. Wo verbringt er den Winter?"
+   ],
+   [
+    "🌍",
+    "Kuckucke überwintern im südlichen Afrika. Die Männchen treffen Mitte April in Mitteleuropa ein und rufen. Sie bleiben nur etwa ein Drittel des Jahres und ziehen im Hochsommer wieder ab."
+   ]
+  ],
+  "quiz": [
+   [
+    "Wie viele Eier legt ein Kuckucksweibchen pro Wirtsnest?",
+    "Nur ein Ei pro Nest",
+    "Etwa zehn Eier pro Nest",
+    "So viele Eier wie der Wirt",
+    2
+   ],
+   [
+    "Warum schlüpft der Kuckuck vor den Wirtsjungen?",
+    "Seine Brutzeit ist kürzer",
+    "Er wird im Nest zuerst gelegt",
+    "Die Wirte bebrüten ihn wärmer",
+    4
+   ],
+   [
+    "Wo überwintern Kuckucke?",
+    "Im südlichen Afrika",
+    "Im Süden Spaniens",
+    "In Nordindien",
+    5
+   ]
+  ],
+  "id": "kuckuckei",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "waldwissen.net",
+    "title": "Kuckuck, rufts aus dem Wald",
+    "url": "https://www.waldwissen.net/de/lebensraum-wald/tiere-im-wald/voegel/kuckuck-rufts-aus-dem-wald"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Halo-Effekt: Warum färbt ein Merkmal unser ganzes Urteil?",
+  "s": "Halo-Effekt",
+  "k": "Psyche",
+  "cards": [
+   [
+    "😇",
+    "Eine Person wirkt sympathisch und wir halten sie plötzlich auch für klug und fähig. Das passiert meist unbewusst. Wie heißt dieser Denkfehler, und wer hat ihn früh untersucht?"
+   ],
+   [
+    "🔍",
+    "Der Halo-Effekt ist eine kognitive Verzerrung: Der Gesamteindruck einer Person oder Marke prägt das Urteil über einzelne Eigenschaften. Er kann positiv oder negativ wirken. Wie wurde er untersucht?"
+   ],
+   [
+    "📘",
+    "Der Psychologe Edward Thorndike ließ 1920 Vorgesetzte angehende Offiziere nach einzelnen Merkmalen bewerten. Die Urteile hingen viel enger zusammen als erwartet. Was schloss er daraus?"
+   ],
+   [
+    "🎯",
+    "Er folgerte, dass der erste Eindruck alle Bewertungen färbte, obwohl jedes Merkmal getrennt beurteilt werden sollte. Auch im Alltag kommt das vor. Wo zum Beispiel?"
+   ],
+   [
+    "🧭",
+    "Typische Beispiele sind das Bewerbungsgespräch, bei dem ein starkes oder schwaches Merkmal alles andere überstrahlt, und Lehrkräfte, die brave Schüler für klüger halten. Sich den Effekt bewusst zu machen, gilt als Schutz."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was beschreibt der Halo-Effekt?",
+    "Der Gesamteindruck prägt Einzelurteile",
+    "Das Vergessen von Namen nach kurzer Zeit",
+    "Die Angst vor großen Menschenmengen",
+    2
+   ],
+   [
+    "Wann zeigte Thorndike den Effekt?",
+    "1920",
+    "1870",
+    "1975",
+    3
+   ],
+   [
+    "Was hilft laut Quelle gegen den Effekt?",
+    "Sich seiner bewusst zu sein",
+    "Nur schnelle Urteile zu fällen",
+    "Sich nur auf das Bauchgefühl zu verlassen",
+    5
+   ]
+  ],
+  "id": "halo1920",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "EBSCO",
+    "title": "Halo Effect (Research Starters Psychology)",
+    "url": "https://ebsco.com/research-starters/psychology/halo-effect"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Wimbledon: Warum spielen alle in Weiß?",
+  "s": "Wimbledon Weiß",
+  "k": "Sport",
+  "cards": [
+   [
+    "🎾",
+    "In Wimbledon tragen alle Spielerinnen und Spieler Weiß, auch die Schuhe müssen fast ganz weiß sein. Auch Cremefarben oder Off-White sind nicht erlaubt. Seit wann gilt diese strenge Regel?"
+   ],
+   [
+    "📜",
+    "Der Ursprung der Weißpflicht liegt in den 1870er Jahren. Später wurden die Vorschriften immer strenger. Hinter der Regel stand die viktorianische Etikette. Was galt damals als unschicklich?"
+   ],
+   [
+    "💦",
+    "Sichtbarer Schweiß galt als unpassend. Weiß hielt man für luftiger und weniger heiß als dunkle Farben, sodass Schweiß weniger auffiel. Wie streng sind die heutigen Vorgaben?"
+   ],
+   [
+    "📏",
+    "Kleidung in Creme oder Off-White ist verboten. Farbige Streifen müssen schmaler als ein Zentimeter sein, und Schuhe müssen fast ganz weiß sein. Wer prüft das?"
+   ],
+   [
+    "👟",
+    "Offizielle können einen Kleiderwechsel verlangen. Im Jahr 2013 sorgten orangefarbene Sohlen bei Roger Federer für eine Klarstellung der Regel, dass auch Sohlen und Schnürsenkel weiß sein müssen."
+   ]
+  ],
+  "quiz": [
+   [
+    "Seit wann gilt die Weißpflicht in Wimbledon?",
+    "Seit den 1870er Jahren",
+    "Seit den 1990er Jahren",
+    "Seit den 1950er Jahren",
+    2
+   ],
+   [
+    "Wie breit darf farbiger Besatz sein?",
+    "Schmaler als ein Zentimeter",
+    "Bis zu fünf Zentimeter",
+    "Bis zu zehn Zentimeter",
+    4
+   ],
+   [
+    "Was führte 2013 zu einer Klarstellung der Regel?",
+    "Orangefarbene Schuhsohlen",
+    "Ein pinkfarbener Schläger",
+    "Ein bunter Schläger",
+    5
+   ]
+  ],
+  "id": "wimbwhite",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "NBC News",
+    "title": "The Origin of the Wimbledon Dress Code",
+    "url": "https://www.nbcsandiego.com/news/sports/the-origin-of-the-wimbledon-dress-code/2987479/?amp=1"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Zinseszins: Warum wächst Geld mit der Zeit immer schneller?",
+  "s": "Zinseszins",
+  "k": "Wirtschaft",
+  "cards": [
+   [
+    "💰",
+    "Wer Geld anlegt, bekommt Zinsen. Doch bleiben diese Zinsen auf dem Konto, passiert etwas Besonderes. Der Betrag wächst von Jahr zu Jahr stärker. Wie kommt das zustande?"
+   ],
+   [
+    "🔁",
+    "Zinseszinsen entstehen, wenn gutgeschriebene Zinsen dem Kapital hinzugefügt und im nächsten Jahr mit verzinst werden. Man erhält also Zinsen auf die Einlage und auf die bereits erhaltenen Zinsen. Wie stark wirkt das bei einem Prozent?"
+   ],
+   [
+    "🧮",
+    "Bei 100 Euro und einem Prozent Zins sind es nach einem Jahr 101 Euro und nach zwei Jahren 102,01 Euro. Der Unterschied wirkt klein. Was passiert bei höheren Zinsen?"
+   ],
+   [
+    "📈",
+    "Bei fünf Prozent wachsen 100 Euro nach fünf Jahren auf rund 128 Euro und nach zehn Jahren auf über 162 Euro. Steuern sind dabei nicht berücksichtigt. Was bringt eine sehr lange Laufzeit?"
+   ],
+   [
+    "⏳",
+    "Nach 30 Jahren sind es bei fünf Prozent 432 Euro, also rund 332 Euro Ertrag ohne weitere Einzahlung. Je höher der Zins und je länger die Laufzeit, desto größer der Ertrag."
+   ]
+  ],
+  "quiz": [
+   [
+    "Was ist ein Zinseszins?",
+    "Zinsen auf bereits gutgeschriebene Zinsen",
+    "Eine Gebühr der Bank für das Konto",
+    "Ein fester Bonus für Neukunden",
+    2
+   ],
+   [
+    "Was wird aus 100 Euro bei 1 % nach zwei Jahren?",
+    "102,01 Euro",
+    "102,00 Euro",
+    "110,00 Euro",
+    3
+   ],
+   [
+    "Wovon hängt der Ertrag ab?",
+    "Von Zinssatz und Laufzeit",
+    "Nur vom Wochentag der Einzahlung",
+    "Von der Farbe der Bankkarte",
+    5
+   ]
+  ],
+  "id": "zinseszin",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Sparkasse Österreich",
+    "title": "Was sind Zinseszinsen",
+    "url": "https://www.sparkasse.at/oberoesterreich/finanziell-gesund/anlegen/zinseszins"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Kontowechsel: Muss die Bank beim Wechsel helfen?",
+  "s": "Kontowechsel",
+  "k": "Alltag",
+  "cards": [
+   [
+    "🏦",
+    "Ein neues Konto wirkt oft mühsam, weil Daueraufträge und Lastschriften mit umziehen müssen. Dabei haben Verbraucher seit 2016 einen Anspruch auf Hilfe. Wer hilft konkret?"
+   ],
+   [
+    "📋",
+    "Seit dem 19. Juni 2016 müssen Banken beim Kontowechsel unterstützen. Grundlage ist das Zahlungskontengesetz. Die neue Bank fordert die Daten bei der alten an. Wie schnell muss das gehen?"
+   ],
+   [
+    "⏰",
+    "Die neue Bank hat dafür zwei Geschäftstage Zeit, die alte schickt die Informationen dann innerhalb von fünf Geschäftstagen. Was richtet die neue Bank anschließend ein?"
+   ],
+   [
+    "🔄",
+    "Rund fünf Geschäftstage nach Erhalt der Daten müssen Daueraufträge eingerichtet sein, Lastschriften akzeptiert werden und Zahler über das neue Konto informiert sein. Auch eingehende Zahlungen der letzten 13 Monate werden aufgelistet. Was kostet das?"
+   ],
+   [
+    "💸",
+    "Viele Banken berechnen gar nichts. Entgelte dürfen nur erhoben werden, wenn sie vereinbart und angemessen sind. Einige Leistungen sind kostenlos, etwa die Listen der Daueraufträge und Lastschriftmandate sowie die Schließung des alten Kontos."
+   ]
+  ],
+  "quiz": [
+   [
+    "Seit wann gibt es den Anspruch auf Kontowechselhilfe?",
+    "Seit 2016",
+    "Seit 1990",
+    "Seit 2023",
+    2
+   ],
+   [
+    "Wie viele Geschäftstage hat die alte Bank für die Informationen?",
+    "Fünf",
+    "Zwanzig",
+    "Dreißig",
+    3
+   ],
+   [
+    "Wie weit zurück werden eingehende Zahlungen aufgelistet?",
+    "13 Monate",
+    "3 Monate",
+    "36 Monate",
+    4
+   ]
+  ],
+  "id": "kontowechs",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Verbraucherzentrale",
+    "title": "Banken müssen beim Kontowechsel helfen",
+    "url": "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/sparen-und-anlegen/banken-muessen-beim-kontowechsel-helfen-13051"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
+ },
+ {
+  "t": "Gänsehaut: Wozu ist sie eigentlich gut?",
+  "s": "Gänsehaut",
+  "k": "Biologie",
+  "cards": [
+   [
+    "🧥",
+    "Es wird kalt oder ein Lied berührt uns, und schon richten sich die Härchen auf. Die Haut sieht aus wie bei einer gerupften Gans. Was passiert dabei in der Haut?"
+   ],
+   [
+    "💪",
+    "An jedem Haar sitzt ein winziger Muskel, der Musculus arrector pili. Bei plötzlicher Kälte zieht er sich zusammen und richtet das Haar auf. Was bringt das in der Kälte?"
+   ],
+   [
+    "🌬️",
+    "Die aufgerichteten Härchen bremsen die Luftströmung an der Haut, sodass die erwärmte Luftschicht nicht so schnell weggerissen wird. Die Gänsehaut schützt so vor Wärmeverlust. Warum bekommen wir sie auch bei Schreck?"
+   ],
+   [
+    "😨",
+    "Frühmenschen hatten ein dichteres Fell, das sich bei Gefahr sträubte und sie größer wirken ließ. Schimpansen und Hunde zeigen dies noch heute. Beim Menschen ist die Behaarung stark reduziert. Gibt es noch andere Auslöser?"
+   ],
+   [
+    "🎵",
+    "Auch angenehme Schauer, etwa bei Ergriffenheit, lösen eine Gänsehaut aus. Sie gilt als abgeschwächte Form desselben Reflexes. Er stammt aus einer Zeit, in der Fell den Körper schützte."
+   ]
+  ],
+  "quiz": [
+   [
+    "Welcher Muskel richtet das Haar bei Gänsehaut auf?",
+    "Der Musculus arrector pili",
+    "Der Musculus biceps",
+    "Der Musculus masseter",
+    2
+   ],
+   [
+    "Wie schützt Gänsehaut bei Kälte?",
+    "Sie bremst die Luftströmung an der Haut",
+    "Sie verengt die Pupillen",
+    "Sie lässt die Haare schneller wachsen",
+    3
+   ],
+   [
+    "Warum sträubte sich das Fell der Frühmenschen bei Gefahr?",
+    "Um größer zu wirken",
+    "Um Insekten zu vertreiben",
+    "Um schneller zu laufen",
+    4
+   ]
+  ],
+  "id": "gaensehaut",
+  "prod": null,
+  "sources": [
+   {
+    "publisher": "Tagesspiegel",
+    "title": "Warum bekommen wir eine Gänsehaut?",
+    "url": "https://www.tagesspiegel.de/gesundheit/warum-bekommen-wir-eine-gansehaut-1112695.html"
+   }
+  ],
+  "status": "approved",
+  "ts": 1792996191490,
+  "review": {
+   "date": "2026-10-26",
+   "facts": "pass",
+   "rounds": 1,
+   "method": "Geplante Aufgabe: Quellenseiten gelesen, Aussagen gegen Quellen abgeglichen, unabhängiger Faktencheck durch zweiten Prüfer, Format- und Quizregeln per Programm geprüft."
+  }
  }
 ]
