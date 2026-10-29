@@ -1235,7 +1235,7 @@ function renderQuizHome(){
  el.innerHTML='<h1>Üben</h1><span class="plus">Plus-Vorschau</span><p class="sub">Nach jedem Deck gibt es eine Kurzfrage. Zwei Stunden später kommt dieselbe Frage noch einmal, dann siehst du, was wirklich hängen geblieben ist. Mit Plus kannst du unbegrenzt viele Fragen üben.</p>'+
  '<div class="pst" style="margin:0 0 14px"><div><b>'+due.length+'</b><span>Jetzt fällig</span></div><div><b>'+streakNow()+' · 🛡'+S.freezes+'</b><span>Serie · Schutz</span></div><div><b>'+S.shells+'</b><span>Muscheln</span></div></div>'+
  (due.length?'<button class="btn pri big" type="button" data-qstart="due">'+(due.length===1?'Kurzfrage beantworten':'Fragen beantworten · '+due.length)+'</button>':'<div class="qempty">'+(nx?'Die nächste Frage ist in '+fmtIn(nx)+' dran.':'Gerade ist nichts fällig. Lies ein Deck zu Ende, dann kommt eine Kurzfrage.')+' Du kannst unten auch freiwillig ein Deck üben.</div>')+(S.asked?'<p class="note" style="margin:10px 2px 0">Nach 2 Stunden gemerkt: '+(S.kept||0)+' von '+S.asked+'</p>':'')+
- '<div class="sec">Lernspiele</div><button class="li" type="button" data-gblitz><span class="e">⚡</span><p>Blitzrunde<br>60 Sekunden, so viele Fragen wie möglich'+(S.blz?' · Rekord '+S.blz:'')+'</p></button><button class="li" type="button" data-gtfstart><span class="e">⚖️</span><p>Stimmt das?<br>10 Aussagen, du entscheidest</p></button>'+'<div class="sec">Quiz zu einem Deck</div>'+DATA.map(d=>'<button class="li" type="button" data-qdeck="'+d.id+'"><span class="e">'+d.cards[0][0]+'</span><p>'+esc(d.t)+'<br>'+(d.cards.filter((_,i)=>QZ[d.id+(i+1)]).length)+' Fragen</p></button>').join('');
+ '<div class="sec">Lernspiele</div><button class="li" type="button" data-gblitz><span class="e">⚡</span><p>Blitzrunde<br>60 Sekunden, so viele Fragen wie möglich'+(S.blz?' · Rekord '+S.blz:'')+'</p></button><button class="li" type="button" data-gboss><span class="e">'+bossE()+'</span><p>Boss-Runde<br>3 Leben, '+bossHp()+' Treffer bis zum Sieg'+(S.boss?' · '+S.boss+' Siege':'')+'</p></button><button class="li" type="button" data-gtfstart><span class="e">⚖️</span><p>Stimmt das?<br>10 Aussagen, du entscheidest</p></button>'+'<div class="sec">Quiz zu einem Deck</div>'+DATA.map(d=>'<button class="li" type="button" data-qdeck="'+d.id+'"><span class="e">'+d.cards[0][0]+'</span><p>'+esc(d.t)+'<br>'+(d.cards.filter((_,i)=>QZ[d.id+(i+1)]).length)+' Fragen</p></button>').join('');
 }
 function renderQuiz(){
  const el=$('#quizc');
@@ -1312,6 +1312,18 @@ function endBlitz(){
  if(xp||sh)celebrate({title:'+'+xp+' XP',sub:'Blitz: '+gm.right+' richtig · +'+sh+' Muscheln'});
  renderGame();
 }
+const BOSSES=['👹','🐉','🦖','👾','🧟','🦑'];
+const bossE=()=>BOSSES[(+S.boss||0)%BOSSES.length],bossHp=()=>8+Math.min(+S.boss||0,6);
+function startBoss(){
+ const p=shuf(gmPool());if(p.length<5){toast('Dafür gibt es noch zu wenige Fragen');return;}
+ clearInterval(gmT);const hp=bossHp();
+ gm={kind:'boss',pool:p,i:0,opts:null,sel:-1,hp:hp,max:hp,lives:3,combo:0,right:0,n:0,done:false,win:false,e:bossE()};renderGame();
+}
+function endBoss(win){
+ gm.done=true;gm.win=win;const xp=win?25:5,sh=win?5+Math.min(gm.lives,3):0;
+ if(win)S.boss=(+S.boss||0)+1;S.xp+=xp;S.shells+=sh;save();syncBadges();gm.res={xp:xp,sh:sh};
+ celebrate({title:'+'+xp+' XP',sub:win?'Boss besiegt! +'+sh+' Muscheln':'Beim nächsten Mal klappt es'});renderGame();
+}
 function startTF(){
  const p=shuf(gmPool()).slice(0,10);if(p.length<5){toast('Dafür gibt es noch zu wenige Fragen');return;}
  clearInterval(gmT);
@@ -1320,6 +1332,18 @@ function startTF(){
 }
 function renderGame(){
  const el=$('#quizc');if(!gm){renderQuizHome();return;}
+ if(gm.kind==='boss'){
+  if(gm.done){const r=gm.res||{};
+   el.innerHTML='<div class="qres"><div style="font-size:64px">'+(gm.win?'🏆':'💥')+'</div><b>'+(gm.win?'Boss besiegt!':'Der Boss war stärker')+'</b><p>'+gm.right+' von '+gm.n+' richtig · '+(gm.win?gm.lives+' Leben übrig':'Boss hatte noch '+gm.hp+' Leben')+'</p><p>+'+r.xp+' XP · +'+r.sh+' Muscheln</p></div><button class="btn pri big" type="button" data-gagain="boss">'+(gm.win?'Nächster Boss':'Noch einmal')+'</button><button class="btn big" type="button" data-gquit style="margin-top:8px">Fertig</button>';return;}
+  if(gm.i>=gm.pool.length){gm.pool=shuf(gmPool());gm.i=0;}
+  const id=gm.pool[gm.i],f=byId[id],q=QZ[id],ans=gm.sel>=0;
+  if(!gm.opts)gm.opts=shuf([{t:q[1],r:1},{t:q[2],r:0},{t:q[3],r:0}]);
+  el.innerHTML='<div class="qtop"><button class="back" type="button" data-gquit style="margin:0">Abbrechen</button></div>'+
+  '<div style="text-align:center;margin:6px 0 4px"><div style="font-size:54px;line-height:1.1">'+gm.e+'</div><div class="qbar" style="margin:6px 0 0"><i style="width:'+(gm.hp/gm.max*100)+'%;background:#e5484d;transition:width .3s"></i></div><small style="opacity:.7">Boss · noch '+gm.hp+' Treffer</small><div style="font-size:22px;margin-top:4px">'+'❤️'.repeat(gm.lives)+'🖤'.repeat(3-gm.lives)+'</div></div>'+
+  '<div class="qq"><div class="qe">'+f.e+'</div><h2>'+esc(q[0])+'</h2></div>'+
+  gm.opts.map((o,k)=>'<button class="qo '+(ans?(o.r?'ok':(k===gm.sel?'bad':'dim')):'')+'" type="button" data-gbo="'+k+'"'+(ans?' disabled':'')+'>'+esc(o.t)+'</button>').join('');
+  return;
+ }
  if(gm.kind==='blitz'){
   if(gm.done){const r=gm.res||{};
    el.innerHTML='<div class="qres"><b>'+gm.score+'</b><p>Punkte · '+gm.right+' von '+gm.n+' richtig · längste Serie '+gm.maxc+'</p>'+(r.nw?'<p style="color:var(--ok);font-weight:700">Neuer Rekord!</p>':'<p>Rekord: '+(r.rec||0)+'</p>')+'<p>+'+(r.xp||0)+' XP · +'+(r.sh||0)+' Muscheln</p></div><button class="btn pri big" type="button" data-gagain="blitz">Noch einmal</button><button class="btn big" type="button" data-gquit style="margin-top:8px">Fertig</button>';return;}
@@ -1346,7 +1370,8 @@ function renderGame(){
 $('#quizc').addEventListener('click',e=>{
  if(e.target.closest('[data-gblitz]')){startBlitz();return;}
  if(e.target.closest('[data-gtfstart]')){startTF();return;}
- const ag=e.target.closest('[data-gagain]');if(ag){ag.dataset.gagain==='blitz'?startBlitz():startTF();return;}
+ if(e.target.closest('[data-gboss]')){startBoss();return;}
+ const ag=e.target.closest('[data-gagain]');if(ag){ag.dataset.gagain==='blitz'?startBlitz():ag.dataset.gagain==='boss'?startBoss():startTF();return;}
  if(e.target.closest('[data-gquit]')){gmStop();renderQuizHome();syncBadges();return;}
  if(!gm)return;
  const b=e.target.closest('[data-gb]');
@@ -1355,6 +1380,14 @@ $('#quizc').addEventListener('click',e=>{
   if(o.r){gm.right++;gm.combo++;gm.maxc=Math.max(gm.maxc,gm.combo);gm.score+=10+Math.min(gm.combo-1,10)*2;ding(true);}else{gm.combo=0;ding(false);}
   renderGame();
   const g=gm;setTimeout(()=>{if(gm!==g||g.done)return;g.i++;g.sel=-1;g.opts=null;renderGame();},o.r?350:1000);
+  return;
+ }
+ const bo=e.target.closest('[data-gbo]');
+ if(bo&&gm.kind==='boss'&&!gm.done&&gm.sel<0){
+  const k=+bo.dataset.gbo,o=gm.opts[k];gm.sel=k;gm.n++;
+  if(o.r){gm.right++;gm.hp--;ding(true);}else{gm.lives--;ding(false);}
+  renderGame();const g=gm;
+  setTimeout(()=>{if(gm!==g||g.done)return;if(g.hp<=0){endBoss(true);return;}if(g.lives<=0){endBoss(false);return;}g.i++;g.sel=-1;g.opts=null;renderGame();},o.r?450:1100);
   return;
  }
  const t=e.target.closest('[data-gtf]');
