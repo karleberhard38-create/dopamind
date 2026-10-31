@@ -36,9 +36,9 @@ svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-l
 @media(hover:none) and (pointer:coarse) and (min-width:700px){.tx p{max-width:720px}}
 
 /* Feed */
-#feed{position:absolute;inset:0;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none;overscroll-behavior:contain}
+#feed{position:absolute;inset:0;display:flex;overflow-x:scroll;overflow-y:hidden;touch-action:pan-x;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior:contain}
 #feed::-webkit-scrollbar{display:none}
-.c{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative;display:flex;flex-direction:column;padding:108px 76px 84px 24px;overflow:hidden;background:linear-gradient(160deg,var(--a),var(--b),var(--c),var(--a));background-size:100% 100%;user-select:none}
+.c{flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative;display:flex;flex-direction:column;padding:108px 76px 84px 24px;overflow:hidden;background:linear-gradient(160deg,var(--a),var(--b),var(--c),var(--a));background-size:100% 100%;user-select:none}
 .c .sh,.c .em{animation-play-state:paused}.c.cur .sh,.c.cur .em{animation-play-state:running}
 @keyframes bg{50%{background-position:100% 100%}}
 .art{position:relative;flex:0 0 36%;margin-right:-52px}
@@ -80,8 +80,8 @@ svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-l
 #dk button{border:0;background:#ffffff1a;color:#fff;width:30px;height:30px;border-radius:50%;font-size:16px;line-height:1;cursor:pointer;backdrop-filter:blur(8px);flex:none}
 #dk span{flex:1;min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#dk em{font-style:normal;color:#ffffff90;font-weight:500}
 .c.off{display:none}
-#feed{touch-action:pan-y}
-@keyframes dsl{from{transform:translateX(var(--sx,40px));opacity:.15}to{transform:none;opacity:1}}
+#feed{touch-action:pan-x}
+@keyframes dsl{from{transform:translateY(var(--sx,40px));opacity:.15}to{transform:none;opacity:1}}
 .c.sl{animation:dsl .26s ease-out}
 
 /* Rechte Leiste */
@@ -264,7 +264,7 @@ textarea.fld{height:110px;resize:none}
 #swh{position:absolute;left:50%;bottom:92px;transform:translateX(-50%);z-index:8;background:#000a;backdrop-filter:blur(10px);color:#fff;border:1px solid #ffffff33;border-radius:20px;padding:9px 16px;font:600 13px var(--bd);display:flex;align-items:center;gap:8px;pointer-events:none;white-space:nowrap}
 #swh[hidden]{display:none}
 #swh i{font-style:normal;display:inline-block;animation:swn 1.1s ease-in-out infinite}
-@keyframes swn{0%,100%{transform:translateX(3px)}50%{transform:translateX(-5px)}}
+@keyframes swn{0%,100%{transform:translateY(3px)}50%{transform:translateY(-5px)}}
 /* Profil */
 .meb{width:34px;height:34px;border-radius:50%;border:1.5px solid #ffffff33;background:#a78bfa2e;padding:0;overflow:hidden;cursor:pointer;flex:none}.meb svg{width:100%;height:100%;display:block;stroke:none}
 #meb{position:absolute;top:12px;right:14px;z-index:30;box-shadow:0 2px 8px #0003}#meb[hidden]{display:none}
@@ -391,7 +391,7 @@ textarea.fld{height:110px;resize:none}
     <button type="button" data-v="prog"><svg viewBox="0 0 24 24"><path d="M5 20v-8M12 20V5M19 20V9"/></svg>Fortschritt<i class="bdg" id="pbdg" hidden></i></button>
   </nav>
   <div id="sheet" hidden><div class="scrim" id="scrim"></div><div id="panel"></div></div>
-  <div id="swh" hidden><i>←</i> Wische für das nächste Deck</div>
+  <div id="swh" hidden><i>↑</i> Hoch: nächstes Deck · Links: nächste Karte</div>
   <div id="onb" hidden></div>
   <div id="cele" hidden><svg class="star" viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8ff6a"/><stop offset="1" stop-color="#19e04a"/></linearGradient></defs><polygon points="50,6 62,36 94,38 69,58 78,90 50,72 22,90 31,58 6,38 38,36" fill="url(#sg)" stroke="#5cff3a" stroke-width="7" stroke-linejoin="round"/><ellipse cx="38" cy="30" rx="7" ry="4" fill="#ffffffaa" transform="rotate(-30 38 30)"/></svg><div class="cb"><div class="ct"></div><div class="cs"></div></div><button class="btn pri" id="cgo" type="button" hidden>Zur Karte</button></div>
   <div id="toast" role="status"></div>
@@ -648,7 +648,7 @@ function build(){
   (last&&d.prod?'<a class="prod" href="'+esc(d.prod.url)+'" target="_blank" rel="sponsored noopener noreferrer">'+I.cart+esc(d.prod.label)+'<em>Anzeige</em></a>':'')+
   (last&&d.sources&&d.sources.length?'<button class="srcb" type="button" data-src="'+esc(d.id)+'">Quellen ansehen</button>':'')+
   '<div class="meta"><div class="pips">'+d.cards.map((_,j)=>'<i class="'+(j===f.i?'on':'')+'"></i>').join('')+'</div><small>'+esc(d.t)+' · '+(f.i+1)+'/'+d.cards.length+'</small>'+
-  (last?'<b class="nx" data-nx="1">'+(nextOpenIdx(DATA.indexOf(d))>=0?'← Wisch weiter zum nächsten Deck: '+esc(DATA[nextOpenIdx(DATA.indexOf(d))].s):'Das war das letzte Deck zu deinen Themen')+'</b>':'')+'</div></div></section>';
+  (last?'<b class="nx" data-nx="1">'+(nextOpenIdx(DATA.indexOf(d))>=0?'↑ Nach oben wischen zum nächsten Deck: '+esc(DATA[nextOpenIdx(DATA.indexOf(d))].s):'Das war das letzte Deck zu deinen Themen')+'</b>':'')+'</div></div></section>';
  }).join('');
  if(ioRef){try{ioRef.disconnect();$$('#feed .c').forEach(c=>ioRef.observe(c));}catch(e){}}
 }
@@ -661,14 +661,14 @@ function showDeck(di,idx){
  const id=DATA[curD].id;
  sdStage='build';build();
  sdStage='find';const first=F.findIndex(f=>f.d.id===id),n=first+Math.min(idx||0,DATA[curD].cards.length-1),e=secOf(n);
- sdStage='scroll';$('#feed').scrollTop=e?e.offsetTop:0;
+ sdStage='scroll';$('#feed').scrollLeft=e?e.offsetLeft:0;
  sdStage='pos';cur=n;try{S.pos={id,i:Math.max(0,n-first)};persistLocal();}catch(x){}
  sdStage='sync';syncFeed();sdStage='dwell';startDwell();sdStage='';
 }
 function go(n,smooth){
  if(!F[n])return;
  if(F[n].d!==DATA[curD]){showDeck(DATA.indexOf(F[n].d),F[n].i);return;}
- const e=secOf(n);if(e)$('#feed').scrollTo({top:e.offsetTop,behavior:smooth?'smooth':'auto'});
+ const e=secOf(n);if(e)$('#feed').scrollTo({left:e.offsetLeft,behavior:smooth?'smooth':'auto'});
 }
 let swBusy=false;
 let swT0=0;
@@ -696,7 +696,7 @@ function feedCheck(){
   if(f.style.transform||f.style.opacity){f.style.transform='';f.style.opacity='';}
   if(!e||!e.offsetHeight){if(f.children.length===DATA[curD].cards.length&&f.children.length){cur=visIdx();syncFeed();return;}feedRepair();return;}
   if(f.children.length!==DATA[curD].cards.length){feedRepair();return;}
-  if(Math.abs(f.scrollTop-e.offsetTop)>e.offsetHeight*1.5)f.scrollTo({top:e.offsetTop,behavior:'auto'});
+  if(Math.abs(f.scrollLeft-e.offsetLeft)>e.offsetWidth*1.5)f.scrollTo({left:e.offsetLeft,behavior:'auto'});
  }catch(x){feedRepair();}
 }
 setInterval(feedCheck,1200);
@@ -841,7 +841,7 @@ $('#panel').addEventListener('click',async e=>{
   try{await navigator.clipboard.writeText(shText);toast('Text kopiert, jetzt einfügen und senden');}catch(x){toast('Teilen geht hier nicht, lang auf das Bild drücken zum Speichern');}
  }
 });
-function visIdx(){const f=$('#feed'),t=f.scrollTop;let b=cur,d=1e9;for(let i=0;i<f.children.length;i++){const e=f.children[i];const k=Math.abs(e.offsetTop-t);if(k<d){d=k;b=+e.dataset.n;}}return b;}
+function visIdx(){const f=$('#feed'),t=f.scrollLeft;let b=cur,d=1e9;for(let i=0;i<f.children.length;i++){const e=f.children[i];const k=Math.abs(e.offsetLeft-t);if(k<d){d=k;b=+e.dataset.n;}}return b;}
 var lastErr='';
 window.addEventListener('error',e=>{lastErr=String(e.message||'').slice(0,80)+' @'+(e.lineno||'?');try{toast('Fehler: '+lastErr);}catch(x){}});
 window.addEventListener('unhandledrejection',e=>{lastErr='Promise: '+String(e.reason&&e.reason.message||e.reason).slice(0,70);});
@@ -2010,31 +2010,33 @@ function swStart(x,y,t){
  tx0=x;ty0=y;tT0=Date.now();tLock=false;tOn=!swBusy&&!(t&&t.closest&&t.closest('a,button'));}
 function swMove(x,y){
  if(!tOn)return;const dx=x-tx0,dy=y-ty0;
- if(!tLock){if(Math.abs(dx)>12&&Math.abs(dx)>Math.abs(dy)*.9)tLock=true;else{if(Math.abs(dy)>36&&Math.abs(dy)>Math.abs(dx)*1.6)tOn=false;return;}}
- if(dx<-FWD_MIN||dx>BACK_MIN){tOn=false;tLock=false;swipeDeck(dx<0?1:-1);}
+ if(!tLock){if(Math.abs(dy)>14&&Math.abs(dy)>Math.abs(dx)*1.1)tLock=true;else{if(Math.abs(dx)>36&&Math.abs(dx)>Math.abs(dy)*1.6)tOn=false;return;}}
+ if(dy<-FWD_MIN||dy>BACK_MIN){tOn=false;tLock=false;swipeDeck(dy<0?1:-1);}
 }
+let swMouse=false;
 function swEnd(x,y){
  if(!tOn)return;tOn=false;
- const dx=x-tx0,dy=y-ty0,f=$('#feed'),v=Math.abs(dx)/Math.max(1,Date.now()-tT0);
- if(!tLock)return;tLock=false;
- const fwd=dx<-FWD_MIN||(dx<-28&&v>.5),back=dx>BACK_MIN||(dx>28&&v>.5);
- if(fwd||back){
-  /* Weiterwischen: kurz und leicht; zurück: nur mit langem, bewusstem Wisch */
-  swipeDeck(fwd?1:-1);
- }
+ const dx=x-tx0,dy=y-ty0,v=Math.abs(dy)/Math.max(1,Date.now()-tT0);
+ if(!tLock){
+  /* Maus: Ziehen nach links/rechts blättert die Karte (Touch macht das der Browser selbst) */
+  if(swMouse&&Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.4){const n=cur+(dx<0?1:-1);if(F[n]&&F[n].d===F[cur].d)go(n,true);}
+  return;}
+ tLock=false;
+ const fwd=dy<-FWD_MIN||(dy<-28&&v>.5),back=dy>BACK_MIN||(dy>28&&v>.5);
+ if(fwd||back)swipeDeck(fwd?1:-1);
 }
 let whX=0,whT=0,whL=0;
 $('#feed').addEventListener('wheel',e=>{
- if(view!=='feed'||Math.abs(e.deltaX)<=Math.abs(e.deltaY))return;
- e.preventDefault();const t=Date.now();if(t-whT>250)whX=0;whT=t;whX+=e.deltaX;
+ if(view!=='feed'||Math.abs(e.deltaY)<=Math.abs(e.deltaX))return;
+ e.preventDefault();const t=Date.now();if(t-whT>250)whX=0;whT=t;whX+=e.deltaY;
  if(t<whL)return;if(Math.abs(whX)>70&&!swBusy){const d=whX>0?1:-1;whX=0;whL=t+800;swipeDeck(d);}
 },{passive:false});
-$('#feed').addEventListener('touchstart',e=>{const t=e.touches[0];swStart(t.clientX,t.clientY,e.target);},{passive:true});
+$('#feed').addEventListener('touchstart',e=>{swMouse=false;const t=e.touches[0];swStart(t.clientX,t.clientY,e.target);},{passive:true});
 $('#feed').addEventListener('touchmove',e=>{const t=e.touches[0];swMove(t.clientX,t.clientY);},{passive:true});
 function swReset(){tOn=false;tLock=false;}
 $('#feed').addEventListener('touchcancel',swReset,{passive:true});
 $('#feed').addEventListener('touchend',e=>{const t=e.changedTouches[0];swEnd(t.clientX,t.clientY);},{passive:true});
-$('#feed').addEventListener('mousedown',e=>swStart(e.clientX,e.clientY,e.target));
+$('#feed').addEventListener('mousedown',e=>{swMouse=true;swStart(e.clientX,e.clientY,e.target);});
 $('#feed').addEventListener('mousemove',e=>{if(e.buttons)swMove(e.clientX,e.clientY);});
 $('#feed').addEventListener('mouseup',e=>swEnd(e.clientX,e.clientY));
 $('#feed').addEventListener('mouseleave',e=>{if(tLock&&!swBusy)swEnd(e.clientX,e.clientY);});
@@ -2046,10 +2048,10 @@ $('#feed').addEventListener('click',e=>{
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&!$('#sheet').hidden){closeSheet();return;}
  if(view!=='feed'||!$('#sheet').hidden||(e.target&&e.target.closest&&e.target.closest('input,textarea')))return;
- if(e.key==='ArrowDown'&&F[cur+1]&&F[cur+1].d===F[cur].d)go(cur+1,true);
- if(e.key==='ArrowUp'&&F[cur-1]&&F[cur-1].d===F[cur].d)go(cur-1,true);
- if(e.key==='ArrowLeft')swipeDeck(1);
- if(e.key==='ArrowRight')swipeDeck(-1);
+ if(e.key==='ArrowRight'&&F[cur+1]&&F[cur+1].d===F[cur].d)go(cur+1,true);
+ if(e.key==='ArrowLeft'&&F[cur-1]&&F[cur-1].d===F[cur].d)go(cur-1,true);
+ if(e.key==='ArrowDown')swipeDeck(1);
+ if(e.key==='ArrowUp')swipeDeck(-1);
 });
 
 /* ===== Gemeinsame Datenbank (Rangliste, öffentliche Ordner, geräteübergreifend) ===== */
