@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lernkarten</title>
+<meta name="theme-color" content="#0f1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lernkarten">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{
+  --bg:#0f1117; --panel:#181b24; --panel2:#20242f; --line:#2b303d; --text:#eceef3; --muted:#8d93a3;
+  --accent:#7c8cff; --accent2:#5b6cf0; --new:#6aa8ff; --learn:#ff7a7a; --rev:#52d49a;
+  --again:#e5484d; --hard:#f08c3a; --good:#30a46c; --easy:#3e7bfa;
+  --radius:16px; --shadow:0 6px 24px rgba(0,0,0,.25);
+}
+@media (prefers-color-scheme: light){
+  :root{ --bg:#f4f5f8; --panel:#ffffff; --panel2:#f0f1f5; --line:#e1e3ea; --text:#161922; --muted:#6b7183;
+    --accent:#4f5fe8; --accent2:#3c4bd6; --new:#2f6fe0; --learn:#d9474a; --rev:#1f9d63; --shadow:0 6px 24px rgba(20,25,40,.08); }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.45}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+input,textarea,select{font:inherit;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;width:100%;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--accent)}
+textarea{resize:vertical;min-height:110px}
+.wrap{max-width:760px;margin:0 auto;padding:16px 16px 120px}
+header.top{display:flex;align-items:center;gap:10px;padding:8px 0 14px}
+header.top h1{font-size:28px;margin:0;flex:1;letter-spacing:-.02em}
+header.top .back{font-size:17px;color:var(--accent);padding:8px 4px;display:flex;align-items:center;gap:4px}
+.iconbtn{width:42px;height:42px;border-radius:12px;background:var(--panel);display:grid;place-items:center;font-size:19px;border:1px solid var(--line)}
+.btn{background:var(--accent);color:#fff;border-radius:14px;padding:13px 18px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn:active{background:var(--accent2)}
+.btn.ghost{background:var(--panel);color:var(--text);border:1px solid var(--line)}
+.btn.danger{background:transparent;color:var(--again);border:1px solid var(--line)}
+.btn.block{width:100%}
+.btn[disabled]{opacity:.45}
+.row{display:flex;gap:10px;align-items:center}
+.row.wrapx{flex-wrap:wrap}
+.grow{flex:1}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.stats{display:flex;gap:10px;margin:4px 0 18px}
+.stat{flex:1;padding:12px 14px}
+.stat b{display:block;font-size:22px}
+.stat span{font-size:12px;color:var(--muted)}
+.decklist{overflow:hidden}
+.deck{display:flex;align-items:center;gap:8px;padding:14px 14px;border-top:1px solid var(--line);cursor:pointer}
+.deck:first-child{border-top:0}
+.deck:active{background:var(--panel2)}
+.deck .name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500}
+.deck .tog{width:26px;height:26px;display:grid;place-items:center;color:var(--muted);font-size:12px;flex:none}
+.nums{display:flex;gap:10px;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
+.nums .n{color:var(--new);min-width:26px;text-align:right}
+.nums .l{color:var(--learn);min-width:26px;text-align:right}
+.nums .r{color:var(--rev);min-width:26px;text-align:right}
+.nums .z{opacity:.28}
+.empty{padding:40px 20px;text-align:center}
+.empty h2{margin:0 0 8px}
+.fab{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(18px + env(safe-area-inset-bottom));display:flex;gap:10px}
+.fab .btn{box-shadow:var(--shadow)}
+/* study */
+.study{display:flex;flex-direction:column;min-height:calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+.study .bar{display:flex;align-items:center;gap:10px;padding:10px 16px}
+.study .bar .title{flex:1;text-align:center;font-weight:600;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.study .stage{flex:1;display:flex;justify-content:center;padding:6px 16px 0;overflow:auto}
+.flash{width:100%;max-width:760px;padding:28px 22px;font-size:21px;line-height:1.5;text-align:center;align-self:flex-start;min-height:46vh;overflow-wrap:anywhere}
+.flash hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.flash img{max-width:100%;height:auto;border-radius:8px}
+.flash table{margin:0 auto;border-collapse:collapse}
+.flash td,.flash th{border:1px solid var(--line);padding:4px 8px}
+.flash ul,.flash ol{text-align:left;display:inline-block;margin:6px 0}
+.cloze{color:var(--accent);font-weight:700}
+.answers{position:sticky;bottom:0;padding:12px 16px calc(14px + env(safe-area-inset-bottom));background:linear-gradient(transparent,var(--bg) 22%)}
+.answers .inner{max-width:760px;margin:0 auto}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ans{border-radius:14px;padding:12px 4px;color:#fff;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:2px}
+.ans small{font-weight:500;opacity:.9;font-size:12px}
+.ans.a1{background:var(--again)} .ans.a2{background:var(--hard)} .ans.a3{background:var(--good)} .ans.a4{background:var(--easy)}
+.ans:active{filter:brightness(.9)}
+.show{width:100%;padding:17px;font-size:17px}
+.counter{display:flex;justify-content:center;gap:14px;font-weight:600;font-variant-numeric:tabular-nums;font-size:14px;padding-bottom:10px}
+.counter .cur{text-decoration:underline;text-underline-offset:4px}
+/* lists */
+.list .item{padding:12px 14px;border-top:1px solid var(--line);cursor:pointer}
+.list .item:first-child{border-top:0}
+.list .item .f{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.list .item .b{color:var(--muted);font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.section{margin:22px 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.pad{padding:16px}
+label.lab{display:block;font-size:14px;color:var(--muted);margin:14px 0 6px}
+.toast{position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top));transform:translateX(-50%) translateY(-20px);background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:12px 18px;border-radius:14px;box-shadow:var(--shadow);opacity:0;transition:.25s;z-index:50;pointer-events:none;max-width:90vw;text-align:center}
+.toast.on{opacity:1;transform:translateX(-50%)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;z-index:40}
+.modal .sheet{background:var(--panel);width:100%;max-width:620px;max-height:92vh;overflow:auto;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom))}
+@media (min-width:700px){.modal{align-items:center}.modal .sheet{border-radius:20px}}
+.sheet h2{margin:0 0 6px;font-size:21px}
+.preview{max-height:220px;overflow:auto;border:1px solid var(--line);border-radius:12px;margin-top:10px}
+.preview div{padding:8px 12px;border-top:1px solid var(--line);font-size:14px}
+.preview div:first-child{border-top:0}
+.pill{display:inline-block;padding:3px 9px;border-radius:999px;background:var(--panel2);font-size:12px;color:var(--muted)}
+.syncdot{width:9px;height:9px;border-radius:50%;background:var(--muted);display:inline-block}
+.syncdot.ok{background:var(--rev)} .syncdot.err{background:var(--again)} .syncdot.busy{background:var(--hard)}
+.done{text-align:center;padding:60px 20px}
+.done .big{font-size:54px}
+kbd{font-size:11px;opacity:.7}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="toast" class="toast"></div>
+<input type="file" id="fileIn" accept=".csv,.txt,.tsv,.apkg,.colpkg,.zip,.json,text/plain,text/csv" hidden multiple>
+
+<script>
+"use strict";
+/* ============ Grundlagen ============ */
+const DAY = 86400000, MIN = 60000;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const uid = () => (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2)).replace(/-/g, "").slice(0, 20);
+function dayStart(t = Date.now()) { const d = new Date(t); if (d.getHours() < 4) d.setDate(d.getDate() - 1); d.setHours(4, 0, 0, 0); return d.getTime(); }
+function dayKey() { const d = new Date(dayStart()); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+function toast(msg, ms = 2600) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("on"), ms); }
+
+/* ============ Speicher (IndexedDB, Fallback localStorage) ============ */
+const store = {
+  db: null,
+  async open() {
+    try {
+      this.db = await new Promise((res, rej) => {
+        const r = indexedDB.open("lernkarten", 1);
+        r.onupgradeneeded = () => r.result.createObjectStore("kv");
+        r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
+      });
+    } catch (e) { this.db = null; }
+  },
+  async get(k) {
+    if (this.db) return new Promise(res => { const r = this.db.transaction("kv").objectStore("kv").get(k); r.onsuccess = () => res(r.result); r.onerror = () => res(undefined); });
+    try { const v = localStorage.getItem("lk_" + k); return v ? JSON.parse(v) : undefined; } catch (e) { return undefined; }
+  },
+  async set(k, v) {
+    if (this.db) return new Promise(res => { const tx = this.db.transaction("kv", "readwrite"); tx.objectStore("kv").put(v, k); tx.oncomplete = res; tx.onerror = res; });
+    try { localStorage.setItem("lk_" + k, JSON.stringify(v)); } catch (e) { toast("Speichern fehlgeschlagen: Speicher voll?"); }
+  }
+};
+function lsGet(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { } }
+
+/* state: Decks und Karten mit Zeitstempel u (für den Abgleich zwischen Geräten) */
+let S = { v: 1, decks: {}, cards: {}, settings: { newPerDay: 0, steps: [1, 10], u: 0 } };
+let daily = lsGet("lk_daily", { date: "", newDone: 0, done: 0 });
+function today() { if (daily.date !== dayKey()) { daily = { date: dayKey(), newDone: 0, done: 0 }; lsSet("lk_daily", daily); } return daily; }
+
+let saveTimer = null;
+function save(syncSoon = true) {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => store.set("state", S), 250);
+  if (syncSoon) Sync.soon();
+}
+
+/* ============ Decks ============ */
+function liveDecks() { return Object.values(S.decks).filter(d => !d.x); }
+function liveCards() { return Object.values(S.cards).filter(c => !c.x); }
+function deckByName(name) { return liveDecks().find(d => d.n === name); }
+function ensureDeck(name) {
+  name = cleanDeckName(name) || "Allgemein";
+  let d = deckByName(name);
+  if (!d) { d = { id: uid(), n: name, u: Date.now() }; S.decks[d.id] = d; }
+  // Elterndecks anlegen
+  const parts = name.split("::");
+  for (let i = 1; i < parts.length; i++) { const p = parts.slice(0, i).join("::"); if (!deckByName(p)) { const nd = { id: uid(), n: p, u: Date.now() }; S.decks[nd.id] = nd; } }
+  return d;
+}
+function cleanDeckName(n) { return String(n || "").split("::").map(s => s.trim()).filter(Boolean).join("::"); }
+function deckIdsUnder(deck) { const pre = deck.n + "::"; return new Set(liveDecks().filter(d => d.n === deck.n || d.n.startsWith(pre)).map(d => d.id)); }
+
+/* ============ Planung (SM-2, wie Anki) ============ */
+function isDueLearn(c, now, ahead = 0) { return c.s && (c.s.t === "learn" || c.s.t === "relearn") && c.s.due <= now + ahead; }
+function isDueReview(c) { return c.s && c.s.t === "review" && c.s.due <= dayStart(); }
+function fuzz(ivl) { if (ivl < 3) return ivl; const f = Math.max(1, Math.round(ivl * 0.05)); return ivl + Math.round((Math.random() * 2 - 1) * f); }
+
+function schedule(old, r, now = Date.now(), noFuzz = false) {
+  const steps = (S.settings.steps && S.settings.steps.length ? S.settings.steps : [1, 10]);
+  const relearn = [10];
+  const s = old ? { ...old } : { t: "new", due: now, ivl: 0, e: 2.5, st: 0, l: 0 };
+  const grad = n => { s.t = "review"; s.ivl = n; s.st = 0; s.due = dayStart(now) + n * DAY; };
+  if (s.t === "new" || s.t === "learn") {
+    const step = s.t === "new" ? 0 : s.st;
+    if (r === 1) { s.t = "learn"; s.st = 0; s.due = now + steps[0] * MIN; }
+    else if (r === 2) { s.t = "learn"; s.st = step; const cur = steps[step], nxt = steps[step + 1]; s.due = now + (step === 0 && nxt ? (cur + nxt) / 2 : cur) * MIN; }
+    else if (r === 3) { if (step + 1 < steps.length) { s.t = "learn"; s.st = step + 1; s.due = now + steps[step + 1] * MIN; } else grad(1); }
+    else grad(4);
+  } else if (s.t === "relearn") {
+    if (r === 1) { s.st = 0; s.due = now + relearn[0] * MIN; }
+    else if (r === 2) { s.due = now + relearn[0] * 1.5 * MIN; }
+    else { const n = r === 4 ? s.ivl + 1 : s.ivl; s.t = "review"; s.ivl = n; s.due = dayStart(now) + n * DAY; }
+  } else { // review
+    const late = Math.max(0, Math.round((dayStart(now) - s.due) / DAY));
+    const ivl = Math.max(1, s.ivl);
+    if (r === 1) { s.l = (s.l || 0) + 1; s.e = Math.max(1.3, s.e - 0.2); s.ivl = 1; s.t = "relearn"; s.st = 0; s.due = now + relearn[0] * MIN; }
+    else {
+      const hard = Math.max(ivl + 1, Math.round(ivl * 1.2));
+      const good = Math.max(hard + 1, Math.round((ivl + late / 2) * s.e));
+      const easy = Math.max(good + 1, Math.round((ivl + late) * s.e * 1.3));
+      let n;
+      if (r === 2) { n = hard; s.e = Math.max(1.3, s.e - 0.15); }
+      else if (r === 3) { n = good; }
+      else { n = easy; s.e = s.e + 0.15; }
+      n = Math.min(36500, noFuzz ? n : fuzz(n));
+      s.ivl = n; s.due = dayStart(now) + n * DAY;
+    }
+  }
+  return s;
+}
+function fmtIvl(s, now) {
+  const ms = s.t === "review" ? s.ivl * DAY : s.due - now;
+  const m = ms / MIN;
+  if (m < 60) return Math.max(1, Math.round(m)) + " Min";
+  if (m < 60 * 24) return Math.round(m / 60) + " Std";
+  const d = ms / DAY;
+  if (d < 30) return Math.round(d) + " T";
+  if (d < 365) return (d / 30).toFixed(d < 300 ? 1 : 0).replace(".", ",").replace(",0", "") + " Mo";
+  return (d / 365).toFixed(1).replace(".", ",").replace(",0", "") + " J";
+}
+
+/* Zählung und Warteschlange */
+function newLeft() { const lim = +S.settings.newPerDay || 0; return lim > 0 ? Math.max(0, lim - today().newDone) : Infinity; }
+function countsFor(ids) {
+  const now = Date.now(); let n = 0, l = 0, r = 0;
+  for (const c of Object.values(S.cards)) {
+    if (c.x || !ids.has(c.d)) continue;
+    if (!c.s) n++; else if (isDueLearn(c, now, 20 * MIN)) l++; else if (isDueReview(c)) r++;
+  }
+  return { n: Math.min(n, newLeft()), l, r, nAll: n };
+}
+function nextCard(ids, avoidId) {
+  const now = Date.now();
+  const cs = Object.values(S.cards).filter(c => !c.x && ids.has(c.d));
+  const learnNow = cs.filter(c => isDueLearn(c, now)).sort((a, b) => a.s.due - b.s.due);
+  const pick = arr => arr.find(c => c.id !== avoidId) || null;
+  let c = pick(learnNow); if (c) return c;
+  const reviews = cs.filter(isDueReview);
+  const news = newLeft() > 0 ? cs.filter(c => !c.s).sort((a, b) => (a.c - b.c) || (a.o || 0) - (b.o || 0)) : [];
+  if (reviews.length || news.length) {
+    const useNew = news.length && (!reviews.length || Math.random() < news.length / (news.length + reviews.length * 1.5));
+    if (useNew) { c = pick(news); if (c) return c; }
+    if (reviews.length) { c = pick(reviews.sort(() => Math.random() - .5)); if (c) return c; }
+    c = pick(news); if (c) return c;
+  }
+  const ahead = cs.filter(c => isDueLearn(c, now, 20 * MIN)).sort((a, b) => a.s.due - b.s.due);
+  c = pick(ahead); if (c) return c;
+  // nur noch die gerade gezeigte Karte übrig
+  const all = [...learnNow, ...reviews, ...news, ...ahead];
+  return all[0] || null;
+}
+
+/* ============ Darstellung von Karteninhalt ============ */
+const OK_TAGS = new Set(["B","STRONG","I","EM","U","S","SUB","SUP","BR","DIV","SPAN","P","UL","OL","LI","TABLE","THEAD","TBODY","TR","TD","TH","HR","CODE","PRE","BLOCKQUOTE","H1","H2","H3","H4","IMG","SMALL","MARK","FONT"]);
+const DROP_TAGS = new Set(["SCRIPT","STYLE","IFRAME","OBJECT","EMBED","LINK","META","FORM","INPUT","BUTTON","SVG","MATH","TEMPLATE","AUDIO","VIDEO"]);
+function sanitizeNode(node) {
+  for (const ch of [...node.childNodes]) {
+    if (ch.nodeType === 1) {
+      const tag = ch.tagName;
+      if (DROP_TAGS.has(tag)) { ch.remove(); continue; }
+      if (!OK_TAGS.has(tag)) { sanitizeNode(ch); ch.replaceWith(...ch.childNodes); continue; }
+      if (tag === "IMG") {
+        const src = ch.getAttribute("src") || "";
+        if (!/^data:image\//i.test(src)) { ch.replaceWith(document.createTextNode("🖼")); continue; }
+      }
+      for (const a of [...ch.attributes]) {
+        const keep = (tag === "IMG" && a.name === "src") || ((tag === "TD" || tag === "TH") && (a.name === "colspan" || a.name === "rowspan"));
+        if (!keep) ch.removeAttribute(a.name);
+      }
+      sanitizeNode(ch);
+    } else if (ch.nodeType !== 3) ch.remove();
+  }
+}
+function toHtml(t) {
+  t = String(t || "").replace(/\[sound:[^\]]*\]/g, "");
+  if (/<\/?[a-z][^>]*>|&[a-z#0-9]+;/i.test(t)) {
+    const doc = new DOMParser().parseFromString("<div>" + t + "</div>", "text/html");
+    const root = doc.body.firstElementChild || doc.body; sanitizeNode(root); return root.innerHTML;
+  }
+  return esc(t).replace(/\r?\n/g, "<br>");
+}
+function plain(t) { const h = toHtml(t); const d = document.createElement("div"); d.innerHTML = h.replace(/<br\s*\/?>/gi, " "); return d.textContent.replace(/\s+/g, " ").trim(); }
+const CLOZE = /\{\{c(\d+)::([\s\S]*?)(?:::([\s\S]*?))?\}\}/g;
+function cardFront(c) { if (c.z != null) return toHtml(c.f.replace(CLOZE, (m, n, a, h) => +n === c.z + 1 ? `<span class="cloze">[${h || "…"}]</span>` : a)); return toHtml(c.f); }
+function cardBack(c) {
+  if (c.z != null) { const t = toHtml(c.f.replace(CLOZE, (m, n, a) => +n === c.z + 1 ? `<span class="cloze">${a}</span>` : a)); return t + (plain(c.b) ? "<hr>" + toHtml(c.b) : ""); }
+  return toHtml(c.f) + "<hr>" + toHtml(c.b);
+}
+
+/* ============ Ansichten ============ */
+let view = { name: "home" }, collapsed = lsGet("lk_collapsed", {});
+function go(v) { view = v; render(); window.scrollTo(0, 0); }
+function render() {
+  const a = $("#app");
+  if (view.name === "home") a.innerHTML = vHome();
+  else if (view.name === "deck") a.innerHTML = vDeck();
+  else if (view.name === "study") { a.innerHTML = vStudy(); }
+  else if (view.name === "browse") a.innerHTML = vBrowse();
+  else if (view.name === "edit") a.innerHTML = vEdit();
+  else if (view.name === "settings") a.innerHTML = vSettings();
+  bind();
+}
+function numsHtml(c) { return `<div class="nums"><span class="n ${c.n ? "" : "z"}">${c.n}</span><span class="l ${c.l ? "" : "z"}">${c.l}</span><span class="r ${c.r ? "" : "z"}">${c.r}</span></div>`; }
+
+function vHome() {
+  const decks = liveDecks().sort((a, b) => a.n.localeCompare(b.n, "de", { numeric: true }));
+  const cardsN = liveCards().length;
+  const t = today();
+  let tot = { n: 0, l: 0, r: 0 };
+  const top = decks.filter(d => !d.n.includes("::"));
+  for (const d of top) { const c = countsFor(deckIdsUnder(d)); tot.n += c.n; tot.l += c.l; tot.r += c.r; }
+  if (newLeft() !== Infinity) tot.n = Math.min(tot.n, newLeft());
+  const rows = decks.filter(d => {
+    const parts = d.n.split("::");
+    for (let i = 1; i < parts.length; i++) if (collapsed[parts.slice(0, i).join("::")]) return false;
+    return true;
+  }).map(d => {
+    const depth = d.n.split("::").length - 1;
+    const hasKids = decks.some(x => x.n.startsWith(d.n + "::"));
+    const c = countsFor(deckIdsUnder(d));
+    const label = d.n.split("::").pop();
+    return `<div class="deck" data-deck="${d.id}" style="padding-left:${14 + depth * 18}px">
+      ${hasKids ? `<button class="tog" data-tog="${esc(d.n)}">${collapsed[d.n] ? "▶" : "▼"}</button>` : `<span class="tog"></span>`}
+      <div class="name">${esc(label)}</div>${numsHtml(c)}</div>`;
+  }).join("");
+  return `<div class="wrap">
+    <header class="top"><h1>Lernkarten</h1>
+      <button class="iconbtn" id="syncBtn" title="Synchronisieren"><span class="syncdot ${Sync.dot()}"></span></button>
+      <button class="iconbtn" data-go="settings" title="Einstellungen">⚙︎</button></header>
+    ${cardsN ? `
+    <div class="stats">
+      <div class="card stat"><b>${tot.n + tot.l + tot.r}</b><span>heute fällig</span></div>
+      <div class="card stat"><b>${t.done}</b><span>heute gelernt</span></div>
+      <div class="card stat"><b>${cardsN}</b><span>Karten gesamt</span></div>
+    </div>
+    <div class="row" style="justify-content:space-between;margin:0 4px 8px"><span class="small muted">Decks</span>
+      <span class="small muted" style="display:flex;gap:10px"><span style="color:var(--new)">Neu</span><span style="color:var(--learn)">Lernen</span><span style="color:var(--rev)">Wdh.</span></span></div>
+    <div class="card decklist">${rows}</div>` : `
+    <div class="card empty"><h2>Noch keine Karten</h2>
+      <p class="muted">Exportiere deine Decks in Noji (Deck öffnen → Einstellungen → „Export deck“) und importiere die Datei hier. Oder leg direkt ein Deck an.</p>
+      <div class="row" style="justify-content:center;margin-top:16px;flex-wrap:wrap">
+        <button class="btn" data-act="import">Datei importieren</button>
+        <button class="btn ghost" data-act="newdeck">Neues Deck</button></div></div>`}
+  </div>
+  ${cardsN ? `<div class="fab"><button class="btn ghost" data-act="import">Import</button><button class="btn ghost" data-act="newdeck">+ Deck</button><button class="btn" data-act="addcard">+ Karte</button></div>` : ""}`;
+}
+
+function vDeck() {
+  const d = S.decks[view.id]; if (!d || d.x) { view = { name: "home" }; return vHome(); }
+  const ids = deckIdsUnder(d);
+  const c = countsFor(ids);
+  const all = liveCards().filter(x => ids.has(x.d));
+  const young = all.filter(x => x.s && x.s.t === "review" && x.s.ivl < 21).length;
+  const mature = all.filter(x => x.s && x.s.t === "review" && x.s.ivl >= 21).length;
+  const learning = all.filter(x => x.s && x.s.t !== "review").length;
+  const due = c.n + c.l + c.r;
+  return `<div class="wrap">
+    <header class="top"><button class="back" data-go="home">‹ Decks</button><div class="grow"></div>
+      <button class="iconbtn" data-act="deckmenu" title="Deck bearbeiten">⋯</button></header>
+    <h1 style="margin:0 0 4px;font-size:26px;overflow-wrap:anywhere">${esc(d.n.split("::").pop())}</h1>
+    ${d.n.includes("::") ? `<div class="small muted">${esc(d.n.split("::").slice(0, -1).join(" › "))}</div>` : ""}
+    <div class="card pad" style="margin-top:16px">
+      <div class="row" style="justify-content:space-around;text-align:center">
+        <div><div style="font-size:26px;font-weight:700;color:var(--new)">${c.n}</div><div class="small muted">Neu</div></div>
+        <div><div style="font-size:26px;font-weight:700;color:var(--learn)">${c.l}</div><div class="small muted">Lernen</div></div>
+        <div><div style="font-size:26px;font-weight:700;color:var(--rev)">${c.r}</div><div class="small muted">Wiederholen</div></div>
+      </div>
+      <button class="btn block" style="margin-top:18px;padding:16px;font-size:17px" data-act="study" ${due ? "" : "disabled"}>${due ? "Jetzt lernen" : "Für heute fertig 🎉"}</button>
+      ${!due && all.length ? `<button class="btn ghost block" style="margin-top:10px" data-act="cram">Trotzdem üben (Karten von morgen vorziehen)</button>` : ""}
+    </div>
+    <div class="section">Überblick</div>
+    <div class="card pad small">
+      <div class="row"><span class="grow muted">Karten gesamt</span><b>${all.length}</b></div>
+      <div class="row" style="margin-top:6px"><span class="grow muted">Noch nie gelernt</span><b>${c.nAll}</b></div>
+      <div class="row" style="margin-top:6px"><span class="grow muted">In der Lernphase</span><b>${learning}</b></div>
+      <div class="row" style="margin-top:6px"><span class="grow muted">Jung (unter 21 Tagen)</span><b>${young}</b></div>
+      <div class="row" style="margin-top:6px"><span class="grow muted">Sitzt (ab 21 Tagen)</span><b>${mature}</b></div>
+    </div>
+    <div class="row" style="margin-top:14px;flex-wrap:wrap">
+      <button class="btn ghost grow" data-act="addcard">+ Karte</button>
+      <button class="btn ghost grow" data-act="browse">Karten ansehen</button>
+    </div>
+  </div>`;
+}
+
+/* Lernsitzung */
+let sess = null;
+function startStudy(deckId, cram = false) {
+  const d = S.decks[deckId];
+  sess = { deckId, ids: deckIdsUnder(d), shown: false, card: null, undo: [], cram, count: 0 };
+  if (cram) {
+    // Karten bis morgen Abend vorziehen: Fälligkeit nur für diese Sitzung vorverlegen
+    sess.cramUntil = dayStart() + DAY;
+  }
+  sess.card = pickNext(); go({ name: "study" });
+}
+function pickNext() {
+  if (!sess) return null;
+  let c = nextCard(sess.ids, sess.card && sess.card.id);
+  if (!c && sess.cram) {
+    const cs = Object.values(S.cards).filter(x => !x.x && sess.ids.has(x.d) && x.s && x.s.t === "review" && x.s.due <= sess.cramUntil);
+    c = cs.sort((a, b) => a.s.due - b.s.due)[0] || null;
+  }
+  return c;
+}
+function vStudy() {
+  const d = S.decks[sess.deckId];
+  const c = sess.card;
+  const cnt = countsFor(sess.ids);
+  const bar = `<div class="bar"><button class="back" style="color:var(--accent);font-size:17px" data-act="endstudy">‹ Fertig</button>
+    <div class="title">${esc(d ? d.n.split("::").pop() : "")}</div>
+    <button class="iconbtn" data-act="undo" title="Rückgängig" ${sess.undo.length ? "" : "disabled style='opacity:.35'"}>↶</button>
+    <button class="iconbtn" data-act="editcur" title="Karte bearbeiten" ${c ? "" : "disabled style='opacity:.35'"}>✎</button></div>`;
+  if (!c) return `<div class="study">${bar}<div class="done"><div class="big">🎉</div><h2>Geschafft!</h2>
+      <p class="muted">Für dieses Deck ist heute nichts mehr fällig. ${sess.count ? `Du hast in dieser Runde ${sess.count} Karten gelernt.` : ""}</p>
+      <button class="btn" data-act="endstudy">Zurück</button></div></div>`;
+  const kind = !c.s ? "n" : (c.s.t === "review" ? "r" : "l");
+  const now = Date.now();
+  const opts = [1, 2, 3, 4].map(r => fmtIvl(schedule(c.s, r, now, true), now));
+  return `<div class="study">${bar}
+    <div class="stage"><div class="card flash" id="flash">${sess.shown ? cardBack(c) : cardFront(c)}</div></div>
+    <div class="answers"><div class="inner">
+      <div class="counter"><span style="color:var(--new)" class="${kind === "n" ? "cur" : ""}">${cnt.n}</span><span style="color:var(--learn)" class="${kind === "l" ? "cur" : ""}">${cnt.l}</span><span style="color:var(--rev)" class="${kind === "r" ? "cur" : ""}">${cnt.r}</span></div>
+      ${sess.shown ? `<div class="grid4">
+        <button class="ans a1" data-ans="1">Nochmal<small>${opts[0]}</small></button>
+        <button class="ans a2" data-ans="2">Schwer<small>${opts[1]}</small></button>
+        <button class="ans a3" data-ans="3">Gut<small>${opts[2]}</small></button>
+        <button class="ans a4" data-ans="4">Einfach<small>${opts[3]}</small></button></div>`
+      : `<button class="btn block show" data-act="reveal">Antwort zeigen</button>`}
+    </div></div></div>`;
+}
+function answer(r) {
+  if (!sess.card || !sess.shown) return;
+  const c = S.cards[sess.card.id] || sess.card;
+  sess.undo.push({ id: c.id, prev: JSON.parse(JSON.stringify(c)), daily: { ...today() } });
+  if (sess.undo.length > 30) sess.undo.shift();
+  const wasNew = !c.s;
+  c.s = schedule(c.s, r);
+  c.u = Date.now();
+  const t = today(); t.done++; if (wasNew) t.newDone++; lsSet("lk_daily", t);
+  sess.count++;
+  save();
+  sess.shown = false; sess.card = pickNext(); render();
+}
+function undo() {
+  const u = sess.undo.pop(); if (!u) return;
+  S.cards[u.id] = { ...u.prev, u: Date.now() };
+  daily = u.daily; lsSet("lk_daily", daily);
+  sess.count = Math.max(0, sess.count - 1);
+  save(); sess.card = S.cards[u.id]; sess.shown = true; render();
+}
+
+/* Karten durchsuchen */
+function vBrowse() {
+  const d = S.decks[view.id]; const ids = deckIdsUnder(d);
+  const q = (view.q || "").toLowerCase();
+  let cs = liveCards().filter(c => ids.has(c.d));
+  if (q) cs = cs.filter(c => (plain(c.f) + " " + plain(c.b)).toLowerCase().includes(q));
+  cs.sort((a, b) => (a.c - b.c) || (a.o || 0) - (b.o || 0));
+  const lim = view.lim || 150;
+  const now = Date.now();
+  const state = c => !c.s ? `<span class="pill" style="color:var(--new)">neu</span>` : c.s.t === "review" ? `<span class="pill">${c.s.due <= dayStart() ? "fällig" : "in " + fmtIvl({ t: "x", due: c.s.due }, now)}</span>` : `<span class="pill" style="color:var(--learn)">lernen</span>`;
+  return `<div class="wrap">
+    <header class="top"><button class="back" data-act="backdeck">‹ ${esc(d.n.split("::").pop())}</button></header>
+    <input id="q" placeholder="Suchen …" value="${esc(view.q || "")}" autocomplete="off">
+    <div class="small muted" style="margin:10px 4px">${cs.length} Karten</div>
+    <div class="card list">${cs.slice(0, lim).map(c => `<div class="item" data-edit="${c.id}"><div class="row"><div class="f grow">${esc(plain(c.z != null ? c.f.replace(CLOZE, "$2") : c.f)) || "<span class='muted'>(leer)</span>"}</div>${state(c)}</div><div class="b">${esc(plain(c.b))}</div></div>`).join("") || `<div class="pad muted">Keine Karten gefunden.</div>`}</div>
+    ${cs.length > lim ? `<button class="btn ghost block" style="margin-top:12px" data-act="more">Mehr anzeigen</button>` : ""}
+  </div>`;
+}
+
+/* Karte bearbeiten / anlegen */
+function vEdit() {
+  const c = view.id ? S.cards[view.id] : null;
+  const decks = liveDecks().sort((a, b) => a.n.localeCompare(b.n, "de", { numeric: true }));
+  const cur = c ? c.d : (view.deck || lsGet("lk_lastdeck", "") || (decks[0] && decks[0].id));
+  const isHtml = c && /<\/?[a-z][^>]*>/i.test(c.f + c.b);
+  const toText = t => isHtml ? t : t;
+  return `<div class="wrap">
+    <header class="top"><button class="back" data-act="canceledit">‹ Zurück</button><div class="grow"></div>
+      ${c ? `<button class="btn danger" data-act="delcard">Löschen</button>` : ""}</header>
+    <h1 style="margin:0 0 6px;font-size:24px">${c ? "Karte bearbeiten" : "Neue Karte"}</h1>
+    ${decks.length ? `<label class="lab">Deck</label><select id="edDeck">${decks.map(d => `<option value="${d.id}" ${d.id === cur ? "selected" : ""}>${esc(d.n.replace(/::/g, " › "))}</option>`).join("")}</select>` :
+      `<label class="lab">Deck</label><input id="edNewDeck" placeholder="Name des neuen Decks" value="Allgemein">`}
+    <label class="lab">Vorderseite${c && c.z != null ? " (Lückentext)" : ""}</label><textarea id="edF">${esc(c ? toText(c.f) : "")}</textarea>
+    <label class="lab">Rückseite</label><textarea id="edB">${esc(c ? toText(c.b) : "")}</textarea>
+    ${isHtml ? `<div class="small muted" style="margin-top:6px">Diese Karte enthält Formatierung (HTML) aus dem Import.</div>` : ""}
+    <div class="row" style="margin-top:18px">
+      <button class="btn grow" data-act="saveedit">${c ? "Speichern" : "Hinzufügen"}</button>
+      ${!c ? `<button class="btn ghost" data-act="saveeditclose">Fertig</button>` : ""}
+    </div>
+    ${c && c.s ? `<button class="btn ghost block" style="margin-top:10px" data-act="resetcard">Lernstand dieser Karte zurücksetzen</button>` : ""}
+  </div>`;
+}
+
+/* Einstellungen */
+function vSettings() {
+  const cfg = Sync.cfg;
+  return `<div class="wrap">
+    <header class="top"><button class="back" data-go="home">‹ Decks</button></header>
+    <h1 style="margin:0 0 6px;font-size:26px">Einstellungen</h1>
+
+    <div class="section">Lernen</div>
+    <div class="card pad">
+      <label class="lab" style="margin-top:0">Neue Karten pro Tag (0 = unbegrenzt)</label>
+      <input id="stNew" type="number" min="0" inputmode="numeric" value="${+S.settings.newPerDay || 0}">
+      <label class="lab">Lernschritte in Minuten</label>
+      <input id="stSteps" value="${(S.settings.steps || [1, 10]).join(" ")}" placeholder="1 10">
+      <div class="small muted" style="margin-top:6px">So oft kommt eine neue Karte am selben Tag wieder, bevor sie in die Wiederholung geht. Standard wie bei Anki: 1 10.</div>
+      <button class="btn block" style="margin-top:14px" data-act="savesettings">Speichern</button>
+    </div>
+
+    <div class="section">Handy und iPad abgleichen</div>
+    <div class="card pad">
+      ${cfg.token ? `
+        <div class="row"><span class="syncdot ${Sync.dot()}"></span><span class="grow">${esc(Sync.statusText())}</span></div>
+        <div class="row" style="margin-top:14px"><button class="btn grow" data-act="syncnow">Jetzt abgleichen</button><button class="btn ghost" data-act="syncoff">Trennen</button></div>`
+      : `
+        <p class="small muted" style="margin-top:0">Deine Karten und dein Lernstand werden in einem privaten Gist in deinem GitHub-Konto gespeichert. So hast du auf Handy und iPad denselben Stand.</p>
+        <ol class="small muted" style="padding-left:18px">
+          <li>Auf github.com einloggen und <b>Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token (classic)</b> öffnen.</li>
+          <li>Name z. B. „Lernkarten“, Ablauf „No expiration“, nur das Häkchen bei <b>gist</b> setzen.</li>
+          <li>Token kopieren und hier einfügen. Auf jedem Gerät einmal machen.</li>
+        </ol>
+        <div class="small muted">Link: <span style="user-select:all">github.com/settings/tokens/new?scopes=gist&description=Lernkarten</span></div>
+        <input id="tok" placeholder="ghp_…" autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px">
+        <button class="btn block" style="margin-top:10px" data-act="syncon">Verbinden</button>`}
+    </div>
+
+    <div class="section">Daten</div>
+    <div class="card pad">
+      <button class="btn ghost block" data-act="import">Karten importieren (Noji, Anki, CSV)</button>
+      <button class="btn ghost block" style="margin-top:10px" data-act="backup">Sicherung herunterladen</button>
+      <button class="btn ghost block" style="margin-top:10px" data-act="restore">Sicherung einspielen</button>
+      <button class="btn danger block" style="margin-top:10px" data-act="wipe">Alles auf diesem Gerät löschen</button>
+      <div class="small muted" style="margin-top:12px">Tipp fürs iPhone und iPad: Öffne die App immer über das Symbol auf dem Home-Bildschirm. Safari und das Home-Bildschirm-Symbol speichern getrennt.</div>
+    </div>
+    <div class="small muted" style="text-align:center;margin-top:24px">Lernkarten · kostenlos, ohne Limit, ohne Werbung</div>
+  </div>`;
+}
+
+/* ============ Ereignisse ============ */
+function bind() {
+  const a = $("#app");
+  a.onclick = e => {
+    const t = e.target.closest("[data-go],[data-act],[data-deck],[data-tog],[data-ans],[data-edit]");
+    if (!t) return;
+    if (t.dataset.tog) { e.stopPropagation(); collapsed[t.dataset.tog] = !collapsed[t.dataset.tog]; lsSet("lk_collapsed", collapsed); render(); return; }
+    if (t.dataset.go) return go({ name: t.dataset.go });
+    if (t.dataset.deck) return go({ name: "deck", id: t.dataset.deck });
+    if (t.dataset.ans) return answer(+t.dataset.ans);
+    if (t.dataset.edit) return go({ name: "edit", id: t.dataset.edit, from: view });
+    act(t.dataset.act, t);
+  };
+  const q = $("#q");
+  if (q) q.oninput = () => { view.q = q.value; const pos = q.selectionStart; render(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); };
+  const fl = $("#flash");
+  if (fl && sess && !sess.shown) fl.onclick = () => { sess.shown = true; render(); };
+  const syncBtn = $("#syncBtn");
+  if (syncBtn) syncBtn.onclick = () => Sync.cfg.token ? Sync.run(true) : go({ name: "settings" });
+}
+
+async function act(a, el) {
+  if (a === "study") return startStudy(view.id);
+  if (a === "cram") return startStudy(view.id, true);
+  if (a === "reveal") { sess.shown = true; return render(); }
+  if (a === "endstudy") { const id = sess.deckId; sess = null; Sync.soon(500); return go({ name: "deck", id }); }
+  if (a === "undo") return undo();
+  if (a === "editcur") { if (sess.card) go({ name: "edit", id: sess.card.id, from: { name: "study" } }); return; }
+  if (a === "browse") return go({ name: "browse", id: view.id });
+  if (a === "backdeck") return go({ name: "deck", id: view.id });
+  if (a === "more") { view.lim = (view.lim || 150) + 300; return render(); }
+  if (a === "addcard") return go({ name: "edit", deck: view.name === "deck" ? view.id : null, from: view });
+  if (a === "newdeck") {
+    const n = prompt("Name des neuen Decks\n(Unterdeck: Oberdeck::Unterdeck)"); if (!n || !cleanDeckName(n)) return;
+    const d = ensureDeck(n); save(); return go({ name: "deck", id: d.id });
+  }
+  if (a === "deckmenu") return deckMenu();
+  if (a === "canceledit") return go(view.from || { name: "home" });
+  if (a === "saveedit" || a === "saveeditclose") return saveEdit(a === "saveeditclose");
+  if (a === "delcard") {
+    if (!confirm("Diese Karte löschen?")) return;
+    const c = S.cards[view.id]; S.cards[c.id] = { id: c.id, x: 1, u: Date.now() }; save();
+    if (view.from && view.from.name === "study" && sess) { sess.card = pickNext(); sess.shown = false; }
+    toast("Karte gelöscht"); return go(view.from || { name: "home" });
+  }
+  if (a === "resetcard") { const c = S.cards[view.id]; c.s = null; c.u = Date.now(); save(); toast("Karte ist wieder neu"); return; }
+  if (a === "savesettings") {
+    const n = Math.max(0, parseInt($("#stNew").value || "0", 10) || 0);
+    const steps = $("#stSteps").value.split(/[\s,;]+/).map(Number).filter(x => x > 0 && x < 1440);
+    S.settings = { ...S.settings, newPerDay: n, steps: steps.length ? steps : [1, 10], u: Date.now() }; save(); toast("Gespeichert"); return render();
+  }
+  if (a === "import") { $("#fileIn").dataset.mode = "import"; $("#fileIn").value = ""; return $("#fileIn").click(); }
+  if (a === "restore") { $("#fileIn").dataset.mode = "restore"; $("#fileIn").value = ""; return $("#fileIn").click(); }
+  if (a === "backup") return backup();
+  if (a === "wipe") {
+    if (!confirm("Wirklich alle Karten und den Lernstand auf diesem Gerät löschen?")) return;
+    if (Sync.cfg.token && !confirm("Achtung: Beim nächsten Abgleich holt sich das Gerät die Daten wieder aus GitHub. Trotzdem löschen?")) return;
+    S = { v: 1, decks: {}, cards: {}, settings: { newPerDay: 0, steps: [1, 10], u: 0 } }; await store.set("state", S); toast("Gelöscht"); return go({ name: "home" });
+  }
+  if (a === "syncon") { const tk = ($("#tok").value || "").trim(); if (!tk) return toast("Bitte Token einfügen"); Sync.cfg = { token: tk }; Sync.saveCfg(); await Sync.run(true); return render(); }
+  if (a === "syncoff") { if (!confirm("Abgleich auf diesem Gerät trennen? Deine Daten bleiben erhalten.")) return; Sync.cfg = {}; Sync.saveCfg(); return render(); }
+  if (a === "syncnow") { await Sync.run(true); return render(); }
+}
+
+function deckMenu() {
+  const d = S.decks[view.id];
+  modal(`<h2>${esc(d.n.split("::").pop())}</h2>
+    <button class="btn ghost block" style="margin-top:12px" data-m="rename">Umbenennen</button>
+    <button class="btn ghost block" style="margin-top:10px" data-m="resetdeck">Lernstand des Decks zurücksetzen</button>
+    <button class="btn danger block" style="margin-top:10px" data-m="deldeck">Deck löschen</button>
+    <button class="btn ghost block" style="margin-top:10px" data-m="close">Abbrechen</button>`, (m, close) => {
+    if (m === "close") return close();
+    if (m === "rename") {
+      const n = cleanDeckName(prompt("Neuer Name (Unterdeck: Oberdeck::Unterdeck)", d.n)); if (!n || n === d.n) return;
+      if (deckByName(n)) return toast("Diesen Namen gibt es schon");
+      const old = d.n, now = Date.now();
+      for (const x of liveDecks()) if (x.n === old || x.n.startsWith(old + "::")) { x.n = n + x.n.slice(old.length); x.u = now; }
+      ensureDeck(n); save(); close(); render();
+    }
+    if (m === "resetdeck") {
+      if (!confirm("Alle Karten in diesem Deck (und Unterdecks) wieder auf „neu“ setzen?")) return;
+      const ids = deckIdsUnder(d), now = Date.now(); for (const c of liveCards()) if (ids.has(c.d)) { c.s = null; c.u = now; }
+      save(); close(); render(); toast("Zurückgesetzt");
+    }
+    if (m === "deldeck") {
+      const ids = deckIdsUnder(d); const n = liveCards().filter(c => ids.has(c.d)).length;
+      if (!confirm(`Deck mit ${n} Karten (inklusive Unterdecks) löschen?`)) return;
+      const now = Date.now();
+      for (const c of liveCards()) if (ids.has(c.d)) S.cards[c.id] = { id: c.id, x: 1, u: now };
+      for (const id of ids) S.decks[id] = { id, x: 1, u: now };
+      save(); close(); go({ name: "home" }); toast("Deck gelöscht");
+    }
+  });
+}
+
+function saveEdit(close) {
+  const f = $("#edF").value, b = $("#edB").value;
+  if (!f.trim() && !b.trim()) return toast("Die Karte ist leer");
+  let deckId = $("#edDeck") ? $("#edDeck").value : ensureDeck($("#edNewDeck").value).id;
+  lsSet("lk_lastdeck", deckId);
+  const now = Date.now();
+  if (view.id) {
+    const c = S.cards[view.id]; c.f = f; c.b = b; c.d = deckId; c.u = now; save(); toast("Gespeichert");
+    if (view.from && view.from.name === "study" && sess) { sess.card = c; }
+    return go(view.from || { name: "home" });
+  }
+  const id = uid(); S.cards[id] = { id, d: deckId, f, b, c: now, o: 0, u: now, s: null }; save();
+  toast("Karte hinzugefügt");
+  if (close) return go(view.from || { name: "home" });
+  $("#edF").value = ""; $("#edB").value = ""; $("#edF").focus();
+}
+
+function modal(html, onAct) {
+  const m = document.createElement("div"); m.className = "modal";
+  m.innerHTML = `<div class="sheet">${html}</div>`;
+  document.body.appendChild(m);
+  const close = () => m.remove();
+  m.addEventListener("click", e => { if (e.target === m) return close(); const t = e.target.closest("[data-m]"); if (t) onAct(t.dataset.m, close, m); });
+  return { el: m, close };
+}
+
+/* Tastatur (iPad mit Tastatur, Laptop) */
+document.addEventListener("keydown", e => {
+  if (view.name !== "study" || !sess || !sess.card) return;
+  if (e.target.matches("input,textarea")) return;
+  if (!sess.shown && (e.key === " " || e.key === "Enter")) { e.preventDefault(); sess.shown = true; render(); }
+  else if (sess.shown && ["1", "2", "3", "4"].includes(e.key)) answer(+e.key);
+  else if (sess.shown && (e.key === " " || e.key === "Enter")) { e.preventDefault(); answer(3); }
+  else if ((e.metaKey || e.ctrlKey) && e.key === "z") undo();
+});
+
+/* ============ Import ============ */
+const LIB = {
+  jszip: "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js",
+  sqljs: "https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/",
+  fzstd: "https://cdn.jsdelivr.net/npm/fzstd@0.1.1/umd/index.js"
+};
+function loadScript(src) {
+  return new Promise((res, rej) => { const s = document.createElement("script"); s.src = src; s.onload = res; s.onerror = () => rej(new Error("Zusatzmodul konnte nicht geladen werden. Bist du online?")); document.head.appendChild(s); });
+}
+$("#fileIn").addEventListener("change", async e => {
+  const files = [...e.target.files]; if (!files.length) return;
+  const mode = e.target.dataset.mode;
+  try {
+    if (mode === "restore") { for (const f of files) await restoreFile(f); return; }
+    for (const f of files) await importFile(f);
+  } catch (err) { console.error(err); toast("Import fehlgeschlagen: " + (err.message || err), 6000); }
+});
+
+function baseName(n) { return n.replace(/^.*[\/\\]/, "").replace(/\.[^.]+$/, "").replace(/[_]+/g, " ").trim(); }
+
+async function importFile(f) {
+  const name = f.name.toLowerCase();
+  if (name.endsWith(".json")) {
+    const data = JSON.parse(await f.text());
+    if (data && data.cards && data.decks) { mergeInto(S, data); save(); render(); return toast("Sicherung eingespielt"); }
+    if (Array.isArray(data)) {
+      const items = data.map(x => ({ f: x.front ?? x.question ?? x.term ?? x.f ?? "", b: x.back ?? x.answer ?? x.definition ?? x.b ?? "", deck: x.deck || null })).filter(x => x.f || x.b);
+      return previewImport(items, baseName(f.name));
+    }
+    throw new Error("Unbekanntes JSON-Format");
+  }
+  const head = new Uint8Array(await f.slice(0, 4).arrayBuffer());
+  const isZip = head[0] === 0x50 && head[1] === 0x4b;
+  if (isZip) {
+    toast("Lese Datei …", 10000);
+    if (!window.JSZip) await loadScript(LIB.jszip);
+    const zip = await JSZip.loadAsync(await f.arrayBuffer());
+    if (zip.file("collection.anki21b") || zip.file("collection.anki21") || zip.file("collection.anki2")) {
+      const items = await parseApkg(zip, baseName(f.name));
+      return previewImport(items, baseName(f.name), true);
+    }
+    // ZIP mit CSV-/Textdateien (ein Deck pro Datei)
+    let items = [];
+    const entries = Object.values(zip.files).filter(z => !z.dir && /\.(csv|tsv|txt)$/i.test(z.name) && !z.name.startsWith("__MACOSX"));
+    if (!entries.length) throw new Error("In der ZIP-Datei wurden keine Karten gefunden");
+    for (const z of entries) {
+      const deckName = z.name.replace(/\.[^.]+$/, "").split("/").map(s => s.trim()).filter(Boolean).join("::");
+      const parsed = parseDelimited(await z.async("string"));
+      items.push(...parsed.items.map(x => ({ ...x, deck: x.deck || deckName })));
+    }
+    return previewImport(items, baseName(f.name), true);
+  }
+  const text = await f.text();
+  return previewImport(null, baseName(f.name), false, text);
+}
+
+/* CSV / TSV / Anki-Text */
+function parseCSV(text, sep) {
+  const rows = []; let row = [], cell = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (q) {
+      if (ch === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; }
+      else cell += ch;
+    } else {
+      if (ch === '"' && cell === "") q = true;
+      else if (ch === sep) { row.push(cell); cell = ""; }
+      else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(cell); rows.push(row); row = []; cell = ""; }
+      else cell += ch;
+    }
+  }
+  if (cell !== "" || row.length) { row.push(cell); rows.push(row); }
+  return rows;
+}
+const SEPS = { tab: "\t", semicolon: ";", comma: ",", pipe: "|", colon: ":", space: " " };
+function detectSep(body) {
+  const lines = body.split(/\r?\n/).filter(l => l.trim()).slice(0, 30);
+  let best = null, bestScore = 0;
+  for (const s of ["\t", ";", "|", ","]) {
+    const rows = parseCSV(lines.join("\n"), s);
+    const ok = rows.filter(r => r.length >= 2).length;
+    const consistent = rows.length ? rows.filter(r => r.length === (rows[0] || []).length).length / rows.length : 0;
+    const score = ok / Math.max(1, rows.length) + consistent * 0.5 + (s === "\t" ? .3 : s === ";" ? .2 : s === "|" ? .1 : 0);
+    if (ok && score > bestScore) { best = s; bestScore = score; }
+  }
+  return best;
+}
+function parseDelimited(text, forceSep) {
+  text = text.replace(/^﻿/, "");
+  let sep = null, drop = new Set(), deckCol = null;
+  const lines = text.split(/\r?\n/);
+  let i = 0;
+  for (; i < lines.length; i++) {
+    const m = lines[i].match(/^#([a-z ]+):(.*)$/i);
+    if (!m) break;
+    const k = m[1].trim().toLowerCase(), v = m[2].trim();
+    if (k === "separator") sep = SEPS[v.toLowerCase()] || (v.length === 1 ? v : null);
+    if (k === "deck column") { deckCol = +v - 1; drop.add(deckCol); }
+    if (k === "notetype column" || k === "guid column" || k === "tags column") drop.add(+v - 1);
+  }
+  const body = lines.slice(i).join("\n");
+  sep = forceSep || sep || detectSep(body);
+  if (!sep) {
+    // Fallback: Vorderseite und Rückseite in abwechselnden Zeilen, Karten durch Leerzeile getrennt
+    const blocks = body.split(/\r?\n\s*\r?\n/).map(b => b.trim()).filter(Boolean);
+    const items = blocks.map(b => { const ls = b.split(/\r?\n/); return { f: ls[0], b: ls.slice(1).join("\n") }; }).filter(x => x.f && x.b);
+    return { items, sep: null };
+  }
+  let rows = parseCSV(body, sep).filter(r => r.some(c => c.trim()));
+  if (rows.length && /^(front|back|vorderseite|rückseite|frage|antwort|question|answer|term|definition|begriff|word|wort)$/i.test((rows[0][0] || "").trim())) rows.shift();
+  const items = rows.map(r => {
+    const deck = deckCol != null ? r[deckCol] : null;
+    const cells = r.filter((_, idx) => !drop.has(idx));
+    return { f: cells[0] || "", b: cells[1] || "", deck: deck ? deck.trim() : null };
+  }).filter(x => x.f.trim() || x.b.trim());
+  return { items, sep };
+}
+
+/* Anki-Paket (.apkg) */
+async function parseApkg(zip, fallbackName) {
+  let bytes;
+  if (zip.file("collection.anki21b")) {
+    if (!window.fzstd) await loadScript(LIB.fzstd);
+    bytes = fzstd.decompress(await zip.file("collection.anki21b").async("uint8array"));
+  } else bytes = await zip.file(zip.file("collection.anki21") ? "collection.anki21" : "collection.anki2").async("uint8array");
+  if (!window.initSqlJs) await loadScript(LIB.sqljs + "sql-wasm.js");
+  const SQL = await initSqlJs({ locateFile: f => LIB.sqljs + f });
+  const db = new SQL.Database(bytes);
+  const deckNames = {};
+  try {
+    const r = db.exec("SELECT id, name FROM decks");
+    if (r[0]) for (const [id, n] of r[0].values) deckNames[id] = String(n).replace(/\x1f/g, "::");
+  } catch (e) {
+    const r = db.exec("SELECT decks FROM col");
+    const obj = JSON.parse(r[0].values[0][0]);
+    for (const k in obj) deckNames[k] = obj[k].name;
+  }
+  // Bilder (nur altes Format mit JSON-Medienliste)
+  let media = {};
+  try { const mf = zip.file("media"); if (mf) { const txt = await mf.async("string"); const j = JSON.parse(txt); for (const k in j) media[j[k]] = k; } } catch (e) { media = {}; }
+  const imgCache = {};
+  async function inlineImages(html) {
+    const names = [...html.matchAll(/<img[^>]*src=["']?([^"'>\s]+)["']?[^>]*>/gi)].map(m => m[1]);
+    for (const n of names) {
+      const key = decodeURIComponent(n);
+      if (imgCache[key] === undefined) {
+        imgCache[key] = null;
+        const zf = media[key] != null ? zip.file(media[key]) : null;
+        if (zf) {
+          const data = await zf.async("uint8array");
+          if (data.length < 350000) {
+            const ext = (key.split(".").pop() || "png").toLowerCase();
+            const mime = ext === "jpg" || ext === "jpeg" ? "image/jpeg" : ext === "gif" ? "image/gif" : ext === "webp" ? "image/webp" : ext === "svg" ? "" : "image/png";
+            if (mime) { let bin = ""; for (let i = 0; i < data.length; i += 8192) bin += String.fromCharCode.apply(null, data.subarray(i, i + 8192)); imgCache[key] = `data:${mime};base64,${btoa(bin)}`; }
+          }
+        }
+      }
+      if (imgCache[key]) html = html.split(n).join(imgCache[key]);
+    }
+    return html;
+  }
+  const res = db.exec("SELECT c.ord, c.did, n.flds FROM cards c JOIN notes n ON c.nid = n.id ORDER BY n.id, c.ord");
+  const items = [];
+  if (res[0]) for (const [ord, did, flds] of res[0].values) {
+    let fields = String(flds).split("\x1f").map(x => x.replace(/\[sound:[^\]]*\]/g, "").trim());
+    if (Object.keys(media).length) fields = await Promise.all(fields.map(inlineImages));
+    let deck = deckNames[did] || fallbackName;
+    if (/^(default|standard)$/i.test(deck)) deck = fallbackName;
+    if (/\{\{c\d+::/.test(fields[0])) { items.push({ f: fields[0], b: fields.slice(1).filter(x => plain(x)).join("<br>"), z: ord, deck }); continue; }
+    let f = fields[0] || "", b = fields[1] || "";
+    if (ord === 1 && fields[1]) [f, b] = [b, f];
+    const extra = fields.slice(2).filter(x => plain(x));
+    if (extra.length) b += "<br><br>" + extra.join("<br>");
+    items.push({ f, b, deck });
+  }
+  db.close();
+  return items;
+}
+
+/* Vorschau + Übernahme */
+function previewImport(items, defName, fixed = false, rawText = null) {
+  let sepChoice = "auto";
+  const compute = () => {
+    if (rawText != null) items = parseDelimited(rawText, sepChoice === "auto" ? null : SEPS[sepChoice]).items;
+    return items;
+  };
+  compute();
+  const hasDecks = items.some(x => x.deck);
+  const deckSummary = () => { const m = {}; for (const x of items) m[x.deck || "?"] = (m[x.deck || "?"] || 0) + 1; return Object.entries(m); };
+  const prevHtml = () => items.slice(0, 6).map(x => `<div><b>${esc(plain(x.z != null ? x.f.replace(CLOZE, "$2") : x.f)).slice(0, 120)}</b><br><span class="muted">${esc(plain(x.b)).slice(0, 140)}</span></div>`).join("") || `<div class="muted">Keine Karten erkannt.</div>`;
+  const m = modal(`<h2>Import</h2>
+    <div class="muted small" id="impCount"></div>
+    ${rawText != null ? `<label class="lab">Trennzeichen zwischen Vorder- und Rückseite</label>
+      <select id="impSep"><option value="auto">Automatisch erkennen</option><option value="tab">Tabulator</option><option value="semicolon">Semikolon ;</option><option value="comma">Komma ,</option><option value="pipe">Senkrechter Strich |</option></select>` : ""}
+    ${hasDecks ? `<label class="lab">Decks aus der Datei</label><div class="small" id="impDecks"></div>
+      <label class="lab"><input type="checkbox" id="impKeep" checked style="width:auto;margin-right:8px">Deck-Struktur aus der Datei übernehmen</label>` : ""}
+    <label class="lab">${hasDecks ? "Sonst alles in dieses Deck" : "In dieses Deck importieren"}</label>
+    <input id="impDeck" value="${esc(defName)}">
+    <label class="lab">Vorschau</label><div class="preview" id="impPrev"></div>
+    <div class="row" style="margin-top:16px"><button class="btn ghost" data-m="close">Abbrechen</button><button class="btn grow" data-m="go">Importieren</button></div>`,
+    (a, close) => {
+      if (a === "close") return close();
+      if (a === "go") {
+        if (!items.length) return toast("Keine Karten erkannt");
+        const keep = $("#impKeep") ? $("#impKeep").checked : false;
+        const target = cleanDeckName($("#impDeck").value) || "Import";
+        const r = doImport(items, keep, target); close(); render();
+        toast(`${r.added} Karten importiert` + (r.dup ? `, ${r.dup} doppelte übersprungen` : ""), 4000);
+      }
+    });
+  const upd = () => {
+    $("#impCount", m.el).textContent = `${items.length} Karten erkannt`;
+    $("#impPrev", m.el).innerHTML = prevHtml();
+    const dd = $("#impDecks", m.el); if (dd) dd.innerHTML = deckSummary().map(([n, c]) => `<div>${esc(n.replace(/::/g, " › "))} <span class="muted">(${c})</span></div>`).join("");
+  };
+  upd();
+  const sel = $("#impSep", m.el); if (sel) sel.onchange = () => { sepChoice = sel.value; compute(); upd(); };
+}
+function doImport(items, keepDecks, target) {
+  const now = Date.now(); let added = 0, dup = 0;
+  const seen = {};
+  for (const c of liveCards()) { (seen[c.d] = seen[c.d] || new Set()).add(c.f + "\u0000" + c.b + "\u0000" + (c.z ?? "")); }
+  items.forEach((x, i) => {
+    const d = ensureDeck(keepDecks && x.deck ? x.deck : target);
+    const key = x.f + "\u0000" + x.b + "\u0000" + (x.z ?? "");
+    const set = (seen[d.id] = seen[d.id] || new Set());
+    if (set.has(key)) { dup++; return; }
+    set.add(key);
+    const id = uid();
+    S.cards[id] = { id, d: d.id, f: x.f, b: x.b, c: now, o: i, u: now, s: null, ...(x.z != null ? { z: x.z } : {}) };
+    added++;
+  });
+  save();
+  return { added, dup };
+}
+
+/* Sicherung */
+function exportData() { return { v: 1, app: "lernkarten", exported: Date.now(), decks: S.decks, cards: S.cards, settings: S.settings }; }
+function backup() {
+  const blob = new Blob([JSON.stringify(exportData())], { type: "application/json" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  const d = new Date(); a.download = `lernkarten-sicherung-${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}.json`;
+  document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+}
+async function restoreFile(f) {
+  const data = JSON.parse(await f.text());
+  if (!data || !data.cards || !data.decks) throw new Error("Das ist keine Lernkarten-Sicherung");
+  mergeInto(S, data); save(); render(); toast("Sicherung eingespielt");
+}
+function mergeInto(dst, src) {
+  for (const key of ["decks", "cards"]) {
+    const a = dst[key], b = src[key] || {};
+    for (const id in b) { const x = b[id]; if (!x || !x.id) continue; if (!a[id] || (x.u || 0) > (a[id].u || 0)) a[id] = x; }
+  }
+  if (src.settings && (src.settings.u || 0) > (dst.settings.u || 0)) dst.settings = src.settings;
+  // doppelte Decknamen zusammenführen (gleich benannt auf zwei Geräten angelegt)
+  const byName = {};
+  for (const d of Object.values(dst.decks)) {
+    if (d.x) continue;
+    if (!byName[d.n]) { byName[d.n] = d; continue; }
+    const keep = byName[d.n].id < d.id ? byName[d.n] : d, drop = keep === d ? byName[d.n] : d;
+    byName[d.n] = keep;
+    const now = Date.now();
+    for (const c of Object.values(dst.cards)) if (!c.x && c.d === drop.id) { c.d = keep.id; c.u = now; }
+    dst.decks[drop.id] = { id: drop.id, x: 1, u: now };
+  }
+}
+
+/* ============ Abgleich über GitHub Gist ============ */
+const Sync = {
+  cfg: lsGet("lk_sync", {}),
+  state: "idle", err: "", busy: false, again: false, timer: null,
+  FILE: "lernkarten-daten.json",
+  saveCfg() { lsSet("lk_sync", this.cfg); },
+  dot() { if (!this.cfg.token) return ""; if (this.busy) return "busy"; if (this.state === "err") return "err"; if (this.cfg.last) return "ok"; return ""; },
+  statusText() {
+    if (this.busy) return "Gleiche ab …";
+    if (this.state === "err") return "Fehler: " + this.err;
+    if (this.cfg.last) return "Zuletzt abgeglichen: " + new Date(this.cfg.last).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" });
+    return "Verbunden, noch nicht abgeglichen";
+  },
+  soon(ms = 15000) { if (!this.cfg.token) return; clearTimeout(this.timer); this.timer = setTimeout(() => this.run(), ms); },
+  async gh(path, opts = {}) {
+    const r = await fetch("https://api.github.com" + path, { ...opts, headers: { Authorization: "Bearer " + this.cfg.token, Accept: "application/vnd.github+json", ...(opts.body ? { "Content-Type": "application/json" } : {}) } });
+    const fail = msg => { const e = new Error(msg); e.status = r.status; return e; };
+    if (r.status === 401) throw fail("Token ungültig oder abgelaufen");
+    if (r.status === 404 && path.startsWith("/gists/")) throw fail("Gist nicht gefunden");
+    if (r.status === 403 || r.status === 404) throw fail("Kein Zugriff. Hat der Token das Häkchen „gist“?");
+    if (!r.ok) throw fail("GitHub antwortet mit " + r.status);
+    return r.json();
+  },
+  async run(manual = false) {
+    if (!this.cfg.token) return;
+    if (!navigator.onLine) { if (manual) toast("Offline, Abgleich später"); return; }
+    if (this.busy) { this.again = true; return; }
+    this.busy = true; this.refreshDot();
+    try {
+      if (!this.cfg.gistId) {
+        const list = await this.gh("/gists?per_page=100");
+        const g = list.find(g => g.files && g.files[this.FILE]);
+        if (g) this.cfg.gistId = g.id;
+        else {
+          const created = await this.gh("/gists", { method: "POST", body: JSON.stringify({ description: "Lernkarten: Karten und Lernstand (automatisch)", public: false, files: { [this.FILE]: { content: JSON.stringify(exportData()) } } }) });
+          this.cfg.gistId = created.id; this.cfg.last = Date.now(); this.saveCfg(); this.state = "ok";
+          if (manual) toast("Verbunden und hochgeladen");
+          return;
+        }
+        this.saveCfg();
+      }
+      const g = await this.gh("/gists/" + this.cfg.gistId);
+      const f = g.files && g.files[this.FILE];
+      if (f) {
+        let content = f.content;
+        if (f.truncated && f.raw_url) content = await (await fetch(f.raw_url, { cache: "no-store" })).text();
+        try { mergeInto(S, JSON.parse(content)); } catch (e) { }
+      }
+      await store.set("state", S);
+      await this.gh("/gists/" + this.cfg.gistId, { method: "PATCH", body: JSON.stringify({ files: { [this.FILE]: { content: JSON.stringify(exportData()) } } }) });
+      this.cfg.last = Date.now(); this.saveCfg(); this.state = "ok"; this.err = "";
+      if (manual) toast("Abgeglichen");
+      if (view.name !== "study" && view.name !== "edit") render();
+    } catch (e) {
+      this.state = "err"; this.err = e.message || String(e);
+      if (e.status === 404 && this.cfg.gistId) { this.cfg.gistId = null; this.saveCfg(); this.again = true; }
+      if (manual) toast("Abgleich fehlgeschlagen: " + this.err, 5000);
+    } finally {
+      this.busy = false; this.refreshDot();
+      if (this.again) { this.again = false; this.soon(3000); }
+    }
+  },
+  refreshDot() { const d = $("#syncBtn .syncdot"); if (d) d.className = "syncdot " + this.dot(); }
+};
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") { store.set("state", S); if (Sync.cfg.token) Sync.run(); }
+  else if (Sync.cfg.token) Sync.soon(800);
+});
+
+/* ============ Start ============ */
+(async function init() {
+  await store.open();
+  const saved = await store.get("state");
+  if (saved && saved.cards) { S = saved; S.settings = S.settings || { newPerDay: 0, steps: [1, 10], u: 0 }; }
+  render();
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) { }
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => { });
+  if (Sync.cfg.token) Sync.run();
+  setInterval(() => { if (view.name === "home" || view.name === "deck") render(); }, 60000);
+})();
+</script>
+</body>
+</html>

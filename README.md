@@ -49,3 +49,10 @@ https://karleberhard38-create.github.io/dopamind/?reset=1
 ## Decks nur für die Ersteller-Ansicht
 
 Die Datei `decks_owner.json` wird nur geladen, wenn die Ersteller-Ansicht aktiv ist (`?owner=1`). Testerinnen und Tester sehen nur `decks.json`. Soll ein Deck später für alle freigegeben werden, wird es aus `decks_owner.json` nach `decks.json` kopiert (das Feld `own` entfernen).
+
+## Lernkarten (eigene Karteikarten-App)
+**App öffnen:** https://karleberhard38-create.github.io/dopamind/karten/
+
+Karteikarten mit Wiederholungsplan wie bei Anki, ohne Tageslimit und ohne Werbung. Liegt im Ordner `karten/` und ist
+unabhängig von Dopamind. Import: Noji-Export, Anki-Pakete (.apkg), CSV und Textdateien. Abgleich zwischen Handy und
+iPad über einen privaten GitHub-Gist (Einstellungen in der App).
