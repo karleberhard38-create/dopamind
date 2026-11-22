@@ -204,6 +204,58 @@ function assignRoles(poses, AR) {
   return r;
 }
 
+/* ================= „Ich“-Verfolgung ================= */
+const hipPos = p => { const a = L(p, 23), b = L(p, 24); return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 }; };
+function nearestPose(poses, pos, AR) {
+  let best = null, bd = 1e9;
+  poses.forEach((p, i) => { const h = hipPos(p), d = Math.hypot((h.x - pos.x) * AR, h.y - pos.y); if (d < bd) { bd = d; best = i; } });
+  return best;
+}
+/* Verfolgt eine Person von Bild zu Bild: nächste Hüfte, ähnliche Größe, Sprung höchstens so weit,
+   wie ein Spieler in der Zeit laufen kann. step(f) setzt f.me (Index in f.poses oder null). */
+function makeTracker(AR, seedPos, seedTs, seedT) {
+  let pos = seedPos, ts = seedTs, lastT = seedT;
+  return {
+    step(f) {
+      const dt = Math.abs(f.t - lastT), gate = ts * Math.min(6, 1.5 + 12 * dt);
+      let best = null, bd = 1e9;
+      f.poses.forEach((p, i) => {
+        const t2 = torsoImg(p, AR), r = t2 / ts; if (r < 0.6 || r > 1.65) return;
+        const h = hipPos(p), d = Math.hypot((h.x - pos.x) * AR, h.y - pos.y);
+        if (d < gate && d < bd) { bd = d; best = i; }
+      });
+      f.me = best;
+      if (best != null) { const p = f.poses[best]; pos = hipPos(p); ts = 0.8 * ts + 0.2 * torsoImg(p, AR); lastT = f.t; }
+      return best;
+    }
+  };
+}
+/* Ganze Aufnahme: vom angetippten Bild aus vorwärts und rückwärts verfolgen. */
+function trackMe(frames, AR, seedT, seedPos) {
+  if (!frames.length) return 0;
+  let si = 0;
+  for (let i = 0; i < frames.length; i++) if (Math.abs(frames[i].t - seedT) < Math.abs(frames[si].t - seedT)) si = i;
+  let k = si;
+  while (k < frames.length && k < si + 30 && !frames[k].poses.length) k++;
+  if (k >= frames.length || !frames[k].poses.length) return 0;
+  const p0 = frames[k].poses[nearestPose(frames[k].poses, seedPos, AR)], pos0 = hipPos(p0), ts0 = torsoImg(p0, AR);
+  let fw = makeTracker(AR, pos0, ts0, frames[k].t), bw = makeTracker(AR, pos0, ts0, frames[k].t), hit = 0;
+  for (let i = k; i < frames.length; i++) if (fw.step(frames[i]) != null) hit++;
+  for (let i = k - 1; i >= 0; i--) if (bw.step(frames[i]) != null) hit++;
+  return hit / frames.length;
+}
+/* In welchem Team und auf welcher Seite stand „ich“ in diesen Bildern meistens? */
+function meIdentity(frames) {
+  const n = { n: 0, f: 0, L: 0, R: 0 }; let seen = 0;
+  for (const f of frames) {
+    if (f.me == null) continue;
+    const role = Object.keys(f.roles).find(r => f.roles[r] === f.me);
+    if (!role) continue;
+    seen++; n[role[0]]++; n[role[1]]++;
+  }
+  return { cov: frames.length ? seen / frames.length : 0, wirNah: n.n >= n.f, side: n.L >= n.R ? 'L' : 'R' };
+}
+
 /* ================= Schläge, Ballwechsel, Blöcke ================= */
 function detectEvents(frames, AR, opt) {
   opt = opt || {};
@@ -497,7 +549,7 @@ function mergeCfg(user) {
 }
 
 const API = { OVER, NAMES, DEFAULT_CFG, TEXT, L, Wd, mid, sub, len, angle, torsoImg, footY, hipX, pct, packPose,
-  assignRoles, detectEvents, makeRallies, splitBlocks, sideIdx, classifyContact, describeContact, contactIdeal,
+  hipPos, nearestPose, makeTracker, trackMe, meIdentity, assignRoles, detectEvents, makeRallies, splitBlocks, sideIdx, classifyContact, describeContact, contactIdeal,
   condOk, matchChain, ballCandidates, ballTrack, analyzeBlock, fill, evalRules, watchMsg, validateCfg, mergeCfg, sentence };
 if (typeof module !== 'undefined' && module.exports) module.exports = API; else root.PadelLogic = API;
 })(typeof window !== 'undefined' ? window : globalThis);
