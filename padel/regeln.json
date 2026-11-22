@@ -1,0 +1,616 @@
+{
+  "version": 2,
+  "hinweis": "Eigene Formulierungen hier anpassen. Platzhalter: {wert} oder {wert%} (als Prozent), {schlag}. Uhr-Texte: genau 2 kurze Sätze.",
+  "taktikRegeln": [
+    {
+      "id": "versetzt",
+      "name": "Loch zwischen euch",
+      "prio": 5,
+      "wenn": [
+        {
+          "wert": "versetztAnteil",
+          "op": ">",
+          "zahl": 0.25
+        }
+      ],
+      "lage": "Ihr steht in {versetztAnteil%} der Ballwechsel versetzt: einer vorne, einer hinten. Genau durch dieses Loch spielen die Gegner.",
+      "idee": "Probier mal: gemeinsam aufrücken, gemeinsam zurück – als wärt ihr mit einem Seil verbunden. Wer lobt, ruft „vor!“.",
+      "uhr": [
+        "Ihr steht oft versetzt.",
+        "Gemeinsam vor, gemeinsam zurück – wie am Seil."
+      ]
+    },
+    {
+      "id": "netz",
+      "name": "Zu selten am Netz",
+      "prio": 5,
+      "wenn": [
+        {
+          "wert": "netzAnteil",
+          "op": "<",
+          "zahl": 0.3
+        },
+        {
+          "wert": "gegnerNetzAnteil",
+          "op": ">",
+          "zahl": 0.4
+        }
+      ],
+      "lage": "Ihr seid nur {netzAnteil%} der Zeit am Netz, die Gegner {gegnerNetzAnteil%}. Wer das Netz hat, macht die Punkte.",
+      "idee": "Probier mal: einen hohen Lob über die Rückhandseite spielen und dann sofort zu zweit ans Netz laufen.",
+      "uhr": [
+        "Die Gegner haben das Netz, ihr nicht.",
+        "Hoher Lob, dann zu zweit nach vorn."
+      ]
+    },
+    {
+      "id": "niemandsland",
+      "name": "Niemandsland",
+      "prio": 4,
+      "wenn": [
+        {
+          "wert": "mitteAnteil",
+          "op": ">",
+          "zahl": 0.22
+        }
+      ],
+      "lage": "Ihr steht {mitteAnteil%} der Zeit in der Feldmitte. Da bekommt ihr die Bälle genau vor die Füße.",
+      "idee": "Probier mal: entscheide dich – ganz vor oder ganz zurück. Nach dem Aufschlag direkt durchlaufen, beim Lob der Gegner gemeinsam zurück.",
+      "uhr": [
+        "Ihr bleibt oft in der Mitte stehen.",
+        "Ganz vor oder ganz zurück, nicht stehen bleiben."
+      ]
+    },
+    {
+      "id": "mitteOffen",
+      "name": "Mitte offen",
+      "prio": 4,
+      "wenn": [
+        {
+          "wert": "mitteOffenAnteil",
+          "op": ">",
+          "zahl": 0.3
+        }
+      ],
+      "lage": "Zwischen euch ist oft viel Platz ({mitteOffenAnteil%} der Zeit über 6 m). Die Mitte ist euer offenes Tor.",
+      "idee": "Probier mal: beide einen Schritt zur Mitte. Absprache: Die Mitte nimmt, wer die Vorhand dort hat.",
+      "uhr": [
+        "Die Mitte ist offen.",
+        "Beide einen Schritt zur Mitte, Vorhand nimmt sie."
+      ]
+    },
+    {
+      "id": "eng",
+      "name": "Zu eng",
+      "prio": 3,
+      "wenn": [
+        {
+          "wert": "engAnteil",
+          "op": ">",
+          "zahl": 0.3
+        }
+      ],
+      "lage": "Ihr klebt oft zusammen ({engAnteil%} der Zeit unter 2 m Abstand). Außen wird es dann frei.",
+      "idee": "Probier mal: jeder bleibt in seiner Hälfte und geht nur bei Bällen in die Mitte rüber.",
+      "uhr": [
+        "Ihr steht zu eng zusammen.",
+        "Jeder hält seine Seite, die Mitte nimmt die Vorhand."
+      ]
+    },
+    {
+      "id": "angespielt",
+      "name": "Du wirst angespielt",
+      "prio": 4,
+      "wenn": [
+        {
+          "wert": "meinSchlagAnteil",
+          "op": ">",
+          "zahl": 0.62
+        }
+      ],
+      "lage": "Fast alles kommt zu dir ({meinSchlagAnteil%} eurer Schläge). Die Gegner haben dich als Ziel ausgesucht.",
+      "idee": "Probier mal: Tempo rausnehmen und höher in die Mitte spielen, damit dein Partner ins Spiel kommt. Ruhig bleiben, lieber ein Lob mehr.",
+      "uhr": [
+        "Sie spielen fast alles auf dich.",
+        "Tempo raus, hoch in die Mitte, Partner ins Spiel bringen."
+      ]
+    },
+    {
+      "id": "hintenFehler",
+      "name": "Zu viel Risiko von hinten",
+      "prio": 5,
+      "wenn": [
+        {
+          "wert": "endeHintenAnteil",
+          "op": ">",
+          "zahl": 0.4
+        }
+      ],
+      "lage": "{endeHintenAnteil%} der Ballwechsel enden direkt nach eurem Schlag von hinten – wahrscheinlich viele Fehler aus der Defensive.",
+      "idee": "Probier mal: von hinten keinen Punkt erzwingen. Hoher Lob cross oder langsam flach vor die Füße (Chiquita), dann aufrücken.",
+      "uhr": [
+        "Hinten erzwingt ihr zu viel.",
+        "Hoher Lob cross statt hartem Schlag."
+      ]
+    },
+    {
+      "id": "gelobbt",
+      "name": "Du wirst gelobbt",
+      "prio": 3,
+      "wenn": [
+        {
+          "wert": "ueberkopfAnteil",
+          "op": ">",
+          "zahl": 0.45
+        }
+      ],
+      "lage": "{ueberkopfAnteil%} deiner Schläge sind über Kopf. Die Gegner lobben dich, um dich vom Netz zu holen.",
+      "idee": "Probier mal: Bandeja statt Smash und danach sofort wieder vor. Ein, zwei Schritte weg vom Netz, damit dich der Lob nicht überrascht.",
+      "uhr": [
+        "Sie lobben dich oft.",
+        "Bandeja spielen und das Netz halten."
+      ]
+    },
+    {
+      "id": "gegnerNetz",
+      "name": "Gegner kleben am Netz",
+      "prio": 3,
+      "wenn": [
+        {
+          "wert": "gegnerNetzAnteil",
+          "op": ">",
+          "zahl": 0.6
+        }
+      ],
+      "lage": "Die Gegner stehen {gegnerNetzAnteil%} der Zeit am Netz und machen von dort Druck.",
+      "idee": "Probier mal: Lob höher ansetzen, über die Rückhandschulter des linken Spielers. Oder flach und langsam in die Mitte, damit sie sich bücken müssen.",
+      "uhr": [
+        "Die Gegner machen am Netz Druck.",
+        "Lob höher über die Rückhandseite."
+      ]
+    },
+    {
+      "id": "kurz",
+      "name": "Kurze Ballwechsel",
+      "prio": 2,
+      "wenn": [
+        {
+          "wert": "schlaegeProBallwechsel",
+          "op": "<",
+          "zahl": 3.5
+        }
+      ],
+      "lage": "Eure Ballwechsel sind kurz (im Schnitt {schlaegeProBallwechsel} Schläge). Punkte entscheiden sich schnell.",
+      "idee": "Probier mal: Die ersten drei Bälle nur sicher ins Spiel bringen, Tempo kommt später.",
+      "uhr": [
+        "Die Punkte enden sehr schnell.",
+        "Drei Bälle sicher, dann erst Tempo."
+      ]
+    },
+    {
+      "id": "treffpunktHinten",
+      "name": "Treffpunkt über Kopf zu weit hinten",
+      "prio": 3,
+      "wenn": [
+        {
+          "wert": "treffpunktHintenAnteil",
+          "op": ">",
+          "zahl": 0.45
+        }
+      ],
+      "lage": "Bei deinen Überkopfbällen liegt der Treffpunkt oft eher hinter dem Körper ({treffpunktHintenAnteil%}).",
+      "idee": "Probier mal: früher seitlich unter den Ball, mit der freien Hand auf ihn zeigen und ihn vor der Schulter treffen.",
+      "uhr": [
+        "Über Kopf triffst du oft zu spät.",
+        "Früher drunter, Ball vor die Schulter."
+      ]
+    }
+  ],
+  "fallback": {
+    "lage": "Ihr steht kompakt, im Video fällt kein großes Muster auf.",
+    "idee": "Probier mal: ein neues Ziel setzen – mehr Bälle in die Mitte und Lobs gezielt über die Rückhand.",
+    "uhr": [
+      "Eure Struktur passt.",
+      "Mehr in die Mitte, Lob über die Rückhand."
+    ]
+  },
+  "lieblingsIdeen": [
+    "Bei Unsicherheit: Ball in die Mitte – da reden die Gegner aneinander vorbei.",
+    "Nach jedem Lob, der über die Gegner geht: laut „vor!“ und zusammen ans Netz.",
+    "Gegen schnelle Netzspieler: flach und langsam vor die Füße statt hart.",
+    "Bandeja auf die Ecke der Gegner-Rückwand, nicht ins Glas knallen."
+  ],
+  "treffpunktKetten": [
+    {
+      "wenn": [
+        {
+          "wert": "schlag",
+          "ist": "ueberkopf"
+        },
+        {
+          "wert": "tiefe",
+          "ist": "hinten"
+        },
+        {
+          "wert": "ellbogen",
+          "op": "<",
+          "zahl": 125
+        }
+      ],
+      "kette": "Treffpunkt eher hinter der Schulter → Ellbogen knickt ein → Ball steigt oder verliert Druck.",
+      "probier": "Zwei schnelle Seitschritte zurück, freie Hand zeigt zum Ball, dann den Ball vor der Schulter treffen.",
+      "uhr": "Ball vor die Schulter holen."
+    },
+    {
+      "wenn": [
+        {
+          "wert": "schlag",
+          "ist": "ueberkopf"
+        },
+        {
+          "wert": "tiefe",
+          "ist": "hinten"
+        }
+      ],
+      "kette": "Treffpunkt hinter dem Körper → du lehnst dich zurück, der Arm zieht nach hinten durch → Ball wird lang und knallt ins Glas.",
+      "probier": "Früher seitlich drehen und weiter zurücklaufen, damit der Ball vor dir runterkommt.",
+      "uhr": "Weiter zurück, Ball vor dir treffen."
+    },
+    {
+      "wenn": [
+        {
+          "wert": "schlag",
+          "ist": "ueberkopf"
+        },
+        {
+          "wert": "hoehe",
+          "ist": "tief"
+        }
+      ],
+      "kette": "Treffpunkt zu tief → Ellbogen sinkt unter Schulterhöhe → Ball geht ins Netz oder bleibt kurz.",
+      "probier": "Früher unter den Ball laufen und ihn auf Kopfhöhe nehmen, nicht fallen lassen.",
+      "uhr": "Früher unter den Ball, auf Kopfhöhe."
+    },
+    {
+      "wenn": [
+        {
+          "wert": "schlag",
+          "ist": "ueberkopf"
+        },
+        {
+          "wert": "hoehe",
+          "ist": "sehrhoch"
+        }
+      ],
+      "kette": "Treffpunkt ganz oben mit gestrecktem Arm → aus der {schlag} wird ein halber Smash → wenig Kontrolle, der Ball kommt von der Wand zurück.",
+      "probier": "Ball etwas fallen lassen und auf Kopfhöhe mit leicht gebeugtem Ellbogen kontrolliert schneiden.",
+      "uhr": "Ball kommen lassen, kontrolliert schneiden."
+    },
+    {
+      "wenn": [
+        {
+          "wert": "seite",
+          "ist": "aussen"
+        }
+      ],
+      "kette": "Ball weit außen → Arm muss sich strecken → Ellbogen zieht nach außen → wenig Kontrolle.",
+      "probier": "Kleine Anpassungsschritte, bis der Ball über bzw. neben der Schlagschulter ist.",
+      "uhr": "Kleine Schritte, Ball an die Schulter."
+    },
+    {
+      "wenn": [
+        {
+          "wert": "seite",
+          "ist": "nah"
+        }
+      ],
+      "kette": "Ball zu nah am Körper → Ellbogen klemmt → kein Schwung, der Ball wird kurz.",
+      "probier": "Einen Schritt weg vom Ball machen, damit der Arm Platz hat.",
+      "uhr": "Platz lassen, Schritt weg vom Ball."
+    },
+    {
+      "wenn": [
+        {
+          "wert": "schlag",
+          "ist": "grundschlag"
+        },
+        {
+          "wert": "tiefe",
+          "ist": "hinten"
+        }
+      ],
+      "kette": "Treffpunkt hinter dem Körper → der Arm schiebt statt zu schwingen → Ball geht hoch raus oder kommt ohne Druck.",
+      "probier": "Früher ausholen und den Ball vor dem vorderen Fuß treffen.",
+      "uhr": "Früh ausholen, Ball vor dem vorderen Fuß."
+    },
+    {
+      "wenn": [
+        {
+          "wert": "schlag",
+          "ist": "grundschlag"
+        },
+        {
+          "wert": "hoehe",
+          "ist": "tief"
+        },
+        {
+          "wert": "knie",
+          "op": ">",
+          "zahl": 150
+        }
+      ],
+      "kette": "Tiefer Ball, aber gestreckte Beine → der Schläger kommt von oben → Ball geht ins Netz.",
+      "probier": "Über die Knie runtergehen, Schlägerkopf über Handgelenkhöhe halten.",
+      "uhr": "Tief über die Knie, nicht über den Rücken."
+    }
+  ],
+  "treffpunktIdeal": {
+    "bandeja": {
+      "tiefe": [
+        "koerper",
+        "vorne"
+      ],
+      "hoehe": [
+        "mittel",
+        "hoch"
+      ],
+      "seite": [
+        "ok"
+      ]
+    },
+    "vibora": {
+      "tiefe": [
+        "koerper",
+        "vorne"
+      ],
+      "hoehe": [
+        "mittel",
+        "hoch"
+      ],
+      "seite": [
+        "ok",
+        "aussen"
+      ]
+    },
+    "smash": {
+      "tiefe": [
+        "koerper",
+        "vorne"
+      ],
+      "hoehe": [
+        "hoch",
+        "sehrhoch"
+      ],
+      "seite": [
+        "ok"
+      ]
+    },
+    "vorhand": {
+      "tiefe": [
+        "koerper",
+        "vorne"
+      ],
+      "hoehe": [
+        "mittel",
+        "hoch"
+      ],
+      "seite": [
+        "ok"
+      ]
+    },
+    "rueckhand": {
+      "tiefe": [
+        "koerper",
+        "vorne"
+      ],
+      "hoehe": [
+        "mittel",
+        "hoch"
+      ],
+      "seite": [
+        "ok"
+      ]
+    }
+  },
+  "sollwerte": {
+    "bandeja": {
+      "elbow": [
+        115,
+        165
+      ],
+      "height": [
+        0.45,
+        1.15
+      ],
+      "knee": [
+        0,
+        165
+      ],
+      "side": [
+        45,
+        90
+      ],
+      "free": [
+        0.3,
+        1
+      ]
+    },
+    "vibora": {
+      "elbow": [
+        115,
+        165
+      ],
+      "height": [
+        0.3,
+        1.05
+      ],
+      "knee": [
+        0,
+        165
+      ],
+      "side": [
+        45,
+        90
+      ],
+      "free": [
+        0.3,
+        1
+      ]
+    },
+    "smash": {
+      "elbow": [
+        155,
+        180
+      ],
+      "height": [
+        0.85,
+        3
+      ],
+      "knee": [
+        0,
+        158
+      ],
+      "side": [
+        45,
+        90
+      ],
+      "free": [
+        0.3,
+        1
+      ]
+    },
+    "vorhand": {
+      "knee": [
+        0,
+        150
+      ],
+      "trunk": [
+        0,
+        25
+      ],
+      "reach": [
+        0.35,
+        0.9
+      ],
+      "side": [
+        35,
+        90
+      ]
+    },
+    "rueckhand": {
+      "knee": [
+        0,
+        150
+      ],
+      "trunk": [
+        0,
+        25
+      ],
+      "reach": [
+        0.35,
+        0.9
+      ],
+      "side": [
+        35,
+        90
+      ]
+    }
+  },
+  "technik": {
+    "elbow": {
+      "name": "Armstreckung im Treffpunkt",
+      "low": "Dein Arm ist im Treffpunkt zu stark gebeugt. Triff den Ball höher und lass den Arm nach oben arbeiten.",
+      "high": "Du streckst den Arm fast komplett durch, das ist eher ein Smash. Bei der {schlag} bleibt der Ellbogen leicht gebeugt.",
+      "uebungen": [
+        [
+          "Schatten-Overheads",
+          "10 Schläge ohne Ball in Zeitlupe, im Treffpunkt einfrieren und den Armwinkel prüfen. 3 Sätze."
+        ],
+        [
+          "Zuwurf-Treffpunkt",
+          "Partner wirft hohe Bälle, du triffst nur auf Kopfhöhe vor der Schlagschulter. 3 × 10."
+        ]
+      ]
+    },
+    "height": {
+      "name": "Treffhöhe",
+      "low": "Du triffst den Ball zu tief. Geh früher unter den Ball, statt ihn fallen zu lassen.",
+      "high": "Du triffst den Ball sehr hoch, fast wie beim Smash. Lass ihn etwas kommen und schlag kontrollierter.",
+      "uebungen": [
+        [
+          "Seitschritt-Drill",
+          "Hoher Lob vom Partner: seitlich zurück, Ball über der Schlagschulter treffen. 3 × 8."
+        ],
+        [
+          "Ball fangen",
+          "Ohne Schläger hohe Bälle mit der Schlaghand am Treffpunkt fangen. 20 Wiederholungen."
+        ]
+      ]
+    },
+    "knee": {
+      "name": "Kniebeugung",
+      "high": "Deine Beine sind fast gestreckt. Beug die Knie, dann kommt die Kraft aus den Beinen und nicht nur aus dem Arm.",
+      "high_vorhand": "Du bleibst zu aufrecht. Padel-Bälle kommen oft tief, also geh über die Knie runter, nicht über den Rücken.",
+      "high_rueckhand": "Du bleibst zu aufrecht. Padel-Bälle kommen oft tief, also geh über die Knie runter, nicht über den Rücken.",
+      "uebungen": [
+        [
+          "Tiefe Bälle",
+          "Partner spielt tief zu, bei jedem Schlag kommst du mit der Hand fast an den Boden. 3 × 10."
+        ],
+        [
+          "Split-Step + Ausfallschritt",
+          "Split-Step beim Schlag des Partners, dann Ausfallschritt mit gebeugtem vorderem Knie. 3 × 30 Sek."
+        ]
+      ]
+    },
+    "side": {
+      "name": "Seitstellung / Schulterdrehung",
+      "low": "Du stehst beim Ausholen zu frontal. Dreh die Schultern früh seitlich ein.",
+      "uebungen": [
+        [
+          "Früh eindrehen",
+          "Beim Zuspiel sofort die Schultern drehen, bevor du läufst. 3 × 10."
+        ],
+        [
+          "Wand-Check",
+          "Mit der freien Schulter zur Glaswand stellen, Schattenschlag ohne früh aufzudrehen. 15 Wiederholungen."
+        ]
+      ]
+    },
+    "free": {
+      "name": "Freie Hand zeigt zum Ball",
+      "low": "Deine freie Hand bleibt unten. Zeig beim Ausholen mit ihr auf den Ball, das hilft beim Timing und beim Gleichgewicht.",
+      "uebungen": [
+        [
+          "Zeige-Drill",
+          "Bei jedem Lob zuerst mit der freien Hand auf den Ball zeigen, Schläger hinter dem Kopf. 3 × 10."
+        ],
+        [
+          "Mit der Freien fangen",
+          "Partner wirft hoch, du fängst mit der freien Hand in Treffpunkthöhe. 20 Wiederholungen."
+        ]
+      ]
+    },
+    "trunk": {
+      "name": "Oberkörper aufrecht",
+      "high": "Du knickst mit dem Oberkörper nach vorn ab. Bleib aufrecht und hol die Tiefe aus den Knien.",
+      "uebungen": [
+        [
+          "Schläger auf dem Rücken",
+          "Schläger längs am Rücken halten, tief in die Knie gehen, ohne dass er sich löst. 3 × 10."
+        ]
+      ]
+    },
+    "reach": {
+      "name": "Abstand zum Ball",
+      "low": "Du triffst den Ball zu nah am Körper. Lass mehr Platz.",
+      "high": "Du musst dich zum Ball strecken. Lauf mit kleinen Schritten näher heran.",
+      "uebungen": [
+        [
+          "Hütchen-Abstand",
+          "Hütchen eine Schlägerlänge neben dich legen, Ball immer über dem Hütchen treffen. 3 × 10."
+        ]
+      ]
+    }
+  }
+}

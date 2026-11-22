@@ -3,372 +3,862 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1f5bc4">
 <title>Padel Coach</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* VOICE: sportlich, direkt, wie ein Trainer am Glas
-   IDEA: ein Padel-Court von oben – blaue Fläche, weiße Linien, gelber Ball als Akzent
-   PICTURE: dein eigenes Video mit Skelett-Overlay, darunter Schlag-Clips wie Taktiktafel-Karten
+/* VOICE: Trainer am Glas – kurz, direkt, motivierend
+   IDEA: Padel-Court von oben, blaue Fläche, weiße Linien, gelber Ball
+   PICTURE: dein Video mit Skelett, Schlag-Keyframes, Uhr-Karten wie auf der Apple Watch
    COLOUR and TYPE: Court-Blau, Weiß, Ballgelb; Barlow Condensed + Inter
-   LAYOUT: eine Spalte am Handy, Upload → Analyse → Clips → Hauptbaustelle */
-:root{color-scheme:light dark;--bg:light-dark(#f4f7fb,#0a1424);--card:light-dark(#fff,#12213a);--ink:light-dark(#0c1a2e,#eef3fa);--mute:light-dark(#53627a,#9fb0c8);--court:#1f5bc4;--court2:#16459a;--ball:#d8f03c;--ok:#1d9a5b;--bad:#e0483a;--line:light-dark(#dfe6ef,#22355a)}
+   LAYOUT: Reiter oben, eine Spalte, Ergebnisse immer 1 Was fällt auf · 2 Was probieren · 3 Auf die Uhr */
+:root{color-scheme:light dark;--bg:light-dark(#f4f7fb,#0a1424);--card:light-dark(#fff,#12213a);--ink:light-dark(#0c1a2e,#eef3fa);--mute:light-dark(#53627a,#9fb0c8);--court:#1f5bc4;--court2:#16459a;--ball:#d8f03c;--ok:#1d9a5b;--bad:#e0483a;--warn:#e89a1c;--line:light-dark(#dfe6ef,#22355a);--soft:light-dark(#eef3fa,#0d1a2e)}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:clip}
 h1,h2,h3{font-family:"Barlow Condensed",Inter,sans-serif;line-height:1.05;margin:0;text-wrap:balance}
-h1{font-size:clamp(34px,7vw,52px)}h2{font-size:30px}h3{font-size:22px}
-.hero{background:linear-gradient(160deg,var(--court),var(--court2));color:#fff;padding:28px max(5vw,16px) 24px;position:relative;overflow:hidden}
-.hero p{max-width:60ch;margin:10px 0 0;color:#dbe6fb}
-.hero svg{position:absolute;right:-30px;top:-10px;width:220px;opacity:.22;pointer-events:none}
-.wrap{max-width:860px;margin:0 auto;padding:20px max(4vw,14px) 60px;display:grid;gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+h1{font-size:clamp(30px,6vw,44px)}h2{font-size:28px}h3{font-size:21px}
+.hero{background:linear-gradient(160deg,var(--court),var(--court2));color:#fff;padding:22px max(5vw,16px) 18px;position:relative;overflow:hidden}
+.hero p{max-width:60ch;margin:6px 0 0;color:#dbe6fb;font-size:15px}
+.hero svg{position:absolute;right:-30px;top:-14px;width:180px;opacity:.2;pointer-events:none}
+nav.tabs{position:sticky;top:0;z-index:5;display:flex;gap:4px;padding:8px max(4vw,10px);background:var(--court2);overflow-x:auto}
+nav.tabs a{flex:1 0 auto;text-align:center;color:#dbe6fb;text-decoration:none;font-weight:600;padding:10px 12px;border-radius:10px;min-height:44px}
+nav.tabs a.on{background:var(--ball);color:#0c1a2e}
+.wrap{max-width:860px;margin:0 auto;padding:18px max(4vw,14px) 60px;display:grid;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 label.f{display:grid;gap:4px;font-size:14px;color:var(--mute);flex:1 1 140px}
-select,button,.btn{font:inherit;font-size:16px;min-height:46px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:0 14px}
+select,button,.btn,input[type=text],textarea{font:inherit;font-size:16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+select,button,.btn,input[type=text]{min-height:46px;padding:0 14px}
+textarea{width:100%;min-height:360px;padding:12px;font:13px/1.45 ui-monospace,Menlo,monospace}
 button,.btn{cursor:pointer;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.row>.btn,.row>button{flex:1 1 140px}
 .pri{background:var(--court);color:#fff;border-color:var(--court)}
 .ballbtn{background:var(--ball);color:#0c1a2e;border-color:var(--ball)}
+.sm{min-height:40px;font-size:14px;padding:0 10px}
 button:disabled{opacity:.45;cursor:default}
 :focus-visible{outline:3px solid var(--ball);outline-offset:2px}
 input[type=file]{display:none}
-.row>.btn,.row>button{flex:1 1 150px}
+.small{font-size:13px;color:var(--mute)}
+.status{font-size:14px;color:var(--mute);margin:6px 0 0}
 .tips{margin:8px 0 0;padding-left:20px;color:var(--mute);font-size:15px}
-.stage{position:relative;margin:0 auto;border-radius:12px;overflow:hidden;background:#000}
+.stage{position:relative;margin:0 auto;border-radius:12px;overflow:hidden;background:#000;width:100%}
 .stage video{display:block;width:100%;height:100%}
-.stage canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%}
 .bar{height:10px;border-radius:6px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--court);transition:width .2s}
-.status{font-size:14px;color:var(--mute);margin-top:6px}
-.score{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.big{font:700 clamp(48px,12vw,72px)/1 "Barlow Condensed",sans-serif;color:var(--court)}
-:root[data-theme=dark] .big{color:var(--ball)}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .big{color:var(--ball)}}
-.focus{border-left:6px solid var(--ball);background:linear-gradient(90deg,color-mix(in srgb,var(--ball) 14%,var(--card)),var(--card))}
-.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:14px}
-.clip canvas{width:100%;border-radius:10px;background:#000;display:block}
+.sec{display:grid;gap:12px}
+.sech{display:flex;align-items:baseline;gap:10px}.sech b{font:700 30px/1 "Barlow Condensed",sans-serif;color:var(--court)}
+:root[data-theme=dark] .sech b{color:var(--ball)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .sech b{color:var(--ball)}}
+.focus{border-left:6px solid var(--ball)}
+.try{border-left:6px solid var(--court)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.kpi{background:var(--soft);border-radius:12px;padding:10px 12px}
+.kpi b{display:block;font:700 28px/1.1 "Barlow Condensed",sans-serif}
+.kpi span{font-size:13px;color:var(--mute)}
+.meter{height:8px;border-radius:5px;background:var(--line);overflow:hidden;margin-top:6px}.meter i{display:block;height:100%;background:var(--court)}
+.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:14px}
+.keys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.keys figure{margin:0}.keys canvas{width:100%;border-radius:8px;background:#000;display:block}
+.keys figcaption{font-size:12px;color:var(--mute);text-align:center;margin-top:2px}
+.keys figure.hit canvas{outline:3px solid var(--ball)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.chip{font-size:13px;padding:4px 10px;border-radius:20px;background:var(--soft);border:1px solid var(--line)}
+.chip.bad{border-color:var(--bad);color:var(--bad);font-weight:600}
+.conf{font-size:13px;font-weight:600}.conf.hoch{color:var(--ok)}.conf.mittel{color:var(--warn)}.conf.niedrig{color:var(--bad)}
+.chain{font-weight:600;margin:6px 0 0}
 .m{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;align-items:center;font-size:15px;padding:8px 0;border-top:1px solid var(--line)}
 .dot{width:12px;height:12px;border-radius:50%}.ok{background:var(--ok)}.no{background:var(--bad)}
 .val{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--mute)}
 .tip{font-size:15px;margin:6px 0 0}
-.drill{font-size:15px;background:var(--bg);border-radius:10px;padding:10px 12px;margin-top:8px}
-.drill b{display:block}
-.small{font-size:13px;color:var(--mute)}
+.drill{font-size:15px;background:var(--soft);border-radius:10px;padding:10px 12px;margin-top:8px}.drill b{display:block}
+/* Smartwatch */
+.watches{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.wbox{display:grid;gap:8px;justify-items:center;background:var(--soft);border-radius:16px;padding:14px 10px}
+.wlabel{font-size:13px;color:var(--mute);text-align:center}
+.watch{position:relative;width:200px;min-height:238px;margin:16px 0;display:flex;border-radius:46px;background:#111;padding:9px;box-shadow:0 0 0 3px #2b2f36,0 10px 24px rgba(0,0,0,.35)}
+.watch::before,.watch::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:120px;height:18px;background:#2b2f36;border-radius:6px}
+.watch::before{top:-14px}.watch::after{bottom:-14px}
+.face{flex:1;border-radius:38px;background:#000;color:#fff;padding:16px 16px;display:flex;flex-direction:column;gap:6px;overflow:hidden;font-family:-apple-system,"SF Pro Text",Inter,sans-serif}
+.wtop{display:flex;justify-content:space-between;font-size:11px;color:#9aa3ad}
+.wapp{color:var(--ball);font-weight:700}
+.wt{font-size:14px;font-weight:700;color:#fff;line-height:1.2}
+.face p{margin:0;font-size:13.5px;line-height:1.3}.face p.s2{color:var(--ball)}
+.buzz{animation:buzz .5s 2}
+@keyframes buzz{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+@media(prefers-reduced-motion:reduce){.buzz{animation:none}.bar i{transition:none}}
+.wact{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.wact button{min-height:40px;font-size:13px;padding:0 10px;flex:0 1 auto}
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;counter-reset:s}
+.flow div{background:var(--soft);border-radius:12px;padding:10px;font-size:14px}
+.flow div::before{counter-increment:s;content:counter(s);display:block;font:700 26px/1 "Barlow Condensed",sans-serif;color:var(--court)}
+@media(max-width:600px){.flow{grid-template-columns:1fr}.keys{gap:4px}}
+.cal{cursor:crosshair}
+.toggle{display:flex;gap:10px;align-items:center;font-size:15px;min-height:44px}
+.toggle input{width:22px;height:22px}
+.err{color:var(--bad);font-size:14px;white-space:pre-line}
+table.keys2{width:100%;border-collapse:collapse;font-size:14px}table.keys2 td{border-top:1px solid var(--line);padding:6px 4px;vertical-align:top}
+table.keys2 code{font-size:13px}
 .hide{display:none!important}
-@media(prefers-reduced-motion:reduce){.bar i{transition:none}}
 </style>
 </head>
 <body>
 <header class="hero">
   <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="20" y="10" width="160" height="180" fill="none" stroke="#fff" stroke-width="4"/><line x1="20" y1="100" x2="180" y2="100" stroke="#fff" stroke-width="6"/><line x1="20" y1="45" x2="180" y2="45" stroke="#fff" stroke-width="3"/><line x1="20" y1="155" x2="180" y2="155" stroke="#fff" stroke-width="3"/><line x1="100" y1="45" x2="100" y2="155" stroke="#fff" stroke-width="3"/><circle cx="140" cy="70" r="12" fill="#d8f03c"/></svg>
-  <h1>Padel-Technik-Coach</h1>
-  <p>Film dich, lad das Video hoch. Die App erkennt deine Schläge, schneidet sie als Clips raus, misst deine Körperhaltung und sagt dir, woran du arbeiten solltest.</p>
+  <h1>Padel Coach</h1>
+  <p>Video rein, Coaching raus: Technik, Taktik und kurze Impulse für die Uhr beim Seitenwechsel.</p>
 </header>
+<nav class="tabs" id="tabs">
+  <a href="#technik" data-t="technik">Technik</a>
+  <a href="#taktik" data-t="taktik">Taktik</a>
+  <a href="#live" data-t="live">Live</a>
+  <a href="#regeln" data-t="regeln">Regeln</a>
+</nav>
 
 <main class="wrap">
-  <section class="card" id="setup">
-    <h2>1 · Video</h2>
-    <div class="row" style="margin-top:12px">
-      <label class="f">Schlag
-        <select id="type">
-          <option value="bandeja">Bandeja</option>
-          <option value="vibora">Víbora</option>
-          <option value="smash">Smash</option>
-          <option value="vorhand">Vorhand</option>
-          <option value="rueckhand">Rückhand</option>
-        </select>
-      </label>
-      <label class="f">Schlaghand
-        <select id="hand"><option value="R">Rechts</option><option value="L">Links</option></select>
-      </label>
-    </div>
-    <div class="row" style="margin-top:12px">
-      <label class="btn ballbtn" for="rec">Aufnehmen</label>
-      <input type="file" id="rec" accept="video/*" capture="environment">
-      <label class="btn" for="pick">Auswählen</label>
-      <input type="file" id="pick" accept="video/*">
-      <button class="pri" id="go" disabled>Analyse starten</button>
-    </div>
-    <p class="status" id="fileinfo">Noch kein Video gewählt.</p>
-    <details open>
-      <summary class="small">So filmst du richtig</summary>
-      <ul class="tips">
-        <li>Handy <b>hinter dir</b> an die Rückwand oder das Gitter hängen, möglichst etwas erhöht (ca. 2 m), Blick Richtung Netz.</li>
-        <li>Querformat, ganzer Körper von Kopf bis Fuß im Bild, auch beim Springen.</li>
-        <li>Am besten filmst du nur dich, z. B. beim Zuspiel durch einen Partner. Mehrere Spieler im Bild verwirren die Erkennung.</li>
-        <li>Pro Video nur eine Schlagart, 30–90 Sekunden reichen.</li>
-      </ul>
-    </details>
-  </section>
-
+  <!-- gemeinsame Videoanzeige -->
   <section class="card hide" id="work">
-    <h2>2 · Analyse</h2>
+    <h2 id="workTitle">Analyse</h2>
     <div class="stage" id="stage" style="margin-top:12px"><video id="vid" playsinline muted preload="auto"></video><canvas id="ov"></canvas></div>
-    <div class="bar" style="margin-top:12px"><i id="prog"></i></div>
-    <p class="status" id="stat">Lade KI-Modell …</p>
+    <div class="bar" style="margin-top:12px" id="barWrap"><i id="prog"></i></div>
+    <p class="status" id="stat"></p>
+    <div class="row hide" id="calRow" style="margin-top:8px">
+      <button id="calSkip">Überspringen</button><button id="calLast" class="hide">Wie letztes Mal</button><button id="calRedo">Neu tippen</button>
+    </div>
+    <div class="row hide" id="workBack" style="margin-top:8px"><button id="backBtn">Zurück</button></div>
   </section>
 
-  <section class="hide" id="res" style="display:grid;gap:18px">
-    <div class="card score">
-      <div class="big" id="scoreNum">–</div>
-      <div><h3 id="scoreTitle">Technik-Score</h3><p class="small" id="scoreSub" style="margin:4px 0 0"></p></div>
+  <!-- ============ TECHNIK ============ -->
+  <section data-view="technik" class="sec">
+    <div class="card" id="tSetup">
+      <h2>Technik-Check</h2>
+      <p class="small" style="margin:4px 0 0">Kurzes Video, eine Schlagart. Die App findet die Schläge, sucht den Treffpunkt und sagt dir, was du ändern kannst.</p>
+      <div class="row" style="margin-top:12px">
+        <label class="f">Schlag
+          <select id="tType"><option value="bandeja">Bandeja</option><option value="vibora">Víbora</option><option value="smash">Smash</option><option value="vorhand">Vorhand</option><option value="rueckhand">Rückhand</option></select>
+        </label>
+        <label class="f">Schlaghand
+          <select id="hand"><option value="R">Rechts</option><option value="L">Links</option></select>
+        </label>
+        <label class="f">Im Bild
+          <select id="tWho"><option value="allein">Nur ich</option><option value="L">Spiel – ich links</option><option value="R">Spiel – ich rechts</option></select>
+        </label>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <label class="btn ballbtn" for="tRec">Aufnehmen</label><input type="file" id="tRec" accept="video/*" capture="environment">
+        <label class="btn" for="tPick">Auswählen</label><input type="file" id="tPick" accept="video/*">
+        <button class="pri" id="tGo" disabled>Analyse starten</button>
+      </div>
+      <p class="status" id="tInfo">Noch kein Video gewählt.</p>
+      <details>
+        <summary class="small">So filmst du richtig</summary>
+        <ul class="tips">
+          <li>Handy hinter dir an die Rückwand oder ans Gitter, möglichst erhöht (ca. 2 m), Blick Richtung Netz.</li>
+          <li>Querformat, ganzer Körper im Bild, auch beim Springen.</li>
+          <li>Beim Spiel stehst du im vorderen (kameranahen) Team. Wähl „ich links“ oder „ich rechts“.</li>
+        </ul>
+      </details>
     </div>
-    <div class="card focus" id="focus"></div>
-    <h2>Deine Schläge</h2>
-    <div class="clips" id="clips"></div>
-    <p class="small">Prototyp: Die Sollwerte sind Trainer-Richtwerte, gemessen wird nur in 2D/3D-Schätzung aus einer Handykamera. Ballkontakt und Schlägerhaltung erkennt die App nicht.</p>
-    <button id="again">Neues Video analysieren</button>
+    <div id="tRes" class="sec hide"></div>
+  </section>
+
+  <!-- ============ TAKTIK ============ -->
+  <section data-view="taktik" class="sec hide">
+    <div class="card" id="kSetup">
+      <h2>Taktik-Coaching</h2>
+      <p class="small" style="margin:4px 0 0">Ganzes Match oder Trainingsspiel hochladen. Kein Nachtippen: Ballwechsel, Seitenwechsel und Muster erkennt die App selbst.</p>
+      <div class="row" style="margin-top:12px">
+        <label class="f">Ich spiele
+          <select id="side"><option value="L">Links (Rückhandseite)</option><option value="R">Rechts (Vorhandseite)</option></select>
+        </label>
+        <label class="f">Zu Beginn sind wir
+          <select id="start"><option value="nah">Nah an der Kamera</option><option value="weit">Weit weg (gegenüber)</option></select>
+        </label>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <label class="btn" for="kPick">Match-Video auswählen</label><input type="file" id="kPick" accept="video/*">
+        <button class="pri" id="kGo" disabled>Analyse starten</button>
+      </div>
+      <p class="status" id="kInfo">Noch kein Video gewählt.</p>
+    </div>
+    <div id="kRes" class="sec hide"></div>
+  </section>
+
+  <!-- ============ LIVE ============ -->
+  <section data-view="live" class="sec hide">
+    <div class="card">
+      <h2>Live: Seitenwechsel-Impulse</h2>
+      <div class="flow" style="margin-top:12px">
+        <div><b>Handy oben aufhängen</b><br>hinter eurem Team, erhöht, Querformat, Ladekabel dran.</div>
+        <div><b>Start drücken</b><br>Die App schaut mit und erkennt Ballwechsel und Pausen selbst.</div>
+        <div><b>Seitenwechsel</b><br>Nach einer längeren Pause kommen 2 Sätze auf deine Uhr.</div>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <button class="ballbtn" id="lStart">Kamera starten</button>
+        <button id="lCal" disabled>Court kalibrieren</button>
+        <button class="pri" id="lNow" disabled>Seitenwechsel jetzt</button>
+        <button id="lStop" disabled>Stopp</button>
+      </div>
+      <p class="status" id="lInfo">Ich spiele <b id="lSide">links</b>, Start: <b id="lStartSide">nah an der Kamera</b> (einstellbar im Reiter Taktik). Uhr: <b id="lTopic">nicht verbunden</b> (Reiter Regeln).</p>
+    </div>
+    <div class="card hide" id="lStageCard">
+      <div class="stage" id="lStage"><video id="lVid" playsinline muted autoplay></video><canvas id="lOv"></canvas></div>
+      <div class="kpis" style="margin-top:12px" id="lKpis"></div>
+    </div>
+    <div class="sec hide" id="lMsgs">
+      <div class="sech"><b>3</b><h2>Auf die Uhr</h2></div>
+      <div class="watches" id="lWatches"></div>
+    </div>
+  </section>
+
+  <!-- ============ REGELN ============ -->
+  <section data-view="regeln" class="sec hide">
+    <div class="card">
+      <h2>Auf die Uhr bringen</h2>
+      <p class="small" style="margin:6px 0 0">Ohne eigene Uhr-App: über die kostenlose App <b>ntfy</b>. Mitteilungen vom iPhone erscheinen automatisch auf der Apple Watch, bei Android auf der Wear-OS-Uhr.</p>
+      <ol class="tips">
+        <li>App „ntfy“ installieren und ein Thema abonnieren, z. B. <code>padel-kalle-7391</code>. Nimm einen schwer zu erratenden Namen, denn das Thema ist öffentlich.</li>
+        <li>Denselben Namen hier eintragen und „Test senden“ drücken.</li>
+      </ol>
+      <div class="row" style="margin-top:10px">
+        <label class="f" style="flex:2 1 200px">ntfy-Thema<input type="text" id="topic" placeholder="padel-dein-name-1234" autocomplete="off"></label>
+        <button id="topicTest" style="align-self:end">Test senden</button>
+      </div>
+      <label class="toggle"><input type="checkbox" id="speak"> Live: Impuls zusätzlich am Handy vorlesen</label>
+      <p class="status" id="topicInfo"></p>
+    </div>
+    <div class="card">
+      <h2>Deine Trainer-Regeln</h2>
+      <p class="small" style="margin:6px 0 0">Hier stehen alle Coaching-Texte: Taktik-Regeln (Wann greift was, was steht auf der Uhr), Treffpunkt-Ketten, Sollwerte und Übungen. Ändere die Formulierungen, wie du coachst. Gespeichert wird auf diesem Gerät. Wenn du „Kopieren“ drückst und den Text in <code>padel/regeln.json</code> im Repo einfügst, gilt er auf allen Geräten.</p>
+      <textarea id="cfgText" spellcheck="false" style="margin-top:10px"></textarea>
+      <p class="err" id="cfgErr"></p>
+      <div class="row">
+        <button class="pri" id="cfgSave">Speichern</button><button id="cfgCopy">Kopieren</button><button id="cfgReset">Standard wiederherstellen</button>
+      </div>
+      <details style="margin-top:12px">
+        <summary class="small">Welche Werte kann ich in „wenn“ benutzen?</summary>
+        <table class="keys2" id="keyTable"></table>
+      </details>
+    </div>
   </section>
 </main>
 
+<script src="logic.js"></script>
 <script type="module">
 {
-const $ = id => document.getElementById(id);
-const V = $('vid'), OV = $('ov'), ctx = OV.getContext('2d');
-let landmarker = null, file = null, frames = [], strokes = [], playing = null;
+const P = window.PadelLogic, $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const store = { get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+const pctTxt = v => v == null ? '–' : Math.round(v * 100) + ' %';
+const mmss = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
 
-/* ---------- Trainerwissen: Messgrößen, Sollwerte, Tipps, Übungen ---------- */
-const OVER = ['bandeja','vibora','smash'];
-const NAMES = {bandeja:'Bandeja',vibora:'Víbora',smash:'Smash',vorhand:'Vorhand',rueckhand:'Rückhand'};
-const RANGES = {
-  bandeja:{elbow:[115,165],height:[0.45,1.15],knee:[0,165],side:[45,90],free:[0.3,1]},
-  vibora:{elbow:[115,165],height:[0.3,1.05],knee:[0,165],side:[45,90],free:[0.3,1]},
-  smash:{elbow:[155,180],height:[0.85,3],knee:[0,158],side:[45,90],free:[0.3,1]},
-  vorhand:{knee:[0,150],trunk:[0,25],reach:[0.35,0.9],side:[35,90]},
-  rueckhand:{knee:[0,150],trunk:[0,25],reach:[0.35,0.9],side:[35,90]}
+/* ---------- Einstellungen & Config ---------- */
+const S = Object.assign({ hand: 'R', side: 'L', start: 'nah', type: 'bandeja', who: 'allein', topic: '', speak: false, calib: null }, store.get('padelS', {}));
+const saveS = () => store.set('padelS', S);
+let CFG = P.mergeCfg(null);
+async function loadCfg() {
+  const local = store.get('padelCfg', null);
+  if (local) { CFG = P.mergeCfg(local); return; }
+  try { const r = await fetch('regeln.json', { cache: 'no-store' }); if (r.ok) CFG = P.mergeCfg(await r.json()); } catch (e) {}
+}
+for (const [id, k] of [['hand', 'hand'], ['side', 'side'], ['start', 'start'], ['tType', 'type'], ['tWho', 'who']]) {
+  $(id).value = S[k]; $(id).addEventListener('change', e => { S[k] = e.target.value; saveS(); syncLive(); });
+}
+$('topic').value = S.topic; $('speak').checked = S.speak;
+$('topic').addEventListener('change', e => { S.topic = e.target.value.trim().replace(/[^\w-]/g, ''); e.target.value = S.topic; saveS(); syncLive(); });
+$('speak').addEventListener('change', e => { S.speak = e.target.checked; saveS(); });
+
+/* ---------- Reiter ---------- */
+function route() {
+  const t = (location.hash || '#technik').slice(1);
+  const v = ['technik', 'taktik', 'live', 'regeln'].includes(t) ? t : 'technik';
+  document.querySelectorAll('[data-view]').forEach(s => s.classList.toggle('hide', s.dataset.view !== v));
+  document.querySelectorAll('#tabs a').forEach(a => a.classList.toggle('on', a.dataset.t === v));
+  if (v !== 'technik' && v !== 'taktik') $('work').classList.add('hide');
+  if (v === 'regeln') showCfg();
+  syncLive();
+}
+window.addEventListener('hashchange', route);
+
+/* ---------- KI-Modell ---------- */
+const MODELS = {
+  full: 'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task',
+  lite: 'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task'
 };
-const M = {
-  elbow:{name:'Armstreckung im Treffpunkt',fmt:v=>Math.round(v)+'°',joint:'el',
-    low:'Dein Arm ist im Treffpunkt zu stark gebeugt. Triff den Ball höher und lass den Arm nach oben arbeiten, sonst fehlt Kontrolle und der Ball fällt kurz.',
-    high:t=>t==='smash'?'':'Du streckst den Arm fast komplett durch, das ist eher ein Smash. Bei der '+NAMES[t]+' bleibt der Ellbogen leicht gebeugt, der Ball wird etwas vor und seitlich vom Körper getroffen.',
-    drills:[['Schatten-Overheads','10 Schläge ohne Ball in Zeitlupe, im Treffpunkt kurz einfrieren und Armwinkel prüfen. 3 Sätze.'],['Zuwurf-Treffpunkt','Partner wirft hohe Bälle zu, du triffst nur auf Kopfhöhe vor der Schlagschulter. 3 × 10 Bälle.']]},
-  height:{name:'Treffhöhe',fmt:v=>v.toFixed(1).replace('.',',')+' × Rumpf über Schulter',joint:'wr',
-    low:'Du triffst den Ball zu tief. Geh früher unter den Ball, damit du ihn an seinem richtigen Punkt erwischst, statt ihn fallen zu lassen.',
-    high:'Du triffst den Ball sehr hoch, fast wie beim Smash. Lass ihn etwas weiter kommen, so kannst du kontrollierter schlagen.',
-    drills:[['Seitschritt-Drill','Hoher Lob vom Partner: seitlich zurück (Kreuz- oder Seitschritte), Ball über der Schlagschulter treffen. 3 × 8 Bälle.'],['Ball-Fang-Übung','Ohne Schläger: hohe Bälle mit der Schlaghand am Treffpunkt fangen. Zeigt dir, wo der Ball sein muss. 20 Wiederholungen.']]},
-  knee:{name:'Kniebeugung',fmt:v=>Math.round(v)+'°',joint:'kn',
-    low:'',
-    high:t=>OVER.includes(t)?'Deine Beine sind beim Ausholen fast gestreckt. Beug die Knie leicht, dann bekommst du Stabilität und Kraft aus den Beinen statt nur aus dem Arm.':'Du bleibst zu aufrecht. Padel-Bälle kommen oft tief, also geh über die Knie runter, nicht über den Rücken.',
-    drills:[['Tiefe Grundlinie','Partner spielt tiefe Bälle, du musst bei jedem Schlag mit der Hand fast den Boden berühren können. 3 × 10.'],['Split-Step + Ausfallschritt','Split-Step beim Schlag des Partners, dann Ausfallschritt zum Ball mit gebeugtem vorderem Knie. 3 × 30 Sek.']]},
-  side:{name:'Seitstellung / Schulterdrehung',fmt:v=>Math.round(v)+'°',joint:'sh',
-    low:'Du stehst beim Ausholen zu frontal zum Netz. Dreh die Schultern früh seitlich ein, die Schulter der freien Hand zeigt Richtung Ball bzw. Netz.',
-    high:'',
-    drills:[['Früh eindrehen','Beim Zuspiel sofort Schultern drehen, bevor du läufst. Partner ruft „jetzt!“, wenn er schlägt. 3 × 10.'],['Wand-Check','Mit der freien Schulter zur Glaswand stellen, Schatten-Schlag ausführen und dabei nicht aufdrehen, bevor der Schlag beginnt. 15 Wiederholungen.']]},
-  free:{name:'Freie Hand zeigt zum Ball',fmt:v=>Math.round(v*100)+' %',joint:'nwr',
-    low:'Deine freie Hand bleibt unten. Zeig beim Ausholen mit ihr auf den Ball, das hilft beim Timing, beim Gleichgewicht und bei der Seitstellung.',
-    high:'',
-    drills:[['Zeige-Drill','Bei jedem Lob zuerst mit der freien Hand auf den Ball zeigen, Schläger hinterm Kopf. Erst dann schlagen. 3 × 10.'],['Fangen mit der Freien','Partner wirft hoch, du fängst den Ball mit der freien Hand in Treffpunkthöhe. 20 Wiederholungen.']]},
-  trunk:{name:'Oberkörper aufrecht',fmt:v=>Math.round(v)+'° Neigung',joint:'sh',
-    low:'',
-    high:'Du knickst mit dem Oberkörper nach vorn ab. Bleib aufrecht und hol die Tiefe aus den Knien, so bleibt der Schlag stabil und dein Rücken geschont.',
-    drills:[['Schläger auf dem Rücken','Schläger längs am Rücken halten und tief in die Knie gehen, ohne dass er sich vom Rücken löst. 3 × 10.'],['Tiefe Bälle, gerader Rücken','Partner spielt tiefe Bälle zu, Fokus nur auf aufrechten Oberkörper. 3 × 10.']]},
-  reach:{name:'Abstand zum Ball',fmt:v=>v.toFixed(2).replace('.',',')+' m',joint:'wr',
-    low:'Du triffst den Ball zu nah am Körper. Lass mehr Platz und mach im Zweifel einen kleinen Schritt weg vom Ball.',
-    high:'Du musst dich zum Ball strecken. Lauf mit kleinen Schritten näher heran, statt dich mit dem Arm zu retten.',
-    drills:[['Hütchen-Abstand','Hütchen eine Schlägerlänge seitlich neben dich, Ball immer über dem Hütchen treffen. 3 × 10.'],['Kleine Schritte','Vor jedem Schlag noch 2–3 kleine Anpassungsschritte machen. 3 × 10 Bälle.']]}
-};
-
-/* ---------- Geometrie ---------- */
-const J = h => h==='R'
-  ? {sh:12,el:14,wr:16,hip:24,kn:26,an:28,nsh:11,nwr:15,nhip:23,nkn:25,nan:27}
-  : {sh:11,el:13,wr:15,hip:23,kn:25,an:27,nsh:12,nwr:16,nhip:24,nkn:26,nan:28};
-const sub=(a,b)=>({x:a.x-b.x,y:a.y-b.y,z:(a.z||0)-(b.z||0)});
-const len=v=>Math.hypot(v.x,v.y,v.z||0);
-const mid=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2,z:((a.z||0)+(b.z||0))/2});
-const ang=(a,b,c)=>{const u=sub(a,b),w=sub(c,b);const d=(u.x*w.x+u.y*w.y+u.z*w.z)/(len(u)*len(w)||1);return Math.acos(Math.max(-1,Math.min(1,d)))*180/Math.PI};
-let AR = 16/9;
-const img = p => ({x:p.x*AR,y:p.y});
-const torso = lm => len(sub(mid(img(lm[11]),img(lm[12])),mid(img(lm[23]),img(lm[24])))) || 0.2;
-
-/* ---------- Modell laden ---------- */
-async function loadModel(){
-  if(landmarker) return landmarker;
-  const vision = await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14');
-  const fs = await vision.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm');
-  const opts = d => ({baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task',delegate:d},runningMode:'VIDEO',numPoses:1,minPoseDetectionConfidence:0.5,minTrackingConfidence:0.5});
-  try{ landmarker = await vision.PoseLandmarker.createFromOptions(fs,opts('GPU')); }
-  catch(e){ landmarker = await vision.PoseLandmarker.createFromOptions(fs,opts('CPU')); }
-  return landmarker;
+const lmCache = {}; let visionMod = null, fileset = null, lastTs = 0;
+async function getLM(numPoses, lite) {
+  const key = numPoses + (lite ? 'l' : 'f');
+  if (lmCache[key]) return lmCache[key];
+  const load = async () => {
+    if (!visionMod) visionMod = await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14');
+    if (!fileset) fileset = await visionMod.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm');
+    const opts = d => ({ baseOptions: { modelAssetPath: lite ? MODELS.lite : MODELS.full, delegate: d }, runningMode: 'VIDEO', numPoses,
+      minPoseDetectionConfidence: 0.45, minPosePresenceConfidence: 0.45, minTrackingConfidence: 0.45 });
+    try { return await visionMod.PoseLandmarker.createFromOptions(fileset, opts('GPU')); }
+    catch (e) { return await visionMod.PoseLandmarker.createFromOptions(fileset, opts('CPU')); }
+  };
+  lmCache[key] = await Promise.race([load(), new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 40000))]);
+  return lmCache[key];
 }
-
-/* ---------- Datei wählen ---------- */
-function onFile(e){
-  const f = e.target.files[0]; if(!f) return;
-  file = f; $('fileinfo').textContent = 'Video: '+f.name+' ('+(f.size/1e6).toFixed(1).replace('.',',')+' MB)';
-  $('go').disabled = false;
+function detect(lm, src) {
+  lastTs = Math.max(lastTs + 1, Math.round(performance.now()));
+  const r = lm.detectForVideo(src, lastTs);
+  return (r.landmarks || []).map((l, i) => P.packPose(l, r.worldLandmarks && r.worldLandmarks[i]));
 }
-$('rec').addEventListener('change',onFile); $('pick').addEventListener('change',onFile);
+const MODEL_ERR = 'Das KI-Modell konnte nicht geladen werden. Öffne die App über ihre Web-Adresse in Safari oder Chrome (nicht in einer Datei-Vorschau) und prüf das Internet.';
 
-const seek = t => new Promise(r=>{const h=()=>{V.removeEventListener('seeked',h);r()};V.addEventListener('seeked',h);V.currentTime=t;});
-
-function fitStage(){
-  AR = V.videoWidth/V.videoHeight || 16/9;
-  OV.width = V.videoWidth; OV.height = V.videoHeight;
-  $('stage').style.aspectRatio = AR;
-  $('stage').style.width = 'min(100%, calc(60vh * '+AR+'))';
+/* ---------- Video-Bühne ---------- */
+const V = $('vid'), OV = $('ov'), octx = OV.getContext('2d');
+let AR = 16 / 9;
+const seek = t => new Promise(r => { const h = () => { V.removeEventListener('seeked', h); r(); }; V.addEventListener('seeked', h); V.currentTime = t; });
+function fitStage(stage, ov, w, h) {
+  AR = w / h || 16 / 9; ov.width = w; ov.height = h;
+  stage.style.aspectRatio = AR; stage.style.width = 'min(100%, calc(55vh * ' + AR + '))';
 }
-
-/* ---------- Analyse ---------- */
-$('go').addEventListener('click', async ()=>{
-  if(!file) return;
-  $('go').disabled = true; $('setup').classList.add('hide'); $('work').classList.remove('hide'); $('res').classList.add('hide');
-  stopClip(); frames = []; strokes = [];
+async function openVideo(file, title) {
+  $('work').classList.remove('hide'); $('workTitle').textContent = title;
+  $('barWrap').classList.remove('hide'); $('prog').style.width = '0'; $('workBack').classList.add('hide'); $('calRow').classList.add('hide');
   V.src = URL.createObjectURL(file);
-  try{ await V.play(); V.pause(); }catch(e){}
-  await new Promise(r=> V.readyState>=1 ? r() : V.addEventListener('loadedmetadata',r,{once:true}));
-  fitStage();
-  try{
-    $('stat').textContent='Lade KI-Modell … (beim ersten Mal bis zu 20 Sekunden)';
-    await Promise.race([loadModel(), new Promise((_,rej)=>setTimeout(()=>rej(new Error('timeout')),30000))]);
-  }
-  catch(e){
-    $('stat').innerHTML='Das KI-Modell konnte nicht geladen werden. Öffne die App über ihre Web-Adresse in Safari oder Chrome, nicht in einer Datei-Vorschau, und prüf deine Internetverbindung. <button id="back" style="margin-top:10px">Zurück</button>';
-    $('back').onclick = reset; return;
-  }
-  const dur = V.duration, fps = dur>90 ? 8 : 12, step = 1/fps;
-  let ts = 0;
-  for(let t=0; t<dur; t+=step){
+  try { await V.play(); V.pause(); } catch (e) {}
+  await new Promise(r => V.readyState >= 1 ? r() : V.addEventListener('loadedmetadata', r, { once: true }));
+  fitStage($('stage'), OV, V.videoWidth, V.videoHeight);
+  $('work').scrollIntoView({ block: 'start' });
+}
+function failWork(msg) {
+  $('stat').textContent = msg; $('workBack').classList.remove('hide');
+}
+$('backBtn').addEventListener('click', () => { $('work').classList.add('hide'); stopClip(); });
+
+/* Skelett */
+const BONES = [[11, 12], [11, 13], [13, 15], [12, 14], [14, 16], [11, 23], [12, 24], [23, 24], [23, 25], [25, 27], [24, 26], [26, 28]];
+function drawPose(p, bad, c, W, H, color) {
+  const s = Math.max(1.5, W / 360), L = P.L;
+  c.lineWidth = 2.5 * s; c.strokeStyle = color || 'rgba(255,255,255,.9)'; c.lineCap = 'round';
+  for (const [a, b] of BONES) { c.beginPath(); c.moveTo(L(p, a).x * W, L(p, a).y * H); c.lineTo(L(p, b).x * W, L(p, b).y * H); c.stroke(); }
+  for (const i of [0, 11, 12, 13, 14, 15, 16, 23, 24, 25, 26, 27, 28]) { c.beginPath(); c.arc(L(p, i).x * W, L(p, i).y * H, 3.2 * s, 0, 7); c.fillStyle = '#d8f03c'; c.fill(); }
+  for (const i of bad || []) { c.beginPath(); c.arc(L(p, i).x * W, L(p, i).y * H, 11 * s, 0, 7); c.lineWidth = 3 * s; c.strokeStyle = '#e0483a'; c.stroke(); }
+}
+
+/* ---------- Video verarbeiten ---------- */
+async function seekProcess(o) {
+  const lm = await getLM(o.numPoses, o.lite), frames = [], step = 1 / o.fps, dur = V.duration;
+  for (let t = 0; t < dur; t += step) {
     await seek(t);
-    const r = landmarker.detectForVideo(V, ts += 1000/fps);
-    const lm = r.landmarks && r.landmarks[0], wl = r.worldLandmarks && r.worldLandmarks[0];
-    frames.push(lm ? {t, lm, wl} : {t, lm:null});
-    ctx.clearRect(0,0,OV.width,OV.height); if(lm) drawPose(lm,[]);
-    $('prog').style.width = (t/dur*100)+'%';
-    $('stat').textContent = 'Analysiere Bewegung … '+Math.round(t/dur*100)+' %';
+    const poses = detect(lm, V);
+    frames.push({ t, poses, roles: P.assignRoles(poses, AR) });
+    octx.clearRect(0, 0, OV.width, OV.height); poses.forEach(p => drawPose(p, [], octx, OV.width, OV.height));
+    o.onStep(t / dur);
   }
-  $('prog').style.width='100%';
-  const type = $('type').value, hand = $('hand').value;
-  strokes = findStrokes(type, hand, fps);
-  if(!strokes.length){
-    $('stat').innerHTML = 'Keine '+NAMES[type]+' erkannt. Ist dein ganzer Körper im Bild, und hast du die richtige Schlagart gewählt? <button id="back" style="margin-top:10px">Zurück</button>';
-    $('back').onclick = reset; return;
-  }
-  $('stat').textContent='Erstelle Clips …';
-  for(const s of strokes) s.metrics = measure(s, type, hand, fps);
-  await renderResults(type, hand);
-  $('work').classList.add('hide'); $('res').classList.remove('hide');
-  $('work').after($('res'));
+  return frames;
+}
+async function playProcess(o) {
+  const lm = await getLM(o.numPoses, o.lite), frames = [], step = 1 / o.fps, dur = V.duration;
+  if (!('requestVideoFrameCallback' in HTMLVideoElement.prototype)) return seekProcess(o);
+  await seek(0);
+  let rate = 2, lastT = -1, winStart = 0, winN = 0;
+  V.playbackRate = rate;
+  return new Promise((res, rej) => {
+    let done = false;
+    const finish = () => { if (done) return; done = true; V.pause(); V.playbackRate = 1; res(frames); };
+    const cb = (now, meta) => {
+      if (done) return;
+      const t = meta.mediaTime;
+      if (t - lastT >= step * 0.95) {
+        lastT = t;
+        const poses = detect(lm, V);
+        frames.push({ t, poses, roles: P.assignRoles(poses, AR) }); winN++;
+        octx.clearRect(0, 0, OV.width, OV.height); poses.forEach(p => drawPose(p, [], octx, OV.width, OV.height));
+        o.onStep(t / dur);
+      }
+      if (t - winStart > 10) {
+        if (winN < 0.6 * o.fps * (t - winStart) && rate > 1) { rate = Math.max(1, rate - 0.5); V.playbackRate = rate; }
+        winStart = t; winN = 0;
+      }
+      if (V.ended || t >= dur - 0.05) return finish();
+      V.requestVideoFrameCallback(cb);
+    };
+    V.addEventListener('ended', finish, { once: true });
+    V.requestVideoFrameCallback(cb);
+    V.play().catch(rej);
+  });
+}
+function progressText(label, start) {
+  return p => {
+    $('prog').style.width = (p * 100) + '%';
+    const el = (performance.now() - start) / 1000, rest = p > 0.03 ? el / p - el : null;
+    $('stat').textContent = label + ' ' + Math.round(p * 100) + ' %' + (rest != null ? ' · noch ca. ' + mmss(rest) : '');
+  };
+}
+
+/* ---------- Kalibrierung (2 Taps) ---------- */
+function calibrate(stage, ov, getDraw, statEl, rowHost) {
+  statEl = statEl || $('stat');
+  const row = $('calRow'), home = row.parentElement;
+  if (rowHost) rowHost.appendChild(row);
+  return new Promise(res => {
+    const c = ov.getContext('2d'); let taps = [];
+    const help = ['Tippe auf den Boden direkt unter dem Netz.', 'Jetzt auf den Boden direkt vor eurer Rückwand (Grundlinie).'];
+    const draw = () => {
+      c.clearRect(0, 0, ov.width, ov.height); getDraw(c);
+      taps.forEach((y, i) => { c.strokeStyle = i ? '#d8f03c' : '#fff'; c.lineWidth = Math.max(3, ov.width / 200); c.setLineDash([16, 10]); c.beginPath(); c.moveTo(0, y * ov.height); c.lineTo(ov.width, y * ov.height); c.stroke(); c.setLineDash([]); });
+      statEl.textContent = taps.length < 2 ? 'Court kalibrieren (2 Taps, empfohlen): ' + help[taps.length] : 'Kalibriert.';
+    };
+    const end = v => { ov.classList.remove('cal'); ov.style.pointerEvents = 'none'; ov.removeEventListener('click', tap); row.classList.add('hide'); if (rowHost) home.appendChild(row); res(v); };
+    const tap = e => {
+      const r = ov.getBoundingClientRect(); taps.push((e.clientY - r.top) / r.height); draw();
+      if (taps.length === 2) {
+        const [a, b] = taps; const cal = { yNet: Math.min(a, b), yBase: Math.max(a, b) };
+        S.calib = cal; saveS(); setTimeout(() => end(cal), 400);
+      }
+    };
+    ov.classList.add('cal'); ov.style.pointerEvents = 'auto'; ov.addEventListener('click', tap);
+    $('calRow').classList.remove('hide'); $('calLast').classList.toggle('hide', !S.calib);
+    $('calSkip').onclick = () => end(null);
+    $('calLast').onclick = () => end(S.calib);
+    $('calRedo').onclick = () => { taps = []; draw(); };
+    draw();
+  });
+}
+
+/* ---------- Uhr-Karten ---------- */
+const MSGS = [];
+function watchHTML(msg, label) {
+  const i = MSGS.push(msg) - 1;
+  return '<div class="wbox">' + (label ? '<div class="wlabel">' + esc(label) + '</div>' : '') +
+    '<div class="watch" id="w' + i + '"><div class="face"><div class="wtop"><span class="wapp">● Padel Coach</span><span>jetzt</span></div>' +
+    '<div class="wt">' + esc(msg.titel) + '</div><p>' + esc(msg.s1) + '</p><p class="s2">' + esc(msg.s2) + '</p></div></div>' +
+    '<div class="wact"><button data-w="speak" data-i="' + i + '">▶ Vorlesen</button><button data-w="buzz" data-i="' + i + '">Vibration</button>' +
+    '<button data-w="copy" data-i="' + i + '">Kopieren</button><button data-w="send" data-i="' + i + '"' + (S.topic ? '' : ' disabled title="ntfy-Thema im Reiter Regeln eintragen"') + '>An Uhr</button></div>' +
+    (msg.text.length > 140 ? '<div class="small" style="color:var(--warn)">Etwas lang für die Uhr (' + msg.text.length + ' Zeichen).</div>' : '') + '</div>';
+}
+function speak(text) {
+  try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 1.05; speechSynthesis.speak(u); return true; } catch (e) { return false; }
+}
+async function sendWatch(msg) {
+  if (!S.topic) return 'Kein ntfy-Thema eingetragen.';
+  try {
+    const r = await fetch('https://ntfy.sh/' + encodeURIComponent(S.topic), { method: 'POST', body: msg.s1 + '\n' + msg.s2,
+      headers: { Title: msg.titel, Priority: 'high', Tags: 'tennis' } });
+    return r.ok ? 'An die Uhr gesendet.' : 'Senden fehlgeschlagen (' + r.status + ').';
+  } catch (e) { return 'Senden fehlgeschlagen: keine Verbindung.'; }
+}
+document.addEventListener('click', async e => {
+  const b = e.target.closest('button[data-w]'); if (!b) return;
+  const msg = MSGS[+b.dataset.i], w = $('w' + b.dataset.i), a = b.dataset.w;
+  if (a === 'speak') speak(msg.s1 + ' ' + msg.s2);
+  if (a === 'buzz') { w.classList.remove('buzz'); void w.offsetWidth; w.classList.add('buzz'); try { navigator.vibrate && navigator.vibrate([180, 90, 180]); } catch (x) {} }
+  if (a === 'copy') { try { await navigator.clipboard.writeText(msg.s1 + ' ' + msg.s2); b.textContent = 'Kopiert ✓'; } catch (x) { b.textContent = 'Nicht möglich'; } }
+  if (a === 'send') { b.disabled = true; b.textContent = '…'; const r = await sendWatch(msg); b.textContent = r.startsWith('An die') ? 'Gesendet ✓' : 'Fehler'; b.title = r; b.disabled = false; }
+});
+$('topicTest').addEventListener('click', async () => {
+  $('topicInfo').textContent = 'Sende …';
+  $('topicInfo').textContent = await sendWatch({ titel: 'Padel Coach Test', s1: 'Verbindung steht.', s2: 'Beim Seitenwechsel kommen hier deine Impulse.' });
 });
 
-function findStrokes(type, hand, fps){
-  const j = J(hand), sp = frames.map(()=>0);
-  for(let i=1;i<frames.length;i++){
-    const a=frames[i-1].lm, b=frames[i].lm; if(!a||!b) continue;
-    sp[i] = len(sub(img(b[j.wr]),img(a[j.wr]))) / torso(b) * fps;
-  }
-  const sm = sp.map((v,i)=>(sp[i-1]||v)/4+v/2+(sp[i+1]||v)/4);
-  const max = Math.max(...sm), thr = Math.max(3, max*0.4), gap = Math.round(fps*1.0), out=[];
-  for(let i=2;i<sm.length-2;i++){
-    if(sm[i]<thr || sm[i]<sm[i-1] || sm[i]<sm[i+1]) continue;
-    const lm = frames[i].lm; if(!lm) continue;
-    const overhead = lm[j.wr].y < lm[j.sh].y - 0.15*torso(lm);
-    if(OVER.includes(type) !== overhead) continue;
-    if(out.length && i - out[out.length-1].i < gap){ if(sm[i] > out[out.length-1].v) out[out.length-1] = {i,v:sm[i]}; continue; }
-    out.push({i,v:sm[i]});
-  }
-  return out.slice(0,12).map(o=>({i:o.i,t:frames[o.i].t}));
+/* =================================================================== TECHNIK */
+let tFile = null, tState = null, playing = null;
+function onTFile(e) { const f = e.target.files[0]; if (!f) return; tFile = f; $('tInfo').textContent = 'Video: ' + f.name + ' (' + (f.size / 1e6).toFixed(1).replace('.', ',') + ' MB)'; $('tGo').disabled = false; }
+$('tRec').addEventListener('change', onTFile); $('tPick').addEventListener('change', onTFile);
+
+function yaw(p) { const a = P.Wd(p, 12), b = P.Wd(p, 11); return Math.atan2(Math.abs(a.z - b.z), Math.abs(a.x - b.x)) * 180 / Math.PI; }
+function mePose(f, who) {
+  if (who === 'allein') { if (!f.poses.length) return null; let best = f.poses[0]; for (const p of f.poses) if (P.torsoImg(p, AR) > P.torsoImg(best, AR)) best = p; return best; }
+  const i = f.roles['n' + who]; return i == null ? null : f.poses[i];
 }
-
-function yaw(wl){ const v=sub(wl[12],wl[11]); return Math.atan2(Math.abs(v.z),Math.abs(v.x))*180/Math.PI; }
-
-function measure(s, type, hand, fps){
-  const j = J(hand), f = frames[s.i], lm=f.lm, wl=f.wl, R = RANGES[type], res = {};
-  const prep = frames.slice(Math.max(0,s.i-Math.round(fps*1.0)), s.i+1).filter(x=>x.lm);
-  const val = {
-    elbow: ()=>ang(wl[j.sh],wl[j.el],wl[j.wr]),
-    height: ()=>(lm[j.sh].y - lm[j.wr].y)/torso(lm),
-    knee: ()=>Math.min(...prep.map(p=>(ang(p.wl[j.hip],p.wl[j.kn],p.wl[j.an])+ang(p.wl[j.nhip],p.wl[j.nkn],p.wl[j.nan]))/2)),
-    side: ()=>Math.max(...prep.slice(0,-1).map(p=>yaw(p.wl)), yaw(wl)),
-    free: ()=>prep.filter(p=>p.lm[j.nwr].y < p.lm[j.nsh].y).length / prep.length,
-    trunk: ()=>{const v=sub(mid(wl[11],wl[12]),mid(wl[23],wl[24]));return Math.acos(Math.min(1,-v.y/len(v)))*180/Math.PI},
-    reach: ()=>{const h=mid(wl[23],wl[24]);return Math.hypot(wl[j.wr].x-h.x,wl[j.wr].z-h.z)}
-  };
-  for(const k in R){
-    const v = val[k](), [lo,hi]=R[k];
-    res[k] = {v, ok: v>=lo && v<=hi, dir: v<lo?'low':v>hi?'high':''};
+function findStrokes(mf, type, hand, fps) {
+  const j = P.sideIdx(hand), sp = mf.map(() => 0);
+  for (let i = 1; i < mf.length; i++) {
+    const a = mf[i - 1].p, b = mf[i].p; if (!a || !b) continue;
+    const wa = P.L(a, j.wr), wb = P.L(b, j.wr);
+    sp[i] = Math.hypot((wb.x - wa.x) * AR, wb.y - wa.y) / P.torsoImg(b, AR) / (mf[i].t - mf[i - 1].t || 1 / fps);
   }
+  const sm = sp.map((v, i) => (sp[i - 1] || v) / 4 + v / 2 + (sp[i + 1] || v) / 4);
+  const max = Math.max(...sm), thr = Math.max(3, max * 0.4), gap = 1.0, out = [];
+  for (let i = 2; i < sm.length - 2; i++) {
+    if (sm[i] < thr || sm[i] < sm[i - 1] || sm[i] < sm[i + 1]) continue;
+    const p = mf[i].p; if (!p) continue;
+    const overhead = P.L(p, j.wr).y < P.L(p, j.sh).y - 0.15 * P.torsoImg(p, AR);
+    if (P.OVER.includes(type) !== overhead) continue;
+    const last = out[out.length - 1];
+    if (last && mf[i].t - last.t < gap) { if (sm[i] > last.v) Object.assign(last, { i, t: mf[i].t, v: sm[i] }); continue; }
+    out.push({ i, t: mf[i].t, v: sm[i] });
+  }
+  return out.sort((a, b) => b.v - a.v).slice(0, 12).sort((a, b) => a.t - b.t);
+}
+/* Feinanalyse rund um den Ballkontakt: 30 Bilder/s, Ball-Suche, Keyframes */
+async function refineStroke(s, lm, type, hand, who) {
+  const j = P.sideIdx(hand), w = 256, h = Math.round(256 / AR);
+  const cv = document.createElement('canvas'); cv.width = w; cv.height = h; const c = cv.getContext('2d', { willReadFrequently: true });
+  const samples = []; let prevData = null;
+  for (let t = Math.max(0, s.t - 0.4); t <= Math.min(V.duration - 0.01, s.t + 0.45); t += 1 / 30) {
+    await seek(t);
+    const poses = detect(lm, V), f = { t, poses, roles: P.assignRoles(poses, AR) }, p = mePose(f, who);
+    c.drawImage(V, 0, 0, w, h); const data = c.getImageData(0, 0, w, h).data;
+    samples.push({ t, p, cands: P.ballCandidates(data, prevData, w, h) }); prevData = data;
+  }
+  let best = null, bv = -1;
+  for (let i = 1; i < samples.length; i++) {
+    const a = samples[i - 1].p, b = samples[i].p; if (!a || !b || Math.abs(samples[i].t - s.t) > 0.25) continue;
+    const v = Math.hypot((P.L(b, j.wr).x - P.L(a, j.wr).x) * AR, P.L(b, j.wr).y - P.L(a, j.wr).y);
+    if (v > bv) { bv = v; best = samples[i]; }
+  }
+  if (!best) best = samples.reduce((m, x) => x.p && Math.abs(x.t - s.t) < Math.abs((m && m.t || 99) - s.t) ? x : m, null);
+  if (!best || !best.p) return null;
+  const torso = P.torsoImg(best.p, AR), wr = P.L(best.p, j.wr);
+  const ball = P.ballTrack(samples, best.t, { x: wr.x, y: wr.y }, AR, torso);
+  const contact = P.classifyContact(best.p, hand, type, AR, ball.gesehen);
+  const keys = [];
+  for (const [lab, dt] of [['Ausholen', -0.3], ['Treffpunkt', 0], ['Ausschwung', 0.3]]) {
+    const tt = Math.max(0, Math.min(V.duration - 0.01, best.t + dt));
+    await seek(tt);
+    const k = document.createElement('canvas'); k.width = 240; k.height = Math.round(240 / AR);
+    const kc = k.getContext('2d'); kc.drawImage(V, 0, 0, k.width, k.height);
+    const sp = samples.reduce((m, x) => x.p && Math.abs(x.t - tt) < Math.abs(m.t - tt) ? x : m, { t: 99 });
+    if (sp.p) drawPose(sp.p, dt === 0 ? badContactJoints(contact, j) : [], kc, k.width, k.height);
+    keys.push({ lab, canvas: k, hit: dt === 0 });
+  }
+  return { t: best.t, p: best.p, contact, ball, keys };
+}
+function badContactJoints(c, j) { return c.tiefe === 'hinten' || c.seite !== 'ok' || c.hoehe === 'tief' ? [j.wr, j.el] : []; }
+function measure(s, type, hand, mf, fps) {
+  const j = P.sideIdx(hand), p = s.ref ? s.ref.p : mf[s.i].p, R = CFG.sollwerte[type] || {}, res = {}, Wd = P.Wd, L = P.L;
+  const prep = mf.slice(Math.max(0, s.i - Math.round(fps)), s.i + 1).filter(x => x.p);
+  const kneeA = q => (P.angle(Wd(q, j.hip), Wd(q, j.kn), Wd(q, j.an)) + P.angle(Wd(q, j.nhip), Wd(q, j.nkn), Wd(q, j.nan))) / 2;
+  const val = {
+    elbow: () => P.angle(Wd(p, j.sh), Wd(p, j.el), Wd(p, j.wr)),
+    height: () => (L(p, j.sh).y - L(p, j.wr).y) / P.torsoImg(p, AR),
+    knee: () => Math.min(kneeA(p), ...prep.map(x => kneeA(x.p))),
+    side: () => Math.max(yaw(p), ...prep.map(x => yaw(x.p))),
+    free: () => prep.length ? prep.filter(x => L(x.p, j.nwr).y < L(x.p, j.nsh).y).length / prep.length : 0,
+    trunk: () => { const v = P.sub(P.mid(Wd(p, 11), Wd(p, 12)), P.mid(Wd(p, 23), Wd(p, 24))); return Math.acos(Math.min(1, -v.y / P.len(v))) * 180 / Math.PI; },
+    reach: () => { const hm = P.mid(Wd(p, 23), Wd(p, 24)); return Math.hypot(Wd(p, j.wr).x - hm.x, Wd(p, j.wr).z - hm.z); }
+  };
+  for (const k in R) { if (!val[k]) continue; const v = val[k](), lo = R[k][0], hi = R[k][1]; res[k] = { v, ok: v >= lo && v <= hi, dir: v < lo ? 'low' : v > hi ? 'high' : '' }; }
   return res;
 }
+const FMT = { elbow: v => Math.round(v) + '°', height: v => v.toFixed(1).replace('.', ',') + ' × Rumpf über Schulter', knee: v => Math.round(v) + '°',
+  side: v => Math.round(v) + '°', free: v => Math.round(v * 100) + ' %', trunk: v => Math.round(v) + '° Neigung', reach: v => v.toFixed(2).replace('.', ',') + ' m' };
+const JOINT = { elbow: 'el', height: 'wr', knee: 'kn', side: 'sh', free: 'nwr', trunk: 'sh', reach: 'wr' };
+function techTip(k, dir, type) { const t = CFG.technik[k] || {}; return P.fill(t[dir + '_' + type] || t[dir] || '', {}, type); }
 
-/* ---------- Zeichnen ---------- */
-const BONES=[[11,12],[11,13],[13,15],[12,14],[14,16],[11,23],[12,24],[23,24],[23,25],[25,27],[24,26],[26,28],[27,31],[28,32]];
-function drawPose(lm, bad, c=ctx, W=OV.width, H=OV.height){
-  const s = Math.max(2, W/320);
-  c.lineWidth = 2.5*s; c.strokeStyle = 'rgba(255,255,255,.9)'; c.lineCap='round';
-  for(const [a,b] of BONES){ c.beginPath(); c.moveTo(lm[a].x*W,lm[a].y*H); c.lineTo(lm[b].x*W,lm[b].y*H); c.stroke(); }
-  for(const i of [0,11,12,13,14,15,16,23,24,25,26,27,28]){
-    c.beginPath(); c.arc(lm[i].x*W,lm[i].y*H,3.5*s,0,7); c.fillStyle='#d8f03c'; c.fill();
+$('tGo').addEventListener('click', async () => {
+  if (!tFile) return;
+  stopClip(); $('tRes').classList.add('hide'); $('tGo').disabled = true;
+  await openVideo(tFile, 'Technik-Analyse');
+  const type = S.type, hand = S.hand, who = S.who, dur = V.duration;
+  const lite = dur > 150, numPoses = who === 'allein' ? 1 : 4, fps = dur > 150 ? 10 : 12;
+  let lm;
+  try { $('stat').textContent = 'Lade KI-Modell … (beim ersten Mal bis zu 20 Sekunden)'; lm = await getLM(numPoses, lite); }
+  catch (e) { $('tGo').disabled = false; return failWork(MODEL_ERR); }
+  const start = performance.now();
+  const frames = dur > 150 ? await playProcess({ fps, numPoses, lite, onStep: progressText('Analysiere Bewegung …', start) })
+                           : await seekProcess({ fps, numPoses, lite, onStep: progressText('Analysiere Bewegung …', start) });
+  const mf = frames.map(f => ({ t: f.t, p: mePose(f, who) }));
+  const strokes = findStrokes(mf, type, hand, fps);
+  $('tGo').disabled = false;
+  if (!strokes.length) return failWork('Keine ' + P.NAMES[type] + ' erkannt. Ist dein ganzer Körper im Bild, und passt die Schlagart? Im Spiel: Stimmt „ich links/rechts“?');
+  for (let n = 0; n < strokes.length; n++) {
+    $('stat').textContent = 'Suche Treffpunkt und Ball … Schlag ' + (n + 1) + ' von ' + strokes.length;
+    $('prog').style.width = ((n + 1) / strokes.length * 100) + '%';
+    strokes[n].ref = await refineStroke(strokes[n], lm, type, hand, who);
+    strokes[n].metrics = measure(strokes[n], type, hand, mf, fps);
   }
-  for(const i of bad){
-    c.beginPath(); c.arc(lm[i].x*W,lm[i].y*H,11*s,0,7); c.lineWidth=3*s; c.strokeStyle='#e0483a'; c.stroke();
-  }
-}
-function badJoints(s, hand){
-  const j = J(hand), out=[];
-  for(const k in s.metrics) if(!s.metrics[k].ok){ const n=M[k].joint; out.push(j[n]); if(n==='kn') out.push(j.nkn); }
-  return out;
-}
+  tState = { type, hand, who, mf, strokes };
+  renderTechnik();
+  $('work').classList.add('hide'); $('tRes').classList.remove('hide'); $('tRes').scrollIntoView({ block: 'start' });
+});
 
-/* ---------- Ergebnisse ---------- */
-const tipText = (k,dir,type) => { const t = M[k][dir]; return typeof t==='function' ? t(type) : t; };
-const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-
-async function renderResults(type, hand){
-  let ok=0, all=0; const fails={};
-  for(const s of strokes) for(const k in s.metrics){ all++; if(s.metrics[k].ok) ok++; else { const key=k+'|'+s.metrics[k].dir; fails[key]=(fails[key]||0)+1; } }
-  const score = Math.round(ok/all*100);
-  $('scoreNum').textContent = score;
-  $('scoreTitle').textContent = 'Technik-Score '+NAMES[type];
-  $('scoreSub').textContent = strokes.length+' Schläge erkannt · '+ok+' von '+all+' Technik-Merkmalen im Sollbereich';
-  const top = Object.entries(fails).sort((a,b)=>b[1]-a[1])[0];
-  if(top){
-    const [k,dir] = top[0].split('|');
-    $('focus').innerHTML = '<h3>Deine Hauptbaustelle: '+esc(M[k].name)+'</h3><p class="tip">'+esc(tipText(k,dir,type))+'</p><p class="small">Betrifft '+top[1]+' von '+strokes.length+' Schlägen.</p>'+
-      M[k].drills.map(d=>'<div class="drill"><b>Übung: '+esc(d[0])+'</b>'+esc(d[1])+'</div>').join('');
-  } else {
-    $('focus').innerHTML = '<h3>Starke Technik!</h3><p class="tip">Alle gemessenen Merkmale liegen im Sollbereich. Nächster Schritt: Platzierung und Tempo variieren, z. B. '+NAMES[type]+' abwechselnd cross und longline.</p>';
+function renderTechnik() {
+  const { type, hand, strokes } = tState, j = P.sideIdx(hand);
+  let ok = 0, all = 0; const fails = {}, chains = {}, tiefe = {}, hoehe = {};
+  let ballSeen = 0, refined = 0, confSum = 0;
+  for (const s of strokes) {
+    for (const k in s.metrics) { all++; if (s.metrics[k].ok) ok++; else { const key = k + '|' + s.metrics[k].dir; fails[key] = (fails[key] || 0) + 1; } }
+    if (s.ref) {
+      refined++; confSum += s.ref.contact.conf; if (s.ref.ball.gesehen) ballSeen++;
+      tiefe[s.ref.contact.tiefe] = (tiefe[s.ref.contact.tiefe] || 0) + 1; hoehe[s.ref.contact.hoehe] = (hoehe[s.ref.contact.hoehe] || 0) + 1;
+      s.chain = P.matchChain(s.ref.contact, type, CFG);
+      if (s.chain) { const k = s.chain.kette; chains[k] = chains[k] || { ch: s.chain, n: 0 }; chains[k].n++; }
+    }
   }
-  const box = $('clips'); box.innerHTML='';
-  for(let n=0;n<strokes.length;n++){
-    const s = strokes[n], el = document.createElement('article'); el.className='card clip';
-    const cv = document.createElement('canvas'); const W=480, H=Math.round(480/AR); cv.width=W; cv.height=H;
-    await seek(s.t); const c=cv.getContext('2d'); c.drawImage(V,0,0,W,H); drawPose(frames[s.i].lm, badJoints(s,hand), c, W, H);
-    const rows = Object.entries(s.metrics).map(([k,m])=>
-      '<div class="m"><span class="dot '+(m.ok?'ok':'no')+'"></span><span>'+esc(M[k].name)+'</span><span class="val">'+esc(M[k].fmt(m.v))+'</span>'+
-      (m.ok?'':'<p class="tip" style="grid-column:1/-1">'+esc(tipText(k,m.dir,type))+'</p>')+'</div>').join('');
-    el.innerHTML = '<div class="row" style="justify-content:space-between;margin-bottom:10px"><h3>Schlag '+(n+1)+'</h3><span class="small">bei '+s.t.toFixed(1).replace('.',',')+' s</span></div>';
-    el.appendChild(cv);
-    el.insertAdjacentHTML('beforeend','<div class="row" style="margin:10px 0 4px"><button class="pri" data-n="'+n+'">Clip abspielen</button></div>'+rows);
+  const top = Object.entries(fails).sort((a, b) => b[1] - a[1])[0];
+  const topChain = Object.values(chains).sort((a, b) => b.n - a.n)[0];
+  const mode = o => Object.entries(o).sort((a, b) => b[1] - a[1])[0];
+  const mt = mode(tiefe), mh = mode(hoehe), avgConf = refined ? confSum / refined : 0;
+  const stufe = avgConf > 0.7 ? 'hoch' : avgConf > 0.5 ? 'mittel' : 'niedrig';
+  const schlag = P.OVER.includes(type) ? 'ueberkopf' : 'grundschlag';
+  const tpText = mt ? P.TEXT.tiefe[mt[0]] + ', ' + P.TEXT['hoehe_' + schlag][mh[0]] : '';
+  let h = '';
+  // 1 Was fällt auf?
+  h += '<div class="sech"><b>1</b><h2>Was fällt auf?</h2></div><div class="card focus">';
+  h += '<div class="kpis"><div class="kpi"><b>' + Math.round(ok / all * 100) + '</b><span>Technik-Score ' + P.NAMES[type] + '</span></div><div class="kpi"><b>' + strokes.length + '</b><span>Schläge erkannt</span></div><div class="kpi"><b>' + ballSeen + '/' + refined + '</b><span>Ball am Treffpunkt sichtbar</span></div></div>';
+  if (mt) {
+    h += '<h3 style="margin-top:14px">Treffpunkt meist: ' + esc(tpText) + '</h3>';
+    h += '<p class="small" style="margin:4px 0 0">Bei ' + mt[1] + ' von ' + refined + ' Schlägen · Sicherheit <span class="conf ' + stufe + '">' + stufe + '</span>' +
+      (ballSeen < refined / 2 ? ' · Der Ball ist meist nicht sicher erkennbar (Unschärfe, Glas, Abstand). Der Treffpunkt ist deshalb aus Körper-, Schulter- und Ellbogenposition abgeleitet.' : '') + '</p>';
+  }
+  if (topChain) h += '<p class="chain">' + esc(P.fill(topChain.ch.kette, {}, type)) + '</p>';
+  if (top) { const [k, dir] = top[0].split('|'); h += '<p class="tip"><b>' + esc(CFG.technik[k].name) + ':</b> ' + esc(techTip(k, dir, type)) + ' <span class="small">(' + top[1] + ' von ' + strokes.length + ' Schlägen)</span></p>'; }
+  if (!top && !topChain) h += '<p class="tip">Alle Messwerte im Sollbereich. Stark! Jetzt Platzierung variieren: abwechselnd cross und longline.</p>';
+  h += '</div>';
+  // 2 Was probieren?
+  h += '<div class="sech"><b>2</b><h2>Was probieren?</h2></div><div class="card try">';
+  if (topChain) h += '<div class="drill"><b>Probier mal</b>' + esc(P.fill(topChain.ch.probier, {}, type)) + '</div>';
+  if (top) { const k = top[0].split('|')[0]; h += (CFG.technik[k].uebungen || []).map(d => '<div class="drill"><b>Übung: ' + esc(d[0]) + '</b>' + esc(d[1]) + '</div>').join(''); }
+  if (!top && !topChain) h += '<div class="drill"><b>Probier mal</b>' + esc((CFG.lieblingsIdeen || [])[0] || '') + '</div>';
+  h += '</div>';
+  // 3 Uhr
+  const s1 = mt ? 'Treffpunkt meist ' + P.TEXT.tiefe[mt[0]] + '.' : 'Technik sieht sauber aus.';
+  const s2 = topChain ? topChain.ch.uhr : top ? (CFG.technik[top[0].split('|')[0]].name + ' verbessern.') : 'Jetzt Platzierung variieren.';
+  const msg = P.watchMsg(P.NAMES[type] + '-Check', { uhr: [s1, s2] }, {}, null, type);
+  h += '<div class="sech"><b>3</b><h2>Auf die Uhr</h2></div><div class="watches">' + watchHTML(msg, 'Fürs nächste Training') + '</div>';
+  // Clips
+  h += '<h2 style="margin-top:8px">Deine Schläge</h2><div class="clips" id="tClips"></div>';
+  h += '<p class="small">Prototyp: Sollwerte sind Trainer-Richtwerte (anpassbar unter „Regeln“). Die Tiefe (vor/hinter dem Körper) wird aus einer einzelnen Kamera geschätzt und ist der unsicherste Wert. Am besten funktioniert sie, wenn die Kamera genau hinter dir steht.</p>';
+  h += '<button id="tAgain">Neues Video analysieren</button>';
+  $('tRes').innerHTML = h;
+  const box = $('tClips');
+  strokes.forEach((s, n) => {
+    const el = document.createElement('article'); el.className = 'card';
+    let x = '<div class="row" style="justify-content:space-between;margin-bottom:8px"><h3>Schlag ' + (n + 1) + '</h3><span class="small">bei ' + (s.ref ? s.ref.t : s.t).toFixed(1).replace('.', ',') + ' s</span></div>';
+    el.innerHTML = x;
+    if (s.ref) {
+      const keys = document.createElement('div'); keys.className = 'keys';
+      s.ref.keys.forEach(k => { const f = document.createElement('figure'); if (k.hit) f.className = 'hit'; f.appendChild(k.canvas); f.insertAdjacentHTML('beforeend', '<figcaption>' + k.lab + '</figcaption>'); keys.appendChild(f); });
+      el.appendChild(keys);
+      const c = s.ref.contact, d = P.describeContact(c), id = (CFG.treffpunktIdeal || {})[type] || {};
+      const bad = k => id[k] && !id[k].includes(c[k]);
+      x = '<div class="chips"><span class="chip' + (bad('tiefe') ? ' bad' : '') + '">' + esc(d[0]) + '</span><span class="chip' + (bad('hoehe') ? ' bad' : '') + '">' + esc(d[1]) + '</span><span class="chip' + (bad('seite') ? ' bad' : '') + '">' + esc(d[2]) + '</span></div>';
+      x += '<div class="small">Treffpunkt wahrscheinlich so · Sicherheit <span class="conf ' + c.stufe + '">' + c.stufe + '</span> · Ellbogen ' + Math.round(c.ellbogen) + '°<br>' +
+        (s.ref.ball.gesehen ? 'Ball am Treffpunkt im Bild erkannt.' : 'Ball am Treffpunkt nicht sicher erkennbar, abgeleitet aus Körper, Schulter und Ellbogen.') +
+        (s.ref.ball.flug ? ' Ballflug danach: ' + esc(s.ref.ball.flug) + ' (Bildrichtung, unsicher).' : '') + '</div>';
+      if (s.chain) x += '<p class="chain">' + esc(P.fill(s.chain.kette, {}, type)) + '</p><p class="tip">Probier mal: ' + esc(P.fill(s.chain.probier, {}, type)) + '</p>';
+    }
+    x += '<div class="row" style="margin:10px 0 4px"><button class="pri sm" data-clip="' + n + '">Clip in Zeitlupe</button></div>';
+    x += Object.entries(s.metrics).map(([k, m]) => '<div class="m"><span class="dot ' + (m.ok ? 'ok' : 'no') + '"></span><span>' + esc(CFG.technik[k].name) + '</span><span class="val">' + esc(FMT[k](m.v)) + '</span>' +
+      (m.ok ? '' : '<p class="tip" style="grid-column:1/-1">' + esc(techTip(k, m.dir, type)) + '</p>') + '</div>').join('');
+    el.insertAdjacentHTML('beforeend', x);
     box.appendChild(el);
-  }
-  box.querySelectorAll('button[data-n]').forEach(b=>b.addEventListener('click',()=>playClip(+b.dataset.n, hand)));
+  });
+  box.querySelectorAll('[data-clip]').forEach(b => b.addEventListener('click', () => playClip(+b.dataset.clip)));
+  $('tAgain').addEventListener('click', () => { stopClip(); $('tRes').classList.add('hide'); $('work').classList.add('hide'); window.scrollTo(0, 0); });
 }
-
-/* ---------- Clip-Wiedergabe mit Skelett ---------- */
-function nearest(t){ let lo=0,hi=frames.length-1; while(lo<hi){const m=(lo+hi)>>1; if(frames[m].t<t) lo=m+1; else hi=m;} return frames[lo]; }
-function stopClip(){ if(playing){ cancelAnimationFrame(playing.raf); V.pause(); playing=null; } }
-async function playClip(n, hand){
+function nearestMf(t) { const mf = tState.mf; let lo = 0, hi = mf.length - 1; while (lo < hi) { const m = (lo + hi) >> 1; if (mf[m].t < t) lo = m + 1; else hi = m; } return mf[lo]; }
+function stopClip() { if (playing) { cancelAnimationFrame(playing.raf); V.pause(); V.playbackRate = 1; playing = null; } }
+async function playClip(n) {
   stopClip();
-  const s = strokes[n], bad = badJoints(s,hand);
-  $('work').classList.remove('hide'); $('prog').parentElement.classList.add('hide');
-  $('stat').textContent = 'Schlag '+(n+1)+' in Zeitlupe · rote Kreise = hier verbessern';
-  $('work').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-  const end = s.t+0.7; await seek(Math.max(0,s.t-1.2));
-  V.playbackRate = 0.4; try{ await V.play(); }catch(e){}
-  const loop = ()=>{
-    const f = nearest(V.currentTime); ctx.clearRect(0,0,OV.width,OV.height);
-    if(f.lm) drawPose(f.lm, Math.abs(V.currentTime-s.t)<0.35 ? bad : []);
-    if(V.currentTime>=end || V.paused){ V.pause(); playing=null; return; }
+  const s = tState.strokes[n], tc = s.ref ? s.ref.t : s.t, j = P.sideIdx(tState.hand);
+  const bad = s.ref ? badContactJoints(s.ref.contact, j) : [];
+  for (const k in s.metrics) if (!s.metrics[k].ok) bad.push(j[JOINT[k]]);
+  $('work').classList.remove('hide'); $('workTitle').textContent = 'Schlag ' + (n + 1); $('barWrap').classList.add('hide'); $('calRow').classList.add('hide');
+  $('workBack').classList.remove('hide');
+  $('stat').textContent = 'Zeitlupe · rote Kreise = hier verbessern';
+  $('work').scrollIntoView({ block: 'start' });
+  await seek(Math.max(0, tc - 1.1)); V.playbackRate = 0.35; try { await V.play(); } catch (e) {}
+  const end = tc + 0.7;
+  const loop = () => {
+    const f = nearestMf(V.currentTime); octx.clearRect(0, 0, OV.width, OV.height);
+    if (f && f.p) drawPose(f.p, Math.abs(V.currentTime - tc) < 0.3 ? bad : [], octx, OV.width, OV.height);
+    if (V.currentTime >= end || V.paused) { V.pause(); V.playbackRate = 1; playing = null; return; }
     playing.raf = requestAnimationFrame(loop);
   };
-  playing = {raf: requestAnimationFrame(loop)};
+  playing = { raf: requestAnimationFrame(loop) };
 }
 
-function reset(){
-  stopClip(); $('res').classList.add('hide'); $('work').classList.add('hide'); $('setup').classList.remove('hide');
-  $('prog').parentElement.classList.remove('hide'); $('prog').style.width='0'; $('go').disabled=!file;
-  window.scrollTo(0,0);
+/* =================================================================== TAKTIK */
+let kFile = null, kState = null;
+$('kPick').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return; kFile = f; $('kGo').disabled = false;
+  $('kInfo').textContent = 'Video: ' + f.name + ' (' + (f.size / 1e6).toFixed(0) + ' MB)';
+  const v = document.createElement('video'); v.preload = 'metadata'; v.src = URL.createObjectURL(f);
+  v.onloadedmetadata = () => { $('kInfo').textContent += ' · ' + mmss(v.duration) + ' Min · Analyse dauert etwa ' + Math.max(1, Math.round(v.duration / 60 * 0.6)) + ' Min. Handy am Ladekabel lassen und die Seite offen halten.'; };
+});
+$('kGo').addEventListener('click', async () => {
+  if (!kFile) return;
+  $('kGo').disabled = true; $('kRes').classList.add('hide');
+  await openVideo(kFile, 'Taktik-Analyse');
+  await seek(Math.min(3, V.duration / 2));
+  const calib = await calibrate($('stage'), OV, c => {});
+  let lm;
+  try { $('stat').textContent = 'Lade KI-Modell …'; lm = await getLM(4, true); }
+  catch (e) { $('kGo').disabled = false; return failWork(MODEL_ERR); }
+  const start = performance.now();
+  const opts = { fps: 6, numPoses: 4, lite: true, onStep: progressText('Analysiere Spiel …', start) };
+  const frames = V.duration > 60 ? await playProcess(opts) : await seekProcess(opts);
+  $('kGo').disabled = false;
+  $('stat').textContent = 'Werte Ballwechsel und Seitenwechsel aus …';
+  const blocks = P.splitBlocks(frames, AR);
+  if (!blocks.length) return failWork('Keine Spieler erkannt. Hängt das Handy hoch genug, und sind die Spieler im Bild?');
+  blocks.forEach((b, i) => { b.wirNah = (S.start === 'nah') === (i % 2 === 0); });
+  kState = { frames, blocks, calib };
+  analyzeAll(); renderTaktik();
+  $('work').classList.add('hide'); $('kRes').classList.remove('hide'); $('kRes').scrollIntoView({ block: 'start' });
+});
+function analyzeAll() {
+  for (const b of kState.blocks) {
+    b.res = P.analyzeBlock(b.frames, { AR, wirNah: b.wirNah, side: S.side, hand: S.hand, calib: kState.calib });
+    b.hits = P.evalRules(b.res.m, CFG.taktikRegeln);
+    const impulse = treffpunktImpulse(b.res.contacts);
+    b.msg = P.watchMsg('', b.hits[0] ? b.hits[0].r : CFG.fallback, b.res.m, b.hits[0] && b.hits[0].r.id === 'treffpunktHinten' ? null : impulse);
+  }
 }
-$('again').addEventListener('click', reset);
+function treffpunktImpulse(contacts) {
+  if (!contacts || contacts.length < 3) return null;
+  const n = {}; let best = null;
+  for (const c of contacts) { const ch = P.matchChain(c, 'bandeja', CFG); if (ch) { n[ch.uhr] = (n[ch.uhr] || 0) + 1; if (!best || n[ch.uhr] > n[best]) best = ch.uhr; } }
+  return best && n[best] / contacts.length >= 0.4 ? best : null;
+}
+function aggregate(blocks) {
+  const keys = Object.keys(blocks[0].res.m), out = {};
+  for (const k of keys) {
+    let s = 0, w = 0;
+    for (const b of blocks) { const v = b.res.m[k]; if (typeof v === 'number') { const wt = Math.max(0.1, b.res.m.spielzeitMin); s += v * wt; w += wt; } }
+    out[k] = w ? s / w : null;
+  }
+  out.ballwechsel = blocks.reduce((s, b) => s + b.res.m.ballwechsel, 0);
+  out.spielzeitMin = blocks.reduce((s, b) => s + b.res.m.spielzeitMin, 0);
+  if (out.schlaegeProBallwechsel != null) out.schlaegeProBallwechsel = Math.round(out.schlaegeProBallwechsel * 10) / 10;
+  return out;
+}
+function renderTaktik() {
+  const { blocks, calib } = kState, m = aggregate(blocks), hits = P.evalRules(m, CFG.taktikRegeln).slice(0, 3);
+  const meSeen = m.ichImBild || 0;
+  let h = '<div class="sech"><b>1</b><h2>Was fällt auf?</h2></div>';
+  h += '<div class="card"><div class="kpis">' +
+    kpi(m.ballwechsel, 'Ballwechsel erkannt') + kpi(pctTxt(m.netzAnteil), 'ihr am Netz', m.netzAnteil) + kpi(pctTxt(m.gegnerNetzAnteil), 'Gegner am Netz', m.gegnerNetzAnteil) +
+    kpi(pctTxt(m.versetztAnteil), 'versetzt (Loch)', m.versetztAnteil) + kpi(pctTxt(m.mitteAnteil), 'im Niemandsland', m.mitteAnteil) +
+    kpi(m.schlaegeProBallwechsel == null ? '–' : String(m.schlaegeProBallwechsel).replace('.', ','), 'Schläge pro Ballwechsel') + '</div>' +
+    '<p class="small" style="margin:10px 0 0">' + Math.round(m.spielzeitMin) + ' Min Spiel · ' + blocks.length + (blocks.length === 1 ? ' Abschnitt' : ' Abschnitte (an langen Pausen bzw. Seitenwechseln getrennt)') +
+    (calib ? ' · Court kalibriert' : ' · ohne Kalibrierung: Netz/hinten nur grob geschätzt') +
+    (meSeen < 0.5 ? ' · Achtung: Dich selbst hat die App nur ' + pctTxt(meSeen) + ' der Zeit gefunden. Prüf „Ich spiele“ und „Zu Beginn sind wir“.' : '') + '</p></div>';
+  if (hits.length) h += hits.map((x, i) => '<div class="card focus"><h3>' + (i + 1) + '. ' + esc(x.r.name) + '</h3><p class="tip">' + esc(P.fill(x.r.lage, m)) + '</p></div>').join('');
+  else h += '<div class="card focus"><p class="tip">' + esc(CFG.fallback.lage) + '</p></div>';
+  h += '<div class="sech"><b>2</b><h2>Was probieren?</h2></div><div class="card try">';
+  h += (hits.length ? hits.map(x => '<div class="drill"><b>' + esc(x.r.name) + '</b>' + esc(P.fill(x.r.idee, m)) + '</div>').join('') : '<div class="drill">' + esc(CFG.fallback.idee) + '</div>');
+  const fav = (CFG.lieblingsIdeen || []).slice(0, 2);
+  if (fav.length) h += '<p class="small" style="margin:12px 0 0">Aus deinen Lieblings-Ideen:</p>' + fav.map(t => '<div class="drill">' + esc(t) + '</div>').join('');
+  h += '</div>';
+  h += '<div class="sech"><b>3</b><h2>Auf die Uhr</h2></div><p class="small" style="margin:-6px 0 0">Ein Impuls pro Abschnitt, so wie er beim Seitenwechsel auf der Uhr landen würde. Stimmt die Seite nicht, tippe auf „Wir: …“, dann wird der Abschnitt neu ausgewertet.</p><div class="watches">';
+  blocks.forEach((b, i) => {
+    b.msg.titel = blocks.length > 1 ? 'Seitenwechsel ' + (i + 1) : 'Dein Impuls';
+    h += watchHTML(b.msg, 'Min ' + mmss(b.t0) + '–' + mmss(b.t1) + ' · ' + b.res.m.ballwechsel + ' Ballwechsel').replace('<div class="wact">',
+      '<div class="wact"><button data-flip="' + i + '">Wir: ' + (b.wirNah ? 'nah' : 'weit') + '</button>');
+  });
+  h += '</div><button id="kAgain">Neues Video analysieren</button>';
+  $('kRes').innerHTML = h;
+  $('kRes').querySelectorAll('[data-flip]').forEach(btn => btn.addEventListener('click', () => {
+    const b = kState.blocks[+btn.dataset.flip]; b.wirNah = !b.wirNah; analyzeAll(); renderTaktik();
+  }));
+  $('kAgain').addEventListener('click', () => { $('kRes').classList.add('hide'); window.scrollTo(0, 0); });
+}
+function kpi(v, label, bar) {
+  return '<div class="kpi"><b>' + esc(v) + '</b><span>' + esc(label) + '</span>' + (typeof bar === 'number' ? '<div class="meter"><i style="width:' + Math.round(bar * 100) + '%"></i></div>' : '') + '</div>';
+}
+
+/* =================================================================== LIVE */
+const LV = $('lVid'), LO = $('lOv'), lctx = LO.getContext('2d');
+let live = null;
+function syncLive() {
+  $('lSide').textContent = S.side === 'L' ? 'links' : 'rechts';
+  $('lStartSide').textContent = S.start === 'nah' ? 'nah an der Kamera' : 'weit weg';
+  $('lTopic').textContent = S.topic ? 'ntfy „' + S.topic + '“' : 'nicht verbunden';
+}
+$('lStart').addEventListener('click', async () => {
+  if (live) return;
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment', width: { ideal: 1280 }, height: { ideal: 720 } }, audio: false }); }
+  catch (e) { $('lInfo').textContent = 'Kamera nicht verfügbar. Erlaube den Kamerazugriff und öffne die Seite in Safari oder Chrome.'; return; }
+  LV.srcObject = stream; await LV.play().catch(() => {});
+  await new Promise(r => LV.videoWidth ? r() : LV.addEventListener('loadedmetadata', r, { once: true }));
+  $('lStageCard').classList.remove('hide');
+  fitStage($('lStage'), LO, LV.videoWidth, LV.videoHeight);
+  $('lInfo').textContent = 'Lade KI-Modell …';
+  let lm;
+  try { lm = await getLM(4, true); } catch (e) { $('lInfo').textContent = MODEL_ERR; return; }
+  let wake = null; try { wake = await navigator.wakeLock.request('screen'); } catch (e) {}
+  live = { stream, lm, wake, t0: performance.now(), frames: [], block: 1, wirNah: S.start === 'nah', lastCheck: 0, lastEv: null, calib: S.calib, timer: null };
+  $('lStart').disabled = true; $('lCal').disabled = false; $('lNow').disabled = false; $('lStop').disabled = false;
+  $('lInfo').textContent = 'Läuft. Handy aufhängen. Impulse kommen nach Pausen ab 40 Sekunden automatisch.';
+  liveLoop();
+});
+function liveLoop() {
+  if (!live) return;
+  const t = (performance.now() - live.t0) / 1000;
+  if (!live.paused) {
+    const poses = detect(live.lm, LV);
+    live.frames.push({ t, poses, roles: P.assignRoles(poses, AR) });
+    lctx.clearRect(0, 0, LO.width, LO.height); poses.forEach(p => drawPose(p, [], lctx, LO.width, LO.height));
+    if (t - live.lastCheck > 3) { live.lastCheck = t; liveCheck(t); }
+  }
+  live.timer = setTimeout(liveLoop, 160);
+}
+function liveCheck(t) {
+  const recent = live.frames.filter(f => f.t > t - 90), ev = P.detectEvents(recent, AR);
+  if (ev.length) live.lastEv = ev[ev.length - 1].t;
+  const blockStart = live.frames.length ? live.frames[0].t : t;
+  const rallies = P.makeRallies(P.detectEvents(live.frames, AR));
+  const since = live.lastEv == null ? null : t - live.lastEv;
+  $('lKpis').innerHTML = kpi(live.block, 'Abschnitt') + kpi(mmss(t - blockStart), 'läuft seit') + kpi(rallies.length, 'Ballwechsel') + kpi(since == null ? '–' : Math.round(since) + ' s', 'seit letztem Schlag');
+  if (since != null && since > 40 && t - blockStart > 120 && rallies.length >= 3) closeBlock('auto');
+}
+function closeBlock(why) {
+  if (!live || !live.frames.length) return;
+  const res = P.analyzeBlock(live.frames, { AR, wirNah: live.wirNah, side: S.side, hand: S.hand, calib: live.calib });
+  const hits = P.evalRules(res.m, CFG.taktikRegeln);
+  const msg = P.watchMsg('Seitenwechsel ' + live.block, hits[0] ? hits[0].r : CFG.fallback, res.m, treffpunktImpulse(res.contacts));
+  $('lMsgs').classList.remove('hide');
+  $('lWatches').insertAdjacentHTML('afterbegin', watchHTML(msg, (why === 'auto' ? 'Automatisch' : 'Manuell') + ' · ' + res.m.ballwechsel + ' Ballwechsel'));
+  const w = $('w' + (MSGS.length - 1)); if (w) w.classList.add('buzz');
+  if (S.topic) sendWatch(msg).then(r => { $('lInfo').textContent = r; });
+  if (S.speak) speak(msg.s1 + ' ' + msg.s2);
+  try { navigator.vibrate && navigator.vibrate([180, 90, 180]); } catch (e) {}
+  live.frames = []; live.lastEv = null; live.block++; live.wirNah = !live.wirNah;
+}
+$('lNow').addEventListener('click', () => closeBlock('manuell'));
+$('lCal').addEventListener('click', async () => {
+  if (!live) return;
+  live.paused = true;
+  const snap = document.createElement('canvas'); snap.width = LO.width; snap.height = LO.height; snap.getContext('2d').drawImage(LV, 0, 0, snap.width, snap.height);
+  const cal = await calibrate($('lStage'), LO, c => c.drawImage(snap, 0, 0), $('lInfo'), $('lStageCard'));
+  if (cal) live.calib = cal;
+  $('lInfo').textContent = cal ? 'Court kalibriert. Läuft weiter.' : 'Ohne Kalibrierung weiter.';
+  live.paused = false;
+});
+$('lStop').addEventListener('click', () => {
+  if (!live) return;
+  if (live.frames.length > 60) closeBlock('manuell');
+  clearTimeout(live.timer); live.stream.getTracks().forEach(t => t.stop());
+  try { live.wake && live.wake.release(); } catch (e) {}
+  live = null;
+  $('lStart').disabled = false; $('lCal').disabled = true; $('lNow').disabled = true; $('lStop').disabled = true;
+  $('lInfo').textContent = 'Gestoppt.';
+});
+
+/* =================================================================== REGELN */
+const KEYINFO = [
+  ['netzAnteil', 'Anteil der Spielzeit, in der ihr am Netz steht (0–1)'], ['mitteAnteil', 'Anteil im Niemandsland (Feldmitte)'], ['hintenAnteil', 'Anteil hinten an der Wand'],
+  ['versetztAnteil', 'Anteil, in dem einer vorne und einer hinten steht'], ['mitteOffenAnteil', 'Anteil mit über 6 m Abstand zwischen euch'], ['engAnteil', 'Anteil mit unter 2 m Abstand'],
+  ['gegnerNetzAnteil', 'Anteil, in dem die Gegner am Netz stehen'], ['meinSchlagAnteil', 'Anteil eurer Schläge, die du spielst'], ['ueberkopfAnteil', 'Anteil deiner Schläge über Kopf'],
+  ['endeHintenAnteil', 'Anteil der Ballwechsel, die direkt nach eurem Schlag von hinten enden'], ['schlaegeProBallwechsel', 'Schläge pro Ballwechsel (Zahl)'],
+  ['treffpunktHintenAnteil', 'Anteil deiner Überkopfbälle mit Treffpunkt hinter dem Körper'], ['treffpunktTiefAnteil', 'Anteil deiner Überkopfbälle mit zu tiefem Treffpunkt'],
+  ['tiefe / hoehe / seite', 'Nur in treffpunktKetten: „hinten|koerper|vorne“, „tief|mittel|hoch|sehrhoch“, „nah|ok|aussen“ (mit „ist“)'],
+  ['ellbogen / knie', 'Nur in treffpunktKetten: Winkel in Grad (mit „op“ und „zahl“)'], ['schlag', 'Nur in treffpunktKetten: „ueberkopf“ oder „grundschlag“']
+];
+$('keyTable').innerHTML = KEYINFO.map(k => '<tr><td><code>' + esc(k[0]) + '</code></td><td>' + esc(k[1]) + '</td></tr>').join('');
+function showCfg() { $('cfgText').value = JSON.stringify(CFG, null, 2); $('cfgErr').textContent = ''; }
+$('cfgSave').addEventListener('click', () => {
+  let c; try { c = JSON.parse($('cfgText').value); } catch (e) { $('cfgErr').textContent = 'Kein gültiges JSON: ' + e.message; return; }
+  const errs = P.validateCfg(c); if (errs.length) { $('cfgErr').textContent = errs.join('\n'); return; }
+  CFG = P.mergeCfg(c); store.set('padelCfg', c); $('cfgErr').textContent = '';
+  $('cfgSave').textContent = 'Gespeichert ✓'; setTimeout(() => { $('cfgSave').textContent = 'Speichern'; }, 1500);
+  if (tState) renderTechnik(); if (kState) { analyzeAll(); renderTaktik(); }
+});
+$('cfgCopy').addEventListener('click', async () => { try { await navigator.clipboard.writeText($('cfgText').value); $('cfgCopy').textContent = 'Kopiert ✓'; } catch (e) { $('cfgCopy').textContent = 'Nicht möglich'; } });
+$('cfgReset').addEventListener('click', async () => { try { localStorage.removeItem('padelCfg'); } catch (e) {} CFG = P.mergeCfg(null); await loadCfg(); showCfg(); });
+
+loadCfg().then(route);
 }
 </script>
 </body>
