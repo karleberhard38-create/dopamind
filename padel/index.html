@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Padel Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: sportlich, direkt, wie ein Trainer am Glas
+   IDEA: ein Padel-Court von oben – blaue Fläche, weiße Linien, gelber Ball als Akzent
+   PICTURE: dein eigenes Video mit Skelett-Overlay, darunter Schlag-Clips wie Taktiktafel-Karten
+   COLOUR and TYPE: Court-Blau, Weiß, Ballgelb; Barlow Condensed + Inter
+   LAYOUT: eine Spalte am Handy, Upload → Analyse → Clips → Hauptbaustelle */
+:root{color-scheme:light dark;--bg:light-dark(#f4f7fb,#0a1424);--card:light-dark(#fff,#12213a);--ink:light-dark(#0c1a2e,#eef3fa);--mute:light-dark(#53627a,#9fb0c8);--court:#1f5bc4;--court2:#16459a;--ball:#d8f03c;--ok:#1d9a5b;--bad:#e0483a;--line:light-dark(#dfe6ef,#22355a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:"Barlow Condensed",Inter,sans-serif;line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,7vw,52px)}h2{font-size:30px}h3{font-size:22px}
+.hero{background:linear-gradient(160deg,var(--court),var(--court2));color:#fff;padding:28px max(5vw,16px) 24px;position:relative;overflow:hidden}
+.hero p{max-width:60ch;margin:10px 0 0;color:#dbe6fb}
+.hero svg{position:absolute;right:-30px;top:-10px;width:220px;opacity:.22;pointer-events:none}
+.wrap{max-width:860px;margin:0 auto;padding:20px max(4vw,14px) 60px;display:grid;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+label.f{display:grid;gap:4px;font-size:14px;color:var(--mute);flex:1 1 140px}
+select,button,.btn{font:inherit;font-size:16px;min-height:46px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:0 14px}
+button,.btn{cursor:pointer;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.pri{background:var(--court);color:#fff;border-color:var(--court)}
+.ballbtn{background:var(--ball);color:#0c1a2e;border-color:var(--ball)}
+button:disabled{opacity:.45;cursor:default}
+:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
+input[type=file]{display:none}
+.row>.btn,.row>button{flex:1 1 150px}
+.tips{margin:8px 0 0;padding-left:20px;color:var(--mute);font-size:15px}
+.stage{position:relative;margin:0 auto;border-radius:12px;overflow:hidden;background:#000}
+.stage video{display:block;width:100%;height:100%}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.bar{height:10px;border-radius:6px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--court);transition:width .2s}
+.status{font-size:14px;color:var(--mute);margin-top:6px}
+.score{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.big{font:700 clamp(48px,12vw,72px)/1 "Barlow Condensed",sans-serif;color:var(--court)}
+:root[data-theme=dark] .big{color:var(--ball)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .big{color:var(--ball)}}
+.focus{border-left:6px solid var(--ball);background:linear-gradient(90deg,color-mix(in srgb,var(--ball) 14%,var(--card)),var(--card))}
+.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:14px}
+.clip canvas{width:100%;border-radius:10px;background:#000;display:block}
+.m{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;align-items:center;font-size:15px;padding:8px 0;border-top:1px solid var(--line)}
+.dot{width:12px;height:12px;border-radius:50%}.ok{background:var(--ok)}.no{background:var(--bad)}
+.val{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--mute)}
+.tip{font-size:15px;margin:6px 0 0}
+.drill{font-size:15px;background:var(--bg);border-radius:10px;padding:10px 12px;margin-top:8px}
+.drill b{display:block}
+.small{font-size:13px;color:var(--mute)}
+.hide{display:none!important}
+@media(prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="20" y="10" width="160" height="180" fill="none" stroke="#fff" stroke-width="4"/><line x1="20" y1="100" x2="180" y2="100" stroke="#fff" stroke-width="6"/><line x1="20" y1="45" x2="180" y2="45" stroke="#fff" stroke-width="3"/><line x1="20" y1="155" x2="180" y2="155" stroke="#fff" stroke-width="3"/><line x1="100" y1="45" x2="100" y2="155" stroke="#fff" stroke-width="3"/><circle cx="140" cy="70" r="12" fill="#d8f03c"/></svg>
+  <h1>Padel-Technik-Coach</h1>
+  <p>Film dich, lad das Video hoch. Die App erkennt deine Schläge, schneidet sie als Clips raus, misst deine Körperhaltung und sagt dir, woran du arbeiten solltest.</p>
+</header>
+
+<main class="wrap">
+  <section class="card" id="setup">
+    <h2>1 · Video</h2>
+    <div class="row" style="margin-top:12px">
+      <label class="f">Schlag
+        <select id="type">
+          <option value="bandeja">Bandeja</option>
+          <option value="vibora">Víbora</option>
+          <option value="smash">Smash</option>
+          <option value="vorhand">Vorhand</option>
+          <option value="rueckhand">Rückhand</option>
+        </select>
+      </label>
+      <label class="f">Schlaghand
+        <select id="hand"><option value="R">Rechts</option><option value="L">Links</option></select>
+      </label>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <label class="btn ballbtn" for="rec">Aufnehmen</label>
+      <input type="file" id="rec" accept="video/*" capture="environment">
+      <label class="btn" for="pick">Auswählen</label>
+      <input type="file" id="pick" accept="video/*">
+      <button class="pri" id="go" disabled>Analyse starten</button>
+    </div>
+    <p class="status" id="fileinfo">Noch kein Video gewählt.</p>
+    <details open>
+      <summary class="small">So filmst du richtig</summary>
+      <ul class="tips">
+        <li>Handy <b>hinter dir</b> an die Rückwand oder das Gitter hängen, möglichst etwas erhöht (ca. 2 m), Blick Richtung Netz.</li>
+        <li>Querformat, ganzer Körper von Kopf bis Fuß im Bild, auch beim Springen.</li>
+        <li>Am besten filmst du nur dich, z. B. beim Zuspiel durch einen Partner. Mehrere Spieler im Bild verwirren die Erkennung.</li>
+        <li>Pro Video nur eine Schlagart, 30–90 Sekunden reichen.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="card hide" id="work">
+    <h2>2 · Analyse</h2>
+    <div class="stage" id="stage" style="margin-top:12px"><video id="vid" playsinline muted preload="auto"></video><canvas id="ov"></canvas></div>
+    <div class="bar" style="margin-top:12px"><i id="prog"></i></div>
+    <p class="status" id="stat">Lade KI-Modell …</p>
+  </section>
+
+  <section class="hide" id="res" style="display:grid;gap:18px">
+    <div class="card score">
+      <div class="big" id="scoreNum">–</div>
+      <div><h3 id="scoreTitle">Technik-Score</h3><p class="small" id="scoreSub" style="margin:4px 0 0"></p></div>
+    </div>
+    <div class="card focus" id="focus"></div>
+    <h2>Deine Schläge</h2>
+    <div class="clips" id="clips"></div>
+    <p class="small">Prototyp: Die Sollwerte sind Trainer-Richtwerte, gemessen wird nur in 2D/3D-Schätzung aus einer Handykamera. Ballkontakt und Schlägerhaltung erkennt die App nicht.</p>
+    <button id="again">Neues Video analysieren</button>
+  </section>
+</main>
+
+<script type="module">
+{
+const $ = id => document.getElementById(id);
+const V = $('vid'), OV = $('ov'), ctx = OV.getContext('2d');
+let landmarker = null, file = null, frames = [], strokes = [], playing = null;
+
+/* ---------- Trainerwissen: Messgrößen, Sollwerte, Tipps, Übungen ---------- */
+const OVER = ['bandeja','vibora','smash'];
+const NAMES = {bandeja:'Bandeja',vibora:'Víbora',smash:'Smash',vorhand:'Vorhand',rueckhand:'Rückhand'};
+const RANGES = {
+  bandeja:{elbow:[115,165],height:[0.45,1.15],knee:[0,165],side:[45,90],free:[0.3,1]},
+  vibora:{elbow:[115,165],height:[0.3,1.05],knee:[0,165],side:[45,90],free:[0.3,1]},
+  smash:{elbow:[155,180],height:[0.85,3],knee:[0,158],side:[45,90],free:[0.3,1]},
+  vorhand:{knee:[0,150],trunk:[0,25],reach:[0.35,0.9],side:[35,90]},
+  rueckhand:{knee:[0,150],trunk:[0,25],reach:[0.35,0.9],side:[35,90]}
+};
+const M = {
+  elbow:{name:'Armstreckung im Treffpunkt',fmt:v=>Math.round(v)+'°',joint:'el',
+    low:'Dein Arm ist im Treffpunkt zu stark gebeugt. Triff den Ball höher und lass den Arm nach oben arbeiten, sonst fehlt Kontrolle und der Ball fällt kurz.',
+    high:t=>t==='smash'?'':'Du streckst den Arm fast komplett durch, das ist eher ein Smash. Bei der '+NAMES[t]+' bleibt der Ellbogen leicht gebeugt, der Ball wird etwas vor und seitlich vom Körper getroffen.',
+    drills:[['Schatten-Overheads','10 Schläge ohne Ball in Zeitlupe, im Treffpunkt kurz einfrieren und Armwinkel prüfen. 3 Sätze.'],['Zuwurf-Treffpunkt','Partner wirft hohe Bälle zu, du triffst nur auf Kopfhöhe vor der Schlagschulter. 3 × 10 Bälle.']]},
+  height:{name:'Treffhöhe',fmt:v=>v.toFixed(1).replace('.',',')+' × Rumpf über Schulter',joint:'wr',
+    low:'Du triffst den Ball zu tief. Geh früher unter den Ball, damit du ihn an seinem richtigen Punkt erwischst, statt ihn fallen zu lassen.',
+    high:'Du triffst den Ball sehr hoch, fast wie beim Smash. Lass ihn etwas weiter kommen, so kannst du kontrollierter schlagen.',
+    drills:[['Seitschritt-Drill','Hoher Lob vom Partner: seitlich zurück (Kreuz- oder Seitschritte), Ball über der Schlagschulter treffen. 3 × 8 Bälle.'],['Ball-Fang-Übung','Ohne Schläger: hohe Bälle mit der Schlaghand am Treffpunkt fangen. Zeigt dir, wo der Ball sein muss. 20 Wiederholungen.']]},
+  knee:{name:'Kniebeugung',fmt:v=>Math.round(v)+'°',joint:'kn',
+    low:'',
+    high:t=>OVER.includes(t)?'Deine Beine sind beim Ausholen fast gestreckt. Beug die Knie leicht, dann bekommst du Stabilität und Kraft aus den Beinen statt nur aus dem Arm.':'Du bleibst zu aufrecht. Padel-Bälle kommen oft tief, also geh über die Knie runter, nicht über den Rücken.',
+    drills:[['Tiefe Grundlinie','Partner spielt tiefe Bälle, du musst bei jedem Schlag mit der Hand fast den Boden berühren können. 3 × 10.'],['Split-Step + Ausfallschritt','Split-Step beim Schlag des Partners, dann Ausfallschritt zum Ball mit gebeugtem vorderem Knie. 3 × 30 Sek.']]},
+  side:{name:'Seitstellung / Schulterdrehung',fmt:v=>Math.round(v)+'°',joint:'sh',
+    low:'Du stehst beim Ausholen zu frontal zum Netz. Dreh die Schultern früh seitlich ein, die Schulter der freien Hand zeigt Richtung Ball bzw. Netz.',
+    high:'',
+    drills:[['Früh eindrehen','Beim Zuspiel sofort Schultern drehen, bevor du läufst. Partner ruft „jetzt!“, wenn er schlägt. 3 × 10.'],['Wand-Check','Mit der freien Schulter zur Glaswand stellen, Schatten-Schlag ausführen und dabei nicht aufdrehen, bevor der Schlag beginnt. 15 Wiederholungen.']]},
+  free:{name:'Freie Hand zeigt zum Ball',fmt:v=>Math.round(v*100)+' %',joint:'nwr',
+    low:'Deine freie Hand bleibt unten. Zeig beim Ausholen mit ihr auf den Ball, das hilft beim Timing, beim Gleichgewicht und bei der Seitstellung.',
+    high:'',
+    drills:[['Zeige-Drill','Bei jedem Lob zuerst mit der freien Hand auf den Ball zeigen, Schläger hinterm Kopf. Erst dann schlagen. 3 × 10.'],['Fangen mit der Freien','Partner wirft hoch, du fängst den Ball mit der freien Hand in Treffpunkthöhe. 20 Wiederholungen.']]},
+  trunk:{name:'Oberkörper aufrecht',fmt:v=>Math.round(v)+'° Neigung',joint:'sh',
+    low:'',
+    high:'Du knickst mit dem Oberkörper nach vorn ab. Bleib aufrecht und hol die Tiefe aus den Knien, so bleibt der Schlag stabil und dein Rücken geschont.',
+    drills:[['Schläger auf dem Rücken','Schläger längs am Rücken halten und tief in die Knie gehen, ohne dass er sich vom Rücken löst. 3 × 10.'],['Tiefe Bälle, gerader Rücken','Partner spielt tiefe Bälle zu, Fokus nur auf aufrechten Oberkörper. 3 × 10.']]},
+  reach:{name:'Abstand zum Ball',fmt:v=>v.toFixed(2).replace('.',',')+' m',joint:'wr',
+    low:'Du triffst den Ball zu nah am Körper. Lass mehr Platz und mach im Zweifel einen kleinen Schritt weg vom Ball.',
+    high:'Du musst dich zum Ball strecken. Lauf mit kleinen Schritten näher heran, statt dich mit dem Arm zu retten.',
+    drills:[['Hütchen-Abstand','Hütchen eine Schlägerlänge seitlich neben dich, Ball immer über dem Hütchen treffen. 3 × 10.'],['Kleine Schritte','Vor jedem Schlag noch 2–3 kleine Anpassungsschritte machen. 3 × 10 Bälle.']]}
+};
+
+/* ---------- Geometrie ---------- */
+const J = h => h==='R'
+  ? {sh:12,el:14,wr:16,hip:24,kn:26,an:28,nsh:11,nwr:15,nhip:23,nkn:25,nan:27}
+  : {sh:11,el:13,wr:15,hip:23,kn:25,an:27,nsh:12,nwr:16,nhip:24,nkn:26,nan:28};
+const sub=(a,b)=>({x:a.x-b.x,y:a.y-b.y,z:(a.z||0)-(b.z||0)});
+const len=v=>Math.hypot(v.x,v.y,v.z||0);
+const mid=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2,z:((a.z||0)+(b.z||0))/2});
+const ang=(a,b,c)=>{const u=sub(a,b),w=sub(c,b);const d=(u.x*w.x+u.y*w.y+u.z*w.z)/(len(u)*len(w)||1);return Math.acos(Math.max(-1,Math.min(1,d)))*180/Math.PI};
+let AR = 16/9;
+const img = p => ({x:p.x*AR,y:p.y});
+const torso = lm => len(sub(mid(img(lm[11]),img(lm[12])),mid(img(lm[23]),img(lm[24])))) || 0.2;
+
+/* ---------- Modell laden ---------- */
+async function loadModel(){
+  if(landmarker) return landmarker;
+  const vision = await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14');
+  const fs = await vision.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm');
+  const opts = d => ({baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task',delegate:d},runningMode:'VIDEO',numPoses:1,minPoseDetectionConfidence:0.5,minTrackingConfidence:0.5});
+  try{ landmarker = await vision.PoseLandmarker.createFromOptions(fs,opts('GPU')); }
+  catch(e){ landmarker = await vision.PoseLandmarker.createFromOptions(fs,opts('CPU')); }
+  return landmarker;
+}
+
+/* ---------- Datei wählen ---------- */
+function onFile(e){
+  const f = e.target.files[0]; if(!f) return;
+  file = f; $('fileinfo').textContent = 'Video: '+f.name+' ('+(f.size/1e6).toFixed(1).replace('.',',')+' MB)';
+  $('go').disabled = false;
+}
+$('rec').addEventListener('change',onFile); $('pick').addEventListener('change',onFile);
+
+const seek = t => new Promise(r=>{const h=()=>{V.removeEventListener('seeked',h);r()};V.addEventListener('seeked',h);V.currentTime=t;});
+
+function fitStage(){
+  AR = V.videoWidth/V.videoHeight || 16/9;
+  OV.width = V.videoWidth; OV.height = V.videoHeight;
+  $('stage').style.aspectRatio = AR;
+  $('stage').style.width = 'min(100%, calc(60vh * '+AR+'))';
+}
+
+/* ---------- Analyse ---------- */
+$('go').addEventListener('click', async ()=>{
+  if(!file) return;
+  $('go').disabled = true; $('setup').classList.add('hide'); $('work').classList.remove('hide'); $('res').classList.add('hide');
+  stopClip(); frames = []; strokes = [];
+  V.src = URL.createObjectURL(file);
+  try{ await V.play(); V.pause(); }catch(e){}
+  await new Promise(r=> V.readyState>=1 ? r() : V.addEventListener('loadedmetadata',r,{once:true}));
+  fitStage();
+  try{
+    $('stat').textContent='Lade KI-Modell … (beim ersten Mal bis zu 20 Sekunden)';
+    await Promise.race([loadModel(), new Promise((_,rej)=>setTimeout(()=>rej(new Error('timeout')),30000))]);
+  }
+  catch(e){
+    $('stat').innerHTML='Das KI-Modell konnte nicht geladen werden. Öffne die App über ihre Web-Adresse in Safari oder Chrome, nicht in einer Datei-Vorschau, und prüf deine Internetverbindung. <button id="back" style="margin-top:10px">Zurück</button>';
+    $('back').onclick = reset; return;
+  }
+  const dur = V.duration, fps = dur>90 ? 8 : 12, step = 1/fps;
+  let ts = 0;
+  for(let t=0; t<dur; t+=step){
+    await seek(t);
+    const r = landmarker.detectForVideo(V, ts += 1000/fps);
+    const lm = r.landmarks && r.landmarks[0], wl = r.worldLandmarks && r.worldLandmarks[0];
+    frames.push(lm ? {t, lm, wl} : {t, lm:null});
+    ctx.clearRect(0,0,OV.width,OV.height); if(lm) drawPose(lm,[]);
+    $('prog').style.width = (t/dur*100)+'%';
+    $('stat').textContent = 'Analysiere Bewegung … '+Math.round(t/dur*100)+' %';
+  }
+  $('prog').style.width='100%';
+  const type = $('type').value, hand = $('hand').value;
+  strokes = findStrokes(type, hand, fps);
+  if(!strokes.length){
+    $('stat').innerHTML = 'Keine '+NAMES[type]+' erkannt. Ist dein ganzer Körper im Bild, und hast du die richtige Schlagart gewählt? <button id="back" style="margin-top:10px">Zurück</button>';
+    $('back').onclick = reset; return;
+  }
+  $('stat').textContent='Erstelle Clips …';
+  for(const s of strokes) s.metrics = measure(s, type, hand, fps);
+  await renderResults(type, hand);
+  $('work').classList.add('hide'); $('res').classList.remove('hide');
+  $('work').after($('res'));
+});
+
+function findStrokes(type, hand, fps){
+  const j = J(hand), sp = frames.map(()=>0);
+  for(let i=1;i<frames.length;i++){
+    const a=frames[i-1].lm, b=frames[i].lm; if(!a||!b) continue;
+    sp[i] = len(sub(img(b[j.wr]),img(a[j.wr]))) / torso(b) * fps;
+  }
+  const sm = sp.map((v,i)=>(sp[i-1]||v)/4+v/2+(sp[i+1]||v)/4);
+  const max = Math.max(...sm), thr = Math.max(3, max*0.4), gap = Math.round(fps*1.0), out=[];
+  for(let i=2;i<sm.length-2;i++){
+    if(sm[i]<thr || sm[i]<sm[i-1] || sm[i]<sm[i+1]) continue;
+    const lm = frames[i].lm; if(!lm) continue;
+    const overhead = lm[j.wr].y < lm[j.sh].y - 0.15*torso(lm);
+    if(OVER.includes(type) !== overhead) continue;
+    if(out.length && i - out[out.length-1].i < gap){ if(sm[i] > out[out.length-1].v) out[out.length-1] = {i,v:sm[i]}; continue; }
+    out.push({i,v:sm[i]});
+  }
+  return out.slice(0,12).map(o=>({i:o.i,t:frames[o.i].t}));
+}
+
+function yaw(wl){ const v=sub(wl[12],wl[11]); return Math.atan2(Math.abs(v.z),Math.abs(v.x))*180/Math.PI; }
+
+function measure(s, type, hand, fps){
+  const j = J(hand), f = frames[s.i], lm=f.lm, wl=f.wl, R = RANGES[type], res = {};
+  const prep = frames.slice(Math.max(0,s.i-Math.round(fps*1.0)), s.i+1).filter(x=>x.lm);
+  const val = {
+    elbow: ()=>ang(wl[j.sh],wl[j.el],wl[j.wr]),
+    height: ()=>(lm[j.sh].y - lm[j.wr].y)/torso(lm),
+    knee: ()=>Math.min(...prep.map(p=>(ang(p.wl[j.hip],p.wl[j.kn],p.wl[j.an])+ang(p.wl[j.nhip],p.wl[j.nkn],p.wl[j.nan]))/2)),
+    side: ()=>Math.max(...prep.slice(0,-1).map(p=>yaw(p.wl)), yaw(wl)),
+    free: ()=>prep.filter(p=>p.lm[j.nwr].y < p.lm[j.nsh].y).length / prep.length,
+    trunk: ()=>{const v=sub(mid(wl[11],wl[12]),mid(wl[23],wl[24]));return Math.acos(Math.min(1,-v.y/len(v)))*180/Math.PI},
+    reach: ()=>{const h=mid(wl[23],wl[24]);return Math.hypot(wl[j.wr].x-h.x,wl[j.wr].z-h.z)}
+  };
+  for(const k in R){
+    const v = val[k](), [lo,hi]=R[k];
+    res[k] = {v, ok: v>=lo && v<=hi, dir: v<lo?'low':v>hi?'high':''};
+  }
+  return res;
+}
+
+/* ---------- Zeichnen ---------- */
+const BONES=[[11,12],[11,13],[13,15],[12,14],[14,16],[11,23],[12,24],[23,24],[23,25],[25,27],[24,26],[26,28],[27,31],[28,32]];
+function drawPose(lm, bad, c=ctx, W=OV.width, H=OV.height){
+  const s = Math.max(2, W/320);
+  c.lineWidth = 2.5*s; c.strokeStyle = 'rgba(255,255,255,.9)'; c.lineCap='round';
+  for(const [a,b] of BONES){ c.beginPath(); c.moveTo(lm[a].x*W,lm[a].y*H); c.lineTo(lm[b].x*W,lm[b].y*H); c.stroke(); }
+  for(const i of [0,11,12,13,14,15,16,23,24,25,26,27,28]){
+    c.beginPath(); c.arc(lm[i].x*W,lm[i].y*H,3.5*s,0,7); c.fillStyle='#d8f03c'; c.fill();
+  }
+  for(const i of bad){
+    c.beginPath(); c.arc(lm[i].x*W,lm[i].y*H,11*s,0,7); c.lineWidth=3*s; c.strokeStyle='#e0483a'; c.stroke();
+  }
+}
+function badJoints(s, hand){
+  const j = J(hand), out=[];
+  for(const k in s.metrics) if(!s.metrics[k].ok){ const n=M[k].joint; out.push(j[n]); if(n==='kn') out.push(j.nkn); }
+  return out;
+}
+
+/* ---------- Ergebnisse ---------- */
+const tipText = (k,dir,type) => { const t = M[k][dir]; return typeof t==='function' ? t(type) : t; };
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function renderResults(type, hand){
+  let ok=0, all=0; const fails={};
+  for(const s of strokes) for(const k in s.metrics){ all++; if(s.metrics[k].ok) ok++; else { const key=k+'|'+s.metrics[k].dir; fails[key]=(fails[key]||0)+1; } }
+  const score = Math.round(ok/all*100);
+  $('scoreNum').textContent = score;
+  $('scoreTitle').textContent = 'Technik-Score '+NAMES[type];
+  $('scoreSub').textContent = strokes.length+' Schläge erkannt · '+ok+' von '+all+' Technik-Merkmalen im Sollbereich';
+  const top = Object.entries(fails).sort((a,b)=>b[1]-a[1])[0];
+  if(top){
+    const [k,dir] = top[0].split('|');
+    $('focus').innerHTML = '<h3>Deine Hauptbaustelle: '+esc(M[k].name)+'</h3><p class="tip">'+esc(tipText(k,dir,type))+'</p><p class="small">Betrifft '+top[1]+' von '+strokes.length+' Schlägen.</p>'+
+      M[k].drills.map(d=>'<div class="drill"><b>Übung: '+esc(d[0])+'</b>'+esc(d[1])+'</div>').join('');
+  } else {
+    $('focus').innerHTML = '<h3>Starke Technik!</h3><p class="tip">Alle gemessenen Merkmale liegen im Sollbereich. Nächster Schritt: Platzierung und Tempo variieren, z. B. '+NAMES[type]+' abwechselnd cross und longline.</p>';
+  }
+  const box = $('clips'); box.innerHTML='';
+  for(let n=0;n<strokes.length;n++){
+    const s = strokes[n], el = document.createElement('article'); el.className='card clip';
+    const cv = document.createElement('canvas'); const W=480, H=Math.round(480/AR); cv.width=W; cv.height=H;
+    await seek(s.t); const c=cv.getContext('2d'); c.drawImage(V,0,0,W,H); drawPose(frames[s.i].lm, badJoints(s,hand), c, W, H);
+    const rows = Object.entries(s.metrics).map(([k,m])=>
+      '<div class="m"><span class="dot '+(m.ok?'ok':'no')+'"></span><span>'+esc(M[k].name)+'</span><span class="val">'+esc(M[k].fmt(m.v))+'</span>'+
+      (m.ok?'':'<p class="tip" style="grid-column:1/-1">'+esc(tipText(k,m.dir,type))+'</p>')+'</div>').join('');
+    el.innerHTML = '<div class="row" style="justify-content:space-between;margin-bottom:10px"><h3>Schlag '+(n+1)+'</h3><span class="small">bei '+s.t.toFixed(1).replace('.',',')+' s</span></div>';
+    el.appendChild(cv);
+    el.insertAdjacentHTML('beforeend','<div class="row" style="margin:10px 0 4px"><button class="pri" data-n="'+n+'">Clip abspielen</button></div>'+rows);
+    box.appendChild(el);
+  }
+  box.querySelectorAll('button[data-n]').forEach(b=>b.addEventListener('click',()=>playClip(+b.dataset.n, hand)));
+}
+
+/* ---------- Clip-Wiedergabe mit Skelett ---------- */
+function nearest(t){ let lo=0,hi=frames.length-1; while(lo<hi){const m=(lo+hi)>>1; if(frames[m].t<t) lo=m+1; else hi=m;} return frames[lo]; }
+function stopClip(){ if(playing){ cancelAnimationFrame(playing.raf); V.pause(); playing=null; } }
+async function playClip(n, hand){
+  stopClip();
+  const s = strokes[n], bad = badJoints(s,hand);
+  $('work').classList.remove('hide'); $('prog').parentElement.classList.add('hide');
+  $('stat').textContent = 'Schlag '+(n+1)+' in Zeitlupe · rote Kreise = hier verbessern';
+  $('work').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  const end = s.t+0.7; await seek(Math.max(0,s.t-1.2));
+  V.playbackRate = 0.4; try{ await V.play(); }catch(e){}
+  const loop = ()=>{
+    const f = nearest(V.currentTime); ctx.clearRect(0,0,OV.width,OV.height);
+    if(f.lm) drawPose(f.lm, Math.abs(V.currentTime-s.t)<0.35 ? bad : []);
+    if(V.currentTime>=end || V.paused){ V.pause(); playing=null; return; }
+    playing.raf = requestAnimationFrame(loop);
+  };
+  playing = {raf: requestAnimationFrame(loop)};
+}
+
+function reset(){
+  stopClip(); $('res').classList.add('hide'); $('work').classList.add('hide'); $('setup').classList.remove('hide');
+  $('prog').parentElement.classList.remove('hide'); $('prog').style.width='0'; $('go').disabled=!file;
+  window.scrollTo(0,0);
+}
+$('again').addEventListener('click', reset);
+}
+</script>
+</body>
+</html>
